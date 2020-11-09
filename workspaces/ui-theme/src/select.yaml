@@ -1,0 +1,114 @@
+space: select
+imports: ['../typography.yaml']
+
+base:
+  cursor: pointer
+  outline: none
+  width: 100%
+
+wrapper:
+  size:
+    xs:
+      # need for ellipsis
+      # flex items will refuse to shrink below their minimum intrinsic width,
+      # unless you explicitly specify "min-width" or "width" or "max-width" on them.
+      width: calc(100% - $layout.whitespace.l )
+    s:
+      width: calc(100% - $layout.whitespace.xl )
+    m:
+      width: calc(100% - $layout.whitespace.xl )
+    l:
+      width: calc(100% - $layout.whitespace.xxl )
+    xl:
+      width: calc(100% - $layout.whitespace.xxl )
+    xxl:
+      width: calc(100% - $layout.whitespace.xxl )
+
+current:
+  size:
+    xs:
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+      border-radius: $border.radius.s
+    s:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      border-radius: $border.radius.m
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      border-radius: $border.radius.m
+    l:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      border-radius: $border.radius.m
+    xl:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      border-radius: $border.radius.m
+    xxl:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      border-radius: $border.radius.m
+
+placeholder:
+  color: $color.primary.seattle.c60
+placeholderDisabled:
+  color: $color.primary.london.c120
+
+chip:
+  base:
+    align-items: center
+    margin-left: $layout.whitespace.xs
+  size:
+    xxl:
+      font-size: $typography.b.b3.size
+    xl:
+      font-size: $typography.b.b3.size
+    l:
+      font-size: $typography.b.b2.size
+    m:
+      font-size: $typography.b.b2.size
+    s:
+      font-size: $typography.b.b2.size
+    xs:
+      font-size: $typography.b.b1.size
+  text:
+    overflow: hidden
+    height: 100%
+    text-overflow: ellipsis
+    white-space: nowrap
+  textWithCheckbox:
+    overflow: hidden
+    height: 100%
+    text-overflow: ellipsis
+    white-space: nowrap
+    width: calc(100% - $layout.whitespace.s - 20px)
+  icon:
+    base:
+      cursor: pointer
+      color: $color.primary.seattle.c60
+    size:
+      xxl:
+        margin-left: $layout.whitespace.s
+      xl:
+        margin-left: $layout.whitespace.s
+      l:
+        margin-left: $layout.whitespace.xs
+      m:
+        margin-left: $layout.whitespace.xs
+      s:
+        margin-left: $layout.whitespace.xxs
+      xs:
+        margin-left: $layout.whitespace.xxs
+    hover:
+      color: $color.primary.brand.primary
+
+extra:
+  base:
+    white-space: nowrap
+    padding-left: $layout.whitespace.xs
+
+checkbox:
+  base:
+    margin-right: $layout.whitespace.s

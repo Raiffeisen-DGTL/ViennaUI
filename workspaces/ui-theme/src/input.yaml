@@ -1,0 +1,141 @@
+space: input
+imports: ['../typography.yaml']
+
+native:
+  base:
+    background-color: transparent
+    ref: $typography.text.base
+    color: $color.primary.brand.primary
+    border: none
+    outline: none
+    transition: all .2s
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+  design:
+    material:
+      padding: 0
+  size:
+    xs:
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+    s:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+    l:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+    xl:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+    xxl:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+
+placeholder:
+  base:
+    width: 100%
+    ref: $typography.text.base
+    color: $color.primary.seattle.c60
+    line-height: auto
+  disabled:
+    color: $color.primary.london.c120
+  gap:
+    top: $layout.whitespace.s
+
+wrapper:
+  base:
+    background-color: $color.primary.brand.white
+    transition: all .2s
+    border-radius: $border.radius.m
+    width: 100%
+    color: $color.primary.brand.primary
+    padding-left: $layout.whitespace.s
+    padding-right: $layout.whitespace.s
+  design:
+    outline:
+      border: 1px solid $color.primary.seattle.c30
+    material:
+      border-bottom: 1px solid $color.primary.seattle.c30
+      border-radius: 0
+      padding: 0
+  size:
+    xs:
+      height: $layout.size.xs
+      border-radius: $border.radius.s
+      padding-left: $layout.whitespace.xs
+      padding-right: $layout.whitespace.xs
+    s:
+      height: $layout.size.s
+    m:
+      height: $layout.size.m
+    l:
+      height: $layout.size.l
+    xl:
+      height: $layout.size.xl
+    xxl:
+      height: $layout.size.xxl
+  hover:
+    outline:
+      border-color: $color.primary.brand.primary
+      box-shadow: inset 0px 0px 0px 1px $color.primary.brand.primary
+    material:
+      border-bottom-color: $color.primary.brand.primary
+      box-shadow: inset 0px -1px 0px 0px $color.primary.brand.primary
+  disabled:
+    outline:
+      pointer-events: none
+      border-color: $color.primary.brand.wildsand
+      background-color: $color.primary.brand.wildsand
+      color: $color.primary.london.c120
+    material:
+      pointer-events: none
+      border-bottom-color: $color.primary.brand.wildsand
+      color: $color.primary.london.c120
+  invalid:
+    outline:
+      border-color: $color.utilitarian.moscow.c100
+    material:
+      border-bottom-color: $color.utilitarian.moscow.c100
+
+wrapped:
+  base:
+    color: $color.primary.brand.primary
+  disabled:
+    color: $color.primary.london.c120
+
+infix:
+  base:
+    color: $color.primary.seattle.c60
+  hover:
+    color: $color.primary.brand.primary
+  size:
+    xs:
+      margin: 0 $layout.whitespace.xxs
+      font-size: $typography.b.b1.size
+    s:
+      margin: 0 $layout.whitespace.xs
+      font-size: $typography.b.b2.size
+    m:
+      margin: 0 $layout.whitespace.xs
+      font-size: $typography.b.b2.size
+    l:
+      margin: 0 $layout.whitespace.xs
+      font-size: $typography.b.b2.size
+    xl:
+      margin: 0 $layout.whitespace.s
+      font-size: $typography.b.b3.size
+    xxl:
+      margin: 0 $layout.whitespace.s
+      font-size: $typography.b.b3.size
+
+prefix:
+  base:
+    margin-left: 0
+
+postfix:
+  base:
+    margin-right: 0

@@ -1,0 +1,35 @@
+space: userprofile
+
+base:
+  color: $color.primary.brand.primary
+
+baseHover:
+  color: $color.primary.oslo.c120
+
+name:
+  size:
+    xs:
+      font-size: $typography.b.b1.size
+      font-weight: $typography.weight.medium
+      line-height: $typography.b.b1.height
+    s:
+      font-size: $typography.b.b2.size
+      font-weight: $typography.weight.medium
+      line-height: $typography.b.b2.height
+    m:
+      font-size: $typography.b.b3.size
+      font-weight: $typography.weight.medium
+      line-height: $typography.b.b3.height
+
+description:
+  base:
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    color: $color.primary.seattle.c60
+
+profile:
+  left:
+    margin-left: $layout.whitespace.m
+  right:
+    text-align: right
+    margin-right: $layout.whitespace.m

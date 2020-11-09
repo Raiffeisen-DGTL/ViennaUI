@@ -1,0 +1,7 @@
+node_modules
+dist
+esm
+workspaces/icons/src
+workspaces/ui-pictogram/src
+.docz
+package-lock.json

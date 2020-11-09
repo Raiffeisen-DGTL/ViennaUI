@@ -1,0 +1,66 @@
+space: color
+desc: Палитра Utilitarian предназначается для подсвечивания важной информации об успехе, предупреждении и критических ошибках.
+utilitarian:
+  geneva:
+    c10:
+      value: '#E8F7F4'
+      desc: Use it only for positive feedback
+      prop: background-color
+    c30:
+      value: '#BFE9DF'
+      desc: Use it only for positive feedback
+      prop: background-color
+    c60:
+      value: '#52C5A9'
+      desc: Use it only for positive feedback
+      prop: background-color
+    c100:
+      value: '#19B28D'
+      desc: Use it only for positive feedback
+      prop: background-color
+    c120:
+      value: '#008E7D'
+      desc: Use it only for positive feedback
+      prop: background-color
+  moscow:
+    c10:
+      value: '#FDEEEE'
+      desc: Use it only for error messages
+      prop: background-color
+    c30:
+      value: '#FACED1'
+      desc: Use it only for error messages
+      prop: background-color
+    c60:
+      value: '#F27C83'
+      desc: Use it only for error messages
+      prop: background-color
+    c100:
+      value: '#EE505A'
+      desc: Use it only for error messages
+      prop: background-color
+    c120:
+      value: '#C74952'
+      desc: Use it only for error messages
+      prop: background-color
+  osaka:
+    c10:
+      value: '#FEF3EC'
+      desc: Use it only for warning messages
+      prop: background-color
+    c30:
+      value: '#FDDAC7'
+      desc: Use it only for warning messages
+      prop: background-color
+    c60:
+      value: '#FAA373'
+      desc: Use it only for warning messages
+      prop: background-color
+    c100:
+      value: '#F88545'
+      desc: Use it only for warning messages
+      prop: background-color
+    c120:
+      value: '#CB662F'
+      desc: Use it only for warning messages
+      prop: background-color

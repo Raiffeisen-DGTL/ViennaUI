@@ -1,0 +1,1047 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination 1`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 bGEOfW"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 kTUbcd"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination w/ currentPageNeighboursCount 1`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 bGEOfW"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 kTUbcd"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination w/ initialPageIndex 1`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 kTUbcd"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 bGEOfW"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination w/ onChange (first and prev) 1`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={true}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={true}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (first and prev) 2`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={true}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={true}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (last and next) 1`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={true}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={true}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (last and next) 2`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={true}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={true}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (next) 1`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={true}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (next) 2`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={true}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (prev) 1`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={true}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (prev) 2`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={false}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={true}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (target) 1`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={true}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ onChange (target) 2`] = `
+<Paginationstyles__Box>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Left
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+  <Pager
+    active={false}
+    key="0"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    1
+  </Pager>
+  <Pager
+    active={true}
+    key="1"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    2
+  </Pager>
+  <Pager
+    active={false}
+    key="2"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    3
+  </Pager>
+  <Pager
+    active={false}
+    key="3"
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    4
+  </Pager>
+  <Pager
+    active={false}
+    disabled={false}
+    onClick={[Function]}
+    size="m"
+    tabIndex={1}
+  >
+    <Right
+      color="currentColor"
+      size="m"
+    />
+  </Pager>
+</Paginationstyles__Box>
+`;
+
+exports[`Pagination w/ size 1`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 djMLfM"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 nnFuL"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 ilCfKm"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 ilCfKm"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 ilCfKm"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 ilCfKm"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination w/ size 2`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 bGEOfW"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 kTUbcd"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jYMwRt"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Pagination w/ size 3`] = `
+<div
+  class="Paginationstyles__Box-sc-1gy4ms1-0 divcwJ"
+>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 kiIRGp"
+    disabled=""
+    tabindex="-1"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M17 21v-1.414L9.414 12 17 4.414V3h-1.414l-9 9 9 9z"
+      />
+    </svg>
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 jVxKai"
+    tabindex="1"
+  >
+    1
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 dkpHeX"
+    tabindex="1"
+  >
+    2
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 dkpHeX"
+    tabindex="1"
+  >
+    3
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 dkpHeX"
+    tabindex="1"
+  >
+    4
+  </button>
+  <button
+    class="Pagerstyles__Box-r35rxo-0 dkpHeX"
+    tabindex="1"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+      />
+    </svg>
+  </button>
+</div>
+`;

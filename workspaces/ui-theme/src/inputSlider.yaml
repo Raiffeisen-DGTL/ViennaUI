@@ -1,0 +1,94 @@
+space: inputSlider
+imports: ['../typography.yaml']
+
+box:
+  base:
+    width: 100%;
+  disabled:
+    color: $color.primary.london.c120
+    pointer-events: none
+
+part:
+  base:
+    width: $layout.size.xxs
+    opacity: 0;
+
+container:
+  base:
+    width: 100%;
+  noInput:
+    top: $layout.whitespace.s
+
+line:
+  base:
+    border-bottom-style: solid;
+    border-bottom-width: $layout.whitespace.xxs
+  front:
+    border-bottom-color: $color.primary.brand.accent
+  back:
+    border-bottom-color: $color.primary.seattle.c30
+  design:
+    outline:
+      border-bottom-left-radius: $border.radius.m
+      border-bottom-right-radius: $border.radius.m
+  focus:
+    border-bottom-color: $color.primary.brand.primary
+  disabled:
+    border-bottom-color: $color.primary.seattle.c30
+  animation:
+    transition: all .1s
+  size:
+    xxl:
+      border-bottom-width: 6px
+    xl:
+      border-bottom-width: 6px
+    l:
+      border-bottom-width: $layout.whitespace.xxs
+    s:
+      border-bottom-width: 2px
+    xs:
+      border-bottom-width: 1px
+
+circle:
+  base:
+    width: $layout.whitespace.m
+    height: $layout.whitespace.m
+    border-radius: 40px
+    top: -8px
+    left: -8px
+    background-color: $color.primary.brand.accent
+    cursor: pointer
+  hover:
+    outline: none
+    width: $layout.whitespace.l
+    height: $layout.whitespace.l
+    top: -10px
+    left: -10px
+    background-color: $color.primary.brand.onAccent
+  disabled:
+    pointer-events: none
+    background-color: $color.primary.seattle.c30
+
+tags:
+  base:
+    margin-top: $layout.whitespace.xs
+    height: $layout.whitespace.m
+    color: $color.primary.seattle.c60
+tag:
+  base:
+    ref: $typography.text.base
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    cursor: pointer
+  firstChild:
+    outline:
+      left: $layout.whitespace.xs
+    material:
+      left: 0px
+  lastChild:
+    outline:
+      right: $layout.whitespace.xs
+      left: unset
+    material:
+      right: 0px;
+      left: unset

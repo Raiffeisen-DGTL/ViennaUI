@@ -1,0 +1,22 @@
+{
+  "name": "vienna.config-typescript",
+  "description": "Raiffeisenbank Design System Typescript Config",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "tsconfig.json",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "typescript"
+  ],
+  "devDependencies": {
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=3.8.0"
+  },
+  "bugs": {
+    "email": "ds@raiffeisen.ru"
+  }
+}

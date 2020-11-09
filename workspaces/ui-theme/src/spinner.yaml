@@ -1,0 +1,21 @@
+space: spinner
+
+size:
+  xs:
+    width: $layout.icon.xxs
+    height: $layout.icon.xxs
+  s:
+    width: $layout.icon.xs
+    height: $layout.icon.xs
+  m:
+    width: $layout.icon.s
+    height: $layout.icon.s
+  l:
+    width: $layout.icon.m
+    height: $layout.icon.m
+  xl:
+    width: $layout.icon.l
+    height: $layout.icon.l
+  xxl:
+    width: $layout.icon.l
+    height: $layout.icon.l

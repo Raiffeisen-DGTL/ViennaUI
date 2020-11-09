@@ -1,0 +1,202 @@
+space: table
+base:
+  font-family: $typography.b.family
+
+size:
+  s:
+    padding: $layout.whitespace.xs $layout.whitespace.xs
+  m:
+    padding: $layout.whitespace.s $layout.whitespace.xs
+  l:
+    padding: $layout.whitespace.m $layout.whitespace.xs
+
+header:
+  font-weight: $typography.weight.medium
+  color: $color.primary.seattle.c60
+  border-bottom: $color.primary.seattle.c10
+  font-size: $typography.b.b1.size
+  line-height: $typography.b.b1.height
+
+body:
+  background: $color.primary.brand.white
+  font-size: $typography.b.b2.size
+  line-height: $typography.b.b2.height
+  color: $color.primary.brand.primary
+
+footer:
+  padding: $layout.whitespace.xl $layout.whitespace.xs
+
+empty:
+  padding: 56px 0
+
+cell:
+  header:
+    base:
+      text-align: left
+      white-space: nowrap
+      background: $color.primary.brand.white
+      font-weight: $typography.weight.medium
+
+    hover:
+      background-color: $color.primary.brand.wildsand
+
+    group:
+      text-align: center
+      color: $color.primary.brand.primary
+
+    color:
+      miami10:
+        background-color: $color.secondary.basic.miami.c10
+      sochi10:
+        background-color: $color.secondary.basic.sochi.c10
+      paris10:
+        background-color: $color.secondary.basic.paris.c10
+      tokyo10:
+        background-color: $color.secondary.basic.tokyo.c10
+      dubai10:
+        background-color: $color.secondary.basic.dubai.c10
+      nice10:
+        background-color: $color.secondary.basic.nice.c10
+
+    rightDivider:
+      border-right: solid thin $color.primary.seattle.c10
+
+    bottomDivider:
+      border-bottom: solid thin $color.primary.seattle.c10
+
+  hover:
+    background: $color.primary.seattle.c10
+
+  divider:
+    border-bottom: solid thin $color.primary.seattle.c10
+
+  rightDivider:
+    border-right: solid thin $color.primary.seattle.c10
+
+  truncate:
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+
+actionIcon:
+  base:
+    background-color: $color.primary.brand.primary
+    color: $color.primary.brand.white
+    cursor: pointer
+
+  hover:
+    background-color: $color.primary.brand.onPrimary
+
+expander:
+  cell:
+    padding-left: $layout.whitespace.xs
+    padding-right: $layout.whitespace.xs
+  hover:
+    color: $color.primary.oslo.c120
+  content:
+    padding: $layout.whitespace.xs $layout.whitespace.s $layout.whitespace.m $layout.size.l
+
+resizer:
+  base:
+    user-select: none
+    width: 4px
+    cursor: col-resize
+    background-color: transparent
+  size:
+    s:
+      height: 34px
+      box-shadow: inset -2px 34px 0 0 $color.primary.brand.onAccent
+
+    m:
+      height: 42px
+      box-shadow: inset -2px 42px 0 0 $color.primary.brand.onAccent
+
+    l:
+      height: 50px
+      box-shadow: inset -2px 50px 0 0 $color.primary.brand.onAccent
+
+sort:
+  box:
+    hover:
+      color: $color.primary.brand.primary
+    active:
+      color: $color.primary.brand.primary
+  icon:
+    base:
+      margin-left: $layout.whitespace.xs
+    active:
+      color: $color.primary.oslo.c100 !important
+
+selector:
+  padding: 0 $layout.whitespace.l
+
+selected:
+  background-color: $color.primary.oslo.c10 !important
+
+selectAll:
+  box:
+    text-align: center
+    box-shadow: $shadow.basic.l
+    padding: $layout.whitespace.xs 0
+    margin-bottom: $layout.whitespace.xxs
+  label:
+    margin-right: $layout.whitespace.xl
+
+draggable:
+  box:
+    width: 100%
+    height: 0
+    top: 0
+    left: 0
+    background-color: $color.primary.brand.accent
+    opacity: 0.2
+    pointer-events: none
+  drop:
+    top: 0
+    width: 2px
+    background-color: $color.primary.brand.onAccent
+    height: 0
+outlined:
+  border: solid thin $color.primary.seattle.c10
+groupBy:
+  title:
+    font-size: $typography.b.b3.size
+    line-height: $typography.b.b3.height
+    font-weight: $typography.weight.bold
+    padding: $layout.whitespace.xs
+    padding-top: $layout.whitespace.xl
+  select:
+    padding-top: $layout.whitespace.l
+    text-align: center
+
+pinned:
+  background: $color.primary.brand.white
+
+settings:
+  box:
+    padding-left: $layout.whitespace.s
+    background: linear-gradient(90deg, transparent, $color.primary.brand.white ) 0, linear-gradient(90deg, $color.primary.brand.white, $color.primary.brand.white ) $layout.size.xxxs
+    background-size: $layout.size.xxxs 100%, 100% 100%
+    background-repeat: no-repeat
+  size:
+    s:
+      height: 34px
+    m:
+      height: 42px
+    l:
+      height: 50px
+
+  columns:
+    list:
+      margin: $layout.whitespace.m 0
+    column:
+      padding: $layout.whitespace.xs $layout.whitespace.s $layout.whitespace.xs $layout.whitespace.m
+      background-color: $color.primary.brand.wildsand
+      border-radius: $border.radius.m
+      margin-bottom: $layout.whitespace.xs
+      color: $color.primary.seattle.c60
+    search:
+      margin-top: $layout.whitespace.xl
+  grouping:
+    box:
+      margin-top: $layout.whitespace.m

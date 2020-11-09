@@ -1,0 +1,336 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar /w dark 1`] = `
+Array [
+  <Toolbar.Operation
+    design="dark"
+    key="0"
+    label="Option 1"
+  />,
+  <Toolbar.Operation
+    design="dark"
+    key="1"
+    label="Option 2"
+  />,
+  <Toolbar.Operation
+    design="dark"
+    key="2"
+    label="Option 3"
+  />,
+  <Toolbar.Operation
+    design="dark"
+    key="3"
+    label="Option 4"
+  />,
+  <Toolbar.Operation
+    design="dark"
+    hideElipsis={true}
+    icon={
+      <Other
+        color="currentColor"
+        size="m"
+      />
+    }
+    label="More operation"
+  >
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="0"
+      label="Option 1"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="1"
+      label="Option 2"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="2"
+      label="Option 3"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="3"
+      label="Option 4"
+    />
+  </Toolbar.Operation>,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="0"
+    label="Option 1"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="1"
+    label="Option 2"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="2"
+    label="Option 3"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="3"
+    label="Option 4"
+  />,
+]
+`;
+
+exports[`Toolbar 1`] = `
+Array [
+  <Toolbar.Operation
+    design="light"
+    key="0"
+    label="Option 1"
+  />,
+  <Toolbar.Operation
+    design="light"
+    key="1"
+    label="Option 2"
+  />,
+  <Toolbar.Operation
+    design="light"
+    key="2"
+    label="Option 3"
+  />,
+  <Toolbar.Operation
+    design="light"
+    key="3"
+    label="Option 4"
+  />,
+  <Toolbar.Operation
+    design="light"
+    hideElipsis={true}
+    icon={
+      <Other
+        color="currentColor"
+        size="m"
+      />
+    }
+    label="More operation"
+  >
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="0"
+      label="Option 1"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="1"
+      label="Option 2"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="2"
+      label="Option 3"
+    />
+    <Toolbar.Operation
+      asSubOperation={true}
+      key="3"
+      label="Option 4"
+    />
+  </Toolbar.Operation>,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="0"
+    label="Option 1"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="1"
+    label="Option 2"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="2"
+    label="Option 3"
+  />,
+  <Toolbar.Operation
+    asSubOperation={true}
+    key="3"
+    label="Option 4"
+  />,
+]
+`;
+
+exports[`Toolbar w/ any props 1`] = `
+<div
+  class="Toolbarstyles__Box-sc-5ox4d8-0 dYHAQi className"
+  id="id"
+  title="title"
+>
+  <div
+    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  >
+    <button
+      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      type="button"
+    >
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        Option 1
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+    </button>
+  </div>
+  <div
+    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  >
+    <button
+      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      type="button"
+    >
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        Option 2
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+    </button>
+  </div>
+  <div
+    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  >
+    <button
+      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      type="button"
+    >
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        Option 3
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+    </button>
+  </div>
+  <div
+    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  >
+    <button
+      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      type="button"
+    >
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        Option 4
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+    </button>
+  </div>
+  <div
+    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  >
+    <button
+      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      type="button"
+    >
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        <svg
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs />
+          <path
+            d="M6.2 10.8H3.8v2.4h2.4v-2.4zM2 10.792c0-.99.803-1.791 1.792-1.792h2.417C7.199 9 8 9.803 8 10.792v2.417A1.79 1.79 0 016.209 15H3.792c-.99 0-1.791-.802-1.792-1.791v-2.417zm11.2.008h-2.4v2.4h2.4v-2.4zM9 10.792c0-.99.803-1.791 1.792-1.792h2.417c.99 0 1.791.803 1.791 1.792v2.417A1.79 1.79 0 0113.209 15h-2.417c-.99 0-1.791-.802-1.792-1.791v-2.417zm11.2.008h-2.4v2.4h2.4v-2.4zm-4.2-.008c0-.99.803-1.791 1.792-1.792h2.417c.99 0 1.791.803 1.791 1.792v2.417A1.79 1.79 0 0120.209 15h-2.417c-.99 0-1.791-.802-1.792-1.791v-2.417z"
+          />
+        </svg>
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      >
+        More operation
+      </span>
+      <span
+        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Toolbar w/ operation 1`] = `
+<div
+  class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+>
+  <button
+    class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+    type="button"
+  >
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    />
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    >
+      Action 5
+    </span>
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    />
+  </button>
+</div>
+`;
+
+exports[`Toolbar w/ operation with icon 1`] = `
+<div
+  class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+>
+  <button
+    class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+    type="button"
+  >
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    >
+      <svg
+        fill="currentColor"
+        height="20"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs />
+        <path
+          d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+        />
+      </svg>
+    </span>
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    >
+      Action 5
+    </span>
+    <span
+      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+    />
+  </button>
+</div>
+`;

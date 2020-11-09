@@ -1,0 +1,125 @@
+space: sidebar
+base:
+  padding: $layout.whitespace.xxl 0
+  box-shadow: $shadow.basic.xl
+
+design:
+  light:
+    background-color: $color.primary.brand.white
+    color: $color.primary.brand.primary
+  dark:
+    background-color: $color.primary.brand.primary
+    color: $color.primary.brand.wildsand
+
+collapsed:
+  width: 72px
+
+collapser:
+  base:
+    padding: 0 $layout.whitespace.xl
+    margin-bottom: $layout.whitespace.l
+  hover:
+    color: $color.primary.oslo.c100
+
+header:
+  base:
+    margin-bottom: $layout.whitespace.xxl
+    padding-right: $layout.whitespace.xs
+
+  collapsed:
+    padding: 0 $layout.whitespace.l
+
+  size:
+    s:
+      padding-left: $layout.whitespace.xl
+
+    m:
+      padding-left: $layout.whitespace.xxl
+
+    l:
+      padding-left: $layout.whitespace.xxxl
+
+menu:
+  light:
+    overflow-y: auto
+    background: linear-gradient(transparent, white 70%) 0 100%, linear-gradient( $color.primary.seattle.c10, $color.primary.seattle.c10 ) 24px 100%
+    background-repeat: no-repeat
+    background-size: 100% 2px, calc(100% - 48px) 1px
+    background-attachment: local, scroll
+
+  dark:
+    overflow-y: auto
+    background: linear-gradient(transparent, $color.primary.brand.primary 70%) 0 100%, linear-gradient( $color.primary.seattle.c120, $color.primary.seattle.c120 ) 24px 100%
+    background-repeat: no-repeat
+    background-size: 100% 2px, calc(100% - 48px) 1px
+    background-attachment: local, scroll
+
+footer:
+  margin-top: $layout.whitespace.xl
+
+item:
+  base:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding-right: $layout.whitespace.xs
+
+  size:
+    s:
+      height: $layout.size.l
+      padding-left: $layout.whitespace.xl
+
+    m:
+      height: $layout.size.xl
+      padding-left: $layout.whitespace.xxl
+
+    l:
+      height: $layout.size.xxl
+      padding-left: $layout.whitespace.xxxl
+
+  active:
+    box-shadow: inset 4px 0 0 0 $color.primary.brand.accent
+    font-weight: $typography.weight.bold
+
+  hover:
+    light:
+      background: $color.primary.seattle.c01
+
+    dark:
+      background: $color.primary.seattle.c140
+
+  icon:
+    height: $layout.whitespace.xl
+    margin-right: $layout.whitespace.s
+
+  disabled:
+    light:
+      pointer-events: none
+      cursor: not-allowed
+      color: $color.text.quaternary
+
+    dark:
+      pointer-events: none
+      cursor: not-allowed
+      color: $color.primary.seattle.c120
+
+  notification:
+    font-weight: normal
+    width: $layout.size.m
+    padding-left: $layout.whitespace.xxs
+
+  ripple:
+    base:
+      position: absolute
+      border-radius: 50%
+      width: $layout.size.m
+      height: $layout.size.m
+      opacity: 0
+      transform: translate(-50%, -50%) scale(0.1)
+      transition: initial
+
+    design:
+      light:
+        background: $color.primary.brand.wildsand
+
+      dark:
+        background: $color.primary.seattle.c120

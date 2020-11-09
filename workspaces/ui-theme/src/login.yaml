@@ -1,0 +1,23 @@
+space: login
+base:
+  font-family: $typography.b.family
+
+form:
+  padding: $layout.size.xs $layout.size.xs
+
+logo:
+  margin-bottom: $layout.size.xs
+
+label:
+  color: $color.primary.seattle.c100
+  font-size: $typography.b.b1.size
+  line-height: $layout.size.xs
+
+loginInput:
+  margin-bottom: $layout.size.xxs
+
+passwordInput:
+  margin-bottom: $layout.size.s
+
+alert:
+  margin-bottom: $layout.size.xs

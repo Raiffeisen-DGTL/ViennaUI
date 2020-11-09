@@ -1,0 +1,41 @@
+space: typography
+a:
+  desc: Заголовки
+  family:
+    value: "Navigo, Helvetica, 'Helvetica New', Arial, sans-serif"
+    prop: font-family
+  a1:
+    size:
+      value: 24px
+      prop: font-size
+    height:
+      value: 30px
+      prop: line-height
+  a2:
+    size:
+      value: 26px
+      prop: font-size
+    height:
+      value: 34px
+      prop: line-height
+  a3:
+    size:
+      value: 28px
+      prop: font-size
+    height:
+      value: 36px
+      prop: line-height
+  a4:
+    size:
+      value: 30px
+      prop: font-size
+    height:
+      value: 38px
+      prop: line-height
+  a5:
+    size:
+      value: 32px
+      prop: font-size
+    height:
+      value: 40px
+      prop: line-height

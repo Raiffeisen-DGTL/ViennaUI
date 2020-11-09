@@ -1,0 +1,99 @@
+{
+  "private": true,
+  "name": "vienna.ds",
+  "description": "Raiffeisenbank Design System",
+  "license": "MIT",
+  "repository": {
+    "type": "http",
+    "url": ""
+  },
+  "publishConfig": {
+    "registry": ""
+  },
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist --ignore-scripts",
+    "clean": "lerna clean --yes",
+    "superapp": "lerna run watch --parallel --stream",
+    "build": "lerna run build --stream",
+    "lint": "eslint ./workspaces --quiet --ext .js,.jsx,.ts,.tsx --config ./.eslintrc.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prettier": "npx prettier --write '**/*.{js,jsx,ts,tsx,md,mdx,yaml,yml}'",
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watch",
+    "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@commitlint/config-lerna-scopes": "8.3.4",
+    "vienna.config-eslint": "file:workspaces/config-eslint",
+    "vienna.config-typescript": "file:workspaces/config-typescript",
+    "vienna-ui": "file:workspaces/ui",
+    "@types/enzyme": "3.10.5",
+    "@types/jest": "25.2.1",
+    "@types/node": "13.13.0",
+    "@typescript-eslint/eslint-plugin": "2.28.0",
+    "@typescript-eslint/parser": "2.28.0",
+    "babel-jest": "25.3.0",
+    "babel-plugin-styled-components": "1.10.6",
+    "core-js": "^3.6.5",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "3.4.4",
+    "eslint": "6.8.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jest": "23.8.2",
+    "eslint-plugin-jsdoc": "24.0.0",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "3.0.0",
+    "gatsby": "^2.20.29",
+    "gatsby-plugin-styled-components": "^3.1.19",
+    "husky": "4.2.5",
+    "jest": "25.3.0",
+    "jest-bamboo-formatter": "1.0.1",
+    "jest-styled-components": "6.3.4",
+    "lerna": "3.20.2",
+    "lint-staged": "10.1.5",
+    "prettier": "2.0.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "4.4.1",
+    "tsc-files": "^1.0.0",
+    "typescript": "3.8.3"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "lint-staged": {
+    "*.{md,mdx,html,yaml,yml}": [
+      "npx prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "eslint --ext .js,.jsx,.ts,.tsx"
+    ],
+    "*{.js,.jsx,.ts,.tsx}": [
+      "npm run test -- --findRelatedTests"
+    ],
+    "*.{ts,tsx}": [
+      "tsc-files --noEmit -p tsconfig.json"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

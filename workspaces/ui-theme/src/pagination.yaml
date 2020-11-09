@@ -1,0 +1,52 @@
+space: pagination
+gap:
+  s:
+    margin: $layout.whitespace.s 0
+  m:
+    margin: $layout.whitespace.m 0
+  l:
+    margin: $layout.whitespace.l 0
+pager:
+  base:
+    border-radius: $border.radius.s
+    font-weight: $typography.weight.medium
+    border-color: transparent
+    border-width: 2px
+    color: $color.text.primary
+    background: none
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease
+  size:
+    s:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      height: $layout.size.s
+      min-width: $layout.size.s
+    m:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      height: $layout.size.m
+      min-width: $layout.size.m
+    l:
+      font-size: $typography.b.b4.size
+      line-height: $typography.b.b4.height
+      height: $layout.size.l
+      min-width: $layout.size.l
+  hover:
+    background: $color.primary.seattle.c05
+    color: $color.primary.oslo.c100
+  click:
+    background: $color.primary.seattle.c10
+    color: $color.primary.oslo.c100
+  active:
+    color: $color.text.primary
+    background: $color.primary.seattle.c10
+  disabled:
+    color: $color.primary.london.c120
+    border-color: transparent
+  gap:
+    s:
+      margin-right: $layout.whitespace.s
+    l:
+      margin-right: $layout.whitespace.l
+    m:
+      margin-right: $layout.whitespace.m

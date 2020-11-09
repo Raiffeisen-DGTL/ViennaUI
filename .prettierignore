@@ -1,0 +1,10 @@
+node_modules
+dist
+esm
+workspaces/icons/src
+workspaces/ui-pictogram/src
+.docz
+CHANGELOG.md
+package.json
+package-lock.json
+workspaces/dashboard/reports

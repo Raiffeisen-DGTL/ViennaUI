@@ -1,0 +1,128 @@
+space: typography
+weight:
+  thin:
+    font-weight: $typography.weight.thin
+  extra-light:
+    font-weight: $typography.weight.extra-light
+  light:
+    font-weight: $typography.weight.light
+  normal:
+    font-weight: $typography.weight.normal
+  medium:
+    font-weight: $typography.weight.medium
+  semi-bold:
+    font-weight: $typography.weight.semi-bold
+  bold:
+    font-weight: $typography.weight.bold
+  extra-bold:
+    font-weight: $typography.weight.extra-bold
+  black:
+    font-weight: $typography.weight.black
+color:
+  brand-accent:
+    color: $color.primary.brand.accent
+  brand-white:
+    color: $color.primary.brand.white
+  brand-primary:
+    color: $color.primary.brand.primary
+  geneva100:
+    color: $color.utilitarian.geneva.c100
+  moscow100:
+    color: $color.utilitarian.moscow.c100
+  osaka100:
+    color: $color.utilitarian.osaka.c100
+  seattle01:
+    color: $color.primary.seattle.c01
+  seattle05:
+    color: $color.primary.seattle.c05
+  seattle10:
+    color: $color.primary.seattle.c10
+  seattle30:
+    color: $color.primary.seattle.c30
+  seattle60:
+    color: $color.primary.seattle.c60
+  seattle100:
+    color: $color.primary.seattle.c100
+  seattle120:
+    color: $color.primary.seattle.c120
+  seattle140:
+    color: $color.primary.seattle.c140
+  currentColor:
+    color: currentColor
+heading:
+  base:
+    font-family: $typography.a.family
+    font-stretch: normal
+    font-style: normal
+    font-weight: normal !important # Fix font-weight: bold for Safari and custom font
+    letter-spacing: normal
+    margin: 0
+  size:
+    xl:
+      font-size: $typography.a.a5.size
+      line-height: $typography.a.a5.height
+    l:
+      font-size: $typography.a.a4.size
+      line-height: $typography.a.a4.height
+    m:
+      font-size: $typography.a.a3.size
+      line-height: $typography.a.a3.height
+    s:
+      font-size: $typography.a.a2.size
+      line-height: $typography.a.a2.height
+    xs:
+      font-size: $typography.a.a1.size
+      line-height: $typography.a.a1.height
+  margin:
+    xxs:
+      margin-bottom: 4px
+    xs:
+      margin-bottom: 8px
+    s:
+      margin-bottom: 12px
+    m:
+      margin-bottom: 16px
+    l:
+      margin-bottom: 20px
+    xl:
+      margin-bottom: 24px
+    xxl:
+      margin-bottom: 32px
+text:
+  base:
+    font-family: $typography.b.family
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    margin: 0
+  size:
+    xxl:
+      font-size: $typography.b.b5.size
+      line-height: $typography.b.b5.height
+    xl:
+      font-size: $typography.b.b4.size
+      line-height: $typography.b.b4.height
+    l:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+    s:
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+  margin:
+    xxs:
+      margin-bottom: 4px
+    xs:
+      margin-bottom: 8px
+    s:
+      margin-bottom: 12px
+    m:
+      margin-bottom: 16px
+    l:
+      margin-bottom: 20px
+    xl:
+      margin-bottom: 24px
+    xxl:
+      margin-bottom: 32px

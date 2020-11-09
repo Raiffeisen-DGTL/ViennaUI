@@ -1,0 +1,32 @@
+space: toolbar
+
+base:
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  height: 62px
+  padding-left: $layout.whitespace.xl
+  padding-right: $layout.whitespace.xl
+design:
+  dark:
+    background-color: $color.primary.brand.primary
+
+button:
+  design:
+    dark:
+      color: $color.primary.brand.white
+  hover:
+    dark:
+      color: $color.primary.brand.accent
+
+tab:
+  base:
+    padding-left: $layout.whitespace.xxl
+    cursor: pointer
+    display: flex
+    align-items: center
+  button:
+    height: $layout.size.xs
+  inList:
+    padding: $layout.whitespace.xs $layout.whitespace.m

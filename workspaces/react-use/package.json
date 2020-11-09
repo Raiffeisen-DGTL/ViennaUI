@@ -1,0 +1,55 @@
+{
+  "name": "vienna.react-use",
+  "description": "Raiffeisenbank Design System React Hooks Library",
+  "version": "1.0.2",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": ""
+  },
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "hooks"
+  ],
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:ts",
+    "build:cjs": "rimraf ./dist && npx babel ./src --extensions \".ts,.tsx\" --out-dir dist --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:esm": "cross-env BABEL_ENV=esm && rimraf ./esm && npx babel ./src --extensions \".ts,.tsx\" --out-dir esm --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:ts": "tsc --emitDeclarationOnly --project ./ --rootDir ./src --declarationDir dist"
+  },
+  "dependencies": {
+    "imask": "^6.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-typescript": "7.9.0",
+    "vienna.config-typescript": "^1.0.1",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.6",
+    "@types/styled-components": "4.4.0",
+    "cross-env": "7.0.2",
+    "imask": "^6.0.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "rimraf": "3.0.2",
+    "styled-components": "4.4.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "imask": "^6.0.5",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "styled-components": ">=4.0.0"
+  },
+  "bugs": {
+    "email": "ds@raiffeisen.ru"
+  },
+  "sideEffects": false
+}

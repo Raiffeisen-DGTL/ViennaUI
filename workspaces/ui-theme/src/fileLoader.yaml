@@ -1,0 +1,100 @@
+space: fileLoader
+imports: ['../typography.yaml']
+
+container:
+  base:
+    width: 100%
+    height: 100%
+    background-color: $color.primary.seattle.c05
+    border: 1px dashed $color.primary.seattle.c30
+    box-sizing: border-box
+    border-radius: $border.radius.m
+    padding: $layout.whitespace.xl
+    transition: all 0.2s
+    color: $color.primary.seattle.c100
+  invalid:
+    border-color: $color.utilitarian.moscow.c100
+  over:
+    background-color: $color.primary.oslo.c10
+    border-color: $color.primary.oslo.c100
+  disabled:
+    border-color: $color.primary.seattle.c10
+    # все элементы внутри должны стать менее яркими по шрифту, так как за наполнение я не отвечаю, то Important
+    color: $color.primary.london.c120 !important
+
+list:
+  base:
+    width: 100%
+    margin-top: $layout.whitespace.xxl
+
+content:
+  base:
+    ref: $typography.text.base
+    color: $color.text.primary
+    width: 100%;
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+
+subContent:
+  base:
+    ref: $typography.text.base
+    color: $color.primary.seattle.c60
+    width: 100%;
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    margin-top: $layout.whitespace.xxs
+
+file:
+  container:
+    base:
+      width: 100%
+      height: 72px
+
+  icon:
+    base:
+      ref: $typography.text.base
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+      # IE не умеет читать размер из min/max для центровки при flex
+      min-height: 40px
+      height: 40px
+      width: 40px
+      min-width: 40px
+      background-color: $color.secondary.basic.paris.c10
+      border-radius: $border.radius.s
+      color: $color.text.primary
+  image:
+    base:
+      margin: 6px
+  main:
+    base:
+      margin-left: $layout.whitespace.m
+      margin-right: $layout.whitespace.m
+      width: 100%
+      height: 100%
+  name:
+    base:
+      ref: $typography.text.base
+      font-weight: $typography.weight.medium
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      margin-bottom: $layout.whitespace.xxs
+      color: $color.text.primary
+    focus:
+      color: $color.primary.oslo.c120
+  data:
+    base:
+      ref: $typography.text.base
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+      margin-bottom: $layout.whitespace.xs
+      color: $color.text.tertiary
+    invalid:
+      color: $color.utilitarian.moscow.c100
+  closeIcon:
+    base:
+      transition: all 0.2s
+      color: $color.primary.seattle.c100
+      min-width: $layout.size.xxs
+    focus:
+      color: $color.primary.oslo.c120

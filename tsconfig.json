@@ -1,0 +1,9 @@
+{
+  "extends": "vienna.config-typescript/tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["typings/*.d.ts", "workspaces/**/*", "workspaces/**/typings/*.d.ts"],
+  "exclude": ["node_modules", "dist", "esm"],
+  "typeRoots": ["./typings"]
+}

@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ any props 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 hulLdv className"
+  id="id"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ buttons 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 glpvLL"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      &gt;This is a test alert message.
+    </div>
+    <div
+      class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+    >
+      <div
+        class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+      >
+        <div
+          class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+        >
+          <button
+            class="Buttonstyles__Box-sc-1cce11-0 cjHDso"
+            type="button"
+          >
+            <span
+              class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+            >
+              Complete
+            </span>
+          </button>
+        </div>
+        <div
+          class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+        >
+          <button
+            class="Buttonstyles__Box-sc-1cce11-0 idLsVY"
+            type="button"
+          >
+            <span
+              class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+            >
+              Cancel
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ compact 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 kcdTcI"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ design 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ design 2`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 guMwAp"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ design 3`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 bFtnrV"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ design 4`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 eGmpde"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/ dynamic 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 jwDwtS"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/o icon 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div
+      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+    >
+      Alert title
+    </div>
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert w/o title 1`] = `
+<div
+  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+>
+  <div
+    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+  >
+    <svg
+      fill="currentColor"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+      />
+    </svg>
+  </div>
+  <div
+    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+  >
+    <div>
+      This is a test alert message.
+    </div>
+  </div>
+</div>
+`;

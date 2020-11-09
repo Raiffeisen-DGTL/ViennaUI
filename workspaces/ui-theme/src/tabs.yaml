@@ -1,0 +1,76 @@
+space: tabs
+imports: ['../typography.yaml']
+
+base:
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+
+tab:
+  base:
+    ref: $typography.text.base
+    font-weight: $typography.weight.medium
+    color: $color.primary.seattle.c100
+    height: 100%
+    cursor: pointer
+    transition: color 0.2s
+    display: flex
+    align-items: center
+    justify-content: space-between
+  line:
+    base:
+      transition: all 0.2s
+      bottom: 0
+      height: $layout.whitespace.xxs
+    left:
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    right:
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    design:
+      accent:
+        background-color: $color.primary.brand.accent
+      primary:
+        background-color: $color.primary.brand.primary
+  size:
+    l:
+      margin-right: $layout.whitespace.xxl
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      padding-bottom: 8px
+    m:
+      margin-right: $layout.whitespace.xl
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      padding-bottom: 8px
+    s:
+      margin-right: $layout.whitespace.m
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+      padding-bottom: 4px
+  active:
+    color: $color.primary.brand.primary
+  disabled:
+    color: $color.primary.london.c120 !important
+    #comment important требуется чтобы переписать цвет когда tab оказывается внутри листа
+    cursor: not-allowed
+    pointer-events: none
+  hover:
+    color: $color.primary.brand.primary
+
+combineTab:
+  base:
+    display: flex
+    align-items: center
+  item:
+    l:
+      margin-right: $layout.whitespace.xxl
+      font-size: $typography.b.b3.size
+    m:
+      margin-right: $layout.whitespace.xl
+      font-size: $typography.b.b2.size
+    s:
+      margin-right: $layout.whitespace.m
+      font-size: $typography.b.b1.size

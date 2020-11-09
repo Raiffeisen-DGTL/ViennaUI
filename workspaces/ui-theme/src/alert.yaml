@@ -1,0 +1,112 @@
+space: alert
+imports: ['../typography.yaml']
+
+base:
+  ref: $typography.text.base
+  font-size: $typography.b.b2.size
+  line-height: $typography.b.b2.height
+  border-radius: $border.radius.m
+  padding: $layout.whitespace.m
+  padding-right: $layout.whitespace.xl
+  box-sizing: border-box
+  width: 100%
+
+design:
+  success:
+    background-color: $color.utilitarian.geneva.c10
+    color: $color.utilitarian.geneva.c120
+  warning:
+    background-color: $color.utilitarian.osaka.c10
+    color: $color.utilitarian.osaka.c120
+  error:
+    background-color: $color.utilitarian.moscow.c10
+    color: $color.utilitarian.moscow.c120
+  plain:
+    background-color: $color.primary.brand.wildsand
+    color: $color.primary.brand.primary
+
+dynamic:
+  width: auto
+
+icon:
+  width: 24px
+  height: 24px
+  margin-right: $layout.whitespace.s
+
+textContainer:
+  width: inherit
+
+title:
+  font-weight: $typography.weight.bold
+  margin-right: $layout.whitespace.xs
+  white-space: nowrap
+
+titleGap:
+  margin-bottom: $layout.whitespace.xs
+
+actionsGap:
+  margin-top: $layout.whitespace.m
+
+buttons:
+  base:
+    height: $layout.size.s
+    borderRadius: $border.radius.s
+    background: transparent
+
+  design:
+    success:
+      design:
+        primary:
+          color: $color.utilitarian.geneva.c120
+          border: solid 2px $color.utilitarian.geneva.c30
+        ghost:
+          color: $color.utilitarian.geneva.c120
+          padding: 0
+      hover:
+        primary:
+          color: $color.utilitarian.geneva.c120
+          border: solid 2px $color.utilitarian.geneva.c120
+        ghost:
+          color: $color.utilitarian.geneva.c100
+    warning:
+      design:
+        primary:
+          color: $color.utilitarian.osaka.c120
+          border: solid 2px $color.utilitarian.osaka.c30
+        ghost:
+          color: $color.utilitarian.osaka.c120
+          padding: 0
+      hover:
+        primary:
+          color: $color.utilitarian.osaka.c120
+          border: solid 2px $color.utilitarian.osaka.c100
+        ghost:
+          color: $color.utilitarian.osaka.c100
+    error:
+      design:
+        primary:
+          color: $color.utilitarian.moscow.c120
+          border: solid 2px $color.utilitarian.moscow.c30
+        ghost:
+          color: $color.utilitarian.moscow.c120
+          padding: 0
+      hover:
+        primary:
+          color: $color.utilitarian.moscow.c120
+          border: solid 2px $color.utilitarian.moscow.c100
+        ghost:
+          color: $color.utilitarian.moscow.c100
+    plain:
+      design:
+        primary:
+          color: $color.primary.brand.primary
+          border: solid 2px $color.primary.seattle.c30
+        ghost:
+          color: $color.primary.brand.primary
+          padding: 0
+      hover:
+        primary:
+          color: $color.primary.brand.primary
+          border: solid 2px $color.primary.brand.primary
+        ghost:
+          color: $color.primary.brand.onPrimary

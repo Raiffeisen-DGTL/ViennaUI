@@ -1,0 +1,154 @@
+space: button
+imports: ['./button.yaml']
+
+base:
+  border-radius: $border.radius.m
+  border-color: transparent
+  font-family: $typography.b.family
+  font-weight: $typography.weight.medium
+  text-decoration: none
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease
+
+size:
+  xxl:
+    font-size: $typography.b.b3.size
+    line-height: $typography.b.b3.height
+    padding: 0 $layout.whitespace.xl
+    height: $layout.size.xxl
+    min-width: $layout.size.xxl
+  xl:
+    font-size: $typography.b.b3.size
+    line-height: $typography.b.b3.height
+    padding: 0 $layout.whitespace.xl
+    height: $layout.size.xl
+    min-width: $layout.size.xl
+  l:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding: 0 $layout.whitespace.l
+    height: $layout.size.l
+    min-width: $layout.size.l
+  m:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding: 0 $layout.whitespace.l
+    height: $layout.size.m
+    min-width: $layout.size.m
+  s:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding: 0 $layout.whitespace.m
+    height: $layout.size.s
+    min-width: $layout.size.s
+  xs:
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    padding: 0 $layout.whitespace.s
+    height: $layout.size.xs
+    min-width: $layout.size.xs
+    border-radius: $border.radius.s
+
+design:
+  accent:
+    color: $color.primary.brand.primary
+    background-color: $color.primary.brand.accent
+  primary:
+    color: $color.primary.brand.white
+    background-color: $color.primary.brand.primary
+  critical:
+    color: $color.primary.brand.white
+    background-color: $color.utilitarian.moscow.c100
+  outline:
+    color: $color.primary.brand.primary
+    background-color: transparent
+    border: solid 2px $color.primary.seattle.c30
+  outline-critical:
+    color: $color.primary.brand.primary
+    background-color: transparent
+    border: solid 2px $color.utilitarian.moscow.c100
+  ghost:
+    color: $color.primary.brand.primary
+    background-color: transparent
+    padding: 0
+
+hover:
+  accent:
+    background-color: $color.primary.brand.onAccent
+    color: $color.primary.brand.primary
+  primary:
+    background-color: $color.primary.brand.onPrimary
+    color: $color.primary.brand.white
+  critical:
+    background-color: $color.utilitarian.moscow.c120
+    color: $color.primary.brand.white
+  outline:
+    color: $color.primary.brand.primary
+    border: solid 2px $color.primary.brand.primary
+  outline-critical:
+    color: $color.primary.brand.primary
+    border: solid 2px $color.primary.brand.primary
+  ghost:
+    color: $color.primary.oslo.c120
+
+disabled:
+  accent:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.seattle.c60
+    background-color: $color.primary.seattle.c10
+    transition: none
+  primary:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.seattle.c60
+    background-color: $color.primary.seattle.c10
+    transition: none
+  critical:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.seattle.c60
+    background-color: $color.primary.seattle.c10
+    transition: none
+  outline:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.seattle.c30
+    background-color: transparent
+    border: solid 2px $color.primary.seattle.c10
+    transition: none
+  outline-critical:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.seattle.c30
+    background-color: transparent
+    border: solid 2px $color.primary.seattle.c10
+    transition: none
+  ghost:
+    pointer-events: none
+    cursor: not-allowed
+    color: $color.primary.london.c120
+    transition: none
+
+loading:
+  cursor: default
+  color: transparent
+  transition: none
+
+focus:
+  transition: none
+  border-color: transparent
+  box-shadow: 0 0 0 2px $color.primary.oslo.c100
+
+gap:
+  xxl:
+    margin-right: $layout.whitespace.s
+  xl:
+    margin-right: $layout.whitespace.xs
+  l:
+    margin-right: $layout.whitespace.xs
+  m:
+    margin-right: $layout.whitespace.xs
+  s:
+    margin-right: $layout.whitespace.xs
+  xs:
+    margin-right: $layout.whitespace.xxs

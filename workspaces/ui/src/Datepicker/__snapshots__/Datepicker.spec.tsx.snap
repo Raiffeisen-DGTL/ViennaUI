@@ -1,0 +1,3268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Datepicker /w complete 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  class="c0"
+  data-marker="Datepicker.Box"
+>
+  <div
+    class="c1"
+    data-marker="Datepicker.InputBox"
+  >
+    <div
+      class="c2"
+      data-marker="Input.InputWrapper"
+    >
+      <div
+        class="c3"
+        data-marker="InputWrapper.Wrapped"
+      >
+        <div
+          class="c4"
+          data-marker="NativeInput.Box"
+        >
+          <div
+            class="c5"
+            data-marker="NativeInput.PlaceholderWrapper"
+          >
+            <div
+              class="c6"
+              data-marker="NativeInput.Placeholder"
+            >
+              11.12.1900
+            </div>
+          </div>
+          <input
+            aria-invalid="false"
+            class="c7"
+            data-marker="Datepicker_1"
+          />
+        </div>
+      </div>
+      <div
+        class="c8"
+        data-marker="InputWrapper.Postfix"
+      >
+        <svg
+          data-marker="Datepicker.CalendarIcon"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Calendar.defs"
+          />
+          <path
+            d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+            data-marker="Calendar.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Datepicker /w date not in range 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<Datepicker
+  data-marker="Datepicker_4"
+  isCalendarOpen={false}
+  maxDate={2020-06-15T20:59:59.999Z}
+  minDate={2020-06-01T21:00:00.000Z}
+  todayButton={true}
+  value={2020-06-16T21:00:00.000Z}
+>
+  <Datepickerstyles__Box
+    data-marker="Datepicker.Box"
+  >
+    <StyledComponent
+      data-marker="Datepicker.Box"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Datepickerstyles__Box-xxd6kf-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "position:relative;display:flex;flex-direction:column;",
+            ],
+          },
+          "displayName": "Datepickerstyles__Box",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Datepickerstyles__Box-xxd6kf-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+            class="c0"
+            data-marker="Datepicker.Box"
+          >
+            <div
+              class="c1"
+              data-marker="Datepicker.InputBox"
+            >
+              <div
+                class="c2"
+                data-marker="Input.InputWrapper"
+              >
+                <div
+                  class="c3"
+                  data-marker="InputWrapper.Wrapped"
+                >
+                  <div
+                    class="c4"
+                    data-marker="NativeInput.Box"
+                  >
+                    <div
+                      class="c5"
+                      data-marker="NativeInput.PlaceholderWrapper"
+                    >
+                      <div
+                        class="c6"
+                        data-marker="NativeInput.Placeholder"
+                      >
+                        17.06.2020
+                      </div>
+                    </div>
+                    <input
+                      aria-invalid="false"
+                      class="c7"
+                      data-marker="Datepicker_4"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="c8"
+                  data-marker="InputWrapper.Postfix"
+                >
+                  <svg
+                    data-marker="Datepicker.CalendarIcon"
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs
+                      data-marker="Calendar.defs"
+                    />
+                    <path
+                      d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+                      data-marker="Calendar.path"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+        data-marker="Datepicker.Box"
+      >
+        <Datepickerstyles__InputBox
+          data-marker="Datepicker.InputBox"
+        >
+          <StyledComponent
+            data-marker="Datepicker.InputBox"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Datepickerstyles__InputBox-xxd6kf-1",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "position:relative;",
+                  ],
+                },
+                "displayName": "Datepickerstyles__InputBox",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Datepickerstyles__InputBox-xxd6kf-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+              data-marker="Datepicker.InputBox"
+            >
+              <InputDate
+                active={false}
+                data-marker="Datepicker_4"
+                max={2020-06-15T20:59:59.999Z}
+                min={2020-06-01T21:00:00.000Z}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyPress={[Function]}
+                postfix={
+                  <Calendar
+                    color="currentColor"
+                    data-marker="Datepicker.CalendarIcon"
+                    onClick={[Function]}
+                    size="m"
+                  />
+                }
+                value={2020-06-16T21:00:00.000Z}
+              >
+                <InputMask
+                  active={false}
+                  blocks={
+                    Object {
+                      "DATE": Object {
+                        "mask": [Function],
+                        "max": 2020-06-15T20:59:59.999Z,
+                        "min": 2020-06-01T21:00:00.000Z,
+                      },
+                    }
+                  }
+                  data-marker="Datepicker_4"
+                  design="outline"
+                  format={[Function]}
+                  lazy={true}
+                  mask="DATE"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyPress={[Function]}
+                  parse={[Function]}
+                  postfix={
+                    <Calendar
+                      color="currentColor"
+                      data-marker="Datepicker.CalendarIcon"
+                      onClick={[Function]}
+                      size="m"
+                    />
+                  }
+                  size="l"
+                  smartPlaceholder="17.06.2020"
+                  value="17.06.2020"
+                >
+                  <Input
+                    active={false}
+                    data-marker="Datepicker_4"
+                    design="outline"
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    postfix={
+                      <Calendar
+                        color="currentColor"
+                        data-marker="Datepicker.CalendarIcon"
+                        onClick={[Function]}
+                        size="m"
+                      />
+                    }
+                    size="l"
+                    smartPlaceholder="17.06.2020"
+                  >
+                    <InputWrapper
+                      active={false}
+                      data-marker="Input.InputWrapper"
+                      design="outline"
+                      size="l"
+                    >
+                      <Inputstyles__Wrapper
+                        active={false}
+                        data-marker="Input.InputWrapper"
+                        design="outline"
+                        size="l"
+                      >
+                        <StyledComponent
+                          active={false}
+                          data-marker="Input.InputWrapper"
+                          design="outline"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Inputstyles__Wrapper-keqbte-6",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "display:flex;flex-direction:row;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap;overflow:hidden;",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " &:hover{",
+                                  [Function],
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Inputstyles__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Inputstyles__Wrapper-keqbte-6",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          size="l"
+                        >
+                          <div
+                            className="c2"
+                            data-marker="Input.InputWrapper"
+                            size="l"
+                          >
+                            <Inputstyles__Wrapped
+                              data-marker="InputWrapper.Wrapped"
+                            >
+                              <StyledComponent
+                                data-marker="InputWrapper.Wrapped"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Inputstyles__Wrapped-keqbte-5",
+                                      "isStatic": false,
+                                      "lastClassName": "c3",
+                                      "rules": Array [
+                                        "width:100%;",
+                                        [Function],
+                                        " & > *,input{",
+                                        [Function],
+                                        "}",
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Inputstyles__Wrapped",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Inputstyles__Wrapped-keqbte-5",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c3"
+                                  data-marker="InputWrapper.Wrapped"
+                                >
+                                  <NativeInput
+                                    active={false}
+                                    aria-invalid={false}
+                                    data-marker="Datepicker_4"
+                                    design="outline"
+                                    key=".1"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyPress={[Function]}
+                                    size="l"
+                                    smartPlaceholder="17.06.2020"
+                                  >
+                                    <Inputstyles__Box
+                                      data-marker="NativeInput.Box"
+                                    >
+                                      <StyledComponent
+                                        data-marker="NativeInput.Box"
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "Inputstyles__Box-keqbte-1",
+                                              "isStatic": false,
+                                              "lastClassName": "c4",
+                                              "rules": Array [
+                                                "position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;line-height:normal;",
+                                              ],
+                                            },
+                                            "displayName": "Inputstyles__Box",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "Inputstyles__Box-keqbte-1",
+                                            "target": "div",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                      >
+                                        <div
+                                          className="c4"
+                                          data-marker="NativeInput.Box"
+                                        >
+                                          <Inputstyles__PlaceholderWrapper
+                                            data-marker="NativeInput.PlaceholderWrapper"
+                                          >
+                                            <StyledComponent
+                                              data-marker="NativeInput.PlaceholderWrapper"
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Inputstyles__PlaceholderWrapper-keqbte-7",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      "position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;",
+                                                    ],
+                                                  },
+                                                  "displayName": "Inputstyles__PlaceholderWrapper",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Inputstyles__PlaceholderWrapper-keqbte-7",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c5"
+                                                data-marker="NativeInput.PlaceholderWrapper"
+                                              >
+                                                <Inputstyles__Placeholder
+                                                  data-marker="NativeInput.Placeholder"
+                                                  design="outline"
+                                                  size="l"
+                                                >
+                                                  <StyledComponent
+                                                    data-marker="NativeInput.Placeholder"
+                                                    design="outline"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "Inputstyles__Placeholder-keqbte-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " line-height:normal;overflow:hidden;",
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "Inputstyles__Placeholder",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "Inputstyles__Placeholder-keqbte-0",
+                                                        "target": "div",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={
+                                                      Object {
+                                                        "current": <div
+                                                          class="c6"
+                                                          data-marker="NativeInput.Placeholder"
+                                                        >
+                                                          17.06.2020
+                                                        </div>,
+                                                      }
+                                                    }
+                                                    size="l"
+                                                  >
+                                                    <div
+                                                      className="c6"
+                                                      data-marker="NativeInput.Placeholder"
+                                                      size="l"
+                                                    >
+                                                      17.06.2020
+                                                    </div>
+                                                  </StyledComponent>
+                                                </Inputstyles__Placeholder>
+                                              </div>
+                                            </StyledComponent>
+                                          </Inputstyles__PlaceholderWrapper>
+                                          <Inputstyles__StyledInput
+                                            active={false}
+                                            aria-invalid={false}
+                                            data-marker="Datepicker_4"
+                                            design="outline"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            onKeyPress={[Function]}
+                                            onScroll={[Function]}
+                                            size="l"
+                                          >
+                                            <StyledComponent
+                                              active={false}
+                                              aria-invalid={false}
+                                              data-marker="Datepicker_4"
+                                              design="outline"
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Inputstyles__StyledInput-keqbte-2",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c7",
+                                                    "rules": Array [
+                                                      "position:relative;padding:0;",
+                                                      [Function],
+                                                      " ",
+                                                      [Function],
+                                                      " ",
+                                                      [Function],
+                                                      " &::placeholder{",
+                                                      [Function],
+                                                      "}&::-ms-clear,&::-ms-reveal{display:none;}",
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "Inputstyles__StyledInput",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Inputstyles__StyledInput-keqbte-2",
+                                                  "target": "input",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={
+                                                Object {
+                                                  "current": <input
+                                                    aria-invalid="false"
+                                                    class="c7"
+                                                    data-marker="Datepicker_4"
+                                                  />,
+                                                }
+                                              }
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              onKeyPress={[Function]}
+                                              onScroll={[Function]}
+                                              size="l"
+                                            >
+                                              <input
+                                                aria-invalid={false}
+                                                className="c7"
+                                                data-marker="Datepicker_4"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                                onFocus={[Function]}
+                                                onKeyPress={[Function]}
+                                                onScroll={[Function]}
+                                                size="l"
+                                              />
+                                            </StyledComponent>
+                                          </Inputstyles__StyledInput>
+                                        </div>
+                                      </StyledComponent>
+                                    </Inputstyles__Box>
+                                  </NativeInput>
+                                </div>
+                              </StyledComponent>
+                            </Inputstyles__Wrapped>
+                            <Inputstyles__Postfix
+                              active={false}
+                              data-marker="InputWrapper.Postfix"
+                              size="l"
+                            >
+                              <StyledComponent
+                                active={false}
+                                data-marker="InputWrapper.Postfix"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Inputstyles__Postfix-keqbte-4",
+                                      "isStatic": false,
+                                      "lastClassName": "c8",
+                                      "rules": Array [
+                                        "display:flex;align-items:center;justify-content:center;",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Inputstyles__Postfix",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Inputstyles__Postfix-keqbte-4",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                size="l"
+                              >
+                                <div
+                                  className="c8"
+                                  data-marker="InputWrapper.Postfix"
+                                  size="l"
+                                >
+                                  <Calendar
+                                    color="currentColor"
+                                    data-marker="Datepicker.CalendarIcon"
+                                    key=".2"
+                                    onClick={[Function]}
+                                    size="m"
+                                  >
+                                    <svg
+                                      data-marker="Datepicker.CalendarIcon"
+                                      fill="currentColor"
+                                      height={20}
+                                      onClick={[Function]}
+                                      viewBox="0 0 24 24"
+                                      width={20}
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs
+                                        data-marker="Calendar.defs"
+                                      />
+                                      <path
+                                        d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+                                        data-marker="Calendar.path"
+                                      />
+                                    </svg>
+                                  </Calendar>
+                                </div>
+                              </StyledComponent>
+                            </Inputstyles__Postfix>
+                          </div>
+                        </StyledComponent>
+                      </Inputstyles__Wrapper>
+                    </InputWrapper>
+                  </Input>
+                </InputMask>
+              </InputDate>
+            </div>
+          </StyledComponent>
+        </Datepickerstyles__InputBox>
+      </div>
+    </StyledComponent>
+  </Datepickerstyles__Box>
+</Datepicker>
+`;
+
+exports[`Datepicker /w date not in range and not fix value 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<Datepicker
+  data-marker="Datepicker_5"
+  isCalendarOpen={false}
+  maxDate={2020-06-15T20:59:59.999Z}
+  minDate={2020-06-01T21:00:00.000Z}
+  todayButton={true}
+  value={2020-06-16T21:00:00.000Z}
+>
+  <Datepickerstyles__Box
+    data-marker="Datepicker.Box"
+  >
+    <StyledComponent
+      data-marker="Datepicker.Box"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Datepickerstyles__Box-xxd6kf-0",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "position:relative;display:flex;flex-direction:column;",
+            ],
+          },
+          "displayName": "Datepickerstyles__Box",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Datepickerstyles__Box-xxd6kf-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+            class="c0"
+            data-marker="Datepicker.Box"
+          >
+            <div
+              class="c1"
+              data-marker="Datepicker.InputBox"
+            >
+              <div
+                class="c2"
+                data-marker="Input.InputWrapper"
+              >
+                <div
+                  class="c3"
+                  data-marker="InputWrapper.Wrapped"
+                >
+                  <div
+                    class="c4"
+                    data-marker="NativeInput.Box"
+                  >
+                    <div
+                      class="c5"
+                      data-marker="NativeInput.PlaceholderWrapper"
+                    >
+                      <div
+                        class="c6"
+                        data-marker="NativeInput.Placeholder"
+                      >
+                        17.06.2020
+                      </div>
+                    </div>
+                    <input
+                      aria-invalid="false"
+                      class="c7"
+                      data-marker="Datepicker_5"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="c8"
+                  data-marker="InputWrapper.Postfix"
+                >
+                  <svg
+                    data-marker="Datepicker.CalendarIcon"
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs
+                      data-marker="Calendar.defs"
+                    />
+                    <path
+                      d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+                      data-marker="Calendar.path"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <div
+        className="c0"
+        data-marker="Datepicker.Box"
+      >
+        <Datepickerstyles__InputBox
+          data-marker="Datepicker.InputBox"
+        >
+          <StyledComponent
+            data-marker="Datepicker.InputBox"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Datepickerstyles__InputBox-xxd6kf-1",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "position:relative;",
+                  ],
+                },
+                "displayName": "Datepickerstyles__InputBox",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Datepickerstyles__InputBox-xxd6kf-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+              data-marker="Datepicker.InputBox"
+            >
+              <InputDate
+                active={false}
+                data-marker="Datepicker_5"
+                max={2020-06-15T20:59:59.999Z}
+                min={2020-06-01T21:00:00.000Z}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyPress={[Function]}
+                postfix={
+                  <Calendar
+                    color="currentColor"
+                    data-marker="Datepicker.CalendarIcon"
+                    onClick={[Function]}
+                    size="m"
+                  />
+                }
+                value={2020-06-16T21:00:00.000Z}
+              >
+                <InputMask
+                  active={false}
+                  blocks={
+                    Object {
+                      "DATE": Object {
+                        "mask": [Function],
+                        "max": 2020-06-15T20:59:59.999Z,
+                        "min": 2020-06-01T21:00:00.000Z,
+                      },
+                    }
+                  }
+                  data-marker="Datepicker_5"
+                  design="outline"
+                  format={[Function]}
+                  lazy={true}
+                  mask="DATE"
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyPress={[Function]}
+                  parse={[Function]}
+                  postfix={
+                    <Calendar
+                      color="currentColor"
+                      data-marker="Datepicker.CalendarIcon"
+                      onClick={[Function]}
+                      size="m"
+                    />
+                  }
+                  size="l"
+                  smartPlaceholder="17.06.2020"
+                  value="17.06.2020"
+                >
+                  <Input
+                    active={false}
+                    data-marker="Datepicker_5"
+                    design="outline"
+                    onFocus={[Function]}
+                    onKeyPress={[Function]}
+                    postfix={
+                      <Calendar
+                        color="currentColor"
+                        data-marker="Datepicker.CalendarIcon"
+                        onClick={[Function]}
+                        size="m"
+                      />
+                    }
+                    size="l"
+                    smartPlaceholder="17.06.2020"
+                  >
+                    <InputWrapper
+                      active={false}
+                      data-marker="Input.InputWrapper"
+                      design="outline"
+                      size="l"
+                    >
+                      <Inputstyles__Wrapper
+                        active={false}
+                        data-marker="Input.InputWrapper"
+                        design="outline"
+                        size="l"
+                      >
+                        <StyledComponent
+                          active={false}
+                          data-marker="Input.InputWrapper"
+                          design="outline"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "Inputstyles__Wrapper-keqbte-6",
+                                "isStatic": false,
+                                "lastClassName": "c2",
+                                "rules": Array [
+                                  "display:flex;flex-direction:row;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap;overflow:hidden;",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " ",
+                                  [Function],
+                                  " &:hover{",
+                                  [Function],
+                                  "}",
+                                ],
+                              },
+                              "displayName": "Inputstyles__Wrapper",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "Inputstyles__Wrapper-keqbte-6",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          size="l"
+                        >
+                          <div
+                            className="c2"
+                            data-marker="Input.InputWrapper"
+                            size="l"
+                          >
+                            <Inputstyles__Wrapped
+                              data-marker="InputWrapper.Wrapped"
+                            >
+                              <StyledComponent
+                                data-marker="InputWrapper.Wrapped"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Inputstyles__Wrapped-keqbte-5",
+                                      "isStatic": false,
+                                      "lastClassName": "c3",
+                                      "rules": Array [
+                                        "width:100%;",
+                                        [Function],
+                                        " & > *,input{",
+                                        [Function],
+                                        "}",
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Inputstyles__Wrapped",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Inputstyles__Wrapped-keqbte-5",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                              >
+                                <div
+                                  className="c3"
+                                  data-marker="InputWrapper.Wrapped"
+                                >
+                                  <NativeInput
+                                    active={false}
+                                    aria-invalid={false}
+                                    data-marker="Datepicker_5"
+                                    design="outline"
+                                    key=".1"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onFocus={[Function]}
+                                    onKeyPress={[Function]}
+                                    size="l"
+                                    smartPlaceholder="17.06.2020"
+                                  >
+                                    <Inputstyles__Box
+                                      data-marker="NativeInput.Box"
+                                    >
+                                      <StyledComponent
+                                        data-marker="NativeInput.Box"
+                                        forwardedComponent={
+                                          Object {
+                                            "$$typeof": Symbol(react.forward_ref),
+                                            "attrs": Array [],
+                                            "componentStyle": ComponentStyle {
+                                              "componentId": "Inputstyles__Box-keqbte-1",
+                                              "isStatic": false,
+                                              "lastClassName": "c4",
+                                              "rules": Array [
+                                                "position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;line-height:normal;",
+                                              ],
+                                            },
+                                            "displayName": "Inputstyles__Box",
+                                            "foldedComponentIds": Array [],
+                                            "render": [Function],
+                                            "styledComponentId": "Inputstyles__Box-keqbte-1",
+                                            "target": "div",
+                                            "toString": [Function],
+                                            "warnTooManyClasses": [Function],
+                                            "withComponent": [Function],
+                                          }
+                                        }
+                                        forwardedRef={null}
+                                      >
+                                        <div
+                                          className="c4"
+                                          data-marker="NativeInput.Box"
+                                        >
+                                          <Inputstyles__PlaceholderWrapper
+                                            data-marker="NativeInput.PlaceholderWrapper"
+                                          >
+                                            <StyledComponent
+                                              data-marker="NativeInput.PlaceholderWrapper"
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Inputstyles__PlaceholderWrapper-keqbte-7",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c5",
+                                                    "rules": Array [
+                                                      "position:absolute;left:0;top:0;width:100%;height:100%;display:flex;align-items:center;",
+                                                    ],
+                                                  },
+                                                  "displayName": "Inputstyles__PlaceholderWrapper",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Inputstyles__PlaceholderWrapper-keqbte-7",
+                                                  "target": "div",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={null}
+                                            >
+                                              <div
+                                                className="c5"
+                                                data-marker="NativeInput.PlaceholderWrapper"
+                                              >
+                                                <Inputstyles__Placeholder
+                                                  data-marker="NativeInput.Placeholder"
+                                                  design="outline"
+                                                  size="l"
+                                                >
+                                                  <StyledComponent
+                                                    data-marker="NativeInput.Placeholder"
+                                                    design="outline"
+                                                    forwardedComponent={
+                                                      Object {
+                                                        "$$typeof": Symbol(react.forward_ref),
+                                                        "attrs": Array [],
+                                                        "componentStyle": ComponentStyle {
+                                                          "componentId": "Inputstyles__Placeholder-keqbte-0",
+                                                          "isStatic": false,
+                                                          "lastClassName": "c6",
+                                                          "rules": Array [
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " ",
+                                                            [Function],
+                                                            " line-height:normal;overflow:hidden;",
+                                                            [Function],
+                                                          ],
+                                                        },
+                                                        "displayName": "Inputstyles__Placeholder",
+                                                        "foldedComponentIds": Array [],
+                                                        "render": [Function],
+                                                        "styledComponentId": "Inputstyles__Placeholder-keqbte-0",
+                                                        "target": "div",
+                                                        "toString": [Function],
+                                                        "warnTooManyClasses": [Function],
+                                                        "withComponent": [Function],
+                                                      }
+                                                    }
+                                                    forwardedRef={
+                                                      Object {
+                                                        "current": <div
+                                                          class="c6"
+                                                          data-marker="NativeInput.Placeholder"
+                                                        >
+                                                          17.06.2020
+                                                        </div>,
+                                                      }
+                                                    }
+                                                    size="l"
+                                                  >
+                                                    <div
+                                                      className="c6"
+                                                      data-marker="NativeInput.Placeholder"
+                                                      size="l"
+                                                    >
+                                                      17.06.2020
+                                                    </div>
+                                                  </StyledComponent>
+                                                </Inputstyles__Placeholder>
+                                              </div>
+                                            </StyledComponent>
+                                          </Inputstyles__PlaceholderWrapper>
+                                          <Inputstyles__StyledInput
+                                            active={false}
+                                            aria-invalid={false}
+                                            data-marker="Datepicker_5"
+                                            design="outline"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            onKeyPress={[Function]}
+                                            onScroll={[Function]}
+                                            size="l"
+                                          >
+                                            <StyledComponent
+                                              active={false}
+                                              aria-invalid={false}
+                                              data-marker="Datepicker_5"
+                                              design="outline"
+                                              forwardedComponent={
+                                                Object {
+                                                  "$$typeof": Symbol(react.forward_ref),
+                                                  "attrs": Array [],
+                                                  "componentStyle": ComponentStyle {
+                                                    "componentId": "Inputstyles__StyledInput-keqbte-2",
+                                                    "isStatic": false,
+                                                    "lastClassName": "c7",
+                                                    "rules": Array [
+                                                      "position:relative;padding:0;",
+                                                      [Function],
+                                                      " ",
+                                                      [Function],
+                                                      " ",
+                                                      [Function],
+                                                      " &::placeholder{",
+                                                      [Function],
+                                                      "}&::-ms-clear,&::-ms-reveal{display:none;}",
+                                                      [Function],
+                                                    ],
+                                                  },
+                                                  "displayName": "Inputstyles__StyledInput",
+                                                  "foldedComponentIds": Array [],
+                                                  "render": [Function],
+                                                  "styledComponentId": "Inputstyles__StyledInput-keqbte-2",
+                                                  "target": "input",
+                                                  "toString": [Function],
+                                                  "warnTooManyClasses": [Function],
+                                                  "withComponent": [Function],
+                                                }
+                                              }
+                                              forwardedRef={
+                                                Object {
+                                                  "current": <input
+                                                    aria-invalid="false"
+                                                    class="c7"
+                                                    data-marker="Datepicker_5"
+                                                  />,
+                                                }
+                                              }
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              onKeyPress={[Function]}
+                                              onScroll={[Function]}
+                                              size="l"
+                                            >
+                                              <input
+                                                aria-invalid={false}
+                                                className="c7"
+                                                data-marker="Datepicker_5"
+                                                onBlur={[Function]}
+                                                onChange={[Function]}
+                                                onFocus={[Function]}
+                                                onKeyPress={[Function]}
+                                                onScroll={[Function]}
+                                                size="l"
+                                              />
+                                            </StyledComponent>
+                                          </Inputstyles__StyledInput>
+                                        </div>
+                                      </StyledComponent>
+                                    </Inputstyles__Box>
+                                  </NativeInput>
+                                </div>
+                              </StyledComponent>
+                            </Inputstyles__Wrapped>
+                            <Inputstyles__Postfix
+                              active={false}
+                              data-marker="InputWrapper.Postfix"
+                              size="l"
+                            >
+                              <StyledComponent
+                                active={false}
+                                data-marker="InputWrapper.Postfix"
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "Inputstyles__Postfix-keqbte-4",
+                                      "isStatic": false,
+                                      "lastClassName": "c8",
+                                      "rules": Array [
+                                        "display:flex;align-items:center;justify-content:center;",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                        " ",
+                                        [Function],
+                                      ],
+                                    },
+                                    "displayName": "Inputstyles__Postfix",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "Inputstyles__Postfix-keqbte-4",
+                                    "target": "div",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                size="l"
+                              >
+                                <div
+                                  className="c8"
+                                  data-marker="InputWrapper.Postfix"
+                                  size="l"
+                                >
+                                  <Calendar
+                                    color="currentColor"
+                                    data-marker="Datepicker.CalendarIcon"
+                                    key=".2"
+                                    onClick={[Function]}
+                                    size="m"
+                                  >
+                                    <svg
+                                      data-marker="Datepicker.CalendarIcon"
+                                      fill="currentColor"
+                                      height={20}
+                                      onClick={[Function]}
+                                      viewBox="0 0 24 24"
+                                      width={20}
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <defs
+                                        data-marker="Calendar.defs"
+                                      />
+                                      <path
+                                        d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+                                        data-marker="Calendar.path"
+                                      />
+                                    </svg>
+                                  </Calendar>
+                                </div>
+                              </StyledComponent>
+                            </Inputstyles__Postfix>
+                          </div>
+                        </StyledComponent>
+                      </Inputstyles__Wrapper>
+                    </InputWrapper>
+                  </Input>
+                </InputMask>
+              </InputDate>
+            </div>
+          </StyledComponent>
+        </Datepickerstyles__InputBox>
+      </div>
+    </StyledComponent>
+  </Datepickerstyles__Box>
+</Datepicker>
+`;
+
+exports[`Datepicker /w invalid 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  class="c0"
+  data-marker="Datepicker.Box"
+>
+  <div
+    class="c1"
+    data-marker="Datepicker.InputBox"
+  >
+    <div
+      class="c2"
+      data-marker="Input.InputWrapper"
+    >
+      <div
+        class="c3"
+        data-marker="InputWrapper.Wrapped"
+      >
+        <div
+          class="c4"
+          data-marker="NativeInput.Box"
+        >
+          <div
+            class="c5"
+            data-marker="NativeInput.PlaceholderWrapper"
+          >
+            <div
+              class="c6"
+              data-marker="NativeInput.Placeholder"
+            >
+              ДД.ММ.ГГГГ
+            </div>
+          </div>
+          <input
+            aria-invalid="true"
+            class="c7"
+            data-marker="Datepicker_6"
+          />
+        </div>
+      </div>
+      <div
+        class="c8"
+        data-marker="InputWrapper.Postfix"
+      >
+        <svg
+          data-marker="Datepicker.CalendarIcon"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Calendar.defs"
+          />
+          <path
+            d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+            data-marker="Calendar.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Datepicker /w not complete 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  class="c0"
+  data-marker="Datepicker.Box"
+>
+  <div
+    class="c1"
+    data-marker="Datepicker.InputBox"
+  >
+    <div
+      class="c2"
+      data-marker="Input.InputWrapper"
+    >
+      <div
+        class="c3"
+        data-marker="InputWrapper.Wrapped"
+      >
+        <div
+          class="c4"
+          data-marker="NativeInput.Box"
+        >
+          <div
+            class="c5"
+            data-marker="NativeInput.PlaceholderWrapper"
+          >
+            <div
+              class="c6"
+              data-marker="NativeInput.Placeholder"
+            >
+              22.02.ГГГГ
+            </div>
+          </div>
+          <input
+            aria-invalid="false"
+            class="c7"
+            data-marker="Datepicker_0"
+          />
+        </div>
+      </div>
+      <div
+        class="c8"
+        data-marker="InputWrapper.Postfix"
+      >
+        <svg
+          data-marker="Datepicker.CalendarIcon"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Calendar.defs"
+          />
+          <path
+            d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+            data-marker="Calendar.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Datepicker 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+  class="c0"
+  data-marker="Datepicker.Box"
+>
+  <div
+    class="c1"
+    data-marker="Datepicker.InputBox"
+  >
+    <div
+      class="c2"
+      data-marker="Input.InputWrapper"
+    >
+      <div
+        class="c3"
+        data-marker="InputWrapper.Wrapped"
+      >
+        <div
+          class="c4"
+          data-marker="NativeInput.Box"
+        >
+          <div
+            class="c5"
+            data-marker="NativeInput.PlaceholderWrapper"
+          >
+            <div
+              class="c6"
+              data-marker="NativeInput.Placeholder"
+            >
+              ДД.ММ.ГГГГ
+            </div>
+          </div>
+          <input
+            aria-invalid="false"
+            class="c7"
+            data-marker="Datepicker"
+          />
+        </div>
+      </div>
+      <div
+        class="c8"
+        data-marker="InputWrapper.Postfix"
+      >
+        <svg
+          data-marker="Datepicker.CalendarIcon"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Calendar.defs"
+          />
+          <path
+            d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
+            data-marker="Calendar.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

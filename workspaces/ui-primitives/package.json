@@ -1,0 +1,53 @@
+{
+  "name": "vienna.ui-primitives",
+  "description": "Raiffeisenbank Design System Primitives",
+  "version": "1.0.0",
+  "license": "NO LICENSE",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "utils"
+  ],
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:ts",
+    "build:cjs": "rimraf ./dist && npx babel ./src --extensions \".ts,.tsx\" --out-dir dist --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:esm": "cross-env BABEL_ENV=esm && rimraf ./esm && npx babel ./src --extensions \".ts,.tsx\" --out-dir esm --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:ts": "tsc --emitDeclarationOnly --project ./ --rootDir ./src --declarationDir dist"
+  },
+  "files": [
+    "dist/*",
+    "esm/*"
+  ],
+  "dependencies": {
+    "vienna.ui-theme": "^1.0.1",
+    "vienna.utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",
+    "vienna.config-typescript": "^1.0.1",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "4.4.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "styled-components": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "",
+    "email": "ds@raiffeisen.ru"
+  },
+  "sideEffects": false
+}

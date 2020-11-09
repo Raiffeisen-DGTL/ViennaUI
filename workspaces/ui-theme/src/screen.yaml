@@ -1,0 +1,51 @@
+space: screen
+imports: ['../typography.yaml']
+
+head:
+  base:
+    padding-top: $layout.whitespace.xxl
+    padding-right: $layout.whitespace.xxl
+    padding-left: $layout.whitespace.xxl
+    box-sizing: border-box
+
+title:
+  base:
+    ref: $typography.heading.base
+    margin-bottom: $layout.whitespace.s
+    color: $color.primary.brand.primary
+    font-size: $typography.a.a1.size
+    line-height: $typography.a.a1.height
+
+subtitle:
+  base:
+    ref: $typography.text.base
+    color: $color.primary.seattle.c100
+    margin-bottom: $layout.whitespace.xl
+    font-size: $typography.b.b3.size
+    line-height: $typography.b.b3.height
+
+body:
+  base:
+    ref: $typography.text.base
+    margin-bottom: $layout.whitespace.xxl
+    padding-right: $layout.whitespace.xxl
+    padding-left: $layout.whitespace.xxl
+    color: $color.primary.seattle.c100
+    font-size: $typography.b.b3.size
+    line-height: $typography.b.b3.height
+
+footer:
+  base:
+    padding-right: $layout.whitespace.xxl
+    padding-left: $layout.whitespace.xxl
+    padding-bottom: $layout.whitespace.xxl
+
+gradientTop:
+  base:
+    height: $layout.whitespace.xxl
+    background: linear-gradient(180deg, $color.primary.brand.white 0%, transparent 100%)
+
+gradientBottom:
+  base:
+    height: $layout.whitespace.xxl
+    background: linear-gradient(0deg, $color.primary.brand.white 0%, transparent 100%)

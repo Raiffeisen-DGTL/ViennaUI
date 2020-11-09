@@ -1,0 +1,39 @@
+space: dropList
+imports: ['../typography.yaml']
+
+list:
+  base:
+    background-color: $color.primary.brand.white
+    padding: $layout.whitespace.xs 0
+    border-radius: $border.radius.m
+    box-shadow: $shadow.basic.xl
+
+item:
+  base:
+    ref: $typography.text.base
+    background-color: $color.primary.brand.white
+    color: $color.primary.brand.onPrimary
+    cursor: pointer;
+  hover:
+    background-color: $color.primary.brand.wildsand
+  selected:
+    background-color: $color.primary.seattle.c10
+  disabled:
+    pointer-events: none
+    opacity: .24
+  size:
+    s:
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+      padding: 6px $layout.whitespace.s
+      min-height: $layout.size.s
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      padding: $layout.whitespace.xs $layout.whitespace.m
+      min-height: $layout.size.l
+    l:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      padding: $layout.whitespace.s $layout.whitespace.m
+      min-height: $layout.size.xxl

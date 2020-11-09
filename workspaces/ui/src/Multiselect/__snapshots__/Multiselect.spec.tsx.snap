@@ -1,0 +1,3474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Multiselect /w design 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w design 2`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c1:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w disabled 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c4 *,
+.c4 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-webkit-input-placeholder,
+.c4 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-moz-placeholder,
+.c4 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *:-ms-input-placeholder,
+.c4 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::placeholder,
+.c4 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<Multiselect
+  data-marker="Multiselect_2"
+  design="outline"
+  disabled={true}
+  maxListHeight={300}
+  openWhenFocus={true}
+  postfix={
+    Object {
+      "down": <Down
+        color="currentColor"
+        data-marker="Down"
+        size="m"
+      />,
+      "up": <Up
+        color="currentColor"
+        data-marker="Up"
+        size="m"
+      />,
+    }
+  }
+  size="l"
+  tabIndex={1}
+>
+  <Multiselectstyles__Box
+    aria-autocomplete="list"
+    aria-disabled={true}
+    aria-invalid={false}
+    data-marker="Multiselect_2"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    role="combobox"
+    tabIndex={1}
+  >
+    <StyledComponent
+      aria-autocomplete="list"
+      aria-disabled={true}
+      aria-invalid={false}
+      data-marker="Multiselect_2"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Multiselectstyles__Box-sc-1na2l6s-3",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "position:relative;",
+              [Function],
+              " ",
+              [Function],
+            ],
+          },
+          "displayName": "Multiselectstyles__Box",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Multiselectstyles__Box-sc-1na2l6s-3",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c4 *,
+.c4 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-webkit-input-placeholder,
+.c4 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-moz-placeholder,
+.c4 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *:-ms-input-placeholder,
+.c4 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::placeholder,
+.c4 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+            aria-autocomplete="list"
+            aria-disabled="true"
+            aria-invalid="false"
+            class="c0"
+            data-marker="Multiselect_2"
+            role="combobox"
+            tabindex="1"
+          >
+            <div
+              class="c1 c2"
+              data-marker="Multiselect.StyledInputWrapper"
+              disabled=""
+              target=".Multiselectstyles__Current-sc-1na2l6s-1"
+            >
+              <div
+                class="c3 c4"
+                data-marker="InputWrapper.Wrapped"
+                disabled=""
+              >
+                <div
+                  class="c5 usecramlist-cache-10"
+                  data-marker="Multiselect.Current"
+                >
+                  <div
+                    class="c6"
+                    data-marker="Multiselect.Placeholder"
+                    disabled=""
+                  />
+                </div>
+              </div>
+              <div
+                class="c7"
+                data-marker="InputWrapper.Postfix"
+              >
+                <div
+                  class="c8"
+                  data-marker="Multiselect.Part_0"
+                >
+                  <svg
+                    data-marker="Down"
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs
+                      data-marker="Down.defs"
+                    />
+                    <path
+                      d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+                      data-marker="Down.path"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>,
+        }
+      }
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="combobox"
+      tabIndex={1}
+    >
+      <div
+        aria-autocomplete="list"
+        aria-disabled={true}
+        aria-invalid={false}
+        className="c0"
+        data-marker="Multiselect_2"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="combobox"
+        tabIndex={1}
+      >
+        <Multiselectstyles__StyledInputWrapper
+          active={false}
+          data-marker="Multiselect.StyledInputWrapper"
+          design="outline"
+          disabled={true}
+          size="l"
+          target={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                "isStatic": false,
+                "lastClassName": "c5",
+                "rules": Array [
+                  "display:flex;width:calc(100% - 40px);align-items:center;",
+                  [Function],
+                  " ",
+                  [Function],
+                ],
+              },
+              "displayName": "Multiselectstyles__Current",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+        >
+          <StyledComponent
+            active={false}
+            data-marker="Multiselect.StyledInputWrapper"
+            design="outline"
+            disabled={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Multiselectstyles__StyledInputWrapper-sc-1na2l6s-6",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    ".c3",
+                    "{",
+                    [Function],
+                    "ƒ}",
+                  ],
+                },
+                "displayName": "Multiselectstyles__StyledInputWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Multiselectstyles__StyledInputWrapper-sc-1na2l6s-6",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="l"
+            target={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "display:flex;width:calc(100% - 40px);align-items:center;",
+                    [Function],
+                    " ",
+                    [Function],
+                  ],
+                },
+                "displayName": "Multiselectstyles__Current",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+          >
+            <InputWrapper
+              active={false}
+              className="c1"
+              data-marker="Multiselect.StyledInputWrapper"
+              design="outline"
+              disabled={true}
+              size="l"
+              target={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                    "isStatic": false,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      "display:flex;width:calc(100% - 40px);align-items:center;",
+                      [Function],
+                      " ",
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Multiselectstyles__Current",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+            >
+              <Inputstyles__Wrapper
+                active={false}
+                className="c1"
+                data-marker="Multiselect.StyledInputWrapper"
+                design="outline"
+                disabled={true}
+                size="l"
+                target={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                      "isStatic": false,
+                      "lastClassName": "c5",
+                      "rules": Array [
+                        "display:flex;width:calc(100% - 40px);align-items:center;",
+                        [Function],
+                        " ",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Multiselectstyles__Current",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+              >
+                <StyledComponent
+                  active={false}
+                  className="c1"
+                  data-marker="Multiselect.StyledInputWrapper"
+                  design="outline"
+                  disabled={true}
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Inputstyles__Wrapper-keqbte-6",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:flex;flex-direction:row;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap;overflow:hidden;",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " &:hover{",
+                          [Function],
+                          "}",
+                        ],
+                      },
+                      "displayName": "Inputstyles__Wrapper",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Inputstyles__Wrapper-keqbte-6",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  size="l"
+                  target={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                        "isStatic": false,
+                        "lastClassName": "c5",
+                        "rules": Array [
+                          "display:flex;width:calc(100% - 40px);align-items:center;",
+                          [Function],
+                          " ",
+                          [Function],
+                        ],
+                      },
+                      "displayName": "Multiselectstyles__Current",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                >
+                  <div
+                    className="c2 c1"
+                    data-marker="Multiselect.StyledInputWrapper"
+                    disabled={true}
+                    size="l"
+                    target={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "display:flex;width:calc(100% - 40px);align-items:center;",
+                            [Function],
+                            " ",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Multiselectstyles__Current",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                  >
+                    <Inputstyles__Wrapped
+                      data-marker="InputWrapper.Wrapped"
+                      disabled={true}
+                    >
+                      <StyledComponent
+                        data-marker="InputWrapper.Wrapped"
+                        disabled={true}
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "c3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "width:100%;",
+                                [Function],
+                                " & > *,input{",
+                                [Function],
+                                "}",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Inputstyles__Wrapped",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "c3",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c3 c4"
+                          data-marker="InputWrapper.Wrapped"
+                          disabled={true}
+                        >
+                          <Multiselectstyles__Current
+                            data-marker="Multiselect.Current"
+                            key=".1"
+                            size="l"
+                          >
+                            <StyledComponent
+                              data-marker="Multiselect.Current"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                                    "isStatic": false,
+                                    "lastClassName": "c5",
+                                    "rules": Array [
+                                      "display:flex;width:calc(100% - 40px);align-items:center;",
+                                      [Function],
+                                      " ",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Multiselectstyles__Current",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <div
+                                    class="c5 usecramlist-cache-10"
+                                    data-marker="Multiselect.Current"
+                                  >
+                                    <div
+                                      class="c6"
+                                      data-marker="Multiselect.Placeholder"
+                                      disabled=""
+                                    />
+                                  </div>,
+                                }
+                              }
+                              size="l"
+                            >
+                              <div
+                                className="c5"
+                                data-marker="Multiselect.Current"
+                                size="l"
+                              >
+                                <Multiselectstyles__Placeholder
+                                  data-marker="Multiselect.Placeholder"
+                                  disabled={true}
+                                >
+                                  <StyledComponent
+                                    data-marker="Multiselect.Placeholder"
+                                    disabled={true}
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Multiselectstyles__Placeholder-sc-1na2l6s-5",
+                                          "isStatic": false,
+                                          "lastClassName": "c6",
+                                          "rules": Array [
+                                            [Function],
+                                            " ",
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Multiselectstyles__Placeholder",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Multiselectstyles__Placeholder-sc-1na2l6s-5",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="c6"
+                                      data-marker="Multiselect.Placeholder"
+                                      disabled={true}
+                                    />
+                                  </StyledComponent>
+                                </Multiselectstyles__Placeholder>
+                              </div>
+                            </StyledComponent>
+                          </Multiselectstyles__Current>
+                        </div>
+                      </StyledComponent>
+                    </Inputstyles__Wrapped>
+                    <Inputstyles__Postfix
+                      active={false}
+                      data-marker="InputWrapper.Postfix"
+                      size="l"
+                    >
+                      <StyledComponent
+                        active={false}
+                        data-marker="InputWrapper.Postfix"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Inputstyles__Postfix-keqbte-4",
+                              "isStatic": false,
+                              "lastClassName": "c7",
+                              "rules": Array [
+                                "display:flex;align-items:center;justify-content:center;",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Inputstyles__Postfix",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Inputstyles__Postfix-keqbte-4",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        size="l"
+                      >
+                        <div
+                          className="c7"
+                          data-marker="InputWrapper.Postfix"
+                          size="l"
+                        >
+                          <Multiselectstyles__Part
+                            active={false}
+                            data-marker="Multiselect.Part_0"
+                            key=".2"
+                            onMouseDown={[Function]}
+                            right={true}
+                          >
+                            <StyledComponent
+                              active={false}
+                              data-marker="Multiselect.Part_0"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Multiselectstyles__Part-sc-1na2l6s-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "display:flex;align-items:center;justify-content:center;",
+                                      [Function],
+                                      " ",
+                                      [Function],
+                                      " &:hover{",
+                                      [Function],
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "Multiselectstyles__Part",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Multiselectstyles__Part-sc-1na2l6s-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onMouseDown={[Function]}
+                              right={true}
+                            >
+                              <div
+                                className="c8"
+                                data-marker="Multiselect.Part_0"
+                                onMouseDown={[Function]}
+                              >
+                                <Down
+                                  color="currentColor"
+                                  data-marker="Down"
+                                  size="m"
+                                >
+                                  <svg
+                                    data-marker="Down"
+                                    fill="currentColor"
+                                    height={20}
+                                    viewBox="0 0 24 24"
+                                    width={20}
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <defs
+                                      data-marker="Down.defs"
+                                    />
+                                    <path
+                                      d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+                                      data-marker="Down.path"
+                                    />
+                                  </svg>
+                                </Down>
+                              </div>
+                            </StyledComponent>
+                          </Multiselectstyles__Part>
+                        </div>
+                      </StyledComponent>
+                    </Inputstyles__Postfix>
+                  </div>
+                </StyledComponent>
+              </Inputstyles__Wrapper>
+            </InputWrapper>
+          </StyledComponent>
+        </Multiselectstyles__StyledInputWrapper>
+      </div>
+    </StyledComponent>
+  </Multiselectstyles__Box>
+</Multiselect>
+`;
+
+exports[`Multiselect /w invalid 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c1 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<Multiselect
+  data-marker="Multiselect_1"
+  design="outline"
+  invalid={true}
+  maxListHeight={300}
+  openWhenFocus={true}
+  postfix={
+    Object {
+      "down": <Down
+        color="currentColor"
+        data-marker="Down"
+        size="m"
+      />,
+      "up": <Up
+        color="currentColor"
+        data-marker="Up"
+        size="m"
+      />,
+    }
+  }
+  size="l"
+  tabIndex={1}
+>
+  <Multiselectstyles__Box
+    aria-autocomplete="list"
+    aria-disabled={false}
+    aria-invalid={true}
+    data-marker="Multiselect_1"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    role="combobox"
+    tabIndex={1}
+  >
+    <StyledComponent
+      aria-autocomplete="list"
+      aria-disabled={false}
+      aria-invalid={true}
+      data-marker="Multiselect_1"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "Multiselectstyles__Box-sc-1na2l6s-3",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "position:relative;",
+              [Function],
+              " ",
+              [Function],
+            ],
+          },
+          "displayName": "Multiselectstyles__Box",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "Multiselectstyles__Box-sc-1na2l6s-3",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={
+        Object {
+          "current": .c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+            aria-autocomplete="list"
+            aria-disabled="false"
+            aria-invalid="true"
+            class="c0"
+            data-marker="Multiselect_1"
+            role="combobox"
+            tabindex="1"
+          >
+            <div
+              class="c1 c2"
+              data-marker="Multiselect.StyledInputWrapper"
+              target=".Multiselectstyles__Current-sc-1na2l6s-1"
+            >
+              <div
+                class="c3 c4"
+                data-marker="InputWrapper.Wrapped"
+              >
+                <div
+                  class="c5 usecramlist-cache-9"
+                  data-marker="Multiselect.Current"
+                >
+                  <div
+                    class="c6"
+                    data-marker="Multiselect.Placeholder"
+                  />
+                </div>
+              </div>
+              <div
+                class="c7"
+                data-marker="InputWrapper.Postfix"
+              >
+                <div
+                  class="c8"
+                  data-marker="Multiselect.Part_0"
+                >
+                  <svg
+                    data-marker="Down"
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs
+                      data-marker="Down.defs"
+                    />
+                    <path
+                      d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+                      data-marker="Down.path"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>,
+        }
+      }
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      role="combobox"
+      tabIndex={1}
+    >
+      <div
+        aria-autocomplete="list"
+        aria-disabled={false}
+        aria-invalid={true}
+        className="c0"
+        data-marker="Multiselect_1"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="combobox"
+        tabIndex={1}
+      >
+        <Multiselectstyles__StyledInputWrapper
+          active={false}
+          data-marker="Multiselect.StyledInputWrapper"
+          design="outline"
+          invalid={true}
+          size="l"
+          target={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                "isStatic": false,
+                "lastClassName": "c5",
+                "rules": Array [
+                  "display:flex;width:calc(100% - 40px);align-items:center;",
+                  [Function],
+                  " ",
+                  [Function],
+                ],
+              },
+              "displayName": "Multiselectstyles__Current",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+        >
+          <StyledComponent
+            active={false}
+            data-marker="Multiselect.StyledInputWrapper"
+            design="outline"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Multiselectstyles__StyledInputWrapper-sc-1na2l6s-6",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    ".c3",
+                    "{",
+                    [Function],
+                    "ƒ}",
+                  ],
+                },
+                "displayName": "Multiselectstyles__StyledInputWrapper",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Multiselectstyles__StyledInputWrapper-sc-1na2l6s-6",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            invalid={true}
+            size="l"
+            target={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "display:flex;width:calc(100% - 40px);align-items:center;",
+                    [Function],
+                    " ",
+                    [Function],
+                  ],
+                },
+                "displayName": "Multiselectstyles__Current",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+          >
+            <InputWrapper
+              active={false}
+              className="c1"
+              data-marker="Multiselect.StyledInputWrapper"
+              design="outline"
+              invalid={true}
+              size="l"
+              target={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                    "isStatic": false,
+                    "lastClassName": "c5",
+                    "rules": Array [
+                      "display:flex;width:calc(100% - 40px);align-items:center;",
+                      [Function],
+                      " ",
+                      [Function],
+                    ],
+                  },
+                  "displayName": "Multiselectstyles__Current",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+            >
+              <Inputstyles__Wrapper
+                active={false}
+                className="c1"
+                data-marker="Multiselect.StyledInputWrapper"
+                design="outline"
+                invalid={true}
+                size="l"
+                target={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                      "isStatic": false,
+                      "lastClassName": "c5",
+                      "rules": Array [
+                        "display:flex;width:calc(100% - 40px);align-items:center;",
+                        [Function],
+                        " ",
+                        [Function],
+                      ],
+                    },
+                    "displayName": "Multiselectstyles__Current",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+              >
+                <StyledComponent
+                  active={false}
+                  className="c1"
+                  data-marker="Multiselect.StyledInputWrapper"
+                  design="outline"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Inputstyles__Wrapper-keqbte-6",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "display:flex;flex-direction:row;align-items:center;justify-content:center;box-sizing:border-box;white-space:nowrap;overflow:hidden;",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " ",
+                          [Function],
+                          " &:hover{",
+                          [Function],
+                          "}",
+                        ],
+                      },
+                      "displayName": "Inputstyles__Wrapper",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Inputstyles__Wrapper-keqbte-6",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  invalid={true}
+                  size="l"
+                  target={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                        "isStatic": false,
+                        "lastClassName": "c5",
+                        "rules": Array [
+                          "display:flex;width:calc(100% - 40px);align-items:center;",
+                          [Function],
+                          " ",
+                          [Function],
+                        ],
+                      },
+                      "displayName": "Multiselectstyles__Current",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                >
+                  <div
+                    className="c2 c1"
+                    data-marker="Multiselect.StyledInputWrapper"
+                    size="l"
+                    target={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                          "isStatic": false,
+                          "lastClassName": "c5",
+                          "rules": Array [
+                            "display:flex;width:calc(100% - 40px);align-items:center;",
+                            [Function],
+                            " ",
+                            [Function],
+                          ],
+                        },
+                        "displayName": "Multiselectstyles__Current",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                  >
+                    <Inputstyles__Wrapped
+                      data-marker="InputWrapper.Wrapped"
+                    >
+                      <StyledComponent
+                        data-marker="InputWrapper.Wrapped"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "c3",
+                              "isStatic": false,
+                              "lastClassName": "c4",
+                              "rules": Array [
+                                "width:100%;",
+                                [Function],
+                                " & > *,input{",
+                                [Function],
+                                "}",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Inputstyles__Wrapped",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "c3",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c3 c4"
+                          data-marker="InputWrapper.Wrapped"
+                        >
+                          <Multiselectstyles__Current
+                            data-marker="Multiselect.Current"
+                            key=".1"
+                            size="l"
+                          >
+                            <StyledComponent
+                              data-marker="Multiselect.Current"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                                    "isStatic": false,
+                                    "lastClassName": "c5",
+                                    "rules": Array [
+                                      "display:flex;width:calc(100% - 40px);align-items:center;",
+                                      [Function],
+                                      " ",
+                                      [Function],
+                                    ],
+                                  },
+                                  "displayName": "Multiselectstyles__Current",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Multiselectstyles__Current-sc-1na2l6s-1",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={
+                                Object {
+                                  "current": <div
+                                    class="c5 usecramlist-cache-9"
+                                    data-marker="Multiselect.Current"
+                                  >
+                                    <div
+                                      class="c6"
+                                      data-marker="Multiselect.Placeholder"
+                                    />
+                                  </div>,
+                                }
+                              }
+                              size="l"
+                            >
+                              <div
+                                className="c5"
+                                data-marker="Multiselect.Current"
+                                size="l"
+                              >
+                                <Multiselectstyles__Placeholder
+                                  data-marker="Multiselect.Placeholder"
+                                >
+                                  <StyledComponent
+                                    data-marker="Multiselect.Placeholder"
+                                    forwardedComponent={
+                                      Object {
+                                        "$$typeof": Symbol(react.forward_ref),
+                                        "attrs": Array [],
+                                        "componentStyle": ComponentStyle {
+                                          "componentId": "Multiselectstyles__Placeholder-sc-1na2l6s-5",
+                                          "isStatic": false,
+                                          "lastClassName": "c6",
+                                          "rules": Array [
+                                            [Function],
+                                            " ",
+                                            [Function],
+                                          ],
+                                        },
+                                        "displayName": "Multiselectstyles__Placeholder",
+                                        "foldedComponentIds": Array [],
+                                        "render": [Function],
+                                        "styledComponentId": "Multiselectstyles__Placeholder-sc-1na2l6s-5",
+                                        "target": "div",
+                                        "toString": [Function],
+                                        "warnTooManyClasses": [Function],
+                                        "withComponent": [Function],
+                                      }
+                                    }
+                                    forwardedRef={null}
+                                  >
+                                    <div
+                                      className="c6"
+                                      data-marker="Multiselect.Placeholder"
+                                    />
+                                  </StyledComponent>
+                                </Multiselectstyles__Placeholder>
+                              </div>
+                            </StyledComponent>
+                          </Multiselectstyles__Current>
+                        </div>
+                      </StyledComponent>
+                    </Inputstyles__Wrapped>
+                    <Inputstyles__Postfix
+                      active={false}
+                      data-marker="InputWrapper.Postfix"
+                      size="l"
+                    >
+                      <StyledComponent
+                        active={false}
+                        data-marker="InputWrapper.Postfix"
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "Inputstyles__Postfix-keqbte-4",
+                              "isStatic": false,
+                              "lastClassName": "c7",
+                              "rules": Array [
+                                "display:flex;align-items:center;justify-content:center;",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                                " ",
+                                [Function],
+                              ],
+                            },
+                            "displayName": "Inputstyles__Postfix",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "Inputstyles__Postfix-keqbte-4",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        size="l"
+                      >
+                        <div
+                          className="c7"
+                          data-marker="InputWrapper.Postfix"
+                          size="l"
+                        >
+                          <Multiselectstyles__Part
+                            active={false}
+                            data-marker="Multiselect.Part_0"
+                            key=".2"
+                            onMouseDown={[Function]}
+                            right={true}
+                          >
+                            <StyledComponent
+                              active={false}
+                              data-marker="Multiselect.Part_0"
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "Multiselectstyles__Part-sc-1na2l6s-0",
+                                    "isStatic": false,
+                                    "lastClassName": "c8",
+                                    "rules": Array [
+                                      "display:flex;align-items:center;justify-content:center;",
+                                      [Function],
+                                      " ",
+                                      [Function],
+                                      " &:hover{",
+                                      [Function],
+                                      "}",
+                                    ],
+                                  },
+                                  "displayName": "Multiselectstyles__Part",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "Multiselectstyles__Part-sc-1na2l6s-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                              onMouseDown={[Function]}
+                              right={true}
+                            >
+                              <div
+                                className="c8"
+                                data-marker="Multiselect.Part_0"
+                                onMouseDown={[Function]}
+                              >
+                                <Down
+                                  color="currentColor"
+                                  data-marker="Down"
+                                  size="m"
+                                >
+                                  <svg
+                                    data-marker="Down"
+                                    fill="currentColor"
+                                    height={20}
+                                    viewBox="0 0 24 24"
+                                    width={20}
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <defs
+                                      data-marker="Down.defs"
+                                    />
+                                    <path
+                                      d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+                                      data-marker="Down.path"
+                                    />
+                                  </svg>
+                                </Down>
+                              </div>
+                            </StyledComponent>
+                          </Multiselectstyles__Part>
+                        </div>
+                      </StyledComponent>
+                    </Inputstyles__Postfix>
+                  </div>
+                </StyledComponent>
+              </Inputstyles__Wrapper>
+            </InputWrapper>
+          </StyledComponent>
+        </Multiselectstyles__StyledInputWrapper>
+      </div>
+    </StyledComponent>
+  </Multiselectstyles__Box>
+</Multiselect>
+`;
+
+exports[`Multiselect /w size 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 4px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 20px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w size 2`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w size 3`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w size 4`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w size 5`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect /w size 6`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0"
+  data-marker="Multiselect_0"
+  role="combobox"
+  tabindex="1"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Multiselect w/ any props 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 40px);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+<div
+  aria-autocomplete="list"
+  aria-disabled="false"
+  aria-invalid="false"
+  class="c0 className"
+  data-marker="Multiselect_5"
+  id="id"
+  role="combobox"
+  tabindex="1"
+  title="title"
+>
+  <div
+    class="c1 c2"
+    data-marker="Multiselect.StyledInputWrapper"
+    target=".Multiselectstyles__Current-sc-1na2l6s-1"
+  >
+    <div
+      class="c3 c4"
+      data-marker="InputWrapper.Wrapped"
+    >
+      <div
+        class="c5"
+        data-marker="Multiselect.Current"
+      >
+        <div
+          class="c6"
+          data-marker="Multiselect.Placeholder"
+        />
+      </div>
+    </div>
+    <div
+      class="c7"
+      data-marker="InputWrapper.Postfix"
+    >
+      <div
+        class="c8"
+        data-marker="Multiselect.Part_0"
+      >
+        <svg
+          data-marker="Down"
+          fill="currentColor"
+          height="20"
+          viewBox="0 0 24 24"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Down.defs"
+          />
+          <path
+            d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
+            data-marker="Down.path"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,20 @@
+space: alarm
+
+base:
+  border-radius: $border.radius.s
+  width: $layout.size.xxxs
+  height: $layout.size.xxxs
+
+design:
+  critical:
+    background-color: $color.utilitarian.moscow.c100
+  warning:
+    background-color: $color.utilitarian.osaka.c100
+  success:
+    background-color: $color.utilitarian.geneva.c100
+  accent:
+    background-color: $color.primary.oslo.c100
+  neutral:
+    background-color: $color.primary.brand.primary
+  disabled:
+    background-color: $color.primary.seattle.c30

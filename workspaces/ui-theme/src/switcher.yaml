@@ -1,0 +1,84 @@
+space: switcher
+imports: ['../typography.yaml']
+
+base:
+  color: $color.primary.brand.onPrimary
+  align-items: center
+  user-select: none
+  cursor: pointer
+
+slider:
+  base:
+    background-color: $color.primary.seattle.c30
+    vertical-align: middle
+    flex-shrink: 0
+
+  size:
+    m:
+      width: $layout.size.s
+      height: $layout.whitespace.l
+      border-radius: 10px
+    l:
+      width: $layout.size.l
+      height: $layout.whitespace.xl
+      border-radius: 24px
+
+  active:
+    outline: none
+
+  checked:
+    background-color: $color.primary.brand.accent
+
+  disabledCheked:
+    background-color: $color.primary.seattle.c30
+  disabledUnCheked:
+    background-color: $color.primary.seattle.c10
+
+control:
+  base:
+    background-color: $color.primary.brand.white
+    border-radius: 50%
+    position: absolute
+    transition: left 0.1s ease-in
+
+  size:
+    m:
+      left: 4px
+      top: 4px
+      width: 12px
+      height: 12px
+    l:
+      left: 5px
+      top: 5px
+      width: 14px
+      height: 14px
+
+  push:
+    m:
+      left: 'calc(100% - 12px - 4px)'
+    l:
+      left: 'calc(100% - 14px - 5px)'
+
+  disabledCheked:
+    background-color: $color.primary.london.c40
+  disabledUnCheked:
+    background-color: $color.primary.london.c120
+
+label:
+  base:
+    ref: $typography.text.base
+    user-select: none
+
+  size:
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+      margin-left: $layout.whitespace.xs
+    l:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+      margin-left: $layout.whitespace.s
+
+  disabled:
+    color: $color.primary.london.c120
+    cursor: not-allowed

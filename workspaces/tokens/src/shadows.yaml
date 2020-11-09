@@ -1,0 +1,15 @@
+space: shadow
+desc: Для выделения объектов, обозначения их функциональности и состояний, мы используем тени. Легкие и едва заметные. Настройки теней также регламентируются правилом кратность четырем.
+basic:
+  xl:
+    value: 0 8px 32px 0 rgba(0, 0, 0, 0.08)
+    prop: box-shadow
+    desc: y 8 blur 20 opacity 0.08
+  l:
+    value: 0 4px 20px 0 rgba(0, 0, 0, 0.08)
+    prop: box-shadow
+    desc: y 4 blur 20 opacity 0.08
+  m:
+    value: 0 2px 12px 0 rgba(0, 0, 0, 0.04)
+    prop: box-shadow
+    desc: y 2 blur 12 opacity 0.04

@@ -1,0 +1,69 @@
+space: textarea
+imports: ['./typography.yaml']
+base:
+  line-height: $typography.b.b2.height
+  font-family: $typography.b.family
+  text-decoration: none
+  background-color: $color.primary.brand.white
+  outline: none
+  box-sizing: border-box
+
+size:
+  xl:
+    font-size: $typography.b.b2.size
+    padding: $layout.whitespace.xs $layout.whitespace.s
+    border-radius: $border.radius.m
+  l:
+    font-size: $typography.b.b2.size
+    padding: $layout.whitespace.xs $layout.whitespace.s
+    border-radius: $border.radius.m
+  m:
+    font-size: $typography.b.b2.size
+    padding: $layout.whitespace.xs $layout.whitespace.s
+    border-radius: $border.radius.m
+  s:
+    font-size: $typography.b.b1.size
+    padding: $layout.whitespace.xxs $layout.whitespace.xs
+    border-radius: $border.radius.m
+  xs:
+    font-size: $typography.b.b1.size
+    padding: $layout.whitespace.xxs $layout.whitespace.xs
+    border-radius: $border.radius.s
+
+design:
+  outline:
+    box-shadow: 0px 0px 0px 1px $color.primary.seattle.c30
+    background-color: $color.primary.brand.white
+    color: $color.primary.brand.primary
+  material:
+    border-bottom: 1px solid $color.primary.seattle.c30
+    padding-bottom: 1px
+    border-radius: 0
+
+hover:
+  outline:
+    box-shadow: 0px 0px 0px 2px $color.primary.brand.primary
+  material:
+    border-bottom: 2px solid $color.primary.brand.primary
+
+disabled:
+  outline:
+    cursor: not-allowed
+    box-shadow: 0px 0px 0px 1px $color.primary.brand.wildsand
+    background-color: $color.primary.brand.wildsand
+    color: $color.primary.london.c120
+  material:
+    cursor: not-allowed
+    color: $color.primary.london.c120
+
+focused:
+  outline:
+    box-shadow: 0px 0px 0px 2px $color.primary.brand.primary
+  material:
+    border-bottom: 1px solid $color.primary.brand.primary
+
+invalid:
+  outline:
+    box-shadow: 0px 0px 0px 1px $color.utilitarian.moscow.c100
+  material:
+    border-bottom: 1px solid $color.utilitarian.moscow.c100

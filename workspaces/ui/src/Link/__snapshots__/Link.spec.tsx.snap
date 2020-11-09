@@ -1,0 +1,597 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Disabled links 1`] = `
+Array [
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 dWJWcK"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 dUiFnX"
+      disabled=""
+    >
+      Accent link
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 dWJWcK"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kPigJE"
+      disabled=""
+    >
+      Accent underline link
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 CKnoz"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kPigJE"
+      disabled=""
+    >
+      Primary link
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 doAxO"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kPigJE"
+      disabled=""
+    >
+      Secondary link
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 doAxO"
+    disabled=""
+    href="#"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+      />
+    </svg>
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kPigJE"
+      disabled=""
+    >
+      Screw
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 CKnoz"
+    disabled=""
+    href="#"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
+      />
+    </svg>
+  </a>,
+]
+`;
+
+exports[`Link 1`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ any props 1`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY className"
+  download="test.jpg"
+  href="test.html"
+  id="id"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ design 1`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 jerFMS"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 eNRIOZ"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ design 2`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 jerFMS"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ design 3`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ design 4`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 cTKwQU"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ icon 1`] = `
+Array [
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 jerFMS"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+      />
+    </svg>
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 eNRIOZ"
+    >
+       Назад
+    </span>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+    >
+      Вперед 
+    </span>
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
+      />
+    </svg>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 cTKwQU"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+      />
+    </svg>
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+    >
+      <span>
+        Вперед
+      </span>
+    </span>
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
+      />
+    </svg>
+  </a>,
+]
+`;
+
+exports[`Link w/ only icon 1`] = `
+Array [
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 jerFMS"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+      />
+    </svg>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
+      />
+    </svg>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 cTKwQU"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+      />
+    </svg>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 jerFMS"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
+      />
+    </svg>
+  </a>,
+]
+`;
+
+exports[`Link w/ size 1`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 bSGjES"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ size 2`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 fMizqY"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Link w/ size 3`] = `
+<a
+  class="Linkstyles__Box-sc-1e7iq4h-1 kHtMuW"
+>
+  <span
+    class="Linkstyles__Wrapper-sc-1e7iq4h-0 bvaXVd"
+  >
+    Test link
+  </span>
+</a>
+`;
+
+exports[`Links w/ loading 1`] = `
+Array [
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 exjIdV"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 gYKIhW"
+    >
+      Accent link
+    </span>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 cBnxGY"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 dbzBgh"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 exjIdV"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kZEily"
+    >
+      Accent underline link
+    </span>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 cBnxGY"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 dbzBgh"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 hlMyiR"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kZEily"
+    >
+      Primary link
+    </span>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 kziUJa"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 hVTgFZ"
+    disabled=""
+    href="#"
+  >
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kZEily"
+    >
+      Secondary link
+    </span>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 fZTFtk"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 dDtinI"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 joSkyp"
+    disabled=""
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+      />
+    </svg>
+    <span
+      class="Linkstyles__Wrapper-sc-1e7iq4h-0 kZEily"
+    >
+      Screw
+    </span>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 kziUJa"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+  <a
+    class="Linkstyles__Box-sc-1e7iq4h-1 hlMyiR"
+    disabled=""
+    href="#"
+  >
+    <svg
+      fill="currentColor"
+      height="20"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
+      />
+    </svg>
+    <div
+      class="Spinnerstyles__Box-f0kfdr-0 kziUJa"
+    >
+      <svg
+        class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke-width="2"
+        >
+          <path
+            d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+            stroke="#2b2d33"
+            stroke-opacity=".87"
+          />
+          <path
+            d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+            stroke="#fee600"
+          />
+        </g>
+      </svg>
+    </div>
+  </a>,
+]
+`;

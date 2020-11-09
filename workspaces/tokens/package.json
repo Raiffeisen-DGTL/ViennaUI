@@ -1,0 +1,28 @@
+{
+  "name": "vienna.tokens",
+  "version": "1.0.3",
+  "license": "MIT",
+  "main": "builder/index.js",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "design tokens"
+  ],
+  "bin": {
+    "tokens": "builder/index.js"
+  },
+  "scripts": {
+    "build": "node builder --tokens",
+    "build:css": "node builder --tokens --css",
+    "build:html": "node builder --tokens",
+    "build:watch": "node builder --watch --tokens --css",
+    "build:custom": "node builder --tokens --config preset.config.json --prefix black"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  },
+  "bugs": {
+    "email": "ds@raiffeisen.ru"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "independent",
+  "packages": ["workspaces/*"],
+  "command": {
+    "bootstrap": {
+      "hoist": true,
+      "ignore-scripts": true
+    },
+    "publish": {
+      "force": true,
+      "conventionalCommits": true,
+      "registry": "",
+      "verifyAccess": false
+    }
+  },
+  "changelogPreset": "angular",
+  "npmClientArgs": ["--no-optional"]
+}

@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  />
+</div>
+`;
+
+exports[`EmptyState w/ actions 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Actions-sc-10cccwe-3 dflAvL"
+      >
+        EmptyState actions
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmptyState w/ description 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Description-sc-10cccwe-2 bLaPXG"
+      >
+        EmptyState description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmptyState w/ loading: loading-false 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  />
+</div>
+`;
+
+exports[`EmptyState w/ loading: loading-true 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+      >
+        <svg
+          class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke-width="2"
+          >
+            <path
+              d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+              stroke="#2b2d33"
+              stroke-opacity=".87"
+            />
+            <path
+              d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+              stroke="#fee600"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmptyState w/ some child 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div>
+        Some child
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmptyState w/ some props 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce className"
+  id="EmptyState"
+  title="this is EmptyState"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  />
+</div>
+`;
+
+exports[`EmptyState w/ title 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Title-sc-10cccwe-1 bPhBzn"
+      >
+        EmptyState title
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmptyState w/ title, descriptions, actions 1`] = `
+<div
+  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+>
+  <div
+    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+  >
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Title-sc-10cccwe-1 bPhBzn"
+      >
+        EmptyState title
+      </div>
+    </div>
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Description-sc-10cccwe-2 bLaPXG"
+      >
+        EmptyState description
+      </div>
+    </div>
+    <div
+      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+    >
+      <div
+        class="EmptyStatestyles__Actions-sc-10cccwe-3 dflAvL"
+      >
+        EmptyState actions
+      </div>
+    </div>
+  </div>
+</div>
+`;

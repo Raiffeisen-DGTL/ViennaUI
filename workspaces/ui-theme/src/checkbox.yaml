@@ -1,0 +1,61 @@
+space: checkbox
+imports: ['../typography.yaml']
+base:
+  border-radius: $border.radius.s
+  border: 2px solid $color.primary.seattle.c30
+  cursor: pointer
+  background-color: $color.primary.brand.white
+
+size:
+  s:
+    height: 16px
+    width: 16px
+  m:
+    height: 20px
+    width: 20px
+  l:
+    height: 24px
+    width: 24px
+
+hover:
+  border-color: $color.primary.brand.primary
+
+disabled:
+  background-color: '#ecedf0'
+  border-color: '#ecedf0'
+  color: 'rgb(43, 45, 51, 0.24)'
+  cursor: not-allowed
+  pointer-events: none
+
+error:
+  border-color: $color.utilitarian.moscow.c60
+  background-color: $color.utilitarian.moscow.c10
+
+checked:
+  background-color: $color.primary.brand.accent
+  border-color: $color.primary.brand.accent
+  color: $color.primary.brand.onPrimary
+
+label:
+  base:
+    ref: $typography.text.base
+    color: $color.primary.brand.onPrimary
+    margin-left: $layout.whitespace.xs
+    cursor: pointer
+
+  size:
+    s:
+      font-size: $typography.b.b1.size
+      line-height: $typography.b.b1.height
+    m:
+      font-size: $typography.b.b2.size
+      line-height: $typography.b.b2.height
+    l:
+      font-size: $typography.b.b3.size
+      line-height: $typography.b.b3.height
+
+  disabled:
+    opacity: 0.24
+    color: $color.primary.brand.primary
+    cursor: not-allowed
+    pointer-events: none

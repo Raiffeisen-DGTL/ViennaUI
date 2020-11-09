@@ -1,0 +1,45 @@
+space: modal
+imports: ['../typography.yaml']
+
+fade:
+  base:
+    z-index: '1000'
+    transition: all 0.3s ease-out
+    padding: $layout.whitespace.xxl
+  hide:
+    background-color: rgba(43, 45, 51, 0)
+  show:
+    background-color: $color.primary.london.c120
+
+window:
+  base:
+    z-index: '2'
+    transition: all 0.3s ease-in-out
+    box-shadow: $shadow.basic.xl
+    border-radius: $border.radius.xl
+    background-color: $color.primary.brand.white
+    opacity: 0
+  hide:
+    transform: scale(0.8)
+    opacity: 0
+  show:
+    opacity: 1
+    transform: scale(1)
+
+icon:
+  base:
+    color: $color.primary.seattle.c60
+    position: absolute
+    right: $layout.whitespace.m
+    top: $layout.whitespace.m
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $color.primary.london.c40
+    width: $layout.size.s
+    height: $layout.size.s
+    border-radius: $border.radius.xl
+    cursor: pointer
+    transition: all .2s
+  hover:
+    color: $color.primary.brand.primary

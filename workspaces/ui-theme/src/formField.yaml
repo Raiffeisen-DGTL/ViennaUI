@@ -1,0 +1,50 @@
+space: formField
+imports: ['../typography.yaml']
+
+content:
+  base:
+    flex-grow: '1'
+
+container:
+  inline:
+    display: flex
+    align-items: baseline
+
+label:
+  base:
+    ref: $typography.text.base
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    color: $color.primary.seattle.c100
+    margin-right: $layout.whitespace.m
+    display: flex
+    align-items: center
+    margin-bottom: $layout.whitespace.xxs
+
+star:
+  base:
+    top: 2px
+    left: 5px
+    color: $color.utilitarian.moscow.c100
+
+message:
+  base:
+    ref: $typography.text.base
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    display: flex
+    align-items: center
+    color: $color.primary.seattle.c100
+    margin-top: $layout.whitespace.xxs
+  design:
+    critical:
+      color: $color.utilitarian.moscow.c100
+    warning:
+      color: $color.utilitarian.osaka.c100
+  align:
+    left:
+      justify-content: flex-start
+    center:
+      justify-content: center
+    right:
+      justify-content: flex-end

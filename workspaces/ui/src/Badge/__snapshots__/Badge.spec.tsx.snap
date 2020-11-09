@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 daSwKa"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge as link 1`] = `
+<a
+  class="Badgestyles__Box-sc-1y7fvxe-0 dSqCAS"
+  color="paris10"
+  href="https://raif.ru"
+  rel="noopener"
+  target="_blank"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</a>
+`;
+
+exports[`Badge w/ any props 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 dSqCAS className"
+  color="paris10"
+  id="id"
+  title="title"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: dubai10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jQqJKR"
+  color="dubai10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: dubai30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jUxYiB"
+  color="dubai30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: miami10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 AQqNI"
+  color="miami10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: miami30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jkCRiF"
+  color="miami30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: nice10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 fFZmVH"
+  color="nice10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: nice30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 bRHGuu"
+  color="nice30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: paris10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 daSwKa"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: paris30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 lhwDMG"
+  color="paris30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: seattle05 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 irSUei"
+  color="seattle05"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: seattle10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 xhlpz"
+  color="seattle10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs />
+      <path
+        d="M19.156 3.814a5.848 5.848 0 00-8.273 0L4 10.7V12h1.244l6.912-6.913a4.05 4.05 0 015.727 5.727L9.4 19.3a2.616 2.616 0 01-1.862.772h-.009a2.634 2.634 0 01-1.854-4.5l6.485-6.484a1.221 1.221 0 011.726 1.728L9 15.725V17h1.269l4.888-4.913a3.021 3.021 0 00-4.273-4.273L4.4 14.3a4.434 4.434 0 003.122 7.57h.015a4.406 4.406 0 003.136-1.3l8.485-8.483a5.848 5.848 0 000-8.273h-.002z"
+      />
+    </svg>
+  </span>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: dubai10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jQqJKR"
+  color="dubai10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: dubai30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jUxYiB"
+  color="dubai30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: miami10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 AQqNI"
+  color="miami10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: miami30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jkCRiF"
+  color="miami30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: nice10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 fFZmVH"
+  color="nice10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: nice30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 bRHGuu"
+  color="nice30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: paris10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 daSwKa"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: paris30 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 lhwDMG"
+  color="paris30"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: seattle05 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 irSUei"
+  color="seattle05"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: seattle10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 xhlpz"
+  color="seattle10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g0 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 bqBIdq"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g1 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jYXagF"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g2 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 zjhnD"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g3 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 idNGql"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g4 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 cqssrD"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g5 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 cIctuA"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g6 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 iYYIiQ"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g7 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 cNyMMA"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g8 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 hZfzwm"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g9 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 bAzMbe"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g10 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 fHunjo"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g11 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 ewrhfm"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g12 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 dPCzlj"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: l 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 kwbIPM"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 keKyUy"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: m 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 daSwKa"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: s 1`] = `
+<span
+  class="Badgestyles__Box-sc-1y7fvxe-0 jQxbCA"
+  color="paris10"
+>
+  <span
+    class="Badgestyles__Item-sc-1y7fvxe-1 IfxUd"
+  >
+    Badge text
+  </span>
+</span>
+`;

@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal /w show 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 32px;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+  visibility: visible;
+  background-color: rgba(43,45,51,0.24);
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  opacity: 0;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  margin: auto;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c2 {
+  color: #AAABAD;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.64);
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
+<div
+  class="c0"
+  data-marker="Fade_0"
+>
+  <div
+    class="c1"
+    data-marker="Box_0"
+  >
+    <div
+      class="c2"
+      data-marker="CloseIcon_0"
+    >
+      <svg
+        data-marker="Close_0"
+        fill="currentColor"
+        height="20"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Close.defs"
+        />
+        <path
+          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+          data-marker="Close.path"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 32px;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  opacity: 0;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  margin: auto;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.c2 {
+  color: #AAABAD;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.64);
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
+<div
+  class="c0"
+  data-marker="Fade"
+>
+  <div
+    class="c1"
+    data-marker="Box"
+  >
+    <div
+      class="c2"
+      data-marker="CloseIcon"
+    >
+      <svg
+        data-marker="Close"
+        fill="currentColor"
+        height="20"
+        viewBox="0 0 24 24"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Close.defs"
+        />
+        <path
+          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+          data-marker="Close.path"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

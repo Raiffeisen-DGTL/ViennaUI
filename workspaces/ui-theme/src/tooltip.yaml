@@ -1,0 +1,68 @@
+space: tooltip
+imports: ['../typography.yaml']
+
+base:
+  ref: $typography.text.base
+  box-shadow: $shadow.basic.xl
+  border-radius: $border.radius.m
+  padding: $layout.whitespace.s
+  transition: opacity .2s
+  z-index: '1000'
+
+size:
+  s:
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+  m:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+
+design:
+  light:
+    background-color: $color.primary.brand.white
+    color: $color.primary.brand.primary
+    border-color: $color.primary.brand.white
+  dark:
+    background-color: $color.primary.brand.primary
+    color: $color.primary.brand.white
+    border-color: $color.primary.brand.primary
+
+arrow:
+  base:
+    width: 6px
+    height: 7px
+  position:
+    top:
+      top: -7px
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      border-bottom-width: 7px
+      border-bottom-style: solid
+    left:
+      left: -7px
+      border-bottom: 7px solid transparent
+      border-top: 7px solid transparent
+      border-right-width: 7px
+      border-right-style: solid
+    bottom:
+      bottom: -7px
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      border-top-width: 7px
+      border-top-style: solid
+    right:
+      right: -7px
+      border-bottom: 7px solid transparent
+      border-top: 7px solid transparent
+      border-left-width: 7px
+      border-left-style: solid
+  design:
+    light:
+      border-color: $color.primary.brand.white
+    dark:
+      border-color: $color.primary.brand.primary
+
+floor:
+  base:
+    width: calc(100% + 21px)
+    height: calc(100% + 21px)

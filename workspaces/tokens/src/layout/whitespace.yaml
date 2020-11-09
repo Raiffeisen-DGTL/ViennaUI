@@ -1,0 +1,34 @@
+space: layout
+whitespace:
+  xxs:
+    value: 4px
+    prop: margin
+    desc: ''
+  xs:
+    value: 8px
+    prop: margin
+    desc: ''
+  s:
+    value: 12px
+    prop: margin
+    desc: ''
+  m:
+    value: 16px
+    prop: margin
+    desc: ''
+  l:
+    value: 20px
+    prop: margin
+    desc: ''
+  xl:
+    value: 24px
+    prop: margin
+    desc: ''
+  xxl:
+    value: 32px
+    prop: margin
+    desc: ''
+  xxxl:
+    value: 40px
+    prop: margin
+    desc: ''

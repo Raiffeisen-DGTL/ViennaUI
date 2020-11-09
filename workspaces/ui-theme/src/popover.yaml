@@ -1,0 +1,44 @@
+space: popover
+imports: ['../typography.yaml']
+
+message:
+  base:
+    box-shadow: $shadow.basic.xl
+    border-radius: $border.radius.m
+    padding-top: $layout.whitespace.s
+    padding-right: 28px
+    padding-bottom: $layout.whitespace.s
+    padding-left: $layout.whitespace.s
+    z-index: '1000'
+    transition: opacity .2s
+  design:
+    dark:
+      background-color: $color.primary.brand.primary
+      color: $color.primary.brand.white
+    light:
+      background-color: $color.primary.brand.white
+      color: $color.primary.brand.primary
+
+header:
+  base:
+    ref: $typography.text.base
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    font-weight: $typography.weight.bold
+    margin-bottom: $layout.whitespace.xxs
+
+content:
+  base:
+    ref: $typography.text.base
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+
+close:
+  base:
+    top: $layout.whitespace.s
+    right: $layout.whitespace.s
+    cursor: pointer
+
+defenition:
+  base:
+    color: $color.primary.seattle.c60

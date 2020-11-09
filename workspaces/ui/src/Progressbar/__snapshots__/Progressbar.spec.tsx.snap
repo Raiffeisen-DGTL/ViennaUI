@@ -1,0 +1,1321 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progressbar 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: accent 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #FED500;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="accent"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: dubai100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #FCB664;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="dubai100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: geneva100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #19B28D;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="geneva100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: miami100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #5ED1B6;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="miami100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: moscow100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #EE505A;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="moscow100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: nice100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #FC9696;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="nice100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: osaka100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #F88545;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="osaka100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: oslo100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00A5BC;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: oslo120 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: paris100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #9A99FB;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="paris100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: seattle140 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #404247;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="seattle140"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: sochi100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #57B6ED;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="sochi100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ color: tokyo100 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #DC94DD;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_2"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="tokyo100"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ loading 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+.c4 {
+  fill: rgba(255,255,255,0.24);
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: calc(100% + 40px);
+  -webkit-animation: 2s linear 0s infinite coXlqI;
+  animation: 2s linear 0s infinite coXlqI;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_5"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  >
+    <svg
+      class="c3"
+      data-marker="Loading.Box"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs
+        data-marker="Loading.defs"
+      >
+        <pattern
+          data-marker="Loading.pattern"
+          height="20"
+          id="strips"
+          patternTransform="rotate(-30)"
+          patternUnits="userSpaceOnUse"
+          width="80"
+          x="10"
+          y="10"
+        >
+          <rect
+            class="c4"
+            data-marker="Loading.PatternRect"
+            height="10"
+            width="80"
+            x="0"
+            y="0"
+          />
+        </pattern>
+      </defs>
+      <rect
+        data-marker="Loading.rect"
+        fill="url(#strips)"
+        height="100%"
+        width="100%"
+        x="0"
+        y="0"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Progressbar w/ size: l 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 12px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_1"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ size: m 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_1"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ size: s 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 4px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_1"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;
+
+exports[`Progressbar w/ view w/ child: l 1`] = `
+.c1 {
+  fill: none;
+  width: 140px;
+  height: 140px;
+}
+
+.c2 {
+  stroke-width: 12px;
+  r: 64px;
+  cx: 70px;
+  cy: 70px;
+  stroke-miterlimit: 10px;
+  stroke: #E9EAEA;
+  fill: none;
+}
+
+.c3 {
+  stroke-linecap: round;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke-width: 12px;
+  r: 64px;
+  cx: 70px;
+  cy: 70px;
+  stroke-miterlimit: 10px;
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke: #00809C;
+  stroke-dasharray: 201.06192982974676 201.06192982974676;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 104px;
+  height: 104px;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_3"
+>
+  <svg
+    class="c1"
+    data-marker="Progressbar.CircleSVG"
+  >
+    <circle
+      class="c2"
+      data-marker="Progressbar.CircleBack"
+    />
+    <circle
+      class="c3"
+      color="oslo120"
+      data-marker="Progressbar.CircleProgress"
+      value="50"
+    />
+  </svg>
+  <div
+    class="c4"
+    data-marker="Progressbar.CircleContent"
+  >
+    <div
+      data-marker="div"
+      style="height:100%;display:flex;align-items:center;justify-content:center"
+    >
+      34%
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Progressbar w/ view w/ child: m 1`] = `
+.c1 {
+  fill: none;
+  width: 96px;
+  height: 96px;
+}
+
+.c2 {
+  stroke-width: 8px;
+  r: 44px;
+  cx: 48px;
+  cy: 48px;
+  stroke-miterlimit: 10px;
+  stroke: #E9EAEA;
+  fill: none;
+}
+
+.c3 {
+  stroke-linecap: round;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke-width: 8px;
+  r: 44px;
+  cx: 48px;
+  cy: 48px;
+  stroke-miterlimit: 10px;
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke: #00809C;
+  stroke-dasharray: 138.23007675795088 138.23007675795088;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 72px;
+  height: 72px;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_3"
+>
+  <svg
+    class="c1"
+    data-marker="Progressbar.CircleSVG"
+  >
+    <circle
+      class="c2"
+      data-marker="Progressbar.CircleBack"
+    />
+    <circle
+      class="c3"
+      color="oslo120"
+      data-marker="Progressbar.CircleProgress"
+      value="50"
+    />
+  </svg>
+  <div
+    class="c4"
+    data-marker="Progressbar.CircleContent"
+  >
+    <div
+      data-marker="div"
+      style="height:100%;display:flex;align-items:center;justify-content:center"
+    >
+      34%
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Progressbar w/ view w/ child: s 1`] = `
+.c1 {
+  fill: none;
+  width: 68px;
+  height: 68px;
+}
+
+.c2 {
+  stroke-width: 4px;
+  r: 32px;
+  cx: 34px;
+  cy: 34px;
+  stroke-miterlimit: 10px;
+  stroke: #E9EAEA;
+  fill: none;
+}
+
+.c3 {
+  stroke-linecap: round;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke-width: 4px;
+  r: 32px;
+  cx: 34px;
+  cy: 34px;
+  stroke-miterlimit: 10px;
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke: #00809C;
+  stroke-dasharray: 100.53096491487338 100.53096491487338;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c4 {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 56px;
+  height: 56px;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_3"
+>
+  <svg
+    class="c1"
+    data-marker="Progressbar.CircleSVG"
+  >
+    <circle
+      class="c2"
+      data-marker="Progressbar.CircleBack"
+    />
+    <circle
+      class="c3"
+      color="oslo120"
+      data-marker="Progressbar.CircleProgress"
+      value="50"
+    />
+  </svg>
+  <div
+    class="c4"
+    data-marker="Progressbar.CircleContent"
+  >
+    <div
+      data-marker="div"
+      style="height:100%;display:flex;align-items:center;justify-content:center"
+    >
+      34%
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Progressbar w/ view: circle 1`] = `
+.c1 {
+  fill: none;
+  width: 96px;
+  height: 96px;
+}
+
+.c2 {
+  stroke-width: 8px;
+  r: 44px;
+  cx: 48px;
+  cy: 48px;
+  stroke-miterlimit: 10px;
+  stroke: #E9EAEA;
+  fill: none;
+}
+
+.c3 {
+  stroke-linecap: round;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke-width: 8px;
+  r: 44px;
+  cx: 48px;
+  cy: 48px;
+  stroke-miterlimit: 10px;
+  fill: none;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  stroke: #00809C;
+  stroke-dasharray: 138.23007675795088 138.23007675795088;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_0"
+>
+  <svg
+    class="c1"
+    data-marker="Progressbar.CircleSVG"
+  >
+    <circle
+      class="c2"
+      data-marker="Progressbar.CircleBack"
+    />
+    <circle
+      class="c3"
+      color="oslo120"
+      data-marker="Progressbar.CircleProgress"
+      value="50"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Progressbar w/ view: line 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  height: 8px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00809C;
+}
+
+<div
+  class="c0"
+  data-marker="Progressbar_0"
+>
+  <div
+    class="c1"
+    data-marker="Progressbar.Line"
+  />
+  <div
+    class="c2"
+    color="oslo120"
+    data-marker="Progressbar.Progress"
+    width="50"
+  />
+</div>
+`;

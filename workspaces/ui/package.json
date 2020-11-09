@@ -1,0 +1,69 @@
+{
+  "name": "vienna-ui",
+  "description": "Raiffeisenbank Design System Components",
+  "version": "1.0.2",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": ""
+  },
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "typescript"
+  ],
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf ./dist && rimraf ./esm ",
+    "build": "npm run clean && npm run build:cjs && npm run build:esm && npm run build:ts && npm run build:flow",
+    "build:cjs": "npx babel ./src --extensions \".ts,.tsx\" --out-dir dist --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:esm": "cross-env BABEL_ENV=esm npx babel ./src --extensions \".ts,.tsx\" --out-dir esm --ignore src/**/*.mdx,src/**/*.spec.ts,src/**/*.spec.tsx",
+    "build:ts": "tsc --emitDeclarationOnly --project ./ --rootDir ./src --declarationDir dist",
+    "build:flow": "node ./scripts/flowgen.js",
+    "watch": "concurrently \"npm run build:esm -- --watch\" \"npm run build:ts -- --watch\""
+  },
+  "dependencies": {
+    "vienna.icons": "^1.0.1",
+    "vienna.react-use": "^1.0.2",
+    "vienna.ui-primitives": "^1.0.0",
+    "vienna.ui-theme": "^1.0.1",
+    "vienna.utils": "^1.0.0",
+    "date-fns": "2.8.1",
+    "element-closest-polyfill": "^1.0.0",
+    "imask": "^6.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "7.9.5",
+    "@babel/preset-react": "7.9.4",
+    "@babel/preset-typescript": "7.9.0",
+    "vienna.config-typescript": "^1.0.1",
+    "@types/react": "16.9.34",
+    "@types/react-dom": "16.9.6",
+    "@types/styled-components": "4.4.0",
+    "concurrently": "5.2.0",
+    "cross-env": "7.0.2",
+    "flowgen": "1.5.8",
+    "glob": "7.1.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "rimraf": "3.0.2",
+    "styled-components": "4.4.1",
+    "typescript": "3.8.3"
+  },
+  "peerDependencies": {
+    "imask": "^6.0.5",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "styled-components": ">=4.0.0"
+  },
+  "bugs": {
+    "url": "",
+    "email": "ds@raiffeisen.ru"
+  },
+  "sideEffects": false
+}

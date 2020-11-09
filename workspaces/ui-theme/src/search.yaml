@@ -1,0 +1,5 @@
+space: search
+imports: ['../typography.yaml']
+
+base:
+  width: 100%

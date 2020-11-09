@@ -1,0 +1,970 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      One of two columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      One of two columns
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      offset="0"
+      size="4"
+    >
+      One of three columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      offset="0"
+      size="4"
+    >
+      One of three columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      offset="0"
+      size="4"
+    >
+      One of three columns
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      offset="0"
+      size="3"
+    >
+      One of four columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      offset="0"
+      size="3"
+    >
+      One of four columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      offset="0"
+      size="3"
+    >
+      One of four columns
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      offset="0"
+      size="3"
+    >
+      One of four columns
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid adaptive 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 iUarAA"
+      offset="0"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 bCBXc"
+      offset="0"
+    >
+      2
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 kVHOpo"
+      offset="[object Object]"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYgwyj"
+      offset="0"
+    >
+      2
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid w align 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 dMzpbl"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 kxHIQF"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 ezKqZS"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 fBWJak"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 eVHAJz"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      offset="0"
+      size="2"
+    >
+      1
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 iobZnc"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      offset="0"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      offset="0"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      offset="0"
+    >
+      1
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid w valign 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 CXnGS"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      Tall column
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      top
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 dCSdqZ"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      Tall column
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      middle
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 hICVRV"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      Tall column
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      bottom
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      Tall column
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      offset="0"
+      size="6"
+    >
+      bottom
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid w/ columnGap 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      24
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 eJXEBQ"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      12
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 bwEERC"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      5
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 fhmIwx"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      offset="0"
+      size="1"
+    >
+      0
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid w/ offset 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 ezcJYy"
+      offset="11"
+      size="1"
+    >
+      1
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 fCgaLN"
+      offset="10"
+      size="2"
+    >
+      2
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 iNMWJT"
+      offset="9"
+      size="3"
+    >
+      3
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gANdZp"
+      offset="8"
+      size="4"
+    >
+      4
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 giUTCw"
+      offset="7"
+      size="5"
+    >
+      5
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cDmPX"
+      offset="6"
+      size="6"
+    >
+      6
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 flxgIb"
+      offset="5"
+      size="7"
+    >
+      7
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 lgapsP"
+      offset="4"
+      size="8"
+    >
+      8
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 dtUlCB"
+      offset="3"
+      size="9"
+    >
+      9
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 gLbGIz"
+      offset="2"
+      size="10"
+    >
+      10
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 HydGe"
+      offset="1"
+      size="11"
+    >
+      11
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 esTYWy"
+      offset="3"
+      size="3"
+    >
+      offset: 3
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 bZmzMl"
+      offset="2"
+      size="3"
+    >
+      offset: 2
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      offset="0"
+      size="3"
+    >
+      size 3
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 bRyXYa"
+      offset="3"
+      size="2"
+    >
+      size 2
+    </div>
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 klLerV"
+      offset="3"
+      size="1"
+    >
+      1
+    </div>
+  </div>,
+]
+`;
+
+exports[`Grid w/ rowGap 1`] = `
+Array [
+  <div
+    class="Row-sc-19nxm1v-0 iFkyFq"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      offset="0"
+      size="12"
+    >
+      5px row gap
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 bqTnsj"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      offset="0"
+      size="12"
+    >
+      10px row gap
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      offset="0"
+      size="12"
+    >
+      No row gap
+    </div>
+  </div>,
+  <div
+    class="Row-sc-19nxm1v-0 cwCUyd"
+  >
+    <div
+      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      offset="0"
+      size="12"
+    >
+      No row gap
+    </div>
+  </div>,
+]
+`;

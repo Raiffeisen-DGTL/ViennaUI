@@ -1,0 +1,958 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropList 1`] = `
+.c0 {
+  opacity: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  overflow: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+}
+
+.c1:hover {
+  background-color: #F4F4F4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  pointer-events: none;
+  opacity: 0.24;
+}
+
+.c2:hover {
+  background-color: #F4F4F4;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #E9EAEA;
+}
+
+.c3:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+  class="c0"
+  data-marker="DropList"
+  role="listbox"
+>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="c1"
+    data-marker="DropList.Item"
+    role="option"
+  >
+    Item 1
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="c1"
+    data-marker="DropList.Item_0"
+    role="option"
+  >
+    Very very long Item 2
+  </div>
+  <div
+    aria-disabled="true"
+    aria-selected="false"
+    class="c2"
+    data-marker="DropList.Item_1"
+    disabled=""
+    role="option"
+  >
+    Item 3
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="c1"
+    data-marker="DropList.Item_2"
+    role="option"
+  >
+    Item 4
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="true"
+    class="c3"
+    data-marker="DropList.Item_3"
+    role="option"
+    selected=""
+  >
+    Item 5
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="c1"
+    data-marker="DropList.Item_4"
+    role="option"
+  >
+    Item 6
+  </div>
+  <div
+    aria-disabled="false"
+    aria-selected="false"
+    class="c1"
+    data-marker="DropList.Item_5"
+    role="option"
+  >
+    Item 7
+  </div>
+</div>
+`;
+
+exports[`DropList w/ size 1`] = `
+Array [
+  .c0 {
+  opacity: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  overflow: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 12px;
+  min-height: 32px;
+}
+
+.c1:hover {
+  background-color: #F4F4F4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 12px;
+  min-height: 32px;
+  pointer-events: none;
+  opacity: 0.24;
+}
+
+.c2:hover {
+  background-color: #F4F4F4;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 12px;
+  min-height: 32px;
+  background-color: #E9EAEA;
+}
+
+.c3:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+    class="c0"
+    data-marker="DropList_0"
+    role="listbox"
+  >
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_6"
+      role="option"
+    >
+      Item 1
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_7"
+      role="option"
+    >
+      Very very long Item 2
+    </div>
+    <div
+      aria-disabled="true"
+      aria-selected="false"
+      class="c2"
+      data-marker="DropList.Item_8"
+      disabled=""
+      role="option"
+    >
+      Item 3
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_9"
+      role="option"
+    >
+      Item 4
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="true"
+      class="c3"
+      data-marker="DropList.Item_10"
+      role="option"
+      selected=""
+    >
+      Item 5
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_11"
+      role="option"
+    >
+      Item 6
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_12"
+      role="option"
+    >
+      Item 7
+    </div>
+  </div>,
+  .c0 {
+  opacity: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  overflow: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+}
+
+.c1:hover {
+  background-color: #F4F4F4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  pointer-events: none;
+  opacity: 0.24;
+}
+
+.c2:hover {
+  background-color: #F4F4F4;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #E9EAEA;
+}
+
+.c3:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+    class="c0"
+    data-marker="DropList_0"
+    role="listbox"
+  >
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_6"
+      role="option"
+    >
+      Item 1
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_7"
+      role="option"
+    >
+      Very very long Item 2
+    </div>
+    <div
+      aria-disabled="true"
+      aria-selected="false"
+      class="c2"
+      data-marker="DropList.Item_8"
+      disabled=""
+      role="option"
+    >
+      Item 3
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_9"
+      role="option"
+    >
+      Item 4
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="true"
+      class="c3"
+      data-marker="DropList.Item_10"
+      role="option"
+      selected=""
+    >
+      Item 5
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_11"
+      role="option"
+    >
+      Item 6
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_12"
+      role="option"
+    >
+      Item 7
+    </div>
+  </div>,
+  .c0 {
+  opacity: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 8px 0;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  overflow: auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 12px 16px;
+  min-height: 52px;
+}
+
+.c1:hover {
+  background-color: #F4F4F4;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 12px 16px;
+  min-height: 52px;
+  pointer-events: none;
+  opacity: 0.24;
+}
+
+.c2:hover {
+  background-color: #F4F4F4;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 12px 16px;
+  min-height: 52px;
+  background-color: #E9EAEA;
+}
+
+.c3:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+    class="c0"
+    data-marker="DropList_0"
+    role="listbox"
+  >
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_6"
+      role="option"
+    >
+      Item 1
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_7"
+      role="option"
+    >
+      Very very long Item 2
+    </div>
+    <div
+      aria-disabled="true"
+      aria-selected="false"
+      class="c2"
+      data-marker="DropList.Item_8"
+      disabled=""
+      role="option"
+    >
+      Item 3
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_9"
+      role="option"
+    >
+      Item 4
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="true"
+      class="c3"
+      data-marker="DropList.Item_10"
+      role="option"
+      selected=""
+    >
+      Item 5
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_11"
+      role="option"
+    >
+      Item 6
+    </div>
+    <div
+      aria-disabled="false"
+      aria-selected="false"
+      class="c1"
+      data-marker="DropList.Item_12"
+      role="option"
+    >
+      Item 7
+    </div>
+  </div>,
+]
+`;
+
+exports[`DropList.Item /w disabled 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  pointer-events: none;
+  opacity: 0.24;
+}
+
+.c0:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+  aria-disabled="true"
+  aria-selected="false"
+  class="c0"
+  data-marker="DropList.Item_15"
+  disabled=""
+  role="option"
+>
+  Item 1
+</div>
+`;
+
+exports[`DropList.Item /w selected 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+  background-color: #E9EAEA;
+}
+
+.c0:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+  aria-disabled="false"
+  aria-selected="true"
+  class="c0"
+  data-marker="DropList.Item_14"
+  role="option"
+  selected=""
+>
+  Item 1
+</div>
+`;
+
+exports[`DropList.Item 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 8px 16px;
+  min-height: 40px;
+}
+
+.c0:hover {
+  background-color: #F4F4F4;
+}
+
+<div
+  aria-disabled="false"
+  aria-selected="false"
+  class="c0"
+  data-marker="DropList.Item_13"
+  role="option"
+>
+  Item 1
+</div>
+`;

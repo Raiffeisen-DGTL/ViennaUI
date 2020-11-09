@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switcher 1`] = `
+<label
+  class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+>
+  <span
+    class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+  />
+  <input
+    class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+    type="checkbox"
+  />
+</label>
+`;
+
+exports[`Switcher w/ any props 1`] = `
+<label
+  class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA className"
+  id="id"
+  title="title"
+>
+  <span
+    class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+  />
+  <input
+    class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+    name="name"
+    type="checkbox"
+  />
+  <span
+    class="Switcherstyles__Caption-sc-13wnyvg-0 ikxMzt"
+  >
+    Label
+  </span>
+</label>
+`;
+
+exports[`Switcher w/ checked 1`] = `
+Array [
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+  >
+    <span
+      checked=""
+      class="Switcherstyles__Handle-sc-13wnyvg-3 kPeTDW"
+    />
+    <input
+      checked=""
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      type="checkbox"
+    />
+  </label>,
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+  >
+    <span
+      checked=""
+      class="Switcherstyles__Handle-sc-13wnyvg-3 kPeTDW"
+    />
+    <input
+      checked=""
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      type="checkbox"
+    />
+    <span
+      class="Switcherstyles__Caption-sc-13wnyvg-0 ikxMzt"
+    >
+      Label
+    </span>
+  </label>,
+]
+`;
+
+exports[`Switcher w/ checked and disabled 1`] = `
+Array [
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+    disabled=""
+  >
+    <span
+      checked=""
+      class="Switcherstyles__Handle-sc-13wnyvg-3 ZeQJa"
+      disabled=""
+    />
+    <input
+      checked=""
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      disabled=""
+      type="checkbox"
+    />
+  </label>,
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+    disabled=""
+  >
+    <span
+      checked=""
+      class="Switcherstyles__Handle-sc-13wnyvg-3 ZeQJa"
+      disabled=""
+    />
+    <input
+      checked=""
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      disabled=""
+      type="checkbox"
+    />
+    <span
+      class="Switcherstyles__Caption-sc-13wnyvg-0 fVSXJf"
+      disabled=""
+    >
+      Label
+    </span>
+  </label>,
+]
+`;
+
+exports[`Switcher w/ disabled 1`] = `
+Array [
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+    disabled=""
+  >
+    <span
+      class="Switcherstyles__Handle-sc-13wnyvg-3 eBjRFT"
+      disabled=""
+    />
+    <input
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      disabled=""
+      type="checkbox"
+    />
+  </label>,
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+    disabled=""
+  >
+    <span
+      class="Switcherstyles__Handle-sc-13wnyvg-3 eBjRFT"
+      disabled=""
+    />
+    <input
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      disabled=""
+      type="checkbox"
+    />
+    <span
+      class="Switcherstyles__Caption-sc-13wnyvg-0 fVSXJf"
+      disabled=""
+    >
+      Label
+    </span>
+  </label>,
+]
+`;
+
+exports[`Switcher w/ label 1`] = `
+<label
+  class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+>
+  <span
+    class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+  />
+  <input
+    class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+    type="checkbox"
+  />
+  <span
+    class="Switcherstyles__Caption-sc-13wnyvg-0 ikxMzt"
+  >
+    Label
+  </span>
+</label>
+`;
+
+exports[`Switcher w/ name 1`] = `
+Array [
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+  >
+    <span
+      class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+    />
+    <input
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      name="switcher1"
+      type="checkbox"
+    />
+  </label>,
+  <label
+    class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+  >
+    <span
+      class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+    />
+    <input
+      class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+      name="switcher2"
+      type="checkbox"
+    />
+    <span
+      class="Switcherstyles__Caption-sc-13wnyvg-0 ikxMzt"
+    >
+      Label
+    </span>
+  </label>,
+]
+`;
+
+exports[`Switcher w/ size: l 1`] = `
+<label
+  class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+>
+  <span
+    class="Switcherstyles__Handle-sc-13wnyvg-3 gNjYtn"
+  />
+  <input
+    class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+    type="checkbox"
+  />
+  <span
+    class="Switcherstyles__Caption-sc-13wnyvg-0 cyiWDK"
+  >
+    Label
+  </span>
+</label>
+`;
+
+exports[`Switcher w/ size: m 1`] = `
+<label
+  class="Switcherstyles__Box-sc-13wnyvg-1 RVFyA"
+>
+  <span
+    class="Switcherstyles__Handle-sc-13wnyvg-3 gavIbE"
+  />
+  <input
+    class="Switcherstyles__Input-sc-13wnyvg-2 gNMpxz"
+    type="checkbox"
+  />
+  <span
+    class="Switcherstyles__Caption-sc-13wnyvg-0 ikxMzt"
+  >
+    Label
+  </span>
+</label>
+`;

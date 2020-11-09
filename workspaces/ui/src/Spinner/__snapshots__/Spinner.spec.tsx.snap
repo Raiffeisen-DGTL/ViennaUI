@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ any props 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 exGfag className"
+  id="Spinner"
+  title="title"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ position: absolute 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 kziUJa"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ position: relative 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: l 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 cBngop"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 dDtinI"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: m 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: s 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 kgvjZa"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 dbzBgh"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: xl 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 kECwyS"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 eleZpA"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: xs 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 gFGfXs"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 krMjqW"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Spinner w/ size: xxl 1`] = `
+<div
+  class="Spinnerstyles__Box-f0kfdr-0 kECwyS"
+>
+  <svg
+    class="Spinnerstyles__Svg-f0kfdr-1 eleZpA"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      stroke-width="2"
+    >
+      <path
+        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
+        stroke="#2b2d33"
+        stroke-opacity=".87"
+      />
+      <path
+        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
+        stroke="#fee600"
+      />
+    </g>
+  </svg>
+</div>
+`;

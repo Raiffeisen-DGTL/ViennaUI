@@ -1,0 +1,16 @@
+space: comboButton
+imports: ['../typography.yaml']
+
+leftButton:
+  base:
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+
+rightButton:
+  base:
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    margin-left: 2px
+  design:
+    outline:
+      margin-left: -2px

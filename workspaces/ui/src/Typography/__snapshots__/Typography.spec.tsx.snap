@@ -1,0 +1,2486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ any props 1`] = `
+<h1
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Условия обработки персональных данных
+</h1>
+`;
+
+exports[`Heading w/ any props 2`] = `
+<h2
+  class="Headingstyles__Box-sc-16udop9-0 kLVNsI className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Условия обработки персональных данных
+</h2>
+`;
+
+exports[`Heading w/ any props 3`] = `
+<h3
+  class="Headingstyles__Box-sc-16udop9-0 gsJPdr className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Условия обработки персональных данных
+</h3>
+`;
+
+exports[`Heading w/ any props 4`] = `
+<h4
+  class="Headingstyles__Box-sc-16udop9-0 egxmmu className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Условия обработки персональных данных
+</h4>
+`;
+
+exports[`Heading w/ any props 5`] = `
+<h5
+  class="Headingstyles__Box-sc-16udop9-0 fjHjeT className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Условия обработки персональных данных
+</h5>
+`;
+
+exports[`Heading w/ color: brand-accent 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cxWJIZ"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cxWJIZ"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 dQDhvi"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bucyPX"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 dPTrfh"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 koELen"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 koELen"
+    color="brand-accent"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: brand-primary 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: brand-white 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 bfeXoA"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 bfeXoA"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 eVVBcx"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bsIEqp"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 dNOugO"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 gNGoHY"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 gNGoHY"
+    color="brand-white"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: currentColor 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 ktKCXh"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 ktKCXh"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kShvSy"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 JeMNV"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 emnHXf"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 evHUKS"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 evHUKS"
+    color="currentColor"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: geneva100 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fBCkbS"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fBCkbS"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 ffGZZH"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 fvICLu"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 dnNimV"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 dPxumP"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 dPxumP"
+    color="geneva100"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: moscow100 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 hTlSqO"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 hTlSqO"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 jkyThp"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 foGDLO"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 ATyWu"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 jLrPVE"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 jLrPVE"
+    color="moscow100"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: osaka100 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dtmzCu"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dtmzCu"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 cPRcnF"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 iGGWDC"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 ebHuOb"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 iWWBNb"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 iWWBNb"
+    color="osaka100"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle01 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cBMFoN"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cBMFoN"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 eOPPBa"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 EBJLG"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 dzNRvx"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 gOxEif"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 gOxEif"
+    color="seattle01"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle05 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 jdiKsY"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 jdiKsY"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 hyQKBg"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 dIFlYU"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 bUpYKf"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 iDOoRO"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 iDOoRO"
+    color="seattle05"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle10 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cFcchn"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cFcchn"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kuBIWz"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 dDofDb"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 iqwRaE"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 dJuIPx"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 dJuIPx"
+    color="seattle10"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle30 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fOnBUb"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fOnBUb"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 hhHnfM"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bRzyTD"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 AWckw"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 cEXTOQ"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 cEXTOQ"
+    color="seattle30"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle60 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 iQQKZm"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 iQQKZm"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 iyuxel"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 esFjZp"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 iYcXLu"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 klHZkD"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 klHZkD"
+    color="seattle60"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle100 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 hMcLGj"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 hMcLGj"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 keOiFg"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 guurSz"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 cCzlVz"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 fHAyQy"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 fHAyQy"
+    color="seattle100"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle120 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 OHMpV"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 OHMpV"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 beOiFP"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 ewbkjB"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 cCQcVZ"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 kQGwJX"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 kQGwJX"
+    color="seattle120"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ color: seattle140 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 gnqxic"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 gnqxic"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kujuNX"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bMULRZ"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 gQkSRM"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 jlKITn"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 jlKITn"
+    color="seattle140"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: l 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dynJUV"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dynJUV"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 leHGVB"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 dpSWrs"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 bbNStW"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 iNiQgP"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 iNiQgP"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: m 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 iZPjgd"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 iZPjgd"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 dOwPoQ"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 qelnJ"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 iOTGnH"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 kxsKpq"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 kxsKpq"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: none 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: s 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dduOXR"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dduOXR"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 XDuUy"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 UUwrm"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 bJhNkb"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 ABpzs"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 ABpzs"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: xl 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kVbujw"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kVbujw"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 dWOcbM"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 cicqyv"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 dmBjfF"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 dWHyxE"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 dWHyxE"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: xs 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 caHkwc"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 caHkwc"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 iqTeUI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 eLZCpR"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 fRmodu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 bSANsz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 bSANsz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: xxl 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 idTvjy"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 idTvjy"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 hAcaDe"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bdaLOF"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 cEkbcQ"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 bSbOMy"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 bSbOMy"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ margin: xxs 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dTmCBk"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 dTmCBk"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 biJqOI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 juUCwz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 cXWuTo"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 iFadEu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 iFadEu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ size: l 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 kLVNsI"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ size: m 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 gsJPdr"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ size: s 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 egxmmu"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ size: xl 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ size: xs 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Heading w/ type: h1 1`] = `
+<h1
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h1>
+`;
+
+exports[`Heading w/ type: h2 1`] = `
+<h2
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h2>
+`;
+
+exports[`Heading w/ type: h3 1`] = `
+<h3
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h3>
+`;
+
+exports[`Heading w/ type: h4 1`] = `
+<h4
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h4>
+`;
+
+exports[`Heading w/ type: h5 1`] = `
+<h5
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h5>
+`;
+
+exports[`Heading w/ type: h6 1`] = `
+<h6
+  class="Headingstyles__Box-sc-16udop9-0 kLXorz"
+  color="brand-primary"
+>
+  Условия обработки персональных данных
+</h6>
+`;
+
+exports[`Heading w/ uppercase 1`] = `
+Array [
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cWvoBz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h1
+    class="Headingstyles__Box-sc-16udop9-0 cWvoBz"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h1>,
+  <h2
+    class="Headingstyles__Box-sc-16udop9-0 njaZN"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h2>,
+  <h3
+    class="Headingstyles__Box-sc-16udop9-0 bESDBe"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h3>,
+  <h4
+    class="Headingstyles__Box-sc-16udop9-0 igYuFo"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h4>,
+  <h5
+    class="Headingstyles__Box-sc-16udop9-0 bVpezU"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h5>,
+  <h6
+    class="Headingstyles__Box-sc-16udop9-0 bVpezU"
+    color="brand-primary"
+  >
+    Условия обработки персональных данных
+  </h6>,
+]
+`;
+
+exports[`Text 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ any props 1`] = `
+<span
+  class="Textstyles__Box-gspvwk-0 jmhufK className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</span>
+`;
+
+exports[`Text w/ any props 2`] = `
+<p
+  class="Textstyles__Box-gspvwk-0 jmhufK className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</p>
+`;
+
+exports[`Text w/ any props 3`] = `
+<span
+  class="Textstyles__Box-gspvwk-0 jmhufK className"
+  color="brand-primary"
+  id="id"
+  title="title"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</span>
+`;
+
+exports[`Text w/ color: brand-accent 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 iksGi"
+    color="brand-accent"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 iksGi"
+    color="brand-accent"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 iksGi"
+    color="brand-accent"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: brand-primary 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: brand-white 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 gcFYPL"
+    color="brand-white"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 gcFYPL"
+    color="brand-white"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 gcFYPL"
+    color="brand-white"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: currentColor 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 ceHGav"
+    color="currentColor"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 ceHGav"
+    color="currentColor"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 ceHGav"
+    color="currentColor"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: geneva100 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 hKJODu"
+    color="geneva100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 hKJODu"
+    color="geneva100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 hKJODu"
+    color="geneva100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: moscow100 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 gmgRoY"
+    color="moscow100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 gmgRoY"
+    color="moscow100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 gmgRoY"
+    color="moscow100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: osaka100 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 imOpab"
+    color="osaka100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 imOpab"
+    color="osaka100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 imOpab"
+    color="osaka100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle01 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 elznEd"
+    color="seattle01"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 elznEd"
+    color="seattle01"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 elznEd"
+    color="seattle01"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle05 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 iNmtrQ"
+    color="seattle05"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 iNmtrQ"
+    color="seattle05"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 iNmtrQ"
+    color="seattle05"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle10 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 caMkFW"
+    color="seattle10"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 caMkFW"
+    color="seattle10"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 caMkFW"
+    color="seattle10"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle30 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 hWErwW"
+    color="seattle30"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 hWErwW"
+    color="seattle30"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 hWErwW"
+    color="seattle30"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle60 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 beblFl"
+    color="seattle60"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 beblFl"
+    color="seattle60"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 beblFl"
+    color="seattle60"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle100 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 fipaVu"
+    color="seattle100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 fipaVu"
+    color="seattle100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 fipaVu"
+    color="seattle100"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle120 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 eSoKby"
+    color="seattle120"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 eSoKby"
+    color="seattle120"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 eSoKby"
+    color="seattle120"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ color: seattle140 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 ingxfa"
+    color="seattle140"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 ingxfa"
+    color="seattle140"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 ingxfa"
+    color="seattle140"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: l 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 intMqk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 intMqk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 intMqk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: m 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 cFCWuT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 cFCWuT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 cFCWuT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: none 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: s 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 kEONGn"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 kEONGn"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 kEONGn"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: xl 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jiykLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jiykLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jiykLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: xs 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 dOtknO"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 dOtknO"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 dOtknO"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: xxl 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 bqJiLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 bqJiLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 bqJiLk"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ margin: xxs 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 cjlkec"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 cjlkec"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 cjlkec"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ size: l 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 eDkRiV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 eDkRiV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 eDkRiV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ size: m 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jmhufK"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ size: s 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 iopaLh"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 iopaLh"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 iopaLh"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ size: xl 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 lcfYNq"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 lcfYNq"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 lcfYNq"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ size: xxl 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 ftuCnV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 ftuCnV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 ftuCnV"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ type: typea 1`] = `
+<a
+  class="Textstyles__Box-gspvwk-0 jmhufK"
+  color="brand-primary"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</a>
+`;
+
+exports[`Text w/ type: typeabbr 1`] = `
+<abbr
+  class="Textstyles__Box-gspvwk-0 jmhufK"
+  color="brand-primary"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</abbr>
+`;
+
+exports[`Text w/ type: typep 1`] = `
+<p
+  class="Textstyles__Box-gspvwk-0 jmhufK"
+  color="brand-primary"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</p>
+`;
+
+exports[`Text w/ type: typespan 1`] = `
+<span
+  class="Textstyles__Box-gspvwk-0 jmhufK"
+  color="brand-primary"
+>
+  Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+</span>
+`;
+
+exports[`Text w/ uppercase 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 gLcYWH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 gLcYWH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 gLcYWH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: black 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jvleWg"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jvleWg"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jvleWg"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: bold 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 cJgCLG"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 cJgCLG"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 cJgCLG"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: extra-bold 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 fEelmA"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 fEelmA"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 fEelmA"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: extra-light 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 jbAkhy"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 jbAkhy"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 jbAkhy"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: light 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 bFcGbQ"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 bFcGbQ"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 bFcGbQ"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: medium 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 klGDTI"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 klGDTI"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 klGDTI"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: normal 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 feFSbH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 feFSbH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 feFSbH"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: semi-bold 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 iiNaAT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 iiNaAT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 iiNaAT"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;
+
+exports[`Text w/ weight: thin 1`] = `
+Array [
+  <span
+    class="Textstyles__Box-gspvwk-0 nHASx"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+  <p
+    class="Textstyles__Box-gspvwk-0 nHASx"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </p>,
+  <span
+    class="Textstyles__Box-gspvwk-0 nHASx"
+    color="brand-primary"
+  >
+    Клиент, сведения о котором содержатся в представленных в Банк документах, дает свое согласие на обработку АО «Райффайзенбанк» и подтверждает, что, давая такое согласие, действует своей волей и своем интересе.
+  </span>,
+]
+`;

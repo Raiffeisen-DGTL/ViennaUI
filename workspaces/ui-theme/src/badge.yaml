@@ -1,0 +1,70 @@
+space: badge
+
+base:
+  font-family: $typography.b.family
+  font-weight: $typography.weight.normal
+  text-decoration: none
+  color: $color.primary.brand.white
+  width: auto
+  border-color: transparent
+  border-radius: $border.radius.s
+
+color:
+  paris10:
+    background-color: $color.secondary.basic.paris.c10
+    color: $color.primary.brand.primary
+  paris30:
+    background-color: $color.secondary.basic.paris.c30
+    color: $color.primary.brand.primary
+  miami10:
+    background-color: $color.secondary.basic.miami.c10
+    color: $color.primary.brand.primary
+  miami30:
+    background-color: $color.secondary.basic.miami.c30
+    color: $color.primary.brand.primary
+  dubai10:
+    background-color: $color.secondary.basic.dubai.c10
+    color: $color.primary.brand.primary
+  dubai30:
+    background-color: $color.secondary.basic.dubai.c30
+    color: $color.primary.brand.primary
+  nice10:
+    background-color: $color.secondary.basic.nice.c10
+    color: $color.primary.brand.primary
+  nice30:
+    background-color: $color.secondary.basic.nice.c30
+    color: $color.primary.brand.primary
+  seattle05:
+    background-color: $color.primary.seattle.c05
+    color: $color.primary.brand.primary
+  seattle10:
+    background-color: $color.primary.seattle.c10
+    color: $color.primary.brand.primary
+
+size:
+  l:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding: 0 $layout.whitespace.s
+    height: $layout.size.m
+    min-width: $layout.size.l
+  m:
+    font-size: $typography.b.b2.size
+    line-height: $typography.b.b2.height
+    padding: 0 $layout.whitespace.s
+    height: $layout.size.s
+    min-width: $layout.size.m
+  s:
+    font-size: $typography.b.b1.size
+    line-height: $typography.b.b1.height
+    padding: 0 $layout.whitespace.xs
+    height: $layout.size.xs
+    min-width: $layout.size.s
+
+gap:
+  l:
+    margin-right: $layout.whitespace.xs
+  m:
+    margin-right: $layout.whitespace.xxs
+  s:
+    margin-right: $layout.whitespace.xxs

@@ -1,0 +1,12 @@
+space: datetimepicker
+
+left:
+  base:
+    min-width: 136px
+    margin-right: $layout.whitespace.xs
+
+right:
+  base:
+    width: 96px
+  isInput:
+    width: 72px

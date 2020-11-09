@@ -1,0 +1,9 @@
+space: groups
+
+size:
+  xxs: $layout.whitespace.xxs
+  xs: $layout.whitespace.xs
+  s: $layout.whitespace.s
+  m: $layout.whitespace.m
+  l: $layout.whitespace.l
+  xl: $layout.whitespace.xl

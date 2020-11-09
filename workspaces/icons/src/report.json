@@ -1,0 +1,5307 @@
+{
+  "icons": [
+    {
+      "id": "Brush",
+      "name": "Brush",
+      "category": "Art",
+      "filename": "Brush.svg",
+      "filepath": "source/Art/Brush.svg",
+      "tags": [
+        "Brush",
+        "Art"
+      ]
+    },
+    {
+      "id": "Bust",
+      "name": "Bust",
+      "category": "Art",
+      "filename": "Bust.svg",
+      "filepath": "source/Art/Bust.svg",
+      "tags": [
+        "Bust",
+        "Art"
+      ]
+    },
+    {
+      "id": "Design",
+      "name": "Design",
+      "category": "Art",
+      "filename": "Design.svg",
+      "filepath": "source/Art/Design.svg",
+      "tags": [
+        "Design",
+        "Art"
+      ]
+    },
+    {
+      "id": "Literature",
+      "name": "Literature",
+      "category": "Art",
+      "filename": "Literature.svg",
+      "filepath": "source/Art/Literature.svg",
+      "tags": [
+        "Literature",
+        "Art"
+      ]
+    },
+    {
+      "id": "Movie",
+      "name": "Movie",
+      "category": "Art",
+      "filename": "Movie.svg",
+      "filepath": "source/Art/Movie.svg",
+      "tags": [
+        "Movie",
+        "Art"
+      ]
+    },
+    {
+      "id": "Music",
+      "name": "Music",
+      "category": "Art",
+      "filename": "Music.svg",
+      "filepath": "source/Art/Music.svg",
+      "tags": [
+        "Music",
+        "Art"
+      ]
+    },
+    {
+      "id": "Picture",
+      "name": "Picture",
+      "category": "Art",
+      "filename": "Picture.svg",
+      "filepath": "source/Art/Picture.svg",
+      "tags": [
+        "Picture",
+        "Art"
+      ]
+    },
+    {
+      "id": "Post-services",
+      "name": "PostServices",
+      "category": "Art",
+      "filename": "Post-services.svg",
+      "filepath": "source/Art/Post-services.svg",
+      "tags": [
+        "PostServices",
+        "Art"
+      ]
+    },
+    {
+      "id": "Theater-2",
+      "name": "Theater2",
+      "category": "Art",
+      "filename": "Theater-2.svg",
+      "filepath": "source/Art/Theater-2.svg",
+      "tags": [
+        "Theater2",
+        "Art"
+      ]
+    },
+    {
+      "id": "Theater",
+      "name": "Theater",
+      "category": "Art",
+      "filename": "Theater.svg",
+      "filepath": "source/Art/Theater.svg",
+      "tags": [
+        "Theater",
+        "Art"
+      ]
+    },
+    {
+      "id": "Violin",
+      "name": "Violin",
+      "category": "Art",
+      "filename": "Violin.svg",
+      "filepath": "source/Art/Violin.svg",
+      "tags": [
+        "Violin",
+        "Art"
+      ]
+    },
+    {
+      "id": "ATM-card",
+      "name": "ATMCard",
+      "category": "Cards",
+      "filename": "ATM-card.svg",
+      "filepath": "source/Cards/ATM-card.svg",
+      "tags": [
+        "ATMCard",
+        "Cards"
+      ]
+    },
+    {
+      "id": "ATM",
+      "name": "ATM",
+      "category": "Cards",
+      "filename": "ATM.svg",
+      "filepath": "source/Cards/ATM.svg",
+      "tags": [
+        "ATM",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Bridge",
+      "name": "Bridge",
+      "category": "Cards",
+      "filename": "Bridge.svg",
+      "filepath": "source/Cards/Bridge.svg",
+      "tags": [
+        "Bridge",
+        "Cards"
+      ]
+    },
+    {
+      "id": "By-card-number",
+      "name": "ByCardNumber",
+      "category": "Cards",
+      "filename": "By-card-number.svg",
+      "filepath": "source/Cards/By-card-number.svg",
+      "tags": [
+        "ByCardNumber",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-1",
+      "name": "Card1",
+      "category": "Cards",
+      "filename": "Card-1.svg",
+      "filepath": "source/Cards/Card-1.svg",
+      "tags": [
+        "Card1",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-heart",
+      "name": "CardHeart",
+      "category": "Cards",
+      "filename": "Card-heart.svg",
+      "filepath": "source/Cards/Card-heart.svg",
+      "tags": [
+        "CardHeart",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-interest",
+      "name": "CardInterest",
+      "category": "Cards",
+      "filename": "Card-interest.svg",
+      "filepath": "source/Cards/Card-interest.svg",
+      "tags": [
+        "CardInterest",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-lock 2",
+      "name": "CardLock2",
+      "category": "Cards",
+      "filename": "Card-lock 2.svg",
+      "filepath": "source/Cards/Card-lock 2.svg",
+      "tags": [
+        "CardLock2",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-lock",
+      "name": "CardLock",
+      "category": "Cards",
+      "filename": "Card-lock.svg",
+      "filepath": "source/Cards/Card-lock.svg",
+      "tags": [
+        "CardLock",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Card-pin-change",
+      "name": "CardPinChange",
+      "category": "Cards",
+      "filename": "Card-pin-change.svg",
+      "filepath": "source/Cards/Card-pin-change.svg",
+      "tags": [
+        "CardPinChange",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Cards",
+      "name": "Cards",
+      "category": "Cards",
+      "filename": "Cards.svg",
+      "filepath": "source/Cards/Cards.svg",
+      "tags": [
+        "Cards",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Cash-withdrawal",
+      "name": "CashWithdrawal",
+      "category": "Cards",
+      "filename": "Cash-withdrawal.svg",
+      "filepath": "source/Cards/Cash-withdrawal.svg",
+      "tags": [
+        "CashWithdrawal",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Change-pin-card",
+      "name": "ChangePinCard",
+      "category": "Cards",
+      "filename": "Change-pin-card.svg",
+      "filepath": "source/Cards/Change-pin-card.svg",
+      "tags": [
+        "ChangePinCard",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Deposit-funds",
+      "name": "DepositFunds",
+      "category": "Cards",
+      "filename": "Deposit-funds.svg",
+      "filepath": "source/Cards/Deposit-funds.svg",
+      "tags": [
+        "DepositFunds",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Hand-money",
+      "name": "HandMoney",
+      "category": "Cards",
+      "filename": "Hand-money.svg",
+      "filepath": "source/Cards/Hand-money.svg",
+      "tags": [
+        "HandMoney",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Mastercard",
+      "name": "Mastercard",
+      "category": "Cards",
+      "filename": "Mastercard.svg",
+      "filepath": "source/Cards/Mastercard.svg",
+      "tags": [
+        "Mastercard",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Open-card",
+      "name": "OpenCard",
+      "category": "Cards",
+      "filename": "Open-card.svg",
+      "filepath": "source/Cards/Open-card.svg",
+      "tags": [
+        "OpenCard",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Something",
+      "name": "Something",
+      "category": "Cards",
+      "filename": "Something.svg",
+      "filepath": "source/Cards/Something.svg",
+      "tags": [
+        "Something",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Terminal-2",
+      "name": "Terminal2",
+      "category": "Cards",
+      "filename": "Terminal-2.svg",
+      "filepath": "source/Cards/Terminal-2.svg",
+      "tags": [
+        "Terminal2",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Terminal-3",
+      "name": "Terminal3",
+      "category": "Cards",
+      "filename": "Terminal-3.svg",
+      "filepath": "source/Cards/Terminal-3.svg",
+      "tags": [
+        "Terminal3",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Terminal-4",
+      "name": "Terminal4",
+      "category": "Cards",
+      "filename": "Terminal-4.svg",
+      "filepath": "source/Cards/Terminal-4.svg",
+      "tags": [
+        "Terminal4",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Terminal",
+      "name": "Terminal",
+      "category": "Cards",
+      "filename": "Terminal.svg",
+      "filepath": "source/Cards/Terminal.svg",
+      "tags": [
+        "Terminal",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Transfer-to-card",
+      "name": "TransferToCard",
+      "category": "Cards",
+      "filename": "Transfer-to-card.svg",
+      "filepath": "source/Cards/Transfer-to-card.svg",
+      "tags": [
+        "TransferToCard",
+        "Cards"
+      ]
+    },
+    {
+      "id": "Transfer",
+      "name": "Transfer",
+      "category": "Cards",
+      "filename": "Transfer.svg",
+      "filepath": "source/Cards/Transfer.svg",
+      "tags": [
+        "Transfer",
+        "Cards"
+      ]
+    },
+    {
+      "id": "diagram",
+      "name": "Diagram",
+      "category": "Diagrams",
+      "filename": "diagram.svg",
+      "filepath": "source/Diagrams/diagram.svg",
+      "tags": [
+        "Diagram",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Schedule-2",
+      "name": "Schedule2",
+      "category": "Diagrams",
+      "filename": "Schedule-2.svg",
+      "filepath": "source/Diagrams/Schedule-2.svg",
+      "tags": [
+        "Schedule2",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Schedule-3",
+      "name": "Schedule3",
+      "category": "Diagrams",
+      "filename": "Schedule-3.svg",
+      "filepath": "source/Diagrams/Schedule-3.svg",
+      "tags": [
+        "Schedule3",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Schedule-growth",
+      "name": "ScheduleGrowth",
+      "category": "Diagrams",
+      "filename": "Schedule-growth.svg",
+      "filepath": "source/Diagrams/Schedule-growth.svg",
+      "tags": [
+        "ScheduleGrowth",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Schedule",
+      "name": "Schedule",
+      "category": "Diagrams",
+      "filename": "Schedule.svg",
+      "filepath": "source/Diagrams/Schedule.svg",
+      "tags": [
+        "Schedule",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Scheme-2",
+      "name": "Scheme2",
+      "category": "Diagrams",
+      "filename": "Scheme-2.svg",
+      "filepath": "source/Diagrams/Scheme-2.svg",
+      "tags": [
+        "Scheme2",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Scheme",
+      "name": "Scheme",
+      "category": "Diagrams",
+      "filename": "Scheme.svg",
+      "filepath": "source/Diagrams/Scheme.svg",
+      "tags": [
+        "Scheme",
+        "Diagrams"
+      ]
+    },
+    {
+      "id": "Account-Error",
+      "name": "AccountError",
+      "category": "Documents",
+      "filename": "Account-Error.svg",
+      "filepath": "source/Documents/Account-Error.svg",
+      "tags": [
+        "AccountError",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Accounts",
+      "name": "Accounts",
+      "category": "Documents",
+      "filename": "Accounts.svg",
+      "filepath": "source/Documents/Accounts.svg",
+      "tags": [
+        "Accounts",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Between-your-accounts",
+      "name": "BetweenYourAccounts",
+      "category": "Documents",
+      "filename": "Between-your-accounts.svg",
+      "filepath": "source/Documents/Between-your-accounts.svg",
+      "tags": [
+        "BetweenYourAccounts",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Briefcase-Interest",
+      "name": "BriefcaseInterest",
+      "category": "Documents",
+      "filename": "Briefcase-Interest.svg",
+      "filepath": "source/Documents/Briefcase-Interest.svg",
+      "tags": [
+        "BriefcaseInterest",
+        "Documents"
+      ]
+    },
+    {
+      "id": "By-receipt-number",
+      "name": "ByReceiptNumber",
+      "category": "Documents",
+      "filename": "By-receipt-number.svg",
+      "filepath": "source/Documents/By-receipt-number.svg",
+      "tags": [
+        "ByReceiptNumber",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check-2",
+      "name": "Check2",
+      "category": "Documents",
+      "filename": "Check-2.svg",
+      "filepath": "source/Documents/Check-2.svg",
+      "tags": [
+        "Check2",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check-info",
+      "name": "CheckInfo",
+      "category": "Documents",
+      "filename": "Check-info.svg",
+      "filepath": "source/Documents/Check-info.svg",
+      "tags": [
+        "CheckInfo",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check-magnifier",
+      "name": "CheckMagnifier",
+      "category": "Documents",
+      "filename": "Check-magnifier.svg",
+      "filepath": "source/Documents/Check-magnifier.svg",
+      "tags": [
+        "CheckMagnifier",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check-seal",
+      "name": "CheckSeal",
+      "category": "Documents",
+      "filename": "Check-seal.svg",
+      "filepath": "source/Documents/Check-seal.svg",
+      "tags": [
+        "CheckSeal",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check-sign",
+      "name": "CheckSign",
+      "category": "Documents",
+      "filename": "Check-sign.svg",
+      "filepath": "source/Documents/Check-sign.svg",
+      "tags": [
+        "CheckSign",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Check",
+      "name": "Check",
+      "category": "Documents",
+      "filename": "Check.svg",
+      "filepath": "source/Documents/Check.svg",
+      "tags": [
+        "Check",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Clip",
+      "name": "Clip",
+      "category": "Documents",
+      "filename": "Clip.svg",
+      "filepath": "source/Documents/Clip.svg",
+      "tags": [
+        "Clip",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Current-account",
+      "name": "CurrentAccount",
+      "category": "Documents",
+      "filename": "Current-account.svg",
+      "filepath": "source/Documents/Current-account.svg",
+      "tags": [
+        "CurrentAccount",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Dictionary-add",
+      "name": "DictionaryAdd",
+      "category": "Documents",
+      "filename": "Dictionary-add.svg",
+      "filepath": "source/Documents/Dictionary-add.svg",
+      "tags": [
+        "DictionaryAdd",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-2",
+      "name": "Document2",
+      "category": "Documents",
+      "filename": "Document-2.svg",
+      "filepath": "source/Documents/Document-2.svg",
+      "tags": [
+        "Document2",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-3-arrow",
+      "name": "Document3Arrow",
+      "category": "Documents",
+      "filename": "Document-3-arrow.svg",
+      "filepath": "source/Documents/Document-3-arrow.svg",
+      "tags": [
+        "Document3Arrow",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-3",
+      "name": "Document3",
+      "category": "Documents",
+      "filename": "Document-3.svg",
+      "filepath": "source/Documents/Document-3.svg",
+      "tags": [
+        "Document3",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-copy",
+      "name": "DocumentCopy",
+      "category": "Documents",
+      "filename": "Document-copy.svg",
+      "filepath": "source/Documents/Document-copy.svg",
+      "tags": [
+        "DocumentCopy",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-edit",
+      "name": "DocumentEdit",
+      "category": "Documents",
+      "filename": "Document-edit.svg",
+      "filepath": "source/Documents/Document-edit.svg",
+      "tags": [
+        "DocumentEdit",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-favorites",
+      "name": "DocumentFavorites",
+      "category": "Documents",
+      "filename": "Document-favorites.svg",
+      "filepath": "source/Documents/Document-favorites.svg",
+      "tags": [
+        "DocumentFavorites",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-history",
+      "name": "DocumentHistory",
+      "category": "Documents",
+      "filename": "Document-history.svg",
+      "filepath": "source/Documents/Document-history.svg",
+      "tags": [
+        "DocumentHistory",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-reissue",
+      "name": "DocumentReissue",
+      "category": "Documents",
+      "filename": "Document-reissue.svg",
+      "filepath": "source/Documents/Document-reissue.svg",
+      "tags": [
+        "DocumentReissue",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-seal",
+      "name": "DocumentSeal",
+      "category": "Documents",
+      "filename": "Document-seal.svg",
+      "filepath": "source/Documents/Document-seal.svg",
+      "tags": [
+        "DocumentSeal",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-send",
+      "name": "DocumentSend",
+      "category": "Documents",
+      "filename": "Document-send.svg",
+      "filepath": "source/Documents/Document-send.svg",
+      "tags": [
+        "DocumentSend",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-sign-and-send",
+      "name": "DocumentSignAndSend",
+      "category": "Documents",
+      "filename": "Document-sign-and-send.svg",
+      "filepath": "source/Documents/Document-sign-and-send.svg",
+      "tags": [
+        "DocumentSignAndSend",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document-sign-visa",
+      "name": "DocumentSignVisa",
+      "category": "Documents",
+      "filename": "Document-sign-visa.svg",
+      "filepath": "source/Documents/Document-sign-visa.svg",
+      "tags": [
+        "DocumentSignVisa",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Document",
+      "name": "Document",
+      "category": "Documents",
+      "filename": "Document.svg",
+      "filepath": "source/Documents/Document.svg",
+      "tags": [
+        "Document",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Edit",
+      "name": "Edit",
+      "category": "Documents",
+      "filename": "Edit.svg",
+      "filepath": "source/Documents/Edit.svg",
+      "tags": [
+        "Edit",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Envelope",
+      "name": "Envelope",
+      "category": "Documents",
+      "filename": "Envelope.svg",
+      "filepath": "source/Documents/Envelope.svg",
+      "tags": [
+        "Envelope",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Excel",
+      "name": "Excel",
+      "category": "Documents",
+      "filename": "Excel.svg",
+      "filepath": "source/Documents/Excel.svg",
+      "tags": [
+        "Excel",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Incoming",
+      "name": "Incoming",
+      "category": "Documents",
+      "filename": "Incoming.svg",
+      "filepath": "source/Documents/Incoming.svg",
+      "tags": [
+        "Incoming",
+        "Documents"
+      ]
+    },
+    {
+      "id": "New-document",
+      "name": "NewDocument",
+      "category": "Documents",
+      "filename": "New-document.svg",
+      "filepath": "source/Documents/New-document.svg",
+      "tags": [
+        "NewDocument",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Office-Supplies",
+      "name": "OfficeSupplies",
+      "category": "Documents",
+      "filename": "Office-Supplies.svg",
+      "filepath": "source/Documents/Office-Supplies.svg",
+      "tags": [
+        "OfficeSupplies",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Organizations",
+      "name": "Organizations",
+      "category": "Documents",
+      "filename": "Organizations.svg",
+      "filepath": "source/Documents/Organizations.svg",
+      "tags": [
+        "Organizations",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Passport",
+      "name": "Passport",
+      "category": "Documents",
+      "filename": "Passport.svg",
+      "filepath": "source/Documents/Passport.svg",
+      "tags": [
+        "Passport",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Pen",
+      "name": "Pen",
+      "category": "Documents",
+      "filename": "Pen.svg",
+      "filepath": "source/Documents/Pen.svg",
+      "tags": [
+        "Pen",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Pencil",
+      "name": "Pencil",
+      "category": "Documents",
+      "filename": "Pencil.svg",
+      "filepath": "source/Documents/Pencil.svg",
+      "tags": [
+        "Pencil",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Save-as-template",
+      "name": "SaveAsTemplate",
+      "category": "Documents",
+      "filename": "Save-as-template.svg",
+      "filepath": "source/Documents/Save-as-template.svg",
+      "tags": [
+        "SaveAsTemplate",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Savings account",
+      "name": "SavingsAccount",
+      "category": "Documents",
+      "filename": "Savings account.svg",
+      "filepath": "source/Documents/Savings account.svg",
+      "tags": [
+        "SavingsAccount",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Seal",
+      "name": "Seal",
+      "category": "Documents",
+      "filename": "Seal.svg",
+      "filepath": "source/Documents/Seal.svg",
+      "tags": [
+        "Seal",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Sign-checked",
+      "name": "SignChecked",
+      "category": "Documents",
+      "filename": "Sign-checked.svg",
+      "filepath": "source/Documents/Sign-checked.svg",
+      "tags": [
+        "SignChecked",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Sign-error",
+      "name": "SignError",
+      "category": "Documents",
+      "filename": "Sign-error.svg",
+      "filepath": "source/Documents/Sign-error.svg",
+      "tags": [
+        "SignError",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Sign-partly-signed",
+      "name": "SignPartlySigned",
+      "category": "Documents",
+      "filename": "Sign-partly-signed.svg",
+      "filepath": "source/Documents/Sign-partly-signed.svg",
+      "tags": [
+        "SignPartlySigned",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Sign-remove",
+      "name": "SignRemove",
+      "category": "Documents",
+      "filename": "Sign-remove.svg",
+      "filepath": "source/Documents/Sign-remove.svg",
+      "tags": [
+        "SignRemove",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Sign-signed",
+      "name": "SignSigned",
+      "category": "Documents",
+      "filename": "Sign-signed.svg",
+      "filepath": "source/Documents/Sign-signed.svg",
+      "tags": [
+        "SignSigned",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Target-account",
+      "name": "TargetAccount",
+      "category": "Documents",
+      "filename": "Target-account.svg",
+      "filepath": "source/Documents/Target-account.svg",
+      "tags": [
+        "TargetAccount",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Task",
+      "name": "Task",
+      "category": "Documents",
+      "filename": "Task.svg",
+      "filepath": "source/Documents/Task.svg",
+      "tags": [
+        "Task",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Template",
+      "name": "Template",
+      "category": "Documents",
+      "filename": "Template.svg",
+      "filepath": "source/Documents/Template.svg",
+      "tags": [
+        "Template",
+        "Documents"
+      ]
+    },
+    {
+      "id": "To-your-account",
+      "name": "ToYourAccount",
+      "category": "Documents",
+      "filename": "To-your-account.svg",
+      "filepath": "source/Documents/To-your-account.svg",
+      "tags": [
+        "ToYourAccount",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Unarchive",
+      "name": "Unarchive",
+      "category": "Documents",
+      "filename": "Unarchive.svg",
+      "filepath": "source/Documents/Unarchive.svg",
+      "tags": [
+        "Unarchive",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Verified-template",
+      "name": "VerifiedTemplate",
+      "category": "Documents",
+      "filename": "Verified-template.svg",
+      "filepath": "source/Documents/Verified-template.svg",
+      "tags": [
+        "VerifiedTemplate",
+        "Documents"
+      ]
+    },
+    {
+      "id": "Bundle-of-money",
+      "name": "BundleOfMoney",
+      "category": "Finance",
+      "filename": "Bundle-of-money.svg",
+      "filepath": "source/Finance/Bundle-of-money.svg",
+      "tags": [
+        "BundleOfMoney",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Calculator",
+      "name": "Calculator",
+      "category": "Finance",
+      "filename": "Calculator.svg",
+      "filepath": "source/Finance/Calculator.svg",
+      "tags": [
+        "Calculator",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Cash-transactions",
+      "name": "CashTransactions",
+      "category": "Finance",
+      "filename": "Cash-transactions.svg",
+      "filepath": "source/Finance/Cash-transactions.svg",
+      "tags": [
+        "CashTransactions",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Circulation-of-money",
+      "name": "CirculationOfMoney",
+      "category": "Finance",
+      "filename": "Circulation-of-money.svg",
+      "filepath": "source/Finance/Circulation-of-money.svg",
+      "tags": [
+        "CirculationOfMoney",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Contribution",
+      "name": "Contribution",
+      "category": "Finance",
+      "filename": "Contribution.svg",
+      "filepath": "source/Finance/Contribution.svg",
+      "tags": [
+        "Contribution",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Credit",
+      "name": "Credit",
+      "category": "Finance",
+      "filename": "Credit.svg",
+      "filepath": "source/Finance/Credit.svg",
+      "tags": [
+        "Credit",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Currency-calculator",
+      "name": "CurrencyCalculator",
+      "category": "Finance",
+      "filename": "Currency-calculator.svg",
+      "filepath": "source/Finance/Currency-calculator.svg",
+      "tags": [
+        "CurrencyCalculator",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Currency-eur",
+      "name": "CurrencyEur",
+      "category": "Finance",
+      "filename": "Currency-eur.svg",
+      "filepath": "source/Finance/Currency-eur.svg",
+      "tags": [
+        "CurrencyEur",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Debt-FCPP",
+      "name": "DebtFCPP",
+      "category": "Finance",
+      "filename": "Debt-FCPP.svg",
+      "filepath": "source/Finance/Debt-FCPP.svg",
+      "tags": [
+        "DebtFCPP",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Dollar",
+      "name": "Dollar",
+      "category": "Finance",
+      "filename": "Dollar.svg",
+      "filepath": "source/Finance/Dollar.svg",
+      "tags": [
+        "Dollar",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Euro",
+      "name": "Euro",
+      "category": "Finance",
+      "filename": "Euro.svg",
+      "filepath": "source/Finance/Euro.svg",
+      "tags": [
+        "Euro",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Exchange",
+      "name": "Exchange",
+      "category": "Finance",
+      "filename": "Exchange.svg",
+      "filepath": "source/Finance/Exchange.svg",
+      "tags": [
+        "Exchange",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Gear-wheel-ruble",
+      "name": "GearWheelRuble",
+      "category": "Finance",
+      "filename": "Gear-wheel-ruble.svg",
+      "filepath": "source/Finance/Gear-wheel-ruble.svg",
+      "tags": [
+        "GearWheelRuble",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Hand-card",
+      "name": "HandCard",
+      "category": "Finance",
+      "filename": "Hand-card.svg",
+      "filepath": "source/Finance/Hand-card.svg",
+      "tags": [
+        "HandCard",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Hand-money-2",
+      "name": "HandMoney2",
+      "category": "Finance",
+      "filename": "Hand-money-2.svg",
+      "filepath": "source/Finance/Hand-money-2.svg",
+      "tags": [
+        "HandMoney2",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Interest",
+      "name": "Interest",
+      "category": "Finance",
+      "filename": "Interest.svg",
+      "filepath": "source/Finance/Interest.svg",
+      "tags": [
+        "Interest",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Money-bag",
+      "name": "MoneyBag",
+      "category": "Finance",
+      "filename": "Money-bag.svg",
+      "filepath": "source/Finance/Money-bag.svg",
+      "tags": [
+        "MoneyBag",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Pay",
+      "name": "Pay",
+      "category": "Finance",
+      "filename": "Pay.svg",
+      "filepath": "source/Finance/Pay.svg",
+      "tags": [
+        "Pay",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Payment-on-receipt-1",
+      "name": "PaymentOnReceipt1",
+      "category": "Finance",
+      "filename": "Payment-on-receipt-1.svg",
+      "filepath": "source/Finance/Payment-on-receipt-1.svg",
+      "tags": [
+        "PaymentOnReceipt1",
+        "Finance"
+      ]
+    },
+    {
+      "id": "PIF",
+      "name": "PIF",
+      "category": "Finance",
+      "filename": "PIF.svg",
+      "filepath": "source/Finance/PIF.svg",
+      "tags": [
+        "PIF",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Plus-minus",
+      "name": "PlusMinus",
+      "category": "Finance",
+      "filename": "Plus-minus.svg",
+      "filepath": "source/Finance/Plus-minus.svg",
+      "tags": [
+        "PlusMinus",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Portfolio",
+      "name": "Portfolio",
+      "category": "Finance",
+      "filename": "Portfolio.svg",
+      "filepath": "source/Finance/Portfolio.svg",
+      "tags": [
+        "Portfolio",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Purse-2",
+      "name": "Purse2",
+      "category": "Finance",
+      "filename": "Purse-2.svg",
+      "filepath": "source/Finance/Purse-2.svg",
+      "tags": [
+        "Purse2",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Ruble-arrow",
+      "name": "RubleArrow",
+      "category": "Finance",
+      "filename": "Ruble-arrow.svg",
+      "filepath": "source/Finance/Ruble-arrow.svg",
+      "tags": [
+        "RubleArrow",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Ruble-radial",
+      "name": "RubleRadial",
+      "category": "Finance",
+      "filename": "Ruble-radial.svg",
+      "filepath": "source/Finance/Ruble-radial.svg",
+      "tags": [
+        "RubleRadial",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Ruble-turnover",
+      "name": "RubleTurnover",
+      "category": "Finance",
+      "filename": "Ruble-turnover.svg",
+      "filepath": "source/Finance/Ruble-turnover.svg",
+      "tags": [
+        "RubleTurnover",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Ruble",
+      "name": "Ruble",
+      "category": "Finance",
+      "filename": "Ruble.svg",
+      "filepath": "source/Finance/Ruble.svg",
+      "tags": [
+        "Ruble",
+        "Finance"
+      ]
+    },
+    {
+      "id": "To-pay",
+      "name": "ToPay",
+      "category": "Finance",
+      "filename": "To-pay.svg",
+      "filepath": "source/Finance/To-pay.svg",
+      "tags": [
+        "ToPay",
+        "Finance"
+      ]
+    },
+    {
+      "id": "Barrel",
+      "name": "Barrel",
+      "category": "Industry",
+      "filename": "Barrel.svg",
+      "filepath": "source/Industry/Barrel.svg",
+      "tags": [
+        "Barrel",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Box",
+      "name": "Box",
+      "category": "Industry",
+      "filename": "Box.svg",
+      "filepath": "source/Industry/Box.svg",
+      "tags": [
+        "Box",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Canister",
+      "name": "Canister",
+      "category": "Industry",
+      "filename": "Canister.svg",
+      "filepath": "source/Industry/Canister.svg",
+      "tags": [
+        "Canister",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Concrete-mixer",
+      "name": "ConcreteMixer",
+      "category": "Industry",
+      "filename": "Concrete-mixer.svg",
+      "filepath": "source/Industry/Concrete-mixer.svg",
+      "tags": [
+        "ConcreteMixer",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Equipment",
+      "name": "Equipment",
+      "category": "Industry",
+      "filename": "Equipment.svg",
+      "filepath": "source/Industry/Equipment.svg",
+      "tags": [
+        "Equipment",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Excavator",
+      "name": "Excavator",
+      "category": "Industry",
+      "filename": "Excavator.svg",
+      "filepath": "source/Industry/Excavator.svg",
+      "tags": [
+        "Excavator",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Factory",
+      "name": "Factory",
+      "category": "Industry",
+      "filename": "Factory.svg",
+      "filepath": "source/Industry/Factory.svg",
+      "tags": [
+        "Factory",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Gas",
+      "name": "Gas",
+      "category": "Industry",
+      "filename": "Gas.svg",
+      "filepath": "source/Industry/Gas.svg",
+      "tags": [
+        "Gas",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Gears",
+      "name": "Gears",
+      "category": "Industry",
+      "filename": "Gears.svg",
+      "filepath": "source/Industry/Gears.svg",
+      "tags": [
+        "Gears",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Hammers",
+      "name": "Hammers",
+      "category": "Industry",
+      "filename": "Hammers.svg",
+      "filepath": "source/Industry/Hammers.svg",
+      "tags": [
+        "Hammers",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Lamp",
+      "name": "Lamp",
+      "category": "Industry",
+      "filename": "Lamp.svg",
+      "filepath": "source/Industry/Lamp.svg",
+      "tags": [
+        "Lamp",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Oil",
+      "name": "Oil",
+      "category": "Industry",
+      "filename": "Oil.svg",
+      "filepath": "source/Industry/Oil.svg",
+      "tags": [
+        "Oil",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Pipes",
+      "name": "Pipes",
+      "category": "Industry",
+      "filename": "Pipes.svg",
+      "filepath": "source/Industry/Pipes.svg",
+      "tags": [
+        "Pipes",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Screw",
+      "name": "Screw",
+      "category": "Industry",
+      "filename": "Screw.svg",
+      "filepath": "source/Industry/Screw.svg",
+      "tags": [
+        "Screw",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Tower",
+      "name": "Tower",
+      "category": "Industry",
+      "filename": "Tower.svg",
+      "filepath": "source/Industry/Tower.svg",
+      "tags": [
+        "Tower",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Tractor",
+      "name": "Tractor",
+      "category": "Industry",
+      "filename": "Tractor.svg",
+      "filepath": "source/Industry/Tractor.svg",
+      "tags": [
+        "Tractor",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Truck",
+      "name": "Truck",
+      "category": "Industry",
+      "filename": "Truck.svg",
+      "filepath": "source/Industry/Truck.svg",
+      "tags": [
+        "Truck",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Water",
+      "name": "Water",
+      "category": "Industry",
+      "filename": "Water.svg",
+      "filepath": "source/Industry/Water.svg",
+      "tags": [
+        "Water",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Watering-can",
+      "name": "WateringCan",
+      "category": "Industry",
+      "filename": "Watering-can.svg",
+      "filepath": "source/Industry/Watering-can.svg",
+      "tags": [
+        "WateringCan",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Wheelbarrow",
+      "name": "Wheelbarrow",
+      "category": "Industry",
+      "filename": "Wheelbarrow.svg",
+      "filepath": "source/Industry/Wheelbarrow.svg",
+      "tags": [
+        "Wheelbarrow",
+        "Industry"
+      ]
+    },
+    {
+      "id": "Logo",
+      "name": "Logo",
+      "category": "source",
+      "filename": "Logo.svg",
+      "filepath": "source/Logo.svg",
+      "tags": [
+        "Logo",
+        "source"
+      ]
+    },
+    {
+      "id": "Babble-logo",
+      "name": "BabbleLogo",
+      "category": "Media",
+      "filename": "Babble-logo.svg",
+      "filepath": "source/Media/Babble-logo.svg",
+      "tags": [
+        "BabbleLogo",
+        "Media"
+      ]
+    },
+    {
+      "id": "Babble-question",
+      "name": "BabbleQuestion",
+      "category": "Media",
+      "filename": "Babble-question.svg",
+      "filepath": "source/Media/Babble-question.svg",
+      "tags": [
+        "BabbleQuestion",
+        "Media"
+      ]
+    },
+    {
+      "id": "Babble",
+      "name": "Babble",
+      "category": "Media",
+      "filename": "Babble.svg",
+      "filepath": "source/Media/Babble.svg",
+      "tags": [
+        "Babble",
+        "Media"
+      ]
+    },
+    {
+      "id": "Bobbin",
+      "name": "Bobbin",
+      "category": "Media",
+      "filename": "Bobbin.svg",
+      "filepath": "source/Media/Bobbin.svg",
+      "tags": [
+        "Bobbin",
+        "Media"
+      ]
+    },
+    {
+      "id": "Camera-1",
+      "name": "Camera1",
+      "category": "Media",
+      "filename": "Camera-1.svg",
+      "filepath": "source/Media/Camera-1.svg",
+      "tags": [
+        "Camera1",
+        "Media"
+      ]
+    },
+    {
+      "id": "Camera",
+      "name": "Camera",
+      "category": "Media",
+      "filename": "Camera.svg",
+      "filepath": "source/Media/Camera.svg",
+      "tags": [
+        "Camera",
+        "Media"
+      ]
+    },
+    {
+      "id": "Chat",
+      "name": "Chat",
+      "category": "Media",
+      "filename": "Chat.svg",
+      "filepath": "source/Media/Chat.svg",
+      "tags": [
+        "Chat",
+        "Media"
+      ]
+    },
+    {
+      "id": "Communication-services",
+      "name": "CommunicationServices",
+      "category": "Media",
+      "filename": "Communication-services.svg",
+      "filepath": "source/Media/Communication-services.svg",
+      "tags": [
+        "CommunicationServices",
+        "Media"
+      ]
+    },
+    {
+      "id": "Entertainment",
+      "name": "Entertainment",
+      "category": "Media",
+      "filename": "Entertainment.svg",
+      "filepath": "source/Media/Entertainment.svg",
+      "tags": [
+        "Entertainment",
+        "Media"
+      ]
+    },
+    {
+      "id": "Headphones",
+      "name": "Headphones",
+      "category": "Media",
+      "filename": "Headphones.svg",
+      "filepath": "source/Media/Headphones.svg",
+      "tags": [
+        "Headphones",
+        "Media"
+      ]
+    },
+    {
+      "id": "Keyboard",
+      "name": "Keyboard",
+      "category": "Media",
+      "filename": "Keyboard.svg",
+      "filepath": "source/Media/Keyboard.svg",
+      "tags": [
+        "Keyboard",
+        "Media"
+      ]
+    },
+    {
+      "id": "Laptop",
+      "name": "Laptop",
+      "category": "Media",
+      "filename": "Laptop.svg",
+      "filepath": "source/Media/Laptop.svg",
+      "tags": [
+        "Laptop",
+        "Media"
+      ]
+    },
+    {
+      "id": "Mail",
+      "name": "Mail",
+      "category": "Media",
+      "filename": "Mail.svg",
+      "filepath": "source/Media/Mail.svg",
+      "tags": [
+        "Mail",
+        "Media"
+      ]
+    },
+    {
+      "id": "Microphone",
+      "name": "Microphone",
+      "category": "Media",
+      "filename": "Microphone.svg",
+      "filepath": "source/Media/Microphone.svg",
+      "tags": [
+        "Microphone",
+        "Media"
+      ]
+    },
+    {
+      "id": "Phone-home",
+      "name": "PhoneHome",
+      "category": "Media",
+      "filename": "Phone-home.svg",
+      "filepath": "source/Media/Phone-home.svg",
+      "tags": [
+        "PhoneHome",
+        "Media"
+      ]
+    },
+    {
+      "id": "Phone-info",
+      "name": "PhoneInfo",
+      "category": "Media",
+      "filename": "Phone-info.svg",
+      "filepath": "source/Media/Phone-info.svg",
+      "tags": [
+        "PhoneInfo",
+        "Media"
+      ]
+    },
+    {
+      "id": "Phone",
+      "name": "Phone",
+      "category": "Media",
+      "filename": "Phone.svg",
+      "filepath": "source/Media/Phone.svg",
+      "tags": [
+        "Phone",
+        "Media"
+      ]
+    },
+    {
+      "id": "Print",
+      "name": "Print",
+      "category": "Media",
+      "filename": "Print.svg",
+      "filepath": "source/Media/Print.svg",
+      "tags": [
+        "Print",
+        "Media"
+      ]
+    },
+    {
+      "id": "Question-logo",
+      "name": "QuestionLogo",
+      "category": "Media",
+      "filename": "Question-logo.svg",
+      "filepath": "source/Media/Question-logo.svg",
+      "tags": [
+        "QuestionLogo",
+        "Media"
+      ]
+    },
+    {
+      "id": "Satellite-dish",
+      "name": "SatelliteDish",
+      "category": "Media",
+      "filename": "Satellite-dish.svg",
+      "filepath": "source/Media/Satellite-dish.svg",
+      "tags": [
+        "SatelliteDish",
+        "Media"
+      ]
+    },
+    {
+      "id": "Satellite",
+      "name": "Satellite",
+      "category": "Media",
+      "filename": "Satellite.svg",
+      "filepath": "source/Media/Satellite.svg",
+      "tags": [
+        "Satellite",
+        "Media"
+      ]
+    },
+    {
+      "id": "Send-to-mail",
+      "name": "SendToMail",
+      "category": "Media",
+      "filename": "Send-to-mail.svg",
+      "filepath": "source/Media/Send-to-mail.svg",
+      "tags": [
+        "SendToMail",
+        "Media"
+      ]
+    },
+    {
+      "id": "SMS",
+      "name": "SMS",
+      "category": "Media",
+      "filename": "SMS.svg",
+      "filepath": "source/Media/SMS.svg",
+      "tags": [
+        "SMS",
+        "Media"
+      ]
+    },
+    {
+      "id": "Sound",
+      "name": "Sound",
+      "category": "Media",
+      "filename": "Sound.svg",
+      "filepath": "source/Media/Sound.svg",
+      "tags": [
+        "Sound",
+        "Media"
+      ]
+    },
+    {
+      "id": "Support",
+      "name": "Support",
+      "category": "Media",
+      "filename": "Support.svg",
+      "filepath": "source/Media/Support.svg",
+      "tags": [
+        "Support",
+        "Media"
+      ]
+    },
+    {
+      "id": "Tablet",
+      "name": "Tablet",
+      "category": "Media",
+      "filename": "Tablet.svg",
+      "filepath": "source/Media/Tablet.svg",
+      "tags": [
+        "Tablet",
+        "Media"
+      ]
+    },
+    {
+      "id": "Telegram",
+      "name": "Telegram",
+      "category": "Media",
+      "filename": "Telegram.svg",
+      "filepath": "source/Media/Telegram.svg",
+      "tags": [
+        "Telegram",
+        "Media"
+      ]
+    },
+    {
+      "id": "Television",
+      "name": "Television",
+      "category": "Media",
+      "filename": "Television.svg",
+      "filepath": "source/Media/Television.svg",
+      "tags": [
+        "Television",
+        "Media"
+      ]
+    },
+    {
+      "id": "To-e-wallet",
+      "name": "ToEWallet",
+      "category": "Media",
+      "filename": "To-e-wallet.svg",
+      "filepath": "source/Media/To-e-wallet.svg",
+      "tags": [
+        "ToEWallet",
+        "Media"
+      ]
+    },
+    {
+      "id": "Viber",
+      "name": "Viber",
+      "category": "Media",
+      "filename": "Viber.svg",
+      "filepath": "source/Media/Viber.svg",
+      "tags": [
+        "Viber",
+        "Media"
+      ]
+    },
+    {
+      "id": "Waves",
+      "name": "Waves",
+      "category": "Media",
+      "filename": "Waves.svg",
+      "filepath": "source/Media/Waves.svg",
+      "tags": [
+        "Waves",
+        "Media"
+      ]
+    },
+    {
+      "id": "Whats-app",
+      "name": "WhatsApp",
+      "category": "Media",
+      "filename": "Whats-app.svg",
+      "filepath": "source/Media/Whats-app.svg",
+      "tags": [
+        "WhatsApp",
+        "Media"
+      ]
+    },
+    {
+      "id": "Pharmacies",
+      "name": "Pharmacies",
+      "category": "Medicine",
+      "filename": "Pharmacies.svg",
+      "filepath": "source/Medicine/Pharmacies.svg",
+      "tags": [
+        "Pharmacies",
+        "Medicine"
+      ]
+    },
+    {
+      "id": "Treatment",
+      "name": "Treatment",
+      "category": "Medicine",
+      "filename": "Treatment.svg",
+      "filepath": "source/Medicine/Treatment.svg",
+      "tags": [
+        "Treatment",
+        "Medicine"
+      ]
+    },
+    {
+      "id": "Alcohol-tobacco",
+      "name": "AlcoholTobacco",
+      "category": "Merchant",
+      "filename": "Alcohol-tobacco.svg",
+      "filepath": "source/Merchant/Alcohol-tobacco.svg",
+      "tags": [
+        "AlcoholTobacco",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Baby-clothes",
+      "name": "BabyClothes",
+      "category": "Merchant",
+      "filename": "Baby-clothes.svg",
+      "filepath": "source/Merchant/Baby-clothes.svg",
+      "tags": [
+        "BabyClothes",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Basket-2",
+      "name": "Basket2",
+      "category": "Merchant",
+      "filename": "Basket-2.svg",
+      "filepath": "source/Merchant/Basket-2.svg",
+      "tags": [
+        "Basket2",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Beauty",
+      "name": "Beauty",
+      "category": "Merchant",
+      "filename": "Beauty.svg",
+      "filepath": "source/Merchant/Beauty.svg",
+      "tags": [
+        "Beauty",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Car-dealers",
+      "name": "CarDealers",
+      "category": "Merchant",
+      "filename": "Car-dealers.svg",
+      "filepath": "source/Merchant/Car-dealers.svg",
+      "tags": [
+        "CarDealers",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Cashbox",
+      "name": "Cashbox",
+      "category": "Merchant",
+      "filename": "Cashbox.svg",
+      "filepath": "source/Merchant/Cashbox.svg",
+      "tags": [
+        "Cashbox",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Clothes-shoes-accessories",
+      "name": "ClothesShoesAccessories",
+      "category": "Merchant",
+      "filename": "Clothes-shoes-accessories.svg",
+      "filepath": "source/Merchant/Clothes-shoes-accessories.svg",
+      "tags": [
+        "ClothesShoesAccessories",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Clothes",
+      "name": "Clothes",
+      "category": "Merchant",
+      "filename": "Clothes.svg",
+      "filepath": "source/Merchant/Clothes.svg",
+      "tags": [
+        "Clothes",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Code-ring",
+      "name": "CodeRing",
+      "category": "Merchant",
+      "filename": "Code-ring.svg",
+      "filepath": "source/Merchant/Code-ring.svg",
+      "tags": [
+        "CodeRing",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Code",
+      "name": "Code",
+      "category": "Merchant",
+      "filename": "Code.svg",
+      "filepath": "source/Merchant/Code.svg",
+      "tags": [
+        "Code",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Cosmetics",
+      "name": "Cosmetics",
+      "category": "Merchant",
+      "filename": "Cosmetics.svg",
+      "filepath": "source/Merchant/Cosmetics.svg",
+      "tags": [
+        "Cosmetics",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Footwear",
+      "name": "Footwear",
+      "category": "Merchant",
+      "filename": "Footwear.svg",
+      "filepath": "source/Merchant/Footwear.svg",
+      "tags": [
+        "Footwear",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Gas-station",
+      "name": "GasStation",
+      "category": "Merchant",
+      "filename": "Gas-station.svg",
+      "filepath": "source/Merchant/Gas-station.svg",
+      "tags": [
+        "GasStation",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Health-and-beauty",
+      "name": "HealthAndBeauty",
+      "category": "Merchant",
+      "filename": "Health-and-beauty.svg",
+      "filepath": "source/Merchant/Health-and-beauty.svg",
+      "tags": [
+        "HealthAndBeauty",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Home-and-appliances",
+      "name": "HomeAndAppliances",
+      "category": "Merchant",
+      "filename": "Home-and-appliances.svg",
+      "filepath": "source/Merchant/Home-and-appliances.svg",
+      "tags": [
+        "HomeAndAppliances",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Kids",
+      "name": "Kids",
+      "category": "Merchant",
+      "filename": "Kids.svg",
+      "filepath": "source/Merchant/Kids.svg",
+      "tags": [
+        "Kids",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Nameplate",
+      "name": "Nameplate",
+      "category": "Merchant",
+      "filename": "Nameplate.svg",
+      "filepath": "source/Merchant/Nameplate.svg",
+      "tags": [
+        "Nameplate",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Offer",
+      "name": "Offer",
+      "category": "Merchant",
+      "filename": "Offer.svg",
+      "filepath": "source/Merchant/Offer.svg",
+      "tags": [
+        "Offer",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Packages",
+      "name": "Packages",
+      "category": "Merchant",
+      "filename": "Packages.svg",
+      "filepath": "source/Merchant/Packages.svg",
+      "tags": [
+        "Packages",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Price-tag-ruble",
+      "name": "PriceTagRuble",
+      "category": "Merchant",
+      "filename": "Price-tag-ruble.svg",
+      "filepath": "source/Merchant/Price-tag-ruble.svg",
+      "tags": [
+        "PriceTagRuble",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Price-tag",
+      "name": "PriceTag",
+      "category": "Merchant",
+      "filename": "Price-tag.svg",
+      "filepath": "source/Merchant/Price-tag.svg",
+      "tags": [
+        "PriceTag",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Products",
+      "name": "Products",
+      "category": "Merchant",
+      "filename": "Products.svg",
+      "filepath": "source/Merchant/Products.svg",
+      "tags": [
+        "Products",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Purchases",
+      "name": "Purchases",
+      "category": "Merchant",
+      "filename": "Purchases.svg",
+      "filepath": "source/Merchant/Purchases.svg",
+      "tags": [
+        "Purchases",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "QR-code",
+      "name": "QRCode",
+      "category": "Merchant",
+      "filename": "QR-code.svg",
+      "filepath": "source/Merchant/QR-code.svg",
+      "tags": [
+        "QRCode",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Rent-a-Car",
+      "name": "RentACar",
+      "category": "Merchant",
+      "filename": "Rent-a-Car.svg",
+      "filepath": "source/Merchant/Rent-a-Car.svg",
+      "tags": [
+        "RentACar",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Repair-of-things",
+      "name": "RepairOfThings",
+      "category": "Merchant",
+      "filename": "Repair-of-things.svg",
+      "filepath": "source/Merchant/Repair-of-things.svg",
+      "tags": [
+        "RepairOfThings",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Restaurants",
+      "name": "Restaurants",
+      "category": "Merchant",
+      "filename": "Restaurants.svg",
+      "filepath": "source/Merchant/Restaurants.svg",
+      "tags": [
+        "Restaurants",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Veterinarian",
+      "name": "Veterinarian",
+      "category": "Merchant",
+      "filename": "Veterinarian.svg",
+      "filepath": "source/Merchant/Veterinarian.svg",
+      "tags": [
+        "Veterinarian",
+        "Merchant"
+      ]
+    },
+    {
+      "id": "Animal",
+      "name": "Animal",
+      "category": "Nature",
+      "filename": "Animal.svg",
+      "filepath": "source/Nature/Animal.svg",
+      "tags": [
+        "Animal",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Bear",
+      "name": "Bear",
+      "category": "Nature",
+      "filename": "Bear.svg",
+      "filepath": "source/Nature/Bear.svg",
+      "tags": [
+        "Bear",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Cloud",
+      "name": "Cloud",
+      "category": "Nature",
+      "filename": "Cloud.svg",
+      "filepath": "source/Nature/Cloud.svg",
+      "tags": [
+        "Cloud",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Cow",
+      "name": "Cow",
+      "category": "Nature",
+      "filename": "Cow.svg",
+      "filepath": "source/Nature/Cow.svg",
+      "tags": [
+        "Cow",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Dolphin",
+      "name": "Dolphin",
+      "category": "Nature",
+      "filename": "Dolphin.svg",
+      "filepath": "source/Nature/Dolphin.svg",
+      "tags": [
+        "Dolphin",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Fish",
+      "name": "Fish",
+      "category": "Nature",
+      "filename": "Fish.svg",
+      "filepath": "source/Nature/Fish.svg",
+      "tags": [
+        "Fish",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Garden",
+      "name": "Garden",
+      "category": "Nature",
+      "filename": "Garden.svg",
+      "filepath": "source/Nature/Garden.svg",
+      "tags": [
+        "Garden",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Leaf",
+      "name": "Leaf",
+      "category": "Nature",
+      "filename": "Leaf.svg",
+      "filepath": "source/Nature/Leaf.svg",
+      "tags": [
+        "Leaf",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Moon",
+      "name": "Moon",
+      "category": "Nature",
+      "filename": "Moon.svg",
+      "filepath": "source/Nature/Moon.svg",
+      "tags": [
+        "Moon",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Pet-supplies",
+      "name": "PetSupplies",
+      "category": "Nature",
+      "filename": "Pet-supplies.svg",
+      "filepath": "source/Nature/Pet-supplies.svg",
+      "tags": [
+        "PetSupplies",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Rain",
+      "name": "Rain",
+      "category": "Nature",
+      "filename": "Rain.svg",
+      "filepath": "source/Nature/Rain.svg",
+      "tags": [
+        "Rain",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Snow",
+      "name": "Snow",
+      "category": "Nature",
+      "filename": "Snow.svg",
+      "filepath": "source/Nature/Snow.svg",
+      "tags": [
+        "Snow",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Sun-cloud",
+      "name": "SunCloud",
+      "category": "Nature",
+      "filename": "Sun-cloud.svg",
+      "filepath": "source/Nature/Sun-cloud.svg",
+      "tags": [
+        "SunCloud",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Sun",
+      "name": "Sun",
+      "category": "Nature",
+      "filename": "Sun.svg",
+      "filepath": "source/Nature/Sun.svg",
+      "tags": [
+        "Sun",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Tree",
+      "name": "Tree",
+      "category": "Nature",
+      "filename": "Tree.svg",
+      "filepath": "source/Nature/Tree.svg",
+      "tags": [
+        "Tree",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Umbrella",
+      "name": "Umbrella",
+      "category": "Nature",
+      "filename": "Umbrella.svg",
+      "filepath": "source/Nature/Umbrella.svg",
+      "tags": [
+        "Umbrella",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Umbrella2",
+      "name": "Umbrella2",
+      "category": "Nature",
+      "filename": "Umbrella2.svg",
+      "filepath": "source/Nature/Umbrella2.svg",
+      "tags": [
+        "Umbrella2",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Whale",
+      "name": "Whale",
+      "category": "Nature",
+      "filename": "Whale.svg",
+      "filepath": "source/Nature/Whale.svg",
+      "tags": [
+        "Whale",
+        "Nature"
+      ]
+    },
+    {
+      "id": "Arrow-down-ring",
+      "name": "ArrowDownRing",
+      "category": "Navigation",
+      "filename": "Arrow-down-ring.svg",
+      "filepath": "source/Navigation/Arrow-down-ring.svg",
+      "tags": [
+        "ArrowDownRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-down",
+      "name": "ArrowDown",
+      "category": "Navigation",
+      "filename": "Arrow-down.svg",
+      "filepath": "source/Navigation/Arrow-down.svg",
+      "tags": [
+        "ArrowDown",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-left-ring",
+      "name": "ArrowLeftRing",
+      "category": "Navigation",
+      "filename": "Arrow-left-ring.svg",
+      "filepath": "source/Navigation/Arrow-left-ring.svg",
+      "tags": [
+        "ArrowLeftRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-right-ring",
+      "name": "ArrowRightRing",
+      "category": "Navigation",
+      "filename": "Arrow-right-ring.svg",
+      "filepath": "source/Navigation/Arrow-right-ring.svg",
+      "tags": [
+        "ArrowRightRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-right",
+      "name": "ArrowRight",
+      "category": "Navigation",
+      "filename": "Arrow-right.svg",
+      "filepath": "source/Navigation/Arrow-right.svg",
+      "tags": [
+        "ArrowRight",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-up-ring",
+      "name": "ArrowUpRing",
+      "category": "Navigation",
+      "filename": "Arrow-up-ring.svg",
+      "filepath": "source/Navigation/Arrow-up-ring.svg",
+      "tags": [
+        "ArrowUpRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrow-up",
+      "name": "ArrowUp",
+      "category": "Navigation",
+      "filename": "Arrow-up.svg",
+      "filepath": "source/Navigation/Arrow-up.svg",
+      "tags": [
+        "ArrowUp",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrows-diagonal",
+      "name": "ArrowsDiagonal",
+      "category": "Navigation",
+      "filename": "Arrows-diagonal.svg",
+      "filepath": "source/Navigation/Arrows-diagonal.svg",
+      "tags": [
+        "ArrowsDiagonal",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrows-left-right",
+      "name": "ArrowsLeftRight",
+      "category": "Navigation",
+      "filename": "Arrows-left-right.svg",
+      "filepath": "source/Navigation/Arrows-left-right.svg",
+      "tags": [
+        "ArrowsLeftRight",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Arrows-up-down",
+      "name": "ArrowsUpDown",
+      "category": "Navigation",
+      "filename": "Arrows-up-down.svg",
+      "filepath": "source/Navigation/Arrows-up-down.svg",
+      "tags": [
+        "ArrowsUpDown",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Attention",
+      "name": "Attention",
+      "category": "Navigation",
+      "filename": "Attention.svg",
+      "filepath": "source/Navigation/Attention.svg",
+      "tags": [
+        "Attention",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Burger",
+      "name": "Burger",
+      "category": "Navigation",
+      "filename": "Burger.svg",
+      "filepath": "source/Navigation/Burger.svg",
+      "tags": [
+        "Burger",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Buttons",
+      "name": "Buttons",
+      "category": "Navigation",
+      "filename": "Buttons.svg",
+      "filepath": "source/Navigation/Buttons.svg",
+      "tags": [
+        "Buttons",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Check-mark-ring",
+      "name": "CheckMarkRing",
+      "category": "Navigation",
+      "filename": "Check-mark-ring.svg",
+      "filepath": "source/Navigation/Check-mark-ring.svg",
+      "tags": [
+        "CheckMarkRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Check-mark",
+      "name": "CheckMark",
+      "category": "Navigation",
+      "filename": "Check-mark.svg",
+      "filepath": "source/Navigation/Check-mark.svg",
+      "tags": [
+        "CheckMark",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Circle-checked-dashed",
+      "name": "CircleCheckedDashed",
+      "category": "Navigation",
+      "filename": "Circle-checked-dashed.svg",
+      "filepath": "source/Navigation/Circle-checked-dashed.svg",
+      "tags": [
+        "CircleCheckedDashed",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Close-ring",
+      "name": "CloseRing",
+      "category": "Navigation",
+      "filename": "Close-ring.svg",
+      "filepath": "source/Navigation/Close-ring.svg",
+      "tags": [
+        "CloseRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Close",
+      "name": "Close",
+      "category": "Navigation",
+      "filename": "Close.svg",
+      "filepath": "source/Navigation/Close.svg",
+      "tags": [
+        "Close",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Compass-arrow",
+      "name": "CompassArrow",
+      "category": "Navigation",
+      "filename": "Compass-arrow.svg",
+      "filepath": "source/Navigation/Compass-arrow.svg",
+      "tags": [
+        "CompassArrow",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Compass",
+      "name": "Compass",
+      "category": "Navigation",
+      "filename": "Compass.svg",
+      "filepath": "source/Navigation/Compass.svg",
+      "tags": [
+        "Compass",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Coordinates-1",
+      "name": "Coordinates1",
+      "category": "Navigation",
+      "filename": "Coordinates-1.svg",
+      "filepath": "source/Navigation/Coordinates-1.svg",
+      "tags": [
+        "Coordinates1",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Copy",
+      "name": "Copy",
+      "category": "Navigation",
+      "filename": "Copy.svg",
+      "filepath": "source/Navigation/Copy.svg",
+      "tags": [
+        "Copy",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Down",
+      "name": "Down",
+      "category": "Navigation",
+      "filename": "Down.svg",
+      "filepath": "source/Navigation/Down.svg",
+      "tags": [
+        "Down",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Download",
+      "name": "Download",
+      "category": "Navigation",
+      "filename": "Download.svg",
+      "filepath": "source/Navigation/Download.svg",
+      "tags": [
+        "Download",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Drag-and-drop",
+      "name": "DragAndDrop",
+      "category": "Navigation",
+      "filename": "Drag-and-drop.svg",
+      "filepath": "source/Navigation/Drag-and-drop.svg",
+      "tags": [
+        "DragAndDrop",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Draggable",
+      "name": "Draggable",
+      "category": "Navigation",
+      "filename": "Draggable.svg",
+      "filepath": "source/Navigation/Draggable.svg",
+      "tags": [
+        "Draggable",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Enter",
+      "name": "Enter",
+      "category": "Navigation",
+      "filename": "Enter.svg",
+      "filepath": "source/Navigation/Enter.svg",
+      "tags": [
+        "Enter",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Exclamation",
+      "name": "Exclamation",
+      "category": "Navigation",
+      "filename": "Exclamation.svg",
+      "filepath": "source/Navigation/Exclamation.svg",
+      "tags": [
+        "Exclamation",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Exit",
+      "name": "Exit",
+      "category": "Navigation",
+      "filename": "Exit.svg",
+      "filepath": "source/Navigation/Exit.svg",
+      "tags": [
+        "Exit",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Favorite",
+      "name": "Favorite",
+      "category": "Navigation",
+      "filename": "Favorite.svg",
+      "filepath": "source/Navigation/Favorite.svg",
+      "tags": [
+        "Favorite",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Filter",
+      "name": "Filter",
+      "category": "Navigation",
+      "filename": "Filter.svg",
+      "filepath": "source/Navigation/Filter.svg",
+      "tags": [
+        "Filter",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "In-queue-back",
+      "name": "InQueueBack",
+      "category": "Navigation",
+      "filename": "In-queue-back.svg",
+      "filepath": "source/Navigation/In-queue-back.svg",
+      "tags": []
+    },
+    {
+      "id": "In-queue",
+      "name": "InQueue",
+      "category": "Navigation",
+      "filename": "In-queue.svg",
+      "filepath": "source/Navigation/In-queue.svg",
+      "tags": []
+    },
+    {
+      "id": "Infinity-Sign",
+      "name": "InfinitySign",
+      "category": "Navigation",
+      "filename": "Infinity-Sign.svg",
+      "filepath": "source/Navigation/Infinity-Sign.svg",
+      "tags": [
+        "InfinitySign",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Info-ring",
+      "name": "InfoRing",
+      "category": "Navigation",
+      "filename": "Info-ring.svg",
+      "filepath": "source/Navigation/Info-ring.svg",
+      "tags": [
+        "InfoRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Invisible",
+      "name": "Invisible",
+      "category": "Navigation",
+      "filename": "Invisible.svg",
+      "filepath": "source/Navigation/Invisible.svg",
+      "tags": [
+        "Invisible",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Left-arrow",
+      "name": "LeftArrow",
+      "category": "Navigation",
+      "filename": "Left-arrow.svg",
+      "filepath": "source/Navigation/Left-arrow.svg",
+      "tags": [
+        "LeftArrow",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Left",
+      "name": "Left",
+      "category": "Navigation",
+      "filename": "Left.svg",
+      "filepath": "source/Navigation/Left.svg",
+      "tags": [
+        "Left",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Lock",
+      "name": "Lock",
+      "category": "Navigation",
+      "filename": "Lock.svg",
+      "filepath": "source/Navigation/Lock.svg",
+      "tags": [
+        "Lock",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Logo-arrow",
+      "name": "LogoArrow",
+      "category": "Navigation",
+      "filename": "Logo-arrow.svg",
+      "filepath": "source/Navigation/Logo-arrow.svg",
+      "tags": [
+        "LogoArrow",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Mirror",
+      "name": "Mirror",
+      "category": "Navigation",
+      "filename": "Mirror.svg",
+      "filepath": "source/Navigation/Mirror.svg",
+      "tags": [
+        "Mirror",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Other-ring",
+      "name": "OtherRing",
+      "category": "Navigation",
+      "filename": "Other-ring.svg",
+      "filepath": "source/Navigation/Other-ring.svg",
+      "tags": [
+        "OtherRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Other",
+      "name": "Other",
+      "category": "Navigation",
+      "filename": "Other.svg",
+      "filepath": "source/Navigation/Other.svg",
+      "tags": [
+        "Other",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Pin-2",
+      "name": "Pin2",
+      "category": "Navigation",
+      "filename": "Pin-2.svg",
+      "filepath": "source/Navigation/Pin-2.svg",
+      "tags": [
+        "Pin2",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Plus-ring",
+      "name": "PlusRing",
+      "category": "Navigation",
+      "filename": "Plus-ring.svg",
+      "filepath": "source/Navigation/Plus-ring.svg",
+      "tags": [
+        "PlusRing",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Plus",
+      "name": "Plus",
+      "category": "Navigation",
+      "filename": "Plus.svg",
+      "filepath": "source/Navigation/Plus.svg",
+      "tags": [
+        "Plus",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Question",
+      "name": "Question",
+      "category": "Navigation",
+      "filename": "Question.svg",
+      "filepath": "source/Navigation/Question.svg",
+      "tags": [
+        "Question",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "QuestionFill",
+      "name": "QuestionFill",
+      "category": "Navigation",
+      "filename": "QuestionFill.svg",
+      "filepath": "source/Navigation/QuestionFill.svg",
+      "tags": [
+        "QuestionFill",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Queue",
+      "name": "Queue",
+      "category": "Navigation",
+      "filename": "Queue.svg",
+      "filepath": "source/Navigation/Queue.svg",
+      "tags": [
+        "Queue",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Refresh-2",
+      "name": "Refresh2",
+      "category": "Navigation",
+      "filename": "Refresh-2.svg",
+      "filepath": "source/Navigation/Refresh-2.svg",
+      "tags": [
+        "Refresh2",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Refresh-3",
+      "name": "Refresh3",
+      "category": "Navigation",
+      "filename": "Refresh-3.svg",
+      "filepath": "source/Navigation/Refresh-3.svg",
+      "tags": [
+        "Refresh3",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Refresh-4",
+      "name": "Refresh4",
+      "category": "Navigation",
+      "filename": "Refresh-4.svg",
+      "filepath": "source/Navigation/Refresh-4.svg",
+      "tags": [
+        "Refresh4",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Refresh",
+      "name": "Refresh",
+      "category": "Navigation",
+      "filename": "Refresh.svg",
+      "filepath": "source/Navigation/Refresh.svg",
+      "tags": [
+        "Refresh",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Repeat-with-errors",
+      "name": "RepeatWithErrors",
+      "category": "Navigation",
+      "filename": "Repeat-with-errors.svg",
+      "filepath": "source/Navigation/Repeat-with-errors.svg",
+      "tags": [
+        "RepeatWithErrors",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Rewind-left",
+      "name": "RewindLeft",
+      "category": "Navigation",
+      "filename": "Rewind-left.svg",
+      "filepath": "source/Navigation/Rewind-left.svg",
+      "tags": [
+        "RewindLeft",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Rewind-left2",
+      "name": "RewindLeft2",
+      "category": "Navigation",
+      "filename": "Rewind-left2.svg",
+      "filepath": "source/Navigation/Rewind-left2.svg",
+      "tags": [
+        "RewindLeft2",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Rewind-right",
+      "name": "RewindRight",
+      "category": "Navigation",
+      "filename": "Rewind-right.svg",
+      "filepath": "source/Navigation/Rewind-right.svg",
+      "tags": [
+        "RewindRight",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Rewind-right2",
+      "name": "RewindRight2",
+      "category": "Navigation",
+      "filename": "Rewind-right2.svg",
+      "filepath": "source/Navigation/Rewind-right2.svg",
+      "tags": [
+        "RewindRight2",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Right",
+      "name": "Right",
+      "category": "Navigation",
+      "filename": "Right.svg",
+      "filepath": "source/Navigation/Right.svg",
+      "tags": [
+        "Right",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Save",
+      "name": "Save",
+      "category": "Navigation",
+      "filename": "Save.svg",
+      "filepath": "source/Navigation/Save.svg",
+      "tags": [
+        "Save",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Settings-1",
+      "name": "Settings1",
+      "category": "Navigation",
+      "filename": "Settings-1.svg",
+      "filepath": "source/Navigation/Settings-1.svg",
+      "tags": [
+        "Settings1",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Sorting",
+      "name": "Sorting",
+      "category": "Navigation",
+      "filename": "Sorting.svg",
+      "filepath": "source/Navigation/Sorting.svg",
+      "tags": [
+        "Sorting",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Stop",
+      "name": "Stop",
+      "category": "Navigation",
+      "filename": "Stop.svg",
+      "filepath": "source/Navigation/Stop.svg",
+      "tags": [
+        "Stop",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Submit-Refill-Link",
+      "name": "SubmitRefillLink",
+      "category": "Navigation",
+      "filename": "Submit-Refill-Link.svg",
+      "filepath": "source/Navigation/Submit-Refill-Link.svg",
+      "tags": [
+        "SubmitRefillLink",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Trash",
+      "name": "Trash",
+      "category": "Navigation",
+      "filename": "Trash.svg",
+      "filepath": "source/Navigation/Trash.svg",
+      "tags": [
+        "Trash",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Unlock",
+      "name": "Unlock",
+      "category": "Navigation",
+      "filename": "Unlock.svg",
+      "filepath": "source/Navigation/Unlock.svg",
+      "tags": [
+        "Unlock",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Up",
+      "name": "Up",
+      "category": "Navigation",
+      "filename": "Up.svg",
+      "filepath": "source/Navigation/Up.svg",
+      "tags": [
+        "Up",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "View-cards",
+      "name": "ViewCards",
+      "category": "Navigation",
+      "filename": "View-cards.svg",
+      "filepath": "source/Navigation/View-cards.svg",
+      "tags": [
+        "ViewCards",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "View-list",
+      "name": "ViewList",
+      "category": "Navigation",
+      "filename": "View-list.svg",
+      "filepath": "source/Navigation/View-list.svg",
+      "tags": [
+        "ViewList",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Visible",
+      "name": "Visible",
+      "category": "Navigation",
+      "filename": "Visible.svg",
+      "filepath": "source/Navigation/Visible.svg",
+      "tags": [
+        "Visible",
+        "Navigation"
+      ]
+    },
+    {
+      "id": "Ambulance",
+      "name": "Ambulance",
+      "category": "PeopleFamilyHome",
+      "filename": "Ambulance.svg",
+      "filepath": "source/PeopleFamilyHome/Ambulance.svg",
+      "tags": [
+        "Ambulance",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Baby-care",
+      "name": "BabyCare",
+      "category": "PeopleFamilyHome",
+      "filename": "Baby-care.svg",
+      "filepath": "source/PeopleFamilyHome/Baby-care.svg",
+      "tags": [
+        "BabyCare",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cafe",
+      "name": "Cafe",
+      "category": "PeopleFamilyHome",
+      "filename": "Cafe.svg",
+      "filepath": "source/PeopleFamilyHome/Cafe.svg",
+      "tags": [
+        "Cafe",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cake",
+      "name": "Cake",
+      "category": "PeopleFamilyHome",
+      "filename": "Cake.svg",
+      "filepath": "source/PeopleFamilyHome/Cake.svg",
+      "tags": [
+        "Cake",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Candles",
+      "name": "Candles",
+      "category": "PeopleFamilyHome",
+      "filename": "Candles.svg",
+      "filepath": "source/PeopleFamilyHome/Candles.svg",
+      "tags": [
+        "Candles",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Candy",
+      "name": "Candy",
+      "category": "PeopleFamilyHome",
+      "filename": "Candy.svg",
+      "filepath": "source/PeopleFamilyHome/Candy.svg",
+      "tags": [
+        "Candy",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cap",
+      "name": "Cap",
+      "category": "PeopleFamilyHome",
+      "filename": "Cap.svg",
+      "filepath": "source/PeopleFamilyHome/Cap.svg",
+      "tags": [
+        "Cap",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Chair",
+      "name": "Chair",
+      "category": "PeopleFamilyHome",
+      "filename": "Chair.svg",
+      "filepath": "source/PeopleFamilyHome/Chair.svg",
+      "tags": [
+        "Chair",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Champagne",
+      "name": "Champagne",
+      "category": "PeopleFamilyHome",
+      "filename": "Champagne.svg",
+      "filepath": "source/PeopleFamilyHome/Champagne.svg",
+      "tags": [
+        "Champagne",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cocktail",
+      "name": "Cocktail",
+      "category": "PeopleFamilyHome",
+      "filename": "Cocktail.svg",
+      "filepath": "source/PeopleFamilyHome/Cocktail.svg",
+      "tags": [
+        "Cocktail",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Coffee",
+      "name": "Coffee",
+      "category": "PeopleFamilyHome",
+      "filename": "Coffee.svg",
+      "filepath": "source/PeopleFamilyHome/Coffee.svg",
+      "tags": [
+        "Coffee",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Consultation",
+      "name": "Consultation",
+      "category": "PeopleFamilyHome",
+      "filename": "Consultation.svg",
+      "filepath": "source/PeopleFamilyHome/Consultation.svg",
+      "tags": [
+        "Consultation",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cup-sport",
+      "name": "CupSport",
+      "category": "PeopleFamilyHome",
+      "filename": "Cup-sport.svg",
+      "filepath": "source/PeopleFamilyHome/Cup-sport.svg",
+      "tags": [
+        "CupSport",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Cupboard",
+      "name": "Cupboard",
+      "category": "PeopleFamilyHome",
+      "filename": "Cupboard.svg",
+      "filepath": "source/PeopleFamilyHome/Cupboard.svg",
+      "tags": [
+        "Cupboard",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Fireplace",
+      "name": "Fireplace",
+      "category": "PeopleFamilyHome",
+      "filename": "Fireplace.svg",
+      "filepath": "source/PeopleFamilyHome/Fireplace.svg",
+      "tags": [
+        "Fireplace",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Flower",
+      "name": "Flower",
+      "category": "PeopleFamilyHome",
+      "filename": "Flower.svg",
+      "filepath": "source/PeopleFamilyHome/Flower.svg",
+      "tags": [
+        "Flower",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "FoodBurger",
+      "name": "FoodBurger",
+      "category": "PeopleFamilyHome",
+      "filename": "FoodBurger.svg",
+      "filepath": "source/PeopleFamilyHome/FoodBurger.svg",
+      "tags": [
+        "FoodBurger",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Furniture",
+      "name": "Furniture",
+      "category": "PeopleFamilyHome",
+      "filename": "Furniture.svg",
+      "filepath": "source/PeopleFamilyHome/Furniture.svg",
+      "tags": [
+        "Furniture",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Girl",
+      "name": "Girl",
+      "category": "PeopleFamilyHome",
+      "filename": "Girl.svg",
+      "filepath": "source/PeopleFamilyHome/Girl.svg",
+      "tags": [
+        "Girl",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Grandfather",
+      "name": "Grandfather",
+      "category": "PeopleFamilyHome",
+      "filename": "Grandfather.svg",
+      "filepath": "source/PeopleFamilyHome/Grandfather.svg",
+      "tags": [
+        "Grandfather",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Grandmother",
+      "name": "Grandmother",
+      "category": "PeopleFamilyHome",
+      "filename": "Grandmother.svg",
+      "filepath": "source/PeopleFamilyHome/Grandmother.svg",
+      "tags": [
+        "Grandmother",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Heart-broken",
+      "name": "HeartBroken",
+      "category": "PeopleFamilyHome",
+      "filename": "Heart-broken.svg",
+      "filepath": "source/PeopleFamilyHome/Heart-broken.svg",
+      "tags": [
+        "HeartBroken",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Heart",
+      "name": "Heart",
+      "category": "PeopleFamilyHome",
+      "filename": "Heart.svg",
+      "filepath": "source/PeopleFamilyHome/Heart.svg",
+      "tags": [
+        "Heart",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Ice-cream",
+      "name": "IceCream",
+      "category": "PeopleFamilyHome",
+      "filename": "Ice-cream.svg",
+      "filepath": "source/PeopleFamilyHome/Ice-cream.svg",
+      "tags": [
+        "IceCream",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Key",
+      "name": "Key",
+      "category": "PeopleFamilyHome",
+      "filename": "Key.svg",
+      "filepath": "source/PeopleFamilyHome/Key.svg",
+      "tags": [
+        "Key",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Lamp-home",
+      "name": "LampHome",
+      "category": "PeopleFamilyHome",
+      "filename": "Lamp-home.svg",
+      "filepath": "source/PeopleFamilyHome/Lamp-home.svg",
+      "tags": [
+        "LampHome",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Man-2",
+      "name": "Man2",
+      "category": "PeopleFamilyHome",
+      "filename": "Man-2.svg",
+      "filepath": "source/PeopleFamilyHome/Man-2.svg",
+      "tags": [
+        "Man2",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Man-butterfly",
+      "name": "ManButterfly",
+      "category": "PeopleFamilyHome",
+      "filename": "Man-butterfly.svg",
+      "filepath": "source/PeopleFamilyHome/Man-butterfly.svg",
+      "tags": [
+        "ManButterfly",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Man-ring",
+      "name": "ManRing",
+      "category": "PeopleFamilyHome",
+      "filename": "Man-ring.svg",
+      "filepath": "source/PeopleFamilyHome/Man-ring.svg",
+      "tags": [
+        "ManRing",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Man",
+      "name": "Man",
+      "category": "PeopleFamilyHome",
+      "filename": "Man.svg",
+      "filepath": "source/PeopleFamilyHome/Man.svg",
+      "tags": [
+        "Man",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Men",
+      "name": "Men",
+      "category": "PeopleFamilyHome",
+      "filename": "Men.svg",
+      "filepath": "source/PeopleFamilyHome/Men.svg",
+      "tags": [
+        "Men",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Monitor",
+      "name": "Monitor",
+      "category": "PeopleFamilyHome",
+      "filename": "Monitor.svg",
+      "filepath": "source/PeopleFamilyHome/Monitor.svg",
+      "tags": [
+        "Monitor",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Pear",
+      "name": "Pear",
+      "category": "PeopleFamilyHome",
+      "filename": "Pear.svg",
+      "filepath": "source/PeopleFamilyHome/Pear.svg",
+      "tags": [
+        "Pear",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "People",
+      "name": "People",
+      "category": "PeopleFamilyHome",
+      "filename": "People.svg",
+      "filepath": "source/PeopleFamilyHome/People.svg",
+      "tags": [
+        "People",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Services-and-service",
+      "name": "ServicesAndService",
+      "category": "PeopleFamilyHome",
+      "filename": "Services-and-service.svg",
+      "filepath": "source/PeopleFamilyHome/Services-and-service.svg",
+      "tags": [
+        "ServicesAndService",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Smile-no-mouth",
+      "name": "SmileNoMouth",
+      "category": "PeopleFamilyHome",
+      "filename": "Smile-no-mouth.svg",
+      "filepath": "source/PeopleFamilyHome/Smile-no-mouth.svg",
+      "tags": [
+        "SmileNoMouth",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Smile-normal",
+      "name": "SmileNormal",
+      "category": "PeopleFamilyHome",
+      "filename": "Smile-normal.svg",
+      "filepath": "source/PeopleFamilyHome/Smile-normal.svg",
+      "tags": [
+        "SmileNormal",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Smile-sad",
+      "name": "SmileSad",
+      "category": "PeopleFamilyHome",
+      "filename": "Smile-sad.svg",
+      "filepath": "source/PeopleFamilyHome/Smile-sad.svg",
+      "tags": [
+        "SmileSad",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Smile",
+      "name": "Smile",
+      "category": "PeopleFamilyHome",
+      "filename": "Smile.svg",
+      "filepath": "source/PeopleFamilyHome/Smile.svg",
+      "tags": [
+        "Smile",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Stroller",
+      "name": "Stroller",
+      "category": "PeopleFamilyHome",
+      "filename": "Stroller.svg",
+      "filepath": "source/PeopleFamilyHome/Stroller.svg",
+      "tags": [
+        "Stroller",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Transfer-to-a-private-person",
+      "name": "TransferToAPrivatePerson",
+      "category": "PeopleFamilyHome",
+      "filename": "Transfer-to-a-private-person.svg",
+      "filepath": "source/PeopleFamilyHome/Transfer-to-a-private-person.svg",
+      "tags": [
+        "TransferToAPrivatePerson",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Tray",
+      "name": "Tray",
+      "category": "PeopleFamilyHome",
+      "filename": "Tray.svg",
+      "filepath": "source/PeopleFamilyHome/Tray.svg",
+      "tags": [
+        "Tray",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Window",
+      "name": "Window",
+      "category": "PeopleFamilyHome",
+      "filename": "Window.svg",
+      "filepath": "source/PeopleFamilyHome/Window.svg",
+      "tags": [
+        "Window",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Woman",
+      "name": "Woman",
+      "category": "PeopleFamilyHome",
+      "filename": "Woman.svg",
+      "filepath": "source/PeopleFamilyHome/Woman.svg",
+      "tags": [
+        "Woman",
+        "PeopleFamilyHome"
+      ]
+    },
+    {
+      "id": "Bank-home",
+      "name": "BankHome",
+      "category": "Realty",
+      "filename": "Bank-home.svg",
+      "filepath": "source/Realty/Bank-home.svg",
+      "tags": [
+        "BankHome",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Bank-introduction",
+      "name": "BankIntroduction",
+      "category": "Realty",
+      "filename": "Bank-introduction.svg",
+      "filepath": "source/Realty/Bank-introduction.svg",
+      "tags": [
+        "BankIntroduction",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Bank",
+      "name": "Bank",
+      "category": "Realty",
+      "filename": "Bank.svg",
+      "filepath": "source/Realty/Bank.svg",
+      "tags": [
+        "Bank",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Building",
+      "name": "Building",
+      "category": "Realty",
+      "filename": "Building.svg",
+      "filepath": "source/Realty/Building.svg",
+      "tags": [
+        "Building",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Castle",
+      "name": "Castle",
+      "category": "Realty",
+      "filename": "Castle.svg",
+      "filepath": "source/Realty/Castle.svg",
+      "tags": [
+        "Castle",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Crane-2",
+      "name": "Crane2",
+      "category": "Realty",
+      "filename": "Crane-2.svg",
+      "filepath": "source/Realty/Crane-2.svg",
+      "tags": [
+        "Crane2",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Crane",
+      "name": "Crane",
+      "category": "Realty",
+      "filename": "Crane.svg",
+      "filepath": "source/Realty/Crane.svg",
+      "tags": [
+        "Crane",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Fence",
+      "name": "Fence",
+      "category": "Realty",
+      "filename": "Fence.svg",
+      "filepath": "source/Realty/Fence.svg",
+      "tags": [
+        "Fence",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Heating",
+      "name": "Heating",
+      "category": "Realty",
+      "filename": "Heating.svg",
+      "filepath": "source/Realty/Heating.svg",
+      "tags": [
+        "Heating",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Home",
+      "name": "Home",
+      "category": "Realty",
+      "filename": "Home.svg",
+      "filepath": "source/Realty/Home.svg",
+      "tags": [
+        "Home",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Hotels",
+      "name": "Hotels",
+      "category": "Realty",
+      "filename": "Hotels.svg",
+      "filepath": "source/Realty/Hotels.svg",
+      "tags": [
+        "Hotels",
+        "Realty"
+      ]
+    },
+    {
+      "id": "House-wap",
+      "name": "HouseWap",
+      "category": "Realty",
+      "filename": "House-wap.svg",
+      "filepath": "source/Realty/House-wap.svg",
+      "tags": [
+        "HouseWap",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Houses-2",
+      "name": "Houses2",
+      "category": "Realty",
+      "filename": "Houses-2.svg",
+      "filepath": "source/Realty/Houses-2.svg",
+      "tags": [
+        "Houses2",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Houses",
+      "name": "Houses",
+      "category": "Realty",
+      "filename": "Houses.svg",
+      "filepath": "source/Realty/Houses.svg",
+      "tags": [
+        "Houses",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Repairs",
+      "name": "Repairs",
+      "category": "Realty",
+      "filename": "Repairs.svg",
+      "filepath": "source/Realty/Repairs.svg",
+      "tags": [
+        "Repairs",
+        "Realty"
+      ]
+    },
+    {
+      "id": "To-budget",
+      "name": "ToBudget",
+      "category": "Realty",
+      "filename": "To-budget.svg",
+      "filepath": "source/Realty/To-budget.svg",
+      "tags": [
+        "ToBudget",
+        "Realty"
+      ]
+    },
+    {
+      "id": "Art and literature",
+      "name": "ArtAndLiterature",
+      "category": "Science",
+      "filename": "Art and literature.svg",
+      "filepath": "source/Science/Art and literature.svg",
+      "tags": [
+        "ArtAndLiterature",
+        "Science"
+      ]
+    },
+    {
+      "id": "Binoculars-2",
+      "name": "Binoculars2",
+      "category": "Science",
+      "filename": "Binoculars-2.svg",
+      "filepath": "source/Science/Binoculars-2.svg",
+      "tags": [
+        "Binoculars2",
+        "Science"
+      ]
+    },
+    {
+      "id": "Binoculars",
+      "name": "Binoculars",
+      "category": "Science",
+      "filename": "Binoculars.svg",
+      "filepath": "source/Science/Binoculars.svg",
+      "tags": [
+        "Binoculars",
+        "Science"
+      ]
+    },
+    {
+      "id": "Books-shelf",
+      "name": "BooksShelf",
+      "category": "Science",
+      "filename": "Books-shelf.svg",
+      "filepath": "source/Science/Books-shelf.svg",
+      "tags": [
+        "BooksShelf",
+        "Science"
+      ]
+    },
+    {
+      "id": "Courses",
+      "name": "Courses",
+      "category": "Science",
+      "filename": "Courses.svg",
+      "filepath": "source/Science/Courses.svg",
+      "tags": [
+        "Courses",
+        "Science"
+      ]
+    },
+    {
+      "id": "Education",
+      "name": "Education",
+      "category": "Science",
+      "filename": "Education.svg",
+      "filepath": "source/Science/Education.svg",
+      "tags": [
+        "Education",
+        "Science"
+      ]
+    },
+    {
+      "id": "General-education",
+      "name": "GeneralEducation",
+      "category": "Science",
+      "filename": "General-education.svg",
+      "filepath": "source/Science/General-education.svg",
+      "tags": [
+        "GeneralEducation",
+        "Science"
+      ]
+    },
+    {
+      "id": "Glasses",
+      "name": "Glasses",
+      "category": "Science",
+      "filename": "Glasses.svg",
+      "filepath": "source/Science/Glasses.svg",
+      "tags": [
+        "Glasses",
+        "Science"
+      ]
+    },
+    {
+      "id": "Globe",
+      "name": "Globe",
+      "category": "Science",
+      "filename": "Globe.svg",
+      "filepath": "source/Science/Globe.svg",
+      "tags": [
+        "Globe",
+        "Science"
+      ]
+    },
+    {
+      "id": "Magnifier",
+      "name": "Magnifier",
+      "category": "Science",
+      "filename": "Magnifier.svg",
+      "filepath": "source/Science/Magnifier.svg",
+      "tags": [
+        "Magnifier",
+        "Science"
+      ]
+    },
+    {
+      "id": "Microscope",
+      "name": "Microscope",
+      "category": "Science",
+      "filename": "Microscope.svg",
+      "filepath": "source/Science/Microscope.svg",
+      "tags": [
+        "Microscope",
+        "Science"
+      ]
+    },
+    {
+      "id": "Professional-education",
+      "name": "ProfessionalEducation",
+      "category": "Science",
+      "filename": "Professional-education.svg",
+      "filepath": "source/Science/Professional-education.svg",
+      "tags": [
+        "ProfessionalEducation",
+        "Science"
+      ]
+    },
+    {
+      "id": "World-copy",
+      "name": "WorldCopy",
+      "category": "Science",
+      "filename": "World-copy.svg",
+      "filepath": "source/Science/World-copy.svg",
+      "tags": [
+        "WorldCopy",
+        "Science"
+      ]
+    },
+    {
+      "id": "Bell",
+      "name": "Bell",
+      "category": "Security",
+      "filename": "Bell.svg",
+      "filepath": "source/Security/Bell.svg",
+      "tags": [
+        "Bell",
+        "Security"
+      ]
+    },
+    {
+      "id": "Court",
+      "name": "Court",
+      "category": "Security",
+      "filename": "Court.svg",
+      "filepath": "source/Security/Court.svg",
+      "tags": [
+        "Court",
+        "Security"
+      ]
+    },
+    {
+      "id": "Deposit",
+      "name": "Deposit",
+      "category": "Security",
+      "filename": "Deposit.svg",
+      "filepath": "source/Security/Deposit.svg",
+      "tags": [
+        "Deposit",
+        "Security"
+      ]
+    },
+    {
+      "id": "Fingerprint",
+      "name": "Fingerprint",
+      "category": "Security",
+      "filename": "Fingerprint.svg",
+      "filepath": "source/Security/Fingerprint.svg",
+      "tags": [
+        "Fingerprint",
+        "Security"
+      ]
+    },
+    {
+      "id": "Flasher",
+      "name": "Flasher",
+      "category": "Security",
+      "filename": "Flasher.svg",
+      "filepath": "source/Security/Flasher.svg",
+      "tags": [
+        "Flasher",
+        "Security"
+      ]
+    },
+    {
+      "id": "Libra",
+      "name": "Libra",
+      "category": "Security",
+      "filename": "Libra.svg",
+      "filepath": "source/Security/Libra.svg",
+      "tags": [
+        "Libra",
+        "Security"
+      ]
+    },
+    {
+      "id": "Police-cap",
+      "name": "PoliceCap",
+      "category": "Security",
+      "filename": "Police-cap.svg",
+      "filepath": "source/Security/Police-cap.svg",
+      "tags": [
+        "PoliceCap",
+        "Security"
+      ]
+    },
+    {
+      "id": "Police-car",
+      "name": "PoliceCar",
+      "category": "Security",
+      "filename": "Police-car.svg",
+      "filepath": "source/Security/Police-car.svg",
+      "tags": [
+        "PoliceCar",
+        "Security"
+      ]
+    },
+    {
+      "id": "Policeman",
+      "name": "Policeman",
+      "category": "Security",
+      "filename": "Policeman.svg",
+      "filepath": "source/Security/Policeman.svg",
+      "tags": [
+        "Policeman",
+        "Security"
+      ]
+    },
+    {
+      "id": "Shield-2",
+      "name": "Shield2",
+      "category": "Security",
+      "filename": "Shield-2.svg",
+      "filepath": "source/Security/Shield-2.svg",
+      "tags": [
+        "Shield2",
+        "Security"
+      ]
+    },
+    {
+      "id": "Shield-check",
+      "name": "ShieldCheck",
+      "category": "Security",
+      "filename": "Shield-check.svg",
+      "filepath": "source/Security/Shield-check.svg",
+      "tags": [
+        "ShieldCheck",
+        "Security"
+      ]
+    },
+    {
+      "id": "Shield",
+      "name": "Shield",
+      "category": "Security",
+      "filename": "Shield.svg",
+      "filepath": "source/Security/Shield.svg",
+      "tags": [
+        "Shield",
+        "Security"
+      ]
+    },
+    {
+      "id": "Archer",
+      "name": "Archer",
+      "category": "Sport",
+      "filename": "Archer.svg",
+      "filepath": "source/Sport/Archer.svg",
+      "tags": [
+        "Archer",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Backpack-2",
+      "name": "Backpack2",
+      "category": "Sport",
+      "filename": "Backpack-2.svg",
+      "filepath": "source/Sport/Backpack-2.svg",
+      "tags": [
+        "Backpack2",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Backpack",
+      "name": "Backpack",
+      "category": "Sport",
+      "filename": "Backpack.svg",
+      "filepath": "source/Sport/Backpack.svg",
+      "tags": [
+        "Backpack",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Balloon",
+      "name": "Balloon",
+      "category": "Sport",
+      "filename": "Balloon.svg",
+      "filepath": "source/Sport/Balloon.svg",
+      "tags": [
+        "Balloon",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Barbell",
+      "name": "Barbell",
+      "category": "Sport",
+      "filename": "Barbell.svg",
+      "filepath": "source/Sport/Barbell.svg",
+      "tags": [
+        "Barbell",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Bowling",
+      "name": "Bowling",
+      "category": "Sport",
+      "filename": "Bowling.svg",
+      "filepath": "source/Sport/Bowling.svg",
+      "tags": [
+        "Bowling",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Box-sport",
+      "name": "BoxSport",
+      "category": "Sport",
+      "filename": "Box-sport.svg",
+      "filepath": "source/Sport/Box-sport.svg",
+      "tags": [
+        "BoxSport",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Chaise-lounge",
+      "name": "ChaiseLounge",
+      "category": "Sport",
+      "filename": "Chaise-lounge.svg",
+      "filepath": "source/Sport/Chaise-lounge.svg",
+      "tags": [
+        "ChaiseLounge",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Chess",
+      "name": "Chess",
+      "category": "Sport",
+      "filename": "Chess.svg",
+      "filepath": "source/Sport/Chess.svg",
+      "tags": [
+        "Chess",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Cup",
+      "name": "Cup",
+      "category": "Sport",
+      "filename": "Cup.svg",
+      "filepath": "source/Sport/Cup.svg",
+      "tags": [
+        "Cup",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Darts",
+      "name": "Darts",
+      "category": "Sport",
+      "filename": "Darts.svg",
+      "filepath": "source/Sport/Darts.svg",
+      "tags": [
+        "Darts",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Drone",
+      "name": "Drone",
+      "category": "Sport",
+      "filename": "Drone.svg",
+      "filepath": "source/Sport/Drone.svg",
+      "tags": [
+        "Drone",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Duty-free",
+      "name": "DutyFree",
+      "category": "Sport",
+      "filename": "Duty-free.svg",
+      "filepath": "source/Sport/Duty-free.svg",
+      "tags": [
+        "DutyFree",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Electronics",
+      "name": "Electronics",
+      "category": "Sport",
+      "filename": "Electronics.svg",
+      "filepath": "source/Sport/Electronics.svg",
+      "tags": [
+        "Electronics",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Fishing",
+      "name": "Fishing",
+      "category": "Sport",
+      "filename": "Fishing.svg",
+      "filepath": "source/Sport/Fishing.svg",
+      "tags": [
+        "Fishing",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Flag",
+      "name": "Flag",
+      "category": "Sport",
+      "filename": "Flag.svg",
+      "filepath": "source/Sport/Flag.svg",
+      "tags": [
+        "Flag",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Goals",
+      "name": "Goals",
+      "category": "Sport",
+      "filename": "Goals.svg",
+      "filepath": "source/Sport/Goals.svg",
+      "tags": [
+        "Goals",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Golf",
+      "name": "Golf",
+      "category": "Sport",
+      "filename": "Golf.svg",
+      "filepath": "source/Sport/Golf.svg",
+      "tags": [
+        "Golf",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Leisure-and-travel",
+      "name": "LeisureAndTravel",
+      "category": "Sport",
+      "filename": "Leisure-and-travel.svg",
+      "filepath": "source/Sport/Leisure-and-travel.svg",
+      "tags": [
+        "LeisureAndTravel",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Leisure",
+      "name": "Leisure",
+      "category": "Sport",
+      "filename": "Leisure.svg",
+      "filepath": "source/Sport/Leisure.svg",
+      "tags": [
+        "Leisure",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Map",
+      "name": "Map",
+      "category": "Sport",
+      "filename": "Map.svg",
+      "filepath": "source/Sport/Map.svg",
+      "tags": [
+        "Map",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Medal",
+      "name": "Medal",
+      "category": "Sport",
+      "filename": "Medal.svg",
+      "filepath": "source/Sport/Medal.svg",
+      "tags": [
+        "Medal",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Mountains",
+      "name": "Mountains",
+      "category": "Sport",
+      "filename": "Mountains.svg",
+      "filepath": "source/Sport/Mountains.svg",
+      "tags": [
+        "Mountains",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Palm",
+      "name": "Palm",
+      "category": "Sport",
+      "filename": "Palm.svg",
+      "filepath": "source/Sport/Palm.svg",
+      "tags": [
+        "Palm",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Parachute",
+      "name": "Parachute",
+      "category": "Sport",
+      "filename": "Parachute.svg",
+      "filepath": "source/Sport/Parachute.svg",
+      "tags": [
+        "Parachute",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Ping-pong",
+      "name": "PingPong",
+      "category": "Sport",
+      "filename": "Ping-pong.svg",
+      "filepath": "source/Sport/Ping-pong.svg",
+      "tags": [
+        "PingPong",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Robot",
+      "name": "Robot",
+      "category": "Sport",
+      "filename": "Robot.svg",
+      "filepath": "source/Sport/Robot.svg",
+      "tags": [
+        "Robot",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Skates",
+      "name": "Skates",
+      "category": "Sport",
+      "filename": "Skates.svg",
+      "filepath": "source/Sport/Skates.svg",
+      "tags": [
+        "Skates",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Skiing",
+      "name": "Skiing",
+      "category": "Sport",
+      "filename": "Skiing.svg",
+      "filepath": "source/Sport/Skiing.svg",
+      "tags": [
+        "Skiing",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Sport",
+      "name": "Sport",
+      "category": "Sport",
+      "filename": "Sport.svg",
+      "filepath": "source/Sport/Sport.svg",
+      "tags": [
+        "Sport",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Tennis-ball",
+      "name": "TennisBall",
+      "category": "Sport",
+      "filename": "Tennis-ball.svg",
+      "filepath": "source/Sport/Tennis-ball.svg",
+      "tags": [
+        "TennisBall",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Tent",
+      "name": "Tent",
+      "category": "Sport",
+      "filename": "Tent.svg",
+      "filepath": "source/Sport/Tent.svg",
+      "tags": [
+        "Tent",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Timer",
+      "name": "Timer",
+      "category": "Sport",
+      "filename": "Timer.svg",
+      "filepath": "source/Sport/Timer.svg",
+      "tags": [
+        "Timer",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Tourism",
+      "name": "Tourism",
+      "category": "Sport",
+      "filename": "Tourism.svg",
+      "filepath": "source/Sport/Tourism.svg",
+      "tags": [
+        "Tourism",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Toys",
+      "name": "Toys",
+      "category": "Sport",
+      "filename": "Toys.svg",
+      "filepath": "source/Sport/Toys.svg",
+      "tags": [
+        "Toys",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Training-apparatus",
+      "name": "TrainingApparatus",
+      "category": "Sport",
+      "filename": "Training-apparatus.svg",
+      "filepath": "source/Sport/Training-apparatus.svg",
+      "tags": [
+        "TrainingApparatus",
+        "Sport"
+      ]
+    },
+    {
+      "id": "UFO",
+      "name": "UFO",
+      "category": "Sport",
+      "filename": "UFO.svg",
+      "filepath": "source/Sport/UFO.svg",
+      "tags": [
+        "UFO",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Volleyball",
+      "name": "Volleyball",
+      "category": "Sport",
+      "filename": "Volleyball.svg",
+      "filepath": "source/Sport/Volleyball.svg",
+      "tags": [
+        "Volleyball",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Wave",
+      "name": "Wave",
+      "category": "Sport",
+      "filename": "Wave.svg",
+      "filepath": "source/Sport/Wave.svg",
+      "tags": [
+        "Wave",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Wave2",
+      "name": "Wave2",
+      "category": "Sport",
+      "filename": "Wave2.svg",
+      "filepath": "source/Sport/Wave2.svg",
+      "tags": [
+        "Wave2",
+        "Sport"
+      ]
+    },
+    {
+      "id": "Accessories",
+      "name": "Accessories",
+      "category": "Time",
+      "filename": "Accessories.svg",
+      "filepath": "source/Time/Accessories.svg",
+      "tags": [
+        "Accessories",
+        "Time"
+      ]
+    },
+    {
+      "id": "Ad-event",
+      "name": "AdEvent",
+      "category": "Time",
+      "filename": "Ad-event.svg",
+      "filepath": "source/Time/Ad-event.svg",
+      "tags": [
+        "AdEvent",
+        "Time"
+      ]
+    },
+    {
+      "id": "Calendar",
+      "name": "Calendar",
+      "category": "Time",
+      "filename": "Calendar.svg",
+      "filepath": "source/Time/Calendar.svg",
+      "tags": [
+        "Calendar",
+        "Time"
+      ]
+    },
+    {
+      "id": "Clock",
+      "name": "Clock",
+      "category": "Time",
+      "filename": "Clock.svg",
+      "filepath": "source/Time/Clock.svg",
+      "tags": [
+        "Clock",
+        "Time"
+      ]
+    },
+    {
+      "id": "Expectation",
+      "name": "Expectation",
+      "category": "Time",
+      "filename": "Expectation.svg",
+      "filepath": "source/Time/Expectation.svg",
+      "tags": [
+        "Expectation",
+        "Time"
+      ]
+    },
+    {
+      "id": "Operations-history",
+      "name": "OperationsHistory",
+      "category": "Time",
+      "filename": "Operations-history.svg",
+      "filepath": "source/Time/Operations-history.svg",
+      "tags": [
+        "OperationsHistory",
+        "Time"
+      ]
+    },
+    {
+      "id": "Air-transport",
+      "name": "AirTransport",
+      "category": "Transport",
+      "filename": "Air-transport.svg",
+      "filepath": "source/Transport/Air-transport.svg",
+      "tags": [
+        "AirTransport",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Auto-parts",
+      "name": "AutoParts",
+      "category": "Transport",
+      "filename": "Auto-parts.svg",
+      "filepath": "source/Transport/Auto-parts.svg",
+      "tags": [
+        "AutoParts",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Auto-Service",
+      "name": "AutoService",
+      "category": "Transport",
+      "filename": "Auto-Service.svg",
+      "filepath": "source/Transport/Auto-Service.svg",
+      "tags": [
+        "AutoService",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Auto",
+      "name": "Auto",
+      "category": "Transport",
+      "filename": "Auto.svg",
+      "filepath": "source/Transport/Auto.svg",
+      "tags": [
+        "Auto",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Bicycle",
+      "name": "Bicycle",
+      "category": "Transport",
+      "filename": "Bicycle.svg",
+      "filepath": "source/Transport/Bicycle.svg",
+      "tags": [
+        "Bicycle",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Cruises",
+      "name": "Cruises",
+      "category": "Transport",
+      "filename": "Cruises.svg",
+      "filepath": "source/Transport/Cruises.svg",
+      "tags": [
+        "Cruises",
+        "Transport"
+      ]
+    },
+    {
+      "id": "GBDD",
+      "name": "GBDD",
+      "category": "Transport",
+      "filename": "GBDD.svg",
+      "filepath": "source/Transport/GBDD.svg",
+      "tags": [
+        "GBDD",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Helicopter",
+      "name": "Helicopter",
+      "category": "Transport",
+      "filename": "Helicopter.svg",
+      "filepath": "source/Transport/Helicopter.svg",
+      "tags": [
+        "Helicopter",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Metro-train",
+      "name": "MetroTrain",
+      "category": "Transport",
+      "filename": "Metro-train.svg",
+      "filepath": "source/Transport/Metro-train.svg",
+      "tags": [
+        "MetroTrain",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Metro",
+      "name": "Metro",
+      "category": "Transport",
+      "filename": "Metro.svg",
+      "filepath": "source/Transport/Metro.svg",
+      "tags": [
+        "Metro",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Moto",
+      "name": "Moto",
+      "category": "Transport",
+      "filename": "Moto.svg",
+      "filepath": "source/Transport/Moto.svg",
+      "tags": [
+        "Moto",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Motor-transport",
+      "name": "MotorTransport",
+      "category": "Transport",
+      "filename": "Motor-transport.svg",
+      "filepath": "source/Transport/Motor-transport.svg",
+      "tags": [
+        "MotorTransport",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Railway",
+      "name": "Railway",
+      "category": "Transport",
+      "filename": "Railway.svg",
+      "filepath": "source/Transport/Railway.svg",
+      "tags": [
+        "Railway",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Rocket",
+      "name": "Rocket",
+      "category": "Transport",
+      "filename": "Rocket.svg",
+      "filepath": "source/Transport/Rocket.svg",
+      "tags": [
+        "Rocket",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Speedometer",
+      "name": "Speedometer",
+      "category": "Transport",
+      "filename": "Speedometer.svg",
+      "filepath": "source/Transport/Speedometer.svg",
+      "tags": [
+        "Speedometer",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Taxi-2",
+      "name": "Taxi2",
+      "category": "Transport",
+      "filename": "Taxi-2.svg",
+      "filepath": "source/Transport/Taxi-2.svg",
+      "tags": [
+        "Taxi2",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Taxi",
+      "name": "Taxi",
+      "category": "Transport",
+      "filename": "Taxi.svg",
+      "filepath": "source/Transport/Taxi.svg",
+      "tags": [
+        "Taxi",
+        "Transport"
+      ]
+    },
+    {
+      "id": "Trolley-bus",
+      "name": "TrolleyBus",
+      "category": "Transport",
+      "filename": "Trolley-bus.svg",
+      "filepath": "source/Transport/Trolley-bus.svg",
+      "tags": [
+        "TrolleyBus",
+        "Transport"
+      ]
+    }
+  ],
+  "tags": [
+    "Brush",
+    "Art",
+    "Bust",
+    "Design",
+    "Literature",
+    "Movie",
+    "Music",
+    "Picture",
+    "PostServices",
+    "Theater2",
+    "Theater",
+    "Violin",
+    "ATMCard",
+    "Cards",
+    "ATM",
+    "Bridge",
+    "ByCardNumber",
+    "Card1",
+    "CardHeart",
+    "CardInterest",
+    "CardLock2",
+    "CardLock",
+    "CardPinChange",
+    "CashWithdrawal",
+    "ChangePinCard",
+    "DepositFunds",
+    "HandMoney",
+    "Mastercard",
+    "OpenCard",
+    "Something",
+    "Terminal2",
+    "Terminal3",
+    "Terminal4",
+    "Terminal",
+    "TransferToCard",
+    "Transfer",
+    "Diagram",
+    "Diagrams",
+    "Schedule2",
+    "Schedule3",
+    "ScheduleGrowth",
+    "Schedule",
+    "Scheme2",
+    "Scheme",
+    "AccountError",
+    "Documents",
+    "Accounts",
+    "BetweenYourAccounts",
+    "BriefcaseInterest",
+    "ByReceiptNumber",
+    "Check2",
+    "CheckInfo",
+    "CheckMagnifier",
+    "CheckSeal",
+    "CheckSign",
+    "Check",
+    "Clip",
+    "CurrentAccount",
+    "DictionaryAdd",
+    "Document2",
+    "Document3Arrow",
+    "Document3",
+    "DocumentCopy",
+    "DocumentEdit",
+    "DocumentFavorites",
+    "DocumentHistory",
+    "DocumentReissue",
+    "DocumentSeal",
+    "DocumentSend",
+    "DocumentSignAndSend",
+    "DocumentSignVisa",
+    "Document",
+    "Edit",
+    "Envelope",
+    "Excel",
+    "Incoming",
+    "NewDocument",
+    "OfficeSupplies",
+    "Organizations",
+    "Passport",
+    "Pen",
+    "Pencil",
+    "SaveAsTemplate",
+    "SavingsAccount",
+    "Seal",
+    "SignChecked",
+    "SignError",
+    "SignPartlySigned",
+    "SignRemove",
+    "SignSigned",
+    "TargetAccount",
+    "Task",
+    "Template",
+    "ToYourAccount",
+    "Unarchive",
+    "VerifiedTemplate",
+    "BundleOfMoney",
+    "Finance",
+    "Calculator",
+    "CashTransactions",
+    "CirculationOfMoney",
+    "Contribution",
+    "Credit",
+    "CurrencyCalculator",
+    "CurrencyEur",
+    "DebtFCPP",
+    "Dollar",
+    "Euro",
+    "Exchange",
+    "GearWheelRuble",
+    "HandCard",
+    "HandMoney2",
+    "Interest",
+    "MoneyBag",
+    "Pay",
+    "PaymentOnReceipt1",
+    "PIF",
+    "PlusMinus",
+    "Portfolio",
+    "Purse2",
+    "RubleArrow",
+    "RubleRadial",
+    "RubleTurnover",
+    "Ruble",
+    "ToPay",
+    "Barrel",
+    "Industry",
+    "Box",
+    "Canister",
+    "ConcreteMixer",
+    "Equipment",
+    "Excavator",
+    "Factory",
+    "Gas",
+    "Gears",
+    "Hammers",
+    "Lamp",
+    "Oil",
+    "Pipes",
+    "Screw",
+    "Tower",
+    "Tractor",
+    "Truck",
+    "Water",
+    "WateringCan",
+    "Wheelbarrow",
+    "Logo",
+    "source",
+    "BabbleLogo",
+    "Media",
+    "BabbleQuestion",
+    "Babble",
+    "Bobbin",
+    "Camera1",
+    "Camera",
+    "Chat",
+    "CommunicationServices",
+    "Entertainment",
+    "Headphones",
+    "Keyboard",
+    "Laptop",
+    "Mail",
+    "Microphone",
+    "PhoneHome",
+    "PhoneInfo",
+    "Phone",
+    "Print",
+    "QuestionLogo",
+    "SatelliteDish",
+    "Satellite",
+    "SendToMail",
+    "SMS",
+    "Sound",
+    "Support",
+    "Tablet",
+    "Telegram",
+    "Television",
+    "ToEWallet",
+    "Viber",
+    "Waves",
+    "WhatsApp",
+    "Pharmacies",
+    "Medicine",
+    "Treatment",
+    "AlcoholTobacco",
+    "Merchant",
+    "BabyClothes",
+    "Basket2",
+    "Beauty",
+    "CarDealers",
+    "Cashbox",
+    "ClothesShoesAccessories",
+    "Clothes",
+    "CodeRing",
+    "Code",
+    "Cosmetics",
+    "Footwear",
+    "GasStation",
+    "HealthAndBeauty",
+    "HomeAndAppliances",
+    "Kids",
+    "Nameplate",
+    "Offer",
+    "Packages",
+    "PriceTagRuble",
+    "PriceTag",
+    "Products",
+    "Purchases",
+    "QRCode",
+    "RentACar",
+    "RepairOfThings",
+    "Restaurants",
+    "Veterinarian",
+    "Animal",
+    "Nature",
+    "Bear",
+    "Cloud",
+    "Cow",
+    "Dolphin",
+    "Fish",
+    "Garden",
+    "Leaf",
+    "Moon",
+    "PetSupplies",
+    "Rain",
+    "Snow",
+    "SunCloud",
+    "Sun",
+    "Tree",
+    "Umbrella",
+    "Umbrella2",
+    "Whale",
+    "ArrowDownRing",
+    "Navigation",
+    "ArrowDown",
+    "ArrowLeftRing",
+    "ArrowRightRing",
+    "ArrowRight",
+    "ArrowUpRing",
+    "ArrowUp",
+    "ArrowsDiagonal",
+    "ArrowsLeftRight",
+    "ArrowsUpDown",
+    "Attention",
+    "Burger",
+    "Buttons",
+    "CheckMarkRing",
+    "CheckMark",
+    "CircleCheckedDashed",
+    "CloseRing",
+    "Close",
+    "CompassArrow",
+    "Compass",
+    "Coordinates1",
+    "Copy",
+    "Down",
+    "Download",
+    "DragAndDrop",
+    "Draggable",
+    "Enter",
+    "Exclamation",
+    "Exit",
+    "Favorite",
+    "Filter",
+    "InfinitySign",
+    "InfoRing",
+    "Invisible",
+    "LeftArrow",
+    "Left",
+    "Lock",
+    "LogoArrow",
+    "Mirror",
+    "OtherRing",
+    "Other",
+    "Pin2",
+    "PlusRing",
+    "Plus",
+    "Question",
+    "QuestionFill",
+    "Queue",
+    "Refresh2",
+    "Refresh3",
+    "Refresh4",
+    "Refresh",
+    "RepeatWithErrors",
+    "RewindLeft",
+    "RewindLeft2",
+    "RewindRight",
+    "RewindRight2",
+    "Right",
+    "Save",
+    "Settings1",
+    "Sorting",
+    "Stop",
+    "SubmitRefillLink",
+    "Trash",
+    "Unlock",
+    "Up",
+    "ViewCards",
+    "ViewList",
+    "Visible",
+    "Ambulance",
+    "PeopleFamilyHome",
+    "BabyCare",
+    "Cafe",
+    "Cake",
+    "Candles",
+    "Candy",
+    "Cap",
+    "Chair",
+    "Champagne",
+    "Cocktail",
+    "Coffee",
+    "Consultation",
+    "CupSport",
+    "Cupboard",
+    "Fireplace",
+    "Flower",
+    "FoodBurger",
+    "Furniture",
+    "Girl",
+    "Grandfather",
+    "Grandmother",
+    "HeartBroken",
+    "Heart",
+    "IceCream",
+    "Key",
+    "LampHome",
+    "Man2",
+    "ManButterfly",
+    "ManRing",
+    "Man",
+    "Men",
+    "Monitor",
+    "Pear",
+    "People",
+    "ServicesAndService",
+    "SmileNoMouth",
+    "SmileNormal",
+    "SmileSad",
+    "Smile",
+    "Stroller",
+    "TransferToAPrivatePerson",
+    "Tray",
+    "Window",
+    "Woman",
+    "BankHome",
+    "Realty",
+    "BankIntroduction",
+    "Bank",
+    "Building",
+    "Castle",
+    "Crane2",
+    "Crane",
+    "Fence",
+    "Heating",
+    "Home",
+    "Hotels",
+    "HouseWap",
+    "Houses2",
+    "Houses",
+    "Repairs",
+    "ToBudget",
+    "ArtAndLiterature",
+    "Science",
+    "Binoculars2",
+    "Binoculars",
+    "BooksShelf",
+    "Courses",
+    "Education",
+    "GeneralEducation",
+    "Glasses",
+    "Globe",
+    "Magnifier",
+    "Microscope",
+    "ProfessionalEducation",
+    "WorldCopy",
+    "Bell",
+    "Security",
+    "Court",
+    "Deposit",
+    "Fingerprint",
+    "Flasher",
+    "Libra",
+    "PoliceCap",
+    "PoliceCar",
+    "Policeman",
+    "Shield2",
+    "ShieldCheck",
+    "Shield",
+    "Archer",
+    "Sport",
+    "Backpack2",
+    "Backpack",
+    "Balloon",
+    "Barbell",
+    "Bowling",
+    "BoxSport",
+    "ChaiseLounge",
+    "Chess",
+    "Cup",
+    "Darts",
+    "Drone",
+    "DutyFree",
+    "Electronics",
+    "Fishing",
+    "Flag",
+    "Goals",
+    "Golf",
+    "LeisureAndTravel",
+    "Leisure",
+    "Map",
+    "Medal",
+    "Mountains",
+    "Palm",
+    "Parachute",
+    "PingPong",
+    "Robot",
+    "Skates",
+    "Skiing",
+    "TennisBall",
+    "Tent",
+    "Timer",
+    "Tourism",
+    "Toys",
+    "TrainingApparatus",
+    "UFO",
+    "Volleyball",
+    "Wave",
+    "Wave2",
+    "Accessories",
+    "Time",
+    "AdEvent",
+    "Calendar",
+    "Clock",
+    "Expectation",
+    "OperationsHistory",
+    "AirTransport",
+    "Transport",
+    "AutoParts",
+    "AutoService",
+    "Auto",
+    "Bicycle",
+    "Cruises",
+    "GBDD",
+    "Helicopter",
+    "MetroTrain",
+    "Metro",
+    "Moto",
+    "MotorTransport",
+    "Railway",
+    "Rocket",
+    "Speedometer",
+    "Taxi2",
+    "Taxi",
+    "TrolleyBus"
+  ]
+}

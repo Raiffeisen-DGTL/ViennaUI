@@ -1,0 +1,34 @@
+space: smscodeinput
+base:
+  font-family: $typography.b.family
+  justify-content: center
+  align-items: center
+
+footer:
+  margin-top: $layout.size.xs
+
+inputWrapper:
+  width: 148px
+  margin-bottom: $layout.size.xxxs
+
+timerWrapper:
+  color: $color.primary.seattle.c60
+  font-size: $typography.b.b2.size
+  line-height: $layout.size.s
+
+error:
+  color: $color.utilitarian.moscow.c120
+  text-align: center
+  font-size: $typography.b.b2.size
+  line-height: $typography.b.b2.height
+  height: $layout.size.xs
+
+input:
+  font-family: $typography.a.family
+  font-size: $typography.a.a2.size
+  line-height: $typography.a.a2.height
+  font-weight: $typography.weight.bold
+  text-align: center
+  background-color: transparent
+  '&::placeholder':
+    color: $color.primary.seattle.c30

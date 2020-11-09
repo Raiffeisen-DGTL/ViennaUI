@@ -1,0 +1,233 @@
+space: header
+imports: ['../typography.yaml']
+
+base:
+  z-index: '999'
+  width: 100%
+  background-color: $color.primary.brand.white
+
+header:
+  width: 100%
+  display: flex
+  background-color: $color.primary.brand.white
+  justify-content: space-between
+
+sideContent:
+  base:
+    padding-right: $layout.whitespace.xs
+    display: flex
+  size:
+    l:
+      padding-right: $layout.size.l
+      padding-bottom: $layout.whitespace.xl
+    m:
+      padding-right: $layout.size.s
+      padding-bottom: $layout.whitespace.xl
+    s:
+      padding-right: $layout.size.xs
+      padding-bottom: $layout.whitespace.s
+
+list:
+  margin-top: $layout.whitespace.m
+  background-color: $color.primary.brand.white
+  width: 100%
+
+shadow:
+  box-shadow: $shadow.basic.l
+
+fixed:
+  position: fixed
+  top: 0
+  left: 0
+
+actionGroups:
+  width: max-content
+
+action:
+  base:
+    max-width: 100%
+  size:
+    l:
+      max-height: $layout.size.l
+      padding-left: $layout.size.l
+      padding-bottom: $layout.whitespace.xl
+    m:
+      max-height: $layout.size.s
+      padding-left: $layout.size.s
+      padding-bottom: $layout.whitespace.xl
+    s:
+      max-height: $layout.size.xs
+      padding-left: $layout.size.xs
+      padding-bottom: $layout.whitespace.s
+
+size:
+  l:
+    padding: $layout.whitespace.xl $layout.whitespace.xxl 0px
+  m:
+    padding: $layout.whitespace.xl $layout.whitespace.xxl 0px
+  s:
+    padding: $layout.whitespace.s $layout.whitespace.m 0px
+
+box:
+  size:
+    l:
+      height: 88px
+    m:
+      height: 80px
+    s:
+      height: 48px
+
+boxMobile:
+  size:
+    l:
+      height: 72px
+    m:
+      height: 64px
+    s:
+      height: 56px
+
+searchContainer:
+  base:
+    padding-right: $layout.whitespace.m
+    min-width: 200px
+  size:
+    l:
+      padding-left: 64px
+    m:
+      padding-left: 64px
+    s:
+      padding-left: 32px
+tabs:
+  base:
+    justify-content: center
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: row
+tab:
+  base:
+    ref: $typography.text.base
+    font-weight: $typography.weight.medium
+    color: $color.primary.seattle.c100
+    height: 100%
+    cursor: pointer
+    transition: color 0.2s
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  align:
+    bottom:
+      size:
+        l:
+          margin-top: 10px
+          min-height: 54px
+          margin-right: $layout.whitespace.xxl
+          font-size: $typography.b.b3.size
+          line-height: $typography.b.b3.height
+        m:
+          margin-top: 6px
+          min-height: 50px
+          margin-right: $layout.whitespace.xl
+          font-size: $typography.b.b2.size
+          line-height: $typography.b.b2.height
+        s:
+          min-height: $layout.size.s
+          margin-right: $layout.whitespace.m
+          font-size: $typography.b.b1.size
+          line-height: $typography.b.b1.height
+          padding-top: $layout.whitespace.xxs
+          padding-bottom: 14px
+    center:
+      size:
+        l:
+          min-height: $layout.size.l
+          margin-right: $layout.whitespace.xxl
+          font-size: $typography.b.b3.size
+          line-height: $typography.b.b3.height
+        m:
+          min-height: $layout.size.s
+          margin-right: $layout.whitespace.xl
+          font-size: $typography.b.b2.size
+          line-height: $typography.b.b2.height
+        s:
+          min-height: $layout.size.s
+          margin-right: $layout.whitespace.m
+          font-size: $typography.b.b1.size
+          line-height: $typography.b.b1.height
+menuPoint:
+  base:
+    width: 100%
+    height: 50px
+    padding: $layout.whitespace.s $layout.whitespace.m
+    background-color: $color.primary.brand.white
+    color: $color.primary.brand.primary
+    text-align: left
+    border: none
+    cursor: pointer
+    overflow: hidden
+  hover:
+    outline: none
+  active:
+    outline: none
+  focus:
+    outline: none
+  title:
+    base:
+      font-style: normal
+      font-weight: $typography.weight.medium
+      width: 100%
+      height: 100%
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+    hover:
+      color: $color.primary.oslo.c120
+  icon:
+    base:
+      color: $color.primary.seattle.c30
+    hover:
+      color: $color.primary.oslo.c120
+
+content:
+  base:
+    position: absolute
+    display: flex
+    width: 100%
+    justify-content: center
+    background-color: $color.primary.brand.white
+  size:
+    l:
+      top: 88px
+    m:
+      top: 80px
+    s:
+      top: 48px
+
+contentMobile:
+  base:
+    position: absolute
+    display: block
+    width: 100%
+    overflow-y: scroll
+    background-color: $color.primary.brand.white
+  size:
+    l:
+      top: 72px
+    m:
+      top: 64px
+    s:
+      top: 56px
+  height:
+    l:
+      height: calc(100vh - 72px)
+    m:
+      height: calc(100vh - 64px)
+    s:
+      height: calc(100vh - 56px)
+fade:
+  base:
+    position: absolute
+    display: block
+    height: 100vh
+    width: 100%
+    background-color: $color.primary.london.c120

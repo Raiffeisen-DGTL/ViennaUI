@@ -1,0 +1,41 @@
+space: typography
+b:
+  desc: Обычный текст
+  family:
+    value: "'ALS Hauss', Helvetica, 'Helvetica New', Arial, sans-serif"
+    prop: font-family
+  b1:
+    size:
+      value: 12px
+      prop: font-size
+    height:
+      value: 18px
+      prop: line-height
+  b2:
+    size:
+      value: 14px
+      prop: font-size
+    height:
+      value: 22px
+      prop: line-height
+  b3:
+    size:
+      value: 16px
+      prop: font-size
+    height:
+      value: 26px
+      prop: line-height
+  b4:
+    size:
+      value: 18px
+      prop: font-size
+    height:
+      value: 28px
+      prop: line-height
+  b5:
+    size:
+      value: 20px
+      prop: font-size
+    height:
+      value: 30px
+      prop: line-height

@@ -1,0 +1,29 @@
+space: hint
+
+definition:
+  base:
+    color: $color.primary.seattle.c60
+    margin-right: $layout.whitespace.xxs
+
+wrapper:
+  base:
+    margin-right: $layout.whitespace.xxs
+
+icon:
+  base:
+    color: $color.primary.seattle.c60
+    outline: none
+    cursor: pointer
+    border-radius: $border.radius.xl
+  size:
+    s:
+      width: $layout.icon.xxs
+      height: $layout.icon.xxs
+    m:
+      width: $layout.icon.xs
+      height: $layout.icon.xs
+    l:
+      width: $layout.icon.s
+      height: $layout.icon.s
+  hover:
+    color: $color.primary.brand.primary

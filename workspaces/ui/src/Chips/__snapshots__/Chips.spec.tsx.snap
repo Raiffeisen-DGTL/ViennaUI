@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chips 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ active 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ align 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 jJXCli"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ any props 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF className"
+  id="id"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ design 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 ksLtsn"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ design 2`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ design 3`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 gPvMAo"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 cxSmky"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 cxSmky"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ disabled 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 gtsvoU"
+    disabled=""
+    id="1"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    disabled=""
+    id="2"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    disabled=""
+    id="3"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ disabled 2`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 iPKsWv"
+    disabled=""
+    id="1"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    disabled=""
+    id="2"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    disabled=""
+    id="3"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ disabled 3`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 cnHqoo"
+    disabled=""
+    id="1"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 cSumcM"
+    disabled=""
+    id="2"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 cSumcM"
+    disabled=""
+    id="3"
+    tabindex="-1"
+  >
+    Chip
+  </div>
+</div>
+`;
+
+exports[`Chips w/ multiple active 1`] = `
+<div
+  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    id="1"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="2"
+  >
+    Chip
+  </div>
+  <div
+    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    id="3"
+  >
+    Chip
+  </div>
+</div>
+`;

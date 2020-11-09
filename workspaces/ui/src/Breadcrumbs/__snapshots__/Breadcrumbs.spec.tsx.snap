@@ -1,0 +1,2924 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.constructChildren.Option"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c6"
+    data-marker="Breadcrumbs.Option"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c10"
+    data-marker="Breadcrumbs.Option_0"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c11"
+    data-marker="Breadcrumbs.Option_1"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ less width with altText 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
+<div
+  data-marker="div"
+  style="width:300px"
+>
+  <div
+    class="c0"
+    data-marker="Breadcrumbs_2"
+  >
+    <div
+      class="c1"
+      data-marker="Breadcrumbs.constructChildren.Option"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c4"
+            data-marker="Option.Text"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.Home"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="Home.defs"
+              />
+              <path
+                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+                data-marker="Home.path"
+              />
+            </svg>
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.Home"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="Home.defs"
+              />
+              <path
+                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+                data-marker="Home.path"
+              />
+            </svg>
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c6"
+      data-marker="Breadcrumbs.Option_6"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c8"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 1
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 1
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          >
+            Page 1
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+      data-marker="Breadcrumbs.Option_7"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c8"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 2
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 2
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          >
+            Page 2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+      data-marker="Breadcrumbs.Option_8"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 3
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 3
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          >
+            Page 3
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ less width without altText 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
+<div
+  data-marker="div_0"
+  style="width:300px"
+>
+  <div
+    class="c0"
+    data-marker="Breadcrumbs_3"
+  >
+    <div
+      class="c1"
+      data-marker="Breadcrumbs.constructChildren.Option"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c4"
+            data-marker="Option.Text"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.Home"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="Home.defs"
+              />
+              <path
+                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+                data-marker="Home.path"
+              />
+            </svg>
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.Home"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="Home.defs"
+              />
+              <path
+                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+                data-marker="Home.path"
+              />
+            </svg>
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c6"
+      data-marker="Breadcrumbs.Option_9"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c8"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 1
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 1
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+      data-marker="Breadcrumbs.Option_10"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c8"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 2
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 2
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+      data-marker="Breadcrumbs.Option_11"
+    >
+      <div
+        class="c7"
+        data-marker="Option.Icon"
+      >
+        <svg
+          data-marker="Option.Right"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs
+            data-marker="Right.defs"
+          />
+          <path
+            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+            data-marker="Right.path"
+          />
+        </svg>
+      </div>
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          data-marker="Option.Wrapper"
+        >
+          <div
+            class="c9"
+            data-marker="Option.Text"
+          >
+            Long Name Page 3
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText"
+          >
+            Long Name Page 3
+          </div>
+          <div
+            class="c5"
+            data-marker="Option.HiddenText_0"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(12px *3);
+  min-width: calc(12px *3);
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_0"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.constructChildren.Option"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="16"
+            viewBox="0 0 24 24"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c6"
+    data-marker="Breadcrumbs.Option_2"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 24 24"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c10"
+    data-marker="Breadcrumbs.Option_3"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 24 24"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c11"
+    data-marker="Breadcrumbs.Option_4"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 24 24"
+        width="12"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_0"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.constructChildren.Option"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c6"
+    data-marker="Breadcrumbs.Option_2"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c10"
+    data-marker="Breadcrumbs.Option_3"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c11"
+    data-marker="Breadcrumbs.Option_4"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_0"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.constructChildren.Option"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          <svg
+            data-marker="Breadcrumbs.constructChildren.Home"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs
+              data-marker="Home.defs"
+            />
+            <path
+              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
+              data-marker="Home.path"
+            />
+          </svg>
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c6"
+    data-marker="Breadcrumbs.Option_2"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 1
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c10"
+    data-marker="Breadcrumbs.Option_3"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c8"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 2
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="c11"
+    data-marker="Breadcrumbs.Option_4"
+  >
+    <div
+      class="c7"
+      data-marker="Option.Icon"
+    >
+      <svg
+        data-marker="Option.Right"
+        fill="currentColor"
+        height="16"
+        viewBox="0 0 24 24"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs
+          data-marker="Right.defs"
+        />
+        <path
+          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
+          data-marker="Right.path"
+        />
+      </svg>
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c9"
+          data-marker="Option.Text"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText"
+        >
+          Long Name Page 3
+        </div>
+        <div
+          class="c5"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_1"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.Option_5"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_1"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.Option_5"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Breadcrumbs w/ sizes only 1 item 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+<div
+  class="c0"
+  data-marker="Breadcrumbs_1"
+>
+  <div
+    class="c1"
+    data-marker="Breadcrumbs.Option_5"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        data-marker="Option.Wrapper"
+      >
+        <div
+          class="c4"
+          data-marker="Option.Text"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText"
+        >
+          <div
+            class="c5"
+            data-marker="Breadcrumbs.constructChildren.BackIcon"
+          >
+            <svg
+              data-marker="Breadcrumbs.constructChildren.LeftArrow"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs
+                data-marker="LeftArrow.defs"
+              />
+              <path
+                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
+                data-marker="LeftArrow.path"
+              />
+            </svg>
+          </div>
+          <span
+            data-marker="Breadcrumbs.constructChildren.span"
+          >
+            Вернуться к Long Name Page 1
+          </span>
+        </div>
+        <div
+          class="c6"
+          data-marker="Option.HiddenText_0"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

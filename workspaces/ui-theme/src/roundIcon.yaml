@@ -1,0 +1,125 @@
+space: roundIcon
+
+base:
+  border-radius: 50%;
+  user-select: none;
+
+size:
+  xl:
+    height: 112px
+    width: 112px
+    font-size: $typography.a.a4.size
+  l:
+    height: 56px
+    width: 56px
+    font-size: $typography.b.b5.size
+  m:
+    height: 40px
+    width: 40px
+    font-size: $typography.b.b3.size
+  s:
+    height: 32px
+    width: 32px
+    font-size: $typography.b.b2.size
+  xs:
+    height: 24px
+    width: 24px
+    font-size: $typography.b.b1.size
+
+color:
+  seattle10:
+    background-color: $color.primary.seattle.c10
+    color: $color.primary.seattle.c100
+  seattle60:
+    background-color: $color.primary.seattle.c60
+    color: $color.primary.brand.white
+  oslo10:
+    background-color: $color.primary.oslo.c10
+    color: $color.primary.oslo.c100
+  oslo60:
+    background-color: $color.primary.oslo.c60
+    color: $color.primary.brand.white
+  miami10:
+    background-color: $color.secondary.basic.miami.c10
+    color: $color.secondary.basic.miami.c100
+  miami100:
+    background-color: $color.secondary.basic.miami.c100
+    color: $color.primary.brand.white
+  nice10:
+    background-color: $color.secondary.basic.nice.c10
+    color: $color.secondary.basic.nice.c100
+  nice100:
+    background-color: $color.secondary.basic.nice.c100
+    color: $color.primary.brand.white
+  dubai10:
+    background-color: $color.secondary.basic.dubai.c10
+    color: $color.secondary.basic.dubai.c100
+  dubai100:
+    background-color: $color.secondary.basic.dubai.c100
+    color: $color.primary.brand.white
+  paris10:
+    background-color: $color.secondary.basic.paris.c10
+    color: $color.secondary.basic.paris.c100
+  paris100:
+    background-color: $color.secondary.basic.paris.c100
+    color: $color.primary.brand.white
+  sochi10:
+    background-color: $color.secondary.basic.sochi.c10
+    color: $color.secondary.basic.sochi.c100
+  sochi100:
+    background-color: $color.secondary.basic.sochi.c100
+    color: $color.primary.brand.white
+  tokyo10:
+    background-color: $color.secondary.basic.tokyo.c10
+    color: $color.secondary.basic.tokyo.c100
+  tokyo100:
+    background-color: $color.secondary.basic.tokyo.c100
+    color: $color.primary.brand.white
+  dublin10:
+    background-color: $color.secondary.datavisual.dublin.c10
+    color: $color.secondary.datavisual.dublin.c100
+  dublin100:
+    background-color: $color.secondary.datavisual.dublin.c100
+    color: $color.primary.brand.white
+  bern10:
+    background-color: $color.secondary.datavisual.bern.c10
+    color: $color.secondary.datavisual.bern.c100
+  bern100:
+    background-color: $color.secondary.datavisual.bern.c100
+    color: $color.primary.brand.white
+  manila10:
+    background-color: $color.secondary.datavisual.manila.c10
+    color: $color.secondary.datavisual.manila.c100
+  manila100:
+    background-color: $color.secondary.datavisual.manila.c100
+    color: $color.primary.brand.white
+  tallin10:
+    background-color: $color.secondary.datavisual.tallin.c10
+    color: $color.secondary.datavisual.tallin.c100
+  tallin100:
+    background-color: $color.secondary.datavisual.tallin.c100
+    color: $color.primary.brand.white
+  seoul10:
+    background-color: $color.secondary.datavisual.seoul.c10
+    color: $color.secondary.datavisual.seoul.c100
+  seoul100:
+    background-color: $color.secondary.datavisual.seoul.c100
+    color: $color.primary.brand.white
+  havana10:
+    background-color: $color.secondary.datavisual.havana.c10
+    color: $color.secondary.datavisual.havana.c100
+  havana100:
+    background-color: $color.secondary.datavisual.havana.c100
+    color: $color.primary.brand.white
+  madrid10:
+    background-color: $color.secondary.datavisual.madrid.c10
+    color: $color.secondary.datavisual.madrid.c100
+  madrid100:
+    background-color: $color.secondary.datavisual.madrid.c100
+    color: $color.primary.brand.white
+  porto10:
+    background-color: $color.secondary.datavisual.porto.c10
+    color: $color.secondary.datavisual.porto.c100
+  porto100:
+    background-color: $color.secondary.datavisual.porto.c100
+    color: $color.primary.brand.white

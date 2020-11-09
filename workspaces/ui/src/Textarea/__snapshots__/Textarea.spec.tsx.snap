@@ -1,0 +1,1558 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+  aria-invalid="false"
+  autocomplete="off"
+  autocorrect="off"
+  class="c0"
+  cols="50"
+  data-marker="Textarea"
+  rows="3"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ design 1`] = `
+Array [
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_1"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_1"
+    rows="3"
+    wrap="soft"
+  />,
+]
+`;
+
+exports[`Textarea w/ disabled 1`] = `
+Array [
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_3"
+    disabled=""
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_3"
+    disabled=""
+    rows="3"
+    wrap="soft"
+  />,
+]
+`;
+
+exports[`Textarea w/ invalid 1`] = `
+Array [
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  box-shadow: 0px 0px 0px 1px #EE505A;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="true"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_4"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+  border-bottom: 1px solid #EE505A;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="true"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_4"
+    rows="3"
+    wrap="soft"
+  />,
+]
+`;
+
+exports[`Textarea w/ onBlur() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_8"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onChange() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_5"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onChange() w/ disabled 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_6"
+  design="outline"
+  disabled={true}
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onFocus() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_7"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onKeyDown() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_9"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "key": "a",
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onKeyPress() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_10"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyPress={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "key": "a",
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ onKeyUp() 1`] = `
+<Textareastyles__Box
+  aria-invalid={false}
+  autoComplete="off"
+  autoCorrect="off"
+  cols={50}
+  data-marker="Textarea_11"
+  design="outline"
+  name="textarea"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyUp={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {
+            "key": "a",
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  rows={3}
+  size="m"
+  spellcheck="false"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ size 1`] = `
+Array [
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_0"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_0"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_0"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_0"
+    rows="3"
+    wrap="soft"
+  />,
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+    aria-invalid="false"
+    autocomplete="off"
+    autocorrect="off"
+    class="c0"
+    cols="50"
+    data-marker="Textarea_0"
+    rows="3"
+    wrap="soft"
+  />,
+]
+`;
+
+exports[`Textarea w/ some props 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+  aria-invalid="false"
+  autocomplete="off"
+  autocorrect="off"
+  class="c0 className"
+  cols="50"
+  data-marker="Textarea_12"
+  id="id"
+  name="textarea"
+  rows="3"
+  title="title"
+  wrap="soft"
+/>
+`;
+
+exports[`Textarea w/ value 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.c0:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.c0:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+<textarea
+  aria-invalid="false"
+  autocomplete="off"
+  autocorrect="off"
+  class="c0"
+  cols="50"
+  data-marker="Textarea_2"
+  rows="3"
+  wrap="soft"
+>
+  some value
+</textarea>
+`;

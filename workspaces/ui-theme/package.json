@@ -1,0 +1,23 @@
+{
+  "name": "vienna.ui-theme",
+  "description": "Raiffeisenbank Design System UI-Theme",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "dist/presets.js",
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "theme"
+  ],
+  "scripts": {
+    "build": "tokens --presets --cssPresets"
+  },
+  "dependencies": {
+    "vienna.tokens": "^1.0.3"
+  },
+  "bugs": {
+    "url": "",
+    "email": "ds@raiffeisen.ru"
+  }
+}

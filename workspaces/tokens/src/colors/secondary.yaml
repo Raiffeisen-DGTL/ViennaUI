@@ -1,0 +1,121 @@
+space: color
+desc: Палитра Secondary преимущественно используется для графиков, иллюстраций и фонов.
+secondary:
+  basic:
+    miami:
+      c10:
+        value: '#E7F8F4'
+        prop: background-color
+      c30:
+        value: '#CFF1E9'
+        prop: background-color
+      c100:
+        value: '#5ED1B6'
+        prop: background-color
+    sochi:
+      c10:
+        value: '#E6F4FC'
+        prop: background-color
+      c30:
+        value: '#CDE9FA'
+        prop: background-color
+      c100:
+        value: '#57B6ED'
+        prop: background-color
+    paris:
+      c10:
+        value: '#F0F0FE'
+        prop: background-color
+      c30:
+        value: '#E1E0FE'
+        prop: background-color
+      c100:
+        value: '#9A99FB'
+        prop: background-color
+    tokyo:
+      c10:
+        value: '#FAEFFA'
+        prop: background-color
+      c30:
+        value: '#F5DFF5'
+        prop: background-color
+      c100:
+        value: '#DC94DD'
+        prop: background-color
+    dubai:
+      c10:
+        value: '#FFF4E8'
+        prop: background-color
+      c30:
+        value: '#FEE9D1'
+        prop: background-color
+      c100:
+        value: '#FCB664'
+        prop: background-color
+    nice:
+      c10:
+        value: '#FFEFEF'
+        prop: background-color
+      c30:
+        value: '#FEE0E0'
+        prop: background-color
+      c100:
+        value: '#FC9696'
+        prop: background-color
+  datavisual:
+    dublin:
+      c10:
+        value: '#F2F8E7'
+        prop: background-color
+      c100:
+        value: '#A5D05F'
+        prop: background-color
+    bern:
+      c10:
+        value: '#ECF8EB'
+        prop: background-color
+      c100:
+        value: '#7DD27C'
+        prop: background-color
+    manila:
+      c10:
+        value: '#E4F7F8'
+        prop: background-color
+      c100:
+        value: '#4BCBD3'
+        prop: background-color
+    tallin:
+      c10:
+        value: '#ECF2FF'
+        prop: background-color
+      c100:
+        value: '#82A9FF'
+        prop: background-color
+    seoul:
+      c10:
+        value: '#F5EFFE'
+        prop: background-color
+      c100:
+        value: '#BE93F8'
+        prop: background-color
+    havana:
+      c10:
+        value: '#FDEFF5'
+        prop: background-color
+      c100:
+        value: '#F095BA'
+        prop: background-color
+    madrid:
+      c10:
+        value: '#FEF6E1'
+        prop: background-color
+      c100:
+        value: '#F9C541'
+        prop: background-color
+    porto:
+      c10:
+        value: '#FFF1EB'
+        prop: background-color
+      c100:
+        value: '#FEA17A'
+        prop: background-color

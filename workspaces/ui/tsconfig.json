@@ -1,0 +1,8 @@
+{
+  "extends": "vienna.config-typescript/tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*", "typings/*.d.ts"],
+  "exclude": ["node_modules", "dist", "esm", "**/*.spec.tsx"]
+}

@@ -1,0 +1,68 @@
+space: notifications
+valign:
+  top:
+    top: 0
+  bottom:
+    bottom: 0
+align:
+  center:
+    width: 1px;
+    left: 50%;
+  left:
+    left: 20px;
+  right:
+    right: 20px;
+
+notification:
+  design:
+    success:
+      background-color: $color.utilitarian.geneva.c100
+      color: $color.primary.brand.white
+    warning:
+      background-color: $color.utilitarian.osaka.c100
+      color: $color.primary.brand.white
+    error:
+      background-color: $color.utilitarian.moscow.c100
+      color: $color.primary.brand.white
+    plain:
+      background-color: $color.primary.brand.primary
+      color: $color.primary.brand.white
+  button:
+    design:
+      primary:
+        color: $color.primary.brand.white
+        border: solid 2px $color.primary.london.c40
+      ghost:
+        color: $color.primary.brand.white
+        padding: 0
+    hover:
+      primary:
+        border: solid 2px $color.primary.brand.white
+      ghost:
+        color: $color.primary.brand.white
+  notificationsGap:
+    margin-bottom: $layout.whitespace.xs
+    padding-right: 46px
+
+  close:
+    base:
+      top: $layout.whitespace.m
+      right: $layout.whitespace.m
+      cursor: pointer
+    design:
+      plain:
+        color: $color.primary.seattle.c60
+      error:
+        color: $color.utilitarian.moscow.c30
+      warning:
+        color: $color.utilitarian.osaka.c30
+      success:
+        color: $color.utilitarian.geneva.c30
+    hover:
+      color: $color.primary.brand.white
+
+  size:
+    width: 500px;
+
+  sizeCompact:
+    width: 350px;
