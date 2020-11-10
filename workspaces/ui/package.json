@@ -1,11 +1,13 @@
 {
   "name": "vienna-ui",
   "description": "Raiffeisenbank Design System Components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
-  "publishConfig": {
-    "registry": ""
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Raiffeisen-DGTL/ViennaUI.git"
   },
+  "bugs": "https://github.com/Raiffeisen-DGTL/ViennaUI/issues",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "keywords": [
@@ -60,10 +62,6 @@
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "styled-components": ">=4.0.0"
-  },
-  "bugs": {
-    "url": "",
-    "email": "ds@raiffeisen.ru"
   },
   "sideEffects": false
 }
