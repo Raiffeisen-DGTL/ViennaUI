@@ -55,12 +55,12 @@ name | string \| undefined | false |
 </Checkbox>
 ```
 
-## Размеры / `size`
+## Размеры
 ##### Свойство `size`
 
 Компонент имеет стандартные размеры `s`, `m` (по умолчанию) и `l`.
 
-## Состояния / `disabled`, `invalid`
+## Состояния
 ##### Свойство `disabled`, `invalid`
 
 Компонент имеет состояние `disabled` и `invalid`

@@ -94,7 +94,8 @@ const isOpen = useState(false);
 }}
 ```
 
-## Использование в режиме менеджера / `state`, `useModal`
+## Использование в режиме менеджера
+##### Свойство `state`, `useModal`
 
 ```
 const [open, close] = useModal(ModalContent, callback); // при использовании в режиме менеджера

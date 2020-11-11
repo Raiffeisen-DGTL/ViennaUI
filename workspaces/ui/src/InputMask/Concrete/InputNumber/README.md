@@ -10,7 +10,8 @@ const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
 return <InputNumber onChange={changeHandler} value={value} />;
 ```
 
-#### Количество символов после запятой / `scale`
+#### Количество символов после запятой
+##### Свойство `scale`
 
 ```jsx
 const [value, setValue] = React.useState(0);
@@ -18,7 +19,8 @@ const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
 return <InputNumber onChange={changeHandler} value={value} scale={1} />;
 ```
 
-#### Разделение на разряды / `thousandsSeparator`
+#### Разделение на разряды
+##### Свойство `thousandsSeparator`
 
 определяет символ который будет стоять между разрядами
 
