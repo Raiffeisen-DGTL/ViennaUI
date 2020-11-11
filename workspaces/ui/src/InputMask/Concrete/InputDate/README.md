@@ -11,21 +11,22 @@ return <InputDate value={value} onChange={(e, data) => setValue(data.value)} />;
 
 Вариант предустановленной маски устанавливается свойством `type`
 
-#### Дата / `type - не задано`
+#### Дата
 
 ```jsx
 const [value, setValue] = React.useState('');
 return <InputDate value={value} onChange={(e, data) => setValue(data.value)} />;
 ```
 
-#### Дата и время / `type = datetime`
-
+#### Дата и время
+##### Свойство `type = datetime`
 ```jsx
 const [value, setValue] = React.useState('');
 return <InputDate type='datetime' value={value} onChange={(e, data) => setValue(data.value)} />;
 ```
 
-#### Время / `type = time`
+#### Время
+##### Свойство `type = time`
 
 ```jsx
 const [value, setValue] = React.useState('');

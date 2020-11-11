@@ -3,6 +3,9 @@
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
+<p align="center">
+  <img src="logo.png" alt="drawing" width="400"/>
+</p>
 
 ## Установка
 
