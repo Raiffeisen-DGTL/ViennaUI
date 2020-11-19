@@ -54,6 +54,7 @@ ReactDOM.render(app, document.getElementById('root'));
  - [Alert](workspaces/ui/src/Alert/README.md)
  - [Avatar](workspaces/ui/src/Avatar/README.md)
  - [Badge](workspaces/ui/src/Badge/README.md)
+ - [Body](workspaces/ui/src/Body/README.md)
  - [Breadcrumbs](workspaces/ui/src/Breadcrumbs/README.md)
  - [Button](workspaces/ui/src/Button/README.md)
  - [Calendar](workspaces/ui/src/Calendar/README.md)
