@@ -4,10 +4,9 @@
   "description": "Raiffeisenbank Design System",
   "license": "MIT",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/Raiffeisen-DGTL/ViennaUI.git"
+    "type": "http",
+    "url": ""
   },
-  "bugs": "https://github.com/Raiffeisen-DGTL/ViennaUI/issues",
   "publishConfig": {
     "registry": ""
   },
