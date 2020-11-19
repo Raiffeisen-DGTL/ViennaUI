@@ -1,7 +1,7 @@
 {
   "name": "vienna-ui",
   "description": "Raiffeisenbank Design System Components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "vienna.icons": "^1.0.1",
     "vienna.react-use": "^1.0.2",
     "vienna.ui-primitives": "^1.0.0",
-    "vienna.ui-theme": "^1.0.1",
+    "vienna.ui-theme": "^1.0.2",
     "vienna.utils": "^1.0.0",
     "date-fns": "2.8.1",
     "element-closest-polyfill": "^1.0.0",

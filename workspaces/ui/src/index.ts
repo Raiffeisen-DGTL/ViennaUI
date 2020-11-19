@@ -5,6 +5,7 @@ export * from './Alarm';
 export * from './Alert';
 export * from './Avatar';
 export * from './Badge';
+export * from './Body';
 export * from './Button';
 export * from './Breadcrumbs';
 export * from './Calendar';

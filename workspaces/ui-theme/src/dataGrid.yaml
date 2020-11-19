@@ -1,6 +1,0 @@
-space: dateGrid
-calendar:
-  border-radius: $border.radius.m
-  box-shadow: $shadow.basic.xl
-  top: $layout.whitespace.xs
-  z-index: '9'
