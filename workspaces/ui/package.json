@@ -1,7 +1,7 @@
 {
   "name": "vienna-ui",
   "description": "Raiffeisenbank Design System Components",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -34,7 +34,8 @@
     "vienna.utils": "^1.0.0",
     "date-fns": "2.8.1",
     "element-closest-polyfill": "^1.0.0",
-    "imask": "^6.0.5"
+    "imask": "^6.0.5",
+    "react-focus-lock": "2.5.0"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
@@ -53,7 +54,6 @@
     "glob": "7.1.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-focus-lock": "2.5.0",
     "rimraf": "3.0.2",
     "styled-components": "5.2.1",
     "typescript": "3.8.3"
