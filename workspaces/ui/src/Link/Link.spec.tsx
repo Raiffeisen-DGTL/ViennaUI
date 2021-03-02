@@ -1,5 +1,5 @@
 import React from 'react';
-import { LeftArrow, ArrowRight, Screw, Logo } from 'vienna.icons';
+import { Back, Forward, Screw, Logo } from 'vienna.icons';
 import { Link, LinkProps } from './Link';
 
 test('Link', () => {
@@ -29,15 +29,15 @@ test('Link w/ icon', () => {
     const snap = snapshot.render(
         <>
             <Link design='accent'>
-                <LeftArrow /> Назад
+                <Back /> Назад
             </Link>
             <Link design='primary'>
-                Вперед <ArrowRight />
+                Вперед <Forward />
             </Link>
             <Link design='secondary'>
                 <Screw />
                 <span>Вперед</span>
-                <ArrowRight />
+                <Forward />
             </Link>
         </>
     );
@@ -48,7 +48,7 @@ test('Link w/ only icon', () => {
     const snap = snapshot.render(
         <>
             <Link design='accent'>
-                <LeftArrow />
+                <Back />
             </Link>
             <Link design='primary'>
                 <Logo />
@@ -57,7 +57,7 @@ test('Link w/ only icon', () => {
                 <Screw />
             </Link>
             <Link design='accent'>
-                <ArrowRight />
+                <Forward />
             </Link>
         </>
     );
@@ -84,7 +84,7 @@ test('Disabled links', () => {
                 Screw
             </Link>
             <Link design='primary' href='#' disabled>
-                <ArrowRight />
+                <Forward />
             </Link>
         </>
     );
@@ -111,7 +111,7 @@ test('Links w/ loading', () => {
                 Screw
             </Link>
             <Link design='primary' href='#' loading>
-                <ArrowRight />
+                <Forward />
             </Link>
         </>
     );

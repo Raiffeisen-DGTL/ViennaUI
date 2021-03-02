@@ -14,7 +14,12 @@ export const Enter: React.FC<EnterProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M7 2h13v16l-7 4v-4H7v-2h6V6l3.5-2H7V2zm11 14.839V5.446l-3 1.715v11.393l3-1.715zM8.202 6L12.2 9.997 8.239 14H7.043l-.027-.026-.002-1.154L8.815 11H3V9h5.799L7.003 7.204 7.001 6h1.201z' />
+            <path
+                fillRule='evenodd'
+                d='M19 2H4v2h12.15l-2.775 2.22A1 1 0 0013 7v11H4v2h9v1a1 1 0 001.625.78l5-4A1 1 0 0020 17V3a1 1 0 00-1-1zm-4 5.48l3-2.4v11.44l-3 2.4V7.48z'
+                clipRule='evenodd'
+            />
+            <path d='M10.707 11.707a1 1 0 000-1.414l-4-4-1.414 1.414L7.586 10H2v2h5.586l-2.293 2.293 1.414 1.414 4-4z' />
         </svg>
     );
 };

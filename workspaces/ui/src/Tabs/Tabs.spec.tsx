@@ -38,7 +38,7 @@ it('Tabs таб "Еще.."', () => {
         </Tabs>
     );
 
-    expect(tabs.find(Tabs.Tab).last().text()).toEqual('Еще... <Down />');
+    expect(tabs.find(Tabs.Tab).last().text()).toEqual('Еще... <SelectOpenDown />');
     expect(tabs.find(Tabs.Tab)).toMatchSnapshot();
 });
 

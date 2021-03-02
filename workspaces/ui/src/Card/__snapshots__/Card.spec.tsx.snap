@@ -2,10 +2,10 @@
 
 exports[`Card 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
@@ -14,23 +14,23 @@ exports[`Card 1`] = `
 
 exports[`Card w/ actions 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Header-sc-187vqjx-0 lmKpnW"
+    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
   >
     <div
-      class="Cardstyles__Title-sc-187vqjx-1 kUbeAs"
+      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
     >
       <h5
-        class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
         color="brand-primary"
       >
         Card title
       </h5>
     </div>
     <div
-      class="Cardstyles__Actions-sc-187vqjx-2 iaiege"
+      class="Cardstyles__Actions-sc-2l30u5-2"
     >
       <svg
         fill="currentColor"
@@ -41,13 +41,16 @@ exports[`Card w/ actions 1`] = `
       >
         <defs />
         <path
-          d="M22 13h-1.312a8.659 8.659 0 01-.664 2.473l1.136.656-1 1.732-1.143-.661a8.816 8.816 0 01-1.817 1.817l.666 1.143-1.732 1-.656-1.136a8.693 8.693 0 01-2.478.665V22h-2v-1.311a8.708 8.708 0 01-2.479-.67l-.655 1.136-1.732-1 .66-1.143A8.811 8.811 0 014.983 17.2l-1.143.666-1-1.732 1.136-.656A8.693 8.693 0 013.311 13H2v-2h1.311c.098-.854.322-1.69.665-2.478L2.84 7.866l1-1.732 1.143.66a8.831 8.831 0 011.811-1.811l-.66-1.143 1.732-1 .655 1.136A8.708 8.708 0 0111 3.311V2h2v1.311a8.693 8.693 0 012.473.665l.656-1.136 1.732 1-.661 1.143a8.836 8.836 0 011.817 1.811l1.143-.66 1 1.732-1.136.656c.343.788.567 1.624.664 2.478H22v2zm-10 6a7.008 7.008 0 007-7 7 7 0 10-7 7zm0-10.9a3.9 3.9 0 110 7.8 3.9 3.9 0 010-7.8zm0 6a2.1 2.1 0 100-4.2 2.1 2.1 0 000 4.2z"
+          d="M19.5 12v-.5l2.6-1.9-.1-.7c0-.1-.2-1-.9-2.2-.7-1.2-1.3-1.7-1.4-1.8l-.5-.4-3 1.3c-.3-.2-.6-.4-.9-.5L14.9 2l-.6-.2c-.1 0-1-.3-2.3-.3-1.3 0-2.2.3-2.3.3l-.6.2-.4 3.3c-.3.1-.6.3-.9.5l-3-1.3-.5.4c-.1.1-.7.7-1.4 1.9-.6 1.1-.9 2-.9 2.1l-.1.6 2.6 1.9v1l-2.6 1.9.1.8c0 .1.2 1 .9 2.2.7 1.1 1.3 1.8 1.4 1.8l.5.4 3-1.3c.3.2.6.4.9.5l.4 3.3.6.2c.1 0 1 .3 2.3.3 1.3 0 2.2-.3 2.3-.3l.6-.2.4-3.2c.3-.2.6-.3.9-.5l3 1.3.5-.4c.1-.1.8-.7 1.4-1.8.6-1.1.9-2 .9-2.2l.1-.6-2.6-1.9V12zm.3 3.3c-.1.3-.3.6-.5 1s-.4.7-.6.9L15.9 16l-.5.4c-.4.4-.9.6-1.5.8l-.6.2-.3 3.1c-.6.1-1.6.1-2.2 0l-.3-3.1-.5-.3c-.5-.2-1-.5-1.5-.8l-.5-.4-2.8 1.2c-.2-.2-.4-.5-.6-.9-.2-.4-.4-.7-.5-1l2.5-1.8-.1-.6c0-.3-.1-.6-.1-.8 0-.2 0-.6.1-.8l.1-.6-2.4-1.9c.1-.3.3-.6.5-1s.4-.7.6-.9L8.1 8l.5-.4c.4-.2.9-.5 1.4-.7l.6-.2.3-3.1c.6-.1 1.6-.1 2.2 0l.3 3.1.6.2c.5.2 1 .5 1.5.8l.5.4 2.8-1.2c.2.2.4.5.6.9.2.4.4.7.5 1l-2.5 1.8.1.6c0 .3.1.6.1.8 0 .2 0 .6-.1.8l-.1.6 2.4 1.9z"
+        />
+        <path
+          d="M12 14a2 2 0 100-4 2 2 0 000 4z"
         />
       </svg>
     </div>
   </div>
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
@@ -56,11 +59,11 @@ exports[`Card w/ actions 1`] = `
 
 exports[`Card w/ any props 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC className"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP className"
   id="id"
 >
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
@@ -69,13 +72,13 @@ exports[`Card w/ any props 1`] = `
 
 exports[`Card w/ content title 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     <div
-      class="Cardstyles__ContentTitle-sc-187vqjx-6 lqFCB"
+      class="Cardstyles__ContentTitle-sc-2l30u5-6 cHBQAy"
     >
       Section header
     </div>
@@ -83,7 +86,7 @@ exports[`Card w/ content title 1`] = `
       Section 1
     </div>
     <div
-      class="Cardstyles__ContentTitle-sc-187vqjx-6 lqFCB"
+      class="Cardstyles__ContentTitle-sc-2l30u5-6 cHBQAy"
     >
       Section header
     </div>
@@ -96,15 +99,15 @@ exports[`Card w/ content title 1`] = `
 
 exports[`Card w/ footer 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
   <div
-    class="Cardstyles__Footer-sc-187vqjx-4 iFsYOy"
+    class="Cardstyles__Footer-sc-2l30u5-4 lpcqgz"
   >
     Card footer
   </div>
@@ -113,29 +116,29 @@ exports[`Card w/ footer 1`] = `
 
 exports[`Card w/ header 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Header-sc-187vqjx-0 lmKpnW"
+    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
   >
     <div
-      class="Cardstyles__Title-sc-187vqjx-1 kUbeAs"
+      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
     >
       <h5
-        class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
         color="brand-primary"
       >
         Card title
       </h5>
       <div
-        class="Cardstyles__Subtitle-sc-187vqjx-5 iXsFQk"
+        class="Cardstyles__Subtitle-sc-2l30u5-5 cCwuwd"
       >
         Card subtitle
       </div>
     </div>
   </div>
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
@@ -144,16 +147,16 @@ exports[`Card w/ header 1`] = `
 
 exports[`Card w/ stretch 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 bFPQsB"
+  class="Cardstyles__Box-sc-2l30u5-7 coIVrw"
 >
   <div
-    class="Cardstyles__Header-sc-187vqjx-0 lmKpnW"
+    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
   >
     <div
-      class="Cardstyles__Title-sc-187vqjx-1 kUbeAs"
+      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
     >
       <h5
-        class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
         color="brand-primary"
       >
         Simple card
@@ -161,7 +164,7 @@ exports[`Card w/ stretch 1`] = `
     </div>
   </div>
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>
@@ -170,16 +173,16 @@ exports[`Card w/ stretch 1`] = `
 
 exports[`Card w/ titile 1`] = `
 <div
-  class="Cardstyles__Box-sc-187vqjx-7 jQDfoC"
+  class="Cardstyles__Box-sc-2l30u5-7 gpIcVP"
 >
   <div
-    class="Cardstyles__Header-sc-187vqjx-0 lmKpnW"
+    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
   >
     <div
-      class="Cardstyles__Title-sc-187vqjx-1 kUbeAs"
+      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
     >
       <h5
-        class="Headingstyles__Box-sc-16udop9-0 fjHjeT"
+        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
         color="brand-primary"
       >
         Card title
@@ -187,7 +190,7 @@ exports[`Card w/ titile 1`] = `
     </div>
   </div>
   <div
-    class="Cardstyles__Content-sc-187vqjx-3 ijlvdi"
+    class="Cardstyles__Content-sc-2l30u5-3"
   >
     Card content
   </div>

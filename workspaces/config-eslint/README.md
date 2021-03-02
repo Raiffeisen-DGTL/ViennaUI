@@ -1,4 +1,5 @@
 # Конфиг ESLint
+
 ###### Raiffeisenbank Design System
 
 Пакет содержит конфигурационные файлы для `ESLint`.

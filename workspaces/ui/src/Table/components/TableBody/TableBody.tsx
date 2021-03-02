@@ -19,7 +19,7 @@ export const TableBody = (props: any) => {
         actionsColumn,
     } = useTableConfig();
 
-    const { noRowDivider, size, pinnableColumns, onRowClick, onRowDoubleClick } = base.settings;
+    const { noRowDivider, size, valign, pinnableColumns, onRowClick, onRowDoubleClick } = base.settings;
 
     // runs column template function with item from data
     const getCellContent = useCallback(
@@ -100,7 +100,7 @@ export const TableBody = (props: any) => {
                             data-row={item.id}>
                             {/* select checkbox */}
                             {selectRow && (
-                                <Td data-column='selector' pinned={pinnableColumns}>
+                                <Td data-column='selector' size={size} valign={valign} pinned={pinnableColumns}>
                                     <Selector item={item} />
                                     {pinnableColumns && <Pinner />}
                                 </Td>
@@ -132,7 +132,7 @@ export const TableBody = (props: any) => {
                                     onClick,
                                 };
                                 return (
-                                    <Td key={id} size={size} {...params}>
+                                    <Td key={id} size={size} valign={valign} {...params}>
                                         {content}
                                         {pinned && <Pinner />}
                                     </Td>
@@ -141,7 +141,13 @@ export const TableBody = (props: any) => {
 
                             {/* actions columns */}
                             {actionsColumn && (
-                                <ActionsColumnInternal key='actionsColumn' size={size} item={item} {...actionsColumn} />
+                                <ActionsColumnInternal
+                                    key='actionsColumn'
+                                    size={size}
+                                    valign={valign}
+                                    item={item}
+                                    {...actionsColumn}
+                                />
                             )}
                         </Row>
 

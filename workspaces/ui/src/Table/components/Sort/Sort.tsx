@@ -1,49 +1,36 @@
-import React, { FC, useCallback } from 'react';
-import { ArrowUp, ArrowDown } from 'vienna.icons';
-import { Box, Icon } from './Sort.styles';
-import { useTableService, useTableConfig } from '../Context/TableContext';
+import React, { FC } from 'react';
+import { useTableService } from '../Context/TableContext';
+import { ColumnProps } from '../Column';
+import { ColumnTitle } from '../ColumnTitle';
+import { SortDirection } from '../../types';
+import { SortIcon } from './SortIcon';
 
 export interface SortProps {
-    field: string;
-    children: any;
+    [key: string]: any;
+    column: ColumnProps;
 }
 
-export const Sort: FC<SortProps> = (props) => {
-    const { field, children } = props;
+export const Sort: FC<SortProps> = ({ column }) => {
+    const { id, title } = column;
     const { setSortColumn, getSortColumn } = useTableService();
-    const { sort } = useTableConfig();
     const currentSort = getSortColumn();
 
-    const isActive = currentSort?.field === field;
-    const isAsc = isActive && currentSort?.direction === 'asc';
+    const onClick = () => {
+        const newDirection =
+            currentSort?.field === id && currentSort?.direction === SortDirection.Desc
+                ? SortDirection.Asc
+                : SortDirection.Desc;
 
-    const onClick = useCallback(
-        (e) => {
-            let newField: any = field;
-            const currentDirection = currentSort?.direction ?? 'none';
-            const newDirection: any = currentDirection === 'asc' || currentDirection === 'none' ? 'desc' : 'asc';
-
-            if (!newDirection) {
-                newField = undefined;
-            }
-
-            setSortColumn(newField, newDirection);
-
-            if (typeof sort?.onSort === 'function') {
-                sort.onSort(e, { field: newField, direction: newDirection });
-            }
-        },
-        [setSortColumn]
-    );
+        setSortColumn(id, newDirection);
+    };
 
     return (
-        <Box onClick={onClick} active={isActive}>
-            {children}
-            <Icon active={isActive}>
-                {!isAsc && <ArrowDown size='s' />}
-                {isAsc && <ArrowUp size='s' />}
-            </Icon>
-        </Box>
+        <ColumnTitle
+            onClick={onClick}
+            title={title}
+            active={currentSort?.field === id}
+            icon={<SortIcon field={id} />}
+        />
     );
 };
 

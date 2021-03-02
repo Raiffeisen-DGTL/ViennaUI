@@ -1,5 +1,5 @@
 import React, { FC, useCallback, FormEvent } from 'react';
-import { Left, Right } from 'vienna.icons';
+import { GoLeft, GoRight } from 'vienna.icons';
 import { Box, Title, Icon } from './MenuPoint.styles';
 
 export interface MenuPointProps {
@@ -21,7 +21,7 @@ export const MenuPoint: FC<MenuPointProps> = ({ value, label, leftArrow = false,
 
     return (
         <Box onClick={handleClick}>
-            <Icon leftArrow={leftArrow}>{leftArrow ? <Left /> : <Right />}</Icon>
+            <Icon leftArrow={leftArrow}>{leftArrow ? <GoLeft /> : <GoRight />}</Icon>
             <Title leftArrow={leftArrow} size='l'>
                 {label}
             </Title>

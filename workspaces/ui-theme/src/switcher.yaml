@@ -15,12 +15,12 @@ slider:
 
   size:
     m:
-      width: $layout.size.s
-      height: $layout.whitespace.l
+      width: $layout.size.s8
+      height: $layout.size.s5
       border-radius: 10px
     l:
-      width: $layout.size.l
-      height: $layout.whitespace.xl
+      width: $layout.size.s10
+      height: $layout.size.s6
       border-radius: 24px
 
   active:
@@ -73,11 +73,11 @@ label:
     m:
       font-size: $typography.b.b2.size
       line-height: $typography.b.b2.height
-      margin-left: $layout.whitespace.xs
+      margin-left: $layout.size.s2
     l:
       font-size: $typography.b.b3.size
       line-height: $typography.b.b3.height
-      margin-left: $layout.whitespace.s
+      margin-left: $layout.size.s3
 
   disabled:
     color: $color.primary.london.c120

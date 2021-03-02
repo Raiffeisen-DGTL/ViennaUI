@@ -43,11 +43,16 @@ export const Box = styled.div<{
     ${option.custom}
 `;
 
-export const Wrapper = styled.div`
+export const Link = styled.a`
     position: relative;
+    display: block;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
 `;
 
 export const Text = styled.div<{ first?: boolean }>`

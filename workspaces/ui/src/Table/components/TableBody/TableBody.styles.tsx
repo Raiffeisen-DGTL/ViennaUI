@@ -37,6 +37,12 @@ export const Td = styled.td<any>`
             text-align: ${align};
         `}
 
+    ${({ valign }) =>
+        valign &&
+        css`
+            vertical-align: ${valign};
+        `}
+
     ${({ width }) =>
         width &&
         css`
@@ -54,7 +60,6 @@ export const Td = styled.td<any>`
         pinned &&
         css`
             position: sticky;
-            z-index: 2;
             ${presets.pinned}
         `}
 `;
@@ -66,7 +71,6 @@ export const Row = styled.tr<any>`
             &:hover {
                 ${Td} {
                     ${cell.hover}
-                    z-index: 2;
                 }
 
                 ${Icon} {

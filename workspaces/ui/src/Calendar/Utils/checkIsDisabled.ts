@@ -1,19 +1,19 @@
 import { isAfter, isBefore, isEqual } from 'date-fns';
-import { dateFunction, DisabledDates } from '../types';
-import { getLocalDay } from './getLocalDay';
-import { SATURDAY_INDEX, SUNDAY_INDEX } from '../constants';
+import { dateFunction, DisabledDates, StartingWeekDay } from '../types';
+import { isSaturdayOrSunday } from './isSaturdayOrSunday';
 
 interface CheckIsDisabled {
     dates?: DisabledDates.WEEKENDS | Date[] | dateFunction;
     date: Date;
     minDate?: Date;
     maxDate?: Date;
+    startingWeekDay: StartingWeekDay;
 }
 
-export const checkIsDisabled = ({ dates, date, minDate, maxDate }: CheckIsDisabled): boolean => {
+export const checkIsDisabled = ({ dates, date, minDate, maxDate, startingWeekDay }: CheckIsDisabled): boolean => {
+    const isWeekend = isSaturdayOrSunday(date, startingWeekDay);
     let isDisabled =
-        (dates === DisabledDates.WEEKENDS &&
-            (getLocalDay(date) === SUNDAY_INDEX || getLocalDay(date) === SATURDAY_INDEX)) ||
+        (dates === DisabledDates.WEEKENDS && isWeekend) ||
         (!!minDate && isBefore(date, minDate)) ||
         (!!maxDate && isAfter(date, maxDate));
 

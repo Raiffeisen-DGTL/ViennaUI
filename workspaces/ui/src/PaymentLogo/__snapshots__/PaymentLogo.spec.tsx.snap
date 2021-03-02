@@ -2,7 +2,7 @@
 
 exports[`PaymentLogo 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="16"
@@ -30,7 +30,7 @@ exports[`PaymentLogo 1`] = `
 
 exports[`PaymentLogo w/ any props 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 dMNKFO className"
+  class="PaymentLogostyles__Box-fttw7p-0 cOTHMI className"
   id="alarm"
   title="title"
 >
@@ -60,7 +60,7 @@ exports[`PaymentLogo w/ any props 1`] = `
 
 exports[`PaymentLogo w/ children 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   Logo
 </div>
@@ -68,7 +68,7 @@ exports[`PaymentLogo w/ children 1`] = `
 
 exports[`PaymentLogo w/ clickable 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 dMNKFO"
+  class="PaymentLogostyles__Box-fttw7p-0 cOTHMI"
 >
   <svg
     height="16"
@@ -96,7 +96,7 @@ exports[`PaymentLogo w/ clickable 1`] = `
 
 exports[`PaymentLogo w/ design: ghost 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 kQEiiG"
+  class="PaymentLogostyles__Box-fttw7p-0 efGNbj"
 >
   <svg
     height="16"
@@ -124,7 +124,7 @@ exports[`PaymentLogo w/ design: ghost 1`] = `
 
 exports[`PaymentLogo w/ design: whitebox 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 gwGHQQ"
+  class="PaymentLogostyles__Box-fttw7p-0 gNfXKi"
 >
   <svg
     height="16"
@@ -152,7 +152,7 @@ exports[`PaymentLogo w/ design: whitebox 1`] = `
 
 exports[`PaymentLogo w/ design: wildsand 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="16"
@@ -180,7 +180,7 @@ exports[`PaymentLogo w/ design: wildsand 1`] = `
 
 exports[`PaymentLogo w/ logo: mastercard 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="16"
@@ -208,7 +208,7 @@ exports[`PaymentLogo w/ logo: mastercard 1`] = `
 
 exports[`PaymentLogo w/ logo: mir 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="11"
@@ -234,7 +234,7 @@ exports[`PaymentLogo w/ logo: mir 1`] = `
 
 exports[`PaymentLogo w/ logo: visa 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="11"
@@ -258,7 +258,7 @@ exports[`PaymentLogo w/ logo: visa 1`] = `
 
 exports[`PaymentLogo w/ size: l 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 cYXKph"
+  class="PaymentLogostyles__Box-fttw7p-0 bUrtHv"
 >
   <svg
     height="20"
@@ -286,7 +286,7 @@ exports[`PaymentLogo w/ size: l 1`] = `
 
 exports[`PaymentLogo w/ size: m 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 jmiTAj"
+  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
 >
   <svg
     height="16"
@@ -314,7 +314,7 @@ exports[`PaymentLogo w/ size: m 1`] = `
 
 exports[`PaymentLogo w/ size: s 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 loJfsW"
+  class="PaymentLogostyles__Box-fttw7p-0 cKuXdo"
 >
   <svg
     height="12"
@@ -342,7 +342,7 @@ exports[`PaymentLogo w/ size: s 1`] = `
 
 exports[`PaymentLogo w/ size: xl 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 OiIjv"
+  class="PaymentLogostyles__Box-fttw7p-0 guuIXM"
 >
   <svg
     height="24"
@@ -370,7 +370,7 @@ exports[`PaymentLogo w/ size: xl 1`] = `
 
 exports[`PaymentLogo w/ size: xs 1`] = `
 <div
-  class="PaymentLogostyles__Box-sc-1op762m-0 gzDLys"
+  class="PaymentLogostyles__Box-fttw7p-0 ieWYFT"
 >
   <svg
     height="8"

@@ -2,22 +2,22 @@
 
 exports[`Chips 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -27,22 +27,22 @@ exports[`Chips 1`] = `
 
 exports[`Chips w/ active 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -52,22 +52,22 @@ exports[`Chips w/ active 1`] = `
 
 exports[`Chips w/ align 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 jJXCli"
+  class="Chipsstyles__Box-sc-1xafpmg-0 yPYKc"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -77,23 +77,23 @@ exports[`Chips w/ align 1`] = `
 
 exports[`Chips w/ any props 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF className"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr className"
   id="id"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -103,22 +103,22 @@ exports[`Chips w/ any props 1`] = `
 
 exports[`Chips w/ design 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 ksLtsn"
+    class="Chipsstyles__Item-sc-1xafpmg-1 GjXIy"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -128,22 +128,22 @@ exports[`Chips w/ design 1`] = `
 
 exports[`Chips w/ design 2`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="3"
   >
     Chip
@@ -153,22 +153,22 @@ exports[`Chips w/ design 2`] = `
 
 exports[`Chips w/ design 3`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 gPvMAo"
+    class="Chipsstyles__Item-sc-1xafpmg-1 hcRtct"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 cxSmky"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kohHQH"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 cxSmky"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kohHQH"
     id="3"
   >
     Chip
@@ -178,10 +178,10 @@ exports[`Chips w/ design 3`] = `
 
 exports[`Chips w/ disabled 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 gtsvoU"
+    class="Chipsstyles__Item-sc-1xafpmg-1 jAAPqS"
     disabled=""
     id="1"
     tabindex="-1"
@@ -189,7 +189,7 @@ exports[`Chips w/ disabled 1`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
     disabled=""
     id="2"
     tabindex="-1"
@@ -197,7 +197,7 @@ exports[`Chips w/ disabled 1`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
     disabled=""
     id="3"
     tabindex="-1"
@@ -209,10 +209,10 @@ exports[`Chips w/ disabled 1`] = `
 
 exports[`Chips w/ disabled 2`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 iPKsWv"
+    class="Chipsstyles__Item-sc-1xafpmg-1 lhvWtl"
     disabled=""
     id="1"
     tabindex="-1"
@@ -220,7 +220,7 @@ exports[`Chips w/ disabled 2`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
     disabled=""
     id="2"
     tabindex="-1"
@@ -228,7 +228,7 @@ exports[`Chips w/ disabled 2`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 iBCFsu"
+    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
     disabled=""
     id="3"
     tabindex="-1"
@@ -240,10 +240,10 @@ exports[`Chips w/ disabled 2`] = `
 
 exports[`Chips w/ disabled 3`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 cnHqoo"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kGYMjp"
     disabled=""
     id="1"
     tabindex="-1"
@@ -251,7 +251,7 @@ exports[`Chips w/ disabled 3`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 cSumcM"
+    class="Chipsstyles__Item-sc-1xafpmg-1 jOYZan"
     disabled=""
     id="2"
     tabindex="-1"
@@ -259,7 +259,7 @@ exports[`Chips w/ disabled 3`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 cSumcM"
+    class="Chipsstyles__Item-sc-1xafpmg-1 jOYZan"
     disabled=""
     id="3"
     tabindex="-1"
@@ -271,22 +271,22 @@ exports[`Chips w/ disabled 3`] = `
 
 exports[`Chips w/ multiple active 1`] = `
 <div
-  class="Chipsstyles__Box-sc-1f7bkza-0 gHIRYF"
+  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
 >
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 xHbUa"
+    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
     id="1"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="2"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1f7bkza-1 eDyBdS"
+    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
     id="3"
   >
     Chip

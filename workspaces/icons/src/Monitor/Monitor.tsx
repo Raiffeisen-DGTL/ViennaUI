@@ -14,7 +14,12 @@ export const Monitor: React.FC<MonitorProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M20.018 2c1.094 0 1.981.888 1.982 1.982v10.036c0 1.094-.886 1.98-1.98 1.982H4a1.982 1.982 0 01-1.984-1.982V3.982A1.982 1.982 0 014 2h16.018zm0 12l-.002-10H4v7h15v2H4v1h16.018zM13 19h3l1 1v1H7v-1l1-1h3v-2h2v2z' />
+            <path d='M13.5 13a1.25 1.25 0 10-2.5 0 1.25 1.25 0 002.5 0z' />
+            <path
+                fillRule='evenodd'
+                d='M2 15a3 3 0 003 3h6v2H8v2h8v-2h-3v-2h6a3 3 0 003-3V5a3 3 0 00-3-3H5a3 3 0 00-3 3v10zm3 1a1 1 0 01-1-1V5a1 1 0 011-1h14a1 1 0 011 1v10a1 1 0 01-1 1H5z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

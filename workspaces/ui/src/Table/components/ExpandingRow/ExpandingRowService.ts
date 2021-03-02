@@ -1,4 +1,5 @@
-import { TableState, TableConfig } from '../../types';
+import { TableServiceFactoryConfig } from '../../types';
+import { ExpandingRowModule } from './ExpandingRowModule';
 
 export interface ExpandingRowService {
     getExpandingRow: () => any;
@@ -7,14 +8,22 @@ export interface ExpandingRowService {
     toggleExpandingRow: (rowId: string) => void;
     getExpandingRowSettings: () => any;
 }
-export function expandingRowService(state: TableState, updateState: any, config: TableConfig): ExpandingRowService {
+
+export const expandingRowServiceId = ExpandingRowModule.name;
+
+export const expandingRowService: TableServiceFactoryConfig<ExpandingRowService> = function (
+    getState,
+    updateState,
+    config
+) {
     const updateExpandingRow = (active) => {
-        const expandingRow = { ...state.expandingRow, active };
-        updateState({ ...state, expandingRow });
+        const state = getState();
+        const expandingRow = { active };
+        updateState(expandingRowServiceId, { ...state, expandingRow });
     };
 
     const getExpandingRow = () => {
-        return state.expandingRow;
+        return getState().expandingRow;
     };
 
     const getExpandingRowSettings = () => {
@@ -25,15 +34,15 @@ export function expandingRowService(state: TableState, updateState: any, config:
     const allowMultiple = settings?.allowMultiple;
 
     const actions = allowMultiple
-        ? multipleExpanding(state, updateExpandingRow)
-        : singleExpanding(state, updateExpandingRow);
+        ? multipleExpanding(getState, updateExpandingRow)
+        : singleExpanding(getState, updateExpandingRow);
 
     return { getExpandingRow, getExpandingRowSettings, ...actions };
-}
+};
 
-function singleExpanding(state: TableState, update) {
+function singleExpanding(getState, update) {
     const getExpandedRow = () => {
-        return state.expandingRow?.active;
+        return getState().expandingRow?.active;
     };
 
     const isRowExpanded = (rowId) => {
@@ -48,9 +57,9 @@ function singleExpanding(state: TableState, update) {
     return { getExpandedRow, isRowExpanded, toggleExpandingRow };
 }
 
-function multipleExpanding(state: TableState, update) {
+function multipleExpanding(getState, update) {
     const getExpandedRow = () => {
-        const active = state.expandingRow?.active;
+        const active = getState().expandingRow?.active;
         return Array.isArray(active) ? active : [];
     };
 

@@ -30,6 +30,7 @@ import { Table } from 'vienna-ui';
 | onSelect | (event: React.FormEvent, data: any) => void \| undefined | undefined | Обработчик выбора элемента данных таблицы |
 | onScroll | (event: React.FormEvent) => void \| undefined | undefined | Обработчик прокрутки внутреннего контейнера таблицы |
 | onServiceInit | (service: TableService) => void \| undefined | undefined | Обработчик инициализации табличного сервиса |
+| localization | [TableLocalization](../Table/localization.ts) | defaultTableLocalization | Локализация |
 
 ## Column Props
 
@@ -730,4 +731,55 @@ C помощью аттрибуте `service` можно передать сво
         );
     };
 }
+```
+
+## Локализация
+
+С помощью атрибута `localization` можно поменять значения лейблов в таблице, и в том числе перевести их на английский язык. Для упрощения этого процесса компонент экспортирует интерфейс `TableLocalization`, который определяет ключи всех строк, использующихся в таблице.
+
+```
+{() => {
+    // docz playground doesn't allow to cast TableLocalization to this const, but in your code you will be able to do so.
+    const enUS = {
+        'ds.table.filter.sortUp': 'Sort ASC',
+        'ds.table.filter.sortDown': 'Sort Desc',
+        'ds.table.settings': 'Settings',
+        'ds.table.settings.groupBy': 'Group by',
+        'ds.table.settings.columnSearch': 'Search...',
+        'ds.table.settings.hideAllColumns': 'Hide all',
+        'ds.table.settings.showAllColumns': 'Show all',
+    };
+    return (
+        <Table data={ComponentHelpers.Table.data} minHeight='200px' localization={enUS}>
+            <Table.Column id='id' title='#' />
+            <Table.Column id='firstName' title='First Name' sortable filter={<Table.InputFilter />} />
+            <Table.Column id='lastName' title='Last Name' />
+            <Table.Column id='position' title='Position' />
+            <Table.Column id='phone' title='Phone' />
+            <Table.Settings>
+                <Table.ColumnsSettings searchable hideShowAll />
+                <Table.GroupingSettings onGroupBy={console.log}>
+                    <Table.GroupingSettings.Item id='none' name='None' />
+                    <Table.GroupingSettings.Item id='position' name='By position'>
+                        <Table.GroupBy
+                            id='sde'
+                            title='SDE'
+                            filter={(item) => item.position === 'Software Engineer'}
+                        />
+                        <Table.GroupBy id='pm' title='PM' filter={(item) => item.position === 'PM'} />
+                    </Table.GroupingSettings.Item>
+                    <Table.GroupingSettings.Item id='name' name='By name'>
+                        <Table.GroupBy id='g1' title='Jane' filter={(item) => item.firstName === 'Jane'} />
+                        <Table.GroupBy id='g2' title='Johnnie' filter={(item) => item.firstName === 'Johnnie'} />
+                        <Table.GroupBy
+                            id='g3'
+                            title='Other'
+                            filter={(item) => item.firstName !== 'Johnnie' && item.firstName !== 'Jane'}
+                        />
+                    </Table.GroupingSettings.Item>
+                </Table.GroupingSettings>
+            </Table.Settings>
+        </Table>
+    );
+}}
 ```

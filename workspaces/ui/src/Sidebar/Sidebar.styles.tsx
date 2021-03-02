@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
 import { Box as Item, Title, Notification, Ripple } from './Item/Item.styles';
+import { SubmenuTitle, Menu as Submenu } from './Submenu/Submenu.styles';
 
 const presets = getPresets('sidebar', {
     base: null,
@@ -53,6 +54,11 @@ const ripple = getPresets('sidebar.item.ripple', {
     design: 'design',
 });
 
+const submenu = getPresets('sidebar.submenu', {
+    size: 'size',
+    design: 'design',
+});
+
 const custom = getPresets('sidebar.custom', {
     box: null,
     item: null,
@@ -88,6 +94,21 @@ export const Box = styled.div<any>`
         ${Ripple} {
             ${ripple.base}
             ${ripple.design}
+        }
+    }
+
+    ${SubmenuTitle} {
+        ${submenu.size}
+
+        &:hover {
+            ${item.hover}
+            ${customItem.hover}
+        }
+    }
+
+    ${Submenu} {
+        ${Item} {
+            ${submenu.design}
         }
     }
 

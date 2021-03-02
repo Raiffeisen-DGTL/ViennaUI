@@ -1,8 +1,8 @@
 {
   "name": "vienna.ui-primitives",
   "description": "Raiffeisenbank Design System Primitives",
-  "version": "1.0.0",
-  "license": "NO LICENSE",
+  "version": "1.1.0",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "keywords": [
@@ -23,7 +23,7 @@
     "esm/*"
   ],
   "dependencies": {
-    "vienna.ui-theme": "^1.0.1",
+    "vienna.ui-theme": "^1.1.0",
     "vienna.utils": "^1.0.0"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "@types/react-dom": "16.9.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "4.4.1",
+    "styled-components": "5.2.1",
     "typescript": "3.8.3"
   },
   "peerDependencies": {

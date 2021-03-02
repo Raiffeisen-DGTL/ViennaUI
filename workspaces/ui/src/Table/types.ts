@@ -1,26 +1,18 @@
 import {
     BaseConfig,
-    BaseService,
     ColumnsConfig,
     ColumnsState,
     FooterConfig,
     EmptyConfig,
     ExpandingRowConfig,
     ExpandingRowState,
-    ExpandingRowService,
-    ResizableColumnService,
-    SortConfig,
     SortState,
-    SortService,
     SelectRowConfig,
     SelectRowState,
-    SelectRowService,
-    DraggableColumnService,
+    FilterState,
     ColumnGroupConfig,
-    ColumnGroupService,
     GroupByConfig,
     GroupByState,
-    GroupByService,
     SettingsConfig,
     ActionsColumnProps,
 } from './components';
@@ -31,7 +23,6 @@ export interface TableConfig {
     footer?: FooterConfig;
     empty?: EmptyConfig;
     expandingRow?: ExpandingRowConfig;
-    sort?: SortConfig;
     selectRow?: SelectRowConfig;
     columnGroup?: ColumnGroupConfig;
     settings?: SettingsConfig;
@@ -45,28 +36,36 @@ export interface TableState {
     sort?: SortState;
     selectRow?: SelectRowState;
     groupBy?: GroupByState;
+    filter?: FilterState;
 }
 
-export type TableService = BaseService &
-    ExpandingRowService &
-    ResizableColumnService &
-    SortService &
-    SelectRowService &
-    DraggableColumnService &
-    ColumnGroupService &
-    GroupByService;
+export type UpdateTableState = (id: string, newState: TableState | ((prev: TableState) => TableState)) => void;
 
-export enum Modules {
-    Base = 'base',
-    Column = 'column',
-    Footer = 'footer',
-    Empty = 'empty',
-    ExpandingRow = 'expandingRow',
-    ColumnGroup = 'columnGroup',
-}
+export type TableServiceRoot<T> = (state: TableState, update: UpdateTableState, config: TableConfig, data: any[]) => T;
+
+export type TableServiceFactory<T> = (getState: () => TableState, update: UpdateTableState, getData?: () => any[]) => T;
+export type TableServiceFactoryConfig<T> = (
+    getState: () => TableState,
+    update: UpdateTableState,
+    config: TableConfig,
+    getData?: () => any[]
+) => T;
 
 export interface Module {
     name: string;
+    feature?: TableFeature;
     initConfig?: (params) => any;
     initState?: (params) => any;
+}
+
+export enum TableFeature {
+    SelectRow = 'SelectRow',
+    ExpandingRow = 'ExpandingRow',
+}
+
+export type TableFeatures = Set<TableFeature>;
+
+export enum SortDirection {
+    Asc = 'asc',
+    Desc = 'desc',
 }

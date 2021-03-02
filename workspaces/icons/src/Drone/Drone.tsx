@@ -14,7 +14,12 @@ export const Drone: React.FC<DroneProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M8 6.168l-1 1H1l-1-1v-1h3v-1h2v1h3v1zm13-1h3v1l-1 1h-6l-1-1v-1h3v-1h2v1zm-10 7h2v2h-2v-2zm8-3v-1h2v3.414l-3 3v1.172l2.95 2.946-1.414 1.414-2.95-2.949H7.414l-2.95 2.949L3.05 18.7l3-3v-1.118l-3-3v-1.414H3v-2h2v1h14zm-3 4.586l2.586-2.586H5.464l2.586 2.586v1.414H16v-1.414z' />
+            <path d='M7 3v2H1V3h6zm16 0v2h-6V3h6z' />
+            <path
+                fillRule='evenodd'
+                d='M5 9V7H3v4a1 1 0 00.293.707L6 14.414v1.172l-3.207 3.207 1.414 1.414L7.414 17h9.172l3.207 3.207 1.414-1.414L18 15.586v-1.172l2.707-2.707A1 1 0 0021 11V7h-2v2H5zm.414 2l2.293 2.293A1 1 0 018 14v1h8v-1a1 1 0 01.293-.707L18.586 11H5.414z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

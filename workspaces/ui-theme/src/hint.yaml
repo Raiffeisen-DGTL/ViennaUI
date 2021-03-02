@@ -3,11 +3,11 @@ space: hint
 definition:
   base:
     color: $color.primary.seattle.c60
-    margin-right: $layout.whitespace.xxs
+    margin-right: $layout.size.s1
 
 wrapper:
   base:
-    margin-right: $layout.whitespace.xxs
+    margin-right: $layout.size.s1
 
 icon:
   base:
@@ -17,13 +17,13 @@ icon:
     border-radius: $border.radius.xl
   size:
     s:
-      width: $layout.icon.xxs
-      height: $layout.icon.xxs
+      width: $layout.size.s3
+      height: $layout.size.s3
     m:
-      width: $layout.icon.xs
-      height: $layout.icon.xs
+      width: $layout.size.s4
+      height: $layout.size.s4
     l:
-      width: $layout.icon.s
-      height: $layout.icon.s
+      width: $layout.size.s5
+      height: $layout.size.s5
   hover:
     color: $color.primary.brand.primary

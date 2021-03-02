@@ -14,7 +14,13 @@ export const Flasher: React.FC<FlasherProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M11 2h2v3h-2V2zm0 12h2v5h-2v-5zm-9-1v-2h3v2H2zm1.262-7.277L4.471 4.13l2.39 1.813-1.209 1.594-2.39-1.814zm15.139 1.855l-1.24-1.57 2.355-1.858 1.24 1.57L18.4 7.577zM19 13v-2h3v2h-3zm2 7l1 1v1H2v-1l1-1h18zM7.079 19H5.064l.911-7.649a6.067 6.067 0 0112.05 0L18.936 19h-2.015l-.882-7.413a4.067 4.067 0 00-8.078 0L7.079 19z' />
+            <path d='M11 4V0h2v4h-2z' />
+            <path
+                fillRule='evenodd'
+                d='M19.976 16.78L17.98 6.804A1 1 0 0017 6H7a1 1 0 00-.98.804L4.023 16.78l-.994 3.977A1 1 0 004 22h16a1 1 0 00.97-1.242l-.994-3.977zM13 16h4.78l-1.6-8H7.82l-1.6 8H11v-4h2v4zm5.22 2H5.78l-.5 2h13.44l-.5-2z'
+                clipRule='evenodd'
+            />
+            <path d='M0 7h4v2H0V7zm24 0h-4v2h4V7zM19.293.293l-3 3 1.414 1.414 3-3L19.293.293zm-13 4.414l-3-3L4.707.293l3 3-1.414 1.414z' />
         </svg>
     );
 };

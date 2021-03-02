@@ -31,6 +31,7 @@ export interface OptionProps {
 
     /** Транслируется в onSelect метод родителя может быть перехвачено */
     onClick?: (e, value) => void;
+    onMouseOver?: any;
 }
 
 export const Option: React.FC<OptionProps> = (props: React.PropsWithChildren<OptionProps>): JSX.Element => {
@@ -69,6 +70,10 @@ export const Option: React.FC<OptionProps> = (props: React.PropsWithChildren<Opt
         [onClick, value, children, disabled]
     );
 
+    const handleChangeCheckbox = useCallback((e) => {
+        e.stopPropagation();
+    }, []);
+
     useLayoutEffect(() => {
         if (ref.current && ref.current.parentNode && hover && !localHover.current) {
             (ref.current.parentNode as HTMLDivElement).scrollTop = ref.current.offsetTop;
@@ -91,7 +96,7 @@ export const Option: React.FC<OptionProps> = (props: React.PropsWithChildren<Opt
             onMouseEnter={handleMouseEnter}
             onMouseOut={handleMouseOut}
             onMouseDown={handleMouseDown}>
-            <StyledCheckbox size={props.size} checked={selected} disabled={disabled} />
+            <StyledCheckbox size={props.size} onChange={handleChangeCheckbox} checked={selected} disabled={disabled} />
             <Value>{children ?? valueToString(value)}</Value>
         </StyledOption>
     );

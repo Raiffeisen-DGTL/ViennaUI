@@ -36,9 +36,6 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@commitlint/config-lerna-scopes": "8.3.4",
-    "vienna.config-eslint": "file:workspaces/config-eslint",
-    "vienna.config-typescript": "file:workspaces/config-typescript",
-    "vienna-ui": "file:workspaces/ui",
     "@types/enzyme": "3.10.5",
     "@types/jest": "25.2.1",
     "@types/node": "13.13.0",
@@ -62,15 +59,18 @@
     "husky": "4.2.5",
     "jest": "25.3.0",
     "jest-bamboo-formatter": "1.0.1",
-    "jest-styled-components": "6.3.4",
+    "jest-styled-components": "7.0.3",
     "lerna": "3.20.2",
     "lint-staged": "10.1.5",
     "prettier": "2.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "4.4.1",
+    "styled-components": "5.2.1",
     "tsc-files": "^1.0.0",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "vienna-ui": "file:workspaces/ui",
+    "vienna.config-eslint": "file:workspaces/config-eslint",
+    "vienna.config-typescript": "file:workspaces/config-typescript"
   },
   "optionalDependencies": {
     "fsevents": "*"

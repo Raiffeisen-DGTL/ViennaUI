@@ -49,6 +49,12 @@ const resizeHandler = (containerRef, extraComponentRef, elementsRef, items, setC
         extraElement.style.visibility = 'hidden'; // сокрытие компонента заместитиеля
         extraElement.style.position = 'fixed'; // убирем его что бы не занимал места
 
+        // '-1' -> вычитаем блок "Еще"
+        for (let idx = 0; idx < main.length - 1; idx++) {
+            main[idx].style.width = ''; // сброс
+            main[idx].style.display = ''; // сброс
+        }
+
         for (let idx = 0; idx < main.length - 1; idx++) {
             if (main[idx] === extraComponentRef) {
                 continue;
@@ -56,26 +62,42 @@ const resizeHandler = (containerRef, extraComponentRef, elementsRef, items, setC
             main[idx].style.display = '';
             const prevSum = sum;
             sum += main[idx].offsetWidth + marginsSum(main[idx]);
-            if (sum > parentWidth) {
+            if (sum > parentWidth && idx + 1 > startWith) {
                 count++;
                 main[idx].style.display = 'none';
             }
             if (
+                count &&
                 idx &&
+                idx - 1 > startWith &&
                 main[idx - 1].style.display !== 'none' &&
-                prevSum + extra + marginsSum(extraElement) > parentWidth
+                prevSum + extra + marginsSum(extraElement) + marginsSum(extraElement) > parentWidth
             ) {
                 count++;
                 main[idx - 1].style.display = 'none';
             }
         }
 
-        if (main.length <= startWith + 1) {
-            for (let idx = 0; idx < startWith; idx++) {
-                main[0].style.display = '';
+        // Код отвечающий за то чтобы всегда показывать те элементы которые меньше чем startWith
+        // '-1' -> вычитаем блок "Еще"
+        if (startWith && main.length - 1 >= startWith) {
+            for (let idx = 0; idx <= startWith - 1; idx++) {
+                if (count) {
+                    extraElement.style.position = '';
+                }
+                if (parentWidth < containerRef.current.scrollWidth) {
+                    const width =
+                        (parentWidth - marginsSum(extraElement) - paddingsSum(extraElement) - extra) / startWith;
+                    main[idx].style.width = `${width > 0 ? width : 0}px`;
+                    if (width < 0) {
+                        main[idx].style.display = 'none';
+                        count++;
+                    }
+                }
+                if (count) {
+                    extraElement.style.position = 'fixed';
+                }
             }
-            setCount(0);
-            return;
         }
 
         if (count) {

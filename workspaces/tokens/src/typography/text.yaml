@@ -1,41 +1,18 @@
 space: typography
 b:
-  desc: Обычный текст
-  family:
-    value: "'ALS Hauss', Helvetica, 'Helvetica New', Arial, sans-serif"
-    prop: font-family
+  family: "'ALS Hauss', Helvetica, 'Helvetica New', Arial, sans-serif"
   b1:
-    size:
-      value: 12px
-      prop: font-size
-    height:
-      value: 18px
-      prop: line-height
+    size: 12
+    height: 18
   b2:
-    size:
-      value: 14px
-      prop: font-size
-    height:
-      value: 22px
-      prop: line-height
+    size: 14
+    height: 22
   b3:
-    size:
-      value: 16px
-      prop: font-size
-    height:
-      value: 26px
-      prop: line-height
+    size: 16
+    height: 26
   b4:
-    size:
-      value: 18px
-      prop: font-size
-    height:
-      value: 28px
-      prop: line-height
+    size: 18
+    height: 28
   b5:
-    size:
-      value: 20px
-      prop: font-size
-    height:
-      value: 30px
-      prop: line-height
+    size: 20
+    height: 30

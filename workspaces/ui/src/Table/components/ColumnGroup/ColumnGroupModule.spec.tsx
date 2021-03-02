@@ -45,7 +45,8 @@ describe('Column Group service', () => {
         },
     };
 
-    const service = columnGroupService(state, config);
+    const getState = () => state;
+    const service = columnGroupService(getState, () => null, config);
 
     test('columnGroupSpan', () => {
         const group1 = service.columnGroupSpan('g1');

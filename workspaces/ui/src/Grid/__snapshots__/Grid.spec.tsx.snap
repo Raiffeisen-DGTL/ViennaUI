@@ -3,87 +3,87 @@
 exports[`Grid 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
@@ -91,17 +91,17 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
       One of two columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
@@ -109,24 +109,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
       offset="0"
       size="4"
     >
       One of three columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
       offset="0"
       size="4"
     >
       One of three columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 btUUfi"
+      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
       offset="0"
       size="4"
     >
@@ -134,31 +134,31 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
       offset="0"
       size="3"
     >
@@ -171,32 +171,32 @@ Array [
 exports[`Grid adaptive 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 iUarAA"
+      class="Colstyles__Box-sc-5cweqm-0 jdiNzz"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 bCBXc"
+      class="Colstyles__Box-sc-5cweqm-0 kyNTyn"
       offset="0"
     >
       2
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 kVHOpo"
+      class="Colstyles__Box-sc-5cweqm-0 fARQCD"
       offset="[object Object]"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYgwyj"
+      class="Colstyles__Box-sc-5cweqm-0 fdNpvP"
       offset="0"
     >
       2
@@ -208,24 +208,24 @@ Array [
 exports[`Grid w align 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 dMzpbl"
+    class="Row-sc-1f9abgs-0 hvzxOX"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
@@ -233,24 +233,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 kxHIQF"
+    class="Row-sc-1f9abgs-0 JfKSG"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
@@ -258,24 +258,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 ezKqZS"
+    class="Row-sc-1f9abgs-0 dniXrk"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
@@ -283,24 +283,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 fBWJak"
+    class="Row-sc-1f9abgs-0 cxqmTn"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
@@ -308,24 +308,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 eVHAJz"
+    class="Row-sc-1f9abgs-0 kIVIMa"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gYPbBC"
+      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
       offset="0"
       size="2"
     >
@@ -333,22 +333,22 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 iobZnc"
+    class="Row-sc-1f9abgs-0 qhQGs"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      class="Colstyles__Box-sc-5cweqm-0 izyobK"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      class="Colstyles__Box-sc-5cweqm-0 izyobK"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hwTwoH"
+      class="Colstyles__Box-sc-5cweqm-0 izyobK"
       offset="0"
     >
       1
@@ -360,17 +360,17 @@ Array [
 exports[`Grid w valign 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 CXnGS"
+    class="Row-sc-1f9abgs-0 jATAOT"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
@@ -378,17 +378,17 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 dCSdqZ"
+    class="Row-sc-1f9abgs-0 gxtyku"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
@@ -396,17 +396,17 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 hICVRV"
+    class="Row-sc-1f9abgs-0 gaWcA"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
@@ -414,17 +414,17 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 hiyiVh"
+      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
       offset="0"
       size="6"
     >
@@ -437,87 +437,87 @@ Array [
 exports[`Grid w/ columnGap 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
@@ -525,87 +525,87 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 eJXEBQ"
+    class="Row-sc-1f9abgs-0 eVascn"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
@@ -613,87 +613,87 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 bwEERC"
+    class="Row-sc-1f9abgs-0 fSFwUl"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
@@ -701,87 +701,87 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 fhmIwx"
+    class="Row-sc-1f9abgs-0 gejdTA"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 QlXkP"
+      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
       offset="0"
       size="1"
     >
@@ -794,80 +794,80 @@ Array [
 exports[`Grid w/ offset 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 ezcJYy"
+      class="Colstyles__Box-sc-5cweqm-0 eYwmTN"
       offset="11"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 fCgaLN"
+      class="Colstyles__Box-sc-5cweqm-0 fLlrSU"
       offset="10"
       size="2"
     >
       2
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 iNMWJT"
+      class="Colstyles__Box-sc-5cweqm-0 gVaJdI"
       offset="9"
       size="3"
     >
       3
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gANdZp"
+      class="Colstyles__Box-sc-5cweqm-0 iXDlx"
       offset="8"
       size="4"
     >
       4
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 giUTCw"
+      class="Colstyles__Box-sc-5cweqm-0 kbORJT"
       offset="7"
       size="5"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cDmPX"
+      class="Colstyles__Box-sc-5cweqm-0 cUxthn"
       offset="6"
       size="6"
     >
       6
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 flxgIb"
+      class="Colstyles__Box-sc-5cweqm-0 kPmTjI"
       offset="5"
       size="7"
     >
       7
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 lgapsP"
+      class="Colstyles__Box-sc-5cweqm-0 iWsSra"
       offset="4"
       size="8"
     >
       8
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 dtUlCB"
+      class="Colstyles__Box-sc-5cweqm-0 eTJpSl"
       offset="3"
       size="9"
     >
       9
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 gLbGIz"
+      class="Colstyles__Box-sc-5cweqm-0 hafaXP"
       offset="2"
       size="10"
     >
       10
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 HydGe"
+      class="Colstyles__Box-sc-5cweqm-0 dVEHgM"
       offset="1"
       size="11"
     >
@@ -875,17 +875,17 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 esTYWy"
+      class="Colstyles__Box-sc-5cweqm-0 bKLlkt"
       offset="3"
       size="3"
     >
       offset: 3
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 bZmzMl"
+      class="Colstyles__Box-sc-5cweqm-0 gyKQGD"
       offset="2"
       size="3"
     >
@@ -893,24 +893,24 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cPpKgx"
+      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
       offset="0"
       size="3"
     >
       size 3
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 bRyXYa"
+      class="Colstyles__Box-sc-5cweqm-0 gqmUcd"
       offset="3"
       size="2"
     >
       size 2
     </div>
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 klLerV"
+      class="Colstyles__Box-sc-5cweqm-0 dgvfNV"
       offset="3"
       size="1"
     >
@@ -923,10 +923,10 @@ Array [
 exports[`Grid w/ rowGap 1`] = `
 Array [
   <div
-    class="Row-sc-19nxm1v-0 iFkyFq"
+    class="Row-sc-1f9abgs-0 zEGIv"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
       offset="0"
       size="12"
     >
@@ -934,10 +934,10 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 bqTnsj"
+    class="Row-sc-1f9abgs-0 cjdkgr"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
       offset="0"
       size="12"
     >
@@ -945,10 +945,10 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
       offset="0"
       size="12"
     >
@@ -956,10 +956,10 @@ Array [
     </div>
   </div>,
   <div
-    class="Row-sc-19nxm1v-0 cwCUyd"
+    class="Row-sc-1f9abgs-0 jqKtpu"
   >
     <div
-      class="Colstyles__Box-sc-1nfgix5-0 cYdJBR"
+      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
       offset="0"
       size="12"
     >

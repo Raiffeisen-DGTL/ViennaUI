@@ -2,7 +2,6 @@
 
 Стандартный логотип Raiffeisenbank
 
-
 ## Импорт
 
 ```
@@ -11,12 +10,12 @@ import { Logotype } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-size | 'xs' \| 's' \| 'm' \| 'l' \| 'xl' | false |
-design | 'light' \| 'dark' \| 'monochrome' \| 'monochrome-dark' | false |
-locale | 'ru' \| 'en' | false |
-collapsed | boolean \| undefined | false |
+| Prop      | Type                                                   | Default | Description |
+| --------- | ------------------------------------------------------ | ------- | ----------- |
+| size      | 'xs' \| 's' \| 'm' \| 'l' \| 'xl'                      | false   |
+| design    | 'light' \| 'dark' \| 'monochrome' \| 'monochrome-dark' | false   |
+| locale    | 'ru' \| 'en'                                           | false   |
+| collapsed | boolean \| undefined                                   | false   |
 
 ## Использование
 
@@ -25,6 +24,7 @@ collapsed | boolean \| undefined | false |
 ```
 
 ## Свёрнутое состояние
+
 ##### Свойство `collapsed`
 
 С помощью флага `collapsed` можно отобразить логотип в свёрнутом состоянии, при котором надпись отсутствует.
@@ -34,6 +34,7 @@ collapsed | boolean \| undefined | false |
 ```
 
 ## Чёрно-белый логотип
+
 ##### Свойство `design`
 
 ```jsx
@@ -52,11 +53,13 @@ collapsed | boolean \| undefined | false |
 ```
 
 ## Локализация
+
 ##### Свойство `locale`
 
 С помощью параметра `locale` можно устновать язык логотипа. Поддерживается два значения `en` и `ru`.
 
 ## Размеры
+
 ##### Свойство `size`
 
 С помощью параметра `size` можно установить размер логотипа. Поддерживается 5 размеров `xs`, `s`, `m`, `l`, `xl`.

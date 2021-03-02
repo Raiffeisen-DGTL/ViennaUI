@@ -5,7 +5,7 @@ base:
   ref: $typography.text.base
   box-shadow: $shadow.basic.xl
   border-radius: $border.radius.m
-  padding: $layout.whitespace.s
+  padding: $layout.size.s3
   transition: opacity .2s
   z-index: '1000'
 

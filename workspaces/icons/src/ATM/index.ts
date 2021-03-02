@@ -1,1 +1,1 @@
-export * from './ATM';
+export * from './Atm';

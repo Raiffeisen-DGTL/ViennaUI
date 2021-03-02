@@ -14,7 +14,12 @@ export const InfoRing: React.FC<InfoRingProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z' />
+            <path d='M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z' />
+            <path
+                fillRule='evenodd'
+                d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

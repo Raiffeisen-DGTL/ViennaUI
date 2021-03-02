@@ -8,8 +8,6 @@ const defaultOptions = (delimeter = '.') =>
         signed: false,
         radix: delimeter,
         mapToRadix: [',', '.'],
-        min: 0,
-        max: Number.MAX_SAFE_INTEGER,
         prepare: (value: string): string => {
             return value.replace(/\.|,/gm, delimeter);
         },
@@ -22,10 +20,20 @@ interface InputNumberProps extends Omit<InputMaskProps, 'value'> {
 }
 
 export const InputNumber = React.forwardRef((props: InputNumberProps, ref: React.Ref<HTMLInputElement>) => {
-    const { onFocus, onBlur, name, delimeter, value, scale, thousandsSeparator = ' ', ...attrs } = props;
+    const {
+        onFocus,
+        onBlur,
+        name,
+        delimeter,
+        value,
+        scale,
+        thousandsSeparator = ' ',
+        padFractionalZeros,
+        ...attrs
+    } = props;
 
     const [dynamicThousandsSeparator, setDynamicThousandsSeparator] = useState(thousandsSeparator);
-    const [padFractionalZeros, setPadFractionalZeros] = useState(scale !== 0);
+    const [innerPadFractionalZeros, setPadFractionalZeros] = useState(scale !== 0);
     const [normalizeZeros, setNormalizeZeros] = useState(true);
 
     const handleBlur = useCallback(
@@ -60,7 +68,7 @@ export const InputNumber = React.forwardRef((props: InputNumberProps, ref: React
             name={name}
             value={preparedVlue}
             thousandsSeparator={dynamicThousandsSeparator}
-            padFractionalZeros={padFractionalZeros}
+            padFractionalZeros={padFractionalZeros ?? innerPadFractionalZeros}
             normalizeZeros={normalizeZeros}
             showMask={false}
             {...defaultOptions(delimeter)}

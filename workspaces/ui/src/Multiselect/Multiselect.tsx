@@ -1,10 +1,17 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useCallback, useRef, RefAttributes, ForwardRefExoticComponent, useEffect } from 'react';
 import { useCramList } from 'vienna.react-use';
-import { Down, Up, Close } from 'vienna.icons';
-import { Box, Current, Part, Chip, Extra, Placeholder, StyledInputWrapper } from './Multiselect.styles';
+import { SelectOpenDown, SelectHide, Close } from 'vienna.icons';
+import { Box, Current, Part, Chip, Text, Extra, Placeholder, StyledInputWrapper } from './Multiselect.styles';
 import Option, { OptionProps } from './Option/Option';
+import {
+    MultiselectLocalizationProps,
+    MultiselectLocalizationMap,
+    MultiselectLocalizationCotext,
+    defaultMultiselectLocalization,
+} from './localization';
 import { DropList } from '../DropList';
+import { useLocalization } from '../Localization';
 
 interface Data {
     props: any;
@@ -35,7 +42,7 @@ export type MultiselectScrollEvent<T = React.FormEvent<HTMLInputElement>> = (
     }
 ) => void;
 
-export interface MultiselectProps {
+export interface MultiselectProps extends MultiselectLocalizationProps {
     /** Имя компонента */
     name?: string;
 
@@ -77,6 +84,8 @@ export interface MultiselectProps {
 
     /** Максимальная высота выпадающего списка в пикселях */
     maxListHeight?: number;
+    /** Максимальная ширина выпадающего списка в пикселях */
+    maxListWidth?: number;
 
     /** Разворачивать список при получениее фокуса */
     openWhenFocus?: boolean;
@@ -107,9 +116,17 @@ export interface MultiselectProps {
 
     /** Определяем как сравнивать переданый в value объект и содержимое списка для подсветки выбраного элемента */
     compare?: (item: any) => any;
+
+    /** Число элементов которые не прячутся */
+    minViewItems?: number;
+    fixed?: boolean;
+    ref?: React.Ref<HTMLDivElement>;
 }
 
-const defaultPostfix = { down: <Down />, up: <Up /> };
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const omitNoWrapProp = ({ __nowrap__, ...props }) => props;
+
+const defaultPostfix = { down: <SelectOpenDown />, up: <SelectHide /> };
 
 const getIcon = (flag, icons, size) => {
     size = size === 'xs' ? 's' : 'm';
@@ -147,6 +164,7 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
             design,
             openWhenFocus,
             maxListHeight,
+            maxListWidth,
             valueToString = (item) => (typeof item === 'string' ? item : item?.value),
             compare = (item) => (typeof item === 'string' ? item : item?.value),
             onScroll,
@@ -157,8 +175,15 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
             fitOptions = true,
             onFocus,
             name,
+            fixed,
+            minViewItems = 1,
             ...attrs
         } = props;
+
+        const localize = useLocalization<MultiselectLocalizationMap, MultiselectLocalizationCotext>(
+            props,
+            defaultMultiselectLocalization
+        );
 
         // Проверяем, что нам переданы только options или только children
         // и работаем с чем-то одним
@@ -168,7 +193,7 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
         }
 
         const multiselectRef = useRef<HTMLDivElement>(null);
-        const [containerRef, extraComponentRef, count] = useCramList(values as any);
+        const [containerRef, extraComponentRef, count] = useCramList(values as any, minViewItems);
 
         // Перенаправляем ref наружу в зависимости от его вида (функция или useRef для react > 16)
         useEffect(() => {
@@ -210,7 +235,11 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                     setLocalOptions(React.Children.toArray(children));
                 }
             }
-        }, [showList]);
+        }, [showList, options, children, props]);
+
+        const handleHide = useCallback(() => {
+            setShowList(false);
+        }, []);
 
         const handleOptionMouseOver = useCallback(
             (e, option) => {
@@ -367,6 +396,10 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                     });
                 }
 
+                if (child?.props?.__nowrap__) {
+                    return React.cloneElement(child, omitNoWrapProp(child.props));
+                }
+
                 // Если переданный объект не унаследован от Option
                 return React.createElement(Option, {
                     key: index,
@@ -375,7 +408,7 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                     value: child,
                     hover: index === currentIndex,
                     onMouseOver: (e) => handleOptionMouseOver(e, child),
-                    size,
+                    size: getdropListSizeBySelectSize(size),
                     onClick: handleSelect,
                     ...child.props,
                 });
@@ -384,8 +417,18 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
             // Ессли передан promise то ожидаем
             const prepared = localOptions instanceof Promise ? [] : localOptions.map(mapper);
 
-            return prepared?.length ? prepared : <Option disabled>Нет элементов для отображения</Option>;
-        }, [localOptions, currentIndex, handleSelect, values, valueToString, compare, size, handleOptionMouseOver]);
+            return prepared?.length ? prepared : <Option disabled>{localize('ds.multiselect.empty')}</Option>;
+        }, [
+            localOptions,
+            currentIndex,
+            handleSelect,
+            values,
+            valueToString,
+            compare,
+            size,
+            handleOptionMouseOver,
+            localize,
+        ]);
 
         const constructChips = useCallback(() => {
             const chipClickHandler = (value) => (event) => {
@@ -398,7 +441,7 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                     <>
                         {values.map((value, index) => (
                             <Chip key={index} size={size}>
-                                <span>{valueToString(value)}</span>
+                                <Text>{valueToString(value)}</Text>
                                 <Close
                                     size='s'
                                     onMouseDown={chipClickHandler(value)}
@@ -406,13 +449,15 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                                 />
                             </Chip>
                         ))}
-                        <Extra ref={extraComponentRef}>{`Еще ${count ?? ''}`}</Extra>
+                        <Extra ref={extraComponentRef}>
+                            {localize('ds.multiselect.extra', { count: count ?? '' })}
+                        </Extra>
                     </>
                 );
             }
 
             return null;
-        }, [valueToString, values, size, handleSelect, extraComponentRef, count]);
+        }, [valueToString, values, size, handleSelect, extraComponentRef, count, localize]);
 
         const handleClick = useCallback(() => {
             if (!disabled) {
@@ -465,7 +510,11 @@ export const Multiselect: React.FC<MultiselectProps> & { Option: React.FC<Option
                         size={getdropListSizeBySelectSize(size)}
                         fitItems={fitOptions}
                         maxHeight={maxListHeight}
+                        width={maxListWidth}
                         aria-multiselectable
+                        fixed={fixed}
+                        followParentWhenScroll={fixed}
+                        onHide={handleHide}
                         onScroll={handleScroll}>
                         {constructOptions()}
                     </DropList>

@@ -22,7 +22,7 @@ tab:
     base:
       transition: all 0.2s
       bottom: 0
-      height: $layout.whitespace.xxs
+      height: $layout.size.s1
     left:
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
@@ -36,17 +36,17 @@ tab:
         background-color: $color.primary.brand.primary
   size:
     l:
-      margin-right: $layout.whitespace.xxl
+      margin-right: $layout.size.s8
       font-size: $typography.b.b3.size
       line-height: $typography.b.b3.height
       padding-bottom: 8px
     m:
-      margin-right: $layout.whitespace.xl
+      margin-right: $layout.size.s6
       font-size: $typography.b.b2.size
       line-height: $typography.b.b2.height
       padding-bottom: 8px
     s:
-      margin-right: $layout.whitespace.m
+      margin-right: $layout.size.s4
       font-size: $typography.b.b1.size
       line-height: $typography.b.b1.height
       padding-bottom: 4px
@@ -66,11 +66,11 @@ combineTab:
     align-items: center
   item:
     l:
-      margin-right: $layout.whitespace.xxl
+      margin-right: $layout.size.s8
       font-size: $typography.b.b3.size
     m:
-      margin-right: $layout.whitespace.xl
+      margin-right: $layout.size.s6
       font-size: $typography.b.b2.size
     s:
-      margin-right: $layout.whitespace.m
+      margin-right: $layout.size.s4
       font-size: $typography.b.b1.size

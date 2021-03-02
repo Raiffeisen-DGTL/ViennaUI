@@ -14,7 +14,11 @@ export const Fence: React.FC<FenceProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M23 12v-2h-1.1V5.627L19 2.728l-2.9 2.9V10h-1.2V5.627L12 2.728l-2.9 2.9V10H7.9V5.627L5 2.728l-2.9 2.9V10H1v2h1.1v5H1v2h1.1v3h1.8V6.373L5 5.272l1.1 1.1V22h1.8v-3h1.2v3h1.8V6.373l1.1-1.1 1.1 1.1V22h1.8v-3h1.2v3h1.8V6.373l1.1-1.1 1.1 1.1V22h1.8v-3H23v-2h-1.1v-5H23zM7.9 17v-5h1.2v5H7.9zm7 0v-5h1.2v5h-1.2z' />
+            <path
+                fillRule='evenodd'
+                d='M7.707 3.293a1 1 0 00-1.414 0l-2 2A1 1 0 004 6v3H2v2h2v5H2v2h2v2h2V6.414l1-1 1 1V20h2v-2h4v2h2V6.414l1-1 1 1V20h2v-2h2v-2h-2v-5h2V9h-2V6a1 1 0 00-.293-.707l-2-2a1 1 0 00-1.414 0l-2 2A1 1 0 0014 6v3h-4V6a1 1 0 00-.293-.707l-2-2zM10 11v5h4v-5h-4z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

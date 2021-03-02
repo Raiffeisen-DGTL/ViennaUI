@@ -1,1 +1,1 @@
-export * from './Nameplate';
+export * from './NamePlate';

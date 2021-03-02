@@ -14,7 +14,12 @@ export const Taxi: React.FC<TaxiProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M2 16h20l1 1v1H1v-1l1-1zm5-6h2v2H7v-2zm2 2h2v2H9v-2zm4 0h2v2h-2v-2zm-2-2h2v2h-2v-2zm4 0h2v2h-2v-2zm-9.867 5H3.09l.792-7.119A2.148 2.148 0 016.013 6h11.974c1.083 0 1.996.806 2.131 1.881L20.91 15h-2.043l-.75-7H5.883l-.75 7z' />
+            <path d='M9 10H7v2h2v2h2v-2h2v2h2v-2h2v-2h-2v2h-2v-2h-2v2H9v-2z' />
+            <path
+                fillRule='evenodd'
+                d='M3.884 7.703A2 2 0 015.862 6h12.277a2 2 0 011.978 1.703L21.362 16H23v2H1v-2h1.64l1.244-8.297zM5.862 8h12.277l1.2 8H4.663l1.2-8z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

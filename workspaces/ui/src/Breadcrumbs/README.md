@@ -2,7 +2,6 @@
 
 Элемент навигации по приложению, сайту.
 
-
 ## Импорт
 
 ```
@@ -11,20 +10,21 @@ import { Breadcrumbs } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-size | "s" \| "m" \| "l" \| undefined | "m" |
-onClickHome | ((e: any, data: { value: any; }) => void) \| undefined | false | Обработчик нажатия на кнопку "Домой"
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | "s" \| "m" \| "l" \| undefined | "m" |
+| onClickHome | ((e: any, data: { value: any; }) => void) \| undefined | false | Обработчик нажатия на кнопку "Домой" |
+| localization | [BreadcrumbsLocalization](../Breadcrumbs/localization.ts) | defaultBreadcrumbsLocalization | Локализация |
 
 ## Свойства шага / Option Props
-Prop | Type | Default | Description
---- | --- | --- | ---
-altText | string \| undefined | false | Альтернативный  текст
+
+| Prop    | Type                | Default | Description          |
+| ------- | ------------------- | ------- | -------------------- |
+| altText | string \| undefined | false   | Альтернативный текст |
 
 ## Использование
 
-Компонент состоит из родительского контейнера `Breadcrumbs` и шагов `Breadcrumbs.Option`.
-Если был совершен только один шаг, то он будет слегка видоизменен под кнопку `Назад`.
+Компонент состоит из родительского контейнера `Breadcrumbs` и шагов `Breadcrumbs.Option`. Если был совершен только один шаг, то он будет слегка видоизменен под кнопку `Назад`.
 
 ```jsx
 <Breadcrumbs>
@@ -35,6 +35,7 @@ altText | string \| undefined | false | Альтернативный  текст
 ```
 
 ## Альтернативный текст
+
 ##### Свойство `altText`
 
 Для того чтобы компонент мог ужать текст при уменьшении можно задать альтернативный текст `altText`, иначе он будет сокращаться с обрезкой и добавлением `...`
@@ -48,11 +49,13 @@ altText | string \| undefined | false | Альтернативный  текст
 ```
 
 ## Размеры
+
 ##### Свойство `size`
 
 Есть размеры - `s`, `m` (по умолчанию), `l`.
 
 ## Обработчики клика
+
 ##### Свойство `onClick`, `onClickHome`
 
 Для работы с элементами достаточно обрабатывать их событие `onClick`, для случая нажатия на кнопку `Домой` используется событие `onClickHome`

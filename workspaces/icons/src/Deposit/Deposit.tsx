@@ -14,7 +14,11 @@ export const Deposit: React.FC<DepositProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M20.016 2c1.096 0 1.983.888 1.984 1.984v15.032A1.985 1.985 0 0120.016 21H19v1h-3v-1h-6v1H7v-1H5.984A1.985 1.985 0 014 19.016V18h2v1.016L20.016 19 20 4H5.985v1H7v2H2V5h2V3.984C4 2.888 4.888 2.001 5.984 2h14.032zM7 15v2H2v-2h2V8h1.988l.008 7H7zm11.9-3.5a3.4 3.4 0 11-6.8 0 3.4 3.4 0 016.8 0zm-5 0a1.6 1.6 0 103.2 0 1.6 1.6 0 00-3.2 0z' />
+            <path
+                fillRule='evenodd'
+                d='M3 4a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-1v2h-2v-2H7v2H5v-2H4a1 1 0 01-1-1V4zm2 1v14h14v-4h-2v1a1 1 0 01-1 1H8a1 1 0 01-1-1V8a1 1 0 011-1h8a1 1 0 011 1v1h2V5H5zm12 8h2v-2h-2v2zM9 9v2h2v2H9v2h6V9H9z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

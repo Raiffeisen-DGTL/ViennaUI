@@ -14,7 +14,11 @@ export const Offer: React.FC<OfferProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M20 8a2 2 0 012 2v10.059A1.941 1.941 0 0120.059 22H4a2 2 0 01-2-2V10a2 2 0 012-2h16zM4 20h5V10H4v10zm7 0h2V10h-2v10zm9 0V10h-5v10h5zM8 5.07V7H6V3l1-1 5 3.333L17 2l1 1v4h-2V5.07L13.105 7h-2.21L8 5.07z' />
+            <path
+                fillRule='evenodd'
+                d='M10 2a3 3 0 00-3 3v1H3a1 1 0 00-1 1v4a1 1 0 001 1v9a1 1 0 001 1h16a1 1 0 001-1v-9a1 1 0 001-1V7a1 1 0 00-1-1h-4V5a3 3 0 00-5-2.236A2.989 2.989 0 0010 2zm0 2a1 1 0 011 1v1H9V5a1 1 0 011-1zm4 0a1 1 0 011 1v1h-2V5a1 1 0 011-1zm-1 8h6v8h-6v-8zm-8 8v-8h6v8H5zm8-10V8h7v2h-7zm-2 0V8H4v2h7z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

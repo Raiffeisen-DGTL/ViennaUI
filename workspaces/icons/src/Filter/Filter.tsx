@@ -14,7 +14,7 @@ export const Filter: React.FC<FilterProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M2 5h20v2H2V5zm2 6h16v2H4v-2zm2 6h12v2H6v-2z' />
+            <path d='M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z' />
         </svg>
     );
 };

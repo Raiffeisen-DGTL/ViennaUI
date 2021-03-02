@@ -20,7 +20,8 @@ export interface DropListProps {
 
     /** Опционально: элемент от которого вести расчет пересечений */
     container?: any;
-    allowScrollUnstable?: boolean;
+    followParentWhenScroll?: boolean;
+    onHide?: () => void;
 }
 
 export const DropList: React.FC<DropListProps> & { Item: React.FC<ItemProps> } = (props) => {
@@ -31,15 +32,28 @@ export const DropList: React.FC<DropListProps> & { Item: React.FC<ItemProps> } =
         coords,
         fixed,
         float = 'start',
-        margins = { x: 0, y: 4 },
+        margins,
         onMouseDown,
         container,
-        allowScrollUnstable,
+        followParentWhenScroll,
+        fitItems,
+        onHide,
         ...attrs
     } = props;
 
     const parentRef = useRef<HTMLDivElement>(null);
-    const ref = useDrop(align, float, margins, fixed, coords, container, parentRef, allowScrollUnstable);
+    const ref = useDrop({
+        align,
+        float,
+        margins: margins ?? (align === 'vertical' ? { x: 0, y: 4 } : { x: 4, y: 0 }),
+        fixed,
+        coords,
+        container,
+        parentRef,
+        followParentWhenScroll,
+        fitListToParent: fitItems,
+        callbacks: { onHide },
+    });
 
     const handleMouseDown = useCallback(
         (e) => {
@@ -53,7 +67,7 @@ export const DropList: React.FC<DropListProps> & { Item: React.FC<ItemProps> } =
     );
 
     const result = (
-        <Box {...attrs} ref={ref} role='listbox' onMouseDown={handleMouseDown}>
+        <Box {...attrs} ref={ref} role='listbox' fitItems={fitItems} onMouseDown={handleMouseDown}>
             {React.Children.map(children, (child: any) => React.cloneElement(child, { size }))}
         </Box>
     );

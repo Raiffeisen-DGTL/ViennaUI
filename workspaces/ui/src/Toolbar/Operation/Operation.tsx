@@ -52,7 +52,7 @@ export const Operation: React.FC<Props> = React.forwardRef((props: React.PropsWi
                     align={asSubOperation ? 'horizontal' : 'vertical'}
                     float={'end'}
                     scrollable={false}
-                    margins={asSubOperation ? { x: 0, y: 8 } : { x: 0, y: 0 }}>
+                    margins={asSubOperation ? { x: 0, y: -8 } : { x: 0, y: 0 }}>
                     {React.Children.toArray(children).map((child, idx) => (
                         <StyledItem key={idx}>{child}</StyledItem>
                     ))}

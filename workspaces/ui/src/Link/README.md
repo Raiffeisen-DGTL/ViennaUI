@@ -2,7 +2,6 @@
 
 Компонент ссылка.
 
-
 ## Импорт
 
 ```
@@ -13,14 +12,13 @@ import { Link } from 'vienna-ui';
 
 Свойства наследуются от [AnchorHTMLAttributes<HTMLAnchorElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1935)
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-design | 'accent' \| 'accent-underline' \| 'primary' \| 'secondary' | 'accent' | 
-size | 's' \| 'm' \| 'l' | 'm' | 
-loading | boolean \| undefined | false | 
-disabled | boolean \| undefined | false | 
-href | string \| undefined | false |
-
+| Prop     | Type                                                       | Default  | Description |
+| -------- | ---------------------------------------------------------- | -------- | ----------- |
+| design   | 'accent' \| 'accent-underline' \| 'primary' \| 'secondary' | 'accent' |
+| size     | 's' \| 'm' \| 'l'                                          | 'm'      |
+| loading  | boolean \| undefined                                       | false    |
+| disabled | boolean \| undefined                                       | false    |
+| href     | string \| undefined                                        | false    |
 
 ## Использование
 
@@ -46,6 +44,7 @@ export default (props) => (
 ```
 
 ## Размеры
+
 ##### Свойство `size`
 
 Ссылки поддерживают 3 варианта размера: `s`, `m` (по умолчанию) и `l`
@@ -63,6 +62,7 @@ export default (props) => (
 Размер иконки внутри ссылки должен соотвествовать размеру самой ссылки, то есть внутри ссылки размера `s` должна использоваться иконка размера `s`.
 
 ## Неактивное состояние
+
 ##### Свойство `disabled`
 
 ```jsx
@@ -70,7 +70,9 @@ export default (props) => (
     Accent link
 </Link>
 ```
+
 ## Состояние загрузки
+
 ##### Свойство `loading`
 
 ```jsx

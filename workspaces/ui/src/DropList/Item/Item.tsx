@@ -17,7 +17,6 @@ export interface Props {
     disabled?: boolean;
     /** Состояние, когда строка не обрезается, а переносится */
     wrapLine?: boolean;
-
     /** Следует ли проскролить к этому компоненту */
     scrollWhenHovered?: boolean;
 }
@@ -58,4 +57,5 @@ export const Item: React.FC<Props> = React.forwardRef(
     }
 );
 
+Item.displayName = 'Item';
 export default Item;

@@ -11,10 +11,11 @@ export interface StepProps {
     el?: MutableRefObject<any>;
     hasTooltip?: boolean;
     valign?: 'center' | 'top';
+    count?: number;
 }
 
 export const Step: React.FC<StepProps> = (props: StepProps) => {
-    const { title, design, size, orientation, el, hasTooltip, valign } = props;
+    const { title, design, size, orientation, el, hasTooltip, valign, count } = props;
     const titleContainer = (
         <Title design={design} orientation={orientation} ref={el} valign={valign}>
             {title}
@@ -22,7 +23,7 @@ export const Step: React.FC<StepProps> = (props: StepProps) => {
     );
 
     return (
-        <Box orientation={orientation} valign={valign}>
+        <Box orientation={orientation} valign={valign} count={count}>
             <Point design={design} size={size} orientation={orientation} />
 
             {hasTooltip ? (

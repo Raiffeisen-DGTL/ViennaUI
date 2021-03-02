@@ -2,20 +2,29 @@ space: spinner
 
 size:
   xs:
-    width: $layout.icon.xxs
-    height: $layout.icon.xxs
+    width: $layout.size.s3
+    height: $layout.size.s3
   s:
-    width: $layout.icon.xs
-    height: $layout.icon.xs
+    width: $layout.size.s4
+    height: $layout.size.s4
   m:
-    width: $layout.icon.s
-    height: $layout.icon.s
+    width: $layout.size.s5
+    height: $layout.size.s5
   l:
-    width: $layout.icon.m
-    height: $layout.icon.m
+    width: $layout.size.s6
+    height: $layout.size.s6
   xl:
-    width: $layout.icon.l
-    height: $layout.icon.l
+    width: $layout.size.s8
+    height: $layout.size.s8
   xxl:
-    width: $layout.icon.l
-    height: $layout.icon.l
+    width: $layout.size.s8
+    height: $layout.size.s8
+color:
+  primary:
+    stroke: $color.primary.brand.primary
+  accent:
+    stroke: $color.primary.brand.accent
+  london120:
+    stroke: $color.primary.london.c120
+  white:
+    stroke: $color.primary.brand.white

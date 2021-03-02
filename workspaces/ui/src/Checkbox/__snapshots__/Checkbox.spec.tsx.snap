@@ -2,77 +2,19 @@
 
 exports[`Checkbox 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -80,88 +22,26 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #FEE600;
-  border-color: #FEE600;
-  color: #000000;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_0"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
         checked=""
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         type="checkbox"
       />
       <svg
         checked=""
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -169,7 +49,6 @@ Array [
       >
         <path
           d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
@@ -179,112 +58,22 @@ Array [
 `;
 
 exports[`Checkbox w/ any props 1`] = `
-.c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c7 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
 <label
-  class="c0 className"
-  data-marker="Checkbox_12"
+  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw className"
   id="id"
   title="title"
 >
   <span
-    class="c1"
-    data-marker="Checkbox.IconBox"
+    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
   >
     <input
       aria-invalid="false"
-      class="c2"
-      data-marker="Checkbox.Input"
+      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
       name="name"
       type="checkbox"
     />
     <svg
-      class="c3 c4"
-      data-marker="Checkbox.Icon"
+      class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
       focusable="false"
       tabindex="-1"
       viewBox="0 0 16 16"
@@ -292,14 +81,12 @@ exports[`Checkbox w/ any props 1`] = `
     >
       <path
         d=""
-        data-marker="Checkbox.path"
         fill="currentColor"
       />
     </svg>
   </span>
   <span
-    class="c5 c6"
-    data-marker="Checkbox.Content"
+    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
   >
     Label
   </span>
@@ -308,105 +95,23 @@ exports[`Checkbox w/ any props 1`] = `
 
 exports[`Checkbox w/ checked and disabled 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #FEE600;
-  border-color: #FEE600;
-  color: #000000;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c5:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c0 .c6 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_7"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 fMqNTb"
     disabled=""
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
         checked=""
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox1"
         type="checkbox"
       />
       <svg
         checked=""
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 iWUwBx"
         disabled=""
         focusable="false"
         tabindex="-1"
@@ -415,127 +120,28 @@ Array [
       >
         <path
           d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #FEE600;
-  border-color: #FEE600;
-  color: #000000;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c0 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_8"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 fMqNTb"
     disabled=""
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
         checked=""
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox2"
         type="checkbox"
       />
       <svg
         checked=""
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 iWUwBx"
         disabled=""
         focusable="false"
         tabindex="-1"
@@ -544,14 +150,12 @@ Array [
       >
         <path
           d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5 c6"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
@@ -561,100 +165,21 @@ Array [
 
 exports[`Checkbox w/ disabled 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c5:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c0 .c6 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_5"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 fMqNTb"
     disabled=""
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox1"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 lmzwuE"
         disabled=""
         focusable="false"
         tabindex="-1"
@@ -663,122 +188,26 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c0 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_6"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 fMqNTb"
     disabled=""
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox2"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 lmzwuE"
         disabled=""
         focusable="false"
         tabindex="-1"
@@ -787,14 +216,12 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5 c6"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
@@ -804,89 +231,20 @@ Array [
 
 exports[`Checkbox w/ invalid 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  border-color: #F27C83;
-  background-color: #FDEEEE;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c5:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_9"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="true"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox1"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 iCpjgk"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -894,118 +252,25 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  border-color: #F27C83;
-  background-color: #FDEEEE;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c7 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_10"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="true"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox2"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 iCpjgk"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -1013,14 +278,12 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5 c6"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
@@ -1030,93 +293,19 @@ Array [
 
 exports[`Checkbox w/ label 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_1"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -1124,110 +313,31 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #FEE600;
-  border-color: #FEE600;
-  color: #000000;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_2"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
         checked=""
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         type="checkbox"
       />
       <svg
         checked=""
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -1235,14 +345,12 @@ Array [
       >
         <path
           d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
@@ -1252,78 +360,20 @@ Array [
 
 exports[`Checkbox w/ name 1`] = `
 Array [
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_3"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox1"
         type="checkbox"
       />
       <svg
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -1331,105 +381,27 @@ Array [
       >
         <path
           d=""
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
   </label>,
-  .c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-  background-color: #FEE600;
-  border-color: #FEE600;
-  color: #000000;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
-<label
-    class="c0"
-    data-marker="Checkbox_4"
+  <label
+    class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
   >
     <span
-      class="c1"
-      data-marker="Checkbox.IconBox"
+      class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
     >
       <input
         aria-invalid="false"
         checked=""
-        class="c2"
-        data-marker="Checkbox.Input"
+        class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
         name="Checkbox2"
         type="checkbox"
       />
       <svg
         checked=""
-        class="c3 c4"
-        data-marker="Checkbox.Icon"
+        class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
         focusable="false"
         tabindex="-1"
         viewBox="0 0 16 16"
@@ -1437,14 +409,12 @@ Array [
       >
         <path
           d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
-          data-marker="Checkbox.path"
           fill="currentColor"
         />
       </svg>
     </span>
     <span
-      class="c5"
-      data-marker="Checkbox.Content"
+      class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
     >
       Label
     </span>
@@ -1453,16 +423,11 @@ Array [
 `;
 
 exports[`Checkbox w/ onChange() 1`] = `
-<Checkboxstyles__Box
-  data-marker="Checkbox_15"
->
-  <Checkboxstyles__IconBox
-    data-marker="Checkbox.IconBox"
-  >
+<Checkboxstyles__Box>
+  <Checkboxstyles__IconBox>
     <Checkboxstyles__Input
       aria-invalid={false}
       checked={false}
-      data-marker="Checkbox.Input"
       name="checkbox"
       onBlur={[Function]}
       onChange={[Function]}
@@ -1472,7 +437,6 @@ exports[`Checkbox w/ onChange() 1`] = `
     <Checkboxstyles__Icon
       active={false}
       checked={false}
-      data-marker="Checkbox.Icon"
       focusable="false"
       indeterminate={false}
       size="m"
@@ -1482,13 +446,11 @@ exports[`Checkbox w/ onChange() 1`] = `
     >
       <path
         d=""
-        data-marker="Checkbox.path"
         fill="currentColor"
       />
     </Checkboxstyles__Icon>
   </Checkboxstyles__IconBox>
   <Checkboxstyles__Content
-    data-marker="Checkbox.Content"
     size="m"
   >
     Label
@@ -1497,109 +459,19 @@ exports[`Checkbox w/ onChange() 1`] = `
 `;
 
 exports[`Checkbox w/ size: l 1`] = `
-.c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 24px;
-  width: 24px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c7 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
 <label
-  class="c0"
-  data-marker="Checkbox_11"
+  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
 >
   <span
-    class="c1"
-    data-marker="Checkbox.IconBox"
+    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
   >
     <input
       aria-invalid="false"
-      class="c2"
-      data-marker="Checkbox.Input"
+      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
       type="checkbox"
     />
     <svg
-      class="c3 c4"
-      data-marker="Checkbox.Icon"
+      class="Checkboxstyles__Icon-sc-7b1pnz-1 fevQNn"
       focusable="false"
       tabindex="-1"
       viewBox="0 0 16 16"
@@ -1607,14 +479,12 @@ exports[`Checkbox w/ size: l 1`] = `
     >
       <path
         d=""
-        data-marker="Checkbox.path"
         fill="currentColor"
       />
     </svg>
   </span>
   <span
-    class="c5 c6"
-    data-marker="Checkbox.Content"
+    class="Checkboxstyles__Content-sc-7b1pnz-2 jEfea-D"
   >
     Label
   </span>
@@ -1622,109 +492,19 @@ exports[`Checkbox w/ size: l 1`] = `
 `;
 
 exports[`Checkbox w/ size: m 1`] = `
-.c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 20px;
-  width: 20px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c7 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
 <label
-  class="c0"
-  data-marker="Checkbox_11"
+  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
 >
   <span
-    class="c1"
-    data-marker="Checkbox.IconBox"
+    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
   >
     <input
       aria-invalid="false"
-      class="c2"
-      data-marker="Checkbox.Input"
+      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
       type="checkbox"
     />
     <svg
-      class="c3 c4"
-      data-marker="Checkbox.Icon"
+      class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
       focusable="false"
       tabindex="-1"
       viewBox="0 0 16 16"
@@ -1732,14 +512,12 @@ exports[`Checkbox w/ size: m 1`] = `
     >
       <path
         d=""
-        data-marker="Checkbox.path"
         fill="currentColor"
       />
     </svg>
   </span>
   <span
-    class="c5 c6"
-    data-marker="Checkbox.Content"
+    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
   >
     Label
   </span>
@@ -1747,109 +525,19 @@ exports[`Checkbox w/ size: m 1`] = `
 `;
 
 exports[`Checkbox w/ size: s 1`] = `
-.c1 {
-  position: relative;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.c4 {
-  display: block;
-  position: relative;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 4px;
-  border: 2px solid #D5D5D6;
-  cursor: pointer;
-  background-color: #FFFFFF;
-  height: 16px;
-  width: 16px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #000000;
-  margin-left: 8px;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c0 {
-  padding: 2px 0;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.c0:hover .c3 {
-  border-color: #2B2D33;
-}
-
-.c7:hover .c3 {
-  border-color: #2B2D33;
-  background-color: #ecedf0;
-  border-color: #ecedf0;
-  color: rgb(43,45,51,0.24);
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c7 .c5 {
-  opacity: 0.24;
-  color: #2B2D33;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.c2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: -1;
-}
-
 <label
-  class="c0"
-  data-marker="Checkbox_11"
+  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
 >
   <span
-    class="c1"
-    data-marker="Checkbox.IconBox"
+    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
   >
     <input
       aria-invalid="false"
-      class="c2"
-      data-marker="Checkbox.Input"
+      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
       type="checkbox"
     />
     <svg
-      class="c3 c4"
-      data-marker="Checkbox.Icon"
+      class="Checkboxstyles__Icon-sc-7b1pnz-1 ktXewH"
       focusable="false"
       tabindex="-1"
       viewBox="0 0 16 16"
@@ -1857,14 +545,12 @@ exports[`Checkbox w/ size: s 1`] = `
     >
       <path
         d=""
-        data-marker="Checkbox.path"
         fill="currentColor"
       />
     </svg>
   </span>
   <span
-    class="c5 c6"
-    data-marker="Checkbox.Content"
+    class="Checkboxstyles__Content-sc-7b1pnz-2 ciTVxy"
   >
     Label
   </span>

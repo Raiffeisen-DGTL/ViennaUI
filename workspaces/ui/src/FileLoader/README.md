@@ -22,6 +22,7 @@ import { FileLoader } from 'vienna-ui';
 | invalid | boolean \| undefined | false | Состояние ошибки |
 | disabled | boolean \| undefined | false | Неактивное состояние |
 | onChange | ((event: any, files: FCCFile[], errorFiles: FCCFileError[]) => void) \| undefined | false | Событие onChange |
+| localization | [FileLoaderLocalization](../FileLoader/localization.ts) | defaultFileLoaderLocalization | Локализация |
 
 ## Свойства Файла / File Props
 
@@ -76,6 +77,7 @@ return (
 ```
 
 ## Состояние ошибки
+
 ##### Свойство `invalid`
 
 Свойство `invalid` - окрашивает текст переданый в `children` (файлов) в красный цвет.
@@ -110,6 +112,7 @@ return (
 ```
 
 ## Неактивное состояние
+
 ##### Свойство `disabled`
 
 Свойство `disabled` - блокирует события `onClose` и `onClick`.
@@ -140,6 +143,7 @@ return (
 ```
 
 ## Множественный выбор
+
 ##### Свойство `multiple`
 
 Свойство аналогично нативному атрибуту - `true` или `false` в зависимости доступности загрузки нескольких или одного файлов.
@@ -170,6 +174,7 @@ return (
 ```
 
 ## Расширение файла(ов)
+
 ##### Свойство `accept`
 
 Свойство аналогично нативному атрибуту - перечесление через `,`.
@@ -184,7 +189,8 @@ return (
 </FormField>
 ```
 
-## Максимальный размер файла 
+## Максимальный размер файла
+
 ##### Свойство `maxSizeByte`
 
 Устанавливает максимально допустимый размер файла в байтах
@@ -204,6 +210,7 @@ return (
 ```
 
 ## Основной контент в поле
+
 ##### Свойство `content`
 
 ```jsx
@@ -235,6 +242,7 @@ return (
 ```
 
 ## Поле с дополнительным контентом
+
 ##### Свойство `subContent`
 
 ```jsx
@@ -248,6 +256,7 @@ return (
 ```
 
 ## Состояние ошибки в файле
+
 ##### Свойство `FileLoader.File`, `invalid`
 
 ```jsx
@@ -263,6 +272,7 @@ return (
 ```
 
 ## Обработка ошибок в файлах
+
 ##### Свойство `FileLoader.File`, `onChange`
 
 ```jsx
@@ -297,6 +307,7 @@ return (
 ```
 
 ## Состояние загрузки
+
 ##### Свойство `loading`
 
 ```jsx

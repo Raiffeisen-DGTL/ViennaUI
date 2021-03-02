@@ -18,6 +18,7 @@ const modal = getPresets('modal.window', {
 const icon = getPresets('modal.icon', {
     base: null,
     hover: null,
+    focus: null,
     custom: null,
 });
 
@@ -60,10 +61,17 @@ export const Box = styled.div<{ toggle?: boolean }>`
         `};
 `;
 
-export const CloseIcon = styled.div`
+export const CloseIcon = styled.div<{ isFocusStateVisible?: boolean }>`
     ${icon.base}
     &:hover {
         ${icon.hover}
     }
+    ${({ isFocusStateVisible }: any) =>
+        isFocusStateVisible &&
+        css`
+            &:focus {
+                ${icon.focus}
+            }
+        `}
     ${icon.custom}
 `;

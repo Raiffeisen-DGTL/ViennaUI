@@ -131,6 +131,7 @@ export const Postfix = styled.div<{
 `;
 
 export const Wrapped = styled.div<{ disabled?: boolean }>`
+    height: 100%;
     width: 100%;
     ${wrapped.base}
     & > *, input {
@@ -150,7 +151,7 @@ export const Wrapped = styled.div<{ disabled?: boolean }>`
         `}
 `;
 
-export const Wrapper = styled.div<{
+export const Wrapper = styled.label<{
     size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
     disabled?: boolean;
     invalid?: boolean;
@@ -191,4 +192,8 @@ export const PlaceholderWrapper = styled.div<{ size?: 'xs' | 's' | 'm' | 'l' | '
     height: 100%;
     display: flex;
     align-items: center;
+`;
+
+export const Invisible = styled.span`
+    color: transparent;
 `;

@@ -1,9 +1,11 @@
 import React, { useCallback, useState, useEffect, ForwardRefExoticComponent, RefAttributes, useRef } from 'react';
 import ReactDOM from 'react-dom';
+import ReactFocusLock from 'react-focus-lock';
 import { useDebounce, useWindowResize } from 'vienna.react-use';
 import { Close } from 'vienna.icons';
 import { Screen, ScreenSlots } from 'vienna.ui-primitives';
 import { Fade, Box, CloseIcon, Content } from './Drawer.styles';
+import { withTabFocusState } from '../Utils';
 
 const ANIMATION_DURATION = 400;
 
@@ -16,6 +18,7 @@ export interface DrawerProps extends React.PropsWithChildren<any> {
     orientation?: 'left' | 'right' | 'top' | 'bottom';
     onClose?: (data?: any) => void | boolean | Promise<boolean>;
     onPreDespose?: () => void;
+    ref?: any;
 }
 
 export interface DrawerSlots extends ScreenSlots {
@@ -205,23 +208,37 @@ export const Drawer: React.FC<DrawerProps> & DrawerSlots = React.forwardRef((pro
         return null;
     }
 
+    const WrappedCloseIcon = withTabFocusState((props) => (
+        <CloseIcon
+            tabIndex={0}
+            onClick={handleClose}
+            onKeyDown={(e: React.KeyboardEvent) => {
+                if (e.key === 'Enter') handleClose();
+            }}
+            {...props}>
+            {closeIcon}
+        </CloseIcon>
+    ));
+
     return (
         document &&
         ReactDOM.createPortal(
             init && (
-                <Fade id={id} show={show} onClick={handleClickFade} onMouseDown={fadeMouseDown}>
-                    <Box
-                        ref={windowRef}
-                        orientation={orientation}
-                        toggle={toggle}
-                        width={rect.width}
-                        height={rect.height}
-                        onClick={boxClickHandler}
-                        onMouseDown={boxMouseDown}>
-                        {closeIcon && <CloseIcon onClick={handleClose}>{closeIcon}</CloseIcon>}
-                        <Content>{children}</Content>
-                    </Box>
-                </Fade>
+                <ReactFocusLock returnFocus>
+                    <Fade id={id} show={show} onClick={handleClickFade} onMouseDown={fadeMouseDown}>
+                        <Box
+                            ref={windowRef}
+                            orientation={orientation}
+                            toggle={toggle}
+                            width={rect.width}
+                            height={rect.height}
+                            onClick={boxClickHandler}
+                            onMouseDown={boxMouseDown}>
+                            {closeIcon && <WrappedCloseIcon />}
+                            <Content>{children}</Content>
+                        </Box>
+                    </Fade>
+                </ReactFocusLock>
             ),
             document.body
         )

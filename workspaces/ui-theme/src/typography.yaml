@@ -75,19 +75,19 @@ heading:
       line-height: $typography.a.a1.height
   margin:
     xxs:
-      margin-bottom: 4px
+      margin-bottom: $layout.size.s1
     xs:
-      margin-bottom: 8px
+      margin-bottom: $layout.size.s2
     s:
-      margin-bottom: 12px
+      margin-bottom: $layout.size.s3
     m:
-      margin-bottom: 16px
+      margin-bottom: $layout.size.s4
     l:
-      margin-bottom: 20px
+      margin-bottom: $layout.size.s5
     xl:
-      margin-bottom: 24px
+      margin-bottom: $layout.size.s6
     xxl:
-      margin-bottom: 32px
+      margin-bottom: $layout.size.s8
 text:
   base:
     font-family: $typography.b.family
@@ -113,16 +113,16 @@ text:
       line-height: $typography.b.b1.height
   margin:
     xxs:
-      margin-bottom: 4px
+      margin-bottom: $layout.size.s1
     xs:
-      margin-bottom: 8px
+      margin-bottom: $layout.size.s2
     s:
-      margin-bottom: 12px
+      margin-bottom: $layout.size.s3
     m:
-      margin-bottom: 16px
+      margin-bottom: $layout.size.s4
     l:
-      margin-bottom: 20px
+      margin-bottom: $layout.size.s5
     xl:
-      margin-bottom: 24px
+      margin-bottom: $layout.size.s6
     xxl:
-      margin-bottom: 32px
+      margin-bottom: $layout.size.s8

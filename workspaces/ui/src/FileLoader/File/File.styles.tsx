@@ -145,7 +145,7 @@ export const Name = styled.div`
     transition: all 0.2s;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden
+    overflow: hidden;
     ${name.base}
     &:hover,
     &:focus {

@@ -3,31 +3,39 @@ imports: ['./typography.yaml']
 base:
   line-height: $typography.b.b2.height
   font-family: $typography.b.family
+  color: $color.primary.brand.primary
   text-decoration: none
   background-color: $color.primary.brand.white
   outline: none
   box-sizing: border-box
 
+placeholder:
+  base:
+    color: $color.primary.seattle.c60
+    line-height: auto
+  disabled:
+    color: $color.primary.london.c120
+
 size:
   xl:
     font-size: $typography.b.b2.size
-    padding: $layout.whitespace.xs $layout.whitespace.s
+    padding: $layout.size.s2 $layout.size.s3
     border-radius: $border.radius.m
   l:
     font-size: $typography.b.b2.size
-    padding: $layout.whitespace.xs $layout.whitespace.s
+    padding: $layout.size.s2 $layout.size.s3
     border-radius: $border.radius.m
   m:
     font-size: $typography.b.b2.size
-    padding: $layout.whitespace.xs $layout.whitespace.s
+    padding: $layout.size.s2 $layout.size.s3
     border-radius: $border.radius.m
   s:
     font-size: $typography.b.b1.size
-    padding: $layout.whitespace.xxs $layout.whitespace.xs
+    padding: $layout.size.s1 $layout.size.s2
     border-radius: $border.radius.m
   xs:
     font-size: $typography.b.b1.size
-    padding: $layout.whitespace.xxs $layout.whitespace.xs
+    padding: $layout.size.s1 $layout.size.s2
     border-radius: $border.radius.s
 
 design:
@@ -36,7 +44,7 @@ design:
     background-color: $color.primary.brand.white
     color: $color.primary.brand.primary
   material:
-    border-bottom: 1px solid $color.primary.seattle.c30
+    border-bottom: $border.width.s solid $color.primary.seattle.c30
     padding-bottom: 1px
     border-radius: 0
 
@@ -44,7 +52,7 @@ hover:
   outline:
     box-shadow: 0px 0px 0px 2px $color.primary.brand.primary
   material:
-    border-bottom: 2px solid $color.primary.brand.primary
+    border-bottom: $border.width.m solid $color.primary.brand.primary
 
 disabled:
   outline:
@@ -60,10 +68,10 @@ focused:
   outline:
     box-shadow: 0px 0px 0px 2px $color.primary.brand.primary
   material:
-    border-bottom: 1px solid $color.primary.brand.primary
+    border-bottom: $border.width.s solid $color.primary.brand.primary
 
 invalid:
   outline:
     box-shadow: 0px 0px 0px 1px $color.utilitarian.moscow.c100
   material:
-    border-bottom: 1px solid $color.utilitarian.moscow.c100
+    border-bottom: $border.width.s solid $color.utilitarian.moscow.c100

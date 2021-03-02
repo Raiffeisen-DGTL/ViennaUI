@@ -2,7 +2,6 @@
 
 Компонент может использоваться как прогресс-бар при заполнении и как статусная модель сущности.
 
-
 ## Импорт
 
 ```
@@ -11,14 +10,14 @@ import { Stepper } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-size | "s" \| "l" \| undefined | "s" |
-orientation | "horizontal" \| "vertical" \| undefined | "horizontal" | Тип направления
-responsive | boolean \| undefined | true | Отвечает за автоматическое определение длины шага 
-value | string \| undefined | false | Активный шаг
-error | string[] \| undefined | false | Шаги со статусом "Ошибка"
-valign | "top" \| "center" \| undefined | "center" | Выравнивание текста внутри шага. Доступно только для orientation='vertical'
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | "s" \| "l" \| undefined | "s" |
+| orientation | "horizontal" \| "vertical" \| undefined | "horizontal" | Тип направления |
+| responsive | boolean \| undefined | true | Отвечает за автоматическое определение длины шага |
+| value | string \| undefined | false | Активный шаг |
+| error | string[] \| undefined | false | Шаги со статусом "Ошибка" |
+| valign | "top" \| "center" \| undefined | "center" | Выравнивание текста внутри шага. Доступно только для orientation='vertical' |
 
 ## Использование
 
@@ -41,16 +40,19 @@ valign | "top" \| "center" \| undefined | "center" | Выравнивание т
 ```
 
 ## Активный шаг
+
 ##### Свойство `value`
 
 Выбранный шаг передается в свойство `value`. Данное значение должно совпадать с одним из значений свойства `value` дочернего компонента `Stepper.Step`
 
 ## Размеры
+
 ##### Свойство `size`
 
 Доступные размеры `size`: `s` и `l` (по умолчанию).
 
 ## Шаг со статусом "ошибка"
+
 ##### Свойство `error`
 
 Управлять отображением шагов со статусом "ошибка" можно с помошью свойства `error`.
@@ -65,6 +67,7 @@ valign | "top" \| "center" \| undefined | "center" | Выравнивание т
 ```
 
 ## Направление
+
 ##### Свойство `orientation`
 
 Значение поля `orientation` определяет верттикально / `vertical` или горизонтально / `horizontal` будет отображаться компонент. По умолчанию `horizontal`
@@ -78,7 +81,8 @@ valign | "top" \| "center" \| undefined | "center" | Выравнивание т
 </Stepper>
 ```
 
-## Адаптивная длина шага 
+## Адаптивная длина шага
+
 ##### Свойство `responsive`
 
 Данное свойство определяет раснягивется ли степпер по родительскому контейнеру, как для `orientation='horizontal'`, так и для `orientation='vertical'`. По умолчанию принимает значение `true`.
@@ -91,7 +95,8 @@ valign | "top" \| "center" \| undefined | "center" | Выравнивание т
 </Stepper>
 ```
 
-## Выравнивание текста 
+## Выравнивание текста
+
 ##### Свойство `valign`
 
 Текст внутри шага для вертикально ориентированного степпера можно выровнять по верхней границе / `top` или по центру / `center`

@@ -14,7 +14,11 @@ export const Mountains: React.FC<MountainsProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M8.388 12.845L4.682 18H2.218l6.025-8.38 2.162 2.5L14.5 4.992 21.972 18h-2.306L14.5 9.008l-3.765 6.552-2.347-2.715zM2 19h20v2H2v-2z' />
+            <path
+                fillRule='evenodd'
+                d='M14.02 4a1 1 0 01.848.504l8 14A1 1 0 0122 20H2a1 1 0 01-.894-1.447l5-10a1 1 0 011.788 0l1.203 2.405 4.055-6.488A1 1 0 0114.02 4zm-1.2 4.775l1.151.921 1.04-.91-1.05-1.838-1.141 1.827zm3.204 1.783l-1.366 1.195a1 1 0 01-1.283.028l-1.622-1.298-1.905 3.047a1 1 0 01-1.742-.083L7 11.237 3.618 18h16.659l-4.253-7.442z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

@@ -14,7 +14,12 @@ export const Cupboard: React.FC<CupboardProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M19 20v2h-2v1h-2v-1H9v1H7v-1H5V6h14v14zm-2 0V8h-4v12h4zM7 8v12h4V8H7zm7 5h2v3h-2v-3zm-6 0h2v3H8v-3zM5 3.74a15 15 0 0114 0V5h-2A13 13 0 007 5H5V3.74z' />
+            <path d='M7 12V9h2v3H7zm8-3v3h2V9h-2z' />
+            <path
+                fillRule='evenodd'
+                d='M3 3a1 1 0 011-1h16a1 1 0 011 1v16a1 1 0 01-1 1h-1v2h-2v-2H7v2H5v-2H4a1 1 0 01-1-1V3zm2 13v2h6v-2H5zm0-2h6V4H5v10zm8 2v2h6v-2h-6zm6-12h-6v10h6V4z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

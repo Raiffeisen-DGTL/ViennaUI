@@ -4,6 +4,7 @@ import { TableProps } from '../../Table';
 export interface BaseConfig {
     settings: {
         size?: TableProps['size'];
+        valign?: TableProps['valign'];
         noHeader?: TableProps['noHeader'];
         noRowDivider?: TableProps['noRowDivider'];
         maxHeight?: TableProps['maxHeight'];
@@ -22,6 +23,7 @@ export const BaseModule: Module = {
             noRowDivider,
             maxHeight,
             size,
+            valign,
             onRowClick,
             onRowDoubleClick,
             outlined,
@@ -34,6 +36,7 @@ export const BaseModule: Module = {
                 noRowDivider,
                 maxHeight,
                 size,
+                valign,
                 onRowClick,
                 onRowDoubleClick,
                 outlined,

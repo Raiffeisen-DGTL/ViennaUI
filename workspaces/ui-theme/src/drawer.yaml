@@ -33,7 +33,7 @@ window:
 content:
   base:
     # 100% - отступ крестика от верха - высота крестика - отступ контента от крестика
-    height: calc( 100% - $layout.whitespace.xxl - $layout.size.xs - $layout.whitespace.xxs )
+    height: calc( 100% - $layout.size.s8 - $layout.size.s6 - $layout.size.s1 )
 
 icon:
   base:
@@ -41,12 +41,15 @@ icon:
     position: relative
     display: inline-flex
     cursor: pointer
-    margin: $layout.whitespace.xxl 0 0 $layout.whitespace.xxl
+    margin: $layout.size.s8 0 0 $layout.size.s8
     left: 0
     top: 0
     width: auto
     height: auto
     justify-content: flex-start
     transition: all .2s
+    outline: none
   hover:
     color: $color.primary.brand.primary
+  focus:
+    outline: 1px solid $color.primary.oslo.c100

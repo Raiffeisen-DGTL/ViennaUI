@@ -1,5 +1,5 @@
 import { ExpandingRowModule } from './ExpandingRowModule';
-import { expandingRowService } from './ExpandingRowService';
+import { expandingRowService, expandingRowServiceId } from './ExpandingRowService';
 
 const moduleParams = {
     child: {
@@ -56,11 +56,18 @@ describe('ExpandingRow service', () => {
     };
 
     let newState: any = {};
-    const update = (state) => {
+    let serviceId = '';
+    const update = (id, state) => {
         newState = state;
+        serviceId = id;
     };
 
-    const service = expandingRowService(state, update, config);
+    beforeEach(() => {
+        serviceId = '';
+    });
+
+    const getState = () => state;
+    const service = expandingRowService(getState, update, config);
 
     test('getExpandingRow', () => {
         const expandingRow = service.getExpandingRow();
@@ -87,6 +94,7 @@ describe('ExpandingRow service', () => {
 
     test('toggleExpandingRow', () => {
         service.toggleExpandingRow('1');
+        expect(serviceId).toEqual(expandingRowServiceId);
         expect(newState.expandingRow.active).toBeUndefined();
 
         service.toggleExpandingRow('2');
@@ -108,7 +116,8 @@ describe('ExpandingRow service', () => {
         },
     };
 
-    const serviceMultiple = expandingRowService(stateMultiple, update, configMultiple);
+    const getStateMultiple = () => stateMultiple;
+    const serviceMultiple = expandingRowService(getStateMultiple, update, configMultiple);
 
     test('getExpandedRow multiple', () => {
         const expandedRow = serviceMultiple.getExpandedRow();
@@ -126,6 +135,8 @@ describe('ExpandingRow service', () => {
 
     test('toggleExpandingRow multiple', () => {
         serviceMultiple.toggleExpandingRow('1');
+        expect(serviceId).toEqual(expandingRowServiceId);
+
         let active = newState.expandingRow.active;
 
         expect(Array.isArray(active)).toBe(true);

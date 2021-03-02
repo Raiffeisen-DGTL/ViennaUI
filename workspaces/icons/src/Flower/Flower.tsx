@@ -14,7 +14,16 @@ export const Flower: React.FC<FlowerProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M18 8h-3v4h5.13l-1.25 10H8.12L6.87 12H13V5a3 3 0 013-3h5v3a3 3 0 01-3 3zm-.15 6H9.13l.75 6h7.22l.75-6zM15 5v1h3a1 1 0 001-1V4h-3a1 1 0 00-1 1zm-3 5H7a3 3 0 01-3-3V4h5a3 3 0 013 3v3zM6 7a1 1 0 001 1h3V7a1 1 0 00-1-1H6v1z' />
+            <path
+                fillRule='evenodd'
+                d='M15 2a3 3 0 00-3 3v7H7a1 1 0 00-.992 1.124l1 8A1 1 0 008 22h10a1 1 0 00.992-.876l1-8A1 1 0 0019 12h-5V8h3a3 3 0 003-3V2h-5zm-1 4h3a1 1 0 001-1V4h-3a1 1 0 00-1 1v1zM8.883 20l-.75-6h9.734l-.75 6H8.883z'
+                clipRule='evenodd'
+            />
+            <path
+                fillRule='evenodd'
+                d='M11 7a3 3 0 00-3-3H3v3a3 3 0 003 3h5V7zM8 6a1 1 0 011 1v1H6a1 1 0 01-1-1V6h3z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

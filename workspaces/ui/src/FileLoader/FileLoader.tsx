@@ -27,6 +27,7 @@ interface Props {
     /** Состояние ошибки */
     invalid?: boolean;
     /** Событие onChange */
+    ref?: React.Ref<HTMLInputElement>;
     onChange?: (event, files: FCCFile[], errorFiles: FCCFileError[]) => void;
 }
 
@@ -47,7 +48,11 @@ export const buildFileList = (files, accept, maxSizeByte) => {
         const accepts = accept?.split(',') ?? [];
         const correctAccept =
             !accept ||
-            accepts.some((ac) => ac.trim() === file.type || getFileExtension(file) === ac.trim().replace('.', ''));
+            accepts.some(
+                (ac: string) =>
+                    ac.trim() === file.type ||
+                    getFileExtension(file).toLowerCase() === ac.trim().replace('.', '').toLowerCase()
+            );
 
         // фильтруем по размеру
         const correctMaxSizeByte = (file.size ?? 0) <= maxSizeByte;

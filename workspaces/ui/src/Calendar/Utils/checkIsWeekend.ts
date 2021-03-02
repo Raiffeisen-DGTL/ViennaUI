@@ -1,18 +1,18 @@
 import { isEqual } from 'date-fns';
-import { dateFunction, DisabledDates } from '../types';
-import { getLocalDay } from './getLocalDay';
-import { SATURDAY_INDEX, SUNDAY_INDEX } from '../constants';
+import { dateFunction, DisabledDates, StartingWeekDay } from '../types';
+import { isSaturdayOrSunday } from './isSaturdayOrSunday';
 
 interface CheckIsWeekend {
     dates: DisabledDates.WEEKENDS | Date[] | dateFunction;
     date: Date;
+    startingWeekDay: StartingWeekDay;
 }
 
-export const checkIsWeekend = ({ dates, date }: CheckIsWeekend): boolean => {
+export const checkIsWeekend = ({ dates, date, startingWeekDay }: CheckIsWeekend): boolean => {
     let isDisabledOrWeekend = false;
 
     if (dates === DisabledDates.WEEKENDS) {
-        isDisabledOrWeekend = getLocalDay(date) === SUNDAY_INDEX || getLocalDay(date) === SATURDAY_INDEX;
+        isDisabledOrWeekend = isSaturdayOrSunday(date, startingWeekDay);
     }
 
     if (Array.isArray(dates)) {

@@ -2,7 +2,6 @@
 
 Данный компонент предназначен для наглядного представления данных типа `Date`. Используется в компоненте `Datepicker`, `DatepickerRange` и `DateTimePicker`.
 
-
 ## Импорт
 
 ```
@@ -11,23 +10,25 @@ import { Calendar } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-date | DateValue \| Date \| undefined | false | Selected/active date
-format | Format \| undefined | false |
-onChange | ((event: Event \| FormEvent \| null, options: DateResponse \| DateResponse) => void) \| undefined | false |
-defaultViewMode | ViewMode \| undefined | false | Начальный экран для отображения
-disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Неактивные дни
-weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Выходные дни
-eventDates | Date[] \| eventDateFunction \| undefined | false | Даты событий
-ranged | boolean \| undefined | false | Возможность выбора периода дат
-dateStart | DateValue \| Date \| undefined | false | Начальная дата для периода дат
-dateEnd | DateValue \| Date \| undefined | false | Конечная дата для периода дат
-todayButton | boolean \| undefined | false | Возможность убрать или отобразить кнопку "Сегодня"
-minDate | DateValue \| Date \| undefined | false | Нижняя граница доступных для выбора дат
-maxDate | DateValue \| Date \| undefined | false | Верхняя граница доступных для выбора дат
-mode | "day" \| "month" \| undefined | false | Тип календаря - выбор дня или месяца
-onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; value: string; }) => void) \| undefined | false | Обработчик для mode = ‘month’
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| date | DateValue \| Date \| undefined | false | Selected/active date |
+| format | Format \| undefined | false |
+| onChange | ((event: Event \| FormEvent \| null, options: DateResponse \| DateResponse) => void) \| undefined | false |
+| defaultViewMode | ViewMode \| undefined | false | Начальный экран для отображения |
+| disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Неактивные дни |
+| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Выходные дни |
+| eventDates | Date[] \| eventDateFunction \| undefined | false | Даты событий |
+| ranged | boolean \| undefined | false | Возможность выбора периода дат |
+| dateStart | DateValue \| Date \| undefined | false | Начальная дата для периода дат |
+| dateEnd | DateValue \| Date \| undefined | false | Конечная дата для периода дат |
+| todayButton | boolean \| undefined | false | Возможность убрать или отобразить кнопку "Сегодня" |
+| minDate | DateValue \| Date \| undefined | false | Нижняя граница доступных для выбора дат |
+| maxDate | DateValue \| Date \| undefined | false | Верхняя граница доступных для выбора дат |
+| mode | "day" \| "month" \| undefined | false | Тип календаря - выбор дня или месяца |
+| onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; value: string; }) => void) \| undefined | false | Обработчик для mode = ‘month’ |
+| localization | [CalendarLocalization](../Calendar/localization.ts) | defaultCalendarLocalization | Локализация |
+| locale | [Locale](https://github.com/date-fns/date-fns/blob/master/src/locale/index.js) | ru | [Локализация дат](https://date-fns.org/v2.17.0/docs/Locale) |
 
 ## Использование
 
@@ -36,6 +37,7 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Формат выбранной даты
+
 ##### Свойство `format`
 
 Календарь в качестве даты может принимать значение в двух форматах. За тип формата отвечает параметр `format` и может принимать значения `date` (по умолчанию) и `object`
@@ -46,6 +48,7 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Режим отображения
+
 ##### Свойство `defaultViewMode`
 
 Режим отображения календаря можно изменять с помощью параметра `defaultViewMode`.
@@ -69,10 +72,10 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Неактивные даты
+
 ##### Свойство `disabledDates`
 
-Даты, которые нельзя выбирать можно задать через параметр `disabledDates`.
-Эти дни можно передать как мыссив, строку "weekends" (для субботы и воскресенья) или функцию.
+Даты, которые нельзя выбирать можно задать через параметр `disabledDates`. Эти дни можно передать как мыссив, строку "weekends" (для субботы и воскресенья) или функцию.
 
 #### Массив дат
 
@@ -104,10 +107,10 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Специальные даты (даты событий)
+
 ##### Свойство `eventDates`
 
-Даты, которые отмечены меткой события задаются через параметр `eventDates`
-Эти дни можно передать как мыссив или функцию.
+Даты, которые отмечены меткой события задаются через параметр `eventDates` Эти дни можно передать как мыссив или функцию.
 
 #### Массив дат
 
@@ -141,10 +144,10 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Выходные дни
+
 ##### Свойство `weekendDates`
 
-Даты, которые должны быть отмечены как выходные дни, но доступны для выбора `weekendDates`
-Эти дни можно передать как мыссив, строку "weekends" (для субботы и воскресенья) или функцию.
+Даты, которые должны быть отмечены как выходные дни, но доступны для выбора `weekendDates` Эти дни можно передать как мыссив, строку "weekends" (для субботы и воскресенья) или функцию.
 
 #### Массив дат
 
@@ -176,6 +179,7 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Кнопка "Сегодня"
+
 ##### Свойство `todayButton`
 
 Кнопка "Сегодня" предназначена для выбора сегодняшней даты в календаре. По умолчанию она отображется, чтобы её убрать необходимо установить `todayButton` равным `false`
@@ -185,6 +189,7 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Границы выбора дат
+
 ##### Свойство `minDate`, `maxDate`
 
 Для задания границ выбора дат отвечают параметры `minDate` и `maxDate`. Выбор даты вне этих границ бцдет недоступен.
@@ -198,6 +203,7 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Выбор периода дат
+
 ##### Свойство `ranged`
 
 Чтобы дать возможность задавать период дат необходимо установить значение `ranged` в `true`. За управление начальной и конечноый датами периода отвечают параметры `dateStart` и `dateEnd` соответственно.
@@ -211,25 +217,30 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ```
 
 ## Выбор только месяца и года
+
 ##### Свойство `mode`
 
 Чтобы ограничить выбор даты только месяцем и годом, нужно передать в свойство `mode` значение `month`
 
 ```jsx
-{() => {
-    const [date, setDate] = React.useState();
-    const handleChangeMonth = React.useCallback((e, { date, value }) => {
-        setDate(date);
-    }, []);
-    return <Calendar date={date} mode='month' onChangeMonth={handleChangeMonth} />;
-}}
+{
+    () => {
+        const [date, setDate] = React.useState();
+        const handleChangeMonth = React.useCallback((e, { date, value }) => {
+            setDate(date);
+        }, []);
+        return <Calendar date={date} mode='month' onChangeMonth={handleChangeMonth} />;
+    };
+}
 ```
 
 ## Выбор даты / onChange
 
 ```jsx
-{() => {
-    const handleChange = React.useCallback((e, { date }) => {}, []);
-    return <Calendar onChange={handleChange} />;
-}}
+{
+    () => {
+        const handleChange = React.useCallback((e, { date }) => {}, []);
+        return <Calendar onChange={handleChange} />;
+    };
+}
 ```

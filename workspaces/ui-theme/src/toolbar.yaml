@@ -6,8 +6,8 @@ base:
   flex-direction: row
   align-items: center
   height: 62px
-  padding-left: $layout.whitespace.xl
-  padding-right: $layout.whitespace.xl
+  padding-left: $layout.size.s6
+  padding-right: $layout.size.s6
 design:
   dark:
     background-color: $color.primary.brand.primary
@@ -22,11 +22,11 @@ button:
 
 tab:
   base:
-    padding-left: $layout.whitespace.xxl
+    padding-left: $layout.size.s8
     cursor: pointer
     display: flex
     align-items: center
   button:
-    height: $layout.size.xs
+    height: $layout.size.s6
   inList:
-    padding: $layout.whitespace.xs $layout.whitespace.m
+    padding: $layout.size.s2 $layout.size.s4

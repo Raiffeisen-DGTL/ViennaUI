@@ -1,802 +1,363 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(16px *3);
-  min-width: calc(16px *3);
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.constructChildren.Option"
+    class="Optionstyles__Box-rh2rby-0 cWMvHe"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
-    data-marker="Breadcrumbs.Option"
+    class="Optionstyles__Box-rh2rby-0 gupWCO"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c10"
-    data-marker="Breadcrumbs.Option_0"
+    class="Optionstyles__Box-rh2rby-0 ctYDKa"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c11"
-    data-marker="Breadcrumbs.Option_1"
+    class="Optionstyles__Box-rh2rby-0 dGZwgj"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ less width with altText 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(16px *3);
-  min-width: calc(16px *3);
-}
-
 <div
-  data-marker="div"
   style="width:300px"
 >
   <div
-    class="c0"
-    data-marker="Breadcrumbs_2"
+    class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
   >
     <div
-      class="c1"
-      data-marker="Breadcrumbs.constructChildren.Option"
+      class="Optionstyles__Box-rh2rby-0 cWMvHe"
     >
       <div
-        class="c2"
+        class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c4"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 kVjDsf"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.Home"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="Home.defs"
-              />
+              <defs />
               <path
-                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-                data-marker="Home.path"
+                d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
               />
             </svg>
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.Home"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="Home.defs"
-              />
+              <defs />
               <path
-                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-                data-marker="Home.path"
+                d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
               />
             </svg>
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           />
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c6"
-      data-marker="Breadcrumbs.Option_6"
+      class="Optionstyles__Box-rh2rby-0 gupWCO"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c8"
+        class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 1
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 1
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Page 1
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c10"
-      data-marker="Breadcrumbs.Option_7"
+      class="Optionstyles__Box-rh2rby-0 ctYDKa"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c8"
+        class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 2
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 2
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Page 2
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c11"
-      data-marker="Breadcrumbs.Option_8"
+      class="Optionstyles__Box-rh2rby-0 dGZwgj"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c2"
+        class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 3
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 3
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Page 3
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -804,400 +365,180 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
 `;
 
 exports[`Breadcrumbs w/ less width without altText 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(16px *3);
-  min-width: calc(16px *3);
-}
-
 <div
-  data-marker="div_0"
   style="width:300px"
 >
   <div
-    class="c0"
-    data-marker="Breadcrumbs_3"
+    class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
   >
     <div
-      class="c1"
-      data-marker="Breadcrumbs.constructChildren.Option"
+      class="Optionstyles__Box-rh2rby-0 cWMvHe"
     >
       <div
-        class="c2"
+        class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c4"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 kVjDsf"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.Home"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="Home.defs"
-              />
+              <defs />
               <path
-                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-                data-marker="Home.path"
+                d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
               />
             </svg>
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.Home"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="Home.defs"
-              />
+              <defs />
               <path
-                d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-                data-marker="Home.path"
+                d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
               />
             </svg>
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           />
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c6"
-      data-marker="Breadcrumbs.Option_9"
+      class="Optionstyles__Box-rh2rby-0 gupWCO"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c8"
+        class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 1
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 1
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           />
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c10"
-      data-marker="Breadcrumbs.Option_10"
+      class="Optionstyles__Box-rh2rby-0 ctYDKa"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c8"
+        class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 2
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 2
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           />
-        </div>
+        </a>
       </div>
     </div>
     <div
-      class="c11"
-      data-marker="Breadcrumbs.Option_11"
+      class="Optionstyles__Box-rh2rby-0 dGZwgj"
     >
       <div
-        class="c7"
-        data-marker="Option.Icon"
+        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
       >
         <svg
-          data-marker="Option.Right"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Right.defs"
-          />
+          <defs />
           <path
-            d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-            data-marker="Right.path"
+            d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
           />
         </svg>
       </div>
       <div
-        class="c2"
+        class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
       >
-        <div
-          class="c3"
-          data-marker="Option.Wrapper"
+        <a
+          class="Optionstyles__Link-rh2rby-1 hRQBVh"
         >
           <div
-            class="c9"
-            data-marker="Option.Text"
+            class="Optionstyles__Text-rh2rby-2 dBiXdD"
           >
             Long Name Page 3
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           >
             Long Name Page 3
           </div>
           <div
-            class="c5"
-            data-marker="Option.HiddenText_0"
+            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
           />
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -1205,1719 +546,735 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(12px *3);
-  min-width: calc(12px *3);
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_0"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.constructChildren.Option"
+    class="Optionstyles__Box-rh2rby-0 fvUONB"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="16"
             viewBox="0 0 24 24"
             width="16"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="16"
             viewBox="0 0 24 24"
             width="16"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
-    data-marker="Breadcrumbs.Option_2"
+    class="Optionstyles__Box-rh2rby-0 iTypJl"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 wUhYH"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="12"
         viewBox="0 0 24 24"
         width="12"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c10"
-    data-marker="Breadcrumbs.Option_3"
+    class="Optionstyles__Box-rh2rby-0 iHTuaV"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 wUhYH"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="12"
         viewBox="0 0 24 24"
         width="12"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c11"
-    data-marker="Breadcrumbs.Option_4"
+    class="Optionstyles__Box-rh2rby-0 ceINFY"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 wUhYH"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="12"
         viewBox="0 0 24 24"
         width="12"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(16px *3);
-  min-width: calc(16px *3);
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_0"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.constructChildren.Option"
+    class="Optionstyles__Box-rh2rby-0 cWMvHe"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
-    data-marker="Breadcrumbs.Option_2"
+    class="Optionstyles__Box-rh2rby-0 gupWCO"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c10"
-    data-marker="Breadcrumbs.Option_3"
+    class="Optionstyles__Box-rh2rby-0 ctYDKa"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c11"
-    data-marker="Breadcrumbs.Option_4"
+    class="Optionstyles__Box-rh2rby-0 dGZwgj"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c8 {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c6:hover {
-  color: #2B2D33;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  min-width: 0px;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c10:hover {
-  color: #2B2D33;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  min-width: 0;
-  color: #2B2D33;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c11:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c9 {
-  display: inline;
-}
-
-.c5 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: calc(16px *3);
-  min-width: calc(16px *3);
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_0"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.constructChildren.Option"
+    class="Optionstyles__Box-rh2rby-0 bkGFWE"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="24"
             viewBox="0 0 24 24"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <svg
-            data-marker="Breadcrumbs.constructChildren.Home"
             fill="currentColor"
             height="24"
             viewBox="0 0 24 24"
             width="24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Home.defs"
-            />
+            <defs />
             <path
-              d="M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z"
-              data-marker="Home.path"
+              d="M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z"
             />
           </svg>
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c6"
-    data-marker="Breadcrumbs.Option_2"
+    class="Optionstyles__Box-rh2rby-0 eIkgSo"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 1
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c10"
-    data-marker="Breadcrumbs.Option_3"
+    class="Optionstyles__Box-rh2rby-0 hSCGbY"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c8"
+      class="Tooltipstyles__Box-c7nxm1-0 cxCtbY"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 2
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
   <div
-    class="c11"
-    data-marker="Breadcrumbs.Option_4"
+    class="Optionstyles__Box-rh2rby-0 kyhEfd"
   >
     <div
-      class="c7"
-      data-marker="Option.Icon"
+      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
     >
       <svg
-        data-marker="Option.Right"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Right.defs"
-        />
+        <defs />
         <path
-          d="M9.414 3H7.999v1.414L15.585 12l-7.586 7.586V21h1.415l9-9z"
-          data-marker="Right.path"
+          d="M14.44 11.854l-7.294 7.293 1.415 1.414 8-8a1 1 0 000-1.415l-8-8-1.415 1.415 7.293 7.293z"
         />
       </svg>
     </div>
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c9"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 dBiXdD"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           Long Name Page 3
         </div>
         <div
-          class="c5"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_1"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.Option_5"
+    class="Optionstyles__Box-rh2rby-0 fvUONB"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="16"
               viewBox="0 0 24 24"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="16"
               viewBox="0 0 24 24"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_1"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.Option_5"
+    class="Optionstyles__Box-rh2rby-0 cWMvHe"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="20"
               viewBox="0 0 24 24"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 3`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.c2 {
-  display: inline-block;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  color: #808185;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c3 {
-  position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c4 {
-  display: inline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  position: absolute;
-  z-index: -1;
-  visibility: hidden;
-}
-
 <div
-  class="c0"
-  data-marker="Breadcrumbs_1"
+  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
 >
   <div
-    class="c1"
-    data-marker="Breadcrumbs.Option_5"
+    class="Optionstyles__Box-rh2rby-0 bkGFWE"
   >
     <div
-      class="c2"
+      class="Tooltipstyles__Box-c7nxm1-0 dhsvcl"
     >
-      <div
-        class="c3"
-        data-marker="Option.Wrapper"
+      <a
+        class="Optionstyles__Link-rh2rby-1 hRQBVh"
       >
         <div
-          class="c4"
-          data-marker="Option.Text"
+          class="Optionstyles__Text-rh2rby-2 kVjDsf"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="24"
               viewBox="0 0 24 24"
               width="24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         >
           <div
-            class="c5"
-            data-marker="Breadcrumbs.constructChildren.BackIcon"
+            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
           >
             <svg
-              data-marker="Breadcrumbs.constructChildren.LeftArrow"
               fill="currentColor"
               height="24"
               viewBox="0 0 24 24"
               width="24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs
-                data-marker="LeftArrow.defs"
-              />
+              <defs />
               <path
-                d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-                data-marker="LeftArrow.path"
+                d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
               />
             </svg>
           </div>
-          <span
-            data-marker="Breadcrumbs.constructChildren.span"
-          >
+          <span>
             Вернуться к Long Name Page 1
           </span>
         </div>
         <div
-          class="c6"
-          data-marker="Option.HiddenText_0"
+          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
         />
-      </div>
+      </a>
     </div>
   </div>
 </div>

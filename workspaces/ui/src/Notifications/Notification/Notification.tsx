@@ -7,7 +7,7 @@ export interface Props {
     children: React.ReactNode;
     title?: React.ReactNode;
     actions?: React.ReactNode;
-    design?: 'plain' | 'error' | 'warning' | 'success';
+    design?: 'plain' | 'error' | 'warning' | 'success' | 'accent';
     delay?: number;
     compactBelow?: number;
     pinWithMouse?: boolean;

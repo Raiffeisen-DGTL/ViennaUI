@@ -11,7 +11,7 @@ dayWeek:
   color: $color.primary.seattle.c60
 
 body:
-  padding: $layout.whitespace.m
+  padding: $layout.size.s4
 
 navigationIconButton:
   base:
@@ -22,16 +22,16 @@ navigationIconButton:
 
 headerDoubleArrow:
   base:
-    margin-right: $layout.whitespace.xs
+    margin-right: $layout.size.s2
   lastChild:
-    margin-left: $layout.whitespace.xs
+    margin-left: $layout.size.s2
     margin-right: 0
 
 header:
   base:
-    height: $layout.size.xl
+    height: $layout.size.s12
     width: 100%
-    border-bottom: 1px solid $color.primary.seattle.c10
+    border-bottom: $border.width.s solid $color.primary.seattle.c10
   title:
     font-size: $typography.b.b2.size
     width: 130px
@@ -39,7 +39,7 @@ header:
 
 footer:
   border-top: 1px solid $color.primary.seattle.c10
-  height: $layout.size.xl
+  height: $layout.size.s12
   width: 100%
 
 cell:
@@ -56,11 +56,11 @@ day:
   base:
     font-size: $typography.b.b1.size
     cursor: pointer
-    color: $color.text.primary
+    color: $color.primary.brand.primary
   active:
     background-color: $color.primary.brand.accent
     border-radius: $border.radius.s
-    color: $color.text.primary
+    color: $color.primary.brand.primary
   today:
     font-weight: $typography.weight.bold
     color: $color.primary.oslo.c100
@@ -70,6 +70,11 @@ day:
     cursor: default
   disabled:
     color: $color.primary.london.c120
+    cursor: default
+  activeDisabled:
+    background-color: $color.primary.brand.wildsand
+    color: $color.primary.london.c120
+    border-radius: $border.radius.s
     cursor: default
   weekend:
     color: $color.primary.seattle.c60

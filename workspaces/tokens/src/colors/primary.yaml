@@ -1,76 +1,29 @@
 space: color
-desc: Основная бренд-палитра. Используется в цифровых продуктах и сервисах при выборе акцентного желтого для максимального внимания, off-black вместо черного, светло-серого и белого для заливок больших пространств, страниц и тд.
 primary:
   brand:
-    accent:
-      value: '#FEE600'
-      prop: background-color
-    onAccent:
-      value: '#FED500'
-      prop: background-color
-    primary:
-      value: '#2B2D33'
-      prop: background-color
-    onPrimary:
-      value: '#000000'
-      prop: background-color
-    wildsand:
-      value: '#F4F4F4'
-      prop: background-color
-    white:
-      value: '#FFFFFF'
-      prop: background-color
+    accent: '#FEE600'
+    onAccent: '#FED500'
+    primary: '#2B2D33'
+    onPrimary: '#000000'
+    wildsand: '#F4F4F4'
+    white: '#FFFFFF'
   seattle:
-    c01:
-      value: '#FBFBFB'
-      prop: background-color
-    c05:
-      value: '#F8F8F8'
-      prop: background-color
-    c10:
-      value: '#E9EAEA'
-      prop: background-color
-    c30:
-      value: '#D5D5D6'
-      prop: background-color
-    c60:
-      value: '#AAABAD'
-      prop: background-color
-    c100:
-      value: '#808185'
-      prop: background-color
-    c120:
-      value: '#55575C'
-      prop: background-color
-    c140:
-      value: '#404247'
-      prop: background-color
+    c01: '#FBFBFB'
+    c05: '#F8F8F8'
+    c10: '#E9EAEA'
+    c30: '#D5D5D6'
+    c60: '#AAABAD'
+    c100: '#808185'
+    c120: '#55575C'
+    c140: '#404247'
   oslo:
-    c10:
-      value: '#E6F6F8'
-      prop: background-color
-    c30:
-      value: '#B3E4EB'
-      prop: background-color
-    c60:
-      value: '#66C9D7'
-      prop: background-color
-    c100:
-      value: '#00A5BC'
-      prop: background-color
-    c120:
-      value: '#00809C'
-      prop: background-color
-    c140:
-      value: '#04607D'
-      prop: background-color
+    c10: '#E6F6F8'
+    c30: '#B3E4EB'
+    c60: '#66C9D7'
+    c100: '#00A5BC'
+    c120: '#00809C'
+    c140: '#04607D'
   london:
-    c40:
-      value: rgba(255, 255, 255, 0.64)
-      prop: background-color
-    c80:
-      value: rgba(255, 255, 255, 0.24)
-      prop: background-color
-    c120:
-      value: rgba(43, 45, 51, 0.24)
-      prop: background-color
+    c40: rgba(255, 255, 255, 0.64)
+    c80: rgba(255, 255, 255, 0.24)
+    c120: rgba(43, 45, 51, 0.24)

@@ -1,5 +1,5 @@
 import { GroupByModule } from './GroupByModule';
-import { groupByService } from './GroupByService';
+import { groupByService, groupByServiceId } from './GroupByService';
 
 describe('GroupBy module', () => {
     test('Init config', () => {
@@ -115,11 +115,14 @@ describe('GroupBy service', () => {
     };
 
     let newState: any = {};
-    const update = (state) => {
+    let serviceId = '';
+    const update = (id, state) => {
         newState = state;
+        serviceId = id;
     };
 
-    const service = groupByService(state, update, config);
+    const getState = () => state;
+    const service = groupByService(getState, update, config);
 
     test('GetGroupBy', () => {
         const groupBy = service.getGroupBy();
@@ -137,6 +140,7 @@ describe('GroupBy service', () => {
 
     test('SetGroupBy', () => {
         service.setGroupBy('group1');
+        expect(serviceId).toEqual(groupByServiceId);
         const newGroupBy = newState.groupBy;
 
         expect(newGroupBy).not.toBeUndefined();

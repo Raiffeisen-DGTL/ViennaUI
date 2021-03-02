@@ -14,7 +14,7 @@ export const RewindRight: React.FC<RewindRightProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M8 4.414V3h1.414l9 9-9 9H8v-1.414L15.586 12 8 4.414zM4 3h2v18H4V3z' />
+            <path d='M10.293 4.707L17.586 12l-7.293 7.293 1.414 1.414 8-8a1 1 0 000-1.414l-8-8-1.414 1.414zM8 3.5v17H6v-17h2z' />
         </svg>
     );
 };

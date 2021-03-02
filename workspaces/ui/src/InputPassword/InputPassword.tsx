@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Visible, Invisible } from 'vienna.icons';
+import { EyeOpened, EyeClosed } from 'vienna.icons';
 import { Input, InputProps } from '../Input';
 import { IconWrapper } from './InputPassword.styles';
 
@@ -7,7 +7,7 @@ export const InputPassword: React.FC<InputProps> = React.forwardRef(
     (props: InputProps, ref: React.Ref<HTMLInputElement>) => {
         const [visibility, setVisibility] = useState(false); // Включение / выключение видимости пароля
 
-        const Icon: any = visibility ? Visible : Invisible; // Иконка
+        const Icon: any = visibility ? EyeOpened : EyeClosed; // Иконка
 
         // Клик по иконке
         const handleClickIcon = useCallback(() => {

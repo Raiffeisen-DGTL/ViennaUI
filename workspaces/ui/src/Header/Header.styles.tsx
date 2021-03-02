@@ -78,6 +78,7 @@ const custom = getPresets('header.custom', {
     content: null,
     contentMobile: null,
     fade: null,
+    sideContent: null,
 });
 
 export const Box = styled.div<BoxProps>`
@@ -136,6 +137,7 @@ export const SideContent = styled.div<ContainerProps>`
     ${sideContent.base}
     ${sideContent.size}
     ${({ isMobile }: any) => isMobile && 'padding: 0'}
+    ${custom.sideContent}
 `;
 
 export const SearchContainer = styled.div<ContainerProps>`

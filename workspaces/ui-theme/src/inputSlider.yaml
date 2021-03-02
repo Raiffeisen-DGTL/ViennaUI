@@ -10,19 +10,19 @@ box:
 
 part:
   base:
-    width: $layout.size.xxs
+    width: $layout.size.s3
     opacity: 0;
 
 container:
   base:
     width: 100%;
   noInput:
-    top: $layout.whitespace.s
+    top: $layout.size.s3
 
 line:
   base:
     border-bottom-style: solid;
-    border-bottom-width: $layout.whitespace.xxs
+    border-bottom-width: $layout.size.s1
   front:
     border-bottom-color: $color.primary.brand.accent
   back:
@@ -43,16 +43,16 @@ line:
     xl:
       border-bottom-width: 6px
     l:
-      border-bottom-width: $layout.whitespace.xxs
+      border-bottom-width: $layout.size.s1
     s:
-      border-bottom-width: 2px
+      border-bottom-width: $border.width.m
     xs:
-      border-bottom-width: 1px
+      border-bottom-width: $border.width.s
 
 circle:
   base:
-    width: $layout.whitespace.m
-    height: $layout.whitespace.m
+    width: $layout.size.s4
+    height: $layout.size.s4
     border-radius: 40px
     top: -8px
     left: -8px
@@ -60,8 +60,8 @@ circle:
     cursor: pointer
   hover:
     outline: none
-    width: $layout.whitespace.l
-    height: $layout.whitespace.l
+    width: $layout.size.s5
+    height: $layout.size.s5
     top: -10px
     left: -10px
     background-color: $color.primary.brand.onAccent
@@ -71,8 +71,8 @@ circle:
 
 tags:
   base:
-    margin-top: $layout.whitespace.xs
-    height: $layout.whitespace.m
+    margin-top: $layout.size.s2
+    height: $layout.size.s4
     color: $color.primary.seattle.c60
 tag:
   base:
@@ -82,12 +82,12 @@ tag:
     cursor: pointer
   firstChild:
     outline:
-      left: $layout.whitespace.xs
+      left: $layout.size.s2
     material:
       left: 0px
   lastChild:
     outline:
-      right: $layout.whitespace.xs
+      right: $layout.size.s2
       left: unset
     material:
       right: 0px;

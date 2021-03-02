@@ -3,17 +3,17 @@ base:
   font-family: $typography.b.family
   border-radius: $border.radius.xl
   background-color: $color.primary.brand.white
-  padding: $layout.whitespace.xxl
+  padding: $layout.size.s8
   box-shadow: $shadow.basic.l
 header:
-  margin-bottom: $layout.whitespace.xxl
+  margin-bottom: $layout.size.s8
 footer:
-  margin-top: $layout.whitespace.xxl
+  margin-top: $layout.size.s8
 subtitle:
   color: $color.primary.seattle.c60
 contentTitle:
   color: $color.primary.seattle.c100
   font-size: 18px;
-  margin-bottom: $layout.whitespace.s
+  margin-bottom: $layout.size.s3
 contentTitleGap:
-  margin-top: $layout.whitespace.xxl
+  margin-top: $layout.size.s8

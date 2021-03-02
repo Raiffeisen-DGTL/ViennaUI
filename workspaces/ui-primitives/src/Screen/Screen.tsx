@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, Head, Title, SubTitle, Footer, LyaoutProps, Body, BodyProps } from './Screen.styles';
+import { Box, Title, SubTitle, Footer, LyaoutProps, BodyProps } from './Screen.styles';
+import { WrappedBody } from './WrappedBody';
+import { WrappedHead } from './WrappedHead';
 
 interface HTMLAttributeProps {
     [key: string]: any;
@@ -14,16 +16,15 @@ export interface ScreenSlots {
     Body: React.FC<BodyProps>;
     Footer: React.FC<LyaoutProps>;
 }
-
 export const Screen: React.FC<HTMLAttributeProps> & ScreenSlots = (props: HTMLAttributeProps) => {
     const { children, ...attr } = props;
     return <Box {...attr}>{children}</Box>;
 };
 
-Screen.Head = Head;
+Screen.Head = WrappedHead;
 Screen.Title = Title;
 Screen.SubTitle = SubTitle;
-Screen.Body = Body;
+Screen.Body = WrappedBody;
 Screen.Footer = Footer;
 
 Screen.displayName = 'Screen';

@@ -14,7 +14,11 @@ export const ArrowsLeftRight: React.FC<ArrowsLeftRightProps> = (props): JSX.Elem
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M7 10.727V12H5.727l-4-4 4-4H7v1.273L5.273 7H18v2H5.273L7 10.727zM18.273 12l4 4-4 4H17v-1.273L18.727 17H6v-2h12.727L17 13.273V12h1.273z' />
+            <path
+                fillRule='evenodd'
+                d='M7.414 8l2.293 2.293-1.414 1.414-4-4a1 1 0 010-1.414l4-4 1.414 1.414L7.414 6H19v2H7.414zm8.293 4.293l4 4a1 1 0 010 1.414l-4 4-1.414-1.414L16.586 18H5v-2h11.586l-2.293-2.293 1.414-1.414z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

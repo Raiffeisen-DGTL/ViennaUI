@@ -2,7 +2,7 @@
 
 exports[`Counter 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 eQsGEI"
+  class="Counterstyles__Box-f3lq56-0 eEWzFy"
 >
   18
 </span>
@@ -10,7 +10,7 @@ exports[`Counter 1`] = `
 
 exports[`Counter w/ any props 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 eQsGEI className"
+  class="Counterstyles__Box-f3lq56-0 eEWzFy className"
   id="Counter"
   title="title"
 >
@@ -20,7 +20,7 @@ exports[`Counter w/ any props 1`] = `
 
 exports[`Counter w/ design: accent 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 cCaivE"
+  class="Counterstyles__Box-f3lq56-0 bfFMsF"
 >
   18
 </span>
@@ -28,7 +28,7 @@ exports[`Counter w/ design: accent 1`] = `
 
 exports[`Counter w/ design: critical 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 dBmyGU"
+  class="Counterstyles__Box-f3lq56-0 TvxVN"
 >
   18
 </span>
@@ -36,7 +36,7 @@ exports[`Counter w/ design: critical 1`] = `
 
 exports[`Counter w/ design: disabled 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 iVMrQX"
+  class="Counterstyles__Box-f3lq56-0 bdkrgr"
 >
   18
 </span>
@@ -44,7 +44,7 @@ exports[`Counter w/ design: disabled 1`] = `
 
 exports[`Counter w/ design: neutral 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 eQsGEI"
+  class="Counterstyles__Box-f3lq56-0 eEWzFy"
 >
   18
 </span>
@@ -52,7 +52,7 @@ exports[`Counter w/ design: neutral 1`] = `
 
 exports[`Counter w/ design: success 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 igFKyr"
+  class="Counterstyles__Box-f3lq56-0 hRRVfc"
 >
   18
 </span>
@@ -60,7 +60,7 @@ exports[`Counter w/ design: success 1`] = `
 
 exports[`Counter w/ design: warning 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 kXEOzk"
+  class="Counterstyles__Box-f3lq56-0 fWIvvm"
 >
   18
 </span>
@@ -68,7 +68,7 @@ exports[`Counter w/ design: warning 1`] = `
 
 exports[`Counter w/ position: absolute 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 lmpgYJ"
+  class="Counterstyles__Box-f3lq56-0 dZa-Dui"
 >
   18
 </span>
@@ -76,7 +76,7 @@ exports[`Counter w/ position: absolute 1`] = `
 
 exports[`Counter w/ position: relative 1`] = `
 <span
-  class="Counterstyles__Box-oocehd-0 eQsGEI"
+  class="Counterstyles__Box-f3lq56-0 eEWzFy"
 >
   18
 </span>

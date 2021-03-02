@@ -1,8 +1,10 @@
 import React from 'react';
 import { MaskedRange } from 'imask';
+import { InputDateLocalizationProps, defaultInputDateLocalization, InputDateLocalization } from './localization';
 import InputMask, { InputMaskProps } from '../../InputMask';
+import { useLocalization } from '../../../Localization';
 
-interface Props extends Omit<InputMaskProps, 'type' | 'value' | 'min' | 'max'> {
+interface Props extends Omit<InputMaskProps, 'type' | 'value' | 'min' | 'max'>, InputDateLocalizationProps {
     /** Вариант маски (date по умолчанию) */
     type?: 'date' | 'time' | 'datetime';
     value?: string | Date;
@@ -18,7 +20,6 @@ const mask = (type, min, max): any => {
     switch (type) {
         case 'time':
             return {
-                placeholderMask: 'ЧЧ:ММ',
                 mask: 'HH:MM',
                 blocks: {
                     HH: {
@@ -35,7 +36,6 @@ const mask = (type, min, max): any => {
             };
         case 'datetime':
             return {
-                placeholderMask: 'ДД.ММ.ГГГГ ЧЧ:ММ',
                 mask: 'DATE HH:MM',
                 blocks: {
                     DATE: {
@@ -58,7 +58,6 @@ const mask = (type, min, max): any => {
         case 'date':
         default:
             return {
-                placeholderMask: 'ДД.ММ.ГГГГ',
                 mask: 'DATE',
                 blocks: {
                     DATE: {
@@ -121,9 +120,11 @@ const formatValue = (value?: string | Date, type?: 'date' | 'time' | 'datetime')
 
 export const InputDate = React.forwardRef((props: Props, ref: React.Ref<HTMLInputElement>) => {
     const { min, max, type = 'date', value, lazy = true, ...attrs } = props;
-    const { placeholderMask, ...maskProps } = mask(type, min, max);
+    const localize = useLocalization(props, defaultInputDateLocalization);
+    const maskProps = mask(type, min, max);
 
     const formatted = (value && formatValue(value, type)) || '';
+    const placeholderMask = localize(`ds.inputDate.placeholder.${type}` as keyof InputDateLocalization);
     const placeholder = `${formatted}${placeholderMask.substring(formatted.length, placeholderMask.length + 1)}`;
 
     return (

@@ -2,7 +2,7 @@
 
 exports[`RoundIcon 1`] = `
 <div
-  class="RoundIconstyles__Box-sc-15n018x-0 hUbeFl"
+  class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
   color="seattle10"
 >
   M
@@ -11,7 +11,7 @@ exports[`RoundIcon 1`] = `
 
 exports[`RoundIcon w/ any props 1`] = `
 <div
-  class="RoundIconstyles__Box-sc-15n018x-0 iWAKyw className"
+  class="RoundIconstyles__Box-sc-5md3j7-0 fdemmR className"
   color="seattle10"
   id="id"
   title="title"
@@ -22,7 +22,7 @@ exports[`RoundIcon w/ any props 1`] = `
 
 exports[`RoundIcon w/ clickable 1`] = `
 <div
-  class="RoundIconstyles__Box-sc-15n018x-0 iWAKyw"
+  class="RoundIconstyles__Box-sc-5md3j7-0 fdemmR"
   color="seattle10"
 >
   M
@@ -32,193 +32,193 @@ exports[`RoundIcon w/ clickable 1`] = `
 exports[`RoundIcon w/ color 1`] = `
 Array [
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hUbeFl"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
     color="seattle10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 kHHlDj"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kFfeAv"
     color="seattle60"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 gddvKa"
+    class="RoundIconstyles__Box-sc-5md3j7-0 hmVEsl"
     color="oslo10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hUiqmZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kIlhMQ"
     color="oslo60"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eBIeMu"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cBciza"
     color="miami10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hoWoOs"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bTTacc"
     color="miami100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hsHbnU"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bFACqE"
     color="nice10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cLGPlh"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bpNJkg"
     color="nice100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 fpTMsp"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dOlcex"
     color="dubai10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eeJPyD"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kQWfIq"
     color="dubai100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 feUzIt"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dUsOcC"
     color="paris10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 wvHqV"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cWkWsF"
     color="paris100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hDaKuJ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kvIGWi"
     color="sochi10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eigwmm"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ddBWLi"
     color="sochi100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 gugznH"
+    class="RoundIconstyles__Box-sc-5md3j7-0 isYkHE"
     color="tokyo10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cJWHYA"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ctiMJv"
     color="tokyo100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 kyyEuP"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ejhMXC"
     color="dublin10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 jNJFpZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iasWAa"
     color="dublin100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eqnHxq"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iRDuAn"
     color="bern10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 uqJgV"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kZrwc"
     color="bern100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 ktDsQQ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cxSGXr"
     color="manila10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 vmbWl"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fXrRMZ"
     color="manila100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 iwSMzM"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dKcLsd"
     color="tallin10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eLoGUO"
+    class="RoundIconstyles__Box-sc-5md3j7-0 grWbmP"
     color="tallin100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 bSeMYZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fLeagJ"
     color="seoul10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cvlgtD"
+    class="RoundIconstyles__Box-sc-5md3j7-0 jNQEJS"
     color="seoul100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 jojlPU"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fqFnZK"
     color="havana10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 vqsAh"
+    class="RoundIconstyles__Box-sc-5md3j7-0 llxRAQ"
     color="havana100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 ggABti"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bCPafS"
     color="madrid10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hDhffL"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bIWIEF"
     color="madrid100"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 lclPJf"
+    class="RoundIconstyles__Box-sc-5md3j7-0 jZWFvA"
     color="porto10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 iCEoJF"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cOBBrA"
     color="porto100"
   >
     M
@@ -229,7 +229,7 @@ Array [
 exports[`RoundIcon w/ color and icon 1`] = `
 Array [
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hUbeFl"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
     color="seattle10"
   >
     <svg
@@ -241,12 +241,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 kHHlDj"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kFfeAv"
     color="seattle60"
   >
     <svg
@@ -258,12 +263,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 gddvKa"
+    class="RoundIconstyles__Box-sc-5md3j7-0 hmVEsl"
     color="oslo10"
   >
     <svg
@@ -275,12 +285,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hUiqmZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kIlhMQ"
     color="oslo60"
   >
     <svg
@@ -292,12 +307,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eBIeMu"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cBciza"
     color="miami10"
   >
     <svg
@@ -309,12 +329,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hoWoOs"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bTTacc"
     color="miami100"
   >
     <svg
@@ -326,12 +351,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hsHbnU"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bFACqE"
     color="nice10"
   >
     <svg
@@ -343,12 +373,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cLGPlh"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bpNJkg"
     color="nice100"
   >
     <svg
@@ -360,12 +395,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 fpTMsp"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dOlcex"
     color="dubai10"
   >
     <svg
@@ -377,12 +417,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eeJPyD"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kQWfIq"
     color="dubai100"
   >
     <svg
@@ -394,12 +439,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 feUzIt"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dUsOcC"
     color="paris10"
   >
     <svg
@@ -411,12 +461,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 wvHqV"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cWkWsF"
     color="paris100"
   >
     <svg
@@ -428,12 +483,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hDaKuJ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kvIGWi"
     color="sochi10"
   >
     <svg
@@ -445,12 +505,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eigwmm"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ddBWLi"
     color="sochi100"
   >
     <svg
@@ -462,12 +527,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 gugznH"
+    class="RoundIconstyles__Box-sc-5md3j7-0 isYkHE"
     color="tokyo10"
   >
     <svg
@@ -479,12 +549,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cJWHYA"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ctiMJv"
     color="tokyo100"
   >
     <svg
@@ -496,12 +571,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 kyyEuP"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ejhMXC"
     color="dublin10"
   >
     <svg
@@ -513,12 +593,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 jNJFpZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iasWAa"
     color="dublin100"
   >
     <svg
@@ -530,12 +615,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eqnHxq"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iRDuAn"
     color="bern10"
   >
     <svg
@@ -547,12 +637,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 uqJgV"
+    class="RoundIconstyles__Box-sc-5md3j7-0 kZrwc"
     color="bern100"
   >
     <svg
@@ -564,12 +659,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 ktDsQQ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cxSGXr"
     color="manila10"
   >
     <svg
@@ -581,12 +681,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 vmbWl"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fXrRMZ"
     color="manila100"
   >
     <svg
@@ -598,12 +703,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 iwSMzM"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dKcLsd"
     color="tallin10"
   >
     <svg
@@ -615,12 +725,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 eLoGUO"
+    class="RoundIconstyles__Box-sc-5md3j7-0 grWbmP"
     color="tallin100"
   >
     <svg
@@ -632,12 +747,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 bSeMYZ"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fLeagJ"
     color="seoul10"
   >
     <svg
@@ -649,12 +769,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cvlgtD"
+    class="RoundIconstyles__Box-sc-5md3j7-0 jNQEJS"
     color="seoul100"
   >
     <svg
@@ -666,12 +791,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 jojlPU"
+    class="RoundIconstyles__Box-sc-5md3j7-0 fqFnZK"
     color="havana10"
   >
     <svg
@@ -683,12 +813,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 vqsAh"
+    class="RoundIconstyles__Box-sc-5md3j7-0 llxRAQ"
     color="havana100"
   >
     <svg
@@ -700,12 +835,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 ggABti"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bCPafS"
     color="madrid10"
   >
     <svg
@@ -717,12 +857,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hDhffL"
+    class="RoundIconstyles__Box-sc-5md3j7-0 bIWIEF"
     color="madrid100"
   >
     <svg
@@ -734,12 +879,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 lclPJf"
+    class="RoundIconstyles__Box-sc-5md3j7-0 jZWFvA"
     color="porto10"
   >
     <svg
@@ -751,12 +901,17 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 iCEoJF"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cOBBrA"
     color="porto100"
   >
     <svg
@@ -768,7 +923,12 @@ Array [
     >
       <defs />
       <path
-        d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+        clip-rule="evenodd"
+        d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
       />
     </svg>
   </div>,
@@ -777,7 +937,7 @@ Array [
 
 exports[`RoundIcon w/ icon 1`] = `
 <div
-  class="RoundIconstyles__Box-sc-15n018x-0 hUbeFl"
+  class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
   color="seattle10"
 >
   <svg
@@ -789,7 +949,12 @@ exports[`RoundIcon w/ icon 1`] = `
   >
     <defs />
     <path
-      d="M16.229 3.222l-.358-.21a7.755 7.755 0 01-8.883 3.699 5.913 5.913 0 015.935-2.632 6.28 6.28 0 001.486-1.707A8 8 0 004 10v2.958a8 8 0 1016 0V10a7.994 7.994 0 00-3.771-6.778zm-1.182 14.896a5.913 5.913 0 01-1.969.737V17h-2.031v1.875a5.954 5.954 0 01-2.094-.757v-.071a3.047 3.047 0 016.094 0v.071zM18 12.958c0 1.3-.424 2.564-1.208 3.6a5 5 0 00-9.579.006A5.957 5.957 0 016 12.964V10c.002-.487.063-.971.183-1.443A9.65 9.65 0 009.052 9a9.746 9.746 0 007.214-3.2A5.963 5.963 0 0118 10v2.958z"
+      clip-rule="evenodd"
+      d="M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z"
+      fill-rule="evenodd"
+    />
+    <path
+      d="M12 13c-5.41 0-8.5 4.598-8.5 9h2c0-3.598 2.473-7 6.5-7s6.5 3.402 6.5 7h2c0-4.402-3.09-9-8.5-9z"
     />
   </svg>
 </div>
@@ -798,31 +963,31 @@ exports[`RoundIcon w/ icon 1`] = `
 exports[`RoundIcon w/ size 1`] = `
 Array [
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 fbyUDD"
+    class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp"
     color="seattle10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 ptlij"
+    class="RoundIconstyles__Box-sc-5md3j7-0 ejGWTf"
     color="seattle10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 hUbeFl"
+    class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
     color="seattle10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 cPOWqw"
+    class="RoundIconstyles__Box-sc-5md3j7-0 cauzps"
     color="seattle10"
   >
     M
   </div>,
   <div
-    class="RoundIconstyles__Box-sc-15n018x-0 bSRmYj"
+    class="RoundIconstyles__Box-sc-5md3j7-0 dEYzYx"
     color="seattle10"
   >
     M

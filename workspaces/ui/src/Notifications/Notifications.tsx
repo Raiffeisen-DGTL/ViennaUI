@@ -110,6 +110,7 @@ export class Notifications extends React.PureComponent<NotificationsProps> {
                         error: presets.button(this.props),
                         warning: presets.button(this.props),
                         plain: presets.button(this.props),
+                        accent: presets.button(this.props),
                     },
                 },
             },

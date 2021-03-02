@@ -1,6 +1,6 @@
 import React, { FormEvent } from 'react';
 import { useCramList } from 'vienna.react-use';
-import { Other } from 'vienna.icons';
+import { MoreHor } from 'vienna.icons';
 import { Box } from './Toolbar.styles';
 import { Operation, Props as OperationProps } from './Operation';
 
@@ -33,7 +33,7 @@ export const Toolbar: React.FC<Props> & { Operation: React.FC<OperationProps> } 
     return (
         <Box ref={containerRef} design={design} {...attrs}>
             {left}
-            <Operation ref={extraComponentRef} design={design} icon={<Other />} label={'More operation'} hideElipsis>
+            <Operation ref={extraComponentRef} design={design} icon={<MoreHor />} label={'More operation'} hideElipsis>
                 {right}
             </Operation>
         </Box>

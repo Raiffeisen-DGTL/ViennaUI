@@ -1,28 +1,33 @@
 import React, { SVGAttributes } from 'react';
 
-export interface CheckMarkRingProps extends SVGAttributes<SVGElement> {
+export interface CheckmarkRingProps extends SVGAttributes<SVGElement> {
     [key: string]: any;
     size?: 'xs' | 's' | 'm' | 'l' | 'xl' | number;
     color?: string;
 }
 
 const sizes = { xs: 12, s: 16, m: 20, l: 24, xl: 32 };
-export const CheckMarkRing: React.FC<CheckMarkRingProps> = (props): JSX.Element => {
+export const CheckmarkRing: React.FC<CheckmarkRingProps> = (props): JSX.Element => {
     const { color = 'currentColor', size = 'm', ...attrs } = props;
     const d = sizes[size] || size;
 
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 15.414l-5-5V9h1.414L12 12.586 20.586 4H22v1.414l-10 10zm7.74-5.759l1.486-1.485a10.032 10.032 0 11-2.932-3.922l-1.345 1.345A8.131 8.131 0 1020.106 12a8.02 8.02 0 00-.366-2.345z' />
+            <path d='M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z' />
+            <path
+                fillRule='evenodd'
+                d='M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };
 
-CheckMarkRing.defaultProps = {
+CheckmarkRing.defaultProps = {
     size: 'm',
     color: 'currentColor',
 };
 
-CheckMarkRing.displayName = 'CheckMarkRing';
-export default CheckMarkRing;
+CheckmarkRing.displayName = 'CheckmarkRing';
+export default CheckmarkRing;

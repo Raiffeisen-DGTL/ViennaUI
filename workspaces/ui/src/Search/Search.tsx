@@ -52,6 +52,8 @@ export interface SearchProps {
 
     /** Максимальная высота выпадающего списка в пикселях */
     maxListHeight?: number;
+    /** Максимальная ширина выпадающего списка в пикселях */
+    maxListWidth?: number;
 
     /** Компонент неактивен если true */
     disabled?: boolean;
@@ -99,6 +101,7 @@ export interface SearchProps {
 
     /** Определяем значение которое надо вывести в компонент как текст выбранного значения */
     valueToString?: (item?: any) => string;
+    fixed?: boolean;
 }
 
 const handleMouseDownItem = (event) => event.preventDefault();
@@ -122,9 +125,11 @@ export const Search: React.FC<SearchProps> & { Item: React.FC<ItemProps> } = Rea
             onScroll,
             valueToString = (val): string => val?.toString() || '',
             maxListHeight,
+            maxListWidth,
             showInlineSuggest,
             wrapSuggestions,
             fitOptions = true,
+            fixed,
             ...attrs
         } = props;
 
@@ -185,12 +190,20 @@ export const Search: React.FC<SearchProps> & { Item: React.FC<ItemProps> } = Rea
         const handleSelect = useCallback(
             (e, value): void => {
                 if (!disabled && onSelect) {
+                    if (onChange) {
+                        onChange(e, { name, value: valueToString(value) || '', index: currentIndex });
+                    }
+
                     onSelect(e, { name, value });
                     setActive(false);
                 }
             },
-            [onSelect, name, disabled]
+            [onSelect, name, disabled, currentIndex, value]
         );
+
+        const handleHide = useCallback(() => {
+            setActive(false);
+        }, []);
 
         const hadleKeyDown = useCallback(
             (e): void => {
@@ -280,7 +293,14 @@ export const Search: React.FC<SearchProps> & { Item: React.FC<ItemProps> } = Rea
                     {...attrs}
                 />
                 {showList && (
-                    <DropList fitItems maxHeight={maxListHeight} fitOptions={fitOptions} onScroll={onScroll}>
+                    <DropList
+                        maxHeight={maxListHeight}
+                        width={maxListWidth}
+                        fitItems={fitOptions}
+                        fixed={fixed}
+                        followParentWhenScroll={fixed}
+                        onHide={handleHide}
+                        onScroll={onScroll}>
                         {constructItems()}
                     </DropList>
                 )}

@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 import React, { useEffect, useRef, useCallback } from 'react';
 import { getScrollParent, getScrollParents, isElementInViewport } from '../getScrollParent';
 import { useDebounce } from '../useDebounce';
@@ -6,6 +7,31 @@ interface Coords {
     x: number;
     y: number;
 }
+
+export interface UseDropCallbacks {
+    onHide?: () => void;
+}
+
+export interface UseDropConfig {
+    align: 'vertical' | 'horizontal';
+    float: 'start' | 'end';
+    margins: Coords;
+    fixed?: boolean;
+    coords?: Coords;
+    container?: any;
+    parentRef?: React.RefObject<any>;
+    followParentWhenScroll?: boolean;
+    callbacks?: UseDropCallbacks;
+    fitListToParent?: boolean;
+}
+
+// В коде используются разные расчеты для двух случаев позицианирования
+// 1 - fixed
+// 2 - absolute
+// разные расчеты требуются из-за того, что в случае с fixed и getBoundingClientRect все координаты считаются
+// относительно левого верхнего угла, т.е. right = left + width .
+// В случае с absolute left = 0 и right = 0 указывают отступ от левого и правого краев родительского (пближайшего relative) элемента.
+// Если возникают ошибки в позиционировании - следует проверить методы расчетов и обратить внимание на тип позиционирования.
 
 // Устанавливаем правильную начальную позицию относительно родителя
 const setInitPositionByParent = (
@@ -19,18 +45,22 @@ const setInitPositionByParent = (
     // Если элемент выпадает по горизонтали
     if (align === 'horizontal') {
         // Приоритет выпадания справа налево (элемент появится слева от родителя)
-        const right = fixed ? parentRect.right + parentRect.width + margins.x : parentRect.width + margins.x;
-        element.style.right = `${right}px`;
+        const left = fixed ? parentRect.left - element.offsetWidth - margins.x : -element.offsetWidth - margins.x;
+        element.style.left = `${left}px`;
         if (float === 'start') {
             // Элемент установится по нижнему краю с отступом
-            const bottom = fixed ? parentRect.bottom + margins.y : -margins.y;
-            element.style.bottom = `${bottom}px`;
-            element.style.top = ''; // сброс неопределенности, так как позиционные параметры более приоритетны, чем параметры размеров
+            const top = fixed ? parentRect.top + margins.y : margins.y;
+            element.style.top = `${top}px`;
+            element.style.bottom = ''; // сброс неопределенности, так как позиционные параметры более приоритетны, чем параметры размеров
         } else {
             // Элемент установится по верхнему краю с отступом
-            const top = fixed ? parentRect.top + margins.y : -margins.y;
-            element.style.top = `${top}px`;
-            element.style.bottom = ''; // --
+            if (fixed) {
+                element.style.top = `${parentRect.bottom - element.offsetHeight - margins.y}px`;
+                element.style.bottom = ''; // --
+            } else {
+                element.style.bottom = `${margins.y}px`;
+                element.style.top = ''; // --
+            }
         }
     }
     if (align === 'vertical') {
@@ -44,9 +74,13 @@ const setInitPositionByParent = (
             element.style.right = ''; // --
         } else {
             // Элемент установится по правому краю с отступом
-            const left = fixed ? parentRect.right - margins.x : -element.offsetWidth - margins.x;
-            element.style.left = `${left}px`;
-            element.style.right = ''; // --
+            if (fixed) {
+                element.style.left = `${parentRect.left - element.offsetWidth + parentRect.width - margins.x}px`;
+                element.style.right = ''; // --
+            } else {
+                element.style.right = `${-margins.x}px`;
+                element.style.left = ''; // --
+            }
         }
     }
 };
@@ -68,16 +102,17 @@ const fixFloat = (
 ) => {
     const elementRect = element.getBoundingClientRect();
     if (align === 'vertical') {
-        if (elementRect.left + elementRect.width > overflowRect.width) {
+        const left = fixed ? elementRect.left + elementRect.width : parentRect.left + elementRect.width + margins.x;
+        if (left > overflowRect.right) {
             element.style.left = `${
                 fixed
                     ? parentRect.right - elementRect.width - margins.x
                     : parentRect.width - margins.x - elementRect.width
             }px`;
         }
-    } else if (elementRect.top + elementRect.height > overflowRect.height) {
+    } else if (elementRect.top + elementRect.height > overflowRect.bottom) {
         element.style.top = '';
-        element.style.bottom = `${fixed ? parentRect.bottom : -margins.x}px`;
+        element.style.bottom = `${fixed ? parentRect.bottom + margins.y : margins.y}px`;
     }
 };
 
@@ -114,7 +149,7 @@ const resetPositionByParent = (
             const right = fixed ? parentRect.right + margins.x : parentRect.width + margins.x;
             element.style.right = `${right}px`;
             element.style.left = ''; // очищаем неопределенность
-            const top = fixed ? parentRect.top + margins.y : -margins.y;
+            const top = fixed ? parentRect.top + margins.y : margins.y;
             element.style.top = `${top}px`; // перекидываем вниз
         }
         // Если элемент ушел за левый край контейнера
@@ -123,7 +158,7 @@ const resetPositionByParent = (
             const left = fixed ? parentRect.left + margins.x : parentRect.width + margins.x;
             element.style.left = `${left}px`;
             element.style.right = ''; // --
-            const top = fixed ? parentRect.top + margins.y : -margins.y;
+            const top = fixed ? parentRect.top + margins.y : margins.y;
             element.style.top = `${top}px`; // --
         }
     }
@@ -143,10 +178,11 @@ const resetPositionByParent = (
     }
 
     // Если компонент ушел выше верхней границы
-    if (parentRect.top - rect.height < overflowElementRect.top) {
+    if (rect.top < overflowElementRect.top) {
         // Перерисовываем его вниз
-        const top = fixed ? parentRect.top + parentRect.height + margins.y : parentRect.height + margins.y;
+        const top = fixed ? parentRect.top + margins.y : margins.y;
         element.style.top = `${top}px`;
+        element.style.bottom = '';
     }
 
     // Ровняем компонент
@@ -171,7 +207,18 @@ const resetPositionByCoords = (element: HTMLElement, coords: Coords, margins = {
     }
 };
 
-const setElement = (dropRef, align, float, margins, fixed, coords, container?, parentRef?, scrollHandler?) => {
+const setElement = (
+    dropRef,
+    align,
+    float,
+    margins,
+    fixed,
+    coords,
+    container?,
+    parentRef?,
+    scrollHandler?,
+    fitListToParent?
+) => {
     const drop = dropRef.current as HTMLElement;
     if (drop) {
         // получаем родителя, относительно которого будем вести все расчеты
@@ -186,10 +233,16 @@ const setElement = (dropRef, align, float, margins, fixed, coords, container?, p
             // Устанавливаем position в зависимости от выбранной стратегии
             if (fixed) {
                 drop.style.position = 'fixed';
-                drop.style.minWidth = `${parent.offsetWidth}px`;
+                if (fitListToParent) {
+                    drop.style.minWidth = `${parent.offsetWidth}px`;
+                    drop.style.maxWidth = `${parent.offsetWidth}px`;
+                    drop.style.width = `${parent.offsetWidth}px`;
+                }
             } else {
                 drop.style.position = 'absolute';
                 drop.style.minWidth = ``;
+                drop.style.maxWidth = ``;
+                drop.style.width = '';
             }
 
             // Принудительный сброс позиции, если задана
@@ -229,7 +282,7 @@ const updateElement = (
     coords,
     container?,
     parentRef?,
-    callbacks?: Callbacks
+    callbacks?: UseDropCallbacks
 ) => {
     const drop = dropRef.current as HTMLElement;
     if (drop) {
@@ -284,21 +337,20 @@ const updateElement = (
     callbacks - события генерируемы хуком
 */
 
-interface Callbacks {
-    onHide?: () => void;
-}
+export const useDrop = (config: UseDropConfig): React.RefObject<any> => {
+    const {
+        align = 'vertical',
+        float = 'start',
+        margins = { x: 0, y: 0 },
+        fixed,
+        coords,
+        container,
+        parentRef,
+        followParentWhenScroll,
+        callbacks,
+        fitListToParent,
+    } = config;
 
-export const useDrop = (
-    align: 'vertical' | 'horizontal' = 'vertical',
-    float: 'start' | 'end' = 'start',
-    margins = { x: 0, y: 0 },
-    fixed?: boolean,
-    coords?: Coords,
-    container?: any,
-    parentRef?: React.RefObject<any>,
-    followParentWhenScroll?: boolean,
-    callbacks?: Callbacks
-): React.RefObject<any> => {
     const dropRef = useRef<HTMLElement>(null);
     const debouncerRender = useDebounce(setElement, 0); // Задержка рендера (так как приложение может быть сильно нагружено, повышаем шанс того, что все будет отрендерено)
     const debouncerScroll = useDebounce(updateElement, 0); // Задержка скрола
@@ -321,10 +373,22 @@ export const useDrop = (
             container,
             parentRef,
             followParentWhenScroll && scrollHandler,
+            fitListToParent,
             null // пустой параметр (debouncer ожидает последним аргументом функцию колбэк) TODO: пока кажется удобным, этот случай скорее исключение
         );
 
         const drop = dropRef.current as HTMLElement;
+
+        const overflowElement = container ?? (getScrollParent(parentRef?.current) as HTMLElement);
+        let resizeObserver;
+
+        // Включаем слежение за изменением размера родителя (все кроме IE)
+        if ((window as any)?.ResizeObserver && overflowElement) {
+            resizeObserver = new (window as any).ResizeObserver(() => {
+                scrollHandler();
+            });
+            resizeObserver.observe(overflowElement);
+        }
 
         return () => {
             // Выключаем событие скрола при анмаунте
@@ -332,6 +396,11 @@ export const useDrop = (
                 const parent = container ?? (drop.parentElement as HTMLElement);
                 const scrollable = getScrollParents(parent);
                 scrollable.forEach((s) => s.removeEventListener('scroll', scrollHandler));
+            }
+
+            // Выключаем слежение за размерами родителя
+            if (resizeObserver) {
+                resizeObserver.unobserve(overflowElement);
             }
         };
     }, [
@@ -346,6 +415,7 @@ export const useDrop = (
         container,
         followParentWhenScroll,
         parentRef,
+        fitListToParent,
     ]);
 
     return dropRef; // ссылка на управляемый элемент должна быть присвоена выпадающему элементу

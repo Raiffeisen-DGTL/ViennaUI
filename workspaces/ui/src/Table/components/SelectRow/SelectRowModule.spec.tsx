@@ -55,11 +55,24 @@ describe('SelectRow service', () => {
     const data = ['0', '1', '2', '3'];
 
     let newState: any = {};
-    const update = (state) => {
-        newState = state;
+    let serviceId = '';
+    const update = (id, updatedState) => {
+        serviceId = id;
+
+        if (typeof updatedState === 'function') {
+            newState = updatedState(state);
+        } else {
+            newState = updatedState;
+        }
     };
 
-    const service = selectRowService(state, update, data);
+    const getState = () => state;
+    const getData = () => data;
+    const service = selectRowService(getState, update, getData);
+
+    beforeEach(() => {
+        serviceId = '';
+    });
 
     test('getSelectedRows', () => {
         const selected = service.getSelectedRows();
@@ -84,25 +97,33 @@ describe('SelectRow service', () => {
     });
 
     test('selectRow', () => {
-        const selected = service.selectRow('3');
+        service.selectRow('3');
+        expect(serviceId).toEqual(SelectRowModule.name);
+        expect(newState.selectRow.selected).not.toBeUndefined();
+
+        const selected = newState.selectRow.selected;
 
         expect(Array.isArray(selected)).toBe(true);
         expect(selected).toHaveLength(3);
-        expect(selected[0]).toEqual('1');
-        expect(selected[2]).toEqual('3');
+        expect(selected.includes('3')).toBe(true);
     });
 
     test('deselectRow', () => {
-        const selected = service.deselectRow('2');
+        service.deselectRow('2');
+        expect(serviceId).toEqual(SelectRowModule.name);
+        expect(newState.selectRow.selected).not.toBeUndefined();
+
+        const selected = newState.selectRow.selected;
 
         expect(Array.isArray(selected)).toBe(true);
         expect(selected).toHaveLength(2);
-        expect(selected[0]).toEqual('1');
+        expect(selected.includes('2')).toBe(false);
     });
 
     test('toggleSelectRow', () => {
         // select '2'
         service.toggleSelectRow('2', true);
+        expect(serviceId).toEqual(SelectRowModule.name);
         expect(newState.selectRow.selected).not.toBeUndefined();
         let selected = newState.selectRow.selected;
 
@@ -141,9 +162,10 @@ describe('SelectRow service', () => {
         state.selectRow.selected = [];
 
         // select group
-        const group = { isGroupTitle: true, id: 'test', filter: (i) => i > 2 };
+        const group = { isGroupTitle: true, id: 'test', title: 'test', filter: (i) => i > 2 };
         service.toggleSelectGroup(group, true);
 
+        expect(serviceId).toEqual(SelectRowModule.name);
         expect(newState.selectRow.selected).not.toBeUndefined();
         let selected = newState.selectRow.selected;
 
@@ -162,6 +184,7 @@ describe('SelectRow service', () => {
     test('selectAll', () => {
         service.selectAll(['0', '1', '2']);
         expect(newState.selectRow.selected).not.toBeUndefined();
+        expect(serviceId).toEqual(SelectRowModule.name);
         const selected = newState.selectRow.selected;
 
         expect(Array.isArray(selected)).toBe(true);

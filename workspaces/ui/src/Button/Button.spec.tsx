@@ -1,5 +1,5 @@
 import React from 'react';
-import { LeftArrow, ArrowRight, Logo } from 'vienna.icons';
+import { Back, Forward, Logo } from 'vienna.icons';
 import { Button, ButtonProps } from './Button';
 
 test('Button', () => {
@@ -85,13 +85,13 @@ test('Button w/ icons', () => {
     const snap = snapshot.render(
         <>
             <Button>
-                <LeftArrow /> Назад
+                <Back /> Назад
             </Button>
             <Button>
-                Вперед <ArrowRight />
+                Вперед <Forward />
             </Button>
             <Button>
-                <LeftArrow /> Вперед <ArrowRight />
+                <Back /> Вперед <Forward />
             </Button>
         </>
     );

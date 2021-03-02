@@ -4,31 +4,38 @@
 import React, { useState, useRef, useCallback, useEffect, useMemo } from 'react';
 import { addDays, isAfter, isBefore, isEqual, isSameDay, lastDayOfMonth, subDays, isSameMonth } from 'date-fns';
 import { DateItem, DayType, MonthProps, RangeDate } from '../types';
-import { DAYS_OF_WEEK, MONDAY_INDEX, SUNDAY_INDEX, WEEK_LENGTH } from '../constants';
-import { Day, WeekDay, DayState, RangeSelectionStart, RangeSelectionEnd } from '../Calendar.styles';
-import { checkIsDisabled, checkIsWeekend } from '../Utils';
+import { MONDAY_INDEX, SUNDAY_INDEX, WEEK_LENGTH } from '../constants';
+import { Day, DayState, RangeSelectionStart, RangeSelectionEnd } from '../Calendar.styles';
+import { checkIsDisabled, checkIsWeekend, getLocalDay } from '../Utils';
+import { DaysWeek } from '../DaysWeek';
 
 export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: MonthProps<RangeDate<Date>>) => {
-    const { displayedDate, weekendDates, onChangeDate, minDate, maxDate, eventDates, disabledDates, date } = props;
+    const {
+        displayedDate,
+        weekendDates,
+        onChangeDate,
+        minDate,
+        maxDate,
+        eventDates,
+        disabledDates,
+        date,
+        startingWeekDay,
+    } = props;
     const [dateState, setDateState] = useState<RangeDate<Date> | undefined>();
     const [days, setDays] = useState<DateItem[]>([]);
     const [hoveredDay, setHoveredDay] = useState<DateItem>();
     const dayEl = useRef<HTMLDivElement>(null);
     const today: Date = new Date();
 
-    const daysWeek = useMemo(() => {
-        return DAYS_OF_WEEK.map((day: string, index: number) => <WeekDay key={index}>{day}</WeekDay>);
-    }, [dayEl]);
-
-    const defineActiveDate = (options: { date?: RangeDate<Date>; day: DateItem }) => {
+    const defineActiveDate = (options: { date?: RangeDate<Date>; day: Date }) => {
         const displayedMonth = displayedDate.getMonth();
 
         return (
             options.date &&
             options.date.start &&
-            (isEqual(options.day.value, options.date.start) ||
-                (options.date.end && isEqual(options.day.value, options.date.end))) &&
-            displayedMonth === options.day.value.getMonth()
+            (isEqual(options.day, options.date.start) ||
+                (options.date.end && isEqual(options.day, options.date.end))) &&
+            displayedMonth === options.day.getMonth()
         );
     };
 
@@ -49,7 +56,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
             isAfter(options.day.value, options.date.start) &&
             isSameMonth(displayedDate, options.day.value);
 
-        return dayBetweenStartAndEnd || dayBetweenStartAndHovered;
+        return dayBetweenStartAndEnd ?? dayBetweenStartAndHovered;
     };
 
     const handleChangeDate = useCallback(
@@ -59,14 +66,13 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
             if (
                 !dateState ||
                 (dateState && !dateState.start) ||
-                (dateState && dateState.start && dateState.end) ||
-                (dateState && dateState.start && isAfter(dateState.start, dateValue))
+                (dateState?.start && dateState.end) ||
+                (dateState?.start && isAfter(dateState.start, dateValue))
             ) {
                 nextDate = { start: dateValue };
             }
             if (
-                dateState &&
-                dateState.start &&
+                dateState?.start &&
                 !dateState.end &&
                 (isAfter(dateValue, dateState.start) || isSameDay(dateValue, dateState.start))
             ) {
@@ -84,7 +90,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
 
     const handleMouseOverOnDay = useCallback(
         (day: DateItem) => () => {
-            if (dateState && dateState.start && !dateState.end && isAfter(day.value, dateState.start)) {
+            if (dateState?.start && !dateState.end && isAfter(day.value, dateState.start)) {
                 setHoveredDay(day);
             } else {
                 setHoveredDay(undefined);
@@ -101,11 +107,8 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
         return days.map((day: DateItem, index: number) => {
             const type = day.type;
             const component = day.component;
-            const isActive = defineActiveDate({ date, day });
             const isRanged = defineRangedDate({ date, day });
-            if (isActive) {
-                type.push(DayType.ACTIVE);
-            }
+            const isActive = type.includes(DayType.ACTIVE) || type.includes(DayType.ACTIVE_DISABLED);
             if (isRanged) {
                 type.push(DayType.RANGE);
             }
@@ -123,32 +126,28 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
 
             return (
                 <Day
+                    key={index}
                     type={type}
                     ref={dayEl}
-                    key={index}
                     onClick={canChange ? handleChangeDate(day.value) : undefined}
                     onMouseOver={handleMouseOverOnDay(day)}
                     onMouseOut={handleMouseOutOnDay}>
                     {rangeSelection}
-                    {component || <DayState>{day.label}</DayState>}
+                    {component ?? <DayState>{day.label}</DayState>}
                 </Day>
             );
         });
     }, [days, dateState, displayedDate]);
 
-    const getLocalDay = (nextDate: Date) => {
-        return nextDate.getDay() === 0 ? SUNDAY_INDEX : nextDate.getDay();
-    };
-
     const build = useCallback(
-        (inputDate: Date = (dateState && dateState.start) || today) => {
+        (inputDate: Date = dateState?.start ?? today) => {
             const monthDays = lastDayOfMonth(inputDate).getDate();
 
             const firstDay = new Date(inputDate.getFullYear(), inputDate.getMonth(), 1);
-            const firstDayOfWeek = getLocalDay(firstDay);
+            const firstDayOfWeek = getLocalDay(firstDay, startingWeekDay);
 
             const lastDay = new Date(inputDate.getFullYear(), inputDate.getMonth(), monthDays);
-            const lastDayOfWeek = getLocalDay(lastDay);
+            const lastDayOfWeek = getLocalDay(lastDay, startingWeekDay);
 
             const days: DateItem[] = [];
 
@@ -184,12 +183,24 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
                     }
                 }
 
-                if (weekendDates && checkIsWeekend({ dates: weekendDates, date: value })) {
+                if (weekendDates && checkIsWeekend({ dates: weekendDates, date: value, startingWeekDay })) {
                     type = [...type, DayType.WEEKEND];
                 }
 
-                if (checkIsDisabled({ dates: disabledDates, maxDate, minDate, date: value })) {
+                const isActive = defineActiveDate({ date, day: value });
+                const isDisabled = checkIsDisabled({
+                    dates: disabledDates,
+                    maxDate,
+                    minDate,
+                    date: value,
+                    startingWeekDay,
+                });
+                if (isDisabled && isActive) {
+                    type = [DayType.ACTIVE_DISABLED];
+                } else if (isDisabled) {
                     type = [DayType.DISABLED];
+                } else if (isActive) {
+                    type = [DayType.ACTIVE];
                 }
 
                 days.push({
@@ -212,13 +223,13 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
 
             setDays(days);
         },
-        [displayedDate, onChangeDate, minDate, maxDate, eventDates, disabledDates, date, hoveredDay]
+        [displayedDate, onChangeDate, minDate, maxDate, eventDates, disabledDates, date, hoveredDay, startingWeekDay]
     );
 
     const initDate = useCallback(() => {
         setDateState(date);
-        build(displayedDate || (date && date.start) || today);
-    }, [build]);
+        build(displayedDate || date?.start);
+    }, [build, date, displayedDate]);
 
     useEffect(() => {
         initDate();
@@ -226,7 +237,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props: Mon
 
     return (
         <>
-            {daysWeek}
+            <DaysWeek startingWeekDay={startingWeekDay} />
             {monthDays}
         </>
     );

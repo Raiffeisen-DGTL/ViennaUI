@@ -2,5 +2,5 @@ space: datepicker
 calendar:
   border-radius: $border.radius.m
   box-shadow: $shadow.basic.xl
-  top: $layout.whitespace.xs
+  top: $layout.size.s2
   z-index: '9'

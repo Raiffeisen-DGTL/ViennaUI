@@ -3,7 +3,7 @@ space: datetimepicker
 left:
   base:
     min-width: 136px
-    margin-right: $layout.whitespace.xs
+    margin-right: $layout.size.s2
 
 right:
   base:

@@ -14,7 +14,12 @@ export const Consultation: React.FC<ConsultationProps> = (props): JSX.Element =>
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 11.831a4 4 0 01-4-4v-1a4 4 0 118 0v1a4 4 0 01-4 4zm-2-5v1a2 2 0 104 0v-1a2 2 0 10-4 0zm1 15v-6h2v6l-1 1-1-1zm0-9h2v2h-2v-2zm7.4 2.831l1.6 7.173h-2.052l-1.5-6.735a1.624 1.624 0 00-1.576-1.269H14v-2h.871a3.593 3.593 0 013.529 2.831zm-12.8 0a3.593 3.593 0 013.528-2.831H10v2h-.869a1.624 1.624 0 00-1.576 1.265l-1.5 6.735H4l1.6-7.169z' />
+            <path
+                fillRule='evenodd'
+                d='M12 2a5 5 0 100 10 5 5 0 000-10zM9 7a3 3 0 116 0 3 3 0 01-6 0z'
+                clipRule='evenodd'
+            />
+            <path d='M13 16v-2h-2v2h2zm0 2v4h-2v-4h2zm-4.634-4.195C5.21 15.322 3.5 18.7 3.5 22h2c0-2.673 1.39-5.267 3.732-6.393l-.866-1.802zm6.402 1.802C17.11 16.734 18.5 19.327 18.5 22h2c0-3.299-1.71-6.678-4.865-8.195l-.867 1.802z' />
         </svg>
     );
 };

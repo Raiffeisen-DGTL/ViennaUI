@@ -1,199 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c3 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #2B2D33;
-  color: #FFFFFF;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c4 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
 <span
-  class="c0"
-  data-marker="Popover"
+  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
   tabindex="0"
 >
   <button
-    class="c1"
-    data-marker="Button"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click me
     </span>
   </button>
   <div
-    class="c3"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 ckagnX"
     width="250"
   >
     <div
-      class="c4"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c6"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -202,319 +50,81 @@ exports[`Popover 1`] = `
 `;
 
 exports[`Popover w/ any props 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c3 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c2 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
 <span
-  class="c0"
-  data-marker="Popover_3"
+  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
   id="id"
   tabindex="0"
   title="title"
 >
   <div
-    class="c1"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c2"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c3"
-      data-marker="Popover.Header"
-    />
-    <div
-      class="c4"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     />
   </div>
 </span>
 `;
 
 exports[`Popover w/ design 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c3 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #2B2D33;
-  color: #FFFFFF;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c4 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
 <span
-  class="c0"
-  data-marker="Popover_0"
+  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
   tabindex="0"
 >
   <button
-    class="c1"
-    data-marker="Button_0"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click me
     </span>
   </button>
   <div
-    class="c3"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 ckagnX"
     width="250"
   >
     <div
-      class="c4"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c6"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -523,199 +133,47 @@ exports[`Popover w/ design 1`] = `
 `;
 
 exports[`Popover w/ design 2`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c3 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c4 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
 <span
-  class="c0"
-  data-marker="Popover_0"
+  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
   tabindex="0"
 >
   <button
-    class="c1"
-    data-marker="Button_0"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click me
     </span>
   </button>
   <div
-    class="c3"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c4"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c6"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>

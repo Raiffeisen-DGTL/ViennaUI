@@ -15,15 +15,15 @@ import { Heading, H1, H2, H3, H4, H5, Text, P, Span } from 'vienna-ui';
 
 Свойства наследуются от [HTMLAttributes<HTMLDivElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1746)
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | "m" |
-color | "brand-accent" \| "brand-white" \| "brand-primary" \| "geneva100" \| "moscow100" \| "osaka100" \| "seattle01" \| "seattle05" \| "seattle10" \| "seattle30" \| "seattle60" \| "seattle100" \| "seattle120" \| "seattle140" \| "currentColor" \| undefined | "brand-primary" |
-margin | "xs" \| "s" \| "m" \| "l" \| "xl" \| "none" \| "xxs" \| "xxl" \| undefined | false |
-uppercase | boolean \| undefined | false | Флаг, управляющий написанием контента заглавными буквами
-
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | "m" |
+| color | "brand-accent" \| "brand-white" \| "brand-primary" \| "geneva100" \| "moscow100" \| "osaka100" \| "seattle01" \| "seattle05" \| "seattle10" \| "seattle30" \| "seattle60" \| "seattle100" \| "seattle120" \| "seattle140" \| "currentColor" \| undefined | "brand-primary" |
+| margin | "xs" \| "s" \| "m" \| "l" \| "xl" \| "none" \| "xxs" \| "xxl" \| undefined | false |
+| uppercase | boolean \| undefined | false | Флаг, управляющий написанием контента заглавными буквами |
 
 # Заголовки
+
 ##### Компоненты `Heading`, `H1`, `H2`, `H3`, `H4`, `H5`
 
 ## Использование
@@ -38,6 +38,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 ## Цвет
+
 ##### Свойство `color`
 
 Свойство `color` имеет значения `brand-accent`, `brand-white`, `brand-primary`, `geneva100`, `moscow100`, `osaka100`, `seattle01`, `seattle05`, `seattle10`, `seattle20`, `seattle40`, `seattle60`, `seattle80`, `seattle90`.
@@ -47,6 +48,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 #### Цвет по умолчанию
+
 ##### Свойство `color='currentColor'`
 
 Так же свойство `color` поддерживает значение `currentColor`, которое позволяет установить значение цвета типографики в одноименное значение.
@@ -58,6 +60,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 ## Отступы
+
 ##### Свойство `margin`
 
 Компоненты `Heading`, `H1`, `H2`, `H3`, `H4` и `H5` не имеет отступов по-умолчанию. Сейчас можно вручную задавать отступы через свойство `margin`, которое имеет размеры `xxs`, `xs`, `s`, `m`, `l`, `xl`, `xxl`.
@@ -66,8 +69,8 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 <H1 margin='xl'>Условия обработки персональных данных</H1>
 ```
 
-
 # Текст
+
 ##### Компоненты `Text`, `P`, `Span`
 
 ## Использование
@@ -90,6 +93,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 ## Цвет
+
 ##### Свойство `color`
 
 Свойство `color` имеет значения `brand-accent`, `brand-white`, `brand-primary`, `geneva100`, `moscow100`, `osaka100`, `seattle01`, `seattle05`, `seattle10`, `seattle30`, `seattle60`, `seattle100`, `seattle120`, `seattle140`.
@@ -102,6 +106,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 #### Цвет по умолчанию
+
 ##### Свойство `color='currentColor'`
 
 Так же свойство `color` поддерживает значение `currentColor`, которое позволяет установить значение цвета типографики в одноименное значение.
@@ -116,6 +121,7 @@ uppercase | boolean \| undefined | false | Флаг, управляющий на
 ```
 
 ## Отступы
+
 ##### Свойство `margin`
 
 Компоненты `Text`, `P` и `Span` не имеет отступов по-умолчанию. Сейчас можно вручную задавать отступы через свойство `margin`, которое имеет размеры `xxs`, `xs`, `s`, `m`, `l`, `xl`, `xxl`.

@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useLayoutEffect } from 'react';
-import { CheckMark } from 'vienna.icons';
+import { Checkmark } from 'vienna.icons';
 import { StyledOption, Value, Icon } from './Option.styles';
 
 export interface OptionProps {
@@ -105,7 +105,7 @@ export const Option: React.FC<OptionProps> = (props: React.PropsWithChildren<Opt
             onMouseDown={handleMouseDown}
             {...attrs}>
             <Value wrapLine={wrapLine}>{children ?? valueToString(value)}</Value>
-            {selected && <Icon>{icon ?? <CheckMark size={iconSize} />}</Icon>}
+            {selected && <Icon>{icon ?? <Checkmark size={iconSize} />}</Icon>}
         </StyledOption>
     );
 };

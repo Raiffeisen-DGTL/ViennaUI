@@ -40,86 +40,86 @@ color:
     background-color: $color.primary.oslo.c60
     color: $color.primary.brand.white
   miami10:
-    background-color: $color.secondary.basic.miami.c10
-    color: $color.secondary.basic.miami.c100
+    background-color: $color.secondary.miami.c10
+    color: $color.secondary.miami.c100
   miami100:
-    background-color: $color.secondary.basic.miami.c100
+    background-color: $color.secondary.miami.c100
     color: $color.primary.brand.white
   nice10:
-    background-color: $color.secondary.basic.nice.c10
-    color: $color.secondary.basic.nice.c100
+    background-color: $color.secondary.nice.c10
+    color: $color.secondary.nice.c100
   nice100:
-    background-color: $color.secondary.basic.nice.c100
+    background-color: $color.secondary.nice.c100
     color: $color.primary.brand.white
   dubai10:
-    background-color: $color.secondary.basic.dubai.c10
-    color: $color.secondary.basic.dubai.c100
+    background-color: $color.secondary.dubai.c10
+    color: $color.secondary.dubai.c100
   dubai100:
-    background-color: $color.secondary.basic.dubai.c100
+    background-color: $color.secondary.dubai.c100
     color: $color.primary.brand.white
   paris10:
-    background-color: $color.secondary.basic.paris.c10
-    color: $color.secondary.basic.paris.c100
+    background-color: $color.secondary.paris.c10
+    color: $color.secondary.paris.c100
   paris100:
-    background-color: $color.secondary.basic.paris.c100
+    background-color: $color.secondary.paris.c100
     color: $color.primary.brand.white
   sochi10:
-    background-color: $color.secondary.basic.sochi.c10
-    color: $color.secondary.basic.sochi.c100
+    background-color: $color.secondary.sochi.c10
+    color: $color.secondary.sochi.c100
   sochi100:
-    background-color: $color.secondary.basic.sochi.c100
+    background-color: $color.secondary.sochi.c100
     color: $color.primary.brand.white
   tokyo10:
-    background-color: $color.secondary.basic.tokyo.c10
-    color: $color.secondary.basic.tokyo.c100
+    background-color: $color.secondary.tokyo.c10
+    color: $color.secondary.tokyo.c100
   tokyo100:
-    background-color: $color.secondary.basic.tokyo.c100
+    background-color: $color.secondary.tokyo.c100
     color: $color.primary.brand.white
   dublin10:
-    background-color: $color.secondary.datavisual.dublin.c10
-    color: $color.secondary.datavisual.dublin.c100
+    background-color: $color.secondary.dublin.c10
+    color: $color.secondary.dublin.c100
   dublin100:
-    background-color: $color.secondary.datavisual.dublin.c100
+    background-color: $color.secondary.dublin.c100
     color: $color.primary.brand.white
   bern10:
-    background-color: $color.secondary.datavisual.bern.c10
-    color: $color.secondary.datavisual.bern.c100
+    background-color: $color.secondary.bern.c10
+    color: $color.secondary.bern.c100
   bern100:
-    background-color: $color.secondary.datavisual.bern.c100
+    background-color: $color.secondary.bern.c100
     color: $color.primary.brand.white
   manila10:
-    background-color: $color.secondary.datavisual.manila.c10
-    color: $color.secondary.datavisual.manila.c100
+    background-color: $color.secondary.manila.c10
+    color: $color.secondary.manila.c100
   manila100:
-    background-color: $color.secondary.datavisual.manila.c100
+    background-color: $color.secondary.manila.c100
     color: $color.primary.brand.white
   tallin10:
-    background-color: $color.secondary.datavisual.tallin.c10
-    color: $color.secondary.datavisual.tallin.c100
+    background-color: $color.secondary.tallin.c10
+    color: $color.secondary.tallin.c100
   tallin100:
-    background-color: $color.secondary.datavisual.tallin.c100
+    background-color: $color.secondary.tallin.c100
     color: $color.primary.brand.white
   seoul10:
-    background-color: $color.secondary.datavisual.seoul.c10
-    color: $color.secondary.datavisual.seoul.c100
+    background-color: $color.secondary.seoul.c10
+    color: $color.secondary.seoul.c100
   seoul100:
-    background-color: $color.secondary.datavisual.seoul.c100
+    background-color: $color.secondary.seoul.c100
     color: $color.primary.brand.white
   havana10:
-    background-color: $color.secondary.datavisual.havana.c10
-    color: $color.secondary.datavisual.havana.c100
+    background-color: $color.secondary.havana.c10
+    color: $color.secondary.havana.c100
   havana100:
-    background-color: $color.secondary.datavisual.havana.c100
+    background-color: $color.secondary.havana.c100
     color: $color.primary.brand.white
   madrid10:
-    background-color: $color.secondary.datavisual.madrid.c10
-    color: $color.secondary.datavisual.madrid.c100
+    background-color: $color.secondary.madrid.c10
+    color: $color.secondary.madrid.c100
   madrid100:
-    background-color: $color.secondary.datavisual.madrid.c100
+    background-color: $color.secondary.madrid.c100
     color: $color.primary.brand.white
   porto10:
-    background-color: $color.secondary.datavisual.porto.c10
-    color: $color.secondary.datavisual.porto.c100
+    background-color: $color.secondary.porto.c10
+    color: $color.secondary.porto.c100
   porto100:
-    background-color: $color.secondary.datavisual.porto.c100
+    background-color: $color.secondary.porto.c100
     color: $color.primary.brand.white
