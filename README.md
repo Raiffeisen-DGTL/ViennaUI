@@ -5,7 +5,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Raiffeisen-DGTL/ViennaUI/blob/master/LICENSE.md) [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 <p align='center'>
-    <img src='vienna-logo.png' alt='drawing' width='400' />
+    <img src='vienna-logo.png' alt='drawing' width='900' />
 </p>
 
 ## Changelog
