@@ -31,7 +31,7 @@ $ codemods -t <trasform> -s <source path> [...OPTIONS]
 codemods -t icons-import-deprecated -s <path-to-source>
 ```
 
--   Заменяет импорты иконок из пакета `@fcc/icons` на импорт из пакета `@fcc/deprecated-icons`
+-   Заменяет импорты иконок из пакета `vienna.icons` на импорт из пакета `vienna.deprecated-icons`
 
 ### icons-v2-migration
 
@@ -39,4 +39,4 @@ codemods -t icons-import-deprecated -s <path-to-source>
 codemods -t icons-v2-migration -s <path-to-source>
 ```
 
--   Заменяет импорты иконок и их использование на новую версию пакета иконок `@fcc/icons`
+-   Заменяет импорты иконок и их использование на новую версию пакета иконок `vienna.icons`
