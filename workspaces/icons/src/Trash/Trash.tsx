@@ -14,7 +14,7 @@ export const Trash: React.FC<TrashProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M14 4h7v2H3V4h7.062V2H14v2zm3 16V7h2v13.063A1.937 1.937 0 0117.062 22H6.969A1.969 1.969 0 015 20.031V7h2v13h10zM9 8h2v10H9V8zm4 0h2v10h-2V8z' />
+            <path d='M7 9v11h10V9h2v12a1 1 0 01-1 1H6a1 1 0 01-1-1V9h2zm4 0v9H9V9h2zm4 0v9h-2V9h2zm0-7a1 1 0 01.949.684l.771 2.315L20 5v2H4V5l3.279-.001.772-2.315A1 1 0 019 2h6zm-.72 2H9.72l-.333.999h5.225L14.279 4z' />
         </svg>
     );
 };

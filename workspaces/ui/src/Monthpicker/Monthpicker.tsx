@@ -1,13 +1,16 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDrop } from 'vienna.react-use';
-import { format } from 'date-fns';
+import { format, Locale } from 'date-fns';
 import { ru } from 'date-fns/locale';
 import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Calendar } from '../Calendar';
 import { Input, InputEvent, InputProps } from '../Input';
 import { Box, InputBox, CalendarBox } from './Monthpicker.styles';
+import { MonthpickerLocalizationProps } from './localization';
 
-export interface MonthpickerProps extends Omit<InputProps, 'value' | 'type' | 'onChange' | 'onPaste'> {
+export interface MonthpickerProps
+    extends Omit<InputProps, 'value' | 'type' | 'onChange' | 'onPaste'>,
+        MonthpickerLocalizationProps {
     value?: Date;
 
     /**
@@ -19,6 +22,10 @@ export interface MonthpickerProps extends Omit<InputProps, 'value' | 'type' | 'o
         event: InputEvent<React.FormEvent<HTMLInputElement>> | Event | null,
         data: { value?: string; date?: Date; name?: string }
     ) => void;
+    /**
+     * Локаль календаря
+     */
+    locale?: Locale;
 }
 
 export const Monthpicker: React.FC<MonthpickerProps> = ({
@@ -29,11 +36,13 @@ export const Monthpicker: React.FC<MonthpickerProps> = ({
     onChange,
     onFocus,
     onKeyPress,
+    localization,
+    locale,
     ...attrs
 }: MonthpickerProps): JSX.Element => {
     const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen);
     const datepickerEl = useRef<HTMLDivElement>(null);
-    const calendarRef = useDrop('vertical', 'start', { x: 0, y: 4 });
+    const calendarRef = useDrop({ align: 'vertical', float: 'start', margins: { x: 0, y: 4 } });
 
     const initializedValue = useMemo(() => {
         return value ? { date: value, value: format(value, 'LLLL yyyy', { locale: ru }) } : '';
@@ -112,22 +121,28 @@ export const Monthpicker: React.FC<MonthpickerProps> = ({
                     value={
                         inputValue && `${inputValue.value?.split('')[0]?.toUpperCase()}${inputValue.value?.slice(1)}`
                     }
+                    placeholder='Выберите месяц'
                     onFocus={handleInputFocus}
                     onKeyPress={handleKeyPress}
-                    placeholder='Выберите месяц'
                     {...attrs}
                 />
             </InputBox>
             {isOpen && (
                 <CalendarBox ref={calendarRef}>
-                    <Calendar mode='month' date={inputValue && inputValue.date} onChangeMonth={handleClickMonth} />
+                    <Calendar
+                        mode='month'
+                        date={inputValue?.date}
+                        locale={locale}
+                        localization={localization}
+                        onChangeMonth={handleClickMonth}
+                    />
                 </CalendarBox>
             )}
         </Box>
     );
 };
 
-Monthpicker.displayName = 'Datepicker';
+Monthpicker.displayName = 'Monthpicker';
 Monthpicker.defaultProps = {
     isCalendarOpen: false,
 };

@@ -58,13 +58,16 @@ export const Part = styled.div<{ active?: boolean; right?: boolean }>`
 
 export const Current = styled.div<{ size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl' }>`
     display: flex;
-    width: calc(100% - 40px);
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    display: flex;
     align-items: center;
     ${current.size}
     ${current.custom}
 `;
 
-export const Extra = styled.div`
+export const Extra = styled.span`
     ${extra.base}
     margin-right: 30px;
     ${extra.custom}
@@ -80,8 +83,8 @@ export const Chip = styled.div<{ size?: any }>`
     display: flex;
     ${chip.base}
 
-    &:first-child {
-        margin-left: 0px;
+    &:only-of-type {
+        width: 100%;
     }
 
     span {
@@ -98,7 +101,13 @@ export const Chip = styled.div<{ size?: any }>`
     }
 `;
 
+export const Text = styled.span`
+    flex: 1;
+`;
+
 export const Placeholder = styled.div<{ size?: any; disabled?: boolean }>`
+    width: 100%;
+    overflow: hidden;
     ${multiselect.placeholder}
     ${({ disabled }) => disabled && multiselect.placeholderDisabled}
 `;

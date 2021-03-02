@@ -1,4 +1,4 @@
-import { TableState } from '../../types';
+import { TableServiceFactory } from '../../types';
 
 export interface DraggableColumnService {
     moveColumn: (target: string, destination: string) => void;
@@ -24,8 +24,12 @@ function moveElelementInsideArray(arr: any[], target: number, destination: numbe
     return arr;
 }
 
-export const draggableColumnService = (state: TableState, update): DraggableColumnService => {
+export const draggableColumnServiceId = 'dragColumn';
+
+export const draggableColumnService: TableServiceFactory<DraggableColumnService> = (getState, update) => {
     const moveColumn = (target: string, destination: string) => {
+        const state = getState();
+
         const columns = state?.columns?.list ?? [];
         const tragetIdx = columns.findIndex((c) => c.id === target);
         const destinationIdx = columns.findIndex((c) => c.id === destination);
@@ -36,7 +40,7 @@ export const draggableColumnService = (state: TableState, update): DraggableColu
 
         const list = moveElelementInsideArray(columns, tragetIdx, destinationIdx);
 
-        update({ ...state, columns: { list } });
+        update(draggableColumnServiceId, { ...state, columns: { list } });
     };
 
     return { moveColumn };

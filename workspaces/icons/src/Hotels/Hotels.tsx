@@ -14,7 +14,12 @@ export const Hotels: React.FC<HotelsProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M16 13h4a2 2 0 012 2v5a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h10a2 2 0 012 2v5zm-2 7V8H4v12h10zm6 0v-5h-4v5h4zM5 11h8v2H5v-2zM2 3h2v2H2V3zm3 0h2v2H5V3zm3 0h2v2H8V3zm3 0h2v2h-2V3zm3 0h2v2h-2V3zM5 15h8v2H5v-2z' />
+            <path d='M3 2h2v2H3V2zm4 0h2v2H7V2zm6 0h-2v2h2V2zm2 0h2v2h-2V2zm6 0h-2v2h2V2zM8 16h8v-2H8v2zm8-4H8v-2h8v2z' />
+            <path
+                fillRule='evenodd'
+                d='M4 7a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V7zm2 1v12h4v-2h4v2h4V8H6z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

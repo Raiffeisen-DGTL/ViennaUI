@@ -14,7 +14,11 @@ export const Tower: React.FC<TowerProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M13.636 6l4.15 14H21l1 1v1H2v-1l1-1h4.183l3.319-14H8v2H6V4h4.976l.474-2h1l.593 2H18v4h-2V6h-2.364zM9.235 20h6.464l-1.149-3.82-5 2.48L9.235 20zm.845-3.49l3.16-1.54-2.44-1.46-.72 3zm1.13-4.78l2.46 1.48-1.56-5.3-.9 3.82z' />
+            <path
+                fillRule='evenodd'
+                d='M12 2a1 1 0 01.949.684L13.387 4H18a1 1 0 011 1v3h-2V6h-2.946l1.892 5.677.005.014L18.721 20H21v2H3v-2h2.28L9.945 6H7v2H5V5a1 1 0 011-1h4.613l.438-1.316A1 1 0 0112 2zm1.326 8.14L12 6.163l-.977 2.932 2.303 1.047zm-2.94.862l-1.23 3.692 3.792-2.528-2.561-1.164zM8.055 18l-.667 2h9.226l-.667-2H8.054zm7.225-2h-4.476l3.662-2.442L15.28 16z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

@@ -5,23 +5,23 @@ base:
   align-items: center
 
 footer:
-  margin-top: $layout.size.xs
+  margin-top: $layout.size.s6
 
 inputWrapper:
   width: 148px
-  margin-bottom: $layout.size.xxxs
+  margin-bottom: $layout.size.s2
 
 timerWrapper:
   color: $color.primary.seattle.c60
   font-size: $typography.b.b2.size
-  line-height: $layout.size.s
+  line-height: $layout.size.s8
 
 error:
   color: $color.utilitarian.moscow.c120
   text-align: center
   font-size: $typography.b.b2.size
   line-height: $typography.b.b2.height
-  height: $layout.size.xs
+  height: $layout.size.s6
 
 input:
   font-family: $typography.a.family

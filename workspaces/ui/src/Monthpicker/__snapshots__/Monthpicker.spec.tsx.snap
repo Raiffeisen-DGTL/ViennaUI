@@ -1,241 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Monthpicker 1`] = `
-.c4 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c5 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c5::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c5::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c5:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c5::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c5::-ms-clear,
-.c5::-ms-reveal {
-  display: none;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c3 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c3 > *,
-.c3 input {
-  color: #2B2D33;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c2:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="Monthpicker.Box"
+  class="Monthpickerstyles__Box-sc-2myayb-0 jMyYmn"
 >
   <div
-    class="c1"
-    data-marker="Monthpicker.InputBox"
+    class="Monthpickerstyles__InputBox-sc-2myayb-1 cfspmU"
   >
-    <div
-      class="c2"
-      data-marker="Input.InputWrapper"
+    <label
+      class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
     >
       <div
-        class="c3"
-        data-marker="InputWrapper.Wrapped"
+        class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
       >
         <div
-          class="c4"
-          data-marker="NativeInput.Box"
+          class="Inputstyles__Box-hc8ttv-1 bzkyqR"
         >
           <input
             aria-invalid="false"
-            class="c5"
-            data-marker="Monthpicker"
+            class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
             placeholder="Выберите месяц"
             value=""
           />
         </div>
       </div>
       <div
-        class="c6"
-        data-marker="InputWrapper.Postfix"
+        class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
       >
         <svg
-          data-marker="Monthpicker.CalendarIcon"
           fill="currentColor"
           height="20"
           viewBox="0 0 24 24"
           width="20"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Calendar.defs"
-          />
+          <defs />
           <path
-            d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-            data-marker="Calendar.path"
+            d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
           />
         </svg>
       </div>
-    </div>
+    </label>
   </div>
 </div>
 `;

@@ -2,12 +2,12 @@
  * imports of components
  */
 import React, { useMemo } from 'react';
-import { dateFunction, DisabledDates, eventDateFunction, RangeDate, ViewMode } from '../types';
-import { MONTH } from '../constants';
+import { dateFunction, DisabledDates, eventDateFunction, RangeDate, StartingWeekDay, ViewMode, Month } from '../types';
 import { MonthRangeDays } from '../MonthRangeDays';
 import { MonthSingleDays } from '../MonthSingleDays';
 import { Button } from '../../Button';
-
+import { useCalendarLocalization } from '../Context';
+import { CalendarLocalization } from '../localization';
 /**
  * imports of styles
  */
@@ -16,7 +16,7 @@ import { Box, CalendarCell, Footer } from './Body.style';
 interface Props {
     viewMode: ViewMode;
     displayedDate: Date;
-    date?: Date;
+    date?: Date | Date[];
     dateStart?: Date;
     dateEnd?: Date;
     maxDate?: Date;
@@ -28,9 +28,11 @@ interface Props {
     eventDates?: Date[] | eventDateFunction;
     onGoToMonth: (year: number, month: number) => () => void;
     onChangeMonth: (year: number, month: number) => () => void;
-    onChangeDate: (nextDate: Date | RangeDate<Date>) => void;
+    onChangeDate: (nextDate: Date | RangeDate<Date> | Date[]) => void;
     onGoToToday: () => void;
     hasNavigation: boolean;
+    startingWeekDay: StartingWeekDay;
+    allowMultiple: boolean;
 }
 
 export const Body: React.FC<Props> = (props: Props): JSX.Element => {
@@ -52,7 +54,11 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
         onGoToToday,
         onChangeMonth,
         hasNavigation,
+        startingWeekDay,
+        allowMultiple,
     } = props;
+
+    const localize = useCalendarLocalization();
 
     const content = useMemo(() => {
         const displayedYear = displayedDate.getFullYear();
@@ -64,7 +70,7 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
 
                 const yearList: JSX.Element[] = [];
                 for (let year = startYear; year < startYear + 12; year++) {
-                    const isActive = date && date.getFullYear() === year;
+                    const isActive = date && !allowMultiple && (date as Date).getFullYear() === year;
 
                     yearList.push(
                         <CalendarCell key={year} isActive={isActive} onClick={onGoToMonth(year, displayedMonth)}>
@@ -80,17 +86,17 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
                 );
             }
             case ViewMode.MONTH_LIST: {
-                const months = MONTH.map((month: string, index: number) => {
-                    const isActive = date && index === date.getMonth();
-
+                const months = Object.keys(Month).map((month: string, index: number) => {
+                    const isActive = date && !allowMultiple && index === (date as Date).getMonth();
+                    const localizedMonth = localize(`ds.calendar.month.${month}` as keyof CalendarLocalization);
                     return (
                         <CalendarCell
-                            key={month}
+                            key={localizedMonth}
                             isActive={isActive}
                             onClick={
                                 hasNavigation ? onGoToMonth(displayedYear, index) : onChangeMonth(displayedYear, index)
                             }>
-                            {month}
+                            {localizedMonth}
                         </CalendarCell>
                     );
                 });
@@ -109,10 +115,11 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
                         disabledDates={disabledDates}
                         weekendDates={weekendDates}
                         eventDates={eventDates}
-                        onChangeDate={onChangeDate}
                         displayedDate={displayedDate}
                         maxDate={maxDate}
                         minDate={minDate}
+                        startingWeekDay={startingWeekDay}
+                        onChangeDate={onChangeDate}
                     />
                 ) : (
                     <MonthSingleDays
@@ -120,10 +127,12 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
                         disabledDates={disabledDates}
                         weekendDates={weekendDates}
                         eventDates={eventDates}
-                        onChangeDate={onChangeDate}
                         displayedDate={displayedDate}
                         maxDate={maxDate}
                         minDate={minDate}
+                        startingWeekDay={startingWeekDay}
+                        onChangeDate={onChangeDate}
+                        allowMultiple={allowMultiple}
                     />
                 );
 
@@ -133,7 +142,7 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
                         {todayButton && (
                             <Footer>
                                 <Button type='button' design='ghost' onClick={onGoToToday}>
-                                    <b>Сегодня</b>
+                                    <b>{localize('ds.calendar.body.today')}</b>
                                 </Button>
                             </Footer>
                         )}
@@ -141,7 +150,7 @@ export const Body: React.FC<Props> = (props: Props): JSX.Element => {
                 );
             }
         }
-    }, [viewMode, displayedDate, date, dateStart, dateEnd, minDate, maxDate, disabledDates]);
+    }, [viewMode, displayedDate, date, dateStart, dateEnd, minDate, maxDate, disabledDates, allowMultiple]);
 
     return <>{content}</>;
 };

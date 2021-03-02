@@ -1,5 +1,5 @@
 import React from 'react';
-import { Man2 } from 'vienna.icons';
+import { Man } from 'vienna.icons';
 import RoundIcon, { RoundIconProps } from './RoundIcon';
 
 const coloring: RoundIconProps['color'][] = [
@@ -47,7 +47,7 @@ test('RoundIcon', async () => {
 test('RoundIcon w/ icon', async () => {
     const component = (
         <RoundIcon>
-            <Man2 />
+            <Man />
         </RoundIcon>
     );
 
@@ -72,7 +72,7 @@ test('RoundIcon w/ color and icon', async () => {
     colors.forEach((color) =>
         components.push(
             <RoundIcon color={color}>
-                <Man2 />
+                <Man />
             </RoundIcon>
         )
     );

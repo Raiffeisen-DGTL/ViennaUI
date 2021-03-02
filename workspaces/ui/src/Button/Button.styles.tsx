@@ -5,7 +5,7 @@ import { ButtonProps } from './Button';
 const presets = getPresets('button', {
     base: null,
     loading: null,
-    focus: null,
+    focus: 'design',
     size: 'size',
     design: 'design',
     hover: 'design',
@@ -43,6 +43,13 @@ export const Box = styled.button<any>`
         ${presets.hover}
     }
 
+    ${({ pressed }) =>
+        pressed &&
+        css`
+            ${presets.hover}
+        `}
+
+
     ${({ grid }) =>
         grid &&
         css`
@@ -61,9 +68,8 @@ export const Box = styled.button<any>`
             ${presets.loading}
         `}
 
-    ${({ isFocusStateVisible, design }: any) =>
+    ${({ isFocusStateVisible }: any) =>
         isFocusStateVisible &&
-        design !== 'ghost' &&
         css`
             &:focus {
                 ${presets.focus}

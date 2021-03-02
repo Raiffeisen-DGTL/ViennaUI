@@ -14,7 +14,11 @@ export const Truck: React.FC<TruckProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M4 11h10v2H4v-2zm14-3a4 4 0 014 4v3a2 2 0 01-2 2h-1a2 2 0 11-4 0H8a2 2 0 11-4 0h-.06A1.94 1.94 0 012 15.06V5.94A1.94 1.94 0 013.9 4h10A2.1 2.1 0 0116 6.1V13h-2V6.1a.11.11 0 00-.1-.1H4v9h16v-3a2 2 0 00-2-2h-1V8h1z' />
+            <path
+                fillRule='evenodd'
+                d='M2 5a1 1 0 011-1h12a1 1 0 011 1v1.153l3.493.582A3 3 0 0122 9.695V18a3 3 0 01-5.236 2H7.236A3 3 0 012 18V5zm12 1v9H5c-.35 0-.687.06-1 .17V6h10zM5 19a1 1 0 110-2 1 1 0 010 2zm15-8V9.694a1 1 0 00-.836-.986L16 8.18V15h3c.35 0 .687.06 1 .17V13h-2v-2h2zm0 7a1 1 0 10-2 0 1 1 0 002 0zM8 18c0-.35-.06-.687-.17-1h8.34c-.11.313-.17.65-.17 1H8z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

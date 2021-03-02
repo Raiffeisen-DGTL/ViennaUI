@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDrop } from 'vienna.react-use';
 import { Calendar as CalendarIcon } from 'vienna.icons';
+import { Locale } from 'date-fns';
+import { DatePickerRangeLocalizationProps } from './localization';
 import { Calendar, dateFunction, DateValue, DisabledDates } from '../Calendar';
 import { InputDateRange, DateType } from '../InputMask';
 import { getDateFromString, getStringFromDate } from '../Utils/DateUtils';
@@ -8,7 +10,9 @@ import { InputEvent, InputProps } from '../Input';
 import { Box, InputBox, CalendarBox } from './DatepickerRange.styles';
 import { checkIsDisabled } from '../Calendar/Utils';
 
-export interface DatepickerRangeProps extends Omit<InputProps, 'onChange' | 'onPaste'> {
+export interface DatepickerRangeProps
+    extends Omit<InputProps, 'onChange' | 'onPaste'>,
+        DatePickerRangeLocalizationProps {
     /**
      * дата передается строкой вида 01.01.2021-12.01.2021
      */
@@ -43,6 +47,15 @@ export interface DatepickerRangeProps extends Omit<InputProps, 'onChange' | 'onP
      * Неактивные для выбора даты
      */
     disabledDates?: DisabledDates.WEEKENDS | Date[] | dateFunction;
+
+    /**
+     * Дни недели отображаются с понедельника (1) или с воскресенья (0)
+     */
+    startingWeekDay?: 0 | 1;
+    /**
+     * Локаль календаря
+     */
+    locale?: Locale;
 }
 
 export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
@@ -59,12 +72,17 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
     onFocus,
     onKeyPress,
     disabledDates,
+    startingWeekDay = 1,
+    onBlur,
+    tabIndex,
+    localization,
+    locale,
     ...attrs
 }: DatepickerRangeProps): JSX.Element => {
     const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen);
     const datepickerRangeEl = useRef<HTMLDivElement>(null);
     const [isDisabled, setIsDisabled] = useState<boolean>(false);
-    const calendarRef = useDrop('vertical', 'start', { x: 0, y: 4 });
+    const calendarRef = useDrop({ align: 'vertical', float: 'start', margins: { x: 0, y: 4 } });
 
     useEffect(() => {
         setOpen(isCalendarOpen);
@@ -94,8 +112,9 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
             const startInputDate = getDateFromString(inputValueArray[0]);
             const endInputDate = getDateFromString(inputValueArray[1]);
             const isDisabled =
-                (!!startInputDate && checkIsDisabled({ dates: disabledDates, date: startInputDate })) ||
-                (!!endInputDate && checkIsDisabled({ dates: disabledDates, date: endInputDate }));
+                (!!startInputDate &&
+                    checkIsDisabled({ dates: disabledDates, date: startInputDate, startingWeekDay })) ||
+                (!!endInputDate && checkIsDisabled({ dates: disabledDates, date: endInputDate, startingWeekDay }));
             setIsDisabled(isDisabled);
 
             if (typeof onChange === 'function') {
@@ -172,12 +191,27 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
               };
     }, [value]);
 
+    const handleMouseDownCalendar = useCallback((e) => {
+        e.preventDefault();
+    }, []);
+
+    const handleBlur = useCallback(
+        (event) => {
+            if (typeof onBlur === 'function') {
+                onBlur(event, {
+                    value: `${dateValue.start}-${dateValue.end}`,
+                    name,
+                });
+            }
+            setOpen(false);
+        },
+        [onBlur, dateValue, minDate, name]
+    );
+
     return (
-        <Box ref={datepickerRangeEl}>
+        <Box ref={datepickerRangeEl} tabIndex={tabIndex} onBlur={handleBlur}>
             <InputBox>
                 <InputDateRange
-                    max={maxDate}
-                    min={minDate}
                     postfix={
                         postfix ?? <CalendarIcon size={size === 'xxl' ? 'xl' : size} onClick={handleClickDateIcon} />
                     }
@@ -185,6 +219,7 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                     size={size}
                     name={name}
                     value={value}
+                    localization={localization}
                     onChange={handleChangeInput}
                     onFocus={handleInputFocus}
                     onKeyPress={handleKeyPress}
@@ -192,7 +227,7 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                 />
             </InputBox>
             {isOpen && (
-                <CalendarBox ref={calendarRef}>
+                <CalendarBox ref={calendarRef} onMouseDown={handleMouseDownCalendar}>
                     <Calendar
                         dateStart={dateValue.start}
                         dateEnd={dateValue.end}
@@ -202,6 +237,9 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                         todayButton={false}
                         ranged
                         disabledDates={disabledDates}
+                        startingWeekDay={startingWeekDay}
+                        localization={localization}
+                        locale={locale}
                         onChange={handleClickDate}
                     />
                 </CalendarBox>

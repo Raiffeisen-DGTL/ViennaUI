@@ -14,7 +14,11 @@ export const Crane2: React.FC<Crane2Props> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M16.535 9L19 5.3V2H5v3.3L7.465 9H9v4l2 2h1.5a2.5 2.5 0 11-2.449 3h-2A4.488 4.488 0 1015 13.775V9h1.535zM7 4.7V4h10v.7L15.465 7h-6.93L7 4.7zm6 8.3h-2V9h2v4z' />
+            <path
+                fillRule='evenodd'
+                d='M5 2a1 1 0 00-1 1v2a1 1 0 00.293.707l2 2A1 1 0 007 8h1v3a1 1 0 00.293.707l2 2A1 1 0 0011 14v2h1.003A1.999 1.999 0 1110 18H8a4 4 0 105-3.873V14a1 1 0 00.707-.293l2-2A1 1 0 0016 11V8h1a1 1 0 00.707-.293l2-2A1 1 0 0020 5V3a1 1 0 00-1-1H5zm5 8.586V8h4v2.586L12.586 12h-1.172L10 10.586zm-4-6V4h12v.586L16.586 6H7.414L6 4.586z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

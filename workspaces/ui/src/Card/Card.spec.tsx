@@ -1,5 +1,5 @@
 import React from 'react';
-import { Settings1 } from 'vienna.icons';
+import { Settings } from 'vienna.icons';
 import { Card } from './Card';
 
 test('Card', () => {
@@ -14,7 +14,7 @@ test('Card w/ titile', () => {
 
 test('Card w/ actions', () => {
     const snap = snapshot.render(
-        <Card title='Card title' actions={<Settings1 />}>
+        <Card title='Card title' actions={<Settings />}>
             Card content
         </Card>
     );

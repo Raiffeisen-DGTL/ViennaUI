@@ -7,6 +7,11 @@ const tooltip = getPresets('tooltip.wrapper', {
 
 export const Box = styled.div<any>`
     display: inline-block;
+    ${({ inline }) =>
+        !inline &&
+        css`
+            display: block;
+        `}
     ${({ truncate }) =>
         truncate &&
         css`

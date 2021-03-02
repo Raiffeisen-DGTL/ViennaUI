@@ -21,6 +21,7 @@ const day = getPresets('calendar.day', {
     event: null,
     matStart: null,
     matEnd: null,
+    activeDisabled: null,
 });
 
 const dayHover = getPresets('calendar.dayHover', {

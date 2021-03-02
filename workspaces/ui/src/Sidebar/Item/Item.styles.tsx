@@ -25,6 +25,9 @@ export const Title = styled.div<any>`
 `;
 
 export const Icon = styled.span`
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
     ${presets.icon}
     ${custom.icon}
 `;

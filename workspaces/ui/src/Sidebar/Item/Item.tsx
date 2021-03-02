@@ -42,7 +42,7 @@ export const Item = (props: ItemProps) => {
             {icon && <Icon>{icon}</Icon>}
             {children && <Title>{children}</Title>}
             {notification && <Notification>{notification}</Notification>}
-            <Ripple style={rippleStyles} />
+            {ripple && <Ripple style={rippleStyles} />}
         </Box>
     );
 };

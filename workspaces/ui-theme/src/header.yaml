@@ -14,21 +14,22 @@ header:
 
 sideContent:
   base:
-    padding-right: $layout.whitespace.xs
+    padding-right: $layout.size.s2
     display: flex
+    flex-shrink: 0
   size:
     l:
-      padding-right: $layout.size.l
-      padding-bottom: $layout.whitespace.xl
+      padding-right: $layout.size.s10
+      padding-bottom: $layout.size.s6
     m:
-      padding-right: $layout.size.s
-      padding-bottom: $layout.whitespace.xl
+      padding-right: $layout.size.s8
+      padding-bottom: $layout.size.s6
     s:
-      padding-right: $layout.size.xs
-      padding-bottom: $layout.whitespace.s
+      padding-right: $layout.size.s6
+      padding-bottom: $layout.size.s3
 
 list:
-  margin-top: $layout.whitespace.m
+  margin-top: $layout.size.s4
   background-color: $color.primary.brand.white
   width: 100%
 
@@ -48,25 +49,25 @@ action:
     max-width: 100%
   size:
     l:
-      max-height: $layout.size.l
-      padding-left: $layout.size.l
-      padding-bottom: $layout.whitespace.xl
+      max-height: $layout.size.s10
+      padding-left: $layout.size.s10
+      padding-bottom: $layout.size.s6
     m:
-      max-height: $layout.size.s
-      padding-left: $layout.size.s
-      padding-bottom: $layout.whitespace.xl
+      max-height: $layout.size.s8
+      padding-left: $layout.size.s8
+      padding-bottom: $layout.size.s6
     s:
-      max-height: $layout.size.xs
-      padding-left: $layout.size.xs
-      padding-bottom: $layout.whitespace.s
+      max-height: $layout.size.s6
+      padding-left: $layout.size.s6
+      padding-bottom: $layout.size.s3
 
 size:
   l:
-    padding: $layout.whitespace.xl $layout.whitespace.xxl 0px
+    padding: $layout.size.s6 $layout.size.s8 0px
   m:
-    padding: $layout.whitespace.xl $layout.whitespace.xxl 0px
+    padding: $layout.size.s6 $layout.size.s8 0px
   s:
-    padding: $layout.whitespace.s $layout.whitespace.m 0px
+    padding: $layout.size.s3 $layout.size.s4 0px
 
 box:
   size:
@@ -88,7 +89,7 @@ boxMobile:
 
 searchContainer:
   base:
-    padding-right: $layout.whitespace.m
+    padding-right: $layout.size.s4
     min-width: 200px
   size:
     l:
@@ -121,44 +122,44 @@ tab:
         l:
           margin-top: 10px
           min-height: 54px
-          margin-right: $layout.whitespace.xxl
+          margin-right: $layout.size.s8
           font-size: $typography.b.b3.size
           line-height: $typography.b.b3.height
         m:
           margin-top: 6px
           min-height: 50px
-          margin-right: $layout.whitespace.xl
+          margin-right: $layout.size.s6
           font-size: $typography.b.b2.size
           line-height: $typography.b.b2.height
         s:
-          min-height: $layout.size.s
-          margin-right: $layout.whitespace.m
+          min-height: $layout.size.s8
+          margin-right: $layout.size.s4
           font-size: $typography.b.b1.size
           line-height: $typography.b.b1.height
-          padding-top: $layout.whitespace.xxs
+          padding-top: $layout.size.s1
           padding-bottom: 14px
     center:
       size:
         l:
-          min-height: $layout.size.l
-          margin-right: $layout.whitespace.xxl
+          min-height: $layout.size.s10
+          margin-right: $layout.size.s8
           font-size: $typography.b.b3.size
           line-height: $typography.b.b3.height
         m:
-          min-height: $layout.size.s
-          margin-right: $layout.whitespace.xl
+          min-height: $layout.size.s8
+          margin-right: $layout.size.s6
           font-size: $typography.b.b2.size
           line-height: $typography.b.b2.height
         s:
-          min-height: $layout.size.s
-          margin-right: $layout.whitespace.m
+          min-height: $layout.size.s8
+          margin-right: $layout.size.s4
           font-size: $typography.b.b1.size
           line-height: $typography.b.b1.height
 menuPoint:
   base:
     width: 100%
     height: 50px
-    padding: $layout.whitespace.s $layout.whitespace.m
+    padding: $layout.size.s3 $layout.size.s4
     background-color: $color.primary.brand.white
     color: $color.primary.brand.primary
     text-align: left

@@ -1,4 +1,5 @@
 # Конфиг Typescript
+
 ###### Raiffeisenbank Design System
 
 Пакет содержит конфигурационные файлы для `Typescript`.

@@ -1,0 +1,6416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableDeprecated Table 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w maxHeight 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 jBgSXs"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w noHeader 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ ActionIcon & ActionsListIcon 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 dvRfrM"
+            data-column="actions-column"
+            id="actions"
+            width="90px"
+          >
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ActionColumnInternalstyles__ActionsColumn-sc-2nibk-0 bMGzAV lcfOCK"
+            id="actions"
+            width="90px"
+          >
+            <div
+              class="Groupsstyles__Box-sc-1dief2o-0 dJximv"
+            >
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M16.707 3.293l4 4a1 1 0 010 1.414l-11 11a1 1 0 01-.51.274l-5 1a1 1 0 01-1.178-1.177l1-5a1 1 0 01.274-.511l11-11a1 1 0 011.414 0zM13.5 7.914l-7.578 7.579-.646 3.232 3.232-.646 7.579-7.579L13.5 7.914zm2.5-2.5L14.915 6.5 17.5 9.085 18.585 8 16 5.414z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M7 9v11h10V9h2v12a1 1 0 01-1 1H6a1 1 0 01-1-1V9h2zm4 0v9H9V9h2zm4 0v9h-2V9h2zm0-7a1 1 0 01.949.684l.771 2.315L20 5v2H4V5l3.279-.001.772-2.315A1 1 0 019 2h6zm-.72 2H9.72l-.333.999h5.225L14.279 4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 kkdOBJ ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    class="ActionIconstyles__More-sc-9k55se-1 WeeKf"
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M4 10a2 2 0 110 4 2 2 0 010-4zm16 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ActionColumnInternalstyles__ActionsColumn-sc-2nibk-0 bMGzAV lcfOCK"
+            id="actions"
+            width="90px"
+          >
+            <div
+              class="Groupsstyles__Box-sc-1dief2o-0 dJximv"
+            >
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M16.707 3.293l4 4a1 1 0 010 1.414l-11 11a1 1 0 01-.51.274l-5 1a1 1 0 01-1.178-1.177l1-5a1 1 0 01.274-.511l11-11a1 1 0 011.414 0zM13.5 7.914l-7.578 7.579-.646 3.232 3.232-.646 7.579-7.579L13.5 7.914zm2.5-2.5L14.915 6.5 17.5 9.085 18.585 8 16 5.414z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M7 9v11h10V9h2v12a1 1 0 01-1 1H6a1 1 0 01-1-1V9h2zm4 0v9H9V9h2zm4 0v9h-2V9h2zm0-7a1 1 0 01.949.684l.771 2.315L20 5v2H4V5l3.279-.001.772-2.315A1 1 0 019 2h6zm-.72 2H9.72l-.333.999h5.225L14.279 4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 kkdOBJ ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    class="ActionIconstyles__More-sc-9k55se-1 WeeKf"
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M4 10a2 2 0 110 4 2 2 0 010-4zm16 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ActionColumnInternalstyles__ActionsColumn-sc-2nibk-0 bMGzAV lcfOCK"
+            id="actions"
+            width="90px"
+          >
+            <div
+              class="Groupsstyles__Box-sc-1dief2o-0 dJximv"
+            >
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M16.707 3.293l4 4a1 1 0 010 1.414l-11 11a1 1 0 01-.51.274l-5 1a1 1 0 01-1.178-1.177l1-5a1 1 0 01.274-.511l11-11a1 1 0 011.414 0zM13.5 7.914l-7.578 7.579-.646 3.232 3.232-.646 7.579-7.579L13.5 7.914zm2.5-2.5L14.915 6.5 17.5 9.085 18.585 8 16 5.414z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 hyyaOp ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M7 9v11h10V9h2v12a1 1 0 01-1 1H6a1 1 0 01-1-1V9h2zm4 0v9H9V9h2zm4 0v9h-2V9h2zm0-7a1 1 0 01.949.684l.771 2.315L20 5v2H4V5l3.279-.001.772-2.315A1 1 0 019 2h6zm-.72 2H9.72l-.333.999h5.225L14.279 4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+              >
+                <div
+                  class="RoundIconstyles__Box-sc-5md3j7-0 kkdOBJ ActionIconstyles__Icon-sc-9k55se-0 kjKVHi"
+                  color="seattle10"
+                >
+                  <svg
+                    class="ActionIconstyles__More-sc-9k55se-1 WeeKf"
+                    fill="currentColor"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    width="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M4 10a2 2 0 110 4 2 2 0 010-4zm16 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ Footer 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    class="Footerstyles__TableFooter-dbtn2t-0 fWmRov"
+    data-id="table-footer"
+    id="footer"
+  >
+    Table footer
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ column align 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jxUVQI"
+            data-column="id"
+            data-index="0"
+            id="id"
+            width="10px"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 irFRgs"
+            data-column="name"
+            data-index="1"
+            id="name"
+            width="100%"
+          >
+            Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="2"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 kPkNCA"
+            data-column="phone"
+            data-index="3"
+            id="phone"
+            width="150px"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fqTJsw"
+            data-column="name"
+          >
+            John Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fsPJuL"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fqTJsw"
+            data-column="name"
+          >
+            Johnnie Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fsPJuL"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fqTJsw"
+            data-column="name"
+          >
+            James Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fsPJuL"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ column truncate 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 joNPLM"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+            width="160px"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kxnwmI"
+            data-column="firstName"
+            title="John"
+            width="160px"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kxnwmI"
+            data-column="firstName"
+            title="Johnnie"
+            width="160px"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kxnwmI"
+            data-column="firstName"
+            title="James"
+            width="160px"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ column width 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jxUVQI"
+            data-column="id"
+            data-index="0"
+            id="id"
+            width="10px"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 irFRgs"
+            data-column="name"
+            data-index="1"
+            id="name"
+            width="100%"
+          >
+            Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="2"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fCutws"
+            data-column="phone"
+            data-index="3"
+            id="phone"
+            width="110px"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="name"
+          >
+            John Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="name"
+          >
+            Johnnie Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="name"
+          >
+            James Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fUAiGJ"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ draggable column 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="firstName"
+            data-index="1"
+            draggable="true"
+            id="firstName"
+          >
+            First Name
+            <div
+              class="DraggableColumnstyles__Box-sc-1gjc6nk-0 lpbehf"
+              data-id="dragable"
+            />
+            <div
+              class="DraggableColumnstyles__DropLeft-sc-1gjc6nk-1 kKdMHz"
+              data-id="drop"
+            />
+            <div
+              class="DraggableColumnstyles__DropRight-sc-1gjc6nk-2 aZmUw"
+              data-id="drop"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="lastName"
+            data-index="2"
+            draggable="true"
+            id="lastName"
+          >
+            Last Name
+            <div
+              class="DraggableColumnstyles__Box-sc-1gjc6nk-0 lpbehf"
+              data-id="dragable"
+            />
+            <div
+              class="DraggableColumnstyles__DropLeft-sc-1gjc6nk-1 kKdMHz"
+              data-id="drop"
+            />
+            <div
+              class="DraggableColumnstyles__DropRight-sc-1gjc6nk-2 aZmUw"
+              data-id="drop"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="position"
+            data-index="3"
+            draggable="true"
+            id="position"
+          >
+            Position
+            <div
+              class="DraggableColumnstyles__Box-sc-1gjc6nk-0 lpbehf"
+              data-id="dragable"
+            />
+            <div
+              class="DraggableColumnstyles__DropLeft-sc-1gjc6nk-1 kKdMHz"
+              data-id="drop"
+            />
+            <div
+              class="DraggableColumnstyles__DropRight-sc-1gjc6nk-2 aZmUw"
+              data-id="drop"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="phone"
+            data-index="4"
+            draggable="true"
+            id="phone"
+          >
+            Phone
+            <div
+              class="DraggableColumnstyles__Box-sc-1gjc6nk-0 lpbehf"
+              data-id="dragable"
+            />
+            <div
+              class="DraggableColumnstyles__DropLeft-sc-1gjc6nk-1 kKdMHz"
+              data-id="drop"
+            />
+            <div
+              class="DraggableColumnstyles__DropRight-sc-1gjc6nk-2 aZmUw"
+              data-id="drop"
+            />
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ empty state 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      />
+    </table>
+  </div>
+  <div
+    class="Tablestyles__Empty-sc-114heub-3 kIidXG"
+  >
+    <div
+      class="EmptyStatestyles__Box-sc-9kuou6-0 eMLjll"
+    >
+      <div
+        class="EmptyStatestyles__Content-sc-9kuou6-5 doQqHL"
+      >
+        <div
+          class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+        >
+          <div
+            class="Spinnerstyles__Box-moemrn-0 jPiLVW"
+          >
+            <svg
+              class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+              viewBox="0 0 100 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                class="Spinnerstyles__Circle-moemrn-2 dTrUIM"
+                color="primary"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+        >
+          <div
+            class="EmptyStatestyles__Title-sc-9kuou6-1 HwyCf"
+          >
+            Загружаем данные
+          </div>
+        </div>
+        <div
+          class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+        >
+          <div
+            class="EmptyStatestyles__Description-sc-9kuou6-2 gpNpEz"
+          >
+            Мы загружаем данные таблицы, очень скоро они будут готовы.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ expanding row 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 kArcHa"
+            data-column="expander"
+          >
+             
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 9.414l-7.293 7.293-1.414-1.414 8-8a1 1 0 011.414 0l8 8-1.414 1.414L12 9.414z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 kfdKBL"
+          data-test="text"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpandedContent-sc-15g468t-2 fYtOEr iHnvHR"
+            colspan="7"
+          >
+            <span>
+              Doe John
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ group by 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 ckxnqw"
+        >
+          <td
+            class="GroupTitlestyles__Td-sc-1z13zma-0 bbuzpY"
+            colspan="7"
+          >
+            CTO
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 ckxnqw"
+        >
+          <td
+            class="GroupTitlestyles__Td-sc-1z13zma-0 bbuzpY"
+            colspan="7"
+          >
+            SDE
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ hidden columns 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="1"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ multiple expanding rows 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 kArcHa"
+            data-column="expander"
+          >
+             
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 9.414l-7.293 7.293-1.414-1.414 8-8a1 1 0 011.414 0l8 8-1.414 1.414L12 9.414z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 kfdKBL"
+          data-test="text"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpandedContent-sc-15g468t-2 fYtOEr iHnvHR"
+            colspan="7"
+          >
+            <span>
+              Doe John
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 9.414l-7.293 7.293-1.414-1.414 8-8a1 1 0 011.414 0l8 8-1.414 1.414L12 9.414z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 kfdKBL"
+          data-test="text"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpandedContent-sc-15g468t-2 fYtOEr iHnvHR"
+            colspan="7"
+          >
+            <span>
+              Walker Johnnie
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 fYtOEr kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                />
+              </svg>
+            </span>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ noRowDivider 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 dWGAff"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 dWGAff"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 dWGAff"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ pinned columns 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 lmDtWw"
+            data-column="selector"
+            width="64px"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 cvGmMG"
+            data-column="expander"
+          >
+             
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 gmoDKi"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 gmoDKi"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 gmoDKi"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 cbFxRw"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 cbFxRw kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 9.414l-7.293 7.293-1.414-1.414 8-8a1 1 0 011.414 0l8 8-1.414 1.414L12 9.414z"
+                />
+              </svg>
+            </span>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="id"
+          >
+            0
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="firstName"
+          >
+            John
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="lastName"
+          >
+            Doe
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 kfdKBL"
+          data-test="text"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpandedContent-sc-15g468t-2 fYtOEr iHnvHR"
+            colspan="7"
+          >
+            <span>
+              Doe John
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 cbFxRw"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 cbFxRw kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                />
+              </svg>
+            </span>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="id"
+          >
+            1
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="firstName"
+          >
+            Johnnie
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="lastName"
+          >
+            Walker
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 cbFxRw"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ExpandingRowstyles__ExpanderCell-sc-15g468t-0 cbFxRw kysGwo"
+            data-column="expander"
+          >
+            <span
+              class="ExpandingRowstyles__ExpanderIcon-sc-15g468t-1 cwXyLO"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs />
+                <path
+                  d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                />
+              </svg>
+            </span>
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="id"
+          >
+            2
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="firstName"
+          >
+            James
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kInIjE"
+            data-column="lastName"
+          >
+            Jameson
+            <div
+              class="Pinnerstyles__Box-sc-19fr1tt-0 hfSOu"
+            />
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ resizable columns 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+            <div
+              class="Resizerstyles__ResizerLine-sc-1jfgire-0 dMVAvs"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+            <div
+              class="Resizerstyles__ResizerLine-sc-1jfgire-0 dMVAvs"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+            <div
+              class="Resizerstyles__ResizerLine-sc-1jfgire-0 dMVAvs"
+            />
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ select all 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="SelectAllstyles__Box-sc-1p1utqb-0 csdqw"
+  >
+    <span>
+      <span
+        class="SelectAllstyles__Label-sc-1p1utqb-1 iPqQLS"
+      >
+        Выбраны все строки (3) на странице
+      </span>
+      <span
+        class="SelectAllstyles__Label-sc-1p1utqb-1 iPqQLS"
+      >
+        <a
+          class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+        >
+          <span
+            class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
+          >
+            Выбрать все строки (3) в таблице
+          </span>
+        </a>
+      </span>
+    </span>
+  </div>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bhNtSQ"
+            data-column="selector"
+            width="64px"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ select rows 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bhNtSQ"
+            data-column="selector"
+            width="64px"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ settings 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <span
+    class="SettingsInternalstyles__Box-ju98w7-0 fgSlCx"
+  >
+    <span
+      class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+      tabindex="0"
+    >
+      <button
+        class="Buttonstyles__Box-qfvnbt-0 hbPOKe"
+        data-id="table-settings-button"
+        type="button"
+      >
+        <span
+          class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+        >
+          <svg
+            fill="currentColor"
+            height="20"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs />
+            <path
+              d="M19.5 12v-.5l2.6-1.9-.1-.7c0-.1-.2-1-.9-2.2-.7-1.2-1.3-1.7-1.4-1.8l-.5-.4-3 1.3c-.3-.2-.6-.4-.9-.5L14.9 2l-.6-.2c-.1 0-1-.3-2.3-.3-1.3 0-2.2.3-2.3.3l-.6.2-.4 3.3c-.3.1-.6.3-.9.5l-3-1.3-.5.4c-.1.1-.7.7-1.4 1.9-.6 1.1-.9 2-.9 2.1l-.1.6 2.6 1.9v1l-2.6 1.9.1.8c0 .1.2 1 .9 2.2.7 1.1 1.3 1.8 1.4 1.8l.5.4 3-1.3c.3.2.6.4.9.5l.4 3.3.6.2c.1 0 1 .3 2.3.3 1.3 0 2.2-.3 2.3-.3l.6-.2.4-3.2c.3-.2.6-.3.9-.5l3 1.3.5-.4c.1-.1.8-.7 1.4-1.8.6-1.1.9-2 .9-2.2l.1-.6-2.6-1.9V12zm.3 3.3c-.1.3-.3.6-.5 1s-.4.7-.6.9L15.9 16l-.5.4c-.4.4-.9.6-1.5.8l-.6.2-.3 3.1c-.6.1-1.6.1-2.2 0l-.3-3.1-.5-.3c-.5-.2-1-.5-1.5-.8l-.5-.4-2.8 1.2c-.2-.2-.4-.5-.6-.9-.2-.4-.4-.7-.5-1l2.5-1.8-.1-.6c0-.3-.1-.6-.1-.8 0-.2 0-.6.1-.8l.1-.6-2.4-1.9c.1-.3.3-.6.5-1s.4-.7.6-.9L8.1 8l.5-.4c.4-.2.9-.5 1.4-.7l.6-.2.3-3.1c.6-.1 1.6-.1 2.2 0l.3 3.1.6.2c.5.2 1 .5 1.5.8l.5.4 2.8-1.2c.2.2.4.5.6.9.2.4.4.7.5 1l-2.5 1.8.1.6c0 .3.1.6.1.8 0 .2 0 .6-.1.8l-.1.6 2.4 1.9z"
+            />
+            <path
+              d="M12 14a2 2 0 100-4 2 2 0 000 4z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        class="Popoverstyles__Message-wdclke-1 fiotNp"
+        width="288"
+      >
+        <div
+          class="Popoverstyles__Header-wdclke-2 fYngzS"
+        >
+          <span
+            class="Textstyles__Box-sc-13rj9wo-0 VTLdw"
+            color="brand-primary"
+          >
+            Настройка таблицы
+          </span>
+        </div>
+        <div
+          class="Popoverstyles__Content-wdclke-3 dNpuLA"
+        >
+          <div
+            class="ColumnsSettingsstyles__Box-sc-1x40br0-0 dvvlPJ"
+          >
+            <div
+              class="ColumnsSettingsstyles__Search-sc-1x40br0-3 cTbaxs"
+            >
+              <label
+                class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+              >
+                <div
+                  class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs />
+                    <path
+                      d="M11 3a8 8 0 016.32 12.905l3.887 3.888-1.414 1.414-3.888-3.886A8 8 0 1111 3zm0 2a6 6 0 100 12 6 6 0 000-12z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                >
+                  <div
+                    class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                      placeholder="Поиск..."
+                    />
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div
+              class="ColumnsSettingsstyles__ColumnsList-sc-1x40br0-1 kvvqTk"
+            >
+              <div
+                class="ColumnsSettingsstyles__Column-sc-1x40br0-2 htjNUL"
+                data-column="id"
+              >
+                <label
+                  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+                >
+                  <span
+                    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                  >
+                    <input
+                      aria-invalid="false"
+                      checked=""
+                      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                      type="checkbox"
+                    />
+                    <svg
+                      checked=""
+                      class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
+                      focusable="false"
+                      tabindex="-1"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
+                  >
+                    #
+                  </span>
+                </label>
+              </div>
+              <div
+                class="ColumnsSettingsstyles__Column-sc-1x40br0-2 htjNUL"
+                data-column="firstName"
+              >
+                <label
+                  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+                >
+                  <span
+                    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                  >
+                    <input
+                      aria-invalid="false"
+                      checked=""
+                      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                      type="checkbox"
+                    />
+                    <svg
+                      checked=""
+                      class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
+                      focusable="false"
+                      tabindex="-1"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
+                  >
+                    First Name
+                  </span>
+                </label>
+              </div>
+              <div
+                class="ColumnsSettingsstyles__Column-sc-1x40br0-2 htjNUL"
+                data-column="lastName"
+              >
+                <label
+                  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+                >
+                  <span
+                    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                  >
+                    <input
+                      aria-invalid="false"
+                      checked=""
+                      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                      type="checkbox"
+                    />
+                    <svg
+                      checked=""
+                      class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
+                      focusable="false"
+                      tabindex="-1"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
+                  >
+                    Last Name
+                  </span>
+                </label>
+              </div>
+              <div
+                class="ColumnsSettingsstyles__Column-sc-1x40br0-2 htjNUL"
+                data-column="position"
+              >
+                <label
+                  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+                >
+                  <span
+                    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                  >
+                    <input
+                      aria-invalid="false"
+                      checked=""
+                      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                      type="checkbox"
+                    />
+                    <svg
+                      checked=""
+                      class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
+                      focusable="false"
+                      tabindex="-1"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
+                  >
+                    Position
+                  </span>
+                </label>
+              </div>
+              <div
+                class="ColumnsSettingsstyles__Column-sc-1x40br0-2 htjNUL"
+                data-column="phone"
+              >
+                <label
+                  class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+                >
+                  <span
+                    class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                  >
+                    <input
+                      aria-invalid="false"
+                      checked=""
+                      class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                      type="checkbox"
+                    />
+                    <svg
+                      checked=""
+                      class="Checkboxstyles__Icon-sc-7b1pnz-1 fwBqJi"
+                      focusable="false"
+                      tabindex="-1"
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="Checkboxstyles__Content-sc-7b1pnz-2 brKHIJ"
+                  >
+                    Phone
+                  </span>
+                </label>
+              </div>
+            </div>
+            <a
+              class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+            >
+              <span
+                class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
+              >
+                Скрыть все
+              </span>
+            </a>
+          </div>
+          <div
+            class="GroupingSettingsstyles__Box-le683y-0 ieiSso"
+          >
+            <div
+              class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+            >
+              <label
+                class="Labelstyles__Box-gottoi-0 hQevbU"
+              >
+                <span
+                  class="Textstyles__Box-sc-13rj9wo-0 dHUzAZ"
+                  color="seattle100"
+                >
+                  Группировка
+                </span>
+              </label>
+              <div
+                class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+              >
+                <div
+                  aria-autocomplete="list"
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="Selectstyles__Box-sc-1w9qsms-2 dXbEZM"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <label
+                    class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg Selectstyles__StyledInputWrapper-sc-1w9qsms-4 iEIbIk"
+                    target=".Selectstyles__Current-sc-1w9qsms-1"
+                  >
+                    <div
+                      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                    >
+                      <div
+                        class="Selectstyles__Current-sc-1w9qsms-1 fjOpxM"
+                      />
+                    </div>
+                    <div
+                      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                    >
+                      <div
+                        class="Selectstyles__Part-sc-1w9qsms-0 iKTEGT"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <defs />
+                          <path
+                            d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div
+                  class="Messagestyles__Box-sc-2hwjqm-0 eNHlmT"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bhNtSQ"
+            data-column="selector"
+            width="64px"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+            data-column="selector"
+          >
+            <div
+              class="Selectorstyles__Box-sc-2brnsi-0 dGYhKR"
+            >
+              <label
+                class="Checkboxstyles__Box-sc-7b1pnz-3 rWrVw"
+              >
+                <span
+                  class="Checkboxstyles__IconBox-sc-7b1pnz-0 iLaMGm"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="Checkboxstyles__Input-sc-7b1pnz-4 hCnUJI"
+                    type="checkbox"
+                  />
+                  <svg
+                    class="Checkboxstyles__Icon-sc-7b1pnz-1 jkBeob"
+                    focusable="false"
+                    tabindex="-1"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d=""
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </label>
+            </div>
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ size 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ size 2`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bzntdt"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bzntdt"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bzntdt"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bzntdt"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 bzntdt"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 ifxWyc"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ size 3`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 ftoodF"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 ftoodF"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 ftoodF"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 ftoodF"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 ftoodF"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 hNviqM"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/ sortable columns 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            <div
+              class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+            >
+              First Name
+              <span
+                class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs />
+                  <path
+                    d="M13 2h-2v16.485l-5.551-5.832L4 14.03l7.289 7.658a1 1 0 001.447.001l7.305-7.658-1.447-1.38L13 18.516V2z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            <div
+              class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+            >
+              Last Name
+              <span
+                class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs />
+                  <path
+                    d="M13 2h-2v16.485l-5.551-5.832L4 14.03l7.289 7.658a1 1 0 001.447.001l7.305-7.658-1.447-1.38L13 18.516V2z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            <div
+              class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+            >
+              Position
+              <span
+                class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs />
+                  <path
+                    d="M13 2h-2v16.485l-5.551-5.832L4 14.03l7.289 7.658a1 1 0 001.447.001l7.305-7.658-1.447-1.38L13 18.516V2z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table w/o visible columns 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      />
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 ckxnqw"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 fYtOEr"
+          >
+            <div
+              class="EmptyStatestyles__Box-sc-9kuou6-0 eMLjll"
+            >
+              <div
+                class="EmptyStatestyles__Content-sc-9kuou6-5 doQqHL"
+              >
+                <div
+                  class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+                >
+                  <div
+                    class="EmptyStatestyles__Title-sc-9kuou6-1 HwyCf"
+                  >
+                    Нет колонок для отображения
+                  </div>
+                </div>
+                <div
+                  class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+                >
+                  <div
+                    class="EmptyStatestyles__Description-sc-9kuou6-2 gpNpEz"
+                  >
+                    В таблице отключены все колонки. Выберите колонки для отображения в настройках таблицы или включите все доступные.
+                  </div>
+                </div>
+                <div
+                  class="EmptyStatestyles__Row-sc-9kuou6-4 kgxSvL"
+                >
+                  <div
+                    class="EmptyStatestyles__Actions-sc-9kuou6-3 dsbOCz"
+                  >
+                    <button
+                      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+                      type="button"
+                    >
+                      <span
+                        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                      >
+                        Включить все колонки
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table with filter 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="lastName"
+            data-index="1"
+            id="lastName"
+          >
+            <div>
+              <span
+                class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+                tabindex="0"
+              >
+                <div
+                  class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+                >
+                  Last Name
+                  <span
+                    class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <path
+                        d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="Popoverstyles__Message-wdclke-1 bjZgqJ"
+                  width="248"
+                >
+                  <div
+                    class="Popoverstyles__Content-wdclke-3 dNpuLA"
+                  >
+                    <div
+                      class="Groupsstyles__Box-sc-1dief2o-0 iFNDcQ"
+                    >
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          class="ColumnTitlestyles__Box-sc-14lo7ar-1 kWqWIh"
+                        >
+                          Last Name
+                          <span
+                            class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                          >
+                            <svg
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <defs />
+                              <path
+                                d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          style="flex-grow:1"
+                        >
+                          <div>
+                            123
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          class="Groupsstyles__Box-sc-1dief2o-0 iFNDcQ"
+                        >
+                          <div
+                            class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                          >
+                            <button
+                              class="Buttonstyles__Box-qfvnbt-0 hbPOKe"
+                              type="button"
+                            >
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                <svg
+                                  fill="currentColor"
+                                  height="20"
+                                  viewBox="0 0 24 24"
+                                  width="20"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <defs />
+                                  <path
+                                    d="M11.041 22h2V5.515l5.551 5.832 1.45-1.378-7.29-7.658a1 1 0 00-1.447-.001L4 9.968l1.447 1.38 5.594-5.864V22z"
+                                  />
+                                </svg>
+                              </span>
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                 
+                              </span>
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                Сортировать
+                              </span>
+                            </button>
+                          </div>
+                          <div
+                            class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                          >
+                            <button
+                              class="Buttonstyles__Box-qfvnbt-0 hbPOKe"
+                              type="button"
+                            >
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                <svg
+                                  fill="currentColor"
+                                  height="20"
+                                  viewBox="0 0 24 24"
+                                  width="20"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <defs />
+                                  <path
+                                    d="M13 2h-2v16.485l-5.551-5.832L4 14.03l7.289 7.658a1 1 0 001.447.001l7.305-7.658-1.447-1.38L13 18.516V2z"
+                                  />
+                                </svg>
+                              </span>
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                 
+                              </span>
+                              <span
+                                class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+                              >
+                                Сортировать
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="position"
+            data-index="2"
+            id="position"
+          >
+            <div>
+              <span
+                class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+                tabindex="0"
+              >
+                <div
+                  class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+                >
+                  Position
+                  <span
+                    class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <path
+                        d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="Popoverstyles__Message-wdclke-1 bjZgqJ"
+                  width="248"
+                >
+                  <div
+                    class="Popoverstyles__Content-wdclke-3 dNpuLA"
+                  >
+                    <div
+                      class="Groupsstyles__Box-sc-1dief2o-0 iFNDcQ"
+                    >
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          class="ColumnTitlestyles__Box-sc-14lo7ar-1 kWqWIh"
+                        >
+                          Position
+                          <span
+                            class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                          >
+                            <svg
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <defs />
+                              <path
+                                d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          style="flex-grow:1"
+                        >
+                          <div
+                            aria-autocomplete="list"
+                            aria-disabled="false"
+                            aria-invalid="false"
+                            class="Selectstyles__Box-sc-1w9qsms-2 dXbEZM"
+                            role="combobox"
+                            tabindex="0"
+                          >
+                            <label
+                              class="Inputstyles__Wrapper-hc8ttv-6 eablnU Selectstyles__StyledInputWrapper-sc-1w9qsms-4 iEIbIk"
+                              target=".Selectstyles__Current-sc-1w9qsms-1"
+                            >
+                              <div
+                                class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                              >
+                                <div
+                                  class="Selectstyles__Current-sc-1w9qsms-1 fjOpxM"
+                                >
+                                  <div
+                                    class="Selectstyles__Placeholder-sc-1w9qsms-3 fDwRzi"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                              >
+                                <div
+                                  class="Selectstyles__Part-sc-1w9qsms-0 iKTEGT"
+                                >
+                                  <svg
+                                    fill="currentColor"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    width="20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <defs />
+                                    <path
+                                      d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
+                                    />
+                                  </svg>
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 fWPRoz"
+            data-column="phone"
+            data-index="3"
+            id="phone"
+          >
+            <div>
+              <span
+                class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+                tabindex="0"
+              >
+                <div
+                  class="ColumnTitlestyles__Box-sc-14lo7ar-1 lkBbpC"
+                >
+                  Phone
+                  <span
+                    class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <defs />
+                      <path
+                        d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="Popoverstyles__Message-wdclke-1 bjZgqJ"
+                  width="248"
+                >
+                  <div
+                    class="Popoverstyles__Content-wdclke-3 dNpuLA"
+                  >
+                    <div
+                      class="Groupsstyles__Box-sc-1dief2o-0 iFNDcQ"
+                    >
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          class="ColumnTitlestyles__Box-sc-14lo7ar-1 kWqWIh"
+                        >
+                          Phone
+                          <span
+                            class="ColumnTitlestyles__Icon-sc-14lo7ar-0 fNPTdS"
+                          >
+                            <svg
+                              fill="currentColor"
+                              height="16"
+                              viewBox="0 0 24 24"
+                              width="16"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <defs />
+                              <path
+                                d="M3 7h18V5H3v2zm16 6H5v-2h14v2zm-2 6H7v-2h10v2z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                      <div
+                        class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+                      >
+                        <div
+                          style="flex-grow:1"
+                        >
+                          <label
+                            class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+                          >
+                            <div
+                              class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                            >
+                              <div
+                                class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                              >
+                                <input
+                                  aria-invalid="false"
+                                  class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TableDeprecated Table without render-functions 1`] = `
+<div
+  class="Tablestyles__Wrapper-sc-114heub-0 leMoCP"
+  data-id="table-container"
+>
+  <div
+    class="Tablestyles__TableWrapper-sc-114heub-1 bwOeXS"
+    data-id="table-wrapper"
+  >
+    <table
+      class="Tablestyles__Box-sc-114heub-2 eKFKf"
+    >
+      <thead
+        class="TableHeaderstyles__Header-sc-2649yd-2 gqqAUu"
+      >
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        />
+        <tr
+          class="TableHeaderstyles__Row-sc-2649yd-0"
+        >
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="id"
+            data-index="0"
+            id="id"
+          >
+            #
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="firstName"
+            data-index="1"
+            id="firstName"
+          >
+            First Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="lastName"
+            data-index="2"
+            id="lastName"
+          >
+            Last Name
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="position"
+            data-index="3"
+            id="position"
+          >
+            Position
+          </th>
+          <th
+            class="TableHeaderstyles__Th-sc-2649yd-1 jCMYiK"
+            data-column="phone"
+            data-index="4"
+            id="phone"
+          >
+            Phone
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="TableBodystyles__Body-b95wr8-2 bdNQqp"
+      >
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="0"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            0
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            John
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Doe
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            9163456789
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="1"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            1
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            Johnnie
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Walker
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            Software Engineer
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            none
+          </td>
+        </tr>
+        <tr
+          class="TableBodystyles__Row-b95wr8-1 bAgSRs"
+          data-row="2"
+        >
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="id"
+          >
+            2
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="firstName"
+          >
+            James
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="lastName"
+          >
+            Jameson
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="position"
+          >
+            CTO
+          </td>
+          <td
+            class="TableBodystyles__Td-b95wr8-0 kqhMEb"
+            data-column="phone"
+          >
+            916456789
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

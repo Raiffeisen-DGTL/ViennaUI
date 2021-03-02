@@ -2,6 +2,31 @@ import { ReactNode } from 'react';
 
 export type Spin = 'next' | 'prev';
 
+export enum Day {
+    monday = 'monday',
+    tuesday = 'tuesday',
+    wednesday = 'wednesday',
+    thursday = 'thursday',
+    friday = 'friday',
+    saturday = 'saturday',
+    sunday = 'sunday',
+}
+
+export enum Month {
+    january = 'january',
+    february = 'february',
+    march = 'march',
+    april = 'april',
+    may = 'may',
+    june = 'june',
+    july = 'july',
+    august = 'august',
+    september = 'september',
+    october = 'october',
+    november = 'november',
+    december = 'december',
+}
+
 export enum DayType {
     TODAY = 'today',
     DISABLED = 'disabled',
@@ -11,6 +36,7 @@ export enum DayType {
     RANGE = 'range',
     EVENT = 'event',
     CLEAR = '',
+    ACTIVE_DISABLED = 'activeDisabled',
 }
 
 export enum ViewMode {
@@ -28,6 +54,11 @@ export enum DisabledDates {
     WEEKENDS = 'weekends',
 }
 
+export enum StartingWeekDay {
+    Sunday = 0,
+    Monday = 1,
+}
+
 export interface MonthProps<T> {
     date?: T;
     disabledDates?: DisabledDates.WEEKENDS | Date[] | dateFunction;
@@ -37,6 +68,7 @@ export interface MonthProps<T> {
     displayedDate: Date;
     minDate?: Date;
     maxDate?: Date;
+    startingWeekDay: StartingWeekDay;
 }
 
 export interface DateItem {

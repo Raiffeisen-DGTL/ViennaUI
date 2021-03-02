@@ -1,34 +1,18 @@
 space: layout
 size:
-  xxxs:
-    value: 8px
-    prop: height
-    desc: ''
-  xxs:
-    value: 12px
-    prop: height
-    desc: ''
-  xs:
-    value: 24px
-    prop: height
-    desc: ''
-  s:
-    value: 32px
-    prop: height
-    desc: ''
-  m:
-    value: 36px
-    prop: height
-    desc: ''
-  l:
-    value: 40px
-    prop: height
-    desc: ''
-  xl:
-    value: 48px
-    prop: height
-    desc: ''
-  xxl:
-    value: 52px
-    prop: height
-    desc: ''
+  s1: 4
+  s2: 8
+  s3: 12
+  s4: 16
+  s5: 20
+  s6: 24
+  s7: 28
+  s8: 32
+  s9: 36
+  s10: 40
+  s11: 44
+  s12: 48
+  s13: 52
+  s14: 56
+  s15: 60
+  s16: 64

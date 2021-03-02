@@ -2,7 +2,6 @@
 
 Компонент `Chips` используется для сегментации и фильтрации контента.
 
-
 ## Импорт
 
 ```
@@ -11,36 +10,35 @@ import { Chips } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-active | string \| string[] \| undefined | false | Активные элементы
-design | 'accent' \| 'primary' \| 'ghost' \| undefined | 'primary' |
-align | string \| undefined | 'left' |
-onClick | (event: React.FormEvent) => void | false |
+| Prop    | Type                                          | Default   | Description       |
+| ------- | --------------------------------------------- | --------- | ----------------- |
+| active  | string \| string[] \| undefined               | false     | Активные элементы |
+| design  | 'accent' \| 'primary' \| 'ghost' \| undefined | 'primary' |
+| align   | string \| undefined                           | 'left'    |
+| onClick | (event: React.FormEvent) => void              | false     |
 
 ## Свойства элемента / Item Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-id | string \| undefined | false | Идентификатор элемента
-active | boolean \| undefined | false | Активный элемент
-disabled | boolean \| undefined | false | Заблокированный элемент
-onFocus | ((event: FormEvent) => void) \| undefined | false |
-onBlur | ((event: FormEvent) => void) \| undefined | false |
-onKeyUp | ((event: FormEvent) => void) \| undefined | false |
-onKeyDown | ((event: FormEvent) => void) \| undefined | false |
-onMouseUp | ((event: FormEvent) => void) \| undefined | false |
-onMouseDown | ((event: FormEvent) => void) \| undefined | false |
-onMouseEnter | ((event: FormEvent) => void) \| undefined | false |
-onMouseOut | ((event: FormEvent) => void) \| undefined | false |
-onMouseLeave | ((event: FormEvent) => void) \| undefined | false |
+| Prop         | Type                                      | Default | Description             |
+| ------------ | ----------------------------------------- | ------- | ----------------------- |
+| id           | string \| undefined                       | false   | Идентификатор элемента  |
+| active       | boolean \| undefined                      | false   | Активный элемент        |
+| disabled     | boolean \| undefined                      | false   | Заблокированный элемент |
+| onFocus      | ((event: FormEvent) => void) \| undefined | false   |
+| onBlur       | ((event: FormEvent) => void) \| undefined | false   |
+| onKeyUp      | ((event: FormEvent) => void) \| undefined | false   |
+| onKeyDown    | ((event: FormEvent) => void) \| undefined | false   |
+| onMouseUp    | ((event: FormEvent) => void) \| undefined | false   |
+| onMouseDown  | ((event: FormEvent) => void) \| undefined | false   |
+| onMouseEnter | ((event: FormEvent) => void) \| undefined | false   |
+| onMouseOut   | ((event: FormEvent) => void) \| undefined | false   |
+| onMouseLeave | ((event: FormEvent) => void) \| undefined | false   |
 
 ## Использование
 
 Компонент состоит из родительского контейнера `Chips` и дочерних элементов `Chips.Item`.
 
-> Компонент является контролируемым, то есть чтобы отобразить элементы как активные,
-> необходимо получить их значение через обработчик `onChange` и прокинуть в `active`.
+> Компонент является контролируемым, то есть чтобы отобразить элементы как активные, необходимо получить их значение через обработчик `onChange` и прокинуть в `active`.
 
 ```jsx
 <Chips>
@@ -53,6 +51,7 @@ onMouseLeave | ((event: FormEvent) => void) \| undefined | false |
 ```
 
 ## Дизайн
+
 ##### Свойство `design`
 
 Комопнент поддерживает 3 опции внешнего вида: `accent`, `primary` и `ghost`
@@ -72,6 +71,7 @@ onMouseLeave | ((event: FormEvent) => void) \| undefined | false |
 ```
 
 ## Выравнивание
+
 ##### Свойство `align`
 
 ```jsx
@@ -85,32 +85,34 @@ onMouseLeave | ((event: FormEvent) => void) \| undefined | false |
 ```
 
 ## Активный элемент
+
 ##### Свойство `active`
 
-Активный элемент мможно выбрать, как установив свойство `active` для компонента `Chips`, который принимает строку или массив строк `id` компонентов `Chips.Item`,
-так и установив свойство `active` для компонента `Chips.Item` в `true`.
+Активный элемент мможно выбрать, как установив свойство `active` для компонента `Chips`, который принимает строку или массив строк `id` компонентов `Chips.Item`, так и установив свойство `active` для компонента `Chips.Item` в `true`.
 
 ```jsx
-{() => {
-    const [active, setActive] = React.useState(null);
-    const onClick = (event) => setActive(event.target.id);
-    return (
-        <Chips design='primary' onClick={onClick} active={active}>
-            <Chips.Item id='1' tabIndex='1'>
-                Chip
-            </Chips.Item>
-            <Chips.Item id='2' tabIndex='1'>
-                Chip
-            </Chips.Item>
-            <Chips.Item id='3' tabIndex='1'>
-                Chip
-            </Chips.Item>
-            <Chips.Item id='4' tabIndex='1'>
-                Chip
-            </Chips.Item>
-        </Chips>
-    );
-}}
+{
+    () => {
+        const [active, setActive] = React.useState(null);
+        const onClick = (event) => setActive(event.target.id);
+        return (
+            <Chips design='primary' onClick={onClick} active={active}>
+                <Chips.Item id='1' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='2' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='3' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='4' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+            </Chips>
+        );
+    };
+}
 ```
 
 ```jsx
@@ -131,6 +133,7 @@ onMouseLeave | ((event: FormEvent) => void) \| undefined | false |
 ```
 
 ## Заблокированный элемент
+
 ##### Свойство `disabled`
 
 ```jsx

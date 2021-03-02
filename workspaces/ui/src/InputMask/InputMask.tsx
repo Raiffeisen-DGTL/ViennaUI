@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, Ref } from 'react';
+import React, { useCallback, useEffect, useRef, useState, Ref } from 'react';
 import IMask from 'imask';
 import { IMaskProps, useMask } from 'vienna.react-use';
 import { Input, InputProps } from '../Input/Input';
@@ -7,6 +7,7 @@ export interface Data {
     name?: string;
     value: string | number | Date;
     originalValue?: any;
+    isComplete?: boolean;
 }
 export type InputMaskChangeEvent = (event: React.FormEvent<HTMLInputElement> | Event, data: Data) => void;
 
@@ -80,8 +81,17 @@ export const InputMask: React.FC<InputMaskProps> = React.forwardRef(
             parse,
         };
 
+        // Если в маску передать значаения функций с undefined, то она возьмет это значение вместо правильного по умолчанию
+        Object.keys(maskOptions).forEach((key) => {
+            if (maskOptions[key] === undefined) {
+                // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+                delete maskOptions[key];
+            }
+        });
+
         const inputRef = useRef<any>();
         const maskRef = useRef<any>();
+        const [realValue, setRealValue] = useState(value);
         const [valueToMask, maskToValue, placeholder] = useMask(maskOptions);
 
         useEffect(() => {
@@ -116,6 +126,7 @@ export const InputMask: React.FC<InputMaskProps> = React.forwardRef(
                         name: name,
                         value: maskRef.current.value,
                         originalValue: maskRef.current.unmaskedValue,
+                        isComplete: maskRef.current.masked.isComplete,
                     });
                 }
             },
@@ -151,24 +162,27 @@ export const InputMask: React.FC<InputMaskProps> = React.forwardRef(
             }
         }, [maskOptions]);
 
-        useEffect(() => {
+        const syncMask = useCallback(() => {
             if (maskRef.current) {
-                if (
-                    value !== maskRef.current.value ||
-                    (typeof value !== 'string' && maskRef.current.value === '' && !maskRef.current.el.isActive)
-                ) {
-                    maskRef.current.value = value === null ? '' : value;
-                    maskRef.current.updateValue();
-                }
+                maskRef.current.el.value = value;
+                maskRef.current.unmaskedValue = value;
+                maskRef.current.value = value;
+                maskRef.current.updateValue();
+                setRealValue(maskRef.current.value);
             }
         }, [value]);
+
+        useEffect(syncMask, [syncMask]);
 
         return (
             <Input
                 ref={inputRef}
                 smartPlaceholder={showMask && value && placeholder(value)}
+                value={realValue}
                 name={name}
                 maxLength={maxLength}
+                onChange={syncMask}
+                onUpdated={syncMask}
                 {...attrs}
             />
         );

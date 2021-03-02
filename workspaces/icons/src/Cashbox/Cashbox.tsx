@@ -14,7 +14,12 @@ export const Cashbox: React.FC<CashboxProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M14 7h-4V2h10v5h-4v2h2a2 2 0 012 2v5a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2a2 2 0 012-2v-5a2 2 0 012-2h8V7zm4 9v-5H6v5h12zM6 18H4v2h16v-2H6zm1-6h2v2H7v-2zm3 0h2v2h-2v-2zm8-8h-6v1h6V4z' />
+            <path d='M10 13.5a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2z' />
+            <path
+                fillRule='evenodd'
+                d='M13 1a1 1 0 00-1 1v4a1 1 0 001 1h3v2H5a1 1 0 00-1 1v6H3a1 1 0 00-1 1v4a1 1 0 001 1h18a1 1 0 001-1v-4a1 1 0 00-1-1h-1v-6a1 1 0 00-1-1h-1V7h3a1 1 0 001-1V2a1 1 0 00-1-1h-8zm1 4V3h6v2h-6zM4 18h16v2H4v-2zm2-7h12v5H6v-5z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

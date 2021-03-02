@@ -7,4 +7,4 @@ base:
   font-style: normal
   line-height: $typography.b.b2.height
   letter-spacing: normal
-  color: $color.text.primary
+  color: $color.primary.brand.primary

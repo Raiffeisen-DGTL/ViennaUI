@@ -1,6 +1,6 @@
 import React from 'react';
 import { Edit, Trash } from 'vienna.icons';
-import { EmptyState, Groups, DropList } from '..';
+import { EmptyState, Groups, DropList, Select } from '..';
 import { Table, TableProps } from './Table';
 
 const data = [
@@ -613,13 +613,13 @@ test('Table w/ settings', () => {
             <Table.Settings>
                 <Table.ColumnsSettings searchable hideShowAll />
                 <Table.GroupingSettings>
-                    <Table.GroupingSettings.Item name='None' />
-                    <Table.GroupingSettings.Item name='By position'>
+                    <Table.GroupingSettings.Item id='none' name='None' />
+                    <Table.GroupingSettings.Item id='position' name='By position'>
                         <Table.GroupBy id='pm' title='CTO' filter={(item) => item.position === 'CTO'} />
                         <Table.GroupBy id='sde' title='SDE' filter={(item) => item.position === 'Software Engineer'} />
                         <Table.GroupBy id='doc' title='Doctor' filter={(item) => item.position === 'Doctor'} />
                     </Table.GroupingSettings.Item>
-                    <Table.GroupingSettings.Item name='By name'>
+                    <Table.GroupingSettings.Item id='name' name='By name'>
                         <Table.GroupBy id='g1' title='Jane' filter={(item) => item.firstName === 'Jane'} />
                         <Table.GroupBy id='g2' title='Johnnie' filter={(item) => item.firstName === 'Johnnie'} />
                         <Table.GroupBy
@@ -654,6 +654,28 @@ test('Table w/o visible columns', () => {
             <Table.Column id='phone' title='Phone' hidden>
                 {(person) => person.phone}
             </Table.Column>
+        </Table>
+    );
+    expect(snap).toMatchSnapshot();
+});
+
+test('Table with filter', () => {
+    const snap = snapshot.render(
+        <Table data={data}>
+            <Table.Column id='id' title='#' />
+            <Table.Column id='lastName' title='Last Name' sortable filter={() => <div>123</div>} />
+            <Table.Column
+                id='position'
+                title='Position'
+                filter={
+                    <Table.SelectFilter>
+                        <Select.Option>PM</Select.Option>
+                        <Select.Option>Software Engineer</Select.Option>
+                        <Select.Option>CTO</Select.Option>
+                    </Table.SelectFilter>
+                }
+            />
+            <Table.Column id='phone' title='Phone' filter={Table.InputFilter} />
         </Table>
     );
     expect(snap).toMatchSnapshot();

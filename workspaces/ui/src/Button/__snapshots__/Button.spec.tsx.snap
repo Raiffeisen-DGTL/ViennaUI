@@ -2,478 +2,62 @@
 
 exports[`Button 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 jolcIP"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Accent
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_0"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Primary
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_1"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Outline
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_2"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 gSxLZq"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Critical
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_3"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 lgPlfP"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Outline critical
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_4"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 envJPA"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Ghost
     </span>
@@ -482,82 +66,13 @@ Array [
 `;
 
 exports[`Button w/ any props 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0 className"
-  data-marker="Button_35"
+  class="Buttonstyles__Box-qfvnbt-0 dcKhhz className"
   id="id"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Test
   </span>
@@ -565,88 +80,13 @@ exports[`Button w/ any props 1`] = `
 `;
 
 exports[`Button w/ disabled 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 cCBrNP"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -654,88 +94,13 @@ exports[`Button w/ disabled 1`] = `
 `;
 
 exports[`Button w/ disabled 2`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 eCNSXu"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -743,87 +108,13 @@ exports[`Button w/ disabled 2`] = `
 `;
 
 exports[`Button w/ disabled 3`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: rgba(43,45,51,0.24);
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 cVvbVs"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -831,90 +122,13 @@ exports[`Button w/ disabled 3`] = `
 `;
 
 exports[`Button w/ disabled 4`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #D5D5D6;
-  background-color: transparent;
-  border: solid 2px #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 ciSgaY"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -922,90 +136,13 @@ exports[`Button w/ disabled 4`] = `
 `;
 
 exports[`Button w/ disabled 5`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #D5D5D6;
-  background-color: transparent;
-  border: solid 2px #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 exyFoj"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -1013,88 +150,13 @@ exports[`Button w/ disabled 5`] = `
 `;
 
 exports[`Button w/ disabled 6`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_7"
+  class="Buttonstyles__Box-qfvnbt-0 dKyJxf"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -1103,1041 +165,132 @@ exports[`Button w/ disabled 6`] = `
 
 exports[`Button w/ grid 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_19"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 JIuCv"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       auto
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 8.333333333333334%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_20"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 lfonEn"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       1
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 16.666666666666668%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_21"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 hvRRmM"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       2
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 25%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_22"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 gGBlcy"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       3
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 33.333333333333336%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_23"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 ejfeJt"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       4
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 41.66666666666667%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_24"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 iSUkJb"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       5
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 50%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_25"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 iWYTuY"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       6
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 58.333333333333336%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_26"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 rIZZw"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       7
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 66.66666666666667%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_27"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 jOzTey"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       8
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 75%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_28"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 fufRLH"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       9
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 83.33333333333334%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_29"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dVwgPH"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       10
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 91.66666666666667%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_30"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 laTnoO"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       11
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 100%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_31"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 fGSFHc"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       12
     </span>
@@ -2147,163 +300,25 @@ Array [
 
 exports[`Button w/ href 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<a
-    class="c0"
-    data-marker="Button_8"
+  <a
+    class="Buttonstyles__Box-qfvnbt-0 jolcIP"
     href="/"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Home
     </span>
   </a>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<a
-    class="c0"
-    data-marker="Button_9"
+  <a
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     href="http://google.com"
     target="_blank"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Google
     </span>
@@ -2313,323 +328,96 @@ Array [
 
 exports[`Button w/ icons 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_10"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="LeftArrow"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="LeftArrow.defs"
-        />
+        <defs />
         <path
-          d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-          data-marker="LeftArrow.path"
+          d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
         />
       </svg>
     </span>
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
        Назад
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_11"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Вперед 
     </span>
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="ArrowRight"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="ArrowRight.defs"
-        />
+        <defs />
         <path
-          d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
-          data-marker="ArrowRight.path"
+          d="M2 11.02v2h16.485l-5.832 5.552 1.378 1.449 7.658-7.289a1 1 0 00.001-1.448L14.032 3.98l-1.38 1.448 5.864 5.594H2z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_12"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="LeftArrow_0"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="LeftArrow.defs"
-        />
+        <defs />
         <path
-          d="M21 11H6.414L13 4.414V3h-1.414l-9 9 9 9H13v-1.414L6.414 13H21z"
-          data-marker="LeftArrow.path"
+          d="M5.494 11l5.853-5.571L9.97 3.98l-7.66 7.29a1 1 0 00-.001 1.448l7.658 7.304 1.38-1.447L5.505 13 22 13.001v-2H5.494z"
         />
       </svg>
     </span>
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
        Вперед 
     </span>
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="ArrowRight_0"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="ArrowRight.defs"
-        />
+        <defs />
         <path
-          d="M11.414 3H10v1.414L16.586 11H2v2h14.586L10 19.586V21h1.414l9-9z"
-          data-marker="ArrowRight.path"
+          d="M2 11.02v2h16.485l-5.832 5.552 1.378 1.449 7.658-7.289a1 1 0 00.001-1.448L14.032 3.98l-1.38 1.448 5.864 5.594H2z"
         />
       </svg>
     </span>
@@ -2638,1021 +426,180 @@ Array [
 `;
 
 exports[`Button w/ loading 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 fgGfcJ"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ loading 2`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 cdaZGg"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ loading 3`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: rgba(43,45,51,0.24);
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 kQYmnS"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ loading 4`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #D5D5D6;
-  background-color: transparent;
-  border: solid 2px #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 eIxMXy"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ loading 5`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #D5D5D6;
-  background-color: transparent;
-  border: solid 2px #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 XVgZZ"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ loading 6`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  pointer-events: none;
-  cursor: not-allowed;
-  color: #AAABAD;
-  background-color: #E9EAEA;
-  -webkit-transition: none;
-  transition: none;
-  cursor: default;
-  color: transparent;
-  -webkit-transition: none;
-  transition: none;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-.c2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: top;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 5;
-  margin: auto;
-}
-
-.c3 {
-  width: 20px;
-  height: 20px;
-  display: block;
-  fill: currentColor !important;
-  -webkit-animation: cZxgpV 1s infinite linear;
-  animation: cZxgpV 1s infinite linear;
-}
-
-.c3 > use {
-  fill: currentColor !important;
-}
-
 <button
-  class="c0"
-  data-marker="Button_6"
+  class="Buttonstyles__Box-qfvnbt-0 dFJqQx"
   disabled=""
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
   <div
-    class="c2"
-    data-marker="ButtonComponent.Spinner"
+    class="Spinnerstyles__Box-moemrn-0 eAchHT"
   >
     <svg
-      class="c3"
-      data-marker="Spinner.Svg"
-      viewBox="0 0 16 16"
+      class="Spinnerstyles__Svg-moemrn-1 cRsyFY"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        data-marker="Spinner.g"
-        fill="none"
-        fill-rule="evenodd"
-        stroke-width="2"
-      >
-        <path
-          d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-          data-marker="Spinner.path"
-          stroke="#2b2d33"
-          stroke-opacity=".87"
-        />
-        <path
-          d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-          data-marker="Spinner.path_0"
-          stroke="#fee600"
-        />
-      </g>
+      <circle
+        class="Spinnerstyles__Circle-moemrn-2 gwfoLM"
+        color="london120"
+      />
     </svg>
   </div>
 </button>
 `;
 
 exports[`Button w/ size 1`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 enpXpF"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -3660,81 +607,12 @@ exports[`Button w/ size 1`] = `
 `;
 
 exports[`Button w/ size 2`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 fFyFwm"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -3742,81 +620,12 @@ exports[`Button w/ size 2`] = `
 `;
 
 exports[`Button w/ size 3`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 jolcIP"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -3824,81 +633,12 @@ exports[`Button w/ size 3`] = `
 `;
 
 exports[`Button w/ size 4`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 lpvyfT"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -3906,81 +646,12 @@ exports[`Button w/ size 4`] = `
 `;
 
 exports[`Button w/ size 5`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 eKLxeZ"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -3988,81 +659,12 @@ exports[`Button w/ size 5`] = `
 `;
 
 exports[`Button w/ size 6`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 fUCIhN"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -4070,82 +672,12 @@ exports[`Button w/ size 6`] = `
 `;
 
 exports[`Button w/ size 7`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 hnlLZk"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -4153,81 +685,12 @@ exports[`Button w/ size 7`] = `
 `;
 
 exports[`Button w/ size 8`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 jSaWZD"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4235,81 +698,12 @@ exports[`Button w/ size 8`] = `
 `;
 
 exports[`Button w/ size 9`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 gSxLZq"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4317,81 +711,12 @@ exports[`Button w/ size 9`] = `
 `;
 
 exports[`Button w/ size 10`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 iTIhwu"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4399,81 +724,12 @@ exports[`Button w/ size 10`] = `
 `;
 
 exports[`Button w/ size 11`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 bbWlLk"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4481,81 +737,12 @@ exports[`Button w/ size 11`] = `
 `;
 
 exports[`Button w/ size 12`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 clNwNY"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -4563,82 +750,12 @@ exports[`Button w/ size 12`] = `
 `;
 
 exports[`Button w/ size 13`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 hbPOKe"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -4646,81 +763,12 @@ exports[`Button w/ size 13`] = `
 `;
 
 exports[`Button w/ size 14`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 ddRaMd"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4728,81 +776,12 @@ exports[`Button w/ size 14`] = `
 `;
 
 exports[`Button w/ size 15`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 envJPA"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4810,81 +789,12 @@ exports[`Button w/ size 15`] = `
 `;
 
 exports[`Button w/ size 16`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 ksFgTA"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4892,81 +802,12 @@ exports[`Button w/ size 16`] = `
 `;
 
 exports[`Button w/ size 17`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 cZtRjy"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -4974,81 +815,12 @@ exports[`Button w/ size 17`] = `
 `;
 
 exports[`Button w/ size 18`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #00809C;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 eKMzHy"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -5056,83 +828,12 @@ exports[`Button w/ size 18`] = `
 `;
 
 exports[`Button w/ size 19`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 bDdFZO"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -5140,82 +841,12 @@ exports[`Button w/ size 19`] = `
 `;
 
 exports[`Button w/ size 20`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 gNBwRF"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5223,82 +854,12 @@ exports[`Button w/ size 20`] = `
 `;
 
 exports[`Button w/ size 21`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5306,82 +867,12 @@ exports[`Button w/ size 21`] = `
 `;
 
 exports[`Button w/ size 22`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 fyxJHA"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5389,82 +880,12 @@ exports[`Button w/ size 22`] = `
 `;
 
 exports[`Button w/ size 23`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 cASmYu"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5472,82 +893,12 @@ exports[`Button w/ size 23`] = `
 `;
 
 exports[`Button w/ size 24`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 bmQMLy"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -5555,83 +906,12 @@ exports[`Button w/ size 24`] = `
 `;
 
 exports[`Button w/ size 25`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 hczkOx"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -5639,82 +919,12 @@ exports[`Button w/ size 25`] = `
 `;
 
 exports[`Button w/ size 26`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 hHfLQa"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5722,82 +932,12 @@ exports[`Button w/ size 26`] = `
 `;
 
 exports[`Button w/ size 27`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 lgPlfP"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5805,82 +945,12 @@ exports[`Button w/ size 27`] = `
 `;
 
 exports[`Button w/ size 28`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 booDdX"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5888,82 +958,12 @@ exports[`Button w/ size 28`] = `
 `;
 
 exports[`Button w/ size 29`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 iZnXrB"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -5971,82 +971,12 @@ exports[`Button w/ size 29`] = `
 `;
 
 exports[`Button w/ size 30`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 hLmxeF"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -6054,82 +984,12 @@ exports[`Button w/ size 30`] = `
 `;
 
 exports[`Button w/ size 31`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 gfnTjB"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
   >
     Default
   </span>
@@ -6137,81 +997,12 @@ exports[`Button w/ size 31`] = `
 `;
 
 exports[`Button w/ size 32`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 dkSKWW"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -6219,81 +1010,12 @@ exports[`Button w/ size 32`] = `
 `;
 
 exports[`Button w/ size 33`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -6301,81 +1023,12 @@ exports[`Button w/ size 33`] = `
 `;
 
 exports[`Button w/ size 34`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 fdUCED"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -6383,81 +1036,12 @@ exports[`Button w/ size 34`] = `
 `;
 
 exports[`Button w/ size 35`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 kQnzHZ"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
   >
     Default
   </span>
@@ -6465,81 +1049,12 @@ exports[`Button w/ size 35`] = `
 `;
 
 exports[`Button w/ size 36`] = `
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
 <button
-  class="c0"
-  data-marker="Button_5"
+  class="Buttonstyles__Box-qfvnbt-0 KJblR"
   type="button"
 >
   <span
-    class="c1"
-    data-marker="ButtonComponent.content.ContentWrapper"
+    class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
   >
     Default
   </span>
@@ -6548,573 +1063,128 @@ exports[`Button w/ size 36`] = `
 
 exports[`Button w/ square 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_13"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dxiCgh"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
     >
       <svg
-        data-marker="Logo"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_14"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 jxwgnS"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Logo_0"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_15"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 hWFVnH"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Logo_1"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_16"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 etazHX"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Logo_2"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_17"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 fOQYmN"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Logo_3"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_18"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 eAQYNR"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
     >
       <svg
-        data-marker="Logo_4"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Logo.defs"
-        />
+        <defs />
         <path
-          d="M2.399 18.438l2.8 2.855 6.561-6.658 6.781 6.795 2.845-2.814-6.715-6.716 1.291-1.249V7.99l.81-.685v2.086l1.043.851 3.116-3.116 1 .769c.591-2.183-2.827-7.139-5.655-4.393l-3.29 3.267.673.81-1.673 1.634-1.62-1.593.851-.768-3.616-3.488C4.886 1.127 2.097 4.531 2 7.853l.989-.824L6.023 10.3l1.084-.906v-2l.673.508v2.622l1.318 1.317-6.7 6.6.001-.003z"
-          data-marker="Logo.path"
+          d="M5.372 21.727L12 15.043l6.628 6.684 2.63-2.649-6.63-6.686 1.383-1.396V8.241l.961-.97v2.403l.836.844 3.36-3.39.832.837c-.006-.632-.131-2.462-1.67-3.987-1.661-1.611-3.454-.885-4.067-.266L12.903 7.1l.857.863L12 9.74l-1.761-1.777.857-.863-3.36-3.39c-.612-.618-2.406-1.344-4.066.267C2.13 5.503 2.006 7.333 2 7.965l.831-.838 3.36 3.39.837-.843V7.271l.96.97v2.755l1.383 1.396-6.629 6.686 2.63 2.65z"
         />
       </svg>
     </span>
@@ -7124,242 +1194,32 @@ Array [
 
 exports[`Button w/ truncate 1`] = `
 Array [
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 8.333333333333334%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_32"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 cnwJQy"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Button Text
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 16.666666666666668%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_33"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 hvRRmM"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Super Button Text
     </span>
   </button>,
-  .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  width: 25%;
-}
-
-.c0:active {
-  top: 1px;
-}
-
-.c0:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c1:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c1 > svg {
-  display: block;
-}
-
-<button
-    class="c0"
-    data-marker="Button_34"
+  <button
+    class="Buttonstyles__Box-qfvnbt-0 dcVPwO"
     type="button"
   >
     <span
-      class="c1"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Super Button Text Awesome Amazing
     </span>

@@ -92,24 +92,26 @@ export const Stepper: React.FC<StepperProps> & { Step: React.FC<StepProps> } = (
         return (currentStepIndex * 100) / (childrenSize - 1);
     }, [children, value]);
 
-    const steps = useMemo(
-        () =>
-            React.Children.map(children, (child: any, index) => {
-                const childProps: StepProps = {
-                    design: defineDesign(child, index),
-                    title: child.props.children,
-                    size: size || 's',
-                    orientation: orientation || 'horizontal',
-                    value: child.props.value,
-                    hasTooltip: stepsTooltips.has(index),
-                    el: stepsRefs[index],
-                    valign,
-                };
+    const steps = useMemo(() => {
+        const displayedChildren = React.Children.toArray(children)?.filter(Boolean);
+        const count = React.Children.count(displayedChildren);
 
-                return <child.type {...childProps} />;
-            }),
-        [children, stepsRefs, stepperRef]
-    );
+        return React.Children.map(displayedChildren, (child: any, index) => {
+            const childProps: StepProps = {
+                design: defineDesign(child, index),
+                title: child.props.children,
+                size: size || 's',
+                orientation: orientation || 'horizontal',
+                value: child.props.value,
+                hasTooltip: stepsTooltips.has(index),
+                el: stepsRefs[index],
+                count,
+                valign,
+            };
+
+            return <child.type {...childProps} />;
+        });
+    }, [children, stepsRefs, stepperRef]);
 
     const hasIncorrectChildren = childrenArray.some((child: any) => child && String(child.type) !== String(Step));
     if (hasIncorrectChildren) {

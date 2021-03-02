@@ -1,114 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hint 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #2B2D33;
-  color: #FFFFFF;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 ePNuAG"
     fill="none"
     height="18"
     tabindex="1"
@@ -118,45 +16,36 @@ exports[`Hint 1`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 ckagnX"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -165,116 +54,14 @@ exports[`Hint 1`] = `
 `;
 
 exports[`Hint w/ any props 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_4"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   id="id"
   tabindex="0"
   title="title"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 ePNuAG"
     fill="none"
     height="18"
     tabindex="1"
@@ -284,157 +71,43 @@ exports[`Hint w/ any props 1`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
-    />
-    <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     />
   </div>
 </span>
 `;
 
 exports[`Hint w/ design 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #2B2D33;
-  color: #FFFFFF;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_0"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 ePNuAG"
     fill="none"
     height="18"
     tabindex="1"
@@ -444,45 +117,36 @@ exports[`Hint w/ design 1`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 ckagnX"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -491,114 +155,12 @@ exports[`Hint w/ design 1`] = `
 `;
 
 exports[`Hint w/ design 2`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_0"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 ePNuAG"
     fill="none"
     height="18"
     tabindex="1"
@@ -608,45 +170,36 @@ exports[`Hint w/ design 2`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -655,114 +208,12 @@ exports[`Hint w/ design 2`] = `
 `;
 
 exports[`Hint w/ size 1`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 12px;
-  height: 12px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_1"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 jNhLPe"
     fill="none"
     height="18"
     tabindex="1"
@@ -772,45 +223,36 @@ exports[`Hint w/ size 1`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -819,114 +261,12 @@ exports[`Hint w/ size 1`] = `
 `;
 
 exports[`Hint w/ size 2`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 16px;
-  height: 16px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_1"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 ePNuAG"
     fill="none"
     height="18"
     tabindex="1"
@@ -936,45 +276,36 @@ exports[`Hint w/ size 2`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -983,114 +314,12 @@ exports[`Hint w/ size 2`] = `
 `;
 
 exports[`Hint w/ size 3`] = `
-.c0 {
-  outline: none;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  vertical-align: sub;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c2 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  opacity: 0;
-  width: 250px;
-  min-width: 250px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  border-radius: 8px;
-  padding-top: 12px;
-  padding-right: 28px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  z-index: 1000;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
-  background-color: #FFFFFF;
-  color: #2B2D33;
-  top: 22px;
-  left: 0px;
-  right: px;
-  bottom: px;
-  display: none;
-}
-
-.c4 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.c5 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.c3 {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  cursor: pointer;
-}
-
-.c1 {
-  color: #AAABAD;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 20px;
-  height: 20px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-}
-
-.c1:focus {
-  color: #2B2D33;
-}
-
 <span
-  class="c0"
-  data-marker="Hint_1"
+  class="Popoverstyles__Wrapper-wdclke-0 bfFPpw"
   tabindex="0"
 >
   <svg
-    class="c1"
-    data-marker="Hint.Icon"
+    class="Hintstyles__Icon-sc-1is9tx-2 gGhqTK"
     fill="none"
     height="18"
     tabindex="1"
@@ -1100,45 +329,36 @@ exports[`Hint w/ size 3`] = `
   >
     <path
       d="M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z"
-      data-marker="Hint.path"
       fill="currentcolor"
     />
   </svg>
   <div
-    class="c2"
-    data-marker="Popover.Message"
+    class="Popoverstyles__Message-wdclke-1 cWyuyv"
     width="250"
   >
     <div
-      class="c3"
-      data-marker="Popover.CloseIcon"
+      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
     >
       <svg
-        data-marker="Popover.Close"
         fill="currentColor"
         height="16"
         viewBox="0 0 24 24"
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Close.defs"
-        />
+        <defs />
         <path
-          d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-          data-marker="Close.path"
+          d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
         />
       </svg>
     </div>
     <div
-      class="c4"
-      data-marker="Popover.Header"
+      class="Popoverstyles__Header-wdclke-2 fYngzS"
     >
       This is header
     </div>
     <div
-      class="c5"
-      data-marker="Popover.Content"
+      class="Popoverstyles__Content-wdclke-3 dNpuLA"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>

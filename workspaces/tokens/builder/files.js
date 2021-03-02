@@ -1,7 +1,7 @@
 const yamlParse = require('js-yaml');
 const path = require('path');
 const fs = require('fs');
-const { allowedProps, presetsAsPureCss, dirs } = require('./const');
+const { dirs } = require('./const');
 const { mergeRecursive } = require('./helper');
 
 // Создаем директорию для результирующих данных если требуется
@@ -23,7 +23,6 @@ function getFiles(src) {
     });
     return tmp;
 }
-
 module.exports.getFiles = getFiles;
 
 // Читаем yaml файл
@@ -33,42 +32,6 @@ module.exports.readFile = (src) => {
         body: yamlParse.safeLoad(tokens),
         path: src,
     };
-
-    const notAllowedProps = [];
-
-    // Проверяем содержимое файла на соответствие правилам
-    function checkProps(obj) {
-        const ignoreKeys = ['desc', 'values', 'value', 'prop', 'space', 'imports', 'ref'];
-        for (const key in obj) {
-            const value = obj[key];
-            if (presetsAsPureCss && !ignoreKeys.some((i) => i === key) && typeof value === 'string') {
-                if (!allowedProps.find((v) => new RegExp(v, 'gm').test(key))) {
-                    notAllowedProps.push(`CSS property name ${key} is not allowed, in ${src}`);
-                }
-            } else if (!presetsAsPureCss && key === 'prop') {
-                if (!allowedProps.find((v) => new RegExp(v, 'gm').test(value))) {
-                    notAllowedProps.push(`Prop name ${value} is not allowed, in ${src}`);
-                }
-            } else if (Array.isArray(value)) {
-                value.forEach((v) => {
-                    if (typeof v === 'object') {
-                        checkProps(v);
-                    }
-                });
-            } else if (typeof value === 'object') {
-                checkProps(value);
-            }
-        }
-    }
-
-    checkProps(json.body);
-
-    // Выводим предупрежденее для файла (желтым цветом)
-    if (notAllowedProps.length) {
-        notAllowedProps.forEach((p) => {
-            console.log('\x1b[33m%s\x1b[0m', 'WARNING: ', p); // eslint-disable-line no-console
-        });
-    }
 
     return json;
 };
@@ -81,8 +44,6 @@ function resolveImport(str, imports, asRef = false, filePath = '') {
         let result = '';
         // Убираем название пространства име из пути и сохраняем в переменную
         const space = arr.shift();
-        // Добавляем в конец value чтобы не писать вручную
-        !asRef && arr.push('value');
 
         for (const obj of imports) {
             const body = obj.body;
@@ -102,7 +63,7 @@ function resolveImport(str, imports, asRef = false, filePath = '') {
 
             // Если значение найдено возвращаем его и заканчиваем просмотр списка
             if (val) {
-                result = val;
+                result = typeof val === 'number' ? `${val}px` : val;
                 break;
             }
         }
@@ -117,6 +78,7 @@ function resolveImport(str, imports, asRef = false, filePath = '') {
     });
 }
 
+// раскрываем ссылки
 function resolveRef(obj, imports, filePath) {
     if (obj) {
         const keys = Object.keys(obj);
@@ -146,13 +108,11 @@ module.exports.getImports = (src, idx, target, ext) => {
     // Список доступных файлов, где искать импорт. Либо по умолчанию, либо из блока imports в файле
     const imports =
         (src.body.imports && [...getFiles(dirs.defaultImports), ...src.body.imports]) || getFiles(dirs.defaultImports);
-    const combined = [...target, ...(ext || [])];
+    const combined = [...(ext || []), ...target];
     if (imports && imports.length) {
         const resolves = imports.map((i) => path.resolve(src.path, i));
         const objs = combined.filter((el) => resolves.some((r) => r === el.path));
-        if (presetsAsPureCss) {
-            src = resolveRef(src, [...objs, src], src.path);
-        }
+        src = resolveRef(src, [...objs, src], src.path);
         const str = JSON.stringify(src);
         // Заменяем путь импорта на значение
         const replaced = resolveImport(str, objs, false, src.path);

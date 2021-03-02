@@ -36,11 +36,11 @@ size:
 
 gap:
   l:
-    margin-right: $layout.whitespace.s
+    margin-right: $layout.size.s3
   m:
-    margin-right: $layout.whitespace.xs
+    margin-right: $layout.size.s2
   s:
-    margin-right: $layout.whitespace.xxs
+    margin-right: $layout.size.s1
 
 disabled:
   color: $color.primary.london.c120

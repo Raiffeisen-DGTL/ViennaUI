@@ -14,7 +14,12 @@ export const BriefcaseInterest: React.FC<BriefcaseInterestProps> = (props): JSX.
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M20.441 7c.86 0 1.558.697 1.559 1.557v10.454A1.988 1.988 0 0120.012 21H3.559A1.559 1.559 0 012 19.44V8.557A1.559 1.559 0 013.559 7h16.882zM4 19h16V9H4v10zm6-14v1H8v-.96A2.041 2.041 0 0110.042 3h3.916A2.041 2.041 0 0116 5.04V6h-2V5h-4zM8 9.999h2v2H8v-2zm6 6h2v2h-2v-2zm2-4.586l-6.586 6.586H8v-1.414l6.586-6.586H16v1.414z' />
+            <path
+                fillRule='evenodd'
+                d='M9 3a2 2 0 00-2 2v2H3a1 1 0 00-1 1v12a1 1 0 001 1h5v-2H4V9h16v2h2V8a1 1 0 00-1-1h-4V5a2 2 0 00-2-2H9zm6 4V5H9v2h6z'
+                clipRule='evenodd'
+            />
+            <path d='M12.207 22.707l9-9-1.414-1.414-9 9 1.414 1.414zM12 12.5a2 2 0 100 4 2 2 0 000-4zm6 8a2 2 0 114 0 2 2 0 01-4 0z' />
         </svg>
     );
 };

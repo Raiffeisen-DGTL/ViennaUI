@@ -14,7 +14,16 @@ export const Cafe: React.FC<CafeProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M16 12h2v2h-2v7H2V10h2v9h10v-7h2zM5 11h8v7H5v-7zm6 5v-3H7v3h4zM1 2h22v3.5a3.49 3.49 0 01-6 2.44 3.48 3.48 0 01-5 0 3.48 3.48 0 01-5 0A3.49 3.49 0 011 5.5V2zm20 3.5V4H3v1.5a1.5 1.5 0 003 0h2a1.5 1.5 0 003 0h2a1.5 1.5 0 003 0h2a1.5 1.5 0 003 0zM20 10h2v11h-5.08v-2H20v-9z' />
+            <path
+                fillRule='evenodd'
+                d='M4.106 6.553A1 1 0 015 6h3v2H5.618l-1 2h14.764l-1-2H17V6h2a1 1 0 01.894.553l2 4A1 1 0 0121 12H3a1 1 0 01-.894-1.447l2-4zM3 21v-7h2v6h2v-5a1 1 0 011-1h8a1 1 0 011 1v5h2v-6h2v7a1 1 0 01-1 1H4a1 1 0 01-1-1zm8-1H9v-4h2v4zm2 0h2v-4h-2v4z'
+                clipRule='evenodd'
+            />
+            <path
+                fillRule='evenodd'
+                d='M9 2h6v1h2v2h-2a3 3 0 11-6 0V2zm4 2h-2v1a1.001 1.001 0 002 0V4z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

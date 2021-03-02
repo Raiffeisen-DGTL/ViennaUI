@@ -1,5 +1,6 @@
 # Utils
-###### Raiffeisenbank Design System  
+
+###### Raiffeisenbank Design System
 
 Утилиты помощники для работы с кодом.
 

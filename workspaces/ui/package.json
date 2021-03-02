@@ -1,7 +1,7 @@
 {
   "name": "vienna-ui",
   "description": "Raiffeisenbank Design System Components",
-  "version": "1.0.4",
+  "version": "2.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -27,10 +27,10 @@
     "watch": "concurrently \"npm run build:esm -- --watch\" \"npm run build:ts -- --watch\""
   },
   "dependencies": {
-    "vienna.icons": "^1.0.1",
-    "vienna.react-use": "^1.0.2",
-    "vienna.ui-primitives": "^1.0.0",
-    "vienna.ui-theme": "^1.0.2",
+    "vienna.icons": "^2.0.0",
+    "vienna.react-use": "^1.1.0",
+    "vienna.ui-primitives": "^1.1.0",
+    "vienna.ui-theme": "^1.1.0",
     "vienna.utils": "^1.0.0",
     "date-fns": "2.8.1",
     "element-closest-polyfill": "^1.0.0",
@@ -53,8 +53,9 @@
     "glob": "7.1.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-focus-lock": "2.5.0",
     "rimraf": "3.0.2",
-    "styled-components": "4.4.1",
+    "styled-components": "5.2.1",
     "typescript": "3.8.3"
   },
   "peerDependencies": {

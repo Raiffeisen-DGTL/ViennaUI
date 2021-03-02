@@ -1,4 +1,5 @@
 # svg2tsx
+
 ###### Raiffeisenbank Design System
 
 Инструмент CLI трансформирует `SVG` файлы в React компоненты с поддержкой Typescript.

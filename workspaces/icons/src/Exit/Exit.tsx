@@ -14,7 +14,12 @@ export const Exit: React.FC<ExitProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M8 2h13v16l-7 4v-4H8v-2h6V6l3.5-2H8V2zm11 14.839V5.446l-3 1.715v11.393l3-1.715zM7.798 14L3.8 10.003 7.761 6h1.196l.027.026.002 1.154L7.185 9H13v2H7.201l1.796 1.796L8.999 14H7.798z' />
+            <path
+                fillRule='evenodd'
+                d='M4 2h15v2H6.85l2.775 2.22A1 1 0 0110 7v11h9v2h-9v1a1 1 0 01-1.625.78l-5-4A1 1 0 013 17V3a1 1 0 011-1zm4 5.48l-3-2.4v11.44l3 2.4V7.48z'
+                clipRule='evenodd'
+            />
+            <path d='M20.707 11.707a1 1 0 000-1.414l-4-4-1.414 1.414L17.586 10H12v2h5.586l-2.293 2.293 1.414 1.414 4-4z' />
         </svg>
     );
 };

@@ -64,40 +64,6 @@ test('Progressbar w/ view w/ child', () => {
     });
 });
 
-// Тест для проверки для маппинга старых значений цвета на новые. Удалить по окончанию поддержки старых значений цветов
-test('Progressbar w/ depricated color', () => {
-    const designs: ProgressbarProps['design'][] = [
-        'red',
-        'orange',
-        'yellow',
-        'green',
-        'darkBlue',
-        'darkGray',
-        'lightBlue',
-    ];
-
-    const designToColorMapping = {
-        red: 'moscow100',
-        orange: 'osaka100',
-        yellow: 'accent',
-        green: 'geneva100',
-        darkBlue: 'oslo120',
-        darkGray: 'seattle140',
-        lightBlue: 'oslo100',
-    };
-
-    designs.forEach((design) => {
-        if (!design) {
-            return;
-        }
-
-        const snap = snapshot.mount(<Progressbar value={50} design={design} />);
-        const progress = snap.find(Progress);
-
-        expect(progress.prop('color')).toBe(designToColorMapping[design]);
-    });
-});
-
 test('Progressbar w/ loading', () => {
     const snap = snapshot.render(<Progressbar value={50} loading />);
     expect(snap).toMatchSnapshot();

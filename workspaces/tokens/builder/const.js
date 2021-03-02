@@ -12,19 +12,6 @@ let config = {
     tokensSrc: path.resolve(innerRoot, 'src'),
     presetsSrc: path.resolve(innerRoot, 'src/presets'),
     defaultImports: path.resolve(innerRoot, 'src'),
-    htmlTemplateSrc: path.resolve(__dirname, 'template.html'),
-    allowedProps: [
-        'border-.',
-        '^color$',
-        'background-.',
-        'padding-.',
-        'margin-.',
-        'box-shadow',
-        'opacity',
-        'font-.',
-        'cursor',
-        'line-height',
-    ],
     prefix: '',
 };
 
@@ -46,25 +33,17 @@ module.exports.dirs = {
     get presetsSrc() {
         return path.resolve(root, config.presetsSrc);
     },
-    get htmlTemplateSrc() {
-        return path.resolve(root, config.htmlTemplateSrc);
-    },
     get defaultImports() {
         return path.resolve(root, config.defaultImports);
     },
 };
 
-module.exports.needWatch = process.argv.find((arg) => arg === '--watch');
-module.exports.presetsAsPureCss = process.argv.find((arg) => arg === '--cssPresets');
-module.exports.needCSS = process.argv.find((arg) => arg === '--css');
-module.exports.needHtml = process.argv.find((arg) => arg === '--html');
 module.exports.needPresets = process.argv.find((arg) => arg === '--presets');
 module.exports.needTokens = process.argv.find((arg) => arg === '--tokens');
 module.exports.needAll = process.argv.find((arg) => arg === '--all');
+
 const pr = process.argv.join(' ').match(/--prefix (\S*)/);
 module.exports.prefix = config.prefix || (pr && pr[1]) || '';
-
-module.exports.allowedProps = config.allowedProps;
 
 module.exports.jsExportTemplate = (str, inner) => {
     return `

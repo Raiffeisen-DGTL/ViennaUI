@@ -14,7 +14,11 @@ export const BooksShelf: React.FC<BooksShelfProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M11.979 3.178V2h10v15h-10V3.344L7.675 17.548l-5.742-1.74L6.279 1.452l5.7 1.726zm6 12.022h2.2V3.8h-2.2v11.4zm-2 0V3.8h-2.2v11.4h2.2zm0 4.8h-9v2h-2v-2H1.021v-2h21.958v2h-5v2h-2v-2zM7.484 3.7l-3.31 10.9 2.3.7 3.31-10.9-2.3-.7z' />
+            <path
+                fillRule='evenodd'
+                d='M12 4a1 1 0 00-1 1H8a1 1 0 00-1-1H3a1 1 0 00-1 1v12H1v2h3v2h2v-2h12v2h2v-2h3v-2h-1V6a1 1 0 00-1-1h-4a1 1 0 00-1-1h-4zM8 17h3V7H8v10zm-4 0h2V6H4v11zm9 0V6h2v11h-2zm4-10v10h3V7h-3z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

@@ -19,12 +19,17 @@ export type ColumnSize = BasedSize<SizeOption> | SizeOption;
 export type OffsetOption = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 export type ColumnOffset = Sizes<OffsetOption> | OffsetOption;
 
+export type OrderOption = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+export type ColumnOrder = Sizes<OrderOption> | OrderOption;
+
 interface Props {
     children?: React.ReactNode;
     /** Размер колонки */
     size?: ColumnSize;
     /** Отступ слева */
     offset?: ColumnOffset;
+    /** Порядок отрисовки колонки */
+    order?: ColumnOrder;
 }
 
 interface HTMLAttributeProps {

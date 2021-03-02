@@ -1,118 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ComboButton 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -121,192 +34,36 @@ exports[`ComboButton 1`] = `
 `;
 
 exports[`ComboButton 2`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_0"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_1"
+    class="Buttonstyles__Box-qfvnbt-0 hWFVnH ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -315,118 +72,31 @@ exports[`ComboButton 2`] = `
 `;
 
 exports[`ComboButton w/ design 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -435,192 +105,36 @@ exports[`ComboButton w/ design 1`] = `
 `;
 
 exports[`ComboButton w/ design 2`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 hWFVnH ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -629,118 +143,31 @@ exports[`ComboButton w/ design 2`] = `
 `;
 
 exports[`ComboButton w/ design 3`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 jolcIP"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -749,192 +176,36 @@ exports[`ComboButton w/ design 3`] = `
 `;
 
 exports[`ComboButton w/ design 4`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: #FEE600;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #FED500;
-  color: #2B2D33;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 jolcIP ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 hSbJhv ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -943,118 +214,31 @@ exports[`ComboButton w/ design 4`] = `
 `;
 
 exports[`ComboButton w/ design 5`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 gSxLZq"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1063,192 +247,36 @@ exports[`ComboButton w/ design 5`] = `
 `;
 
 exports[`ComboButton w/ design 6`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #EE505A;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #C74952;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 gSxLZq ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 cPykUe ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1257,119 +285,31 @@ exports[`ComboButton w/ design 6`] = `
 `;
 
 exports[`ComboButton w/ design 7`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1378,195 +318,36 @@ exports[`ComboButton w/ design 7`] = `
 `;
 
 exports[`ComboButton w/ design 8`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #D5D5D6;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-  margin-left: -2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 ebCIkw ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 gfpLJs ComboButtonstyles__RightButton-jzrgg8-2 fxdXsO"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1575,119 +356,31 @@ exports[`ComboButton w/ design 8`] = `
 `;
 
 exports[`ComboButton w/ design 9`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 lgPlfP"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1696,194 +389,36 @@ exports[`ComboButton w/ design 9`] = `
 `;
 
 exports[`ComboButton w/ design 10`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  border: solid 2px #EE505A;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  color: #2B2D33;
-  border: solid 2px #2B2D33;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 lgPlfP ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 cQyviT ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -1892,118 +427,31 @@ exports[`ComboButton w/ design 10`] = `
 `;
 
 exports[`ComboButton w/ design 11`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #00809C;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_2"
+    class="Buttonstyles__Box-qfvnbt-0 envJPA"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2012,192 +460,36 @@ exports[`ComboButton w/ design 11`] = `
 `;
 
 exports[`ComboButton w/ design 12`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  color: #00809C;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #2B2D33;
-  background-color: transparent;
-  padding: 0;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  color: #00809C;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_3"
+    class="Buttonstyles__Box-qfvnbt-0 envJPA ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_4"
+    class="Buttonstyles__Box-qfvnbt-0 ePtogg ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2206,119 +498,31 @@ exports[`ComboButton w/ design 12`] = `
 `;
 
 exports[`ComboButton w/ size 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 gfnTjB"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2327,194 +531,36 @@ exports[`ComboButton w/ size 1`] = `
 `;
 
 exports[`ComboButton w/ size 2`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 0 12px;
-  height: 24px;
-  min-width: 24px;
-  border-radius: 4px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 4px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 gfnTjB ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 dxiCgh ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2523,118 +569,31 @@ exports[`ComboButton w/ size 2`] = `
 `;
 
 exports[`ComboButton w/ size 3`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 dkSKWW"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2643,192 +602,36 @@ exports[`ComboButton w/ size 3`] = `
 `;
 
 exports[`ComboButton w/ size 4`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 16px;
-  height: 32px;
-  min-width: 32px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 dkSKWW ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 jxwgnS ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2837,118 +640,31 @@ exports[`ComboButton w/ size 4`] = `
 `;
 
 exports[`ComboButton w/ size 5`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -2957,192 +673,36 @@ exports[`ComboButton w/ size 5`] = `
 `;
 
 exports[`ComboButton w/ size 6`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 36px;
-  min-width: 36px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 dcKhhz ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 hWFVnH ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3151,118 +711,31 @@ exports[`ComboButton w/ size 6`] = `
 `;
 
 exports[`ComboButton w/ size 7`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 fdUCED"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3271,192 +744,36 @@ exports[`ComboButton w/ size 7`] = `
 `;
 
 exports[`ComboButton w/ size 8`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 0 20px;
-  height: 40px;
-  min-width: 40px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 fdUCED ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 etazHX ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3465,118 +782,31 @@ exports[`ComboButton w/ size 8`] = `
 `;
 
 exports[`ComboButton w/ size 9`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 kQnzHZ"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3585,192 +815,36 @@ exports[`ComboButton w/ size 9`] = `
 `;
 
 exports[`ComboButton w/ size 10`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 48px;
-  min-width: 48px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 8px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 kQnzHZ ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 fOQYmN ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3779,118 +853,31 @@ exports[`ComboButton w/ size 10`] = `
 `;
 
 exports[`ComboButton w/ size 11`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c2 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c2:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c2 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1"
-    data-marker="Button_5"
+    class="Buttonstyles__Box-qfvnbt-0 KJblR"
     type="button"
   >
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
     >
       Click Me
     </span>
     <span
-      class="c2"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>
@@ -3899,192 +886,36 @@ exports[`ComboButton w/ size 11`] = `
 `;
 
 exports[`ComboButton w/ size 12`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-}
-
-.c1:active {
-  top: 1px;
-}
-
-.c1:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c4 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: 0;
-  position: relative;
-  border-radius: 8px;
-  border-color: transparent;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-weight: 500;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 0 24px;
-  height: 52px;
-  min-width: 52px;
-  color: #FFFFFF;
-  background-color: #2B2D33;
-  padding: 0;
-}
-
-.c4:active {
-  top: 1px;
-}
-
-.c4:hover {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c3:not(:last-of-type) {
-  margin-right: 12px;
-}
-
-.c3 > svg {
-  display: block;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c2:hover,
-.c2:focus {
-  z-index: 1;
-}
-
-.c5 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin-left: 2px;
-}
-
 <div
-  class="c0"
-  data-marker="ComboButton.Wrapper"
+  class="ComboButtonstyles__Wrapper-jzrgg8-0 jOwEQG"
 >
   <button
-    class="c1 c2"
-    data-marker="Button_6"
+    class="Buttonstyles__Box-qfvnbt-0 KJblR ComboButtonstyles__LeftButton-jzrgg8-1 difRPs"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
     >
       Click Me
     </span>
   </button>
   <button
-    class="c4 c5"
-    data-marker="Button_7"
+    class="Buttonstyles__Box-qfvnbt-0 eAQYNR ComboButtonstyles__RightButton-jzrgg8-2 erGBcM"
     type="button"
   >
     <span
-      class="c3"
-      data-marker="ButtonComponent.content.ContentWrapper"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 buKajC"
     >
       <svg
-        data-marker="Down"
         fill="currentColor"
         height="20"
         viewBox="0 0 24 24"
         width="20"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <defs
-          data-marker="Down.defs"
-        />
+        <defs />
         <path
-          d="M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z"
-          data-marker="Down.path"
+          d="M12 14.44l7.293-7.294 1.414 1.415-8 8a1 1 0 01-1.414 0l-8-8 1.414-1.415L12 14.44z"
         />
       </svg>
     </span>

@@ -76,12 +76,37 @@ function columnOffset(props: ColProps): string {
     return style;
 }
 
+function columnOrder(props: ColProps): string {
+    const { order } = props;
+    let style = '';
+
+    // reponsive offset
+    if (typeof order === 'object') {
+        for (const s in order) {
+            if (order[s]) {
+                style += `
+                    @media only screen and ${viewports[s]} {
+                        order: ${order[s]};
+                    }
+                `;
+            }
+        }
+
+        // non-responsive offset
+    } else if (order) {
+        style = `order: ${order};`;
+    }
+
+    return style;
+}
+
 export const Box: React.FC<ColProps> = styled.div<ColProps>`
     width: 100%;
     box-sizing: border-box;
 
     ${columnSize}
     ${columnOffset}
+    ${columnOrder}
 
     ${presets.custom}
 `;

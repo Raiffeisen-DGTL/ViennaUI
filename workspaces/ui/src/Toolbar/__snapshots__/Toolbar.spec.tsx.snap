@@ -26,7 +26,7 @@ Array [
     design="dark"
     hideElipsis={true}
     icon={
-      <Other
+      <MoreHor
         color="currentColor"
         size="m"
       />
@@ -103,7 +103,7 @@ Array [
     design="light"
     hideElipsis={true}
     icon={
-      <Other
+      <MoreHor
         color="currentColor"
         size="m"
       />
@@ -156,99 +156,99 @@ Array [
 
 exports[`Toolbar w/ any props 1`] = `
 <div
-  class="Toolbarstyles__Box-sc-5ox4d8-0 dYHAQi className"
+  class="Toolbarstyles__Box-sc-1ksgo55-0 kpuFMM className"
   id="id"
   title="title"
 >
   <div
-    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
   >
     <button
-      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      class="Buttonstyles__Box-qfvnbt-0 envJPA"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         Option 1
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
   >
     <button
-      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      class="Buttonstyles__Box-qfvnbt-0 envJPA"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         Option 2
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
   >
     <button
-      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      class="Buttonstyles__Box-qfvnbt-0 envJPA"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         Option 3
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
   >
     <button
-      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      class="Buttonstyles__Box-qfvnbt-0 envJPA"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         Option 4
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
   >
     <button
-      class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+      class="Buttonstyles__Box-qfvnbt-0 envJPA"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         <svg
           fill="currentColor"
@@ -259,17 +259,17 @@ exports[`Toolbar w/ any props 1`] = `
         >
           <defs />
           <path
-            d="M6.2 10.8H3.8v2.4h2.4v-2.4zM2 10.792c0-.99.803-1.791 1.792-1.792h2.417C7.199 9 8 9.803 8 10.792v2.417A1.79 1.79 0 016.209 15H3.792c-.99 0-1.791-.802-1.792-1.791v-2.417zm11.2.008h-2.4v2.4h2.4v-2.4zM9 10.792c0-.99.803-1.791 1.792-1.792h2.417c.99 0 1.791.803 1.791 1.792v2.417A1.79 1.79 0 0113.209 15h-2.417c-.99 0-1.791-.802-1.792-1.791v-2.417zm11.2.008h-2.4v2.4h2.4v-2.4zm-4.2-.008c0-.99.803-1.791 1.792-1.792h2.417c.99 0 1.791.803 1.791 1.792v2.417A1.79 1.79 0 0120.209 15h-2.417c-.99 0-1.791-.802-1.792-1.791v-2.417z"
+            d="M4 10a2 2 0 110 4 2 2 0 010-4zm16 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4z"
           />
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       >
         More operation
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
       />
     </button>
   </div>
@@ -278,22 +278,22 @@ exports[`Toolbar w/ any props 1`] = `
 
 exports[`Toolbar w/ operation 1`] = `
 <div
-  class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
 >
   <button
-    class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+    class="Buttonstyles__Box-qfvnbt-0 envJPA"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     />
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Action 5
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     />
   </button>
 </div>
@@ -301,14 +301,14 @@ exports[`Toolbar w/ operation 1`] = `
 
 exports[`Toolbar w/ operation with icon 1`] = `
 <div
-  class="Operationstyles__OpBox-sc-32ists-0 gWUzZX"
+  class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
 >
   <button
-    class="Buttonstyles__Box-sc-1cce11-0 ijNEKs"
+    class="Buttonstyles__Box-qfvnbt-0 envJPA"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       <svg
         fill="currentColor"
@@ -319,17 +319,19 @@ exports[`Toolbar w/ operation with icon 1`] = `
       >
         <defs />
         <path
-          d="M20.528 16.471a31.346 31.346 0 00-5.789-4.371 3.926 3.926 0 00-4.69-.57c.391-4.478 1.472-6.7 1.935-6.838.442.125 1.37 1.947 1.836 5.593a5.951 5.951 0 011.912 1.024c-.368-4.066-1.4-8.415-3.732-8.415-2.761 0-3.7 6.118-3.87 10.625-.02.292-.045.513-.056.751a3.923 3.923 0 001.885 4.155c-3.8 1.754-6.427 2.122-6.842 1.723-.117-.469.934-1.948 3.163-3.773a5.915 5.915 0 01-.155-1.333 6.06 6.06 0 01.073-.89c-3.037 2.258-5.721 5.016-4.645 6.88a2.481 2.481 0 002.332 1.032c2.569 0 6.473-1.715 9.276-3.249v-.005a3.984 3.984 0 002.836-3.745c3.406 2.409 5.034 4.5 4.9 5.051-.354.35-2.269.151-5.122-.958a5.51 5.51 0 01-1.909 1.158 25.6 25.6 0 003.68 1.334c.841.243 1.71.378 2.585.4a2.444 2.444 0 002.316-1.026c.634-1.107-.009-2.64-1.919-4.553zM12 17.2a2.2 2.2 0 110-4.4 2.2 2.2 0 010 4.4z"
+          clip-rule="evenodd"
+          d="M11.976 4.002a.437.437 0 00-.171.084c-.196.14-.46.449-.733 1.006-.266.544-.506 1.258-.693 2.12a16.89 16.89 0 00-.324 2.292A3.982 3.982 0 0112 9c.783 0 1.515.226 2.133.616.087.038.175.078.262.119a15.312 15.312 0 012.965 1.862 16.5 16.5 0 012.552 2.505c.719.887 1.283 1.805 1.616 2.681.326.857.465 1.768.188 2.575-.302.881-1.02 1.41-1.891 1.589-.82.169-1.766.035-2.712-.275-.963-.316-1.982-.83-2.973-1.485l1.102-1.669c.876.579 1.734 1.005 2.493 1.253.774.253 1.34.288 1.687.217.296-.06.366-.174.402-.28.062-.18.08-.57-.165-1.214-.238-.624-.675-1.36-1.301-2.133a14.508 14.508 0 00-2.359-2.29 3.99 3.99 0 01-1.177 2.764c-.165.22-.342.44-.531.66a16.166 16.166 0 01-2.618 2.405 15.764 15.764 0 01-3.049 1.78c-1.016.441-2.02.72-2.92.768-.882.047-1.78-.125-2.425-.723-.68-.632-.848-1.518-.716-2.378.13-.84.548-1.73 1.136-2.587.595-.869 1.383-1.735 2.288-2.53l1.32 1.502c-.803.706-1.473 1.45-1.958 2.158-.492.718-.742 1.324-.81 1.762-.064.42.048.558.1.607.088.082.352.224.958.191.59-.031 1.355-.224 2.232-.605.87-.377 1.784-.91 2.655-1.553.182-.135.36-.273.534-.413a4.002 4.002 0 01-2.974-4.476c-.122-1.911.008-3.894.38-5.615.212-.975.497-1.85.851-2.574.347-.71.794-1.346 1.367-1.755.613-.438 1.346-.592 2.08-.334.677.237 1.209.775 1.616 1.402.814 1.253 1.342 3.183 1.555 5.302l-1.99.2c-.2-1.979-.678-3.544-1.242-4.412-.281-.434-.504-.57-.6-.605a.155.155 0 00-.085-.01zM12 11a2 2 0 100 4.002A2 2 0 0012 11z"
+          fill-rule="evenodd"
         />
       </svg>
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     >
       Action 5
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
     />
   </button>
 </div>

@@ -1,14 +1,14 @@
 space: chips
 base:
   font-family: $typography.b.family
-  height: $layout.size.s
+  height: $layout.size.s8
   cursor: pointer
   border-radius: $border.radius.xl
   font-size: $typography.b.b2.size
   font-weight: $typography.weight.medium
   line-height: $typography.b.b2.height
-  margin-left: $layout.whitespace.xs
-  padding: 0 $layout.whitespace.m
+  margin-left: $layout.size.s2
+  padding: 0 $layout.size.s4
   outline: 0
   color: $color.primary.brand.primary
 
@@ -67,5 +67,5 @@ focus:
 
 box:
   outline: 0
-  margin-left: -$layout.whitespace.xs
+  margin-left: -$layout.size.s2
   width: 100%

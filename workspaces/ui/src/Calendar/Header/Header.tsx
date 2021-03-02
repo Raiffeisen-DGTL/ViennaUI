@@ -1,9 +1,9 @@
 import React, { useCallback, useMemo } from 'react';
 import { addMonths, addYears, format, subMonths, subYears } from 'date-fns';
-import { Left, LeftArrow, RewindLeft2, RewindRight2, Right } from 'vienna.icons';
-import ru from 'date-fns/locale/ru';
+import { GoLeft, Back, CollapseLeft, CollapseRight, GoRight } from 'vienna.icons';
 import { Spin, ViewMode } from '../types';
 import { FirstLetterUpper } from '../Calendar.styles';
+import { useCalendarLocale } from '../Context';
 import { Box, HeaderDoubleArrow, HeaderTitle, NavigationButton, BackButton, MonthName } from './Header.style';
 import { Button } from '../../Button';
 
@@ -18,6 +18,8 @@ interface Props {
 export const Header: React.FC<Props> = (props: Props): JSX.Element => {
     const { viewMode, onChangeDisplayedDate, onChangeViewMode, displayedDate, hasNavigation } = props;
 
+    const locale = useCalendarLocale();
+
     const handleChangeYear = useCallback(
         (spin: Spin, step?: number) => () => {
             if (!spin) {
@@ -26,13 +28,13 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
 
             switch (spin) {
                 case 'prev': {
-                    const nextDate = subYears(displayedDate, step || 1);
+                    const nextDate = subYears(displayedDate, step ?? 1);
                     onChangeDisplayedDate(nextDate);
 
                     return;
                 }
                 case 'next': {
-                    const nextDate = addYears(displayedDate, step || 1);
+                    const nextDate = addYears(displayedDate, step ?? 1);
                     onChangeDisplayedDate(nextDate);
                 }
             }
@@ -63,7 +65,7 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
     );
 
     const content = useMemo(() => {
-        const monthName = format(displayedDate, 'LLLL', { locale: ru });
+        const monthName = format(displayedDate, 'LLLL', { locale });
         const displayedYear = displayedDate.getFullYear();
 
         switch (viewMode) {
@@ -74,12 +76,12 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                     <Box>
                         {hasNavigation && (
                             <BackButton>
-                                <LeftArrow size='s' onClick={onChangeViewMode(ViewMode.MONTH)} />
+                                <Back size='s' onClick={onChangeViewMode(ViewMode.MONTH)} />
                             </BackButton>
                         )}
 
                         <NavigationButton>
-                            <Left size='s' onClick={handleChangeYear('prev', 12)} />
+                            <GoLeft size='s' onClick={handleChangeYear('prev', 12)} />
                         </NavigationButton>
 
                         <HeaderTitle>
@@ -87,7 +89,7 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                         </HeaderTitle>
 
                         <NavigationButton>
-                            <Right size='s' onClick={handleChangeYear('next', 12)} />
+                            <GoRight size='s' onClick={handleChangeYear('next', 12)} />
                         </NavigationButton>
                     </Box>
                 );
@@ -97,12 +99,12 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                     <Box>
                         {hasNavigation && (
                             <BackButton>
-                                <LeftArrow size='s' onClick={onChangeViewMode(ViewMode.MONTH)} />
+                                <Back size='s' onClick={onChangeViewMode(ViewMode.MONTH)} />
                             </BackButton>
                         )}
 
                         <NavigationButton>
-                            <Left size='s' onClick={handleChangeYear('prev', 1)} />
+                            <GoLeft size='s' onClick={handleChangeYear('prev', 1)} />
                         </NavigationButton>
 
                         <HeaderTitle>
@@ -112,7 +114,7 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                         </HeaderTitle>
 
                         <NavigationButton>
-                            <Right size='s' onClick={handleChangeYear('next', 1)} />
+                            <GoRight size='s' onClick={handleChangeYear('next', 1)} />
                         </NavigationButton>
                     </Box>
                 );
@@ -135,10 +137,10 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                 return (
                     <Box>
                         <HeaderDoubleArrow>
-                            <RewindLeft2 size='s' onClick={handleChangeYear('prev', 1)} />
+                            <CollapseLeft size='s' onClick={handleChangeYear('prev', 1)} />
                         </HeaderDoubleArrow>
                         <NavigationButton>
-                            <Left size='s' onClick={handleChangeMonth('prev')} />
+                            <GoLeft size='s' onClick={handleChangeMonth('prev')} />
                         </NavigationButton>
 
                         <HeaderTitle hasPadding>
@@ -147,16 +149,16 @@ export const Header: React.FC<Props> = (props: Props): JSX.Element => {
                         </HeaderTitle>
 
                         <NavigationButton>
-                            <Right size='s' onClick={handleChangeMonth('next')} />
+                            <GoRight size='s' onClick={handleChangeMonth('next')} />
                         </NavigationButton>
                         <HeaderDoubleArrow>
-                            <RewindRight2 size='s' onClick={handleChangeYear('next')} />
+                            <CollapseRight size='s' onClick={handleChangeYear('next')} />
                         </HeaderDoubleArrow>
                     </Box>
                 );
             }
         }
-    }, [viewMode, displayedDate]);
+    }, [viewMode, displayedDate, locale]);
 
     return <>{content}</>;
 };

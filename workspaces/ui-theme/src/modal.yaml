@@ -5,7 +5,7 @@ fade:
   base:
     z-index: '1000'
     transition: all 0.3s ease-out
-    padding: $layout.whitespace.xxl
+    padding: $layout.size.s8
   hide:
     background-color: rgba(43, 45, 51, 0)
   show:
@@ -30,16 +30,19 @@ icon:
   base:
     color: $color.primary.seattle.c60
     position: absolute
-    right: $layout.whitespace.m
-    top: $layout.whitespace.m
+    right: $layout.size.s4
+    top: $layout.size.s4
     display: flex
     align-items: center
     justify-content: center
     background-color: $color.primary.london.c40
-    width: $layout.size.s
-    height: $layout.size.s
+    width: $layout.size.s8
+    height: $layout.size.s8
     border-radius: $border.radius.xl
     cursor: pointer
     transition: all .2s
+    outline: none
   hover:
     color: $color.primary.brand.primary
+  focus:
+    outline: 1px solid $color.primary.oslo.c100

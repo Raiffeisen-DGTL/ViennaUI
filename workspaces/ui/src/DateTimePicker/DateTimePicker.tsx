@@ -1,16 +1,18 @@
 import React, { useCallback } from 'react';
-import { Clock } from 'vienna.icons';
+import { History } from 'vienna.icons';
+import { Locale } from 'date-fns';
 import { Select } from '../Select';
 import { InputDate } from '../InputMask';
 import { Datepicker } from '../Datepicker';
 import { Box, Left, Right } from './DateTimePicker.styles';
+import { DateTimePickerLocalizationProps } from './localization';
 
 interface DateObj {
     date: string;
     time: string;
 }
 type ChangeFunc = (e, data: DateObj) => void;
-export interface DateTimePickerProps {
+export interface DateTimePickerProps extends DateTimePickerLocalizationProps {
     design?: 'outline' | 'material';
     size?: 'xs' | 's' | 'm' | 'l' | 'xl';
     value?: Date | DateObj;
@@ -18,11 +20,16 @@ export interface DateTimePickerProps {
     timeTo?: string;
     step?: number;
     onChange?: ChangeFunc;
+    ref?: any;
+    /**
+     * Локаль календаря
+     */
+    locale?: Locale;
 }
 
 const selectProps = {
     postfix: {
-        up: <Clock />,
+        up: <History />,
     },
 };
 
@@ -118,6 +125,8 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = React.forwardRef(
             size,
             children,
             onChange,
+            localization,
+            locale,
             ...attrs
         } = props;
 
@@ -151,6 +160,8 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = React.forwardRef(
                                 onChange: dateChangeHandler,
                                 design,
                                 size,
+                                localization,
+                                locale,
                             })}
                         </Left>
                         <Right isInput={right.type === InputDate}>
@@ -173,7 +184,19 @@ export const DateTimePicker: React.FC<DateTimePickerProps> = React.forwardRef(
             }
 
             return null;
-        }, [dateChangeHandler, timeChangeHandler, children, value, design, size, step, timeFrom, timeTo]);
+        }, [
+            dateChangeHandler,
+            timeChangeHandler,
+            children,
+            value,
+            design,
+            size,
+            step,
+            timeFrom,
+            timeTo,
+            localization,
+            locale,
+        ]);
 
         return (
             <Box {...attrs} ref={ref}>

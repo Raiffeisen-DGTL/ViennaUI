@@ -14,7 +14,13 @@ export const DebtFCPP: React.FC<DebtFCPPProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M10 14.344h2V13h-2v-1.687h2V7h4a3 3 0 010 6h-2.312v1.344H17V16h-3.312v2H12v-2h-2v-1.656zM13.7 8.7v2.6H16a1.3 1.3 0 100-2.6h-2.3zM21.018 2c1.094 0 1.981.888 1.982 1.982v16.03c0 1.098-.89 1.987-1.988 1.988H6.559A1.559 1.559 0 015 20.441V14h2v6h14V4H7v6H5V3.982C5 2.888 5.888 2.001 6.982 2h14.036zM2 11.25h7V13H2v-1.75z' />
+            <path d='M3 3a1 1 0 011-1h16a1 1 0 011 1v18a1 1 0 01-1 1H4a1 1 0 01-1-1v-6h2v5h14V4H5v5H3V3z' />
+            <path
+                fillRule='evenodd'
+                d='M11 15v3H9v-3H7v-2h2v-1H7v-2h2V6h5a3 3 0 010 6h-3v1h4v2h-4zm3-5a1 1 0 000-2h-3v2h3z'
+                clipRule='evenodd'
+            />
+            <path d='M1 13v-2h4v2H1z' />
         </svg>
     );
 };

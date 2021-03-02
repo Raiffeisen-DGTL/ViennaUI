@@ -1,1 +1,1 @@
-export * from './TennisBall';
+export * from './Tennisball';

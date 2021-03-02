@@ -1,7 +1,8 @@
-import React from 'react';
-import { InQueue, InQueueBack } from 'vienna.icons';
+import React, { FC } from 'react';
+import { ListOpen, ListClose } from 'vienna.icons';
 import { Box, ItemWrapper, Header, Footer, Menu, Collapser } from './Sidebar.styles';
 import { Item, ItemProps } from './Item';
+import { Submenu, SubmenuProps } from './Submenu';
 import { Logotype } from '../Logotype';
 
 interface Props {
@@ -14,7 +15,6 @@ interface Props {
     onCollapse?: any;
     active?: any;
     width?: string;
-    ripple?: boolean;
 }
 
 interface HTMLAttributeProps {
@@ -28,11 +28,20 @@ interface HTMLAttributeProps {
 
 export type SidebarProps = HTMLAttributeProps & Props;
 
-export const Sidebar: React.FC<SidebarProps> & { Item: React.FC<ItemProps> } = (props: SidebarProps) => {
+export const Sidebar: React.FC<SidebarProps> & { Item: FC<ItemProps>; Submenu: FC<SubmenuProps> } = (
+    props: SidebarProps
+) => {
     const { design, children, footer, collapsed, onCollapse, active, size, ...attrs } = props;
 
     const content = React.Children.map(React.Children.toArray(children), (child: any) => {
         const isActive = active && child.props && active === child.props.id;
+
+        if (child.type.displayName === 'Sidebar.Submenu') {
+            if (isActive) {
+                return React.cloneElement(child, { active: isActive });
+            }
+            return child;
+        }
 
         return <ItemWrapper active={isActive}>{child}</ItemWrapper>;
     });
@@ -49,8 +58,8 @@ export const Sidebar: React.FC<SidebarProps> & { Item: React.FC<ItemProps> } = (
 
             {onCollapse && (
                 <Collapser onClick={onCollapse}>
-                    {collapsed && <InQueue size='l' />}
-                    {!collapsed && <InQueueBack size='l' />}
+                    {collapsed && <ListOpen size='l' />}
+                    {!collapsed && <ListClose size='l' />}
                 </Collapser>
             )}
 
@@ -62,6 +71,8 @@ export const Sidebar: React.FC<SidebarProps> & { Item: React.FC<ItemProps> } = (
 };
 
 Sidebar.Item = Item;
+Sidebar.Submenu = Submenu;
+
 Sidebar.defaultProps = {
     size: 's',
     design: 'light',

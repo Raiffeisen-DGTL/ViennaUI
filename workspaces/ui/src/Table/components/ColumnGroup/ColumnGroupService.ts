@@ -1,15 +1,16 @@
-import { TableState, TableConfig } from '../../types';
+import { TableServiceFactoryConfig } from '../../types';
 
 export interface ColumnGroupService {
     columnGroupSpan: (id) => number;
 }
 
-export const columnGroupService = function (state: TableState, config: TableConfig): ColumnGroupService {
+export const columnGroupService: TableServiceFactoryConfig<ColumnGroupService> = function (getState, _, config) {
     const columnGroup = (id) => {
         return config.columnGroup?.groups.find((group) => group.id === id);
     };
 
     const columnGroupSpan = function (id) {
+        const state = getState();
         // get columns in column group
         const groupColumns = columnGroup(id)?.columns ?? [];
 

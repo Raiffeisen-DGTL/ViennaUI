@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
-import { Left, Right } from 'vienna.icons';
+import { GoLeft, GoRight } from 'vienna.icons';
 import { getLastIndex, getPagersNumbers } from './utils';
 import { Pager } from './Pager';
 import { Box } from './Pagination.styles';
@@ -72,7 +72,7 @@ export const Pagination: React.FC<PaginationProps> = (props): JSX.Element => {
     const [page, setPage] = useState(initialPageIndex && initialPageIndex <= lastPageIndex ? initialPageIndex : 0);
 
     const handleSelectPage = useCallback(
-        (event: React.FormEvent, pageIndex: number) => {
+        (event: React.FormEvent | null, pageIndex: number) => {
             setPage(pageIndex);
             onChange(event, { pageIndex, pageSize });
         },
@@ -83,6 +83,12 @@ export const Pagination: React.FC<PaginationProps> = (props): JSX.Element => {
         setPage(page);
         onChange(null, { pageIndex: page, pageSize });
     }, [pageSize]);
+
+    useEffect(() => {
+        if (page > lastPageIndex) {
+            handleSelectPage(null, lastPageIndex);
+        }
+    }, [lastPageIndex]);
 
     const pagersNumbers = useMemo(() => {
         return getPagersNumbers(page, lastPageIndex, currentPageNeighboursCount, ELLIPSIS_PREV, ELLIPSIS_NEXT);
@@ -144,11 +150,11 @@ export const Pagination: React.FC<PaginationProps> = (props): JSX.Element => {
     return (
         <Box {...attrs}>
             <Pager disabled={page === 0} tabIndex={1} size={size} onClick={handleSelectPrev}>
-                <Left size={size} />
+                <GoLeft size={size} />
             </Pager>
             {renderPagers()}
             <Pager disabled={page >= lastPageIndex} tabIndex={1} size={size} onClick={handleSelectNext}>
-                <Right size={size} />
+                <GoRight size={size} />
             </Pager>
         </Box>
     );

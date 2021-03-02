@@ -14,7 +14,12 @@ export const Calculator: React.FC<CalculatorProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M3 6h7v2H3V6zm15 0h3v2h-3v3h-2V8h-3V6h3V3h2v3zm-9.414 7.086L10 14.5l-2.043 2.043L10 18.586 8.586 20l-2.043-2.043L4.5 20l-1.414-1.414 2.043-2.043L3.086 14.5 4.5 13.086l2.043 2.043 2.043-2.043zM13 16h8v2h-8v-2zm3 3h2v2h-2v-2zm0-6h2v2h-2v-2z' />
+            <path d='M17 11V7h-4V5h4V1h2v4h4v2h-4v4h-2zM9 7H1V5h8v2zm5 12h8v2h-8v-2zm8-4h-8v2h8v-2z' />
+            <path
+                fillRule='evenodd'
+                d='M5 19.414l2.793 2.793 1.414-1.414L6.414 18l2.793-2.793-1.414-1.414L5 16.586l-2.793-2.793-1.414 1.414L3.586 18 .793 20.793l1.414 1.414L5 19.414z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

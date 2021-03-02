@@ -1,5 +1,5 @@
-import React, { useEffect, useCallback, useRef } from 'react';
-import { StyledInput, Box, Placeholder, PlaceholderWrapper } from '../Input.styles';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { StyledInput, Box, Placeholder, PlaceholderWrapper, Invisible } from '../Input.styles';
 
 interface HTMLAttributeProps {
     /** Ссылка на нативный компонент */
@@ -13,6 +13,9 @@ interface HTMLAttributeProps {
 
     /** Значение в поле ввода */
     value?: string;
+
+    /** Значение в поле ввода (по умолчанию для первого рендера) */
+    defaultValue?: any;
 
     /** Типы поля ввода */
     type?: string | 'password' | 'text';
@@ -67,6 +70,12 @@ interface HTMLAttributeProps {
 
     /** Обработчик события первого полупериода клика */
     onPointerDown?: Function;
+
+    /** Автоматическое сравнение и вычетание введенного значения из smartPlaceholder по умолчанию включено */
+    placeholderValueAutoDiff?: boolean;
+
+    /** private props */
+    onUpdated?: () => void;
 }
 
 export interface NativeInputProps extends Partial<HTMLAttributeProps> {
@@ -74,29 +83,71 @@ export interface NativeInputProps extends Partial<HTMLAttributeProps> {
     design?: 'outline' | 'material';
     invalid?: boolean;
     className?: string;
+    style?: any;
     smartPlaceholder?: React.ReactNode | string;
     onDespose?: () => void;
 }
 
 export const NativeInput: React.FC<React.PropsWithChildren<NativeInputProps>> = React.forwardRef(
     (props: React.PropsWithChildren<unknown>, ref: React.Ref<HTMLInputElement>): JSX.Element => {
-        const { onDespose, smartPlaceholder, design = 'outline', size = 'l', ...attrs } = props as any;
+        const {
+            onDespose,
+            smartPlaceholder,
+            design = 'outline',
+            size = 'l',
+            placeholderValueAutoDiff = true,
+            onUpdated,
+            value,
+            ...attrs
+        } = props as any;
         const placeholderRef = useRef<any>(null);
+        const inputRef = useRef<any>(null);
+
+        const [calculateSmartPlaceholder, setCalculateSmartPlaceholder] = useState(smartPlaceholder);
 
         // Так как инпут часто является составной частью других компонентов, требуется удобная обработка ситуаций, когда он удаляется из DOM
         useEffect(
-            () => () => {
+            () => {
                 if (typeof ref === 'function') {
-                    ref(null);
+                    ref(inputRef.current);
                 } else if (ref && 'current' in ref) {
-                    (ref as any).current = null;
+                    (ref as any).current = inputRef.current;
                 }
-                if (typeof onDespose === 'function') {
-                    onDespose();
-                }
+
+                return () => {
+                    if (typeof ref === 'function') {
+                        ref(null);
+                    } else if (ref && 'current' in ref) {
+                        (ref as any).current = null;
+                    }
+                    if (typeof onDespose === 'function') {
+                        onDespose();
+                    }
+                };
             },
-            [ref] // Тут не должно быть зависимости onDespose, так как этот useEffect создается и живет один раз на все время существования компонента
+            [ref, inputRef, onDespose] // Тут не должно быть зависимости onDespose, так как этот useEffect создается и живет один раз на все время существования компонента
         );
+
+        useEffect(() => {
+            if (inputRef.current) {
+                if (!placeholderValueAutoDiff) {
+                    setCalculateSmartPlaceholder(smartPlaceholder);
+                    return;
+                }
+                if (typeof smartPlaceholder === 'string' && value) {
+                    const invisiblePart = smartPlaceholder.substr(0, value.length);
+                    const visiblePart = smartPlaceholder.substring(value.length);
+                    setCalculateSmartPlaceholder(
+                        <>
+                            <Invisible>{invisiblePart}</Invisible>
+                            <span>{visiblePart}</span>
+                        </>
+                    );
+                    return;
+                }
+            }
+            setCalculateSmartPlaceholder(smartPlaceholder);
+        }, [smartPlaceholder, placeholderValueAutoDiff, value]);
 
         // scroll placeholder's content with input content
         const handleScroll = useCallback((e) => {
@@ -105,16 +156,29 @@ export const NativeInput: React.FC<React.PropsWithChildren<NativeInputProps>> = 
             }
         }, []);
 
+        useEffect(() => {
+            if (typeof onUpdated === 'function') {
+                onUpdated();
+            }
+        });
+
         return (
             <Box>
                 {smartPlaceholder && (
                     <PlaceholderWrapper>
                         <Placeholder ref={placeholderRef} design={design} size={size}>
-                            {smartPlaceholder}
+                            {calculateSmartPlaceholder}
                         </Placeholder>
                     </PlaceholderWrapper>
                 )}
-                <StyledInput ref={ref} size={size} design={design} onScroll={handleScroll} {...attrs} />
+                <StyledInput
+                    ref={inputRef}
+                    value={value}
+                    size={size}
+                    design={design}
+                    onScroll={handleScroll}
+                    {...attrs}
+                />
             </Box>
         );
     }

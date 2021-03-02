@@ -1,6 +1,8 @@
 import React, { useCallback, useState, HTMLAttributes, FormEvent } from 'react';
 import { useCramList } from 'vienna.react-use';
-import { Down, Up, CheckMark } from 'vienna.icons';
+import { SelectOpenDown, SelectHide, Checkmark } from 'vienna.icons';
+import { useLocalization } from '../Localization';
+import { TabsLocalizationProps, defaultTabsLocalization } from './localization';
 import { DropList } from '../DropList';
 import { Box, Tab, CombineTab, Item, Arrow } from './Tabs.styles';
 
@@ -49,14 +51,17 @@ const constructItems = (item, idx, size) => {
     return (
         <DropList.Item key={idx} selected={active} disabled={disabled} onClick={onClick}>
             {<Item size={size}>{children}</Item>}
-            {active && <CheckMark size='m' />}
+            {active && <Checkmark size='m' />}
         </DropList.Item>
     );
 };
 
-export const Tabs: React.FC<TabsProps> & { Tab: React.FC<TabProps> } = (props: React.PropsWithChildren<TabsProps>) => {
+export const Tabs: React.FC<TabsProps & TabsLocalizationProps> & { Tab: React.FC<TabProps> } = (
+    props: React.PropsWithChildren<TabsProps>
+) => {
     const { children, value, design, size, onChange, comparator, resizeble = true } = props;
 
+    const localization = useLocalization(props, defaultTabsLocalization);
     const [open, setOpen] = useState(false);
     const [containerRef, extraComponentRef, count] = useCramList(children as React.ReactNode[]);
 
@@ -105,7 +110,8 @@ export const Tabs: React.FC<TabsProps> & { Tab: React.FC<TabProps> } = (props: R
             {resizeble && (
                 <CombineTab ref={extraComponentRef} size={size}>
                     <Tab design={design} size={size} onClick={handleClickOnCombined}>
-                        Еще... <Arrow>{open ? <Up size='m' /> : <Down size='m' />}</Arrow>
+                        {`${localization('ds.tabs.rest')} `}
+                        <Arrow>{open ? <SelectHide size='m' /> : <SelectOpenDown size='m' />}</Arrow>
                     </Tab>
                     {open && dropList.length && (
                         <DropList size={size} float='end'>

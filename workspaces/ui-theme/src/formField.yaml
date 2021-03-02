@@ -16,10 +16,10 @@ label:
     font-size: $typography.b.b1.size
     line-height: $typography.b.b1.height
     color: $color.primary.seattle.c100
-    margin-right: $layout.whitespace.m
+    margin-right: $layout.size.s4
     display: flex
     align-items: center
-    margin-bottom: $layout.whitespace.xxs
+    margin-bottom: $layout.size.s1
 
 star:
   base:
@@ -35,7 +35,7 @@ message:
     display: flex
     align-items: center
     color: $color.primary.seattle.c100
-    margin-top: $layout.whitespace.xxs
+    margin-top: $layout.size.s1
   design:
     critical:
       color: $color.utilitarian.moscow.c100

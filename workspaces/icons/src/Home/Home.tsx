@@ -14,7 +14,7 @@ export const Home: React.FC<HomeProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 2.586l10 10V14h-1.414L12 5.414 3.414 14H2v-1.414l10-10zM17 14h2v9h-5.958a.042.042 0 01-.042-.041V16h-2v6.959c0 .023-.02.041-.042.041H5v-9h2v7h2v-7h6v7h2v-7z' />
+            <path d='M9 15a1 1 0 011-1h4a1 1 0 011 1v4h4v-6.586l-7-7-7 7V19h4v-4zm2 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-8a1 1 0 01.293-.707l8-8a1 1 0 011.414 0l8 8A1 1 0 0121 12v8a1 1 0 01-1 1h-6a1 1 0 01-1-1v-4h-2z' />
         </svg>
     );
 };

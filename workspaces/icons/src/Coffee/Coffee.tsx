@@ -14,7 +14,16 @@ export const Coffee: React.FC<CoffeeProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M20 7H4.06l.86-3.53A1.93 1.93 0 016.79 2h10.43a1.91 1.91 0 011.86 1.46L20 7zM6.39 5h11.22l-.33-1H6.72l-.33 1zm10.54 3h2l-.83 12.15a2 2 0 01-2 1.85H7.94a2 2 0 01-2-1.85L5.07 8h2l.86 12h8.14l.86-12zM12 12.7a1.3 1.3 0 100 2.6 1.3 1.3 0 000-2.6zm0-1.7a3 3 0 110 6 3 3 0 010-6z' />
+            <path
+                fillRule='evenodd'
+                d='M5.84 3.515A2 2 0 017.78 2h8.44a2 2 0 011.94 1.515L18.78 6H20v2H4V6h1.22l.62-2.485zM7.28 6h9.44l-.5-2H7.78l-.5 2zM6.004 21.09l-1-11 1.992-.18L7.913 20h8.174l.917-10.09 1.992.18-1 11A1 1 0 0117 22H7a1 1 0 01-.996-.91z'
+                clipRule='evenodd'
+            />
+            <path
+                fillRule='evenodd'
+                d='M12 13a1 1 0 100 2 1 1 0 000-2zm-3 1a3 3 0 116 0 3 3 0 01-6 0z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };
