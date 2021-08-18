@@ -7,11 +7,12 @@ export type ButtonProps = Props & HTMLAttributeProps;
 interface Props {
     children?: React.ReactNode;
     /** Дизайн */
-    design?: 'primary' | 'accent' | 'critical' | 'outline' | 'outline-critical' | 'ghost';
+    design?: 'primary' | 'accent' | 'critical' | 'outline' | 'outline-critical' | 'ghost' | 'white';
     /** Размеры */
     size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
     grid?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
     square?: boolean;
+    pressed?: boolean;
     loading?: boolean;
     disabled?: boolean;
     href?: string;
@@ -75,7 +76,9 @@ const ButtonComponent: React.FC<ButtonProps> = (props): JSX.Element => {
 
     if (loading) {
         attrs.disabled = true;
-        content.push(<Spinner key='spinner' size={correctSpinnerSizes[size] || size} position='absolute' />);
+        content.push(
+            <Spinner key='spinner' size={correctSpinnerSizes[size] || size} position='absolute' color='london120' />
+        );
     }
 
     const as = attrs.href ? 'a' : 'button';

@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
+import { useMargin } from '../Whitespace/utils';
 
 const presets = getPresets('table', {
     base: null,
@@ -19,7 +20,18 @@ export const Wrapper = styled.div<any>`
     flex-direction: column;
     background: white;
     position: relative;
-    max-height: ${({ maxHeight }) => maxHeight || '100%'};
+
+    ${({ maxHeight }) =>
+        maxHeight &&
+        css`
+            max-height: ${maxHeight};
+        `}
+
+    ${({ minHeight }) =>
+        minHeight &&
+        css`
+            min-height: ${minHeight};
+        `}
 
     ${({ outlined }) =>
         outlined &&
@@ -27,13 +39,20 @@ export const Wrapper = styled.div<any>`
             ${presets.outlined}
         `}
 
+    ${useMargin}
+
     ${custom.wrapper}
 `;
 
-export const TableWrapper = styled.div`
+export const TableWrapper = styled.div<any>`
     width: 100%;
-    overflow: auto;
-    max-height: 100%;
+    flex-grow: 1;
+
+    ${({ isOverflow }) =>
+        isOverflow &&
+        css`
+            overflow: auto;
+        `}
 
     ${custom.tableWrapper}
 `;

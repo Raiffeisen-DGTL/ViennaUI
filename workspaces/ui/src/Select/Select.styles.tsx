@@ -43,6 +43,9 @@ export const Current = styled.div<{ size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl'
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
     ${current.size}
 
@@ -67,6 +70,8 @@ export const Box = styled.div`
 `;
 
 export const Placeholder = styled.div<{ size?: any; disabled?: boolean }>`
+    width: 100%;
+    overflow: hidden;
     ${select.placeholder}
     ${({ disabled }) => disabled && select.placeholderDisabled}
 `;

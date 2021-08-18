@@ -18,8 +18,9 @@ export function getPagersNumbers(
         return range(0, lastIndex);
     }
 
-    const hasLeftSpill: boolean = currentIndex > leftPagesLimit - 1;
-    const hasRightSpill: boolean = currentIndex <= lastIndex - rightPagesLimit || currentIndex < leftPagesLimit;
+    // Начинать отображение следующих страниц, если стал активным 3 справа или слева элемент
+    const hasLeftSpill: boolean = currentIndex > leftPagesLimit - 3;
+    const hasRightSpill: boolean = currentIndex < lastIndex - rightPagesLimit + 3;
 
     if (hasLeftSpill && !hasRightSpill) {
         return [0, ellipsisPrev, ...range(lastIndex - rightPagesLimit + 1, lastIndex)];

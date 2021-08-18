@@ -28,8 +28,6 @@ interface Props {
         | 'tokyo100'
         | 'dubai100'
         | 'nice100';
-    // design is depricated property
-    design?: 'red' | 'orange' | 'yellow' | 'green' | 'darkBlue' | 'darkGray' | 'lightBlue';
     value: number;
     /** Shows loading state, if view is 'line' */
     loading?: boolean;
@@ -46,32 +44,7 @@ interface HTMLAttributeProps {
 export type ProgressbarProps = Props & HTMLAttributeProps;
 
 export const Progressbar: React.FC<ProgressbarProps> = (props: React.PropsWithChildren<ProgressbarProps>) => {
-    const { size, view, color, design, value, children, loading, ...attrs } = props;
-
-    // Маппинг старых значений цвета на новые. Удалить по окончанию поддержки старых значений цветов
-    const designToColorMapping = {
-        red: 'moscow100',
-        orange: 'osaka100',
-        yellow: 'accent',
-        green: 'geneva100',
-        darkBlue: 'oslo120',
-        darkGray: 'seattle140',
-        lightBlue: 'oslo100',
-    };
-
-    // Функция для маппинга старых значений цвета на новые. Удалить по окончанию поддержки старых значений цветов
-    const getColor = () => {
-        if (design) {
-            // eslint-disable-next-line no-console
-            console.warn(
-                `Свойство design устарело. В следующих версиях ДС оно будет удалено. Пожалуйста, используйте вместо него свойство color.`
-            );
-
-            return designToColorMapping[design];
-        }
-
-        return color;
-    };
+    const { size, view, color, value, children, loading, ...attrs } = props;
 
     switch (view) {
         case 'circle': {
@@ -79,8 +52,7 @@ export const Progressbar: React.FC<ProgressbarProps> = (props: React.PropsWithCh
                 <CircleBox {...attrs}>
                     <CircleSVG size={size}>
                         <CircleBack size={size} />
-                        {/* Для того чтобы удалить поддержку старых цветов нужно заменить color={getColor()} на color={color} */}
-                        <CircleProgress size={size} color={getColor()} value={value} />
+                        <CircleProgress size={size} color={color} value={value} />
                     </CircleSVG>
                     {children && <CircleContent size={size}>{children}</CircleContent>}
                 </CircleBox>
@@ -91,8 +63,7 @@ export const Progressbar: React.FC<ProgressbarProps> = (props: React.PropsWithCh
             return (
                 <Box {...attrs} size={size}>
                     <Line />
-                    {/* Для того чтобы удалить поддержку старых цветов нужно заменить color={getColor()} на color={color} */}
-                    <Progress width={value > 100 ? 100 : value} color={getColor()}>
+                    <Progress width={value > 100 ? 100 : value} color={color}>
                         {loading && <Loading />}
                     </Progress>
                 </Box>

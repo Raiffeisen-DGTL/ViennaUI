@@ -1,7 +1,7 @@
 import React, { FC, ReactNode, useCallback, useMemo } from 'react';
-import { Text, Select, FormField } from 'vienna-ui';
+import { Text, Select, FormField } from 'vienna.ui';
 import { Box } from './GroupingSettings.styles';
-import { useTableService } from '../Context';
+import { useTableService, useTableLocalization } from '../Context';
 import { GroupByOption } from '../GroupBy/GroupByModule';
 
 interface GroupProps {
@@ -9,13 +9,16 @@ interface GroupProps {
     onGroupBy?: (event: React.MouseEvent<HTMLElement>, data: { id?: string }) => void;
 }
 interface ItemProps {
+    id: string;
     name: string;
     children?: ReactNode;
+    selected?: boolean;
 }
 
 export type GroupingSettingsProps = FC<GroupProps> & { Item: FC<ItemProps> };
 
-const parseGroupingOptions = (children): GroupByOption[] => {
+const parseGroupingOptions = (children): [GroupByOption[], string] => {
+    let selectedOption;
     const options: GroupByOption[] = React.Children.map(React.Children.toArray(children), (child: any) => {
         // checks child type
         if (!child?.type?.displayName || child.type?.displayName !== 'Table.GroupingSettings.Item') {
@@ -24,7 +27,11 @@ const parseGroupingOptions = (children): GroupByOption[] => {
             return undefined;
         }
 
-        const { id, name, children } = child.props;
+        const { id, name, selected, children } = child.props;
+
+        if (selected) {
+            selectedOption = id;
+        }
 
         const groups = React.Children.map(React.Children.toArray(children), (child: any) => {
             if (!child?.type?.displayName || child.type?.displayName !== 'GroupBy') {
@@ -39,15 +46,16 @@ const parseGroupingOptions = (children): GroupByOption[] => {
         return { id, name, groups };
     });
 
-    return options;
+    return [options, selectedOption];
 };
 
 export const GroupingSettings: GroupingSettingsProps = (props) => {
     const { children, onGroupBy } = props;
+    const localize = useTableLocalization();
     const { getGroupBy, setGroupBy, setGroupByOptions } = useTableService();
     const list = useMemo(() => {
-        const list = parseGroupingOptions(children);
-        setGroupByOptions(list);
+        const [list, selected] = parseGroupingOptions(children);
+        setGroupByOptions(list, selected);
 
         return list;
     }, [children]);
@@ -78,7 +86,7 @@ export const GroupingSettings: GroupingSettingsProps = (props) => {
             <FormField>
                 <FormField.Label>
                     <Text size='s' color='seattle100'>
-                        Группировка
+                        {localize('ds.table.settings.groupBy')}
                     </Text>
                 </FormField.Label>
                 <FormField.Content>

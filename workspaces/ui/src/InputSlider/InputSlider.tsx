@@ -28,7 +28,7 @@ const defaultOptions = (delimeter = '.', min, max) => ({
     },
 });
 
-interface InputSliderProps extends Omit<InputMaskProps, 'value' | 'min' | 'max'> {
+export interface InputSliderProps extends Omit<InputMaskProps, 'value' | 'min' | 'max'> {
     /** Разделитель разряда */
     delimeter?: '.' | ',';
     /** Максимальное значение default = 100 */

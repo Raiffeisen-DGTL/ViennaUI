@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
-import { Box, Header, Actions, Footer, Content, Title, Subtitle, ContentTitle } from './Card.styles';
 import { H5 } from '../Typography';
+import { WithMargin } from '../Whitespace/utils';
+import { Box, Header, Actions, Footer, Content, Title, Subtitle, ContentTitle } from './Card.styles';
 
 interface Props {
     /* Card's content */
@@ -31,7 +32,7 @@ interface HTMLAttributeProps {
     tabIndex?: number;
 }
 
-export type CardProps = HTMLAttributeProps & Props;
+export type CardProps = HTMLAttributeProps & Props & WithMargin;
 
 export const Card: React.FC<CardProps> & { Title: any; Subtitle: any; ContentTitle: any } = (props: CardProps) => {
     const { children, title, header, actions, footer, ...attrs } = props;

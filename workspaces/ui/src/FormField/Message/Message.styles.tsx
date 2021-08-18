@@ -6,6 +6,7 @@ const presets = getPresets('formField.message', {
     design: 'color',
     custom: null,
     align: 'align',
+    size: 'size',
 });
 
 export const Box = styled.div<{ color?: 'warning' | 'critical'; align?: 'left' | 'center' | 'right' }>`
@@ -13,4 +14,5 @@ export const Box = styled.div<{ color?: 'warning' | 'critical'; align?: 'left' |
     ${presets.design}
     ${presets.align}
     ${presets.custom}
+    ${presets.size}
 `;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Popover, Button, Text } from 'vienna-ui';
-import { Settings1 } from 'vienna.icons';
+import { Popover, Button, Text } from 'vienna.ui';
+import { Settings } from 'vienna.icons';
 import { ThemeProvider } from 'vienna.ui-primitives';
+import { useTableLocalization } from '../Context';
 import { Box } from './SettingsInternal.styles';
 
 interface SettingsInternalProps {
@@ -22,6 +23,8 @@ const theme = {
 export const SettingsInternal: React.FC<SettingsInternalProps> = (props) => {
     const { size, children } = props;
 
+    const localize = useTableLocalization();
+
     return (
         <Box size={size}>
             <ThemeProvider theme={theme}>
@@ -29,14 +32,14 @@ export const SettingsInternal: React.FC<SettingsInternalProps> = (props) => {
                     anchor='bottom'
                     header={
                         <Text size='xxl' weight='bold'>
-                            Настройка таблицы
+                            {localize('ds.table.settings')}
                         </Text>
                     }
                     content={children}
                     width={288}
                     noClose>
-                    <Button design='ghost' size='xs'>
-                        <Settings1 size='m' />
+                    <Button design='ghost' size='xs' data-id='table-settings-button'>
+                        <Settings size='m' />
                     </Button>
                 </Popover>
             </ThemeProvider>

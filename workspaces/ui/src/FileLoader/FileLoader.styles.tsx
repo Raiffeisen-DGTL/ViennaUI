@@ -48,7 +48,7 @@ export const Box = styled.div<{ over?: boolean; invalid?: boolean; disabled?: bo
     position: relative;
     display: flex;
     flex-direction: column;
-    aligne-items: center;
+    align-items: center;
     justify-content: center;
     ${container.base}
 

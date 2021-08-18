@@ -1,23 +1,31 @@
-import { TableState, TableConfig } from '../../types';
-import { GroupByOption } from './GroupByModule';
+import { ServiceFactoryConfig } from '../TableService/ServiceFactory';
+import { GroupByOption, GroupByModule } from './GroupByModule';
 
 export interface GroupByService {
     getGroupBy: () => GroupByOption | undefined;
     setGroupBy: (id?: string) => void;
-    setGroupByOptions: (options: GroupByOption[]) => void;
+    setGroupByOptions: (options: GroupByOption[], selected?: string) => void;
 }
 
-export const groupByService = function (state: TableState, update, config: TableConfig): GroupByService {
-    const setGroupByOptions = (options: GroupByOption[]) => {
-        config.groupBy = { options };
-    };
+export const groupByServiceId = GroupByModule.name;
 
+export const groupByService: ServiceFactoryConfig<GroupByService> = function (getState, update, config) {
     const getGroupBy = () => {
-        return config.groupBy?.options.find((group) => group.id === state.groupBy?.id);
+        const currentGroup = getState().groupBy?.id;
+        return config?.groupBy?.options.find((group) => group.id === currentGroup);
     };
 
     const setGroupBy = (id) => {
-        update({ ...state, groupBy: { id } });
+        const state = getState();
+        update(groupByServiceId, { ...state, groupBy: { id } });
+    };
+
+    const setGroupByOptions = (options: GroupByOption[], selected?: string) => {
+        config.groupBy = { options };
+
+        if (selected) {
+            setGroupBy(selected);
+        }
     };
 
     return { getGroupBy, setGroupBy, setGroupByOptions };

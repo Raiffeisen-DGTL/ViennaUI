@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
+import { TableLayers } from '../../TableLayers';
+import { Icon } from '../ColumnTitle/ColumnTitle.styles';
 
 const presets = getPresets('table', {
     header: null,
@@ -16,13 +18,23 @@ const cell = getPresets('table.cell.header', {
     bottomDivider: null,
 });
 
-export const Row = styled.tr``;
+const custom = getPresets('table.custom.header', {
+    base: null,
+    row: null,
+    cell: null,
+    group: null,
+    pinned: null,
+});
+
+export const Row = styled.tr`
+    ${custom.row}
+`;
 
 export const Th = styled.th<any>`
     position: relative; // for IE
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: ${TableLayers.Header};
 
     ${cell.base}
     ${presets.size}
@@ -56,25 +68,34 @@ export const Th = styled.th<any>`
         group &&
         css`
             ${cell.group}
+            ${custom.group}
         `}
 
     ${({ pinned }) =>
         pinned &&
         css`
             position: sticky;
-            z-index: 2;
-            ${presets.pinned}
+            z-index: ${TableLayers.PinnedHeader};
+            ${presets.pinned};
+            ${custom.pinned}
         `}
 
-    &:hover {
-        ${({ isHover }) =>
-            isHover &&
-            css`
+    ${({ isHover }) =>
+        isHover &&
+        css`
+            &:hover {
                 ${cell.hover}
-            `}
-    }
+
+                ${Icon} {
+                    visibility: visible;
+                }
+            }
+        `}
+
+    ${custom.cell}
 `;
 
 export const Header = styled.thead`
     ${presets.header}
+    ${custom.base}
 `;

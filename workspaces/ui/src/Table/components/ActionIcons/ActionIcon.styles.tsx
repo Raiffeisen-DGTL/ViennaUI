@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Other } from 'vienna.icons';
 import { getPresets } from 'vienna.ui-primitives';
 import { RoundIcon } from '../../../RoundIcon';
+import { Row } from '../TableBody/TableBody.styles';
 
 const presets = getPresets('table.actionIcon', {
     base: null,
@@ -15,9 +15,8 @@ export const Icon = styled(RoundIcon)`
     &:hover {
         ${presets.hover}
     }
-`;
 
-// TODO: temporary solution until proper icon is added to the icon pack
-export const More: any = styled(Other)`
-    transform: rotate(90deg);
+    ${Row}:hover & {
+        visibility: visible;
+    }
 `;

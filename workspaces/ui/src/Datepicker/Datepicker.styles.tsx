@@ -9,6 +9,7 @@ export const Box = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
+    outline: none;
 `;
 
 export const InputBox = styled.div`

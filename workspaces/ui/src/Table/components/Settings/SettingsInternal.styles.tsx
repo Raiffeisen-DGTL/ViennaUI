@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
+import { TableLayers } from '../../TableLayers';
 
 const presets = getPresets('table.settings', {
     box: null,
@@ -16,7 +17,7 @@ export const Box = styled.span<any>`
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 20;
+    z-index: ${TableLayers.Settings};
     ${presets.box}
     ${presets.size}
 

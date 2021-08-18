@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
 import { Td } from '../TableBody/TableBody.styles';
 
@@ -23,5 +23,9 @@ export const ExpanderIcon = styled.span<any>`
 `;
 
 export const ExpandedContent = styled(Td)`
-    ${presets.content}
+    ${({ hasPadding }) =>
+        hasPadding &&
+        css`
+            ${presets.content}
+        `}
 `;

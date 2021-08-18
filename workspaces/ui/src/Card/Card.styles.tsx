@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
+import { useMargin } from '../Whitespace/utils';
 
 const presets = getPresets('card', {
     base: null,
@@ -72,6 +73,8 @@ export const Box = styled.div<any>`
                 flex-grow: 1;
             }
         `}
+
+    ${useMargin}
 
     ${presets.custom}
 `;

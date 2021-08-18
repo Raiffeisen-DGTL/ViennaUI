@@ -7,6 +7,11 @@ const tooltip = getPresets('tooltip.wrapper', {
 
 export const Box = styled.div<any>`
     display: inline-block;
+    ${({ inline }) =>
+        !inline &&
+        css`
+            display: block;
+        `}
     ${({ truncate }) =>
         truncate &&
         css`
@@ -15,4 +20,7 @@ export const Box = styled.div<any>`
             white-space: nowrap;
         `}
     ${tooltip.custom};
+    > svg {
+      vertical-align:top;
+    }
 `;

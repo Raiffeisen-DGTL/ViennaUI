@@ -15,6 +15,7 @@ export interface ColumnProps {
     draggable?: boolean;
     pinned?: boolean;
     groupId?: string;
+    filter?: ReactNode;
 }
 
 export const Column: FC<ColumnProps> = (props: ColumnProps) => {

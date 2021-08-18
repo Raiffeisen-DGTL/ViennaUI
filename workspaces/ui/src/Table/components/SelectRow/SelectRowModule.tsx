@@ -1,4 +1,4 @@
-import { Module } from '../../types';
+import { Module, TableFeature } from '../../types';
 import { TableProps } from '../../Table';
 
 export interface SelectRowConfig {
@@ -15,6 +15,7 @@ export const SELECT_ALL = 'all';
 
 export const SelectRowModule: Module = {
     name: 'selectRow',
+    feature: TableFeature.SelectRow,
     initConfig: ({ child, settings, config }): SelectRowConfig => {
         const selectRow = config || {};
         const { onSelect, disableSelectAll } = settings;

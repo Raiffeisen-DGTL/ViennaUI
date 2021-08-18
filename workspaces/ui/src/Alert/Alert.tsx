@@ -1,10 +1,10 @@
 import React, { useContext, useMemo } from 'react';
 import { ThemeContext } from 'styled-components';
-import { Attention, Exclamation, InfoRing, CheckMark } from 'vienna.icons';
+import { WarningTr, WarningRing, InfoRing, CheckmarkRing } from 'vienna.icons';
 import { ThemeProvider, getPresets } from 'vienna.ui-primitives';
 import { Box, IconContainer, Title, TextContainer, Actions } from './Alert.styles';
 
-type AlertDesign = 'plain' | 'error' | 'warning' | 'success';
+type AlertDesign = 'plain' | 'error' | 'warning' | 'success' | 'accent';
 
 interface Props {
     children: React.ReactNode;
@@ -37,10 +37,11 @@ interface HTMLAttributeProps {
 export type AlertProps = HTMLAttributeProps & Props;
 
 const mapDesignToIconDesign: { [key in AlertDesign]: any } = {
-    error: Attention,
-    warning: Exclamation,
-    success: CheckMark,
+    error: WarningTr,
+    warning: WarningRing,
+    success: CheckmarkRing,
     plain: InfoRing,
+    accent: InfoRing,
 };
 
 const presets = getPresets('alert.buttons', {
@@ -65,7 +66,7 @@ export const Alert: React.FC<AlertProps> = (props): JSX.Element => {
     const themedContext = useContext(ThemeContext);
     const theme = useMemo(() => {
         return buildTheme({ ...props, theme: themedContext });
-    }, [props, themedContext]);
+    }, [props.design, themedContext]);
 
     return (
         <Box compactBelow={compact} {...attrs}>

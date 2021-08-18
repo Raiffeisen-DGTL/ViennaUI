@@ -1,9 +1,11 @@
 import React, { useCallback, useState, useEffect, ForwardRefExoticComponent, RefAttributes, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { useDebounce } from 'vienna.react-use';
+import ReactFocusLock from 'react-focus-lock';
+import { useDebounce, usePortal } from 'vienna.react-use';
 import { Close } from 'vienna.icons';
 import { Screen, ScreenSlots } from 'vienna.ui-primitives';
 import { Fade, Box, CloseIcon } from './Modal.styles';
+import { withTabFocusState } from '../Utils';
 
 const ANIMATION_DURATION = 400;
 
@@ -13,7 +15,9 @@ export interface ModalProps extends React.PropsWithChildren<any> {
     isOpen?: boolean;
     closeIcon?: React.ReactNode;
     onClose?: (data?: any) => void | boolean | Promise<boolean>;
-    onPreDispose?: () => void;
+    onPreDespose?: () => void;
+    ref?: any;
+    closeByFade?: boolean;
 }
 
 export interface ModalSlots extends ScreenSlots {
@@ -21,11 +25,12 @@ export interface ModalSlots extends ScreenSlots {
 }
 
 export const Modal: React.FC<ModalProps> & ModalSlots = React.forwardRef((props: ModalProps, ref: any) => {
-    const { id, children, state, onClose, onPreDispose, isOpen, closeIcon = <Close size='l' /> } = props;
+    const { id, children, state, onClose, onPreDespose, isOpen, closeIcon = <Close size='l' />, closeByFade } = props;
 
     const [init, setInit] = useState(false);
     const [show, setShow] = useState(false);
     const [toggle, setToggle] = useState(false);
+    const portalContainer = usePortal();
 
     if (state && isOpen) {
         // eslint-disable-next-line no-console
@@ -37,10 +42,10 @@ export const Modal: React.FC<ModalProps> & ModalSlots = React.forwardRef((props:
     const toggleDebouncer = useDebounce(setToggle, 100);
 
     const predesposeHandler = useCallback(() => {
-        if (typeof onPreDispose === 'function') {
-            onPreDispose();
+        if (typeof onPreDespose === 'function') {
+            onPreDespose();
         }
-    }, [onPreDispose]);
+    }, [onPreDespose]);
 
     // close animation process
     const playCloseAnimation = useCallback(() => {
@@ -162,23 +167,48 @@ export const Modal: React.FC<ModalProps> & ModalSlots = React.forwardRef((props:
         return null;
     }
 
+    const WrappedCloseIcon = withTabFocusState((props) => (
+        <CloseIcon
+            role='button'
+            aria-label='Close'
+            tabIndex={0}
+            onClick={handleClose}
+            onKeyPress={(e: React.KeyboardEvent) => {
+                if (e.key === 'Enter') handleClose();
+            }}
+            {...props}>
+            {closeIcon}
+        </CloseIcon>
+    ));
+
     return (
         document &&
         ReactDOM.createPortal(
             init && (
-                <Fade id={id} show={show} onClick={handleClickFade} onMouseDown={fadeMouseDown}>
-                    <Box toggle={toggle} onClick={boxClickHandler} onMouseDown={boxMouseDown}>
-                        {children}
-                        {closeIcon && <CloseIcon onClick={handleClose}>{closeIcon}</CloseIcon>}
-                    </Box>
-                </Fade>
+                <ReactFocusLock returnFocus autoFocus={false}>
+                    <Fade
+                        id={id}
+                        show={show}
+                        onClick={closeByFade ? handleClickFade : () => {}}
+                        onMouseDown={fadeMouseDown}>
+                        <Box toggle={toggle} onClick={boxClickHandler} onMouseDown={boxMouseDown}>
+                            {children}
+                            {closeIcon && <WrappedCloseIcon />}
+                        </Box>
+                    </Fade>
+                </ReactFocusLock>
             ),
-            document.body
+            portalContainer ?? document.body
         )
     );
 }) as ForwardRefExoticComponent<ModalProps & RefAttributes<any>> & ModalSlots;
 
 Modal.displayName = 'Modal';
+
+Modal.defaultProps = {
+    closeIcon: <Close size='l' />,
+    closeByFade: true,
+};
 
 Modal.Layout = Screen;
 Modal.Head = Screen.Head;

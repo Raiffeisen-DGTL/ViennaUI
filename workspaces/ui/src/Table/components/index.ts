@@ -16,3 +16,6 @@ export * from './GroupBy';
 export * from './PinnableColumn';
 export * from './Settings';
 export * from './ActionsColumn';
+export * from './Filter';
+export * from './ColumnTitle';
+export * from './TableService';

@@ -2,11 +2,13 @@ import React, { useMemo } from 'react';
 import { useTableConfig, useTableService } from '../Context/TableContext';
 import { Header, Row, Th } from './TableHeader.styles';
 import { Resizer } from '../ResizableColumn/Resizer';
-import { Sort } from '../Sort';
 import { Selector, SELECT_ALL } from '../SelectRow';
 import { DraggableColumn, useDraggableColumn } from '../DraggableColumn';
 import { ColumnGroupInternal } from '../ColumnGroup';
 import { Pinner, usePinnableColumns } from '../PinnableColumn';
+import { Sort } from '../Sort';
+import { Filter } from '../Filter';
+import { BasicTitle } from '../ColumnTitle';
 
 export const TableHeader = () => {
     const { columns } = useTableService();
@@ -19,11 +21,12 @@ export const TableHeader = () => {
 
     const content = useMemo(() => {
         return columns().map((column, index) => {
-            const { id, title, sortable, resizable, draggable, groupId, ...attrs } = column;
+            // removing title from attrs
+            // eslint-disable-next-line  @typescript-eslint/no-unused-vars
+            const { id, title, sortable, resizable, draggable, groupId, filter, ...attrs } = column;
 
             const pinned = pinnableColumns && column.pinned;
-
-            const isHover = sortable || resizable;
+            const isHover = sortable || resizable || draggable || filter;
 
             let hasRightDivider = false;
             if (columns()[index + 1]) {
@@ -43,10 +46,11 @@ export const TableHeader = () => {
                 ...attrs,
             };
 
+            const Title = filter ? Filter : sortable ? Sort : BasicTitle;
+
             return (
                 <Th key={id} {...params}>
-                    {!sortable && title}
-                    {sortable && <Sort field={id}>{title}</Sort>}
+                    <Title column={column} size={size} />
                     {resizable && <Resizer size={size} />}
                     {draggable && <DraggableColumn />}
                     {pinned && <Pinner />}
@@ -68,7 +72,11 @@ export const TableHeader = () => {
                             </Th>
                         )}
                         {expandedRow && (
-                            <Th data-column='expander' pinned={pinnableColumns} hasBottomDivider>
+                            <Th
+                                data-column='expander'
+                                pinned={pinnableColumns}
+                                width={expandingRow?.settings.width}
+                                hasBottomDivider>
                                 &nbsp;
                                 {pinnableColumns && <Pinner />}
                             </Th>

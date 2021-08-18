@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from 'vienna.ui-primitives';
-import { Icon } from '../ActionIcons/ActionIcon.styles';
 
 const presets = getPresets('table', {
     body: null,
@@ -14,6 +13,12 @@ const cell = getPresets('table.cell', {
     divider: null,
     truncate: null,
     rightDivider: null,
+});
+
+const custom = getPresets('table.custom.body', {
+    base: null,
+    row: null,
+    cell: null,
 });
 
 export const Td = styled.td<any>`
@@ -37,6 +42,12 @@ export const Td = styled.td<any>`
             text-align: ${align};
         `}
 
+    ${({ valign }) =>
+        valign &&
+        css`
+            vertical-align: ${valign};
+        `}
+
     ${({ width }) =>
         width &&
         css`
@@ -54,9 +65,10 @@ export const Td = styled.td<any>`
         pinned &&
         css`
             position: sticky;
-            z-index: 2;
             ${presets.pinned}
         `}
+
+    ${custom.cell}
 `;
 
 export const Row = styled.tr<any>`
@@ -66,11 +78,6 @@ export const Row = styled.tr<any>`
             &:hover {
                 ${Td} {
                     ${cell.hover}
-                    z-index: 2;
-                }
-
-                ${Icon} {
-                    visibility: visible;
                 }
             }
         `};
@@ -98,8 +105,11 @@ export const Row = styled.tr<any>`
                 cursor: pointer;
             }
         `}
+
+    ${custom.row}
 `;
 
 export const Body = styled.tbody<any>`
     ${presets.body}
+    ${custom.base}
 `;

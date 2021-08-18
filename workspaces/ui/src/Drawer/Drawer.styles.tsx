@@ -22,6 +22,7 @@ const content = getPresets('drawer.content', {
 const icon = getPresets('drawer.icon', {
     base: null,
     hover: null,
+    focus: null,
     custom: null,
 });
 
@@ -84,10 +85,17 @@ export const Content = styled.div`
     ${content.custom}
 `;
 
-export const CloseIcon = styled.div`
+export const CloseIcon = styled.div<{ isFocusStateVisible?: boolean }>`
     ${icon.base}
     &:hover {
         ${icon.hover}
     }
+    ${({ isFocusStateVisible }: any) =>
+        isFocusStateVisible &&
+        css`
+            &:focus {
+                ${icon.focus}
+            }
+        `}
     ${icon.custom}
 `;

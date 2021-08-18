@@ -101,7 +101,6 @@ export const Input = styled.input<{ invalid?: boolean }>`
 
         &::after {
             content: '';
-            display: none;
             position: absolute;
             top: 50%;
             left: 50%;

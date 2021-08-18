@@ -1,11 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useCallback, useEffect, useRef, ForwardRefExoticComponent, RefAttributes } from 'react';
-import { Down, Up } from 'vienna.icons';
+import { SelectOpenDown, SelectHide } from 'vienna.icons';
 import { useMask, IMaskProps } from 'vienna.react-use';
 import { Box, Current, Part, Placeholder, StyledInputWrapper } from './Select.styles';
 import Option, { OptionProps } from './Option/Option';
+import { SelectLocalizationProps, defaultSelectLocalization } from './localization';
 import { NativeInput } from '../Input';
 import { DropList } from '../DropList';
+import { useLocalization } from '../Localization';
 
 interface Data {
     props: any;
@@ -41,7 +43,7 @@ interface Postfix {
     down?: React.ReactNode;
 }
 
-export interface SelectProps extends IMaskProps {
+export interface SelectProps extends IMaskProps, SelectLocalizationProps {
     /** Имя компонента */
     name?: string;
 
@@ -91,6 +93,8 @@ export interface SelectProps extends IMaskProps {
 
     /** Максимальная высота выпадающего списка в пикселях */
     maxListHeight?: number;
+    /** Максимальная ширина выпадающего списка в пикселях */
+    maxListWidth?: number;
 
     /** Разворачивать список при получениее фокуса */
     openWhenFocus?: boolean;
@@ -123,15 +127,20 @@ export interface SelectProps extends IMaskProps {
     fitOptions?: boolean;
 
     /** Определяем значение которое надо вывести в селекте как текст выбранного значения */
-    valueToString?: (item: any) => string;
+    valueToString?: (item: any) => string | undefined;
 
     /** Определяем как сравнивать переданый в value объект и содержимое списка для подсветки выбраного элемента */
     compare?: (item: any) => any;
+    fixed?: boolean;
+    ref?: React.Ref<HTMLDivElement>;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const omitNoWrapProp = ({ __nowrap__, ...props }) => props;
 
 const preventDefault = (event) => event.preventDefault();
 
-const defaultPostfix = { down: <Down />, up: <Up /> };
+const defaultPostfix = { down: <SelectOpenDown />, up: <SelectHide /> };
 
 const getIcon = (flag, icons, size) => {
     size = size === 'xs' ? 's' : 'm';
@@ -171,7 +180,8 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             design,
             openWhenFocus,
             maxListHeight,
-            valueToString = (item) => (typeof item === 'string' ? item : item?.value ?? ''),
+            maxListWidth,
+            valueToString = (item) => (typeof item !== 'object' ? item : item?.value ?? ''),
             compare = (item) => item?.value ?? item,
             onScroll,
             onSelect,
@@ -193,8 +203,11 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             min,
             max,
             smartPlaceholder,
+            fixed,
             ...attrs
         } = props;
+
+        const localization = useLocalization(props, defaultSelectLocalization);
 
         // Опции необходимые для маски
         const maskProps = {
@@ -253,6 +266,7 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                 if (typeof children === 'function') {
                     // Если опции были через children ввиде функции
                     setLocalOptions(children({ props, currentIndex: 0, Option }));
+                    return;
                 }
                 if (children) {
                     // Если опции были через children как React.ReactNode
@@ -267,6 +281,10 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                 inputRef.current.focus();
             }
         }, [showList]);
+
+        const handleHide = useCallback(() => {
+            setShowList(false);
+        }, []);
 
         const handleOptionMouseOver = useCallback(
             (e, option) => {
@@ -443,6 +461,8 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                         : valueToString(option) === valueToString(value);
 
                     return React.cloneElement(child, {
+                        role: 'option',
+                        'aria-selected': selected,
                         selected,
                         valueToString,
                         hover: index === currentIndex,
@@ -453,8 +473,14 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                     });
                 }
 
+                if (child?.props?.__nowrap__) {
+                    return React.cloneElement(child, omitNoWrapProp(child.props));
+                }
+
                 // Если переданный объект не унаследован от Option
                 return React.createElement(Option, {
+                    role: 'option',
+                    'aria-selected': compare(child) === compare(value) || valueToString(child) === valueToString(value),
                     key: index,
                     selected: compare(child) === compare(value) || valueToString(child) === valueToString(value),
                     valueToString,
@@ -470,8 +496,18 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             // Ессли передан promise то ожидаем
             const prepared = localOptions instanceof Promise ? [] : localOptions.map(mapper);
 
-            return prepared?.length ? prepared : <Option disabled>Нет элементов для отображения</Option>;
-        }, [localOptions, currentIndex, handleSelect, value, valueToString, compare, size, handleOptionMouseOver]);
+            return prepared?.length ? prepared : <Option disabled>{localization('ds.select.empty')}</Option>;
+        }, [
+            localOptions,
+            currentIndex,
+            handleSelect,
+            value,
+            valueToString,
+            compare,
+            size,
+            handleOptionMouseOver,
+            localization,
+        ]);
 
         const constructCurrent = useCallback(() => {
             const blured = useRef(false); // флаг проверки увели ли мы фокус с инпута
@@ -491,6 +527,9 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             const focusHandler = (event) => {
                 event.stopPropagation();
                 blured.current = false;
+                if (!active && typeof onFocus === 'function') {
+                    onFocus(event, { name, value });
+                }
                 setActive(true); // Подсвечиваем селект
             };
 
@@ -516,7 +555,7 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             const formatedValue = inputValue && mask ? valueToMask(inputValue) : inputValue;
 
             // Формируем Input, используем NativeInput так как он лишен отступов и обводок
-            const result = ((editable && showList
+            const result = (editable && showList
                 ? React.createElement(NativeInput, {
                       ref: inputRef,
                       size,
@@ -533,10 +572,11 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                   })
                 : null) ??
             templateValue ?? // выводим значение шаблона
-                valueToString(value)) || <Placeholder disabled={disabled}>{placeholder}</Placeholder>; // выводим объект приведеный к строке
+                valueToString(value) ?? <Placeholder disabled={disabled}>{placeholder}</Placeholder>; // выводим объект приведеный к строке
 
             return result;
         }, [
+            active,
             placeholder,
             value,
             inputValue,
@@ -548,6 +588,7 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
             name,
             onChange,
             onBlur,
+            onFocus,
             design,
             maskToValue,
             valueToMask,
@@ -591,6 +632,10 @@ export const Select: React.FC<SelectProps> & { Option: React.FC<OptionProps> } =
                         size={getdropListSizeBySelectSize(size)}
                         fitItems={fitOptions}
                         maxHeight={maxListHeight}
+                        fixed={fixed}
+                        width={maxListWidth}
+                        followParentWhenScroll={fixed}
+                        onHide={handleHide}
                         onScroll={handleScroll}>
                         {constructOptions()}
                     </DropList>

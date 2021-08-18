@@ -56,7 +56,7 @@ export const Chips: React.FC<ChipsProps> & { Item: React.FC<ChipsItemProps> } = 
                 case ' ':
                 case 'Enter':
                     event.preventDefault();
-                    return onClick && onClick(event);
+                    return onClick?.(event);
             }
 
             return null;
@@ -73,7 +73,7 @@ export const Chips: React.FC<ChipsProps> & { Item: React.FC<ChipsItemProps> } = 
             const tabIndex = chipProps.disabled ? '-1' : chipProps.tabIndex;
             const newProps = { ...chipProps, ...{ active, design, onClick, onKeyDown, tabIndex } };
 
-            return <ChipItem {...newProps} />;
+            return <ChipItem role='option' {...newProps} />;
         }
 
         return null;

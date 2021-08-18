@@ -1,2 +1,3 @@
 export * from './Table';
-export * from './TableService';
+export * from './components/TableService/TableService';
+export type { TableLocalization } from './localization';

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { getScrollParent } from 'vienna.react-use';
+import { getScrollParent, usePortal } from 'vienna.react-use';
 import { getPosition } from '../utils';
 import { Box } from './TolltipNative.styles';
 
@@ -20,7 +20,7 @@ export const TooltipNative: React.FC<TooltipNativeProps> = (props: React.PropsWi
     const { allowInteraction, onClose, children, target, anchor = 'auto', width, design = 'light', size = 's' } = props;
     const [innerPos, setPos] = useState({});
     const ref = useRef<HTMLDivElement>(null);
-
+    const portalContainer = usePortal();
     const scrollableParent = getScrollParent(target);
 
     useEffect(() => {
@@ -45,7 +45,7 @@ export const TooltipNative: React.FC<TooltipNativeProps> = (props: React.PropsWi
             <Box {...innerPos} allowInteraction={allowInteraction} width={width} design={design} ref={ref} size={size}>
                 {children}
             </Box>,
-            document.body
+            portalContainer ?? document.body
         )
     );
 };

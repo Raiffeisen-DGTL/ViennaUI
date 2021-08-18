@@ -1,4 +1,4 @@
-import { draggableColumnService } from './DraggableColumnService';
+import { draggableColumnService, draggableColumnServiceId } from './DraggableColumnService';
 
 describe('Sort service', () => {
     const state: any = {
@@ -8,14 +8,22 @@ describe('Sort service', () => {
     };
 
     let newState: any = {};
-    const update = (state) => {
+    let serviceId = '';
+    const update = (id, state) => {
         newState = state;
+        serviceId = id;
     };
 
-    const service = draggableColumnService(state, update);
+    const getState = () => state;
+    const service = draggableColumnService(getState, update);
+
+    beforeEach(() => {
+        serviceId = '';
+    });
 
     test('moveColumn 1', () => {
         service.moveColumn('2', '3');
+        expect(serviceId).toEqual(draggableColumnServiceId);
         const columns = newState.columns?.list;
         expect(columns).not.toBeUndefined();
         expect(Array.isArray(columns)).toBe(true);
@@ -25,6 +33,7 @@ describe('Sort service', () => {
 
     test('moveColumn 2', () => {
         service.moveColumn('2', '1');
+        expect(serviceId).toEqual(draggableColumnServiceId);
         const columns = newState.columns?.list;
 
         expect(columns).not.toBeUndefined();

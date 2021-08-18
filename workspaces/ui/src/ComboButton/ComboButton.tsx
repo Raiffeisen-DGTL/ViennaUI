@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
-import { Down, Up } from 'vienna.icons';
+import React, { useState, useCallback, useRef } from 'react';
+import { useOutsideClick } from 'vienna.react-use';
+import { SelectOpenDown, SelectHide } from 'vienna.icons';
 import { Wrapper, LeftButton, RightButton } from './ComboButton.styles';
 import { DropList } from '../DropList';
 import { Props as ItemProps } from '../DropList/Item';
@@ -10,18 +11,19 @@ interface Icons {
     down: React.ReactNode;
 }
 
-interface Props extends Pick<ButtonProps, 'design' | 'size'> {
+export interface ComboButtonProps extends Pick<ButtonProps, 'design' | 'size'> {
     /** Иконки открытого и закрытого состояния */
     icons?: Icons;
-
     /** Растягивание опций по ширине родителя */
     fitOptions?: boolean;
-
     /** Опции */
     options?: React.ReactNode[];
-
     /** Максимальная высота выпадающего списка в пикселях */
     maxListHeight?: number;
+    /** Максимальная ширина выпадающего списка в пикселях */
+    maxListWidth?: number;
+    fixed?: boolean;
+    float?: 'start' | 'end';
 }
 
 const getIcon = (icon, size) => {
@@ -29,14 +31,26 @@ const getIcon = (icon, size) => {
     return React.cloneElement(icon, { size });
 };
 
-const defaultIcons = { down: <Down key={'1'} />, up: <Up key={'1'} /> };
+const defaultIcons = { down: <SelectOpenDown key={'1'} />, up: <SelectHide key={'1'} /> };
 
-export const ComboButton: React.FC<Props> & {
+export const ComboButton: React.FC<ComboButtonProps> & {
     Option: React.FC<ItemProps>;
-} = (props: React.PropsWithChildren<Props>) => {
-    const { children, fitOptions, options = [], size, design, icons, maxListHeight } = props;
+} = (props: React.PropsWithChildren<ComboButtonProps>) => {
+    const {
+        children,
+        fitOptions,
+        options = [],
+        size,
+        design,
+        icons,
+        maxListHeight,
+        fixed,
+        maxListWidth,
+        float,
+    } = props;
 
     const [isOpen, setOpen] = useState(false);
+    const ref = useRef<any>();
 
     const childrenArr = React.Children.toArray(children);
 
@@ -54,6 +68,10 @@ export const ComboButton: React.FC<Props> & {
         if (typeof this.props.onBlur === 'function') {
             this.onBlur.onClick(event);
         }
+        setOpen(false);
+    }, []);
+
+    const handleHide = useCallback(() => {
         setOpen(false);
     }, []);
 
@@ -82,8 +100,10 @@ export const ComboButton: React.FC<Props> & {
 
     const icon = getIcon(icons && (isOpen ? icons.up : icons.down), dropbBtn.props.size);
 
+    useOutsideClick(ref, handleHide);
+
     return (
-        <Wrapper>
+        <Wrapper ref={ref}>
             {multipleButttons ? (
                 <>
                     <LeftButton {...clickableBtn.props} design={design} size={size} />
@@ -93,7 +113,14 @@ export const ComboButton: React.FC<Props> & {
                 React.cloneElement(dropbBtn, dropButtonProps, [dropButtonProps.children, icon])
             )}
             {isOpen && (
-                <DropList fitItems={fitOptions} maxHeight={maxListHeight}>
+                <DropList
+                    fitItems={fitOptions}
+                    maxHeight={maxListHeight}
+                    width={maxListWidth}
+                    fixed={fixed}
+                    float={float}
+                    followParentWhenScroll={fixed}
+                    onHide={handleHide}>
                     {constructOptions()}
                 </DropList>
             )}

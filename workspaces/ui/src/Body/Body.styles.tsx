@@ -58,7 +58,7 @@ export const GlobalCustomFonts = createGlobalStyle`
     @font-face {
         font-family: 'ALS Hauss';
         font-display: swap;
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'}); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
         src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
         font-weight: 500;
         font-style: normal;

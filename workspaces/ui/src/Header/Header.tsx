@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useRef, useState, useCallback, cloneElement, useMemo, ReactElement } from 'react';
-import { Burger, Close } from 'vienna.icons';
+import { BurgerHor as Burger, Close } from 'vienna.icons';
 import {
     Box,
     BoxMobile,
@@ -142,6 +142,8 @@ export const Header: FC<HeaderProps> & { Items: FC<ItemsProps>; Item: FC<ItemPro
             }
 
             setCurrentItemValue(currentItemValue !== newValue ? newValue : null);
+            e.stopPropagation();
+            e.nativeEvent?.stopImmediatePropagation();
         },
         [items, currentItemValue, onOpen, onClose, closeIfClickOutside]
     );
@@ -154,6 +156,15 @@ export const Header: FC<HeaderProps> & { Items: FC<ItemsProps>; Item: FC<ItemPro
         isOpen ? onClose?.() : onOpen?.();
         handleCloseContent();
     }, [isOpen, onClose, onOpen, handleCloseContent]);
+
+    const handleReturnBack = useCallback(
+        (e) => {
+            e.stopPropagation();
+            e?.nativeEvent.stopImmediatePropagation();
+            onChange(e, null, true);
+        },
+        [onChange]
+    );
 
     const headerItems = items && cloneElement(items, { size, isMobile: false, onChange });
 
@@ -252,7 +263,7 @@ export const Header: FC<HeaderProps> & { Items: FC<ItemsProps>; Item: FC<ItemPro
 
                         {!!currentItemContent && (
                             <>
-                                <MenuPoint leftArrow label={currentItemLabel} onClick={handleCloseContent} />
+                                <MenuPoint leftArrow label={currentItemLabel} onClick={handleReturnBack} />
                                 {currentItemContent}
                             </>
                         )}
@@ -271,7 +282,7 @@ export const Header: FC<HeaderProps> & { Items: FC<ItemsProps>; Item: FC<ItemPro
             isOpen,
             mobileMenu,
             headerItemsMobile,
-            handleCloseContent,
+            handleReturnBack,
             mobileHeader,
             onClose,
         ]

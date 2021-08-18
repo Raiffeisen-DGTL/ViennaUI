@@ -1,6 +1,8 @@
-import React, { ReactNode, createContext, useContext, useState, useCallback, useEffect } from 'react';
-import { TableConfig, TableState, TableService } from '../../types';
-import { tableService } from '../../TableService';
+import React, { ReactNode, createContext, useContext } from 'react';
+import { TableConfig, TableState, TableFeatures } from '../../types';
+import { TableLocalizationContext } from '../../localization';
+import { useCreateTableService, TableService, TableServiceFactory } from '../TableService';
+import { TableEvents } from '../../TableEvents';
 
 export const Context = createContext({});
 export const { Consumer } = Context;
@@ -8,52 +10,33 @@ export const { Consumer } = Context;
 interface TableContext {
     service: TableService;
     config: TableConfig;
+    features: TableFeatures;
+    localization: TableLocalizationContext;
 }
 
 interface TableProviderProps {
     config: TableConfig;
     state: TableState;
+    features: TableFeatures;
+    tableEvents: TableEvents;
     isForcedState: boolean;
-    service?: () => TableService;
+    service?: TableServiceFactory;
     children: ReactNode;
     data: any;
-    onStateUpdate?;
-    onServiceInit?;
+    localization: TableLocalizationContext;
 }
 
 export const TableProvider = (props: TableProviderProps) => {
-    const { children, data, config, state, onStateUpdate, onServiceInit, isForcedState } = props;
+    const { children, config, features, localization } = props;
 
-    const [tableState, updateTableState] = useState(state);
-
-    const updateState = useCallback(
-        (newState: TableState) => {
-            updateTableState(newState);
-
-            if (typeof onStateUpdate === 'function') {
-                onStateUpdate(newState);
-            }
-        },
-        [onStateUpdate, updateTableState]
-    );
-
-    const serviceFactory = props.service ?? tableService;
-    const service = serviceFactory(tableState, updateState, config, data);
-
-    if (typeof onServiceInit === 'function') {
-        onServiceInit(service);
-    }
+    const service = useCreateTableService(props);
 
     const context: TableContext = {
         service,
         config,
+        features,
+        localization,
     };
-
-    useEffect(() => {
-        if (isForcedState) {
-            updateTableState(state);
-        }
-    }, [state, isForcedState, updateTableState]);
 
     return <Context.Provider value={context}>{children}</Context.Provider>;
 };
@@ -78,4 +61,16 @@ export const useTableConfig = (): TableConfig => {
     const context = useTableContext();
 
     return context.config;
+};
+
+export const useTableFeatures = (): TableFeatures => {
+    const context = useTableContext();
+
+    return context.features;
+};
+
+export const useTableLocalization = (): TableLocalizationContext => {
+    const context = useTableContext();
+
+    return context.localization;
 };

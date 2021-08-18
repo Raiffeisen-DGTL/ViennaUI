@@ -1,11 +1,12 @@
-import React, { useCallback, useRef } from 'react';
+import React, { ForwardRefExoticComponent, RefAttributes, useCallback, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { useDrop } from 'vienna.react-use';
+import { useDrop, usePortal } from 'vienna.react-use';
 import { Box } from './DropList.styles';
 import { Item, Props as ItemProps } from './Item';
 
 export interface DropListProps {
     [key: string]: any;
+    ref?: React.Ref<HTMLDivElement>;
     children?: React.ReactNode;
     size?: 's' | 'm' | 'l';
     maxHeight?: number;
@@ -20,55 +21,81 @@ export interface DropListProps {
 
     /** Опционально: элемент от которого вести расчет пересечений */
     container?: any;
-    allowScrollUnstable?: boolean;
+    followParentWhenScroll?: boolean;
+    onHide?: () => void;
 }
 
-export const DropList: React.FC<DropListProps> & { Item: React.FC<ItemProps> } = (props) => {
-    const {
-        children,
-        size = 'm',
-        align = 'vertical',
-        coords,
-        fixed,
-        float = 'start',
-        margins = { x: 0, y: 4 },
-        onMouseDown,
-        container,
-        allowScrollUnstable,
-        ...attrs
-    } = props;
+export const DropList: React.FC<DropListProps> & { Item: React.FC<ItemProps> } = React.forwardRef(
+    (props, ref: React.Ref<HTMLDivElement>) => {
+        const {
+            children,
+            size = 'm',
+            align = 'vertical',
+            coords,
+            fixed,
+            float = 'start',
+            margins,
+            onMouseDown,
+            container,
+            followParentWhenScroll,
+            fitItems,
+            onHide,
+            ...attrs
+        } = props;
 
-    const parentRef = useRef<HTMLDivElement>(null);
-    const ref = useDrop(align, float, margins, fixed, coords, container, parentRef, allowScrollUnstable);
+        const portalContainer = usePortal();
+        const parentRef = useRef<HTMLDivElement>(null);
+        const resultRef = useDrop({
+            align,
+            float,
+            margins: margins ?? (align === 'vertical' ? { x: 0, y: 4 } : { x: 4, y: 0 }),
+            fixed,
+            coords,
+            container,
+            parentRef,
+            followParentWhenScroll,
+            fitListToParent: fitItems,
+            callbacks: { onHide },
+        });
 
-    const handleMouseDown = useCallback(
-        (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            if (typeof onMouseDown === 'function') {
-                onMouseDown(e);
+        if (resultRef) {
+            if (typeof ref === 'function') {
+                (ref as any)(resultRef);
             }
-        },
-        [onMouseDown]
-    );
+            if (ref && typeof ref === 'object') {
+                (ref as any).current = resultRef.current;
+            }
+        }
 
-    const result = (
-        <Box {...attrs} ref={ref} role='listbox' onMouseDown={handleMouseDown}>
-            {React.Children.map(children, (child: any) => React.cloneElement(child, { size }))}
-        </Box>
-    );
-
-    if (fixed && document) {
-        return (
-            <>
-                <div ref={parentRef} />
-                {ReactDOM.createPortal(result, document.body)}
-            </>
+        const handleMouseDown = useCallback(
+            (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (typeof onMouseDown === 'function') {
+                    onMouseDown(e);
+                }
+            },
+            [onMouseDown]
         );
-    }
 
-    return result;
-};
+        const result = (
+            <Box {...attrs} ref={resultRef} role='listbox' fitItems={fitItems} onMouseDown={handleMouseDown}>
+                {React.Children.map(children, (child: any) => React.cloneElement(child, { size }))}
+            </Box>
+        );
+
+        if (fixed && document) {
+            return (
+                <>
+                    <div ref={parentRef} />
+                    {ReactDOM.createPortal(result, portalContainer ?? document.body)}
+                </>
+            );
+        }
+
+        return result;
+    }
+) as ForwardRefExoticComponent<DropListProps & RefAttributes<HTMLDivElement>> & { Item: React.FC<ItemProps> };
 
 DropList.Item = Item;
 DropList.defaultProps = {

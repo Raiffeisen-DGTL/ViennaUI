@@ -1,17 +1,19 @@
 import React from 'react';
-import { Module, TableConfig, TableState } from './types';
+import { Module, TableConfig, TableState, TableFeature, TableFeatures } from './types';
 import {
     BaseModule,
     ColumnsModule,
     FooterModule,
     EmptyModule,
     ExpandingRowModule,
-    SortModule,
     SelectRowModule,
+    SelectionModule,
     ColumnGroupModule,
     GroupByModule,
     SettingsModule,
     ActionsColumnModule,
+    SortModule,
+    FilterModule,
 } from './components';
 
 const component2Module = {
@@ -20,19 +22,24 @@ const component2Module = {
     Footer: FooterModule,
     ExpandingRow: ExpandingRowModule,
     SelectAll: SelectRowModule,
+    Selection: SelectionModule,
     ColumnGroup: ColumnGroupModule,
     GroupBy: GroupByModule,
     Settings: SettingsModule,
     ActionsColumn: ActionsColumnModule,
 };
 
-const initModule = (module: Module, child, settings, config, state) => {
+const initModule = (module: Module, child, settings, config, state, features: TableFeatures) => {
     if (module.initConfig) {
         config[module.name] = module.initConfig({ child, settings, config: config[module.name] });
     }
 
     if (module.initState) {
         state[module.name] = module.initState({ child, settings, config: state[module.name] });
+    }
+
+    if (module.feature) {
+        features.add(module.feature);
     }
 };
 
@@ -46,24 +53,32 @@ const getModule = (child: any) => {
     return component2Module[child.type.displayName];
 };
 
-export function initModules(params): { config: TableConfig; state: TableState } {
-    const { children, settings } = params;
+export function initModules(params): { config: TableConfig; state: TableState; features: TableFeatures } {
+    const { children, settings, initState } = params;
 
     const config: any = {};
     const state: any = {};
+    const features: TableFeatures = new Set<TableFeature>();
 
     const outlined = React.Children.toArray(children).some((child: any) => child?.type?.displayName === 'ColumnGroup');
-    initModule(BaseModule, null, { ...settings, outlined }, config, state);
-
-    if (settings.onSort) {
-        initModule(SortModule, null, settings, config, state);
-    }
+    initModule(BaseModule, null, { ...settings, outlined }, config, state, features);
 
     if (settings.onSelect) {
-        initModule(SelectRowModule, null, settings, config, state);
+        initModule(SelectRowModule, null, settings, config, state, features);
     }
 
-    React.Children.forEach(React.Children.toArray(children), (child: any) => {
+    if (settings.sort) {
+        initModule(SortModule, null, settings, config, state, features);
+    }
+
+    if (settings.filter) {
+        initModule(FilterModule, null, settings, config, state, features);
+    }
+
+    // if children wrapped up in React.Fragment extract them out
+    const list = children.type === React.Fragment ? children.props.children : children;
+
+    React.Children.forEach(React.Children.toArray(list), (child: any) => {
         const module = getModule(child);
         if (!child.type || !module) {
             return;
@@ -81,15 +96,21 @@ export function initModules(params): { config: TableConfig; state: TableState } 
 
                 columns.push(subChild.props.id);
 
-                initModule(subChildModule, subChild, { ...subChild.props, groupId }, config, state);
+                initModule(subChildModule, subChild, { ...subChild.props, groupId }, config, state, features);
             });
 
-            initModule(module, child, { columns }, config, state);
+            initModule(module, child, { columns }, config, state, features);
 
             return;
         }
 
-        initModule(module, child, settings, config, state);
+        initModule(module, child, settings, config, state, features);
     });
-    return { config, state };
+
+    const resultedState = initState
+        ? typeof initState === 'function'
+            ? initState(state)
+            : { ...state, ...initState }
+        : state;
+    return { config, state: resultedState, features };
 }

@@ -11,7 +11,9 @@ export interface LinkProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>,
     disabled?: boolean;
 }
 
-export const Link: React.FC<LinkProps> = (props: LinkProps) => {
+export const Link: React.ForwardRefExoticComponent<
+    LinkProps & React.RefAttributes<HTMLAnchorElement>
+> = React.forwardRef(function Link(props, ref) {
     const { children, loading, disabled, design, ...attrs } = props;
 
     const params = {
@@ -33,8 +35,8 @@ export const Link: React.FC<LinkProps> = (props: LinkProps) => {
         content.push(<Spinner key='spinner' size={props.size} position='absolute' />);
     }
 
-    return React.createElement(Box, { ...attrs, ...params }, content);
-};
+    return React.createElement(Box, { ref, ...attrs, ...params }, content);
+});
 
 Link.defaultProps = {
     design: 'primary',

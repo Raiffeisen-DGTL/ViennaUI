@@ -4,7 +4,7 @@ import { Button, ButtonProps } from '../Button';
 import { InputFile } from '../FileLoader/FileLoader.styles';
 import { FCCFile, FCCFileError, buildFileList } from '../FileLoader';
 
-interface Props extends ButtonProps {
+export interface FileLoaderButtonProps extends ButtonProps {
     loading?: boolean;
     multiple?: boolean;
     /** Перечесление через запятую поддерживаемых форматов и/или MIME типов */
@@ -14,7 +14,9 @@ interface Props extends ButtonProps {
     disabled?: boolean;
     onChange?: (event, files: FCCFile[], errorFiles: FCCFileError[]) => void;
 }
-export const FileLoaderButton: React.FC<Props> = (props: React.PropsWithChildren<Props>) => {
+export const FileLoaderButton: React.FC<FileLoaderButtonProps> = (
+    props: React.PropsWithChildren<FileLoaderButtonProps>
+) => {
     const { children, loading, multiple, onChange, disabled, accept, maxSizeByte = Infinity, ...attrs } = props;
 
     const inputRef = useRef<HTMLInputElement>(null);

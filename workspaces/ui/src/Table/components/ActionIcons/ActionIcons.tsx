@@ -1,9 +1,11 @@
 import React, { ReactNode, FC, FormEvent, useState, useCallback, useEffect } from 'react';
-import { Icon, More } from './ActionIcon.styles';
+import { MoreVert } from 'vienna.icons';
+import { Icon } from './ActionIcon.styles';
 import { useTableConfig } from '../Context/TableContext';
 
 // Matching the table size to icon size.
 const sizes = {
+    xs: 'xs',
     s: 'xs',
     m: 's',
     l: 's',
@@ -65,7 +67,7 @@ export const ActionsListIcon: FC<ActionIconProps> = (props) => {
 
     return (
         <Icon size={sizes[size]} onClick={handleClick} {...attrs}>
-            <More size={sizes[size]} />
+            <MoreVert size={sizes[size]} />
             {isOpen && children}
         </Icon>
     );

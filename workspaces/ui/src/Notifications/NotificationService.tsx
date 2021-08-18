@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export interface Notification {
     id?: string;
-    design?: 'plain' | 'error' | 'warning' | 'success';
+    design?: 'plain' | 'error' | 'warning' | 'success' | 'accent';
     title?: ReactNode;
     message?: ReactNode;
     actions?: ReactNode;
@@ -50,6 +50,10 @@ export class NotificationService {
 
     public error(notification: Notification) {
         this.add({ design: 'error', ...notification });
+    }
+
+    public accent(notification: Notification) {
+        this.add({ design: 'accent', ...notification });
     }
 
     public remove(id) {

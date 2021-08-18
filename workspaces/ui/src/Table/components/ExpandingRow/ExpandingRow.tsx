@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from 'react';
 
 export interface ExpandingRowProps {
     allowMultiple?: boolean;
+    noPadding?: boolean;
     children: ReactNode;
     expandedRow?: any | any[];
     onExpand?: (e, data) => void;

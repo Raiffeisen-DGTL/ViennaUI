@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useMemo } from 'react';
-import { Checkbox, Input, Link } from 'vienna-ui';
-import { Burger, Magnifier } from 'vienna.icons';
-import { useTableService } from '../Context';
+import { Checkbox, Input, Link } from 'vienna.ui';
+import { BurgerHor, Search as SearchIcon } from 'vienna.icons';
+import { useTableService, useTableLocalization } from '../Context';
 import { useDraggableColumn } from '../DraggableColumn';
 import { Box, ColumnsList, Column, Search } from './ColumnsSettings.styles';
 
@@ -12,6 +12,7 @@ export interface ColumnsSettingsProps {
 
 export const ColumnsSettings: React.FC<ColumnsSettingsProps> = (props) => {
     const { searchable, hideShowAll } = props;
+    const localize = useTableLocalization();
     const { allColumns, showColumn, hideColumn, hideAllColumns, showAllColumns } = useTableService();
     const draggableColumn = useDraggableColumn();
     const isAllShown = !allColumns().some((c) => c.hidden);
@@ -62,7 +63,7 @@ export const ColumnsSettings: React.FC<ColumnsSettingsProps> = (props) => {
                     <Checkbox checked={!c.hidden} onChange={toggleColumn(c)}>
                         {c.title}
                     </Checkbox>
-                    {c.draggable && <Burger size='s' />}
+                    {c.draggable && <BurgerHor size='s' />}
                 </Column>
             );
         });
@@ -74,13 +75,20 @@ export const ColumnsSettings: React.FC<ColumnsSettingsProps> = (props) => {
         <Box>
             {searchable && (
                 <Search>
-                    <Input size='m' prefix={<Magnifier />} placeholder='Поиск...' onChange={filterColumns} />
+                    <Input
+                        size='m'
+                        prefix={<SearchIcon />}
+                        placeholder={localize('ds.table.settings.columnSearch')}
+                        onChange={filterColumns}
+                    />
                 </Search>
             )}
             <ColumnsList>{columns}</ColumnsList>
             {hideShowAll && (
                 <Link design='accent' onClick={toggleAll}>
-                    {isAllShown ? 'Скрыть все' : 'Показать все'}
+                    {isAllShown
+                        ? localize('ds.table.settings.hideAllColumns')
+                        : localize('ds.table.settings.showAllColumns')}
                 </Link>
             )}
         </Box>

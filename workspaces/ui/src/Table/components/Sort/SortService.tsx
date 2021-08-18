@@ -1,24 +1,26 @@
-import { TableState } from '../../types';
-import { SortState } from './SortModule';
+import { SortDirection } from '../../types';
+import { ServiceFactory } from '../TableService/ServiceFactory';
+import { SortState, SortModule } from './SortModule';
 
 export interface SortService {
     getSortColumn: () => SortState | undefined;
-    setSortColumn: (id, direction) => void;
+    setSortColumn: (id: any, direction: SortDirection) => void;
 }
 
-export function sortService(state: TableState, updateState: any): SortService {
+export const sortService: ServiceFactory<SortService> = function (getState, updateState) {
     const getSortColumn = () => {
-        return state.sort;
+        return getState().sort;
     };
 
-    const setSortColumn = (field, direction) => {
+    const setSortColumn = (field, direction: SortDirection) => {
+        const state = getState();
         const sort = {
             field,
             direction,
         };
 
-        updateState({ ...state, sort });
+        updateState(SortModule.name, { ...state, sort });
     };
 
     return { getSortColumn, setSortColumn };
-}
+};

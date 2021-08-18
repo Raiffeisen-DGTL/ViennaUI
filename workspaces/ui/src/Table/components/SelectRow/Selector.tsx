@@ -10,10 +10,11 @@ export interface SelectorProps {
 
 const onClick = (e) => e.stopPropagation();
 
-export const Selector = (props) => {
+export const Selector: React.FC<SelectorProps> = (props) => {
     const { item } = props;
     const { toggleSelectRow, isRowSelected } = useTableService();
-    const { selectRow } = useTableConfig();
+
+    const { selectRow, selection } = useTableConfig();
 
     const onChange = useCallback(
         (e) => {
@@ -34,7 +35,11 @@ export const Selector = (props) => {
 
     return (
         <Box>
-            <Checkbox checked={isRowSelected(item)} onClick={onClick} onChange={onChange} />
+            {selection ? (
+                selection.template({ data: item, isSelected: isRowSelected(item), onClick, onChange })
+            ) : (
+                <Checkbox checked={isRowSelected(item)} onClick={onClick} onChange={onChange} />
+            )}
         </Box>
     );
 };

@@ -1,4 +1,6 @@
-import React, { ReactNode, FC } from 'react';
+import React, { ReactNode, FC, useMemo } from 'react';
+import { WithMargin } from '../Whitespace/utils';
+import { useLocalization } from '../Localization';
 import {
     Column,
     ColumnProps,
@@ -15,6 +17,7 @@ import {
     ExpandingRowProps,
     SelectAll,
     SelectAllProps,
+    Selection,
     TableProvider,
     ColumnGroup,
     ColumnGroupProps,
@@ -27,30 +30,52 @@ import {
     GroupingSettingsProps,
     ActionsColumn,
     ActionsColumnProps,
+    InputFilter,
+    SelectFilter,
+    FilterState,
+    TableService,
+    TableServiceFactory,
 } from './components';
-import { TableService, TableState } from './types';
+import { TableState, SortDirection } from './types';
+import { defaultTableLocalization, TableLocalizationProps } from './localization';
 import { initModules } from './TableModules';
+import { initEvents } from './TableEvents';
+import { validate } from './validate';
 import { Wrapper, TableWrapper, Box, Empty } from './Table.styles';
 
 interface Props {
     children: ReactNode;
-    service?: () => TableService;
     data?: any[];
-    size?: 's' | 'm' | 'l';
+    size?: 'xs' | 's' | 'm' | 'l';
+    valign?: 'baseline' | 'top' | 'middle' | 'bottom' | 'inherit' | 'initial' | 'unset';
     noHeader?: boolean;
     noRowDivider?: boolean;
     maxHeight?: string;
-    selected?: any[];
+    minHeight?: string;
+    noOverflow?: boolean;
     disableSelectAll?: boolean;
     pinnableColumns?: boolean;
-    state?: TableState;
-    onStateUpdate?: (newState: TableState) => void;
+    selected?: any[];
+    sort?: SortDirection;
+    filter?: FilterState;
     onRowClick?: (event: React.MouseEvent<HTMLElement>, data: Record<string, any>) => void;
     onRowDoubleClick?: (event: React.MouseEvent<HTMLElement>, data: Record<string, any>) => void;
-    onSort?: (event: React.FormEvent, data: { field: string; direction: 'asc' | 'desc' }) => void;
+    onSort?: (event?: React.FormEvent, data?: { field: string; direction: SortDirection }) => void;
+    onFilter?: (data?: Record<string, any>) => void;
     onSelect?: (event: React.FormEvent, data: any) => void;
     onScroll?: (event: React.FormEvent) => void;
+    initState?: TableState | ((state: TableState) => TableState);
+    state?: TableState;
+    service?: TableServiceFactory;
+    onUpdate?: (newState: TableState, id: string) => void;
+    onInit?: ({ service: TableService, state: TableState }) => void;
+
+    // TODO: delete these two:
+    // onServiceInit handler is deprecated. FCC-1246
     onServiceInit?: (service: TableService) => void;
+    // onStateUpdate handler is deprecated. FCC-1246
+    onStateUpdate?: (newState: TableState, id: string) => void;
+    // / TODO
 }
 
 interface HTMLAttributeProps {
@@ -62,8 +87,7 @@ interface HTMLAttributeProps {
     tabIndex?: number;
 }
 
-export type TableProps = HTMLAttributeProps & Props;
-
+export type TableProps = HTMLAttributeProps & Props & WithMargin;
 interface TableParts {
     Column: FC<ColumnProps>;
     Footer: FC<FooterProps>;
@@ -71,78 +95,138 @@ interface TableParts {
     ActionsListIcon: FC<ActionIconProps>;
     ExpandingRow: FC<ExpandingRowProps>;
     SelectAll: FC<SelectAllProps>;
+    Selection: typeof Selection;
     ColumnGroup: FC<ColumnGroupProps>;
     GroupBy: FC<GroupByProps>;
     Settings: FC<SettingsProps>;
     ColumnsSettings: FC<ColumnsSettingsProps>;
     GroupingSettings: GroupingSettingsProps;
     ActionsColumn: FC<ActionsColumnProps>;
+    InputFilter: FC;
+    SelectFilter: FC;
+    SortDirection: typeof SortDirection;
 }
 
-export const Table: FC<TableProps> & TableParts = (props: TableProps) => {
+export const Table: FC<TableProps> & TableParts & TableLocalizationProps = (props: TableProps) => {
     const {
         data,
         service,
         children,
         maxHeight,
+        minHeight,
+        noOverflow,
         size,
+        valign,
         noHeader,
         noRowDivider,
         expandedRow,
-        onExpand,
-        onStateUpdate,
-        onServiceInit,
-        onSort,
-        onRowClick,
-        onRowDoubleClick,
         selected,
+        sort,
+        filter,
         disableSelectAll,
         pinnableColumns,
+        onExpand,
+        onSort,
+        onFilter,
+        onRowClick,
+        onRowDoubleClick,
         onSelect,
         onScroll,
+        onInit,
+        onUpdate,
+        onServiceInit,
+        onStateUpdate,
+        initState,
         state: forcedState,
         ...attrs
     } = props;
 
-    const { config, state } = initModules({
-        children,
-        settings: {
+    const localization = useLocalization(props, defaultTableLocalization);
+
+    const { config, state, features } = useMemo(
+        () =>
+            initModules({
+                initState,
+                children,
+                settings: {
+                    maxHeight,
+                    size,
+                    valign,
+                    noHeader,
+                    noRowDivider,
+                    expandedRow,
+                    onExpand,
+                    onRowClick,
+                    onRowDoubleClick,
+                    selected,
+                    disableSelectAll,
+                    onSelect,
+                    pinnableColumns,
+                    sort,
+                    filter,
+                },
+            }),
+        [
+            children,
             maxHeight,
             size,
+            valign,
             noHeader,
             noRowDivider,
             expandedRow,
             onExpand,
-            onSort,
             onRowClick,
             onRowDoubleClick,
             selected,
             disableSelectAll,
             onSelect,
             pinnableColumns,
-        },
-    });
+            sort,
+            filter,
+        ]
+    );
+
+    const tableEvents = useMemo(
+        () =>
+            initEvents({
+                onInit,
+                onUpdate,
+                onSort,
+                onFilter,
+                onServiceInit,
+                onStateUpdate,
+            }),
+        [onInit, onUpdate, onSort, onFilter, onServiceInit, onStateUpdate]
+    );
+
+    validate({ props, config, state, features });
 
     const { base, empty, footer, selectRow, settings } = config;
 
     const providerProps = {
         config,
         state: forcedState ?? state,
+        features,
+        tableEvents,
         isForcedState: Boolean(forcedState),
         service,
-        onStateUpdate,
-        onServiceInit,
         data,
+        localization,
     };
 
     return (
         <TableProvider {...providerProps}>
-            <Wrapper maxHeight={base?.settings.maxHeight} outlined={base?.settings.outlined} {...attrs}>
+            <Wrapper
+                maxHeight={maxHeight}
+                minHeight={minHeight}
+                outlined={base?.settings.outlined}
+                data-id='table-container'
+                {...attrs}>
                 {selectRow?.selectAll && selectRow.selectAll}
                 {settings?.template && (
                     <SettingsInternal size={base?.settings.size}>{settings.template}</SettingsInternal>
                 )}
-                <TableWrapper onScroll={onScroll}>
+                <TableWrapper isOverflow={!noOverflow} data-id='table-wrapper' onScroll={onScroll}>
                     <Box>
                         {!base?.settings.noHeader && <TableHeader />}
                         <TableBody data={data} />
@@ -161,15 +245,20 @@ Table.ActionIcon = ActionIcon;
 Table.ActionsListIcon = ActionsListIcon;
 Table.ExpandingRow = ExpandingRow;
 Table.SelectAll = SelectAll;
+Table.Selection = Selection;
 Table.ColumnGroup = ColumnGroup;
 Table.GroupBy = GroupBy;
 Table.Settings = Settings;
 Table.ColumnsSettings = ColumnsSettings;
 Table.GroupingSettings = GroupingSettings;
 Table.ActionsColumn = ActionsColumn;
+Table.InputFilter = InputFilter;
+Table.SelectFilter = SelectFilter;
+Table.SortDirection = SortDirection;
 
 Table.defaultProps = {
     size: 's',
+    valign: 'top',
 };
 
 Table.displayName = 'Table';

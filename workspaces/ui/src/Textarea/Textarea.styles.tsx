@@ -10,7 +10,11 @@ const presets = getPresets('textarea', {
     disabled: 'design',
     focused: 'design',
     invalid: 'design',
-    placeholder: 'design',
+});
+
+const placeholder = getPresets('textarea.placeholder', {
+    base: null,
+    disabled: null,
 });
 
 interface BoxProps {
@@ -66,15 +70,15 @@ export const Box = styled.textarea<BoxProps>`
         display: none;
     }
 
-    &:focus::-webkit-input-placeholder {
-        color: transparent;
+    &::-webkit-input-placeholder {
+        ${placeholder.base}
     }
 
-    &:focus::-moz-placeholder {
-        color: transparent;
+    &::-moz-placeholder {
+        ${placeholder.base}
     }
 
-    &:focus:-ms-input-placeholder {
-        color: transparent;
+    &:-ms-input-placeholder {
+        ${placeholder.base}
     }
 `;

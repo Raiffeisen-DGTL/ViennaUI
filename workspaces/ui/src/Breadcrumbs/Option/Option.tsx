@@ -1,10 +1,10 @@
-import React, { useRef, useCallback, useState, useEffect } from 'react';
+import React, { useRef, useCallback, useState, useEffect, AnchorHTMLAttributes } from 'react';
 import { useWindowResize } from 'vienna.react-use';
-import { Right } from 'vienna.icons';
+import { GoRight } from 'vienna.icons';
 import { Tooltip } from '../../Tooltip';
-import { Box, Text, Icon, Wrapper, HiddenText } from './Option.styles';
+import { Box, Text, Icon, Link, HiddenText } from './Option.styles';
 
-export interface BreadcumbsOptionProps {
+export interface BreadcumbsOptionProps extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'size' | 'onClick'> {
     size?: 's' | 'm' | 'l';
     altText?: string;
     first?: boolean;
@@ -16,6 +16,9 @@ export interface BreadcumbsOptionProps {
 
 export const Option = (props: React.PropsWithChildren<BreadcumbsOptionProps>) => {
     const { onClick, value, size, last, preLast, first, children, altText = '', ...attrs } = props;
+
+    const { href, rel, type, tabIndex, target, hrefLang, ...boxAttrs } = attrs;
+    const wrapperAttrs = { href, rel, type, tabIndex, target, hrefLang };
 
     const containerRef = useRef<any>();
     const wrapperRef = useRef<any>();
@@ -100,19 +103,20 @@ export const Option = (props: React.PropsWithChildren<BreadcumbsOptionProps>) =>
             active={last}
             minWidth={minWidth}
             preLast={preLast}
+            role='button'
             onClick={handleClick}
-            {...attrs}>
+            {...(boxAttrs as any)}>
             {!first && (
                 <Icon ref={iconRef} size={size}>
-                    <Right size={size === 's' ? 'xs' : 's'} />
+                    <GoRight size={size === 's' ? 'xs' : 's'} />
                 </Icon>
             )}
             <Tooltip truncate={!last && !first} disabled={!tooltipEnabled || first} design='dark' content={children}>
-                <Wrapper ref={wrapperRef}>
+                <Link ref={wrapperRef} {...wrapperAttrs}>
                     <Text first={first}>{text}</Text>
                     <HiddenText ref={hiddenTextRef}>{children}</HiddenText>
                     <HiddenText ref={hiddenAltTextRef}>{altText}</HiddenText>
-                </Wrapper>
+                </Link>
             </Tooltip>
         </Box>
     );

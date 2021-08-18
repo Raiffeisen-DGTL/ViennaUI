@@ -18,7 +18,7 @@ export const Box = styled.div<{
     flex-direction: column;
     z-index: 1000;
 
-    ${list.base};
+    ${list.base}
 
     ${({ scrollable }) => scrollable && 'overflow: auto;'}
     ${({ fitItems }) =>
@@ -34,6 +34,6 @@ export const Box = styled.div<{
             width: ${width}px;
             max-width: ${width}px;
         `}
-    ${({ maxHeight }) => maxHeight && `max-height: ${maxHeight}px`}
+    ${({ maxHeight }) => maxHeight && `max-height: ${maxHeight}px`};
     ${list.custom}
 `;

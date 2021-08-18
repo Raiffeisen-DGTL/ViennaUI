@@ -3,12 +3,12 @@ import { TooltipNative } from './TooltipNative';
 import { Box } from './Tooltip.styles';
 import { getValidTarget } from './utils';
 
-interface TooltipElement {
+export interface TooltipElement {
     show: () => void;
     hide: () => void;
 }
 
-interface TooltipProps {
+export interface TooltipProps {
     id?: string;
 
     ref?: React.Ref<TooltipElement>;
@@ -32,6 +32,8 @@ interface TooltipProps {
     allowInteraction?: boolean;
 
     truncate?: boolean;
+
+    inline?: boolean;
 }
 
 export const Tooltip: React.FC<TooltipProps> = React.forwardRef(
@@ -47,6 +49,8 @@ export const Tooltip: React.FC<TooltipProps> = React.forwardRef(
             truncate,
             size,
             disabled,
+            inline = true,
+            ...attrs
         } = props;
 
         const elementRef = useRef<any>();
@@ -87,7 +91,14 @@ export const Tooltip: React.FC<TooltipProps> = React.forwardRef(
 
         return React.createElement(
             Box,
-            { ref: elementRef, truncate, onMouseLeave: handleMouseLeave, onMouseOver: handleMouseOver },
+            {
+                ref: elementRef,
+                truncate,
+                inline,
+                onMouseLeave: handleMouseLeave,
+                onMouseOver: handleMouseOver,
+                ...attrs,
+            },
             children,
             showTooltip && !disabled && constructTooltip()
         );

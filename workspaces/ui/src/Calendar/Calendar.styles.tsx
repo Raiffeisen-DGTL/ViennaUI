@@ -21,6 +21,7 @@ const day = getPresets('calendar.day', {
     event: null,
     matStart: null,
     matEnd: null,
+    activeDisabled: null,
 });
 
 const dayHover = getPresets('calendar.dayHover', {
@@ -55,39 +56,38 @@ export const Day = styled.div<{ type?: DayType[] }>`
     position: relative;
 
     ${DayState} {
-    // Combines types for day states
-    ${({ type }) =>
-        type &&
-        css`
-            ${type.map((item) => item !== DayType.EVENT && day[item])}
-        `}
-
-    ${({ type }) =>
-        type?.includes(DayType.EVENT) &&
-        css`
-            font-weight: bold;
-            &:after {
-                content: '';
-                position: absolute;
-                ${day.event};
-            }
-        `}
-
-    &:hover {
+        // Combines types for day states
         ${({ type }) =>
-            (type?.includes(DayType.ACTIVE) &&
-                css`
-                    ${dayHover.active}
-                `) ||
-            (type?.includes(DayType.RANGE) &&
-                css`
-                    ${dayHover.range}
-                `) ||
+            type &&
             css`
-                ${dayHover.hover}
+                ${type.map((item) => item !== DayType.EVENT && day[item])}
             `}
-            }
-    }
+
+        ${({ type }) =>
+            type?.includes(DayType.EVENT) &&
+            css`
+                font-weight: bold;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    ${day.event};
+                }
+            `}
+
+        &:hover {
+            ${({ type }) =>
+                (type?.includes(DayType.ACTIVE) &&
+                    css`
+                        ${dayHover.active}
+                    `) ||
+                (type?.includes(DayType.RANGE) &&
+                    css`
+                        ${dayHover.range}
+                    `) ||
+                css`
+                    ${dayHover.hover}
+                `}
+        }
     }
 `;
 

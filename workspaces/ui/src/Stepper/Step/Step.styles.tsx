@@ -41,16 +41,27 @@ export const Box = styled.div<any>`
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex: 2;
 
     ${step.base}
+
+    ${(props) =>
+        props.count &&
+        props.orientation === 'horizontal' &&
+        css`
+            width: calc(100% / ${props.count});
+        `}
 
     & > ${Title} {
         text-align: center;
     }
 
     &:nth-child(3) {
-        flex: 1;
+        ${(props) =>
+            props.count &&
+            props.orientation === 'horizontal' &&
+            css`
+                width: calc(100% / 2 / ${props.count});
+            `}
 
         ${(props) =>
             props.orientation === 'horizontal'
@@ -60,6 +71,9 @@ export const Box = styled.div<any>`
 
                       & > ${Title} {
                           text-align: left;
+                          display: flex;
+                          justify-content: flex-start;
+                          overflow: visible;
                       }
                   `
                 : css`
@@ -68,8 +82,12 @@ export const Box = styled.div<any>`
     }
 
     &:last-child {
-        flex: 1;
-
+        ${(props) =>
+            props.count &&
+            props.orientation === 'horizontal' &&
+            css`
+                width: calc(100% / 2 / ${props.count});
+            `}
         ${(props) =>
             props.orientation === 'horizontal'
                 ? css`
@@ -78,6 +96,9 @@ export const Box = styled.div<any>`
 
                       & > ${Title} {
                           text-align: right;
+                          display: flex;
+                          justify-content: flex-end;
+                          overflow: visible;
                       }
                   `
                 : css`

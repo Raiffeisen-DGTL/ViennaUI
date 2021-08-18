@@ -24,7 +24,7 @@ export const Box = styled.div`
 export const ColumnsList = styled.div`
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 288px;
 
     ${presets.list}

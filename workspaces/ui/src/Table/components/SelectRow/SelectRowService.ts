@@ -1,30 +1,38 @@
 import { TableState } from '../../types';
+import { ServiceFactory } from '../TableService/ServiceFactory';
 import { TableProps } from '../../Table';
-import { SELECT_ALL } from './SelectRowModule';
+import { SELECT_ALL, SelectRowModule } from './SelectRowModule';
 import { GroupTitleInterface } from '../GroupBy';
 
 export interface SelectRowService {
     getSelectedRows: () => TableProps['selected'];
     getData: () => any[];
     isRowSelected: (id: any) => boolean;
-    selectRow: (item: any) => any[];
-    deselectRow: (item: any) => any[];
+    selectRow: (item: any) => void;
+    deselectRow: (item: any) => void;
     toggleSelectRow: (item: any, isSelect: boolean) => void;
     toggleSelectGroup: (group: GroupTitleInterface, isSelect: boolean) => void;
     selectAll: (items: any[]) => void;
 }
 
-export function selectRowService(state: TableState, updateState: any, data): SelectRowService {
+export const selectRowService: ServiceFactory<SelectRowService> = function (getState, updateState, _getData) {
     const getData = () => {
-        return data;
+        return typeof _getData === 'function' ? _getData() : [];
     };
 
-    const getSelectedRows = () => {
-        return state.selectRow?.selected ?? [];
+    const getSelectedRows = (currentState?: TableState) => {
+        const st = currentState ?? getState();
+        return st.selectRow?.selected ?? [];
+    };
+
+    const update = (selectRow) => {
+        const state = getState();
+        updateState(SelectRowModule.name, { ...state, selectRow });
     };
 
     const isSelectedAll = () => {
         const selected = getSelectedRows();
+        const data = getData() ?? [];
 
         if (data.length === 0 || selected.length < data.length) {
             return false;
@@ -47,30 +55,40 @@ export function selectRowService(state: TableState, updateState: any, data): Sel
     };
 
     const selectRow = (item) => {
-        const selected = getSelectedRows();
-        selected.push(item);
-        return selected;
+        updateState(SelectRowModule.name, (prev) => {
+            const selected = getSelectedRows(prev);
+            selected.push(item);
+            const newState = { ...prev, selectRow: { selected } };
+
+            return newState;
+        });
     };
 
     const deselectRow = (item) => {
-        return getSelectedRows().filter((i) => i !== item);
+        updateState(SelectRowModule.name, (prev) => {
+            const selected = getSelectedRows(prev).filter((i) => i !== item);
+            return { ...prev, selectRow: { selected } };
+        });
     };
 
     const toggleSelectRow = (item, checked) => {
         let selected;
 
         if (item === SELECT_ALL) {
+            const data = getData();
             selected = checked ? [...data] : [];
-        } else {
-            selected = checked ? selectRow(item) : deselectRow(item);
+            update({ selected });
+            return;
         }
 
-        updateState({ ...state, selectRow: { selected } });
+        const selector = checked ? selectRow : deselectRow;
+        selector(item);
     };
 
     const toggleSelectGroup = (group: GroupTitleInterface, checked) => {
+        const data = getData();
         const current = getSelectedRows();
-        const groupData = data.filter(group.filter);
+        const groupData: any[] = data.filter(group.filter);
 
         let selected;
         if (checked) {
@@ -80,11 +98,11 @@ export function selectRowService(state: TableState, updateState: any, data): Sel
             selected = current.filter((i) => i !== group.id && !groupData.includes(i));
         }
 
-        updateState({ ...state, selectRow: { selected } });
+        update({ selected });
     };
 
     const selectAll = (items) => {
-        updateState({ ...state, selectRow: { selected: [...items] } });
+        update({ selected: [...items] });
     };
 
     return {
@@ -97,4 +115,4 @@ export function selectRowService(state: TableState, updateState: any, data): Sel
         toggleSelectGroup,
         selectAll,
     };
-}
+};

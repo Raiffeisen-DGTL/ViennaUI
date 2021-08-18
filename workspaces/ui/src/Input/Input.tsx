@@ -4,7 +4,7 @@ import InputWrapper from './InputWrapper';
 
 interface Data {
     name?: string;
-    value?: string;
+    value: string;
 }
 export type InputEvent<T> = (event: T, data: Data) => void;
 
@@ -56,7 +56,21 @@ export interface InputProps extends NativeInputProps {
 
 const Input: React.FC<InputProps> = React.forwardRef(
     (props: React.PropsWithChildren<InputProps>, ref: React.Ref<HTMLInputElement>): JSX.Element => {
-        const { prefix, postfix, onBlur, onChange, onFocus, disabled, invalid, name, design, size, ...attrs } = props;
+        const {
+            prefix,
+            postfix,
+            onBlur,
+            onChange,
+            onFocus,
+            disabled,
+            invalid,
+            name,
+            design,
+            size,
+            style,
+            className,
+            ...attrs
+        } = props;
 
         const [active, setActive] = useState(false);
 
@@ -110,6 +124,8 @@ const Input: React.FC<InputProps> = React.forwardRef(
                 size={size}
                 active={active || attrs.active}
                 disabled={disabled}
+                style={style}
+                className={className}
                 invalid={invalid}>
                 {prefix}
                 <NativeInput

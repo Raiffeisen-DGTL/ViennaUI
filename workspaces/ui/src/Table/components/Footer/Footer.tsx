@@ -8,7 +8,11 @@ export interface FooterProps {
 
 export const Footer = (props: FooterProps) => {
     const { children, ...attrs } = props;
-    return <TableFooter {...attrs}>{children}</TableFooter>;
+    return (
+        <TableFooter data-id='table-footer' {...attrs}>
+            {children}
+        </TableFooter>
+    );
 };
 
 Footer.displayName = 'Footer';

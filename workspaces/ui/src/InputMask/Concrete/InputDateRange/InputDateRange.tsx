@@ -1,8 +1,14 @@
 import React, { useState, useCallback } from 'react';
+import { parse } from 'date-fns';
 import InputMask, { InputMaskProps, Data } from '../../InputMask';
 import { Box } from './InputDateRange.styles';
-import { getDateFromString } from '../../../Utils/DateUtils';
+import {
+    InputDateRangeLocalizationProps,
+    InputDateRangeLocalization,
+    defaultInputDateRangeLocalization,
+} from './localization';
 import { DateValue } from '../../../Calendar';
+import { useLocalization } from '../../../Localization';
 
 export interface DateType {
     from?: Date | DateValue;
@@ -13,35 +19,37 @@ export type InputDateRangeChangeEvent = (
     data: Data & { valueAsDate: DateType }
 ) => void;
 
-interface Props extends Omit<InputMaskProps, 'min' | 'max' | 'onChange'> {
+interface Props extends Omit<InputMaskProps, 'min' | 'max' | 'onChange'>, InputDateRangeLocalizationProps {
     min?: Date;
     max?: Date;
     valueAsDate?: DateType;
     placeholderMask?: string;
     onChange?: InputDateRangeChangeEvent;
 }
-type InputDateRangeMaskType = 'ДД.ММ.ГГГГ' | 'ДД.ММ.ГГГГ -' | 'ДД.ММ.ГГГГ - ДД.ММ.ГГГГ';
+type InputDateRangeMaskType = 'from' | 'from - ' | 'from - to';
+
+type InputDateRangePlaceholderType = 'date' | 'date.separator' | 'date.range';
 
 const getInputFormattedValueAndMask = (
     value?: string,
     min?: Date,
     max?: Date,
     active?: boolean
-): [InputDateRangeMaskType, string, string, any] => {
+): [InputDateRangeMaskType, InputDateRangePlaceholderType, string, any] => {
     const dateArray = value ? value.replace(/\s+/g, '').split('-') : [''];
-    const isStartDate = getDateFromString(dateArray[0]);
 
-    let mask: any;
-    let placeholderMask: any;
+    let mask: InputDateRangeMaskType;
+    let placeholderType: InputDateRangePlaceholderType;
     let blocks: any;
 
-    if (dateArray.length === 1 && isStartDate && active) {
+    // 10 так как в дате 10 символов (ДД.ММ.ГГГГ)
+    if (dateArray.length === 1 && dateArray[0].length === 10 && active) {
         mask = 'from - ';
-        placeholderMask = 'ДД.ММ.ГГГГ - ';
+        placeholderType = 'date.separator';
         blocks = { from: { mask: Date, min, max } };
-    } else if (dateArray.length === 2) {
+    } else if (dateArray.length === 2 && dateArray[0].length >= 10) {
         mask = 'from - to';
-        placeholderMask = 'ДД.ММ.ГГГГ - ДД.ММ.ГГГГ';
+        placeholderType = 'date.range';
         // TODO: идея в том что бы минимальный и максимальный диапазоны ставились автоматически, но пока это сбрасывает маску
         blocks = {
             from: { mask: Date, min, max },
@@ -49,16 +57,18 @@ const getInputFormattedValueAndMask = (
         };
     } else {
         mask = 'from';
-        placeholderMask = 'ДД.ММ.ГГГГ';
+        placeholderType = 'date';
         blocks = { from: { mask: Date, min, max } };
     }
 
-    return [mask, placeholderMask, dateArray[1] ? `${dateArray[0]} - ${dateArray[1]}` : dateArray[0], blocks];
+    return [mask, placeholderType, dateArray[1] ? `${dateArray[0]} - ${dateArray[1]}` : dateArray[0], blocks];
 };
 
-const dateRegexp = /(..)\.(..)\.(....)/g;
+const dateRegexp = /\d{2}\.\d{2}\.\d{4}/g;
 export const InputDateRange = React.forwardRef((props: Props, ref: React.Ref<HTMLInputElement>) => {
     const { name, size, min, max, value, onChange, onFocus, onBlur, ...attrs } = props;
+
+    const localize = useLocalization(props, defaultInputDateRangeLocalization);
 
     const [active, setActive] = useState(false);
 
@@ -66,7 +76,7 @@ export const InputDateRange = React.forwardRef((props: Props, ref: React.Ref<HTM
         (e) => {
             setActive(true);
             if (typeof onFocus === 'function') {
-                onFocus(e, { name, value });
+                onFocus(e, { name, value: value ?? '' });
             }
         },
         [onFocus, name, value]
@@ -76,32 +86,39 @@ export const InputDateRange = React.forwardRef((props: Props, ref: React.Ref<HTM
         (e) => {
             setActive(false);
             if (typeof onBlur === 'function') {
-                onBlur(e, { name, value });
+                onBlur(e, { name, value: value ?? '' });
             }
         },
         [onBlur, name, value]
     );
 
-    const [mask, placeholderMask, formatedValue, blocks] = getInputFormattedValueAndMask(value, min, max, active);
+    const [mask, placeholderType, formatedValue, blocks] = getInputFormattedValueAndMask(value, min, max, active);
 
     const changeHandler = useCallback(
         (e, data) => {
             const dateObj: DateType = { from: undefined, to: undefined };
             if (typeof onChange === 'function') {
                 if (data.value) {
-                    const dateArr = data.value.replace(/ /g, '').split('-');
-                    dateObj.from = new Date(dateArr[0]?.replace(dateRegexp, '$2-$1-$3'));
-                    dateObj.to = new Date(dateArr[1]?.replace(dateRegexp, '$2-$1-$3'));
+                    const dateArr = data.value.replace(/ /g, '').match(dateRegexp) || [];
+                    const [dateFrom, dateTo] = dateArr;
+
+                    dateObj.from = dateFrom && parse(dateFrom, 'dd.MM.yyyy', new Date());
+                    dateObj.to = dateTo && parse(dateTo, 'dd.MM.yyyy', new Date());
+
+                    // [1] – так как в компоненте ввода двух дат, можно ввести только две даты
+                    if (!dateArr[1] && value && value.length > data.value.length) {
+                        data.value = data.value.replace('–', '').trim();
+                    }
                 }
-                onChange(e, { valueAsDate: dateObj, ...data });
+                onChange(e, { valueAsDate: dateObj, ...data, value: data?.value?.replace('–', '-') });
             }
         },
-        [onChange]
+        [onChange, value]
     );
 
-    let placeholder = placeholderMask;
+    let placeholder = localize(`ds.inputDateRange.placeholder.${placeholderType}` as keyof InputDateRangeLocalization);
     if (formatedValue) {
-        placeholder = `${formatedValue}${placeholderMask.substring(formatedValue.length, placeholderMask.length + 1)}`;
+        placeholder = `${formatedValue}${placeholder.substring(formatedValue.length, placeholder.length + 1)}`;
     }
 
     return (

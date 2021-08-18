@@ -25,8 +25,8 @@ export function useDraggableColumn() {
     const onDragStart = (e) => {
         const target = e.currentTarget;
 
-        const table = target.closest('table');
-        tableHeight = table && table.offsetHeight;
+        const tableWrapper = target.closest("[data-id='table-wrapper']");
+        tableHeight = tableWrapper && tableWrapper.offsetHeight;
 
         drag = target.querySelector("[data-id='dragable']");
 

@@ -1,26 +1,19 @@
 import {
     BaseConfig,
-    BaseService,
     ColumnsConfig,
     ColumnsState,
     FooterConfig,
     EmptyConfig,
     ExpandingRowConfig,
     ExpandingRowState,
-    ExpandingRowService,
-    ResizableColumnService,
-    SortConfig,
     SortState,
-    SortService,
     SelectRowConfig,
     SelectRowState,
-    SelectRowService,
-    DraggableColumnService,
+    SelectionConfig,
+    FilterState,
     ColumnGroupConfig,
-    ColumnGroupService,
     GroupByConfig,
     GroupByState,
-    GroupByService,
     SettingsConfig,
     ActionsColumnProps,
 } from './components';
@@ -31,8 +24,8 @@ export interface TableConfig {
     footer?: FooterConfig;
     empty?: EmptyConfig;
     expandingRow?: ExpandingRowConfig;
-    sort?: SortConfig;
     selectRow?: SelectRowConfig;
+    selection?: SelectionConfig;
     columnGroup?: ColumnGroupConfig;
     settings?: SettingsConfig;
     actionsColumn?: ActionsColumnProps;
@@ -45,28 +38,27 @@ export interface TableState {
     sort?: SortState;
     selectRow?: SelectRowState;
     groupBy?: GroupByState;
+    filter?: FilterState;
 }
 
-export type TableService = BaseService &
-    ExpandingRowService &
-    ResizableColumnService &
-    SortService &
-    SelectRowService &
-    DraggableColumnService &
-    ColumnGroupService &
-    GroupByService;
+export type UpdateTableState = (id: string, newState: TableState | ((prev: TableState) => TableState)) => void;
 
-export enum Modules {
-    Base = 'base',
-    Column = 'column',
-    Footer = 'footer',
-    Empty = 'empty',
-    ExpandingRow = 'expandingRow',
-    ColumnGroup = 'columnGroup',
-}
-
-export interface Module {
+export interface Module<C = any, S = any> {
     name: string;
-    initConfig?: (params) => any;
-    initState?: (params) => any;
+    feature?: TableFeature;
+    initConfig?: (params) => C;
+    initState?: (params) => S;
+}
+
+export enum TableFeature {
+    SelectRow = 'SelectRow',
+    ExpandingRow = 'ExpandingRow',
+    ActionsColumn = 'ActionsColumn',
+}
+
+export type TableFeatures = Set<TableFeature>;
+
+export enum SortDirection {
+    Asc = 'asc',
+    Desc = 'desc',
 }

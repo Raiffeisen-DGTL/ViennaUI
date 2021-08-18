@@ -1,18 +1,25 @@
-import { SortModule } from './SortModule';
+import { SortModule, SortState } from './SortModule';
 import { sortService } from './SortService';
+import { SortDirection } from '../../types';
+
+const sort: SortState = {
+    field: 'field',
+    direction: SortDirection.Desc,
+};
 
 const moduleParams = {
     settings: {
-        onSort: 'function',
+        sort,
     },
 };
 
 describe('Sort module', () => {
     test('Init config', () => {
-        const config = SortModule.initConfig && SortModule.initConfig(moduleParams);
+        const state: SortState = SortModule.initState && SortModule.initState(moduleParams);
 
-        expect(config).not.toBeUndefined();
-        expect(config.onSort).toEqual('function');
+        expect(state).not.toBeUndefined();
+        expect(state.field).toEqual(sort.field);
+        expect(state.direction).toEqual(sort.direction);
     });
 });
 
@@ -20,28 +27,34 @@ describe('Sort service', () => {
     const state: any = {
         sort: {
             field: 'field1',
-            direction: 'asc',
+            direction: SortDirection.Asc,
         },
     };
+
     let newState: any = {};
-    const update = (state) => {
+    let serviceId = '';
+    const update = (id, state) => {
         newState = state;
+        serviceId = id;
     };
 
-    const service = sortService(state, update);
+    const getState = () => state;
+    const service = sortService(getState, update);
 
     test('getSortColumn', () => {
         const sort = service.getSortColumn();
 
         expect(sort).not.toBeUndefined();
         expect(sort?.field).toEqual('field1');
-        expect(sort?.direction).toEqual('asc');
+        expect(sort?.direction).toEqual(SortDirection.Asc);
     });
 
     test('setSortColumn', () => {
-        service.setSortColumn('field2', 'desc');
+        service.setSortColumn('field2', SortDirection.Desc);
+
+        expect(serviceId).toEqual(SortModule.name);
         expect(newState.sort).not.toBeUndefined();
         expect(newState.sort.field).toEqual('field2');
-        expect(newState.sort.direction).toEqual('desc');
+        expect(newState.sort.direction).toEqual(SortDirection.Desc);
     });
 });
