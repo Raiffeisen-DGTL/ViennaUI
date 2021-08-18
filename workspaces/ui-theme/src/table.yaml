@@ -4,11 +4,11 @@ base:
 
 size:
   s:
-    padding: $layout.whitespace.xs $layout.whitespace.xs
+    padding: $layout.size.s2 $layout.size.s2
   m:
-    padding: $layout.whitespace.s $layout.whitespace.xs
+    padding: $layout.size.s3 $layout.size.s2
   l:
-    padding: $layout.whitespace.m $layout.whitespace.xs
+    padding: $layout.size.s4 $layout.size.s2
 
 header:
   font-weight: $typography.weight.medium
@@ -24,7 +24,7 @@ body:
   color: $color.primary.brand.primary
 
 footer:
-  padding: $layout.whitespace.xl $layout.whitespace.xs
+  padding: $layout.size.s6 $layout.size.s2
 
 empty:
   padding: 56px 0
@@ -40,23 +40,32 @@ cell:
     hover:
       background-color: $color.primary.brand.wildsand
 
+    title:
+      hover:
+        color: $color.primary.brand.primary
+      icon:
+        base:
+          margin-left: $layout.size.s2
+        active:
+          color: $color.primary.oslo.c100 !important
+
     group:
       text-align: center
       color: $color.primary.brand.primary
 
     color:
       miami10:
-        background-color: $color.secondary.basic.miami.c10
+        background-color: $color.secondary.miami.c10
       sochi10:
-        background-color: $color.secondary.basic.sochi.c10
+        background-color: $color.secondary.sochi.c10
       paris10:
-        background-color: $color.secondary.basic.paris.c10
+        background-color: $color.secondary.paris.c10
       tokyo10:
-        background-color: $color.secondary.basic.tokyo.c10
+        background-color: $color.secondary.tokyo.c10
       dubai10:
-        background-color: $color.secondary.basic.dubai.c10
+        background-color: $color.secondary.dubai.c10
       nice10:
-        background-color: $color.secondary.basic.nice.c10
+        background-color: $color.secondary.nice.c10
 
     rightDivider:
       border-right: solid thin $color.primary.seattle.c10
@@ -89,12 +98,12 @@ actionIcon:
 
 expander:
   cell:
-    padding-left: $layout.whitespace.xs
-    padding-right: $layout.whitespace.xs
+    padding-left: $layout.size.s2
+    padding-right: $layout.size.s2
   hover:
     color: $color.primary.oslo.c120
   content:
-    padding: $layout.whitespace.xs $layout.whitespace.s $layout.whitespace.m $layout.size.l
+    padding: $layout.size.s2 $layout.size.s3 $layout.size.s4 $layout.size.s10
 
 resizer:
   base:
@@ -115,20 +124,8 @@ resizer:
       height: 50px
       box-shadow: inset -2px 50px 0 0 $color.primary.brand.onAccent
 
-sort:
-  box:
-    hover:
-      color: $color.primary.brand.primary
-    active:
-      color: $color.primary.brand.primary
-  icon:
-    base:
-      margin-left: $layout.whitespace.xs
-    active:
-      color: $color.primary.oslo.c100 !important
-
 selector:
-  padding: 0 $layout.whitespace.l
+  padding: 0 $layout.size.s5
 
 selected:
   background-color: $color.primary.oslo.c10 !important
@@ -137,10 +134,10 @@ selectAll:
   box:
     text-align: center
     box-shadow: $shadow.basic.l
-    padding: $layout.whitespace.xs 0
-    margin-bottom: $layout.whitespace.xxs
+    padding: $layout.size.s2 0
+    margin-bottom: $layout.size.s1
   label:
-    margin-right: $layout.whitespace.xl
+    margin-right: $layout.size.s6
 
 draggable:
   box:
@@ -163,10 +160,10 @@ groupBy:
     font-size: $typography.b.b3.size
     line-height: $typography.b.b3.height
     font-weight: $typography.weight.bold
-    padding: $layout.whitespace.xs
-    padding-top: $layout.whitespace.xl
+    padding: $layout.size.s2
+    padding-top: $layout.size.s6
   select:
-    padding-top: $layout.whitespace.l
+    padding-top: $layout.size.s5
     text-align: center
 
 pinned:
@@ -174,9 +171,9 @@ pinned:
 
 settings:
   box:
-    padding-left: $layout.whitespace.s
-    background: linear-gradient(90deg, transparent, $color.primary.brand.white ) 0, linear-gradient(90deg, $color.primary.brand.white, $color.primary.brand.white ) $layout.size.xxxs
-    background-size: $layout.size.xxxs 100%, 100% 100%
+    padding-left: $layout.size.s3
+    background: linear-gradient(90deg, rgba(255,255,255,0), $color.primary.brand.white ) 0, linear-gradient(90deg, $color.primary.brand.white, $color.primary.brand.white ) $layout.size.s2
+    background-size: $layout.size.s2 100%, 100% 100%
     background-repeat: no-repeat
   size:
     s:
@@ -188,15 +185,30 @@ settings:
 
   columns:
     list:
-      margin: $layout.whitespace.m 0
+      margin: $layout.size.s4 0
     column:
-      padding: $layout.whitespace.xs $layout.whitespace.s $layout.whitespace.xs $layout.whitespace.m
+      padding: $layout.size.s2 $layout.size.s3 $layout.size.s2 $layout.size.s4
       background-color: $color.primary.brand.wildsand
       border-radius: $border.radius.m
-      margin-bottom: $layout.whitespace.xs
+      margin-bottom: $layout.size.s2
       color: $color.primary.seattle.c60
     search:
-      margin-top: $layout.whitespace.xl
+      margin-top: $layout.size.s6
   grouping:
     box:
-      margin-top: $layout.whitespace.m
+      margin-top: $layout.size.s4
+
+filterPopover:
+  base:
+    padding: $layout.size.s4
+    left: -$layout.size.s4 !important
+  size:
+    s:
+      padding-top: $layout.size.s2
+      top: -$layout.size.s2 !important
+    m:
+      padding-top: $layout.size.s3
+      top: -$layout.size.s3 !important
+    l:
+      padding-top: $layout.size.s4
+      top: -$layout.size.s4 !important

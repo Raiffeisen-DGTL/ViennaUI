@@ -14,7 +14,11 @@ export const WateringCan: React.FC<WateringCanProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M19.707 5.652L19 6.359v1.414l.406.407L17 10.586V8.979A1.979 1.979 0 0015.021 7h-8.05A1.97 1.97 0 005 8.971v2.678A3.493 3.493 0 118.942 6H11.4A5.5 5.5 0 105 13.788v5.241A1.97 1.97 0 006.971 21h8.071A1.958 1.958 0 0017 19.042v-5.628l3.82-3.82.407.406h1.414l.707-.707-3.641-3.641zM15 13v6H7V9h8v4z' />
+            <path
+                fillRule='evenodd'
+                d='M12.5 4V1h-2v3H5a3 3 0 00-3 3v6a3 3 0 001.2 2.4L6 17.5V21a1 1 0 001 1h9a1 1 0 001-1v-5.785l3.985-8.855.068.034a1 1 0 00.894-1.788l-2-1a1 1 0 00-.894 1.788l.141.071L17 10.341V5a1 1 0 00-1-1h-3.5zm-2 2v2h2V6H15v14H8V6h2.5zM5 6h1v9l-1.6-1.2A1 1 0 014 13V7a1 1 0 011-1z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

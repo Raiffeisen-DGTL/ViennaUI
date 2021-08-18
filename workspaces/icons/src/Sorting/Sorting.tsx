@@ -14,7 +14,7 @@ export const Sorting: React.FC<SortingProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 5.414L6.414 11H5V9.586l7-7 7 7V11h-1.414L12 5.414zm0 16l-7-7V13h1.414L12 18.586 17.586 13H19v1.414l-7 7z' />
+            <path d='M18.293 10.707L12 4.414l-6.293 6.293-1.414-1.414 7-7a1 1 0 011.414 0l7 7-1.414 1.414zM5.707 13.293L12 19.586l6.293-6.293 1.414 1.414-7 7a1 1 0 01-1.414 0l-7-7 1.414-1.414z' />
         </svg>
     );
 };

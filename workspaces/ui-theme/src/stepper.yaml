@@ -99,4 +99,4 @@ title:
 step:
   base:
     position: relative
-    padding: 0 16px
+    padding-right: 8px

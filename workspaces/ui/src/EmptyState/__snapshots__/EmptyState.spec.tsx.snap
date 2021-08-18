@@ -2,26 +2,26 @@
 
 exports[`EmptyState 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   />
 </div>
 `;
 
 exports[`EmptyState w/ actions 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Actions-sc-10cccwe-3 dflAvL"
+        class="EmptyStatestyles__Actions-sc-9kuou6-3 iOtENm"
       >
         EmptyState actions
       </div>
@@ -32,16 +32,16 @@ exports[`EmptyState w/ actions 1`] = `
 
 exports[`EmptyState w/ description 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Description-sc-10cccwe-2 bLaPXG"
+        class="EmptyStatestyles__Description-sc-9kuou6-2 fbplxg"
       >
         EmptyState description
       </div>
@@ -52,47 +52,39 @@ exports[`EmptyState w/ description 1`] = `
 
 exports[`EmptyState w/ loading: loading-false 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   />
 </div>
 `;
 
 exports[`EmptyState w/ loading: loading-true 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+        class="Spinnerstyles__Box-moemrn-0 jPiLVW"
       >
         <svg
-          class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-          viewBox="0 0 16 16"
+          class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+          viewBox="0 0 100 100"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g
-            fill="none"
-            fill-rule="evenodd"
-            stroke-width="2"
-          >
-            <path
-              d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-              stroke="#2b2d33"
-              stroke-opacity=".87"
-            />
-            <path
-              d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-              stroke="#fee600"
-            />
-          </g>
+          <circle
+            class="Spinnerstyles__Circle-moemrn-2 cElquL"
+            color="primary"
+            cx="50"
+            cy="50"
+            r="44"
+          />
         </svg>
       </div>
     </div>
@@ -102,13 +94,13 @@ exports[`EmptyState w/ loading: loading-true 1`] = `
 
 exports[`EmptyState w/ some child 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div>
         Some child
@@ -120,28 +112,28 @@ exports[`EmptyState w/ some child 1`] = `
 
 exports[`EmptyState w/ some props 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce className"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs className"
   id="EmptyState"
   title="this is EmptyState"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   />
 </div>
 `;
 
 exports[`EmptyState w/ title 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Title-sc-10cccwe-1 bPhBzn"
+        class="EmptyStatestyles__Title-sc-9kuou6-1 dBDBIE"
       >
         EmptyState title
       </div>
@@ -152,34 +144,34 @@ exports[`EmptyState w/ title 1`] = `
 
 exports[`EmptyState w/ title, descriptions, actions 1`] = `
 <div
-  class="EmptyStatestyles__Box-sc-10cccwe-0 fqMsce"
+  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
 >
   <div
-    class="EmptyStatestyles__Content-sc-10cccwe-5 cVtIiA"
+    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
   >
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Title-sc-10cccwe-1 bPhBzn"
+        class="EmptyStatestyles__Title-sc-9kuou6-1 dBDBIE"
       >
         EmptyState title
       </div>
     </div>
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Description-sc-10cccwe-2 bLaPXG"
+        class="EmptyStatestyles__Description-sc-9kuou6-2 fbplxg"
       >
         EmptyState description
       </div>
     </div>
     <div
-      class="EmptyStatestyles__Row-sc-10cccwe-4 hyVXux"
+      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
     >
       <div
-        class="EmptyStatestyles__Actions-sc-10cccwe-3 dflAvL"
+        class="EmptyStatestyles__Actions-sc-9kuou6-3 iOtENm"
       >
         EmptyState actions
       </div>

@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useMemo } from 'react';
-import { Checkbox, Input, Link } from 'vienna.ui';
+import { Checkbox, Input, Link } from '../../../index';
 import { BurgerHor, Search as SearchIcon } from 'vienna.icons';
 import { useTableService, useTableLocalization } from '../Context';
 import { useDraggableColumn } from '../DraggableColumn';

@@ -27,27 +27,30 @@ notification:
     plain:
       background-color: $color.primary.brand.primary
       color: $color.primary.brand.white
+    accent:
+      background-color: $color.primary.oslo.c100
+      color: $color.primary.brand.white
   button:
     design:
       primary:
         color: $color.primary.brand.white
-        border: solid 2px $color.primary.london.c40
+        border: solid $border.width.m $color.primary.london.c40
       ghost:
         color: $color.primary.brand.white
         padding: 0
     hover:
       primary:
-        border: solid 2px $color.primary.brand.white
+        border: solid $border.width.m $color.primary.brand.white
       ghost:
         color: $color.primary.brand.white
   notificationsGap:
-    margin-bottom: $layout.whitespace.xs
+    margin-bottom: $layout.size.s2
     padding-right: 46px
 
   close:
     base:
-      top: $layout.whitespace.m
-      right: $layout.whitespace.m
+      top: $layout.size.s4
+      right: $layout.size.s4
       cursor: pointer
     design:
       plain:
@@ -58,6 +61,8 @@ notification:
         color: $color.utilitarian.osaka.c30
       success:
         color: $color.utilitarian.geneva.c30
+      accent:
+        color: $color.primary.oslo.c60
     hover:
       color: $color.primary.brand.white
 

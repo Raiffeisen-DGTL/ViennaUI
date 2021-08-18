@@ -22,7 +22,6 @@ module.exports.default = function sanitizeJsonRaw(src) {
     Object.keys(src).forEach((key) => {
         switch (key) {
             case 'space':
-            case 'desc':
             case 'imports':
             case 'ref':
                 delete src[key];

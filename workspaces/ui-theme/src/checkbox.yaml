@@ -2,7 +2,7 @@ space: checkbox
 imports: ['../typography.yaml']
 base:
   border-radius: $border.radius.s
-  border: 2px solid $color.primary.seattle.c30
+  border: $border.width.m solid $color.primary.seattle.c30
   cursor: pointer
   background-color: $color.primary.brand.white
 
@@ -40,7 +40,7 @@ label:
   base:
     ref: $typography.text.base
     color: $color.primary.brand.onPrimary
-    margin-left: $layout.whitespace.xs
+    margin-left: $layout.size.s2
     cursor: pointer
 
   size:

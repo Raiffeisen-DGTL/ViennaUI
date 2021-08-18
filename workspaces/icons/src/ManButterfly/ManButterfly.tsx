@@ -14,7 +14,12 @@ export const ManButterfly: React.FC<ManButterflyProps> = (props): JSX.Element =>
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 11a4 4 0 01-4-4V6a4 4 0 118 0v1a4 4 0 01-4 4zm0-7a2 2 0 00-2 2v1a2 2 0 104 0V6a2 2 0 00-2-2zm3 12l-3-1.55L9 16v-4l3 1.56L15 12v4zm3.41-1.23L19.79 21h-2.05l-1.29-5.8a1.47 1.47 0 00-.45-.77v-2.26a3.5 3.5 0 012.41 2.6zM8 12.16v2.24a1.6 1.6 0 00-.48.8L6.24 21H4.19l1.38-6.23A3.5 3.5 0 018 12.16z' />
+            <path
+                fillRule='evenodd'
+                d='M7 7a5 5 0 1110 0A5 5 0 017 7zm5-3a3 3 0 100 6 3 3 0 000-6z'
+                clipRule='evenodd'
+            />
+            <path d='M12 14l-2-1v3l2-1 2 1v-3l-2 1zm-3.634-.195C5.21 15.322 3.5 18.7 3.5 22h2c0-2.674 1.39-5.267 3.732-6.393l-.866-1.802zm6.402 1.802C17.11 16.733 18.5 19.327 18.5 22h2c0-3.299-1.71-6.678-4.865-8.195l-.867 1.802z' />
         </svg>
     );
 };

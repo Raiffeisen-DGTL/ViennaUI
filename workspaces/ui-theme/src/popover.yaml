@@ -5,10 +5,10 @@ message:
   base:
     box-shadow: $shadow.basic.xl
     border-radius: $border.radius.m
-    padding-top: $layout.whitespace.s
+    padding-top: $layout.size.s3
     padding-right: 28px
-    padding-bottom: $layout.whitespace.s
-    padding-left: $layout.whitespace.s
+    padding-bottom: $layout.size.s3
+    padding-left: $layout.size.s3
     z-index: '1000'
     transition: opacity .2s
   design:
@@ -25,7 +25,7 @@ header:
     font-size: $typography.b.b1.size
     line-height: $typography.b.b1.height
     font-weight: $typography.weight.bold
-    margin-bottom: $layout.whitespace.xxs
+    margin-bottom: $layout.size.s1
 
 content:
   base:
@@ -35,8 +35,8 @@ content:
 
 close:
   base:
-    top: $layout.whitespace.s
-    right: $layout.whitespace.s
+    top: $layout.size.s3
+    right: $layout.size.s3
     cursor: pointer
 
 defenition:

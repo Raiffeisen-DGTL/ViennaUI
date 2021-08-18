@@ -14,7 +14,12 @@ export const Cocktail: React.FC<CocktailProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M7 20V7h11v13a2 2 0 01-2 2H9a2 2 0 01-2-2zM9 9v11h7V9H9zm8-7h4v2h-2.69l-1 2H15l2-4zm-7 8h2v9h-2v-9zM4.8 6.5A2.7 2.7 0 006 8.74v2A4.5 4.5 0 1112 6h-1.85a2.7 2.7 0 00-5.35.5z' />
+            <path d='M12 18a1 1 0 11-2 0 1 1 0 012 0zm2-3a1 1 0 11-2 0 1 1 0 012 0z' />
+            <path
+                fillRule='evenodd'
+                d='M8.222 2.343A4.5 4.5 0 106 10.973V19a3 3 0 003 3h6a3 3 0 003-3V6h-2.057l.75-2H21V2h-5a1 1 0 00-.936.649L13.807 6h-2.835a4.499 4.499 0 00-2.75-3.657zM8 8h5.057l-.75 2H8V8zm7.193 0l-.75 2H16V8h-.807zM8.949 6A2.5 2.5 0 106 8.95V6h2.95zM8 19v-7h2a1 1 0 102 0h4v7a1 1 0 01-1 1H9a1 1 0 01-1-1z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

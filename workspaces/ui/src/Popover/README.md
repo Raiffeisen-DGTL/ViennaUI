@@ -1,9 +1,6 @@
 # Popover
 
-Компонент используется для расширенных подсказок. В отличие от тултипа, требует вызова по клику.
-Основная особенность в том, что есть возможность блокировки прокрутки страницы.
-
-
+Компонент используется для расширенных подсказок. В отличие от тултипа, требует вызова по клику. Основная особенность в том, что есть возможность блокировки прокрутки страницы.
 
 ## Импорт
 
@@ -13,16 +10,16 @@ import { Popover } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-design | "dark" \| "light" \| undefined | "light" |
-anchor | "top" \| "bottom" \| "left" \| "right" \| "center" \| "auto" \| undefined | "auto" | Направление отображения
-header | ReactNode | false |
-noScroll | boolean \| undefined | false | Блокировать прокрутку экрана если элемент активен
-allowKeyboardEvents | boolean \| undefined | false | Включить поддержку событий клавиатуры (для Popover = false, для Hint = true)
-noClose | boolean \| undefined | false | Отключает иконку закрытия
-content | ReactNode | false |
-width | number | 250 | Ширина компонента в px
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| design | "dark" \| "light" \| undefined | "light" |
+| anchor | "top" \| "bottom" \| "left" \| "right" \| "center" \| "auto" \| undefined | "auto" | Направление отображения |
+| header | ReactNode | false |
+| noScroll | boolean \| undefined | false | Блокировать прокрутку экрана если элемент активен |
+| allowKeyboardEvents | boolean \| undefined | false | Включить поддержку событий клавиатуры (для Popover = false, для Hint = true) |
+| noClose | boolean \| undefined | false | Отключает иконку закрытия |
+| content | ReactNode | false |
+| width | number | 250 | Ширина компонента в px |
 
 ## Использование
 
@@ -38,6 +35,7 @@ width | number | 250 | Ширина компонента в px
 ```
 
 ## Контент
+
 ##### Свойство `content`
 
 ```
@@ -49,6 +47,7 @@ width | number | 250 | Ширина компонента в px
 ```
 
 ## Заголовок
+
 ##### Свойство `header`
 
 ```
@@ -61,6 +60,7 @@ width | number | 250 | Ширина компонента в px
 ```
 
 ## Якорь
+
 ##### Свойство `anchor`
 
 Направление отображения компонента
@@ -87,20 +87,18 @@ width | number | 250 | Ширина компонента в px
 </Popover>
 ```
 
-
 ## Ширина компонента
+
 ##### Свойство `width`
 
 ```jsx
-<Popover
-    width={100}
-    content='Ut ut dui non ipsum pharetra aliquam id in libero.'
->
+<Popover width={100} content='Ut ut dui non ipsum pharetra aliquam id in libero.'>
     <Button>Click me</Button>
 </Popover>
 ```
 
 ## C блокировкой прокрутки
+
 ##### Свойство `noScroll`
 
 Для `noScroll={true}` прокрутка страницы невозможна, если компонент активен (виден).
@@ -115,10 +113,10 @@ width | number | 250 | Ширина компонента в px
 ```
 
 ## Без иконки (крестика) закрытия
+
 ##### Свойство `noClose`
 
-Для `noClose={true}` у компонента не отображается иконка закрытия компонента.
-Компонент по-прежнему можно закрыть (прекратить отображение) при нажатии на любом другом месте  на странице.
+Для `noClose={true}` у компонента не отображается иконка закрытия компонента. Компонент по-прежнему можно закрыть (прекратить отображение) при нажатии на любом другом месте на странице.
 
 ```
 <Popover
@@ -130,10 +128,10 @@ width | number | 250 | Ширина компонента в px
 ```
 
 ## События клавиатуры
+
 ##### Свойство `allowKeyboardEvents`
 
-Свойство, позволяющее переключаться и управлять состоянием открытия компонента с клавиатуры.
-По умолчанию `false`.
+Свойство, позволяющее переключаться и управлять состоянием открытия компонента с клавиатуры. По умолчанию `false`.
 
 ```
 <Popover

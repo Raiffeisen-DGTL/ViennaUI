@@ -14,7 +14,11 @@ export const Stroller: React.FC<StrollerProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M4.1 10.1L3.43 7H2V5h3l.91 4H13V2h3a7 7 0 010 14h-5a7 7 0 01-6.9-5.9zM21 9a5 5 0 00-5-5h-1v7H6.42A5 5 0 0011 14h5a5 5 0 005-5zM7 16a3 3 0 110 6 3 3 0 010-6zm0 4.4a1.4 1.4 0 100-2.8 1.4 1.4 0 000 2.8zM20 16a3 3 0 110 6 3 3 0 010-6zm0 4.4a1.4 1.4 0 100-2.8 1.4 1.4 0 000 2.8zM11 18h5v2h-5v-2z' />
+            <path
+                fillRule='evenodd'
+                d='M12 3a1 1 0 011-1h3a6 6 0 016 6v2a5 5 0 01-5 5H9a5 5 0 01-5-5V8a2 2 0 00-2-2V4a4 4 0 014 4h6V3zm-6 7a3 3 0 003 3h8a3 3 0 003-3V8a4 4 0 00-4-4h-2v5a1 1 0 01-1 1H6zm-2 9a3 3 0 015.83-1h5.34a3.001 3.001 0 110 2H9.83A3.001 3.001 0 014 19zm3-1a1 1 0 100 2 1 1 0 000-2zm10 1a1 1 0 112 0 1 1 0 01-2 0z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

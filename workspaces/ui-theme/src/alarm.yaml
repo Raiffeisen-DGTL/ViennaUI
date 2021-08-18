@@ -2,8 +2,8 @@ space: alarm
 
 base:
   border-radius: $border.radius.s
-  width: $layout.size.xxxs
-  height: $layout.size.xxxs
+  width: $layout.size.s2
+  height: $layout.size.s2
 
 design:
   critical:

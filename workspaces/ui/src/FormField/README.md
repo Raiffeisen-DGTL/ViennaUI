@@ -2,7 +2,6 @@
 
 Компонент обертка для элементов формы
 
-
 ## Импорт
 
 ```
@@ -11,23 +10,23 @@ import { FormField } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-inline | boolean \| undefined | false | Заголовок и компонент отображается в одну строку
+| Prop   | Type                 | Default | Description                                      |
+| ------ | -------------------- | ------- | ------------------------------------------------ |
+| inline | boolean \| undefined | false   | Заголовок и компонент отображается в одну строку |
 
 ## Свойства сообщения / Message Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-color | 'warning' \| 'critical' |  | Цвет текста сообщения
-align | 'left' \| 'center' \| 'right' | 'left' | Выравнивание текста
+| Prop  | Type                          | Default | Description           |
+| ----- | ----------------------------- | ------- | --------------------- |
+| color | 'warning' \| 'critical'       |         | Цвет текста сообщения |
+| align | 'left' \| 'center' \| 'right' | 'left'  | Выравнивание текста   |
 
 ## Свойства заголовка / Label Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-required | boolean |  | Отображение звездочки
-htmlFor | string |  | ID labelable-элемента, который находится в том же документе, что и компонент `FormField.Label`
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| required | boolean |  | Отображение звездочки |
+| htmlFor | string |  | ID labelable-элемента, который находится в том же документе, что и компонент `FormField.Label` |
 
 ## Использование
 
@@ -46,6 +45,7 @@ htmlFor | string |  | ID labelable-элемента, который находи
 ```
 
 ## Обязательное поле
+
 ##### Свойство `FormField.Label`, `required`
 
 Для отображение звездочки можно использовать свойство `required` компонента `FormField.Label`.
@@ -60,6 +60,7 @@ htmlFor | string |  | ID labelable-элемента, который находи
 ```
 
 ## Сообщения
+
 ##### Свойство `FormField.Message`, `color`
 
 Для `FormField.Message` есть два доступных значения свойства `color`: `warning`, `critical`.
@@ -74,8 +75,8 @@ htmlFor | string |  | ID labelable-элемента, который находи
 </FormField>
 ```
 
-
 ## Строчное отображение
+
 ##### Свойство `inline`
 
 ```jsx

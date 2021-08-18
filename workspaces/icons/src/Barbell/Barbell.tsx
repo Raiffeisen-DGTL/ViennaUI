@@ -14,7 +14,11 @@ export const Barbell: React.FC<BarbellProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M18 11V7h2v10h-2v-4H6v4H4V7h2v4h12zM1 11V7h2v10H1v-4H0v-2h1zm23 0v2h-1v4h-2V7h2v4h1z' />
+            <path
+                fillRule='evenodd'
+                d='M2 7a1 1 0 011-1h4a1 1 0 011 1v4h8V7a1 1 0 011-1h4a1 1 0 011 1v4h1v2h-1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4H8v4a1 1 0 01-1 1H3a1 1 0 01-1-1v-4H1v-2h1V7zm2 1v8h2V8H4zm14 8V8h2v8h-2z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

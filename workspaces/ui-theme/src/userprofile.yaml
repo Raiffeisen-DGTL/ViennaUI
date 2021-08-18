@@ -29,7 +29,7 @@ description:
 
 profile:
   left:
-    margin-left: $layout.whitespace.m
+    margin-left: $layout.size.s4
   right:
     text-align: right
-    margin-right: $layout.whitespace.m
+    margin-right: $layout.size.s4

@@ -1,0 +1,26 @@
+{
+  "name": "vienna.codemods",
+  "description": "Codemods: Effective, Automated Refactoring for components updating (migration)",
+  "version": "1.0.2",
+  "license": "MIT",
+  "bin": {
+    "codemods": "./bin/index.js"
+  },
+  "keywords": [
+    "vienna-ui",
+    "react",
+    "design system",
+    "codemods"
+  ],
+  "dependencies": {
+    "execa": "^4.0.0",
+    "globby": "11.0.0",
+    "inquirer": "7.0.3",
+    "jscodeshift": "0.6.4",
+    "meow": "6.0.0",
+    "minimist": "1.2.0"
+  },
+  "bugs": {
+    "email": "ds@raiffeisen.ru"
+  }
+}

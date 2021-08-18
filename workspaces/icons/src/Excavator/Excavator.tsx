@@ -14,7 +14,11 @@ export const Excavator: React.FC<ExcavatorProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M15.558 6.077L20.38 2.22 22 3v8.16L20.2 14H19l-.83-.55L20 10.7V5.08l-3.242 2.597L17 8v6H2v-4a2 2 0 012-2h4V6a2 2 0 012-2h4l1.558 2.077zM16 17H5a1 1 0 000 2h11a1 1 0 000-2zm0-2a3 3 0 010 6H5a3 3 0 110-6h11zm-3-9h-3v4H4v2h11V8.67L13 6z' />
+            <path
+                fillRule='evenodd'
+                d='M21.424 2.094A1 1 0 0122 3v10a1 1 0 01-1 1h-3v-2h2V5.135l-4 3.333V13a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1h1V3a1 1 0 011-1h5a1 1 0 01.707.293l3.9 3.9 4.753-3.961a1 1 0 011.064-.138zM5 12v-2h1a1 1 0 001-1V4h3.586L14 7.414V12H5zm-2 7a3 3 0 013-3h12a3 3 0 110 6H6a3 3 0 01-3-3zm3-1a1 1 0 100 2h12a1 1 0 100-2H6z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

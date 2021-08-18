@@ -14,7 +14,7 @@ export const Up: React.FC<UpProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M3 17h1.414L12 9.414 19.586 17H21v-1.414l-9-9-9 9z' />
+            <path d='M11.041 22h2V5.515l5.551 5.832 1.45-1.378-7.29-7.658a1 1 0 00-1.447-.001L4 9.968l1.447 1.38 5.594-5.864V22z' />
         </svg>
     );
 };

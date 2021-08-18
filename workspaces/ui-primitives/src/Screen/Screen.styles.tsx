@@ -24,7 +24,6 @@ const subtitle = getPresets('screen.subtitle', {
 
 const body = getPresets('screen.body', {
     base: null,
-    scrollable: null,
 });
 
 const footer = getPresets('screen.footer', {
@@ -38,6 +37,16 @@ const custom = getPresets('screen.custom', {
     title: null,
     subtitle: null,
     footer: null,
+    gradientTop: null,
+    gradientBottom: null,
+});
+
+const gradientTop = getPresets('screen.gradientTop', {
+    base: null,
+});
+
+const gradientBottom = getPresets('screen.gradientBottom', {
+    base: null,
 });
 
 export const Box = styled.div`
@@ -46,17 +55,23 @@ export const Box = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
     ${custom.main}
 `;
 
-export const Head = styled.div<LyaoutProps>`
+export const Head = styled.div`
     ${head.base}
     width: 100%;
+    ${custom.head}
+`;
+
+export const HeadContent = styled.div<LyaoutProps>`
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: ${({ align }) => align ?? 'flex-start'};
-    ${custom.head}
+    ${custom.headContent}
 `;
 
 export const Title = styled.div<LyaoutProps>`
@@ -86,7 +101,6 @@ export const Body = styled.div<BodyProps>`
         scroll &&
         css`
             overflow-y: auto;
-            ${body.scrollable}
             max-height: ${maxHeight}px;
         `};
     ${custom.body}
@@ -99,4 +113,23 @@ export const Footer = styled.div<LyaoutProps>`
     align-items: center;
     justify-content: ${({ align }) => align ?? 'flex-end'};
     ${custom.footer}
+    ${custom.footer}
+`;
+
+export const GradientTop = styled.div`
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    ${gradientTop.base}
+    ${custom.gradientTop}
+`;
+
+export const GradientBottom = styled.div`
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    ${gradientBottom.base}
+    ${custom.gradientBottom}
 `;

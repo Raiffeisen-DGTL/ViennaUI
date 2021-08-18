@@ -1,5 +1,5 @@
 import React from 'react';
-import { Popover, Button, Text } from 'vienna.ui';
+import { Popover, Button, Text } from '../../../index';
 import { Settings } from 'vienna.icons';
 import { ThemeProvider } from 'vienna.ui-primitives';
 import { useTableLocalization } from '../Context';

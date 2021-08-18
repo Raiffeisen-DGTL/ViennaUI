@@ -2,10 +2,10 @@
 
 exports[`Logotype 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -23,7 +23,7 @@ exports[`Logotype 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -38,11 +38,11 @@ exports[`Logotype 1`] = `
 
 exports[`Logotype w/ any props 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI className"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo className"
   id="id"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -60,7 +60,7 @@ exports[`Logotype w/ any props 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -75,10 +75,10 @@ exports[`Logotype w/ any props 1`] = `
 
 exports[`Logotype w/ collapsed 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -100,10 +100,10 @@ exports[`Logotype w/ collapsed 1`] = `
 
 exports[`Logotype w/ collapsed 2`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -125,10 +125,10 @@ exports[`Logotype w/ collapsed 2`] = `
 
 exports[`Logotype w/ collapsed 3`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 gsBjNK"
+    class="Logotypestyles__Logotype-sfvaw3-1 hBiqri"
     viewBox="0 0 56 56"
   >
     <rect
@@ -150,10 +150,10 @@ exports[`Logotype w/ collapsed 3`] = `
 
 exports[`Logotype w/ design 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -171,7 +171,7 @@ exports[`Logotype w/ design 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -186,10 +186,10 @@ exports[`Logotype w/ design 1`] = `
 
 exports[`Logotype w/ design 2`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -207,7 +207,7 @@ exports[`Logotype w/ design 2`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 eiXhnf"
+    class="Logotypestyles__Title-sfvaw3-2 eQrkdB"
     viewBox="0 0 190 54"
   >
     <path
@@ -222,10 +222,10 @@ exports[`Logotype w/ design 2`] = `
 
 exports[`Logotype w/ design 3`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 gsBjNK"
+    class="Logotypestyles__Logotype-sfvaw3-1 hBiqri"
     viewBox="0 0 56 56"
   >
     <rect
@@ -243,7 +243,7 @@ exports[`Logotype w/ design 3`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -258,10 +258,10 @@ exports[`Logotype w/ design 3`] = `
 
 exports[`Logotype w/ design 4`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 kLJwpc"
+    class="Logotypestyles__Logotype-sfvaw3-1 bLnbpD"
     viewBox="0 0 56 56"
   >
     <rect
@@ -279,7 +279,7 @@ exports[`Logotype w/ design 4`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 eiXhnf"
+    class="Logotypestyles__Title-sfvaw3-2 eQrkdB"
     viewBox="0 0 190 54"
   >
     <path
@@ -294,10 +294,10 @@ exports[`Logotype w/ design 4`] = `
 
 exports[`Logotype w/ locale 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -315,7 +315,7 @@ exports[`Logotype w/ locale 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -330,10 +330,10 @@ exports[`Logotype w/ locale 1`] = `
 
 exports[`Logotype w/ locale 2`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -351,7 +351,7 @@ exports[`Logotype w/ locale 2`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 ekikqU"
+    class="Logotypestyles__Title-sfvaw3-2 cdtUip"
     viewBox="0 0 146 56"
   >
     <path
@@ -364,10 +364,10 @@ exports[`Logotype w/ locale 2`] = `
 
 exports[`Logotype w/ size 1`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iQKFqP"
+    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
     viewBox="0 0 56 56"
   >
     <rect
@@ -389,10 +389,10 @@ exports[`Logotype w/ size 1`] = `
 
 exports[`Logotype w/ size 2`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 fLGxKt"
+    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
     viewBox="0 0 56 56"
   >
     <rect
@@ -414,10 +414,10 @@ exports[`Logotype w/ size 2`] = `
 
 exports[`Logotype w/ size 3`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -439,10 +439,10 @@ exports[`Logotype w/ size 3`] = `
 
 exports[`Logotype w/ size 4`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 byXtvX"
+    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
     viewBox="0 0 56 56"
   >
     <rect
@@ -464,10 +464,10 @@ exports[`Logotype w/ size 4`] = `
 
 exports[`Logotype w/ size 5`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 jsdCm"
+    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
     viewBox="0 0 56 56"
   >
     <rect
@@ -489,10 +489,10 @@ exports[`Logotype w/ size 5`] = `
 
 exports[`Logotype w/ size 6`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iQKFqP"
+    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
     viewBox="0 0 56 56"
   >
     <rect
@@ -510,7 +510,7 @@ exports[`Logotype w/ size 6`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 grtClL"
+    class="Logotypestyles__Title-sfvaw3-2 iIrCMP"
     viewBox="0 0 190 54"
   >
     <path
@@ -525,10 +525,10 @@ exports[`Logotype w/ size 6`] = `
 
 exports[`Logotype w/ size 7`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 fLGxKt"
+    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
     viewBox="0 0 56 56"
   >
     <rect
@@ -546,7 +546,7 @@ exports[`Logotype w/ size 7`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cOzUJD"
+    class="Logotypestyles__Title-sfvaw3-2 hVoQpJ"
     viewBox="0 0 190 54"
   >
     <path
@@ -561,10 +561,10 @@ exports[`Logotype w/ size 7`] = `
 
 exports[`Logotype w/ size 8`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -582,7 +582,7 @@ exports[`Logotype w/ size 8`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 cdtvyP"
+    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
     viewBox="0 0 190 54"
   >
     <path
@@ -597,10 +597,10 @@ exports[`Logotype w/ size 8`] = `
 
 exports[`Logotype w/ size 9`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 byXtvX"
+    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
     viewBox="0 0 56 56"
   >
     <rect
@@ -618,7 +618,7 @@ exports[`Logotype w/ size 9`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 eWsKof"
+    class="Logotypestyles__Title-sfvaw3-2 dhNgBz"
     viewBox="0 0 190 54"
   >
     <path
@@ -633,10 +633,10 @@ exports[`Logotype w/ size 9`] = `
 
 exports[`Logotype w/ size 10`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 jsdCm"
+    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
     viewBox="0 0 56 56"
   >
     <rect
@@ -654,7 +654,7 @@ exports[`Logotype w/ size 10`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 gKJYXn"
+    class="Logotypestyles__Title-sfvaw3-2 kdDNxB"
     viewBox="0 0 190 54"
   >
     <path
@@ -669,10 +669,10 @@ exports[`Logotype w/ size 10`] = `
 
 exports[`Logotype w/ size 11`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iQKFqP"
+    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
     viewBox="0 0 56 56"
   >
     <rect
@@ -690,7 +690,7 @@ exports[`Logotype w/ size 11`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 bFWiTE"
+    class="Logotypestyles__Title-sfvaw3-2 hnvZoC"
     viewBox="0 0 146 56"
   >
     <path
@@ -703,10 +703,10 @@ exports[`Logotype w/ size 11`] = `
 
 exports[`Logotype w/ size 12`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 fLGxKt"
+    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
     viewBox="0 0 56 56"
   >
     <rect
@@ -724,7 +724,7 @@ exports[`Logotype w/ size 12`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 gobGNF"
+    class="Logotypestyles__Title-sfvaw3-2 bVizNl"
     viewBox="0 0 146 56"
   >
     <path
@@ -737,10 +737,10 @@ exports[`Logotype w/ size 12`] = `
 
 exports[`Logotype w/ size 13`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 iDsatJ"
+    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
     viewBox="0 0 56 56"
   >
     <rect
@@ -758,7 +758,7 @@ exports[`Logotype w/ size 13`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 ekikqU"
+    class="Logotypestyles__Title-sfvaw3-2 cdtUip"
     viewBox="0 0 146 56"
   >
     <path
@@ -771,10 +771,10 @@ exports[`Logotype w/ size 13`] = `
 
 exports[`Logotype w/ size 14`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 byXtvX"
+    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
     viewBox="0 0 56 56"
   >
     <rect
@@ -792,7 +792,7 @@ exports[`Logotype w/ size 14`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 eWNNgD"
+    class="Logotypestyles__Title-sfvaw3-2 kryoqu"
     viewBox="0 0 146 56"
   >
     <path
@@ -805,10 +805,10 @@ exports[`Logotype w/ size 14`] = `
 
 exports[`Logotype w/ size 15`] = `
 <div
-  class="Logotypestyles__Box-sc-1u2io5o-0 cFBFOI"
+  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
 >
   <svg
-    class="Logotypestyles__Logotype-sc-1u2io5o-1 jsdCm"
+    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
     viewBox="0 0 56 56"
   >
     <rect
@@ -826,7 +826,7 @@ exports[`Logotype w/ size 15`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sc-1u2io5o-2 wvWjI"
+    class="Logotypestyles__Title-sfvaw3-2 iqIpBt"
     viewBox="0 0 146 56"
   >
     <path

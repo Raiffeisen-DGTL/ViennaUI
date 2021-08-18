@@ -14,7 +14,12 @@ export const Timer: React.FC<TimerProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M17.852 8.563h-.002a8 8 0 11-11.7 0L4.294 6.707l1.414-1.418 1.98 1.98a7.95 7.95 0 013.313-1.2V4h-1V2h4v2h-1v2.069a7.95 7.95 0 013.313 1.204l1.98-1.98 1.414 1.414-1.856 1.856zM12.001 20a6 6 0 100-12 6 6 0 000 12zm-1-11h2v5h-2V9z' />
+            <path d='M11 10v5h2v-5h-2z' />
+            <path
+                fillRule='evenodd'
+                d='M13 4h2V2H9v2h2v1.558a8.45 8.45 0 00-3.681 1.346L5.707 5.293 4.293 6.707 5.786 8.2a8.5 8.5 0 1012.428 0l1.493-1.493-1.414-1.414-1.612 1.611A8.45 8.45 0 0013 5.558V4zM5.5 14a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

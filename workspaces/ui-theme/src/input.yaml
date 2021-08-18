@@ -44,7 +44,7 @@ placeholder:
   disabled:
     color: $color.primary.london.c120
   gap:
-    top: $layout.whitespace.s
+    top: $layout.size.s3
 
 wrapper:
   base:
@@ -53,31 +53,31 @@ wrapper:
     border-radius: $border.radius.m
     width: 100%
     color: $color.primary.brand.primary
-    padding-left: $layout.whitespace.s
-    padding-right: $layout.whitespace.s
+    padding-left: $layout.size.s3
+    padding-right: $layout.size.s3
   design:
     outline:
-      border: 1px solid $color.primary.seattle.c30
+      border: $border.width.s solid $color.primary.seattle.c30
     material:
-      border-bottom: 1px solid $color.primary.seattle.c30
+      border-bottom: $border.width.s solid $color.primary.seattle.c30
       border-radius: 0
       padding: 0
   size:
     xs:
-      height: $layout.size.xs
+      height: $layout.size.s6
       border-radius: $border.radius.s
-      padding-left: $layout.whitespace.xs
-      padding-right: $layout.whitespace.xs
+      padding-left: $layout.size.s2
+      padding-right: $layout.size.s2
     s:
-      height: $layout.size.s
+      height: $layout.size.s8
     m:
-      height: $layout.size.m
+      height: $layout.size.s9
     l:
-      height: $layout.size.l
+      height: $layout.size.s10
     xl:
-      height: $layout.size.xl
+      height: $layout.size.s12
     xxl:
-      height: $layout.size.xxl
+      height: $layout.size.s13
   hover:
     outline:
       border-color: $color.primary.brand.primary
@@ -114,22 +114,22 @@ infix:
     color: $color.primary.brand.primary
   size:
     xs:
-      margin: 0 $layout.whitespace.xxs
+      margin: 0 $layout.size.s1
       font-size: $typography.b.b1.size
     s:
-      margin: 0 $layout.whitespace.xs
+      margin: 0 $layout.size.s2
       font-size: $typography.b.b2.size
     m:
-      margin: 0 $layout.whitespace.xs
+      margin: 0 $layout.size.s2
       font-size: $typography.b.b2.size
     l:
-      margin: 0 $layout.whitespace.xs
+      margin: 0 $layout.size.s2
       font-size: $typography.b.b2.size
     xl:
-      margin: 0 $layout.whitespace.s
+      margin: 0 $layout.size.s3
       font-size: $typography.b.b3.size
     xxl:
-      margin: 0 $layout.whitespace.s
+      margin: 0 $layout.size.s3
       font-size: $typography.b.b3.size
 
 prefix:

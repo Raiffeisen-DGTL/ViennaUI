@@ -1,22 +1,22 @@
 space: radio
 imports: ['../typography.yaml']
 base:
-  border: 2px solid $color.primary.seattle.c30
+  border: $border.width.m solid $color.primary.seattle.c30
   cursor: pointer
   background-color: $color.primary.brand.white
 
 size:
   s:
-    height: $layout.icon.xs
-    width: $layout.icon.xs
+    height: $layout.size.s4
+    width: $layout.size.s4
     border-radius: $border.radius.m
   m:
-    height: $layout.icon.s
-    width: $layout.icon.s
+    height: $layout.size.s5
+    width: $layout.size.s5
     border-radius: $border.radius.l
   l:
-    height: $layout.icon.m
-    width: $layout.icon.m
+    height: $layout.size.s6
+    width: $layout.size.s6
     border-radius: $border.radius.xl
 
 hover:
@@ -42,7 +42,7 @@ label:
   base:
     ref: $typography.text.base
     color: $color.primary.brand.onPrimary
-    margin-left: $layout.whitespace.xs
+    margin-left: $layout.size.s2
     cursor: pointer
 
   size:

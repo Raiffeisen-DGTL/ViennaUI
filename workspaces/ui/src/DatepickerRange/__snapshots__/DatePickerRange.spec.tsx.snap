@@ -1,2052 +1,406 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatepickerRange /w complete startDate 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 22.02.1988
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange_1"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value="22.02.1988"
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange /w date not in range 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 01.06.2000 - 14.06.2000
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange_4"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value="01.06.2000 - 14.06.2000"
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange /w invalid 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-  border-color: #EE505A;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 ДД.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="true"
-              class="c8"
-              data-marker="DatepickerRange_5"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value=""
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange /w not complete 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 11.12.1900 - 22.02.1988
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange_3"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value="11.12.1900 - 22.02.1988"
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange /w not complete endDate 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 22.02.1988 - 22.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange_2"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value="22.02.1988 - 22"
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange /w not complete startDate 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 22.02.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange_0"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value="22.02"
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
 exports[`DatepickerRange 1`] = `
-.c7 {
-  font-size: 14px;
-  line-height: 22px;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-  top: 12px;
-  line-height: normal;
-  overflow: hidden;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: normal;
-}
-
-.c8 {
-  position: relative;
-  padding: 0;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: transparent;
-  color: #2B2D33;
-  border: none;
-  outline: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c8::-webkit-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-moz-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8:-ms-input-placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::placeholder {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  width: 100%;
-  color: #AAABAD;
-  line-height: auto;
-}
-
-.c8::-ms-clear,
-.c8::-ms-reveal {
-  display: none;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #AAABAD;
-  margin: 0 8px;
-  font-size: 14px;
-  margin-right: 0;
-}
-
-.c4 {
-  width: 100%;
-  color: #2B2D33;
-}
-
-.c4 > *,
-.c4 input {
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  background-color: #FFFFFF;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  border-radius: 8px;
-  width: 100%;
-  color: #2B2D33;
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 40px;
-  border: 1px solid #D5D5D6;
-}
-
-.c3:hover {
-  border-color: #2B2D33;
-  box-shadow: inset 0px 0px 0px 1px #2B2D33;
-}
-
-.c6 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  min-width: 228px;
-}
-
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 {
-  position: relative;
-}
-
 <div
-  class="c0"
-  data-marker="DatepickerRange.Box"
+  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
 >
   <div
-    class="c1"
-    data-marker="DatepickerRange.InputBox"
+    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
   >
     <div
-      class="c2"
-      data-marker="InputDateRange.Box"
+      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
     >
-      <div
-        class="c3"
-        data-marker="Input.InputWrapper"
+      <label
+        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
       >
         <div
-          class="c4"
-          data-marker="InputWrapper.Wrapped"
+          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
         >
           <div
-            class="c5"
-            data-marker="NativeInput.Box"
+            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
           >
             <div
-              class="c6"
-              data-marker="NativeInput.PlaceholderWrapper"
+              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
             >
               <div
-                class="c7"
-                data-marker="NativeInput.Placeholder"
+                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
               >
                 ДД.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="c8"
-              data-marker="DatepickerRange"
+              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              value=""
             />
           </div>
         </div>
         <div
-          class="c9"
-          data-marker="InputWrapper.Postfix"
+          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
         >
           <svg
-            data-marker="DatepickerRange.CalendarIcon"
+            cursor="pointer"
             fill="currentColor"
             height="20"
             viewBox="0 0 24 24"
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <defs
-              data-marker="Calendar.defs"
-            />
+            <defs />
             <path
-              d="M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z"
-              data-marker="Calendar.path"
+              d="M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z"
             />
           </svg>
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>

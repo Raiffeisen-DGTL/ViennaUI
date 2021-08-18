@@ -23,15 +23,15 @@ icon:
       # IE схлопывает в 0 элементы без заданых размеров поэтому здесь и далее вместо того чтобы указать margin-left или margin-right (или padding)
       # делаем аналогичную установку с учотом размер иконки + 2 отступа, так как размеры иконок и отступов совпадает то просто домножим их на 3
       # как бонус избавляемся от паразитного сжатия размеров при изменении ширины экрана
-      width: calc($layout.whitespace.s *3)
-      min-width: calc($layout.whitespace.s *3)
+      width: calc($layout.size.s3 *3)
+      min-width: calc($layout.size.s3 *3)
     m:
-      width: calc($layout.whitespace.m *3)
-      min-width: calc($layout.whitespace.m *3)
+      width: calc($layout.size.s4 *3)
+      min-width: calc($layout.size.s4 *3)
     l:
-      width: calc($layout.whitespace.m *3)
-      min-width: calc($layout.whitespace.m *3)
+      width: calc($layout.size.s4 *3)
+      min-width: calc($layout.size.s4 *3)
 
 backIcon:
   base:
-    margin-right: $layout.whitespace.xs
+    margin-right: $layout.size.s2

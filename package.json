@@ -15,7 +15,7 @@
   ],
   "typings": "typings/index.d.ts",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist --ignore-scripts",
+    "bootstrap": "lerna bootstrap --hoist --ci --ignore-scripts",
     "clean": "lerna clean --yes",
     "superapp": "lerna run watch --parallel --stream",
     "build": "lerna run build --stream",
@@ -27,7 +27,7 @@
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "devDependencies": {
-    "@babel/cli": "7.8.4",
+    "@babel/cli": "^7.14.8",
     "@babel/core": "7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "7.9.5",
@@ -36,9 +36,10 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@commitlint/config-lerna-scopes": "8.3.4",
-    "vienna.config-eslint": "file:workspaces/config-eslint",
-    "vienna.config-typescript": "file:workspaces/config-typescript",
-    "vienna-ui": "file:workspaces/ui",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/react-hooks": "^6.0.0",
+    "@testing-library/user-event": "13.1.5",
     "@types/enzyme": "3.10.5",
     "@types/jest": "25.2.1",
     "@types/node": "13.13.0",
@@ -62,15 +63,18 @@
     "husky": "4.2.5",
     "jest": "25.3.0",
     "jest-bamboo-formatter": "1.0.1",
-    "jest-styled-components": "6.3.4",
+    "jest-styled-components": "7.0.3",
     "lerna": "3.20.2",
     "lint-staged": "10.1.5",
     "prettier": "2.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-components": "4.4.1",
+    "styled-components": "5.2.1",
     "tsc-files": "^1.0.0",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "vienna-ui": "file:workspaces/ui",
+    "vienna.config-eslint": "file:workspaces/config-eslint",
+    "vienna.config-typescript": "file:workspaces/config-typescript"
   },
   "optionalDependencies": {
     "fsevents": "*"

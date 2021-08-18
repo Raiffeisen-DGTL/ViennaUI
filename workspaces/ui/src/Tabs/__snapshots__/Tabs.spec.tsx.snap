@@ -60,7 +60,7 @@ Array [
   >
     Еще... 
     <Tabsstyles__Arrow>
-      <Down
+      <SelectOpenDown
         color="currentColor"
         size="m"
       />
@@ -129,7 +129,7 @@ Array [
   >
     Еще... 
     <Tabsstyles__Arrow>
-      <Down
+      <SelectOpenDown
         color="currentColor"
         size="m"
       />

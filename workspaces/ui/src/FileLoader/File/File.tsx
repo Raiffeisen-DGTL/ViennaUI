@@ -3,6 +3,8 @@ import { Close } from 'vienna.icons';
 import { Box, Icon, Main, Data, Name, CloseIcon, Info, Progress, Img } from './File.styles';
 import { Progressbar } from '../../Progressbar';
 import { getFileExtension, formatDate, formatBytes } from '../../Utils';
+import { useLocalization } from '../../Localization';
+import { FileLoaderLocalizationProps, defaultFileLoaderLocalization } from '../localization';
 
 export interface FCCFile extends Partial<File> {
     id?: string;
@@ -14,7 +16,7 @@ export interface FCCFile extends Partial<File> {
     loading?: boolean;
 }
 
-export interface Props {
+export interface Props extends FileLoaderLocalizationProps {
     /** Файл */
     file: FCCFile;
     altText?: string;
@@ -56,6 +58,8 @@ export const File: React.FC<Props> = (props: Props) => {
         altText,
         extension,
     } = props;
+
+    const localization = useLocalization(props, defaultFileLoaderLocalization);
 
     const [toggle, setToggle] = useState(false);
 
@@ -118,7 +122,7 @@ export const File: React.FC<Props> = (props: Props) => {
                         {file.name}
                     </Name>
                     <Data invalid={invalid}>
-                        {loading && `Загружено ${progress}%`}
+                        {loading && `${localization('ds.fileLoader.file.loading')} ${progress}%`}
                         {!loading && (children || constructAddtitionalInform())}
                     </Data>
                 </Info>

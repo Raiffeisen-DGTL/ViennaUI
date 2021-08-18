@@ -1,7 +1,6 @@
 # Calendar
 
-For displaying data of `Date` type. Uses in `Datepicker`, `DatepickerRange` and `DateTimePicker`  components.
-
+For displaying data of `Date` type. Uses in `Datepicker`, `DatepickerRange` and `DateTimePicker` components.
 
 ## Import
 
@@ -10,23 +9,24 @@ import { Calendar } from 'vienna-ui';
 ```
 
 ## Props
-Prop | Type | Default | Description
---- | --- | --- | ---
-date | DateValue \| Date \| undefined | false | Selected/active date
-format | Format \| undefined | false |
-onChange | ((event: Event \| FormEvent \| null, options: DateResponse \| DateResponse) => void) \| undefined | false |
-defaultViewMode | ViewMode \| undefined | false | Default type of calendar screen
-disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Disabled dates
-weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Weekend dates
-eventDates | Date[] \| eventDateFunction \| undefined | false | Event Dates
-ranged | boolean \| undefined | false | Controls selecting of dates period
-dateStart | DateValue \| Date \| undefined | false | Starting date of dates period
-dateEnd | DateValue \| Date \| undefined | false | Ending date of dates period
-todayButton | boolean \| undefined | false | Controls showing of 'Today' button
-minDate | DateValue \| Date \| undefined | false | Lower bound for selecting date
-maxDate | DateValue \| Date \| undefined | false | Upper bound for selecting date
-mode | "day" \| "month" \| undefined | false | Calendar type - day or month selecting
-onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; value: string; }) => void) \| undefined | false | Handler for mode = ‘month’
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| date | DateValue \| Date \| undefined | false | Selected/active date |
+| format | Format \| undefined | false |
+| onChange | ((event: Event \| FormEvent \| null, options: DateResponse \| DateResponse) => void) \| undefined | false |
+| defaultViewMode | ViewMode \| undefined | false | Default type of calendar screen |
+| disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Disabled dates |
+| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined | false | Weekend dates |
+| eventDates | Date[] \| eventDateFunction \| undefined | false | Event Dates |
+| ranged | boolean \| undefined | false | Controls selecting of dates period |
+| dateStart | DateValue \| Date \| undefined | false | Starting date of dates period |
+| dateEnd | DateValue \| Date \| undefined | false | Ending date of dates period |
+| todayButton | boolean \| undefined | false | Controls showing of 'Today' button |
+| minDate | DateValue \| Date \| undefined | false | Lower bound for selecting date |
+| maxDate | DateValue \| Date \| undefined | false | Upper bound for selecting date |
+| mode | "day" \| "month" \| undefined | false | Calendar type - day or month selecting |
+| onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; value: string; }) => void) \| undefined | false | Handler for mode = ‘month’ |
 
 ## Usage
 
@@ -201,11 +201,46 @@ onChangeMonth | ((event: Event \| FormEvent \| null, options: { date: Date; valu
 ## Выбор только месяца и года
 
 ```jsx
+{
+    () => {
+        const [date, setDate] = React.useState();
+        const handleChangeMonth = React.useCallback((e, { date, value }) => {
+            setDate(date);
+        }, []);
+        return <Calendar date={date} mode='month' onChangeMonth={handleChangeMonth} />;
+    };
+}
+```
+
+## Локализация
+
+Для того чтобы локализовать календарь, необходимо передать в `locale` значение из `date-fns/locale`, передать в `localization` обьект локализации
+
+```
 {() => {
-    const [date, setDate] = React.useState();
-    const handleChangeMonth = React.useCallback((e, { date, value }) => {
-        setDate(date);
-    }, []);
-    return <Calendar date={date} mode='month' onChangeMonth={handleChangeMonth} />;
+    /* import { enGB } from 'date-fns/locale'; */
+    const calendarLocalization = {
+        'ds.calendar.body.today': 'Today',
+        'ds.calendar.day.monday': 'MO',
+        'ds.calendar.day.tuesday': 'TU',
+        'ds.calendar.day.wednesday': 'WE',
+        'ds.calendar.day.thursday': 'TH',
+        'ds.calendar.day.friday': 'FR',
+        'ds.calendar.day.saturday': 'SA',
+        'ds.calendar.day.sunday': 'SU',
+        'ds.calendar.month.january': 'Jan.',
+        'ds.calendar.month.february': 'Feb.',
+        'ds.calendar.month.march': 'Mar.',
+        'ds.calendar.month.april': 'Apr.',
+        'ds.calendar.month.may': 'May',
+        'ds.calendar.month.june': 'Jun.',
+        'ds.calendar.month.july': 'Jul',
+        'ds.calendar.month.august': 'Aug.',
+        'ds.calendar.month.september': 'Sep.',
+        'ds.calendar.month.october': 'Oct.',
+        'ds.calendar.month.november': 'Nov.',
+        'ds.calendar.month.december': 'Dec.',
+    };
+    return <Calendar date={new Date(2020, 1, 1)} format='date' locale={enGB} localization={calendarLocalization} />;
 }}
 ```

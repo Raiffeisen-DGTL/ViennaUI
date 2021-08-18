@@ -1,0 +1,1188 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex shots w/ alignContent 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fsTOQf"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gNWiiI"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 knvmta"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 4`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dxRIPa"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 5`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hnTMxX"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 6`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 cDtnAB"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 7`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 krseBC"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignContent 8`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 WZWzy"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 bkiEnN"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 iPFxpb"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 caTgfI"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 4`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hhaXLT"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 5`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dcGXhx"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 6`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 bpaEro"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 7`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dMuEDj"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 8`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 LVCnt"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 9`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dVvydT"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 10`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 leDrME"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ alignItems 11`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 YAkIB"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ center 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fanccl"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ direction 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hSPiet"
+  direction="column"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ direction 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 kCQskg"
+  direction="column-reverse"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ direction 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ direction 4`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 jTVUlw"
+  direction="row-reverse"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gwgJnG"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hQPngW"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 iaOtYl"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 4`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 kqcgp"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 5`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dmmDbE"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 6`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gLjUIE"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 7`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 vOLek"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 8`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fBoldv"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 9`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 jalCKv"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 10`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 GrPMC"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 11`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 eseqia"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 12`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 jfpHoe"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 13`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hUtPDZ"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 14`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 qKGAB"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 15`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dfRYHs"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ gap 16`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gREzcQ"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ inline 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 ctyvaR"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ item 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  direction="row"
+>
+  <div
+    class="Item-sc-22uhr0-0 gzuenM"
+    order="2"
+  >
+    1
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 ezzRfL"
+    order="3"
+  >
+    2
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 ijXOtp"
+    order="4"
+  >
+    3
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 cQPaHw"
+    order="1"
+  >
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dOEtLZ"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gTdieH"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fUNocc"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 4`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 boWzCn"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 5`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gdjUgh"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 6`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 YMdYw"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 7`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 gveVfn"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 8`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 PvNAF"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 9`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fdxwDA"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 10`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 kyiQJu"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ justifyContent 11`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 jgMbsW"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ whitespcae 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 dnydci"
+  direction="row"
+>
+  <div
+    class="Item-sc-22uhr0-0 jkkvxk"
+    order="2"
+  >
+    1
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 jnqfnL"
+    order="3"
+  >
+    2
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 djPysi"
+    order="4"
+  >
+    3
+  </div>
+  <div
+    class="Item-sc-22uhr0-0 ewHKxK"
+    order="1"
+  >
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ wrap 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 fhLTnq"
+  direction="row"
+  wrap="wrap"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ wrap 2`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 iiepJz"
+  direction="row"
+  wrap="nowrap"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/ wrap 3`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 hOUyUr"
+  direction="row"
+  wrap="wrap-reverse"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;
+
+exports[`Flex shots w/o arguments 1`] = `
+<div
+  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  direction="row"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+</div>
+`;

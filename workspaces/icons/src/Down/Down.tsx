@@ -14,7 +14,7 @@ export const Down: React.FC<DownProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M21 7h-1.414L12 14.586 4.414 7H3v1.414l9 9 9-9z' />
+            <path d='M13 2h-2v16.485l-5.551-5.832L4 14.03l7.289 7.658a1 1 0 001.447.001l7.305-7.658-1.447-1.38L13 18.516V2z' />
         </svg>
     );
 };

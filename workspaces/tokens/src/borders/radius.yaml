@@ -1,19 +1,6 @@
 space: border
-desc: 'Выбирая радиус скругления, мы руководствуемся простым принципом, чем больше элемент, тем больше радиус скругления. Мы используем 4 базовых правила для скругления: 4, 8, 12, 16, 32.'
 radius:
-  s:
-    value: 4px
-    prop: border-radius
-    desc: 'например: чекбоксы'
-  m:
-    value: 8px
-    prop: border-radius
-    desc: 'кнопки, алерты и т.д.'
-  l:
-    value: 12px
-    prop: border-radius
-    desc: 'модалки. плашки, карточки'
-  xl:
-    value: 16px
-    prop: border-radius
-    desc: 'модалки. плашки, карточки'
+  s: 4
+  m: 8
+  l: 12
+  xl: 16

@@ -1,7 +1,7 @@
 {
   "name": "vienna.utils",
   "description": "Raiffeisenbank Design System Utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "keywords": [

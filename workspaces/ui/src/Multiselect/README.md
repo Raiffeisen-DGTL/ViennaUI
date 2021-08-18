@@ -24,6 +24,7 @@
 | fitOptions | boolean \| undefined | false | Если установлено то выравнивает содержимое списка по ширине компонента (по умолчанию true) |
 | valueToString | ((item: any) => string) \| undefined | false | Определяем значение которое надо вывести в селекте как текст выбранного значения |
 | compare | ((item: any) => any) \| undefined | false | Определяем как сравнивать переданый в value объект и содержимое списка для подсветки выбраного элемента |
+| localization | [MultiselectLocalization](../Multiselect/localization.ts) | multiselectLocalizationMap | Локализация |
 
 ## Option Props
 

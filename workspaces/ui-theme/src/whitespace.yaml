@@ -1,0 +1,19 @@
+space: whitespace
+# this will be reused in multiple component that requries standard sizess
+size:
+  s1: $layout.size.s1
+  s2: $layout.size.s2
+  s3: $layout.size.s3
+  s4: $layout.size.s4
+  s5: $layout.size.s5
+  s6: $layout.size.s6
+  s7: $layout.size.s7
+  s8: $layout.size.s8
+  s9: $layout.size.s9
+  s10: $layout.size.s10
+  s11: $layout.size.s11
+  s12: $layout.size.s12
+  s13: $layout.size.s13
+  s14: $layout.size.s14
+  s15: $layout.size.s15
+  s16: $layout.size.s16

@@ -6,8 +6,8 @@ base:
   text-align: center
   color: $color.primary.brand.white
   padding: 0 6px
-  min-width: $layout.icon.s
-  height: $layout.icon.s
+  min-width: $layout.size.s5
+  height: $layout.size.s5
   border-radius: $border.radius.xl
 
 design:
@@ -23,4 +23,4 @@ design:
     background-color: $color.primary.brand.primary
   disabled:
     background-color: $color.primary.seattle.c30
-    color: $color.text.primary
+    color: $color.primary.brand.primary

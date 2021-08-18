@@ -1,1 +1,1 @@
-export * from './ShieldCheck';
+export * from './Shieldcheck';

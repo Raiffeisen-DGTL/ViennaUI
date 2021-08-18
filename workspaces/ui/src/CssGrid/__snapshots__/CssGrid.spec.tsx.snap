@@ -1,0 +1,1765 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CssGrid shots CSSGrid w/ whitespace 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 gWximE"
+  height="100%"
+>
+  <div
+    class="Item-sc-12lovni-0 zymlG"
+  >
+    header
+  </div>
+  <div
+    class="Item-sc-12lovni-0 fxMlrM"
+  >
+    sidebar
+  </div>
+  <div
+    class="Item-sc-12lovni-0 cYiwPg"
+    width="300px"
+  >
+    content
+  </div>
+  <div
+    class="Item-sc-12lovni-0 jkWjZ"
+  >
+    toolbar
+  </div>
+  <div
+    class="Item-sc-12lovni-0 bcjueE"
+  >
+    footer
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots base 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ Item & templateAreas 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 dqYYeC"
+  height="450px"
+>
+  <div
+    class="Item-sc-12lovni-0 iKbnzl"
+  >
+    1
+  </div>
+  <div
+    class="Item-sc-12lovni-0 iNDTph"
+    height="100px"
+  >
+    2
+  </div>
+  <div
+    class="Item-sc-12lovni-0 euvBko"
+    width="300px"
+  >
+    3
+  </div>
+  <div
+    class="Item-sc-12lovni-0 fQSObV"
+  >
+    4
+  </div>
+  <div
+    class="Item-sc-12lovni-0 igrqKQ"
+  >
+    5
+  </div>
+  <div
+    class="Item-sc-12lovni-0 bZNrzs"
+  >
+    6
+  </div>
+  <div
+    class="Item-sc-12lovni-0 leYxAm"
+  >
+    7
+  </div>
+  <div
+    class="Item-sc-12lovni-0 fGIqVz"
+  >
+    8
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ Item 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bfzjyb"
+  height="100%"
+>
+  <div
+    class="Item-sc-12lovni-0 ldIVmW"
+  >
+    header
+  </div>
+  <div
+    class="Item-sc-12lovni-0 dociiQ"
+  >
+    sidebar
+  </div>
+  <div
+    class="Item-sc-12lovni-0 cYiwPg"
+    width="300px"
+  >
+    content
+  </div>
+  <div
+    class="Item-sc-12lovni-0 hGzkku"
+  >
+    toolbar
+  </div>
+  <div
+    class="Item-sc-12lovni-0 hVtbvG"
+  >
+    footer
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bmoAko"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 cpAxMX"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 gCapVH"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 eDSLoX"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 5`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 iVOfeC"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 6`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bEpzon"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignContent 7`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hsDxoQ"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignItems 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 jTWmXf"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignItems 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 kiCAvs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignItems 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 fGpjro"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ alignItems 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 ePBlmw"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ autoFlow 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ autoFlow 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ autoFlow 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ autoFlow 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ dimensions 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hfBKJg"
+  height="100px"
+  width="500px"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hLcBob"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 dOOJWv"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 boHEMM"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 flDIcY"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 5`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 dEYRsh"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 6`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hBUUIt"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 7`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 dqVFkF"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 8`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 dNKQrO"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 9`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hKGTIa"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 10`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bSHYOz"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 11`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 uAGXP"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 12`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bEEMGX"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 13`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hdHsEc"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 14`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 fFAaNs"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 15`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 jtYFjx"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ gap 16`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 hVRnsN"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ inline 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 klFMVU"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 iKOTzr"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 klZAIY"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 djQpY"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 gXEBOQ"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 5`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 fwogRd"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 6`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bfXTqg"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyContent 7`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 eXnCHD"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyItems 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 jgFAks"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyItems 2`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 fkpHqf"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyItems 3`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bKWsVL"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ justifyItems 4`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 doHmXH"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ placeContent 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 bmAJPO"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;
+
+exports[`CssGrid shots w/ placeItems 1`] = `
+<div
+  class="CssGridstyles__Box-sc-10ytnh-0 blOvUJ"
+  height="100%"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+  <div>
+    4
+  </div>
+  <div>
+    5
+  </div>
+  <div>
+    6
+  </div>
+  <div>
+    7
+  </div>
+  <div>
+    8
+  </div>
+  <div>
+    9
+  </div>
+</div>
+`;

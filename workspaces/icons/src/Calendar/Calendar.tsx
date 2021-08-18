@@ -14,7 +14,7 @@ export const Calendar: React.FC<CalendarProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M19.016 4A1.984 1.984 0 0121 5.984v14.032A1.984 1.984 0 0119.016 22H4.984A1.984 1.984 0 013 20.016V5.984C3 4.888 3.888 4 4.984 4H7V2h2v5H7V6H4.988v3H19V6h-1V4h1.016zM5 20.016L19.016 20l-.011-9H4.99L5 20.016zM15 7V6h-5V4h5V2h2v5h-2z' />
+            <path d='M10 3v2h4V3h2v2h4a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h4V3h2zm8.999 10h-14L5 19h14l-.001-6zM16 15a1 1 0 110 2 1 1 0 010-2zM8 7H5l-.001 4h14L19 7h-3v2h-2V7h-4v2H8V7z' />
         </svg>
     );
 };

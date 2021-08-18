@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clip } from 'vienna.icons';
+import { Attach } from 'vienna.icons';
 import Badge, { BadgeProps } from './Badge';
 
 test('Badge', () => {
@@ -44,7 +44,7 @@ test('Badge w/ color and icon', () => {
     colors.forEach((color) => {
         const snap = snapshot.render(
             <Badge color={color}>
-                <Clip size='s' /> Badge text
+                <Attach size='s' /> Badge text
             </Badge>
         );
 

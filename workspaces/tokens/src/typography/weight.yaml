@@ -1,29 +1,11 @@
 space: typography
 weight:
-  thin:
-    value: 100
-    prop: font-weight
-  extra-light:
-    value: 200
-    prop: font-weight
-  light:
-    value: 300
-    prop: font-weight
-  normal:
-    value: 400
-    prop: font-weight
-  medium:
-    value: 500
-    prop: font-weight
-  semi-bold:
-    value: 600
-    prop: font-weight
-  bold:
-    value: 700
-    prop: font-weight
-  extra-bold:
-    value: 800
-    prop: font-weight
-  black:
-    value: 900
-    prop: font-weight
+  thin: '100'
+  extra-light: '200'
+  light: '300'
+  normal: '400'
+  medium: '500'
+  semi-bold: '600'
+  bold: '700'
+  extra-bold: '800'
+  black: '900'

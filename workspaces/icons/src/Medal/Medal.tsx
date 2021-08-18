@@ -14,7 +14,12 @@ export const Medal: React.FC<MedalProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M12 9.8a5.2 5.2 0 100 10.4 5.2 5.2 0 000-10.4zM12 8a7 7 0 110 14 7 7 0 010-14zm2-6h2.625L13.12 7h-2.359L7.407 2h2.577L12 5l2-3zm-1 14h1v2h-4v-2h1v-2h-1v-2h3v4z' />
+            <path d='M12 10h-2v2h1v4h-1v2h4v-2h-1v-5a1 1 0 00-1-1z' />
+            <path
+                fillRule='evenodd'
+                d='M7.293 2.707l3.4 3.4a8 8 0 102.616 0l3.398-3.4-1.414-1.414L12 4.586 8.707 1.293 7.293 2.707zM12 8a6 6 0 100 12 6 6 0 000-12z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

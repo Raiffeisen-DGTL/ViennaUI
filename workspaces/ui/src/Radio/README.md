@@ -2,7 +2,6 @@
 
 Компонент выбора одного из множества значений
 
-
 ## Импорт
 
 ```
@@ -11,23 +10,23 @@ import { Hint } from 'vienna-ui';
 
 ## Свойства / Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-children | ReactNode | false | Отображаемый лейбл
-ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки
-size | "s" \| "m" \| "l" \| undefined | false | Размеры
-value* | string | false | Значение компонента
-invalid | boolean \| undefined | false | Компонент отображается как ошибочный если true
-onBlur | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при потере фокуса компонентом
-onFocus | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при получении фокуса компонентом
-onChange | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при клике на компонент
-checked | boolean \| undefined | false | Статус выбранного значения
-name | string \| undefined | false | 
-disabled | boolean \| undefined | false |
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| children | ReactNode | false | Отображаемый лейбл |
+| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки |
+| size | "s" \| "m" \| "l" \| undefined | false | Размеры |
+| value\* | string | false | Значение компонента |
+| invalid | boolean \| undefined | false | Компонент отображается как ошибочный если true |
+| onBlur | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при потере фокуса компонентом |
+| onFocus | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при получении фокуса компонентом |
+| onChange | RadioEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при клике на компонент |
+| checked | boolean \| undefined | false | Статус выбранного значения |
+| name | string \| undefined | false |
+| disabled | boolean \| undefined | false |
+
 ## Использование
 
-> Компонент является контролируемым, то есть чтобы отобразить выбранные элементы,
-> необходимо получить их значение через обработчик `onChange` и прокинуть проверку в `checked`.
+> Компонент является контролируемым, то есть чтобы отобразить выбранные элементы, необходимо получить их значение через обработчик `onChange` и прокинуть проверку в `checked`.
 
 ```{() => {
     const [state, setState] = React.useState({ value: '2' });
@@ -67,6 +66,7 @@ disabled | boolean \| undefined | false |
 ```
 
 ## Выбранный элемент
+
 ##### Свойство `checked`
 
 ```
@@ -76,11 +76,13 @@ disabled | boolean \| undefined | false |
 ```
 
 ## Размеры
+
 ##### Свойство `size`
 
 Компонент имеет стандартные размеры `s`, `m` (по умолчанию) и `l`.
 
 ## Состояния
+
 ##### Свойство `disabled`, `invalid`
 
 Компонент имеет состояние `disabled` и `invalid`
@@ -101,6 +103,7 @@ disabled | boolean \| undefined | false |
 ```
 
 ## Значение
+
 ##### Свойство `value`
 
 Значение, которое передается в компонент и потом возвращается `onChange`.

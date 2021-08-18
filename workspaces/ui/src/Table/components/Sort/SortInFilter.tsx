@@ -1,5 +1,5 @@
 import React from 'react';
-import { Groups, Button } from 'vienna.ui';
+import { Groups, Button } from '../../../index';
 import { Up, Down } from 'vienna.icons';
 import { useTableService, useTableLocalization } from '../Context/TableContext';
 import { SortDirection } from '../../types';

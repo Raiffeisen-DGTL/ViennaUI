@@ -3,15 +3,15 @@ imports: ['../typography.yaml']
 
 head:
   base:
-    padding-top: $layout.whitespace.xxl
-    padding-right: $layout.whitespace.xxl
-    padding-left: $layout.whitespace.xxl
+    padding-top: $layout.size.s8
+    padding-right: $layout.size.s8
+    padding-left: $layout.size.s8
     box-sizing: border-box
 
 title:
   base:
     ref: $typography.heading.base
-    margin-bottom: $layout.whitespace.s
+    margin-bottom: $layout.size.s3
     color: $color.primary.brand.primary
     font-size: $typography.a.a1.size
     line-height: $typography.a.a1.height
@@ -20,32 +20,32 @@ subtitle:
   base:
     ref: $typography.text.base
     color: $color.primary.seattle.c100
-    margin-bottom: $layout.whitespace.xl
+    margin-bottom: $layout.size.s6
     font-size: $typography.b.b3.size
     line-height: $typography.b.b3.height
 
 body:
   base:
     ref: $typography.text.base
-    margin-bottom: $layout.whitespace.xxl
-    padding-right: $layout.whitespace.xxl
-    padding-left: $layout.whitespace.xxl
+    margin-bottom: $layout.size.s8
+    padding-right: $layout.size.s8
+    padding-left: $layout.size.s8
     color: $color.primary.seattle.c100
     font-size: $typography.b.b3.size
     line-height: $typography.b.b3.height
 
 footer:
   base:
-    padding-right: $layout.whitespace.xxl
-    padding-left: $layout.whitespace.xxl
-    padding-bottom: $layout.whitespace.xxl
+    padding-right: $layout.size.s8
+    padding-left: $layout.size.s8
+    padding-bottom: $layout.size.s8
 
 gradientTop:
   base:
-    height: $layout.whitespace.xxl
-    background: linear-gradient(180deg, $color.primary.brand.white 0%, transparent 100%)
+    height: $layout.size.s8
+    background: linear-gradient(180deg, $color.primary.brand.white 0%, rgba(255,255,255,0) 100%)
 
 gradientBottom:
   base:
-    height: $layout.whitespace.xxl
-    background: linear-gradient(0deg, $color.primary.brand.white 0%, transparent 100%)
+    height: $layout.size.s8
+    background: linear-gradient(0deg, $color.primary.brand.white 0%, rgba(255,255,255,0) 100%)

@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useCallback, useMemo } from 'react';
-import { Text, Select, FormField } from 'vienna.ui';
+import { Text, Select, FormField } from '../../../index';
 import { Box } from './GroupingSettings.styles';
 import { useTableService, useTableLocalization } from '../Context';
 import { GroupByOption } from '../GroupBy/GroupByModule';

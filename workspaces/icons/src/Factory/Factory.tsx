@@ -14,7 +14,13 @@ export const Factory: React.FC<FactoryProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M10 13V8h5v5h6v7h1v2H2v-2h1v-7h1V8h5v5h1zm2 0h1v-3h-1v3zm-2 2H5v5h14v-5h-9zm-3-2v-3H6v3h1zm5-6.167A4.838 4.838 0 0116.833 2h2.12v.971L18 4h-1.167A2.836 2.836 0 0014 6.833V7h-2v-.167zm-6 0A4.838 4.838 0 0110.833 2h2.12v.971L12 4h-1.167A2.836 2.836 0 008 6.833V7H6v-.167zM13 16h2v2h-2v-2zm3 0h2v2h-2v-2z' />
+            <path d='M22 8H12V6h10v2zm-8 8h2v2h-2v-2zm-2 0h-2v2h2v-2z' />
+            <path
+                fillRule='evenodd'
+                d='M5 8a1 1 0 00-1 1v11H2v2h20v-2h-2v-7a1 1 0 00-1-1h-9V9a1 1 0 00-1-1H5zm3 4v-2H6v2h2zm-2 2v6h12v-6H6z'
+                clipRule='evenodd'
+            />
+            <path d='M10 4h11V2H10a4 4 0 00-4 4h2a2 2 0 012-2z' />
         </svg>
     );
 };

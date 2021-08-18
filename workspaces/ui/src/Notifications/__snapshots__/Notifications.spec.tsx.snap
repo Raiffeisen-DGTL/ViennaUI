@@ -2,18 +2,18 @@
 
 exports[`Custom notifications 1`] = `
 <div
-  class="Notificationsstyles__Box-sc-1qw1toe-0 KXnKS"
+  class="Notificationsstyles__Box-p5iec4-0 dRRBMK"
 >
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 fWkhoP"
+    class="Notificationstyles__Box-ua71du-1 VMrRP"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 ynraq"
+      class="Alertstyles__Box-sc-18uul3b-3 cdJabY"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -24,15 +24,20 @@ exports[`Custom notifications 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Custom notification
         </div>
@@ -47,18 +52,18 @@ exports[`Custom notifications 1`] = `
             style="margin-top:10px"
           >
             <button
-              class="Buttonstyles__Box-sc-1cce11-0 dmPIrF"
+              class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
               type="button"
             >
               <span
-                class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
               >
                 OK
               </span>
             </button>
           </div>
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -69,7 +74,7 @@ exports[`Custom notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -78,15 +83,15 @@ exports[`Custom notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 fWkhoP"
+    class="Notificationstyles__Box-ua71du-1 VMrRP"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 bxAarK"
+      class="Alertstyles__Box-sc-18uul3b-3 eWXDzp"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -97,15 +102,17 @@ exports[`Custom notifications 1`] = `
         >
           <defs />
           <path
-            d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+            clip-rule="evenodd"
+            d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Custom notification
         </div>
@@ -117,7 +124,7 @@ exports[`Custom notifications 1`] = `
           </b>
           This is a custom error notification
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 bFIgEw"
+            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
           >
             <svg
               fill="currentColor"
@@ -128,7 +135,7 @@ exports[`Custom notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -141,18 +148,18 @@ exports[`Custom notifications 1`] = `
 
 exports[`Notifications 1`] = `
 <div
-  class="Notificationsstyles__Box-sc-1qw1toe-0 eSYKVY"
+  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
 >
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -163,22 +170,27 @@ exports[`Notifications 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -189,7 +201,7 @@ exports[`Notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -198,15 +210,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 eYxjco"
+      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -217,22 +229,27 @@ exports[`Notifications 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -243,7 +260,7 @@ exports[`Notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -252,15 +269,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 ASBTC"
+      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -271,22 +288,27 @@ exports[`Notifications 1`] = `
         >
           <defs />
           <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+            d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 irPfRQ"
+            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
           >
             <svg
               fill="currentColor"
@@ -297,7 +319,7 @@ exports[`Notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -306,15 +328,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 jtxyKr"
+      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -325,22 +347,24 @@ exports[`Notifications 1`] = `
         >
           <defs />
           <path
-            d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+            clip-rule="evenodd"
+            d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 bFIgEw"
+            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
           >
             <svg
               fill="currentColor"
@@ -351,7 +375,7 @@ exports[`Notifications 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -364,18 +388,18 @@ exports[`Notifications 1`] = `
 
 exports[`Notifications w/ buttons 1`] = `
 <div
-  class="Notificationsstyles__Box-sc-1qw1toe-0 eSYKVY"
+  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
 >
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -386,22 +410,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -412,7 +441,7 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -421,15 +450,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 eYxjco"
+      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -440,22 +469,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -466,7 +500,7 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -475,15 +509,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 ASBTC"
+      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -494,22 +528,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+            d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 irPfRQ"
+            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
           >
             <svg
               fill="currentColor"
@@ -520,7 +559,7 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -529,15 +568,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 jtxyKr"
+      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -548,22 +587,24 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+            clip-rule="evenodd"
+            d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 bFIgEw"
+            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
           >
             <svg
               fill="currentColor"
@@ -574,7 +615,7 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -583,15 +624,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 fsEeey"
+    class="Notificationstyles__Box-ua71du-1 ckrXSd"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 dRgEym"
+      class="Alertstyles__Box-sc-18uul3b-3 klUbFw"
       id="notification_4"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -602,22 +643,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -628,7 +674,7 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -637,15 +683,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iQBspn"
+      class="Alertstyles__Box-sc-18uul3b-3 kSUESK"
       id="notification_5"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -656,22 +702,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -682,40 +733,40 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
         >
           <div
-            class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
           >
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 ifgnSM"
+                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 iIbIuH"
+                class="Buttonstyles__Box-qfvnbt-0 REMLL"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   Cancel
                 </span>
@@ -727,15 +778,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 eLyMDD"
+      class="Alertstyles__Box-sc-18uul3b-3 hCEiLY"
       id="notification_6"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -746,22 +797,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -772,40 +828,40 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
         >
           <div
-            class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
           >
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 ifgnSM"
+                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 iIbIuH"
+                class="Buttonstyles__Box-qfvnbt-0 REMLL"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   Cancel
                 </span>
@@ -817,15 +873,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 cVkWpT"
+      class="Alertstyles__Box-sc-18uul3b-3 bfSJOq"
       id="notification_7"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -836,22 +892,27 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+            d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 irPfRQ"
+            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
           >
             <svg
               fill="currentColor"
@@ -862,40 +923,40 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
         >
           <div
-            class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
           >
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 ifgnSM"
+                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 iIbIuH"
+                class="Buttonstyles__Box-qfvnbt-0 REMLL"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   Cancel
                 </span>
@@ -907,15 +968,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iwlkkl"
+      class="Alertstyles__Box-sc-18uul3b-3 fnKmCt"
       id="notification_8"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -926,22 +987,24 @@ exports[`Notifications w/ buttons 1`] = `
         >
           <defs />
           <path
-            d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+            clip-rule="evenodd"
+            d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 bFIgEw"
+            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
           >
             <svg
               fill="currentColor"
@@ -952,40 +1015,40 @@ exports[`Notifications w/ buttons 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
         >
           <div
-            class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
           >
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 ifgnSM"
+                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
             >
               <button
-                class="Buttonstyles__Box-sc-1cce11-0 iIbIuH"
+                class="Buttonstyles__Box-qfvnbt-0 REMLL"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
                 >
                   Cancel
                 </span>
@@ -1001,18 +1064,18 @@ exports[`Notifications w/ buttons 1`] = `
 
 exports[`Notifications w/ compact 1`] = `
 <div
-  class="Notificationsstyles__Box-sc-1qw1toe-0 eSYKVY"
+  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
 >
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1023,22 +1086,27 @@ exports[`Notifications w/ compact 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -1049,7 +1117,7 @@ exports[`Notifications w/ compact 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1058,15 +1126,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 eYxjco"
+      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1077,22 +1145,27 @@ exports[`Notifications w/ compact 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -1103,7 +1176,7 @@ exports[`Notifications w/ compact 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1112,15 +1185,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 ASBTC"
+      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1131,22 +1204,27 @@ exports[`Notifications w/ compact 1`] = `
         >
           <defs />
           <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+            d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 irPfRQ"
+            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
           >
             <svg
               fill="currentColor"
@@ -1157,7 +1235,7 @@ exports[`Notifications w/ compact 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1166,15 +1244,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 jtxyKr"
+      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1185,22 +1263,24 @@ exports[`Notifications w/ compact 1`] = `
         >
           <defs />
           <path
-            d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+            clip-rule="evenodd"
+            d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 bFIgEw"
+            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
           >
             <svg
               fill="currentColor"
@@ -1211,7 +1291,7 @@ exports[`Notifications w/ compact 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1220,15 +1300,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 fsEeey"
+    class="Notificationstyles__Box-ua71du-1 ckrXSd"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 dRgEym"
+      class="Alertstyles__Box-sc-18uul3b-3 klUbFw"
       id="notification_4"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1239,22 +1319,27 @@ exports[`Notifications w/ compact 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -1265,7 +1350,7 @@ exports[`Notifications w/ compact 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1278,18 +1363,18 @@ exports[`Notifications w/ compact 1`] = `
 
 exports[`Notifications w/ limit 1`] = `
 <div
-  class="Notificationsstyles__Box-sc-1qw1toe-0 eSYKVY"
+  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
 >
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1300,22 +1385,27 @@ exports[`Notifications w/ limit 1`] = `
         >
           <defs />
           <path
-            d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+            d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
           >
             <svg
               fill="currentColor"
@@ -1326,7 +1416,7 @@ exports[`Notifications w/ limit 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1335,15 +1425,15 @@ exports[`Notifications w/ limit 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 eYxjco"
+      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1354,22 +1444,27 @@ exports[`Notifications w/ limit 1`] = `
         >
           <defs />
           <path
-            d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+            d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 ekFZrE"
+            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
           >
             <svg
               fill="currentColor"
@@ -1380,7 +1475,7 @@ exports[`Notifications w/ limit 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1389,15 +1484,15 @@ exports[`Notifications w/ limit 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+    class="Notificationstyles__Box-ua71du-1 koinWy"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-175jrd3-3 ASBTC"
+      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
       >
         <svg
           fill="currentColor"
@@ -1408,22 +1503,27 @@ exports[`Notifications w/ limit 1`] = `
         >
           <defs />
           <path
-            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+            d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+            fill-rule="evenodd"
           />
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
       >
         <div
-          class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-sc-15a4ee-0 irPfRQ"
+            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
           >
             <svg
               fill="currentColor"
@@ -1434,7 +1534,7 @@ exports[`Notifications w/ limit 1`] = `
             >
               <defs />
               <path
-                d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
               />
             </svg>
           </span>
@@ -1448,18 +1548,18 @@ exports[`Notifications w/ limit 1`] = `
 exports[`Notifications w/ position 1`] = `
 Array [
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 iuUZtm"
+    class="Notificationsstyles__Box-p5iec4-0 kOGuzI"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1470,22 +1570,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1496,7 +1601,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>
@@ -1506,18 +1611,18 @@ Array [
     </div>
   </div>,
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 eSYKVY"
+    class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1528,22 +1633,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1554,7 +1664,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>
@@ -1564,18 +1674,18 @@ Array [
     </div>
   </div>,
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 jdEkEn"
+    class="Notificationsstyles__Box-p5iec4-0 ejmmyT"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1586,22 +1696,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1612,7 +1727,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>
@@ -1622,18 +1737,18 @@ Array [
     </div>
   </div>,
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 laeaGC"
+    class="Notificationsstyles__Box-p5iec4-0 jVvuOx"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1644,22 +1759,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1670,7 +1790,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>
@@ -1680,18 +1800,18 @@ Array [
     </div>
   </div>,
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 jWriyE"
+    class="Notificationsstyles__Box-p5iec4-0 faZDzu"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1702,22 +1822,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1728,7 +1853,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>
@@ -1738,18 +1863,18 @@ Array [
     </div>
   </div>,
   <div
-    class="Notificationsstyles__Box-sc-1qw1toe-0 KXnKS"
+    class="Notificationsstyles__Box-p5iec4-0 dRRBMK"
   >
     <div
-      class="Notificationstyles__Box-sc-15a4ee-1 eQnUuc"
+      class="Notificationstyles__Box-ua71du-1 koinWy"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-175jrd3-3 iLnELh"
+        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
         >
           <svg
             fill="currentColor"
@@ -1760,22 +1885,27 @@ Array [
           >
             <defs />
             <path
-              d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+              d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+            />
+            <path
+              clip-rule="evenodd"
+              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+              fill-rule="evenodd"
             />
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
         >
           <div
-            class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-sc-15a4ee-0 jmPtGm"
+              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
             >
               <svg
                 fill="currentColor"
@@ -1786,7 +1916,7 @@ Array [
               >
                 <defs />
                 <path
-                  d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
+                  d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
                 />
               </svg>
             </span>

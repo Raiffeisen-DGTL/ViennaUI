@@ -1,6 +1,6 @@
 import React, { useRef, useContext, useMemo } from 'react';
 import { ThemeContext } from 'styled-components';
-import { Groups, Popover } from 'vienna.ui';
+import { Groups, Popover } from '../../../index';
 import { ThemeProvider, getPresets } from 'vienna.ui-primitives';
 import { Filter as FilterIcon } from 'vienna.icons';
 import { SortInFilter, SortIcon } from '../Sort';

@@ -1,6 +1,6 @@
 space: sidebar
 base:
-  padding: $layout.whitespace.xxl 0
+  padding: $layout.size.s8 0
   box-shadow: $shadow.basic.xl
 
 design:
@@ -16,28 +16,28 @@ collapsed:
 
 collapser:
   base:
-    padding: 0 $layout.whitespace.xl
-    margin-bottom: $layout.whitespace.l
+    padding: 0 $layout.size.s6
+    margin-bottom: $layout.size.s5
   hover:
     color: $color.primary.oslo.c100
 
 header:
   base:
-    margin-bottom: $layout.whitespace.xxl
-    padding-right: $layout.whitespace.xs
+    margin-bottom: $layout.size.s8
+    padding-right: $layout.size.s2
 
   collapsed:
-    padding: 0 $layout.whitespace.l
+    padding: 0 $layout.size.s5
 
   size:
     s:
-      padding-left: $layout.whitespace.xl
+      padding-left: $layout.size.s6
 
     m:
-      padding-left: $layout.whitespace.xxl
+      padding-left: $layout.size.s8
 
     l:
-      padding-left: $layout.whitespace.xxxl
+      padding-left: $layout.size.s10
 
 menu:
   light:
@@ -55,47 +55,48 @@ menu:
     background-attachment: local, scroll
 
 footer:
-  margin-top: $layout.whitespace.xl
+  margin-top: $layout.size.s6
 
 item:
   base:
     font-size: $typography.b.b2.size
     line-height: $typography.b.b2.height
-    padding-right: $layout.whitespace.xs
+    padding-right: $layout.size.s2
 
   size:
     s:
-      height: $layout.size.l
-      padding-left: $layout.whitespace.xl
+      height: $layout.size.s10
+      padding-left: $layout.size.s6
 
     m:
-      height: $layout.size.xl
-      padding-left: $layout.whitespace.xxl
+      height: $layout.size.s12
+      padding-left: $layout.size.s8
 
     l:
-      height: $layout.size.xxl
-      padding-left: $layout.whitespace.xxxl
+      height: $layout.size.s13
+      padding-left: $layout.size.s10
 
   active:
-    box-shadow: inset 4px 0 0 0 $color.primary.brand.accent
+    box-shadow: inset 4px 0 0 0 $color.primary.brand.accent !important
     font-weight: $typography.weight.bold
 
   hover:
     light:
       background: $color.primary.seattle.c01
+      color: $color.primary.brand.primary
 
     dark:
       background: $color.primary.seattle.c140
+      color: $color.primary.brand.wildsand
 
   icon:
-    height: $layout.whitespace.xl
-    margin-right: $layout.whitespace.s
+    margin-right: $layout.size.s3
 
   disabled:
     light:
       pointer-events: none
       cursor: not-allowed
-      color: $color.text.quaternary
+      color: $color.primary.seattle.c30
 
     dark:
       pointer-events: none
@@ -104,15 +105,15 @@ item:
 
   notification:
     font-weight: normal
-    width: $layout.size.m
-    padding-left: $layout.whitespace.xxs
+    width: $layout.size.s9
+    padding-left: $layout.size.s1
 
   ripple:
     base:
       position: absolute
       border-radius: 50%
-      width: $layout.size.m
-      height: $layout.size.m
+      width: $layout.size.s9
+      height: $layout.size.s9
       opacity: 0
       transform: translate(-50%, -50%) scale(0.1)
       transition: initial
@@ -123,3 +124,28 @@ item:
 
       dark:
         background: $color.primary.seattle.c120
+
+submenu:
+  size:
+    s:
+      padding-left: $layout.size.s2
+    m:
+      padding-left: $layout.size.s4
+    l:
+      padding-left: $layout.size.s5
+
+  design:
+    light:
+      box-shadow: inset 1px 0 0 0 $color.primary.seattle.c10
+    dark:
+      box-shadow: inset 1px 0 0 0 $color.primary.seattle.c120
+
+  item:
+    padding-left: $layout.size.s1 !important
+
+  menu:
+    base:
+      margin-left: $layout.size.s6
+
+    item:
+      padding-left: $layout.size.s3 !important

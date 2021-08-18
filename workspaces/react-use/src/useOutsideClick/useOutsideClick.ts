@@ -29,13 +29,13 @@ export function useOutsideClick(
             };
 
             if (isEnabled) {
-                document.addEventListener('mousedown', listener);
-                document.addEventListener('touchstart', listener);
+                document.addEventListener('mousedown', listener, true);
+                document.addEventListener('touchstart', listener, true);
             }
 
             return () => {
-                document.removeEventListener('mousedown', listener);
-                document.removeEventListener('touchstart', listener);
+                document.removeEventListener('mousedown', listener, true);
+                document.removeEventListener('touchstart', listener, true);
             };
         },
         // Add ref and handler to effect dependencies

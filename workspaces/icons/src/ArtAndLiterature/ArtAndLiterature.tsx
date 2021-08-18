@@ -14,7 +14,11 @@ export const ArtAndLiterature: React.FC<ArtAndLiteratureProps> = (props): JSX.El
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M14.958 4A3.934 3.934 0 0012 5.355 3.933 3.933 0 009.042 4H2v13.959A2.041 2.041 0 004.042 20H10v-2H4V6h5.042C10.124 6 11 6.877 11 7.959V20h8.958A2.041 2.041 0 0022 17.959V4h-7.042zM20 18h-7V7.958A1.96 1.96 0 0114.958 6H20v12z' />
+            <path
+                fillRule='evenodd'
+                d='M2 5a1 1 0 011-1h5.764A4.62 4.62 0 0112 5.323 4.618 4.618 0 0115.236 4H21a1 1 0 011 1v13a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm9 2.256A2.618 2.618 0 008.764 6H4v12h7V7.256zM13 18h7V6h-4.764c-.918 0-1.764.48-2.236 1.256V18z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

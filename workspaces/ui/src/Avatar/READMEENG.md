@@ -2,7 +2,6 @@
 
 Component is for visual user identification. It's used in sort of components like Header or Card.
 
-
 ## Imports
 
 ```
@@ -11,12 +10,12 @@ import { Avatar } from 'vienna-ui';
 
 ## Props
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-children | ReactNode | false | If src is unavailable, children are showed
-size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | false | Available sizes
-align | "left" \| "center" \| "right" \| undefined | false | Horizontally component aligning 
-valign | "center" \| "top" \| "bottom" \| undefined | false | Vertically component aligning
+| Prop     | Type                                           | Default | Description                                |
+| -------- | ---------------------------------------------- | ------- | ------------------------------------------ |
+| children | ReactNode                                      | false   | If src is unavailable, children are showed |
+| size     | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | false   | Available sizes                            |
+| align    | "left" \| "center" \| "right" \| undefined     | false   | Horizontally component aligning            |
+| valign   | "center" \| "top" \| "bottom" \| undefined     | false   | Vertically component aligning              |
 
 ## Usage
 
@@ -40,5 +39,5 @@ import { RoundIcon } from 'vienna-ui';
     <RoundIcon size='xl' color='nice10'>
         B
     </RoundIcon>
-</Avatar>
+</Avatar>;
 ```

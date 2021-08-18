@@ -18,25 +18,25 @@ width:
   xs:
     width: 16px
   s:
-    width: $layout.size.xs
+    width: $layout.size.s6
   m:
-    width: $layout.size.s
+    width: $layout.size.s8
   l:
-    width: $layout.size.l
+    width: $layout.size.s10
   xl:
-    width: $layout.size.xl
+    width: $layout.size.s12
 
 height:
   xs:
     height: 16px
   s:
-    height: $layout.size.xs
+    height: $layout.size.s6
   m:
-    height: $layout.size.s
+    height: $layout.size.s8
   l:
-    height: $layout.size.l
+    height: $layout.size.s10
   xl:
-    height: $layout.size.xl
+    height: $layout.size.s12
 
 title:
   design:
@@ -50,7 +50,7 @@ title:
       fill: $color.primary.brand.white
 
   gap:
-    margin-left: $layout.whitespace.xs
+    margin-left: $layout.size.s2
 
   width:
     ru:

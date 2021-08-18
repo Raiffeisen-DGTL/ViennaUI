@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Select } from 'vienna.ui';
+import { Select } from '../../../index';
 import { useTableService } from '../Context';
 import { useFilterContext } from './FilterContext';
 

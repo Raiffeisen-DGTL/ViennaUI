@@ -2,10 +2,10 @@
 
 exports[`Alert 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -16,15 +16,20 @@ exports[`Alert 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -37,11 +42,11 @@ exports[`Alert 1`] = `
 
 exports[`Alert w/ any props 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 hulLdv className"
+  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl className"
   id="id"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -52,12 +57,17 @@ exports[`Alert w/ any props 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div>
       This is a test alert message.
@@ -68,10 +78,10 @@ exports[`Alert w/ any props 1`] = `
 
 exports[`Alert w/ buttons 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 glpvLL"
+  class="Alertstyles__Box-sc-18uul3b-3 fRKFNG"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -82,15 +92,20 @@ exports[`Alert w/ buttons 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -98,34 +113,34 @@ exports[`Alert w/ buttons 1`] = `
       &gt;This is a test alert message.
     </div>
     <div
-      class="Alertstyles__Actions-sc-175jrd3-4 dKaZOh"
+      class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
     >
       <div
-        class="Groupsstyles__Box-sc-4izty4-0 bdwRrP"
+        class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
       >
         <div
-          class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
         >
           <button
-            class="Buttonstyles__Box-sc-1cce11-0 cjHDso"
+            class="Buttonstyles__Box-qfvnbt-0 bAEoKT"
             type="button"
           >
             <span
-              class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+              class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
             >
               Complete
             </span>
           </button>
         </div>
         <div
-          class="Groupsstyles__Item-sc-4izty4-1 faEimb"
+          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
         >
           <button
-            class="Buttonstyles__Box-sc-1cce11-0 idLsVY"
+            class="Buttonstyles__Box-qfvnbt-0 hDikLl"
             type="button"
           >
             <span
-              class="Buttonstyles__ContentWrapper-sc-1cce11-1 bLMNXc"
+              class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
             >
               Cancel
             </span>
@@ -139,10 +154,10 @@ exports[`Alert w/ buttons 1`] = `
 
 exports[`Alert w/ compact 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 kcdTcI"
+  class="Alertstyles__Box-sc-18uul3b-3 dcAeWS"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -153,15 +168,20 @@ exports[`Alert w/ compact 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -174,10 +194,10 @@ exports[`Alert w/ compact 1`] = `
 
 exports[`Alert w/ design 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -188,15 +208,20 @@ exports[`Alert w/ design 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -209,10 +234,10 @@ exports[`Alert w/ design 1`] = `
 
 exports[`Alert w/ design 2`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 guMwAp"
+  class="Alertstyles__Box-sc-18uul3b-3 htZvst"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -223,15 +248,20 @@ exports[`Alert w/ design 2`] = `
     >
       <defs />
       <path
-        d="M10 19.414l12-12V6h-1.414L10 16.586 3.414 10H2v1.414z"
+        d="M11.707 15.207l5-5-1.414-1.414L11 13.086l-2.793-2.793-1.414 1.414 3.5 3.5a1 1 0 001.414 0z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM4 12a8 8 0 1116 0 8 8 0 01-16 0z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -244,10 +274,10 @@ exports[`Alert w/ design 2`] = `
 
 exports[`Alert w/ design 3`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 bFtnrV"
+  class="Alertstyles__Box-sc-18uul3b-3 hRBRsM"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -258,15 +288,20 @@ exports[`Alert w/ design 3`] = `
     >
       <defs />
       <path
-        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c-.006 5.52-4.48 9.994-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zm-1 11h2v2h-2v-2zm0-8h2v7h-2V7z"
+        d="M11 13V7h2v6h-2zm1 4a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -279,10 +314,10 @@ exports[`Alert w/ design 3`] = `
 
 exports[`Alert w/ design 4`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 eGmpde"
+  class="Alertstyles__Box-sc-18uul3b-3 fskUvJ"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -293,15 +328,17 @@ exports[`Alert w/ design 4`] = `
     >
       <defs />
       <path
-        d="M12.866 3.911l9 15.589L21 21H3l-.866-1.5 9-15.589h1.732zM4.732 19h14.536L12 6.411 4.732 19zM11 10h2v5h-2v-5zm0 6h2v2h-2v-2z"
+        clip-rule="evenodd"
+        d="M12.874 2.514a1 1 0 00-1.748 0l-10 18A1 1 0 002 22h20a1 1 0 00.874-1.486l-10-18zM12 5.06L20.3 20H3.7L12 5.06zM11 10v5h2v-5h-2zm1 8.75a1.25 1.25 0 110-2.5 1.25 1.25 0 010 2.5z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -314,10 +351,10 @@ exports[`Alert w/ design 4`] = `
 
 exports[`Alert w/ dynamic 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 jwDwtS"
+  class="Alertstyles__Box-sc-18uul3b-3 cuFPjJ"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -328,15 +365,20 @@ exports[`Alert w/ dynamic 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -349,13 +391,13 @@ exports[`Alert w/ dynamic 1`] = `
 
 exports[`Alert w/o icon 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
 >
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div
-      class="Alertstyles__Title-sc-175jrd3-1 kOuMrK"
+      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
     >
       Alert title
     </div>
@@ -368,10 +410,10 @@ exports[`Alert w/o icon 1`] = `
 
 exports[`Alert w/o title 1`] = `
 <div
-  class="Alertstyles__Box-sc-175jrd3-3 hulLdv"
+  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
 >
   <div
-    class="Alertstyles__IconContainer-sc-175jrd3-0 kbSKVS"
+    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
   >
     <svg
       fill="currentColor"
@@ -382,12 +424,17 @@ exports[`Alert w/o title 1`] = `
     >
       <defs />
       <path
-        d="M12 22.228c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10c-.007 5.52-4.48 9.993-10 10zm0-18a8 8 0 108 8 8.009 8.009 0 00-8-8zM11 6h2v2h-2V6zm2 9h2v2H9v-2h2v-4H9V9h4v6z"
+        d="M13.5 8.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-4 8.5v-2H11v-2h-1v-2h2a1 1 0 011 1v3h1.5v2h-5z"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z"
+        fill-rule="evenodd"
       />
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-175jrd3-2 jiRycd"
+    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
   >
     <div>
       This is a test alert message.

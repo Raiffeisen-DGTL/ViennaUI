@@ -32,17 +32,17 @@ line:
       oslo100:
         background-color: $color.primary.oslo.c100
       miami100:
-        background-color: $color.secondary.basic.miami.c100
+        background-color: $color.secondary.miami.c100
       sochi100:
-        background-color: $color.secondary.basic.sochi.c100
+        background-color: $color.secondary.sochi.c100
       paris100:
-        background-color: $color.secondary.basic.paris.c100
+        background-color: $color.secondary.paris.c100
       tokyo100:
-        background-color: $color.secondary.basic.tokyo.c100
+        background-color: $color.secondary.tokyo.c100
       dubai100:
-        background-color: $color.secondary.basic.dubai.c100
+        background-color: $color.secondary.dubai.c100
       nice100:
-        background-color: $color.secondary.basic.nice.c100
+        background-color: $color.secondary.nice.c100
 circle:
   size:
     s:
@@ -51,12 +51,12 @@ circle:
       cx: 34
       cy: 34
     m:
-      stroke-width: $layout.size.xxxs
+      stroke-width: $layout.size.s2
       r: 44
       cx: 48
       cy: 48
     l:
-      stroke-width: $layout.size.xxs
+      stroke-width: $layout.size.s3
       r: 64
       cx: 70
       cy: 70
@@ -97,17 +97,17 @@ circle:
       oslo100:
         stroke: $color.primary.oslo.c100
       miami100:
-        stroke: $color.secondary.basic.miami.c100
+        stroke: $color.secondary.miami.c100
       sochi100:
-        stroke: $color.secondary.basic.sochi.c100
+        stroke: $color.secondary.sochi.c100
       paris100:
-        stroke: $color.secondary.basic.paris.c100
+        stroke: $color.secondary.paris.c100
       tokyo100:
-        stroke: $color.secondary.basic.tokyo.c100
+        stroke: $color.secondary.tokyo.c100
       dubai100:
-        stroke: $color.secondary.basic.dubai.c100
+        stroke: $color.secondary.dubai.c100
       nice100:
-        stroke: $color.secondary.basic.nice.c100
+        stroke: $color.secondary.nice.c100
   content:
     size:
       s:

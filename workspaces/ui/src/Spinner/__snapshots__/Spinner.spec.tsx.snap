@@ -2,282 +2,202 @@
 
 exports[`Spinner 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ any props 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 exGfag className"
+  class="Spinnerstyles__Box-moemrn-0 jPiLVW className"
   id="Spinner"
   title="title"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ position: absolute 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 kziUJa"
+  class="Spinnerstyles__Box-moemrn-0 eAchHT"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ position: relative 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: l 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 cBngop"
+  class="Spinnerstyles__Box-moemrn-0 jDmrri"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 dDtinI"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 lhJvVO"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: m 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 exGfag"
+  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 bWNPUM"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: s 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 kgvjZa"
+  class="Spinnerstyles__Box-moemrn-0 eAFeS"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 dbzBgh"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 lbgYES"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: xl 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 kECwyS"
+  class="Spinnerstyles__Box-moemrn-0 gSyAmC"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 eleZpA"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 chftsm"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: xs 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 gFGfXs"
+  class="Spinnerstyles__Box-moemrn-0 qwZJG"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 krMjqW"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 cJuUPW"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;
 
 exports[`Spinner w/ size: xxl 1`] = `
 <div
-  class="Spinnerstyles__Box-f0kfdr-0 kECwyS"
+  class="Spinnerstyles__Box-moemrn-0 gSyAmC"
 >
   <svg
-    class="Spinnerstyles__Svg-f0kfdr-1 eleZpA"
-    viewBox="0 0 16 16"
+    class="Spinnerstyles__Svg-moemrn-1 chftsm"
+    viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fill="none"
-      fill-rule="evenodd"
-      stroke-width="2"
-    >
-      <path
-        d="M3.05 12.95a7 7 0 0 1 9.9-9.9"
-        stroke="#2b2d33"
-        stroke-opacity=".87"
-      />
-      <path
-        d="M3.05 12.95a7 7 0 0 0 9.9-9.9"
-        stroke="#fee600"
-      />
-    </g>
+    <circle
+      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      color="primary"
+      cx="50"
+      cy="50"
+      r="44"
+    />
   </svg>
 </div>
 `;

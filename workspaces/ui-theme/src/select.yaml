@@ -12,17 +12,17 @@ wrapper:
       # need for ellipsis
       # flex items will refuse to shrink below their minimum intrinsic width,
       # unless you explicitly specify "min-width" or "width" or "max-width" on them.
-      width: calc(100% - $layout.whitespace.l )
+      width: calc(100% - $layout.size.s5 )
     s:
-      width: calc(100% - $layout.whitespace.xl )
+      width: calc(100% - $layout.size.s6 )
     m:
-      width: calc(100% - $layout.whitespace.xl )
+      width: calc(100% - $layout.size.s6 )
     l:
-      width: calc(100% - $layout.whitespace.xxl )
+      width: calc(100% - $layout.size.s8 )
     xl:
-      width: calc(100% - $layout.whitespace.xxl )
+      width: calc(100% - $layout.size.s8 )
     xxl:
-      width: calc(100% - $layout.whitespace.xxl )
+      width: calc(100% - $layout.size.s8 )
 
 current:
   size:
@@ -59,7 +59,7 @@ placeholderDisabled:
 chip:
   base:
     align-items: center
-    margin-left: $layout.whitespace.xs
+    margin-right: $layout.size.s2
   size:
     xxl:
       font-size: $typography.b.b3.size
@@ -83,32 +83,32 @@ chip:
     height: 100%
     text-overflow: ellipsis
     white-space: nowrap
-    width: calc(100% - $layout.whitespace.s - 20px)
+    width: calc(100% - $layout.size.s3 - 20px)
   icon:
     base:
       cursor: pointer
       color: $color.primary.seattle.c60
     size:
       xxl:
-        margin-left: $layout.whitespace.s
+        margin-left: $layout.size.s3
       xl:
-        margin-left: $layout.whitespace.s
+        margin-left: $layout.size.s3
       l:
-        margin-left: $layout.whitespace.xs
+        margin-left: $layout.size.s2
       m:
-        margin-left: $layout.whitespace.xs
+        margin-left: $layout.size.s2
       s:
-        margin-left: $layout.whitespace.xxs
+        margin-left: $layout.size.s1
       xs:
-        margin-left: $layout.whitespace.xxs
+        margin-left: $layout.size.s1
     hover:
       color: $color.primary.brand.primary
 
 extra:
   base:
     white-space: nowrap
-    padding-left: $layout.whitespace.xs
+    padding-left: $layout.size.s2
 
 checkbox:
   base:
-    margin-right: $layout.whitespace.s
+    margin-right: $layout.size.s3

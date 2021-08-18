@@ -1,1 +1,1 @@
-export * from './CheckMarkRing';
+export * from './CheckmarkRing';

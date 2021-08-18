@@ -1,145 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropList 1`] = `
-.c0 {
-  opacity: 0;
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  z-index: 1000;
-  background-color: #FFFFFF;
-  padding: 8px 0;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  overflow: auto;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-}
-
-.c1:hover {
-  background-color: #F4F4F4;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  pointer-events: none;
-  opacity: 0.24;
-}
-
-.c2:hover {
-  background-color: #F4F4F4;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #E9EAEA;
-}
-
-.c3:hover {
-  background-color: #F4F4F4;
-}
-
 <div
-  class="c0"
-  data-marker="DropList"
+  class="DropListstyles__Box-sc-13y1c16-0 fcLHZl"
   role="listbox"
 >
   <div
     aria-disabled="false"
     aria-selected="false"
-    class="c1"
-    data-marker="DropList.Item"
+    class="Itemstyles__Box-k6ty0u-0 ilhkJW"
     role="option"
   >
     Item 1
@@ -147,8 +16,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="false"
     aria-selected="false"
-    class="c1"
-    data-marker="DropList.Item_0"
+    class="Itemstyles__Box-k6ty0u-0 ilhkJW"
     role="option"
   >
     Very very long Item 2
@@ -156,8 +24,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="true"
     aria-selected="false"
-    class="c2"
-    data-marker="DropList.Item_1"
+    class="Itemstyles__Box-k6ty0u-0 dXjEM"
     disabled=""
     role="option"
   >
@@ -166,8 +33,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="false"
     aria-selected="false"
-    class="c1"
-    data-marker="DropList.Item_2"
+    class="Itemstyles__Box-k6ty0u-0 ilhkJW"
     role="option"
   >
     Item 4
@@ -175,8 +41,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="false"
     aria-selected="true"
-    class="c3"
-    data-marker="DropList.Item_3"
+    class="Itemstyles__Box-k6ty0u-0 kNKjCm"
     role="option"
     selected=""
   >
@@ -185,8 +50,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="false"
     aria-selected="false"
-    class="c1"
-    data-marker="DropList.Item_4"
+    class="Itemstyles__Box-k6ty0u-0 ilhkJW"
     role="option"
   >
     Item 6
@@ -194,8 +58,7 @@ exports[`DropList 1`] = `
   <div
     aria-disabled="false"
     aria-selected="false"
-    class="c1"
-    data-marker="DropList.Item_5"
+    class="Itemstyles__Box-k6ty0u-0 ilhkJW"
     role="option"
   >
     Item 7
@@ -205,145 +68,14 @@ exports[`DropList 1`] = `
 
 exports[`DropList w/ size 1`] = `
 Array [
-  .c0 {
-  opacity: 0;
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  z-index: 1000;
-  background-color: #FFFFFF;
-  padding: 8px 0;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  overflow: auto;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 6px 12px;
-  min-height: 32px;
-}
-
-.c1:hover {
-  background-color: #F4F4F4;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 6px 12px;
-  min-height: 32px;
-  pointer-events: none;
-  opacity: 0.24;
-}
-
-.c2:hover {
-  background-color: #F4F4F4;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 18px;
-  padding: 6px 12px;
-  min-height: 32px;
-  background-color: #E9EAEA;
-}
-
-.c3:hover {
-  background-color: #F4F4F4;
-}
-
-<div
-    class="c0"
-    data-marker="DropList_0"
+  <div
+    class="DropListstyles__Box-sc-13y1c16-0 fcLHZl"
     role="listbox"
   >
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_6"
+      class="Itemstyles__Box-k6ty0u-0 fMwtem"
       role="option"
     >
       Item 1
@@ -351,8 +83,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_7"
+      class="Itemstyles__Box-k6ty0u-0 fMwtem"
       role="option"
     >
       Very very long Item 2
@@ -360,8 +91,7 @@ Array [
     <div
       aria-disabled="true"
       aria-selected="false"
-      class="c2"
-      data-marker="DropList.Item_8"
+      class="Itemstyles__Box-k6ty0u-0 lprVrk"
       disabled=""
       role="option"
     >
@@ -370,8 +100,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_9"
+      class="Itemstyles__Box-k6ty0u-0 fMwtem"
       role="option"
     >
       Item 4
@@ -379,8 +108,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="true"
-      class="c3"
-      data-marker="DropList.Item_10"
+      class="Itemstyles__Box-k6ty0u-0 jjbBDy"
       role="option"
       selected=""
     >
@@ -389,8 +117,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_11"
+      class="Itemstyles__Box-k6ty0u-0 fMwtem"
       role="option"
     >
       Item 6
@@ -398,152 +125,20 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_12"
+      class="Itemstyles__Box-k6ty0u-0 fMwtem"
       role="option"
     >
       Item 7
     </div>
   </div>,
-  .c0 {
-  opacity: 0;
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  z-index: 1000;
-  background-color: #FFFFFF;
-  padding: 8px 0;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  overflow: auto;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-}
-
-.c1:hover {
-  background-color: #F4F4F4;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  pointer-events: none;
-  opacity: 0.24;
-}
-
-.c2:hover {
-  background-color: #F4F4F4;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #E9EAEA;
-}
-
-.c3:hover {
-  background-color: #F4F4F4;
-}
-
-<div
-    class="c0"
-    data-marker="DropList_0"
+  <div
+    class="DropListstyles__Box-sc-13y1c16-0 fcLHZl"
     role="listbox"
   >
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_6"
+      class="Itemstyles__Box-k6ty0u-0 ilhkJW"
       role="option"
     >
       Item 1
@@ -551,8 +146,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_7"
+      class="Itemstyles__Box-k6ty0u-0 ilhkJW"
       role="option"
     >
       Very very long Item 2
@@ -560,8 +154,7 @@ Array [
     <div
       aria-disabled="true"
       aria-selected="false"
-      class="c2"
-      data-marker="DropList.Item_8"
+      class="Itemstyles__Box-k6ty0u-0 dXjEM"
       disabled=""
       role="option"
     >
@@ -570,8 +163,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_9"
+      class="Itemstyles__Box-k6ty0u-0 ilhkJW"
       role="option"
     >
       Item 4
@@ -579,8 +171,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="true"
-      class="c3"
-      data-marker="DropList.Item_10"
+      class="Itemstyles__Box-k6ty0u-0 kNKjCm"
       role="option"
       selected=""
     >
@@ -589,8 +180,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_11"
+      class="Itemstyles__Box-k6ty0u-0 ilhkJW"
       role="option"
     >
       Item 6
@@ -598,152 +188,20 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_12"
+      class="Itemstyles__Box-k6ty0u-0 ilhkJW"
       role="option"
     >
       Item 7
     </div>
   </div>,
-  .c0 {
-  opacity: 0;
-  position: fixed;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  z-index: 1000;
-  background-color: #FFFFFF;
-  padding: 8px 0;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
-  overflow: auto;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 12px 16px;
-  min-height: 52px;
-}
-
-.c1:hover {
-  background-color: #F4F4F4;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 12px 16px;
-  min-height: 52px;
-  pointer-events: none;
-  opacity: 0.24;
-}
-
-.c2:hover {
-  background-color: #F4F4F4;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
-  padding: 12px 16px;
-  min-height: 52px;
-  background-color: #E9EAEA;
-}
-
-.c3:hover {
-  background-color: #F4F4F4;
-}
-
-<div
-    class="c0"
-    data-marker="DropList_0"
+  <div
+    class="DropListstyles__Box-sc-13y1c16-0 fcLHZl"
     role="listbox"
   >
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_6"
+      class="Itemstyles__Box-k6ty0u-0 iHRAyY"
       role="option"
     >
       Item 1
@@ -751,8 +209,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_7"
+      class="Itemstyles__Box-k6ty0u-0 iHRAyY"
       role="option"
     >
       Very very long Item 2
@@ -760,8 +217,7 @@ Array [
     <div
       aria-disabled="true"
       aria-selected="false"
-      class="c2"
-      data-marker="DropList.Item_8"
+      class="Itemstyles__Box-k6ty0u-0 hnuRlK"
       disabled=""
       role="option"
     >
@@ -770,8 +226,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_9"
+      class="Itemstyles__Box-k6ty0u-0 iHRAyY"
       role="option"
     >
       Item 4
@@ -779,8 +234,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="true"
-      class="c3"
-      data-marker="DropList.Item_10"
+      class="Itemstyles__Box-k6ty0u-0 jWHsis"
       role="option"
       selected=""
     >
@@ -789,8 +243,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_11"
+      class="Itemstyles__Box-k6ty0u-0 iHRAyY"
       role="option"
     >
       Item 6
@@ -798,8 +251,7 @@ Array [
     <div
       aria-disabled="false"
       aria-selected="false"
-      class="c1"
-      data-marker="DropList.Item_12"
+      class="Itemstyles__Box-k6ty0u-0 iHRAyY"
       role="option"
     >
       Item 7
@@ -809,49 +261,10 @@ Array [
 `;
 
 exports[`DropList.Item /w disabled 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  pointer-events: none;
-  opacity: 0.24;
-}
-
-.c0:hover {
-  background-color: #F4F4F4;
-}
-
 <div
   aria-disabled="true"
   aria-selected="false"
-  class="c0"
-  data-marker="DropList.Item_15"
+  class="Itemstyles__Box-k6ty0u-0 dXjEM"
   disabled=""
   role="option"
 >
@@ -860,48 +273,10 @@ exports[`DropList.Item /w disabled 1`] = `
 `;
 
 exports[`DropList.Item /w selected 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-  background-color: #E9EAEA;
-}
-
-.c0:hover {
-  background-color: #F4F4F4;
-}
-
 <div
   aria-disabled="false"
   aria-selected="true"
-  class="c0"
-  data-marker="DropList.Item_14"
+  class="Itemstyles__Box-k6ty0u-0 kNKjCm"
   role="option"
   selected=""
 >
@@ -910,47 +285,10 @@ exports[`DropList.Item /w selected 1`] = `
 `;
 
 exports[`DropList.Item 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  white-space: nowrap;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  box-sizing: border-box;
-  position: relative;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  background-color: #FFFFFF;
-  color: #000000;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 22px;
-  padding: 8px 16px;
-  min-height: 40px;
-}
-
-.c0:hover {
-  background-color: #F4F4F4;
-}
-
 <div
   aria-disabled="false"
   aria-selected="false"
-  class="c0"
-  data-marker="DropList.Item_13"
+  class="Itemstyles__Box-k6ty0u-0 ilhkJW"
   role="option"
 >
   Item 1

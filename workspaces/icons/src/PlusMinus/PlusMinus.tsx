@@ -14,7 +14,7 @@ export const PlusMinus: React.FC<PlusMinusProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M22 3.414L3.414 22H2v-1.414L20.586 2H22v1.414zM14 18h8v2h-8v-2zm-9-8V7H2V5h3V2h2v3h3v2H7v3H5z' />
+            <path d='M5 1v4H1v2h4v4h2V7h4V5H7V1H5zm.707 19.707l14-14-1.414-1.414-14 14 1.414 1.414zM23 18H13v2h10v-2z' />
         </svg>
     );
 };

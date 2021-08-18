@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screw, Visible, Invisible } from 'vienna.icons';
+import { Screw, EyeOpened, EyeClosed } from 'vienna.icons';
 import { InputProps } from '..';
 import { InputPassword } from './InputPassword';
 
@@ -14,20 +14,20 @@ test('InputPassword', () => {
 test('InputPassword /w toggle', () => {
     const snap = snapshot.mount(<InputPassword />);
 
-    let icon = snap.find(Invisible);
+    let icon = snap.find(EyeClosed);
     expect(icon.exists()).toEqual(true);
-    expect(snap.find(Visible).exists()).toEqual(false);
+    expect(snap.find(EyeOpened).exists()).toEqual(false);
 
     icon.simulate('click');
 
-    icon = snap.find(Visible);
+    icon = snap.find(EyeOpened);
     expect(icon.exists()).toEqual(true);
-    expect(snap.find(Invisible).exists()).toEqual(false);
+    expect(snap.find(EyeClosed).exists()).toEqual(false);
 
     icon.simulate('click');
 
-    expect(snap.find(Invisible).exists()).toEqual(true);
-    expect(snap.find(Visible).exists()).toEqual(false);
+    expect(snap.find(EyeClosed).exists()).toEqual(true);
+    expect(snap.find(EyeOpened).exists()).toEqual(false);
 });
 
 test('InputPassword w/ design', () => {

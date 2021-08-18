@@ -1,92 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileLoader /w content 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 1;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #2B2D33;
-  width: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  aligne-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #F8F8F8;
-  border: 1px dashed #D5D5D6;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 24px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  display: none;
-}
-
 <div
-  class="c0"
-  data-marker="FileLoader.Wrapper"
+  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
 >
   <div
-    class="c1"
-    data-marker="FileLoader.Box"
+    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
   >
     <div
-      class="c2"
-      data-marker="FileLoader.Content"
+      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
     >
       Перетащите файлы
     </div>
     <input
       accept=""
-      class="c3"
-      data-marker="FileLoader"
+      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
       multiple=""
       type="file"
       value=""
@@ -96,126 +24,25 @@ exports[`FileLoader /w content 1`] = `
 `;
 
 exports[`FileLoader /w content and subcontent 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 1;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #2B2D33;
-  width: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #AAABAD;
-  width: 100%;
-  font-size: 12px;
-  line-height: 18px;
-  margin-top: 4px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  aligne-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #F8F8F8;
-  border: 1px dashed #D5D5D6;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 24px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c4 {
-  display: none;
-}
-
 <div
-  class="c0"
-  data-marker="FileLoader.Wrapper"
+  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
 >
   <div
-    class="c1"
-    data-marker="FileLoader.Box"
+    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
   >
     <div
-      class="c2"
-      data-marker="FileLoader.Content"
+      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
     >
       Перетащите файлы
     </div>
     <div
-      class="c3"
-      data-marker="FileLoader.SubContent"
+      class="FileLoaderstyles__SubContent-ymi30o-1 fMNhrg"
     >
       JPG, GIF, PNG, PDF или ZIP, до 150kb
     </div>
     <input
       accept=""
-      class="c4"
-      data-marker="FileLoader_1"
+      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
       multiple=""
       type="file"
       value=""
@@ -225,137 +52,21 @@ exports[`FileLoader /w content and subcontent 1`] = `
 `;
 
 exports[`FileLoader /w content as ReactNode 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 1;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #2B2D33;
-  width: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  aligne-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #F8F8F8;
-  border: 1px dashed #D5D5D6;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 24px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c6 {
-  display: none;
-}
-
-.c5 {
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 1px 1px;
-  background-image: none;
-  vertical-align: baseline !important;
-}
-
-.c3 {
-  position: relative;
-  cursor: pointer;
-  outline: 0;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 14px;
-  line-height: 22px;
-  color: #00809C;
-}
-
-.c3:hover {
-  color: #04607D;
-}
-
-.c3:hover .c4 {
-  background-image: linear-gradient(to right,#04607D,#04607D 75%);
-}
-
-.c3 > * {
-  vertical-align: middle;
-}
-
-.c3 > *:not(:last-child) {
-  margin-right: 8px;
-}
-
 <div
-  class="c0"
-  data-marker="FileLoader.Wrapper"
+  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
 >
   <div
-    class="c1"
-    data-marker="FileLoader.Box"
+    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
   >
     <div
-      class="c2"
-      data-marker="FileLoader.Content"
+      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
     >
       Перетащите файлы сюда или 
       <a
-        class="c3"
-        data-marker="Link"
+        class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
       >
         <span
-          class="c4 c5"
-          data-marker="Link.content.Wrapper"
+          class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
         >
           загрузите документы
         </span>
@@ -363,8 +74,7 @@ exports[`FileLoader /w content as ReactNode 1`] = `
     </div>
     <input
       accept=""
-      class="c6"
-      data-marker="FileLoader_0"
+      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
       multiple=""
       type="file"
       value=""
@@ -374,221 +84,49 @@ exports[`FileLoader /w content as ReactNode 1`] = `
 `;
 
 exports[`FileLoader /w file 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-  width: 100%;
-  height: 72px;
-  opacity: 0;
-  height: 0px;
-  -webkit-animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-  animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-}
-
-.c0:last-child {
-  margin-bottom: 0px;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 6px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 40px;
-  height: 40px;
-  width: 40px;
-  min-width: 40px;
-  background-color: #F0F0FE;
-  border-radius: 4px;
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden font-family:'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 4px;
-  color: #2B2D33;
-}
-
-.c5:hover,
-.c5:focus {
-  color: #00809C;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 8px;
-  color: #AAABAD;
-}
-
-.c6:last-child {
-  margin-bottom: 0px;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-  min-width: 12px;
-}
-
-.c7:hover,
-.c7:focus {
-  color: #00809C;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 <div
-  class="c0"
-  data-marker="File.Box"
+  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
 >
   <div
-    class="c1"
-    data-marker="File.Icon"
+    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
   >
     <div
-      class="c2"
-      data-marker="File.Img"
+      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
     >
       doc
     </div>
   </div>
   <div
-    class="c3"
-    data-marker="File.Main"
+    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
   >
     <div
-      class="c4"
-      data-marker="File.Info"
+      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
     >
       <div
-        class="c5"
-        data-marker="File.Name"
+        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="c6"
-        data-marker="File.Data"
+        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
       />
     </div>
   </div>
   <div
-    class="c7"
-    data-marker="File.CloseIcon"
+    class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
     tabindex="0"
   >
     <svg
-      data-marker="File.Close"
       fill="currentColor"
       height="16"
       viewBox="0 0 24 24"
       width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <defs
-        data-marker="Close.defs"
-      />
+      <defs />
       <path
-        d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-        data-marker="Close.path"
+        d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
       />
     </svg>
   </div>
@@ -596,181 +134,32 @@ exports[`FileLoader /w file 1`] = `
 `;
 
 exports[`FileLoader /w file closable = false 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-  width: 100%;
-  height: 72px;
-  opacity: 0;
-  height: 0px;
-  -webkit-animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-  animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-}
-
-.c0:last-child {
-  margin-bottom: 0px;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 6px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 40px;
-  height: 40px;
-  width: 40px;
-  min-width: 40px;
-  background-color: #F0F0FE;
-  border-radius: 4px;
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden font-family:'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 4px;
-  color: #2B2D33;
-}
-
-.c5:hover,
-.c5:focus {
-  color: #00809C;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 8px;
-  color: #AAABAD;
-}
-
-.c6:last-child {
-  margin-bottom: 0px;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 <div
-  class="c0"
-  data-marker="File.Box"
+  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
 >
   <div
-    class="c1"
-    data-marker="File.Icon"
+    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
   >
     <div
-      class="c2"
-      data-marker="File.Img"
+      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
     >
       doc
     </div>
   </div>
   <div
-    class="c3"
-    data-marker="File.Main"
+    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
   >
     <div
-      class="c4"
-      data-marker="File.Info"
+      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
     >
       <div
-        class="c5"
-        data-marker="File.Name"
+        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="c6"
-        data-marker="File.Data"
+        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
       />
     </div>
   </div>
@@ -778,279 +167,67 @@ exports[`FileLoader /w file closable = false 1`] = `
 `;
 
 exports[`FileLoader /w file progress 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-  width: 100%;
-  height: 72px;
-  opacity: 0;
-  height: 0px;
-  -webkit-animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-  animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-}
-
-.c0:last-child {
-  margin-bottom: 0px;
-}
-
-.c2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 6px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 40px;
-  height: 40px;
-  width: 40px;
-  min-width: 40px;
-  background-color: #F0F0FE;
-  border-radius: 4px;
-  color: #2B2D33;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden font-family:'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 4px;
-  color: #2B2D33;
-}
-
-.c5:hover,
-.c5:focus {
-  color: #00809C;
-}
-
-.c6 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 8px;
-  color: #AAABAD;
-}
-
-.c6:last-child {
-  margin-bottom: 0px;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-  min-width: 12px;
-}
-
-.c11:hover,
-.c11:focus {
-  color: #00809C;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c7 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.c8 {
-  position: relative;
-  width: 100%;
-  height: 4px;
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #E9EAEA;
-  border-radius: 8px;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  width: 50%;
-  border-radius: 8px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  overflow: hidden;
-  background-color: #00A5BC;
-}
-
 <div
-  class="c0"
-  data-marker="File.Box"
+  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
 >
   <div
-    class="c1"
-    data-marker="File.Icon"
+    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
   >
     <div
-      class="c2"
-      data-marker="File.Img"
+      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
     >
       doc
     </div>
   </div>
   <div
-    class="c3"
-    data-marker="File.Main"
+    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
   >
     <div
-      class="c4"
-      data-marker="File.Info"
+      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
     >
       <div
-        class="c5"
-        data-marker="File.Name"
+        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="c6"
-        data-marker="File.Data"
+        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
       >
         Загружено 50%
       </div>
     </div>
     <div
-      class="c7"
-      data-marker="File.Progress"
+      class="Filestyles__Progress-sc-1sbri8o-8 exFAuN"
     >
       <div
-        class="c8"
-        data-marker="File.Progressbar"
+        class="Progressbarstyles__Box-sc-9u8n53-0 ebQjGZ"
       >
         <div
-          class="c9"
-          data-marker="Progressbar.Line"
+          class="Progressbarstyles__Line-sc-9u8n53-1 lfqWLM"
         />
         <div
-          class="c10"
+          class="Progressbarstyles__Progress-sc-9u8n53-2 jGYoUl"
           color="oslo100"
-          data-marker="Progressbar.Progress"
           width="50"
         />
       </div>
     </div>
   </div>
   <div
-    class="c11"
-    data-marker="File.CloseIcon"
+    class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
     tabindex="0"
   >
     <svg
-      data-marker="File.Close"
       fill="currentColor"
       height="16"
       viewBox="0 0 24 24"
       width="16"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <defs
-        data-marker="Close.defs"
-      />
+      <defs />
       <path
-        d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-        data-marker="Close.path"
+        d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
       />
     </svg>
   </div>
@@ -1058,450 +235,165 @@ exports[`FileLoader /w file progress 1`] = `
 `;
 
 exports[`FileLoader /w with files 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 1;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  color: #2B2D33;
-  width: 100%;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  aligne-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: #F8F8F8;
-  border: 1px dashed #D5D5D6;
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 24px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 32px;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  display: none;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  opacity: 1;
-  width: 100%;
-  height: 72px;
-  opacity: 0;
-  height: 0px;
-  -webkit-animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-  animation: bdsgSe 0.2s ease-in-out 0s alternate 1;
-}
-
-.c5:last-child {
-  margin-bottom: 0px;
-}
-
-.c7 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 6px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-transform: uppercase;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 40px;
-  height: 40px;
-  width: 40px;
-  min-width: 40px;
-  background-color: #F0F0FE;
-  border-radius: 4px;
-  color: #2B2D33;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 100%;
-  height: 100%;
-}
-
-.c10 {
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden font-family:'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 4px;
-  color: #2B2D33;
-}
-
-.c10:hover,
-.c10:focus {
-  color: #00809C;
-}
-
-.c11 {
-  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  margin-bottom: 8px;
-  color: #AAABAD;
-}
-
-.c11:last-child {
-  margin-bottom: 0px;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: #808185;
-  min-width: 12px;
-}
-
-.c12:hover,
-.c12:focus {
-  color: #00809C;
-}
-
-.c9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 <div
-  class="c0"
-  data-marker="FileLoader.Wrapper"
+  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
 >
   <div
-    class="c1"
-    data-marker="FileLoader.Box"
+    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
   >
     <div
-      class="c2"
-      data-marker="FileLoader.Content"
+      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
     >
       Перетащите файлы
     </div>
     <input
       accept=""
-      class="c3"
-      data-marker="FileLoader_2"
+      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
       multiple=""
       type="file"
       value=""
     />
   </div>
   <div
-    class="c4"
-    data-marker="FileLoader.List"
+    class="FileLoaderstyles__List-ymi30o-3 lmKLMJ"
   >
     <div
-      class="c5"
-      data-marker="File.Box"
+      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
     >
       <div
-        class="c6"
-        data-marker="File.Icon"
+        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
       >
         <div
-          class="c7"
-          data-marker="File.Img"
+          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
         >
           doc
         </div>
       </div>
       <div
-        class="c8"
-        data-marker="File.Main"
+        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
       >
         <div
-          class="c9"
-          data-marker="File.Info"
+          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
         >
           <div
-            class="c10"
-            data-marker="File.Name"
+            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="c11"
-            data-marker="File.Data"
+            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
           />
         </div>
       </div>
       <div
-        class="c12"
-        data-marker="File.CloseIcon"
+        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
         tabindex="0"
       >
         <svg
-          data-marker="File.Close"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Close.defs"
-          />
+          <defs />
           <path
-            d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-            data-marker="Close.path"
+            d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
           />
         </svg>
       </div>
     </div>
     <div
-      class="c5"
-      data-marker="File.Box"
+      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
     >
       <div
-        class="c6"
-        data-marker="File.Icon"
+        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
       >
         <div
-          class="c7"
-          data-marker="File.Img"
+          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
         >
           doc
         </div>
       </div>
       <div
-        class="c8"
-        data-marker="File.Main"
+        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
       >
         <div
-          class="c9"
-          data-marker="File.Info"
+          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
         >
           <div
-            class="c10"
-            data-marker="File.Name"
+            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="c11"
-            data-marker="File.Data"
+            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
           />
         </div>
       </div>
       <div
-        class="c12"
-        data-marker="File.CloseIcon"
+        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
         tabindex="0"
       >
         <svg
-          data-marker="File.Close"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Close.defs"
-          />
+          <defs />
           <path
-            d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-            data-marker="Close.path"
+            d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
           />
         </svg>
       </div>
     </div>
     <div
-      class="c5"
-      data-marker="File.Box"
+      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
     >
       <div
-        class="c6"
-        data-marker="File.Icon"
+        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
       >
         <div
-          class="c7"
-          data-marker="File.Img"
+          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
         >
           doc
         </div>
       </div>
       <div
-        class="c8"
-        data-marker="File.Main"
+        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
       >
         <div
-          class="c9"
-          data-marker="File.Info"
+          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
         >
           <div
-            class="c10"
-            data-marker="File.Name"
+            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="c11"
-            data-marker="File.Data"
+            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
           />
         </div>
       </div>
       <div
-        class="c12"
-        data-marker="File.CloseIcon"
+        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
         tabindex="0"
       >
         <svg
-          data-marker="File.Close"
           fill="currentColor"
           height="16"
           viewBox="0 0 24 24"
           width="16"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <defs
-            data-marker="Close.defs"
-          />
+          <defs />
           <path
-            d="M10.586 12L4 18.586V20h1.414L12 13.414 18.586 20H20v-1.414L13.414 12 20 5.414V4h-1.414L12 10.586 5.414 4H4v1.414z"
-            data-marker="Close.path"
+            d="M12 13.414l-7.293 7.293-1.414-1.414L10.586 12 3.293 4.707l1.414-1.414L12 10.586l7.293-7.293 1.414 1.414L13.414 12l7.293 7.293-1.414 1.414L12 13.414z"
           />
         </svg>
       </div>

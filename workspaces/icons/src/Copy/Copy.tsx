@@ -14,7 +14,12 @@ export const Copy: React.FC<CopyProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M18 4.938V5H5v13h-.063A1.937 1.937 0 013 16.063V4.938A1.937 1.937 0 014.937 3h11.125A1.937 1.937 0 0118 4.938zM19.062 6A1.937 1.937 0 0121 7.938v11.125A1.937 1.937 0 0119.062 21H7.937A1.937 1.937 0 016 19.063V7.938A1.937 1.937 0 017.937 6h11.125zM19 19V8H8v11h11z' />
+            <path d='M4 3a1 1 0 00-1 1v12a1 1 0 001 1h1V5h12V4a1 1 0 00-1-1H4z' />
+            <path
+                fillRule='evenodd'
+                d='M8 7a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V8a1 1 0 00-1-1H8zm1 12V9h10v10H9z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

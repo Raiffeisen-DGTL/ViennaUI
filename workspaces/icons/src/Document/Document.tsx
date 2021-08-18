@@ -14,7 +14,11 @@ export const Document: React.FC<DocumentProps> = (props): JSX.Element => {
     return (
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width={d} height={d} fill={color} {...attrs}>
             <defs />
-            <path d='M7 6h10v2H7V6zm0 4h10v2H7v-2zm12-8a2 2 0 012 2v15.573A2.426 2.426 0 0118.573 22H3v-2h16V4H5v16H3V4a2 2 0 012-2h14z' />
+            <path
+                fillRule='evenodd'
+                d='M20 8v13a1 1 0 01-1 1H5a1 1 0 01-1-1V3a1 1 0 011-1h9a1 1 0 01.707.293l5 5A1 1 0 0120 8zm-8-4H6v16h12V10h-5a1 1 0 01-1-1V4zm2 .414V8h3.586L14 4.414z'
+                clipRule='evenodd'
+            />
         </svg>
     );
 };

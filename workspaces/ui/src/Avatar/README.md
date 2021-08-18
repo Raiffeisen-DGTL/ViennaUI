@@ -2,7 +2,6 @@
 
 Компонент для визуальной идентификации пользователя и компаний. Используется в разных компонентах от шапки до карточек.
 
-
 ## Импорт
 
 ```
@@ -13,12 +12,12 @@ import { Avatar } from 'vienna-ui';
 
 Свойства наследуются от [HTMLAttributes<HTMLDivElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1746)
 
-Prop | Type | Default | Description
---- | --- | --- | ---
-children | ReactNode | false | 
-size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | false | Доступные размеры
-align | "left" \| "center" \| "right" \| undefined | false | Выравнивание по горизонтали
-valign | "center" \| "top" \| "bottom" \| undefined | false | Выравнивание по вертикали
+| Prop     | Type                                           | Default | Description                 |
+| -------- | ---------------------------------------------- | ------- | --------------------------- |
+| children | ReactNode                                      | false   |
+| size     | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | false   | Доступные размеры           |
+| align    | "left" \| "center" \| "right" \| undefined     | false   | Выравнивание по горизонтали |
+| valign   | "center" \| "top" \| "bottom" \| undefined     | false   | Выравнивание по вертикали   |
 
 ## Использование
 
@@ -27,6 +26,7 @@ valign | "center" \| "top" \| "bottom" \| undefined | false | Выравнива
 ```
 
 ## Размеры
+
 ##### Свойство `size`
 
 Доступные размеры: `xs`, `s`, `l`, `m` (по умолчанию) и `xl`
@@ -43,5 +43,5 @@ import { RoundIcon } from 'vienna-ui';
     <RoundIcon size='xl' color='nice10'>
         B
     </RoundIcon>
-</Avatar>
+</Avatar>;
 ```
