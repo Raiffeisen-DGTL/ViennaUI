@@ -2,56 +2,331 @@
 
 exports[`Disabled links 1`] = `
 Array [
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 bvlUEf"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: none;
+  vertical-align: baseline !important;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 iOurTa"
+      class="c1 c2"
       disabled=""
     >
       Accent link
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 bvlUEf"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,rgba(43,45,51,0.24),rgba(43,45,51,0.24) 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 csJyZk"
+      class="c1 c2"
       disabled=""
     >
       Accent underline link
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 glvkLA"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,rgba(43,45,51,0.24),rgba(43,45,51,0.24) 75%);
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 csJyZk"
+      class="c1 c2"
       disabled=""
     >
       Primary link
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 iSqgJy"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,rgba(43,45,51,0.24),rgba(43,45,51,0.24) 75%);
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 csJyZk"
+      class="c1 c2"
       disabled=""
     >
       Secondary link
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 iSqgJy"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,rgba(43,45,51,0.24),rgba(43,45,51,0.24) 75%);
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
@@ -70,14 +345,52 @@ Array [
       />
     </svg>
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 csJyZk"
+      class="c1 c2"
       disabled=""
     >
       Screw
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 glvkLA"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
@@ -98,11 +411,54 @@ Array [
 `;
 
 exports[`Link 1`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -110,14 +466,57 @@ exports[`Link 1`] = `
 `;
 
 exports[`Link w/ any props 1`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 hNOTYR className"
+  class="c0 className"
   download="test.jpg"
   href="test.html"
   id="id"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -125,11 +524,54 @@ exports[`Link w/ any props 1`] = `
 `;
 
 exports[`Link w/ design 1`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: none;
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -137,11 +579,54 @@ exports[`Link w/ design 1`] = `
 `;
 
 exports[`Link w/ design 2`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -149,11 +634,58 @@ exports[`Link w/ design 2`] = `
 `;
 
 exports[`Link w/ design 3`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -161,11 +693,62 @@ exports[`Link w/ design 3`] = `
 `;
 
 exports[`Link w/ design 4`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 kLIQGP"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -174,8 +757,59 @@ exports[`Link w/ design 4`] = `
 
 exports[`Link w/ icon 1`] = `
 Array [
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: none;
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -190,16 +824,67 @@ Array [
       />
     </svg>
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
+      class="c1 c2"
     >
        Назад
     </span>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+<a
+    class="c0"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+      class="c1 c2"
     >
       Вперед 
     </span>
@@ -216,8 +901,59 @@ Array [
       />
     </svg>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 kLIQGP"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -234,7 +970,7 @@ Array [
       />
     </svg>
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+      class="c1 c2"
     >
       <span>
         Вперед
@@ -258,8 +994,43 @@ Array [
 
 exports[`Link w/ only icon 1`] = `
 Array [
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -274,8 +1045,43 @@ Array [
       />
     </svg>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -290,8 +1096,43 @@ Array [
       />
     </svg>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 kLIQGP"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -308,8 +1149,43 @@ Array [
       />
     </svg>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+<a
+    class="c0"
   >
     <svg
       fill="currentColor"
@@ -328,11 +1204,54 @@ Array [
 `;
 
 exports[`Link w/ size 1`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 4px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 djJwdK"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -340,11 +1259,58 @@ exports[`Link w/ size 1`] = `
 `;
 
 exports[`Link w/ size 2`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -352,11 +1318,62 @@ exports[`Link w/ size 2`] = `
 `;
 
 exports[`Link w/ size 3`] = `
+.c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+}
+
+.c3:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c4:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 12px;
+}
+
 <a
-  class="Linkstyles__Box-sc-40rkfc-1 cswyJI"
+  class="c0"
 >
   <span
-    class="Linkstyles__Wrapper-sc-40rkfc-0 ivaKju"
+    class="c1 c2"
   >
     Test link
   </span>
@@ -365,26 +1382,127 @@ exports[`Link w/ size 3`] = `
 
 exports[`Links w/ loading 1`] = `
 Array [
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 hMqqGe"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: none;
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,transparent,transparent 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #00809C;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c6:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c7:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c8:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c4 {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.c5 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 fqFPoF"
+      class="c1 c2"
     >
       Accent link
     </span>
     <div
-      class="Spinnerstyles__Box-moemrn-0 boKRXn"
+      class="c3"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 lbgYES"
+        class="c4"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c5"
           color="primary"
           cx="50"
           cy="50"
@@ -393,26 +1511,127 @@ Array [
       </svg>
     </div>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 hMqqGe"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,transparent,transparent 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #00809C;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #04607D;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c6:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c7:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c8:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c4 {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.c5 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 eOIXpk"
+      class="c1 c2"
     >
       Accent underline link
     </span>
     <div
-      class="Spinnerstyles__Box-moemrn-0 boKRXn"
+      class="c3"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 lbgYES"
+        class="c4"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c5"
           color="primary"
           cx="50"
           cy="50"
@@ -421,26 +1640,127 @@ Array [
       </svg>
     </div>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 flAwcC"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,transparent,transparent 75%);
+}
+
+.c6:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c7:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c8:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c4 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c5 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 eOIXpk"
+      class="c1 c2"
     >
       Primary link
     </span>
     <div
-      class="Spinnerstyles__Box-moemrn-0 eAchHT"
+      class="c3"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+        class="c4"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c5"
           color="primary"
           cx="50"
           cy="50"
@@ -449,26 +1769,127 @@ Array [
       </svg>
     </div>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 bAvDAB"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,transparent,transparent 75%);
+}
+
+.c6:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c7:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #808185;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 12px;
+}
+
+.c8:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c4 {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.c5 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 eOIXpk"
+      class="c1 c2"
     >
       Secondary link
     </span>
     <div
-      class="Spinnerstyles__Box-moemrn-0 kKgUqX"
+      class="c3"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 lhJvVO"
+        class="c4"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c5"
           color="primary"
           cx="50"
           cy="50"
@@ -477,8 +1898,109 @@ Array [
       </svg>
     </div>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 hDYYg"
+  .c2 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: linear-gradient(to right,#66C9D7,#66C9D7 75%);
+  vertical-align: baseline !important;
+  background-image: linear-gradient(to right,transparent,transparent 75%);
+}
+
+.c6:hover .c1 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c7:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c8:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #808185;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c1 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c4 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c5 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
   >
     <svg
@@ -496,20 +2018,20 @@ Array [
       />
     </svg>
     <span
-      class="Linkstyles__Wrapper-sc-40rkfc-0 eOIXpk"
+      class="c1 c2"
     >
       Screw
     </span>
     <div
-      class="Spinnerstyles__Box-moemrn-0 eAchHT"
+      class="c3"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+        class="c4"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c5"
           color="primary"
           cx="50"
           cy="50"
@@ -518,8 +2040,88 @@ Array [
       </svg>
     </div>
   </a>,
-  <a
-    class="Linkstyles__Box-sc-40rkfc-1 flAwcC"
+  .c0 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  pointer-events: none;
+  color: transparent;
+}
+
+.c0:hover {
+  color: #2B2D33;
+}
+
+.c0:hover .c4 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c0 > * {
+  vertical-align: middle;
+}
+
+.c0 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c2 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c3 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+<a
+    class="c0"
     disabled=""
     href="#"
   >
@@ -536,15 +2138,15 @@ Array [
       />
     </svg>
     <div
-      class="Spinnerstyles__Box-moemrn-0 eAchHT"
+      class="c1"
     >
       <svg
-        class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+        class="c2"
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="Spinnerstyles__Circle-moemrn-2 cElquL"
+          class="c3"
           color="primary"
           cx="50"
           cy="50"

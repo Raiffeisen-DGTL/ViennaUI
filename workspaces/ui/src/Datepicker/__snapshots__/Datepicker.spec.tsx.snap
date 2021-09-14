@@ -1,39 +1,260 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Datepicker /w complete 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+  class="c0"
 >
   <div
-    class="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+    class="c1"
   >
     <label
-      class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+      class="c2"
     >
       <div
-        class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+        class="c3"
       >
         <div
-          class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+          class="c4"
         >
           <div
-            class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+            class="c5"
           >
             <div
-              class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+              class="c6"
             >
               11.12.1900
             </div>
           </div>
           <input
             aria-invalid="false"
-            class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+            class="c7"
             value="11.12.1900"
           />
         </div>
       </div>
       <div
-        class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+        class="c8"
       >
         <svg
           cursor="pointer"
@@ -55,6 +276,231 @@ exports[`Datepicker /w complete 1`] = `
 `;
 
 exports[`Datepicker /w date not in range 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  color: transparent;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <Datepicker
   isCalendarOpen={false}
   maxDate={2020-06-14T21:00:00.000Z}
@@ -66,14 +512,14 @@ exports[`Datepicker /w date not in range 1`] = `
     onBlur={[Function]}
   >
     <div
-      className="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+      className="c0"
       onBlur={[Function]}
     >
       <Datepickerstyles__InputBox
         onClick={[Function]}
       >
         <div
-          className="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+          className="c1"
           onClick={[Function]}
         >
           <InputDate
@@ -152,12 +598,12 @@ exports[`Datepicker /w date not in range 1`] = `
                     size="l"
                   >
                     <label
-                      className="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+                      className="c2"
                       size="l"
                     >
                       <Inputstyles__Wrapped>
                         <div
-                          className="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                          className="c3"
                         >
                           <NativeInput
                             active={false}
@@ -175,23 +621,23 @@ exports[`Datepicker /w date not in range 1`] = `
                           >
                             <Inputstyles__Box>
                               <div
-                                className="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                                className="c4"
                               >
                                 <Inputstyles__PlaceholderWrapper>
                                   <div
-                                    className="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+                                    className="c5"
                                   >
                                     <Inputstyles__Placeholder
                                       design="outline"
                                       size="l"
                                     >
                                       <div
-                                        className="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                                        className="c6"
                                         size="l"
                                       >
                                         <Inputstyles__Invisible>
                                           <span
-                                            className="Inputstyles__Invisible-hc8ttv-8 bCdWvB"
+                                            className="c7"
                                           >
                                             17.06.2020
                                           </span>
@@ -215,7 +661,7 @@ exports[`Datepicker /w date not in range 1`] = `
                                 >
                                   <input
                                     aria-invalid={false}
-                                    className="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                                    className="c8"
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     onFocus={[Function]}
@@ -235,7 +681,7 @@ exports[`Datepicker /w date not in range 1`] = `
                         size="l"
                       >
                         <div
-                          className="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                          className="c9"
                           size="l"
                         >
                           <Calendar
@@ -276,6 +722,231 @@ exports[`Datepicker /w date not in range 1`] = `
 `;
 
 exports[`Datepicker /w date not in range and not fix value 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  color: transparent;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <Datepicker
   isCalendarOpen={false}
   maxDate={2020-06-14T21:00:00.000Z}
@@ -287,14 +958,14 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
     onBlur={[Function]}
   >
     <div
-      className="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+      className="c0"
       onBlur={[Function]}
     >
       <Datepickerstyles__InputBox
         onClick={[Function]}
       >
         <div
-          className="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+          className="c1"
           onClick={[Function]}
         >
           <InputDate
@@ -373,12 +1044,12 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
                     size="l"
                   >
                     <label
-                      className="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+                      className="c2"
                       size="l"
                     >
                       <Inputstyles__Wrapped>
                         <div
-                          className="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                          className="c3"
                         >
                           <NativeInput
                             active={false}
@@ -396,23 +1067,23 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
                           >
                             <Inputstyles__Box>
                               <div
-                                className="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                                className="c4"
                               >
                                 <Inputstyles__PlaceholderWrapper>
                                   <div
-                                    className="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+                                    className="c5"
                                   >
                                     <Inputstyles__Placeholder
                                       design="outline"
                                       size="l"
                                     >
                                       <div
-                                        className="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                                        className="c6"
                                         size="l"
                                       >
                                         <Inputstyles__Invisible>
                                           <span
-                                            className="Inputstyles__Invisible-hc8ttv-8 bCdWvB"
+                                            className="c7"
                                           >
                                             17.06.2020
                                           </span>
@@ -436,7 +1107,7 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
                                 >
                                   <input
                                     aria-invalid={false}
-                                    className="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                                    className="c8"
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     onFocus={[Function]}
@@ -456,7 +1127,7 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
                         size="l"
                       >
                         <div
-                          className="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                          className="c9"
                           size="l"
                         >
                           <Calendar
@@ -497,39 +1168,261 @@ exports[`Datepicker /w date not in range and not fix value 1`] = `
 `;
 
 exports[`Datepicker /w invalid 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+  class="c0"
 >
   <div
-    class="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+    class="c1"
   >
     <label
-      class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+      class="c2"
     >
       <div
-        class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+        class="c3"
       >
         <div
-          class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+          class="c4"
         >
           <div
-            class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+            class="c5"
           >
             <div
-              class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+              class="c6"
             >
               ДД.ММ.ГГГГ
             </div>
           </div>
           <input
             aria-invalid="true"
-            class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+            class="c7"
             value=""
           />
         </div>
       </div>
       <div
-        class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+        class="c8"
       >
         <svg
           cursor="pointer"
@@ -551,39 +1444,260 @@ exports[`Datepicker /w invalid 1`] = `
 `;
 
 exports[`Datepicker /w not complete 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+  class="c0"
 >
   <div
-    class="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+    class="c1"
   >
     <label
-      class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+      class="c2"
     >
       <div
-        class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+        class="c3"
       >
         <div
-          class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+          class="c4"
         >
           <div
-            class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+            class="c5"
           >
             <div
-              class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+              class="c6"
             >
               22.02.ГГГГ
             </div>
           </div>
           <input
             aria-invalid="false"
-            class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+            class="c7"
             value="22.02"
           />
         </div>
       </div>
       <div
-        class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+        class="c8"
       >
         <svg
           cursor="pointer"
@@ -605,39 +1719,260 @@ exports[`Datepicker /w not complete 1`] = `
 `;
 
 exports[`Datepicker 1`] = `
+.c6 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c7 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c7::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c7::-ms-clear,
+.c7::-ms-reveal {
+  display: none;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c3 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c3 > *,
+.c3 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c5 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: none;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="Datepickerstyles__Box-sc-15d4dji-0 dajHNb"
+  class="c0"
 >
   <div
-    class="Datepickerstyles__InputBox-sc-15d4dji-1 jpzdav"
+    class="c1"
   >
     <label
-      class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+      class="c2"
     >
       <div
-        class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+        class="c3"
       >
         <div
-          class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+          class="c4"
         >
           <div
-            class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+            class="c5"
           >
             <div
-              class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+              class="c6"
             >
               ДД.ММ.ГГГГ
             </div>
           </div>
           <input
             aria-invalid="false"
-            class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+            class="c7"
             value=""
           />
         </div>
       </div>
       <div
-        class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+        class="c8"
       >
         <svg
           cursor="pointer"

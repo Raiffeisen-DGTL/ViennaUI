@@ -1,11 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -26,10 +81,10 @@ exports[`Alert 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -41,12 +96,61 @@ exports[`Alert 1`] = `
 `;
 
 exports[`Alert w/ any props 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl className"
+  class="c0 className"
   id="id"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -67,7 +171,7 @@ exports[`Alert w/ any props 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div>
       This is a test alert message.
@@ -77,11 +181,258 @@ exports[`Alert w/ any props 1`] = `
 `;
 
 exports[`Alert w/ buttons 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
+.c6 {
+  margin-top: 16px;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  border: solid 2px #D5D5D6;
+  height: 32px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.c9:active {
+  top: 1px;
+}
+
+.c9:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  padding: 0;
+  height: 32px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.c11:active {
+  top: 1px;
+}
+
+.c11:hover {
+  color: #000000;
+}
+
+.c10 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c10:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c10 > svg {
+  display: block;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c8 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c8:last-child {
+  margin-right: 0;
+}
+
+@media (max-width:100000px) {
+  .c0 .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 .c2 .c4 {
+    margin-bottom: 8px;
+  }
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 fRKFNG"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -102,10 +453,10 @@ exports[`Alert w/ buttons 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2 c3"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c4 c5"
     >
       Alert title
     </div>
@@ -113,34 +464,34 @@ exports[`Alert w/ buttons 1`] = `
       &gt;This is a test alert message.
     </div>
     <div
-      class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
+      class="c6"
     >
       <div
-        class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+        class="c7"
       >
         <div
-          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+          class="c8"
         >
           <button
-            class="Buttonstyles__Box-qfvnbt-0 bAEoKT"
+            class="c9"
             type="button"
           >
             <span
-              class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+              class="c10"
             >
               Complete
             </span>
           </button>
         </div>
         <div
-          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+          class="c8"
         >
           <button
-            class="Buttonstyles__Box-qfvnbt-0 hDikLl"
+            class="c11"
             type="button"
           >
             <span
-              class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+              class="c10"
             >
               Cancel
             </span>
@@ -153,11 +504,78 @@ exports[`Alert w/ buttons 1`] = `
 `;
 
 exports[`Alert w/ compact 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
+@media (max-width:10000px) {
+  .c0 .c2 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c0 .c2 .c4 {
+    margin-bottom: 8px;
+  }
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 dcAeWS"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -178,10 +596,10 @@ exports[`Alert w/ compact 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2 c3"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c4 c5"
     >
       Alert title
     </div>
@@ -193,11 +611,66 @@ exports[`Alert w/ compact 1`] = `
 `;
 
 exports[`Alert w/ design 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -218,10 +691,10 @@ exports[`Alert w/ design 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -233,11 +706,66 @@ exports[`Alert w/ design 1`] = `
 `;
 
 exports[`Alert w/ design 2`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #E8F7F4;
+  color: #008E7D;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 htZvst"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -258,10 +786,10 @@ exports[`Alert w/ design 2`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -273,11 +801,66 @@ exports[`Alert w/ design 2`] = `
 `;
 
 exports[`Alert w/ design 3`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FEF3EC;
+  color: #CB662F;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 hRBRsM"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -298,10 +881,10 @@ exports[`Alert w/ design 3`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -313,11 +896,66 @@ exports[`Alert w/ design 3`] = `
 `;
 
 exports[`Alert w/ design 4`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #FDEEEE;
+  color: #C74952;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 fskUvJ"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -335,10 +973,10 @@ exports[`Alert w/ design 4`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -350,11 +988,67 @@ exports[`Alert w/ design 4`] = `
 `;
 
 exports[`Alert w/ dynamic 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c3 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+  width: auto;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 cuFPjJ"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -375,10 +1069,10 @@ exports[`Alert w/ dynamic 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c3"
     >
       Alert title
     </div>
@@ -390,14 +1084,63 @@ exports[`Alert w/ dynamic 1`] = `
 `;
 
 exports[`Alert w/o icon 1`] = `
+.c2 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
+  class="c0"
 >
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c1"
   >
     <div
-      class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+      class="c2"
     >
       Alert title
     </div>
@@ -409,11 +1152,60 @@ exports[`Alert w/o icon 1`] = `
 `;
 
 exports[`Alert w/o title 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F4F4F4;
+  color: #2B2D33;
+}
+
 <div
-  class="Alertstyles__Box-sc-18uul3b-3 jEuAvl"
+  class="c0"
 >
   <div
-    class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -434,7 +1226,7 @@ exports[`Alert w/o title 1`] = `
     </svg>
   </div>
   <div
-    class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+    class="c2"
   >
     <div>
       This is a test alert message.

@@ -1,22 +1,211 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
     aria-label="home"
-    class="Optionstyles__Box-rh2rby-0 cWMvHe"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <svg
             fill="currentColor"
@@ -32,7 +221,7 @@ exports[`Breadcrumbs 1`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -48,17 +237,17 @@ exports[`Breadcrumbs 1`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 gupWCO"
+    class="c6"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -74,33 +263,33 @@ exports[`Breadcrumbs 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 ctYDKa"
+    class="c10"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -116,33 +305,33 @@ exports[`Breadcrumbs 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 dGZwgj"
+    class="c11"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -158,23 +347,23 @@ exports[`Breadcrumbs 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
@@ -183,25 +372,214 @@ exports[`Breadcrumbs 1`] = `
 `;
 
 exports[`Breadcrumbs w/ less width with altText 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
 <div
   style="width:300px"
 >
   <div
-    class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+    class="c0"
   >
     <div
       aria-label="home"
-      class="Optionstyles__Box-rh2rby-0 cWMvHe"
+      class="c1"
       role="button"
     >
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+        class="c2"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 kVjDsf"
+            class="c4"
           >
             <svg
               fill="currentColor"
@@ -217,7 +595,7 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
             </svg>
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -233,17 +611,17 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
             </svg>
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           />
         </a>
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 gupWCO"
+      class="c6"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -259,23 +637,23 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+        class="c8"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 1
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 1
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Page 1
           </div>
@@ -283,11 +661,11 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 ctYDKa"
+      class="c10"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -303,23 +681,23 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+        class="c8"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 2
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 2
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Page 2
           </div>
@@ -327,11 +705,11 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 dGZwgj"
+      class="c11"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -347,23 +725,23 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+        class="c2"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 3
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 3
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Page 3
           </div>
@@ -375,25 +753,214 @@ exports[`Breadcrumbs w/ less width with altText 1`] = `
 `;
 
 exports[`Breadcrumbs w/ less width without altText 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
 <div
   style="width:300px"
 >
   <div
-    class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+    class="c0"
   >
     <div
       aria-label="home"
-      class="Optionstyles__Box-rh2rby-0 cWMvHe"
+      class="c1"
       role="button"
     >
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+        class="c2"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 kVjDsf"
+            class="c4"
           >
             <svg
               fill="currentColor"
@@ -409,7 +976,7 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
             </svg>
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -425,17 +992,17 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
             </svg>
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           />
         </a>
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 gupWCO"
+      class="c6"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -451,33 +1018,33 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+        class="c8"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 1
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 1
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           />
         </a>
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 ctYDKa"
+      class="c10"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -493,33 +1060,33 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+        class="c8"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 2
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 2
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           />
         </a>
       </div>
     </div>
     <div
-      class="Optionstyles__Box-rh2rby-0 dGZwgj"
+      class="c11"
       role="button"
     >
       <div
-        class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+        class="c7"
       >
         <svg
           fill="currentColor"
@@ -535,23 +1102,23 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
         </svg>
       </div>
       <div
-        class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+        class="c2"
       >
         <a
-          class="Optionstyles__Link-rh2rby-1 hRQBVh"
+          class="c3"
         >
           <div
-            class="Optionstyles__Text-rh2rby-2 dBiXdD"
+            class="c9"
           >
             Long Name Page 3
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           >
             Long Name Page 3
           </div>
           <div
-            class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+            class="c5"
           />
         </a>
       </div>
@@ -561,22 +1128,211 @@ exports[`Breadcrumbs w/ less width without altText 1`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(12px *3);
+  min-width: calc(12px *3);
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
     aria-label="home"
-    class="Optionstyles__Box-rh2rby-0 fvUONB"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <svg
             fill="currentColor"
@@ -592,7 +1348,7 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -608,17 +1364,17 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 iTypJl"
+    class="c6"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 wUhYH"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -634,33 +1390,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 iHTuaV"
+    class="c10"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 wUhYH"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -676,33 +1432,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 ceINFY"
+    class="c11"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 wUhYH"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -718,23 +1474,23 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
@@ -743,22 +1499,211 @@ exports[`Breadcrumbs w/ sizes more then 1 item 1`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
     aria-label="home"
-    class="Optionstyles__Box-rh2rby-0 cWMvHe"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <svg
             fill="currentColor"
@@ -774,7 +1719,7 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -790,17 +1735,17 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 gupWCO"
+    class="c6"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -816,33 +1761,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 ctYDKa"
+    class="c10"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -858,33 +1803,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 dGZwgj"
+    class="c11"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -900,23 +1845,23 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
@@ -925,22 +1870,211 @@ exports[`Breadcrumbs w/ sizes more then 1 item 2`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c8 {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c8 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c6:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  min-width: 0px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c10:hover {
+  color: #2B2D33;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  min-width: 0;
+  color: #2B2D33;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c11:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c9 {
+  display: inline;
+}
+
+.c5 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(16px *3);
+  min-width: calc(16px *3);
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
     aria-label="home"
-    class="Optionstyles__Box-rh2rby-0 bkGFWE"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <svg
             fill="currentColor"
@@ -956,7 +2090,7 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -972,17 +2106,17 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
           </svg>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 eIkgSo"
+    class="c6"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -998,33 +2132,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 1
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 hSCGbY"
+    class="c10"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -1040,33 +2174,33 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 eNFenW"
+      class="c8"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 2
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
   </div>
   <div
-    class="Optionstyles__Box-rh2rby-0 kyhEfd"
+    class="c11"
     role="button"
   >
     <div
-      class="Optionstyles__Icon-rh2rby-4 cVvCpT"
+      class="c7"
     >
       <svg
         fill="currentColor"
@@ -1082,23 +2216,23 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
       </svg>
     </div>
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 dBiXdD"
+          class="c9"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         >
           Long Name Page 3
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c5"
         />
       </a>
     </div>
@@ -1107,24 +2241,123 @@ exports[`Breadcrumbs w/ sizes more then 1 item 3`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
-    class="Optionstyles__Box-rh2rby-0 fvUONB"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1144,10 +2377,10 @@ exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1167,7 +2400,7 @@ exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         />
       </a>
     </div>
@@ -1176,24 +2409,123 @@ exports[`Breadcrumbs w/ sizes only 1 item 1`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
-    class="Optionstyles__Box-rh2rby-0 cWMvHe"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1213,10 +2545,10 @@ exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1236,7 +2568,7 @@ exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         />
       </a>
     </div>
@@ -1245,24 +2577,123 @@ exports[`Breadcrumbs w/ sizes only 1 item 2`] = `
 `;
 
 exports[`Breadcrumbs w/ sizes only 1 item 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c2 > svg {
+  vertical-align: top;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #808185;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c1:hover {
+  color: #2B2D33;
+}
+
+.c3 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.c3:hover {
+  color: inherit;
+}
+
+.c4 {
+  display: inline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
 <div
-  class="Breadcrumbsstyles__Box-g1i28t-0 eEJqyD"
+  class="c0"
 >
   <div
-    class="Optionstyles__Box-rh2rby-0 bkGFWE"
+    class="c1"
     role="button"
   >
     <div
-      class="Tooltipstyles__Box-c7nxm1-0 kCFjir"
+      class="c2"
     >
       <a
-        class="Optionstyles__Link-rh2rby-1 hRQBVh"
+        class="c3"
       >
         <div
-          class="Optionstyles__Text-rh2rby-2 kVjDsf"
+          class="c4"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1282,10 +2713,10 @@ exports[`Breadcrumbs w/ sizes only 1 item 3`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         >
           <div
-            class="Breadcrumbsstyles__BackIcon-g1i28t-1 gaNJyj"
+            class="c5"
           >
             <svg
               fill="currentColor"
@@ -1305,7 +2736,7 @@ exports[`Breadcrumbs w/ sizes only 1 item 3`] = `
           </span>
         </div>
         <div
-          class="Optionstyles__HiddenText-rh2rby-3 esAHYF"
+          class="c6"
         />
       </a>
     </div>

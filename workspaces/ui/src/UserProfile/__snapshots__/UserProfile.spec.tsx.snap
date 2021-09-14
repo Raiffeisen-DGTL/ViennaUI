@@ -1,36 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UserProfile 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     >
       Some Description
     </span>
@@ -39,39 +164,171 @@ exports[`UserProfile 1`] = `
 `;
 
 exports[`UserProfile as link 1`] = `
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c4 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(undefined);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #FFF4E8;
+  color: #FCB664;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-color: transparent;
+  display: block;
+}
+
+.c1 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c1:hover {
+  color: #00809C;
+}
+
+.c1:focus {
+  color: #00809C;
+}
+
+.c5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c7 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <a
-  class="Linkstyles__Box-sc-19s6dpo-0 kqCecX"
+  class="c0"
   href="https://home.raiffeisen.ru"
 >
   <span
-    class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+    class="c1"
     role="button"
     tabindex="0"
   >
     <div
-      class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+      class="c2"
       title="Super User Name"
     >
       <div
-        class="RoundIconstyles__Box-sc-5md3j7-0 dOlcex"
+        class="c3"
         color="dubai10"
       >
         S
       </div>
       <div
-        class="Avatarstyles__ImageLayer-sc-2qob5o-1 ihfKIJ"
+        class="c4"
       />
     </div>
     <span
-      class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+      class="c5"
     >
       <span
-        class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+        class="c6"
       >
         Super User Name
       </span>
       <span
-        class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+        class="c7"
       >
         Some Description
       </span>
@@ -81,38 +338,163 @@ exports[`UserProfile as link 1`] = `
 `;
 
 exports[`UserProfile w/ any props 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw className"
+  class="c0 className"
   id="alarm"
   role="button"
   tabindex="0"
   title="title"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     >
       Some Description
     </span>
@@ -121,36 +503,161 @@ exports[`UserProfile w/ any props 1`] = `
 `;
 
 exports[`UserProfile w/ size: m 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     >
       Some Description
     </span>
@@ -159,36 +666,162 @@ exports[`UserProfile w/ size: m 1`] = `
 `;
 
 exports[`UserProfile w/ size: s 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 32px;
+  width: 32px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+  display: none;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 XZhVf"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 eLyEuy"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 cWnHoF"
+      class="c6"
     >
       Some Description
     </span>
@@ -197,36 +830,162 @@ exports[`UserProfile w/ size: s 1`] = `
 `;
 
 exports[`UserProfile w/ size: xs 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 24px;
+  width: 24px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+  display: none;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ihsxQj"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 fiUeYF"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 cWnHoF"
+      class="c6"
     >
       Some Description
     </span>
@@ -235,35 +994,164 @@ exports[`UserProfile w/ size: xs 1`] = `
 `;
 
 exports[`UserProfile w/o align 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(undefined);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #FFF4E8;
+  color: #FCB664;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: right;
+  margin-right: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 jILASt"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 dOlcex"
+      class="c2"
       color="dubai10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 ihfKIJ"
+      class="c3"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 iaSjVk"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     >
       Some Description
     </span>
@@ -272,52 +1160,282 @@ exports[`UserProfile w/o align 1`] = `
 `;
 
 exports[`UserProfile w/o description 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     />
   </span>
 </span>
 `;
 
 exports[`UserProfile w/o name and description 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #E9EAEA;
+  color: #808185;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 iaWTsZ"
+      class="c2"
       color="seattle10"
     >
       <svg
@@ -339,7 +1457,7 @@ exports[`UserProfile w/o name and description 1`] = `
       </svg>
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 cBBdOI"
+      class="c3"
       src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
     />
   </div>
@@ -347,35 +1465,160 @@ exports[`UserProfile w/o name and description 1`] = `
 `;
 
 exports[`UserProfile w/o photo 1`] = `
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(undefined);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: #FFF4E8;
+  color: #FCB664;
+}
+
+.c0 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  color: #00809C;
+}
+
+.c0:focus {
+  color: #00809C;
+}
+
+.c4 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.c6 {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #AAABAD;
+}
+
 <span
-  class="UserProfilestyles__Box-n702wd-0 eIMxjw"
+  class="c0"
   role="button"
   tabindex="0"
 >
   <div
-    class="Avatarstyles__Box-sc-2qob5o-0 ekokgP"
+    class="c1"
     title="Super User Name"
   >
     <div
-      class="RoundIconstyles__Box-sc-5md3j7-0 dOlcex"
+      class="c2"
       color="dubai10"
     >
       S
     </div>
     <div
-      class="Avatarstyles__ImageLayer-sc-2qob5o-1 ihfKIJ"
+      class="c3"
     />
   </div>
   <span
-    class="UserProfilestyles__Profile-n702wd-1 fEQypv"
+    class="c4"
   >
     <span
-      class="UserProfilestyles__Name-n702wd-2 bnHsEw"
+      class="c5"
     >
       Super User Name
     </span>
     <span
-      class="UserProfilestyles__Description-n702wd-3 dSbhfc"
+      class="c6"
     >
       Some Description
     </span>

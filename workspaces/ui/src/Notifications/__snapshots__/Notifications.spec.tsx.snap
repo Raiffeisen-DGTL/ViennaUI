@@ -1,19 +1,264 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Custom notifications 1`] = `
+.c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c7 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EE505A;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c8:active {
+  top: 1px;
+}
+
+.c8:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c9 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c9:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c9 > svg {
+  display: block;
+}
+
+.c10 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #BFE9DF;
+}
+
+.c10:hover {
+  color: #FFFFFF;
+}
+
+.c12 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FACED1;
+}
+
+.c12:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  right: 20px;
+  bottom: 0;
+}
+
+@media (max-width:10000px) {
+  .c2 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c2 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:10000px) {
+  .c11 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c11 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:10000px) {
+  .c1 {
+    width: 350px;
+  }
+}
+
 <div
-  class="Notificationsstyles__Box-p5iec4-0 dRRBMK"
+  class="c0"
 >
   <div
-    class="Notificationstyles__Box-ua71du-1 VMrRP"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 cdJabY"
+      class="c2"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -34,10 +279,10 @@ exports[`Custom notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Custom notification
         </div>
@@ -52,18 +297,18 @@ exports[`Custom notifications 1`] = `
             style="margin-top:10px"
           >
             <button
-              class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+              class="c8"
               type="button"
             >
               <span
-                class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                class="c9"
               >
                 OK
               </span>
             </button>
           </div>
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -83,15 +328,15 @@ exports[`Custom notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 VMrRP"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 eWXDzp"
+      class="c11"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -109,10 +354,10 @@ exports[`Custom notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Custom notification
         </div>
@@ -124,7 +369,7 @@ exports[`Custom notifications 1`] = `
           </b>
           This is a custom error notification
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
+            class="c12"
           >
             <svg
               fill="currentColor"
@@ -147,19 +392,263 @@ exports[`Custom notifications 1`] = `
 `;
 
 exports[`Notifications 1`] = `
+.c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F88545;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EE505A;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c8 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #BFE9DF;
+}
+
+.c8:hover {
+  color: #FFFFFF;
+}
+
+.c10 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FDDAC7;
+}
+
+.c10:hover {
+  color: #FFFFFF;
+}
+
+.c12 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FACED1;
+}
+
+.c12:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 1px;
+  left: 50%;
+  top: 0;
+}
+
 <div
-  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
+  class="c0"
 >
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+      class="c2"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -180,17 +669,17 @@ exports[`Notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c6"
           >
             <svg
               fill="currentColor"
@@ -210,15 +699,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
+      class="c7"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -239,17 +728,17 @@ exports[`Notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -269,15 +758,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
+      class="c9"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -298,17 +787,17 @@ exports[`Notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -328,15 +817,15 @@ exports[`Notifications 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
+      class="c11"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -354,17 +843,17 @@ exports[`Notifications 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
+            class="c12"
           >
             <svg
               fill="currentColor"
@@ -387,19 +876,686 @@ exports[`Notifications 1`] = `
 `;
 
 exports[`Notifications w/ buttons 1`] = `
+.c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c7 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F88545;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EE505A;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F88545;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EE505A;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c18 {
+  margin-top: 16px;
+}
+
+.c21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  border: solid 2px rgba(255,255,255,0.64);
+  height: 32px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.c21:active {
+  top: 1px;
+}
+
+.c21:hover {
+  border: solid 2px #FFFFFF;
+}
+
+.c23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  padding: 0;
+  height: 32px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.c23:active {
+  top: 1px;
+}
+
+.c23:hover {
+  color: #FFFFFF;
+}
+
+.c22 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c22:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c22 > svg {
+  display: block;
+}
+
+.c19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c20 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c20:last-child {
+  margin-right: 0;
+}
+
+.c8 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c8:hover {
+  color: #FFFFFF;
+}
+
+.c10 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #BFE9DF;
+}
+
+.c10:hover {
+  color: #FFFFFF;
+}
+
+.c12 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FDDAC7;
+}
+
+.c12:hover {
+  color: #FFFFFF;
+}
+
+.c14 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FACED1;
+}
+
+.c14:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c15 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 1px;
+  left: 50%;
+  top: 0;
+}
+
+@media (max-width:1024px) {
+  .c16 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c16 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:100000px) {
+  .c17 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c17 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:100000px) {
+  .c24 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c24 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:100000px) {
+  .c25 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c25 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:100000px) {
+  .c26 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c26 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:1024px) {
+  .c15 {
+    width: 350px;
+  }
+}
+
 <div
-  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
+  class="c0"
 >
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+      class="c2"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -420,17 +1576,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -450,15 +1606,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
+      class="c9"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -479,17 +1635,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -509,15 +1665,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
+      class="c11"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -538,17 +1694,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
+            class="c12"
           >
             <svg
               fill="currentColor"
@@ -568,15 +1724,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
+      class="c13"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -594,17 +1750,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
+            class="c14"
           >
             <svg
               fill="currentColor"
@@ -624,15 +1780,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 ckrXSd"
+    class="c15"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 klUbFw"
+      class="c16"
       id="notification_4"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -653,17 +1809,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -683,15 +1839,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 kSUESK"
+      class="c17"
       id="notification_5"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -712,17 +1868,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -739,34 +1895,34 @@ exports[`Notifications w/ buttons 1`] = `
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
+          class="c18"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c19"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
+                class="c21"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 REMLL"
+                class="c23"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   Cancel
                 </span>
@@ -778,15 +1934,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 hCEiLY"
+      class="c24"
       id="notification_6"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -807,17 +1963,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -834,34 +1990,34 @@ exports[`Notifications w/ buttons 1`] = `
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
+          class="c18"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c19"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
+                class="c21"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 REMLL"
+                class="c23"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   Cancel
                 </span>
@@ -873,15 +2029,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 bfSJOq"
+      class="c25"
       id="notification_7"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -902,17 +2058,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
+            class="c12"
           >
             <svg
               fill="currentColor"
@@ -929,34 +2085,34 @@ exports[`Notifications w/ buttons 1`] = `
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
+          class="c18"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c19"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
+                class="c21"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 REMLL"
+                class="c23"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   Cancel
                 </span>
@@ -968,15 +2124,15 @@ exports[`Notifications w/ buttons 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 fnKmCt"
+      class="c26"
       id="notification_8"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -994,17 +2150,17 @@ exports[`Notifications w/ buttons 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Notification with actions
         </div>
         <div>
           Some text goes here.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
+            class="c14"
           >
             <svg
               fill="currentColor"
@@ -1021,34 +2177,34 @@ exports[`Notifications w/ buttons 1`] = `
           </span>
         </div>
         <div
-          class="Alertstyles__Actions-sc-18uul3b-4 eOzpup"
+          class="c18"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c19"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 ijBBiW"
+                class="c21"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   OK
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c20"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 REMLL"
+                class="c23"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c22"
                 >
                   Cancel
                 </span>
@@ -1063,19 +2219,323 @@ exports[`Notifications w/ buttons 1`] = `
 `;
 
 exports[`Notifications w/ compact 1`] = `
+.c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c7 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F88545;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EE505A;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c8 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c8:hover {
+  color: #FFFFFF;
+}
+
+.c10 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #BFE9DF;
+}
+
+.c10:hover {
+  color: #FFFFFF;
+}
+
+.c12 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FDDAC7;
+}
+
+.c12:hover {
+  color: #FFFFFF;
+}
+
+.c14 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FACED1;
+}
+
+.c14:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c15 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 1px;
+  left: 50%;
+  top: 0;
+}
+
+@media (max-width:1024px) {
+  .c16 .c4 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c16 .c4 .c6 {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width:1024px) {
+  .c15 {
+    width: 350px;
+  }
+}
+
 <div
-  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
+  class="c0"
 >
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+      class="c2"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1096,17 +2556,17 @@ exports[`Notifications w/ compact 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -1126,15 +2586,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
+      class="c9"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1155,17 +2615,17 @@ exports[`Notifications w/ compact 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -1185,15 +2645,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
+      class="c11"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1214,17 +2674,17 @@ exports[`Notifications w/ compact 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
+            class="c12"
           >
             <svg
               fill="currentColor"
@@ -1244,15 +2704,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 kdgEwy"
+      class="c13"
       id="notification_3"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1270,17 +2730,17 @@ exports[`Notifications w/ compact 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Error notification.
         </div>
         <div>
           Для ошибок.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 lbgkyb"
+            class="c14"
           >
             <svg
               fill="currentColor"
@@ -1300,15 +2760,15 @@ exports[`Notifications w/ compact 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 ckrXSd"
+    class="c15"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 klUbFw"
+      class="c16"
       id="notification_4"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1329,17 +2789,17 @@ exports[`Notifications w/ compact 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4 c5"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c6 c7"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -1362,19 +2822,217 @@ exports[`Notifications w/ compact 1`] = `
 `;
 
 exports[`Notifications w/ limit 1`] = `
+.c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #19B28D;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #F88545;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c8 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #BFE9DF;
+}
+
+.c8:hover {
+  color: #FFFFFF;
+}
+
+.c10 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #FDDAC7;
+}
+
+.c10:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 1px;
+  left: 50%;
+  top: 0;
+}
+
 <div
-  class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
+  class="c0"
 >
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+      class="c2"
       id="notification_0"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1395,17 +3053,17 @@ exports[`Notifications w/ limit 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Plain notification.
         </div>
         <div>
           Для нейтральных уведомлений
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+            class="c6"
           >
             <svg
               fill="currentColor"
@@ -1425,15 +3083,15 @@ exports[`Notifications w/ limit 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 gymNvr"
+      class="c7"
       id="notification_1"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1454,17 +3112,17 @@ exports[`Notifications w/ limit 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Success notification.
         </div>
         <div>
           Для успешных уведомлений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 beKwqV"
+            class="c8"
           >
             <svg
               fill="currentColor"
@@ -1484,15 +3142,15 @@ exports[`Notifications w/ limit 1`] = `
     </div>
   </div>
   <div
-    class="Notificationstyles__Box-ua71du-1 koinWy"
+    class="c1"
     open=""
   >
     <div
-      class="Alertstyles__Box-sc-18uul3b-3 bZzAQR"
+      class="c9"
       id="notification_2"
     >
       <div
-        class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1513,17 +3171,17 @@ exports[`Notifications w/ limit 1`] = `
         </svg>
       </div>
       <div
-        class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+        class="c4"
       >
         <div
-          class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+          class="c5"
         >
           Warning notification.
         </div>
         <div>
           Для предупреждений.
           <span
-            class="Notificationstyles__CloseBox-ua71du-0 ildjWw"
+            class="c10"
           >
             <svg
               fill="currentColor"
@@ -1547,19 +3205,124 @@ exports[`Notifications w/ limit 1`] = `
 
 exports[`Notifications w/ position 1`] = `
 Array [
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 kOGuzI"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  left: 20px;
+  top: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1580,17 +3343,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"
@@ -1610,19 +3373,125 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 eiLLzv"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  width: 1px;
+  left: 50%;
+  top: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1643,17 +3512,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"
@@ -1673,19 +3542,124 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 ejmmyT"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  right: 20px;
+  top: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1706,17 +3680,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"
@@ -1736,19 +3710,121 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 jVvuOx"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  left: 20px;
+  bottom: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1769,17 +3845,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"
@@ -1799,19 +3875,122 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 faZDzu"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 1px;
+  left: 50%;
+  bottom: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1832,17 +4011,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"
@@ -1862,19 +4041,121 @@ Array [
       </div>
     </div>
   </div>,
-  <div
-    class="Notificationsstyles__Box-p5iec4-0 dRRBMK"
+  .c3 {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.c5 {
+  font-weight: 500;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: inherit;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  padding-right: 46px;
+}
+
+.c6 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  color: #AAABAD;
+}
+
+.c6:hover {
+  color: #FFFFFF;
+}
+
+.c1 {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 500px;
+  -webkit-animation: gYAHGK 0.5s ease forwards;
+  animation: gYAHGK 0.5s ease forwards;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99999999;
+  margin: 12px 0;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  right: 20px;
+  bottom: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Notificationstyles__Box-ua71du-1 koinWy"
+      class="c1"
       open=""
     >
       <div
-        class="Alertstyles__Box-sc-18uul3b-3 ehRmPZ"
+        class="c2"
         id="notification_0"
       >
         <div
-          class="Alertstyles__IconContainer-sc-18uul3b-0 lgnGRa"
+          class="c3"
         >
           <svg
             fill="currentColor"
@@ -1895,17 +4176,17 @@ Array [
           </svg>
         </div>
         <div
-          class="Alertstyles__TextContainer-sc-18uul3b-2 isQZDp"
+          class="c4"
         >
           <div
-            class="Alertstyles__Title-sc-18uul3b-1 dyTuid"
+            class="c5"
           >
             Plain notification.
           </div>
           <div>
             Для нейтральных уведомлений
             <span
-              class="Notificationstyles__CloseBox-ua71du-0 gXgsgB"
+              class="c6"
             >
               <svg
                 fill="currentColor"

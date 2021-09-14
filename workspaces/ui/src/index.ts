@@ -63,3 +63,4 @@ export * from './UserProfile';
 export * from './Monthpicker';
 export * from './TableDeprecated';
 export * from './Whitespace';
+export * from './Wizard';

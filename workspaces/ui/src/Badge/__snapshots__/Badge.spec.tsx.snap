@@ -1,12 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Badge 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 crjkvJ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -14,15 +67,69 @@ exports[`Badge 1`] = `
 `;
 
 exports[`Badge as link 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  cursor: pointer;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <a
-  class="Badgestyles__Box-i62nwy-0 iDgGPd"
+  class="c0"
   color="paris10"
   href="https://raif.ru"
   rel="noopener"
   target="_blank"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -30,14 +137,68 @@ exports[`Badge as link 1`] = `
 `;
 
 exports[`Badge w/ any props 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  cursor: pointer;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 iDgGPd className"
+  class="c0 className"
   color="paris10"
   id="id"
   title="title"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -45,12 +206,65 @@ exports[`Badge w/ any props 1`] = `
 `;
 
 exports[`Badge w/ color and icon: dubai10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFF4E8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 eRuvWB"
+  class="c0"
   color="dubai10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -68,7 +282,7 @@ exports[`Badge w/ color and icon: dubai10 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -76,12 +290,65 @@ exports[`Badge w/ color and icon: dubai10 1`] = `
 `;
 
 exports[`Badge w/ color and icon: dubai30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE9D1;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 ijNCrA"
+  class="c0"
   color="dubai30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -99,7 +366,7 @@ exports[`Badge w/ color and icon: dubai30 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -107,12 +374,65 @@ exports[`Badge w/ color and icon: dubai30 1`] = `
 `;
 
 exports[`Badge w/ color and icon: miami10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E7F8F4;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 clLtiQ"
+  class="c0"
   color="miami10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -130,7 +450,7 @@ exports[`Badge w/ color and icon: miami10 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -138,12 +458,65 @@ exports[`Badge w/ color and icon: miami10 1`] = `
 `;
 
 exports[`Badge w/ color and icon: miami30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #CFF1E9;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dNQYUY"
+  class="c0"
   color="miami30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -161,7 +534,7 @@ exports[`Badge w/ color and icon: miami30 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -169,12 +542,65 @@ exports[`Badge w/ color and icon: miami30 1`] = `
 `;
 
 exports[`Badge w/ color and icon: nice10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFEFEF;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dBluzq"
+  class="c0"
   color="nice10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -192,7 +618,7 @@ exports[`Badge w/ color and icon: nice10 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -200,12 +626,65 @@ exports[`Badge w/ color and icon: nice10 1`] = `
 `;
 
 exports[`Badge w/ color and icon: nice30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE0E0;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dPYEWN"
+  class="c0"
   color="nice30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -223,7 +702,7 @@ exports[`Badge w/ color and icon: nice30 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -231,12 +710,65 @@ exports[`Badge w/ color and icon: nice30 1`] = `
 `;
 
 exports[`Badge w/ color and icon: paris10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 crjkvJ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -254,7 +786,7 @@ exports[`Badge w/ color and icon: paris10 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -262,12 +794,65 @@ exports[`Badge w/ color and icon: paris10 1`] = `
 `;
 
 exports[`Badge w/ color and icon: paris30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E1E0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 kdtpfY"
+  class="c0"
   color="paris30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -285,7 +870,7 @@ exports[`Badge w/ color and icon: paris30 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -293,12 +878,65 @@ exports[`Badge w/ color and icon: paris30 1`] = `
 `;
 
 exports[`Badge w/ color and icon: seattle05 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F8F8F8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 hVCpvM"
+  class="c0"
   color="seattle05"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -316,7 +954,7 @@ exports[`Badge w/ color and icon: seattle05 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -324,12 +962,65 @@ exports[`Badge w/ color and icon: seattle05 1`] = `
 `;
 
 exports[`Badge w/ color and icon: seattle10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E9EAEA;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 gWDZdS"
+  class="c0"
   color="seattle10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -347,7 +1038,7 @@ exports[`Badge w/ color and icon: seattle10 1`] = `
     </svg>
   </span>
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
      Badge text
   </span>
@@ -355,12 +1046,65 @@ exports[`Badge w/ color and icon: seattle10 1`] = `
 `;
 
 exports[`Badge w/ color: dubai10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFF4E8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 eRuvWB"
+  class="c0"
   color="dubai10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -368,12 +1112,65 @@ exports[`Badge w/ color: dubai10 1`] = `
 `;
 
 exports[`Badge w/ color: dubai30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE9D1;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 ijNCrA"
+  class="c0"
   color="dubai30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -381,12 +1178,65 @@ exports[`Badge w/ color: dubai30 1`] = `
 `;
 
 exports[`Badge w/ color: miami10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E7F8F4;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 clLtiQ"
+  class="c0"
   color="miami10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -394,12 +1244,65 @@ exports[`Badge w/ color: miami10 1`] = `
 `;
 
 exports[`Badge w/ color: miami30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #CFF1E9;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dNQYUY"
+  class="c0"
   color="miami30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -407,12 +1310,65 @@ exports[`Badge w/ color: miami30 1`] = `
 `;
 
 exports[`Badge w/ color: nice10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFEFEF;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dBluzq"
+  class="c0"
   color="nice10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -420,12 +1376,65 @@ exports[`Badge w/ color: nice10 1`] = `
 `;
 
 exports[`Badge w/ color: nice30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE0E0;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dPYEWN"
+  class="c0"
   color="nice30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -433,12 +1442,65 @@ exports[`Badge w/ color: nice30 1`] = `
 `;
 
 exports[`Badge w/ color: paris10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 crjkvJ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -446,12 +1508,65 @@ exports[`Badge w/ color: paris10 1`] = `
 `;
 
 exports[`Badge w/ color: paris30 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E1E0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 kdtpfY"
+  class="c0"
   color="paris30"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -459,12 +1574,65 @@ exports[`Badge w/ color: paris30 1`] = `
 `;
 
 exports[`Badge w/ color: seattle05 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F8F8F8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 hVCpvM"
+  class="c0"
   color="seattle05"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -472,12 +1640,65 @@ exports[`Badge w/ color: seattle05 1`] = `
 `;
 
 exports[`Badge w/ color: seattle10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E9EAEA;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 gWDZdS"
+  class="c0"
   color="seattle10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -485,12 +1706,65 @@ exports[`Badge w/ color: seattle10 1`] = `
 `;
 
 exports[`Badge w/ grid: g0 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 iTePON"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -498,12 +1772,66 @@ exports[`Badge w/ grid: g0 1`] = `
 `;
 
 exports[`Badge w/ grid: g1 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 8.333333333333334%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 hkXTcV"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -511,12 +1839,66 @@ exports[`Badge w/ grid: g1 1`] = `
 `;
 
 exports[`Badge w/ grid: g2 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 16.666666666666668%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 hEOtpy"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -524,12 +1906,66 @@ exports[`Badge w/ grid: g2 1`] = `
 `;
 
 exports[`Badge w/ grid: g3 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 25%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 dExUxw"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -537,12 +1973,66 @@ exports[`Badge w/ grid: g3 1`] = `
 `;
 
 exports[`Badge w/ grid: g4 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 33.333333333333336%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 kOFzVb"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -550,12 +2040,66 @@ exports[`Badge w/ grid: g4 1`] = `
 `;
 
 exports[`Badge w/ grid: g5 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 41.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 eQpxzR"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -563,12 +2107,66 @@ exports[`Badge w/ grid: g5 1`] = `
 `;
 
 exports[`Badge w/ grid: g6 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 50%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 eOtmOG"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -576,12 +2174,66 @@ exports[`Badge w/ grid: g6 1`] = `
 `;
 
 exports[`Badge w/ grid: g7 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 58.333333333333336%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 cUUxZK"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -589,12 +2241,66 @@ exports[`Badge w/ grid: g7 1`] = `
 `;
 
 exports[`Badge w/ grid: g8 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 66.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 fdJBCQ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -602,12 +2308,66 @@ exports[`Badge w/ grid: g8 1`] = `
 `;
 
 exports[`Badge w/ grid: g9 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 75%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 eQyGgV"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -615,12 +2375,66 @@ exports[`Badge w/ grid: g9 1`] = `
 `;
 
 exports[`Badge w/ grid: g10 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 83.33333333333334%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 jBIfbd"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -628,12 +2442,66 @@ exports[`Badge w/ grid: g10 1`] = `
 `;
 
 exports[`Badge w/ grid: g11 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 91.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 AqWMQ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -641,12 +2509,66 @@ exports[`Badge w/ grid: g11 1`] = `
 `;
 
 exports[`Badge w/ grid: g12 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 fVQyHG"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -654,12 +2576,65 @@ exports[`Badge w/ grid: g12 1`] = `
 `;
 
 exports[`Badge w/ size: l 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 36px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 cDNMac"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 dmmzMn"
+    class="c1"
   >
     Badge text
   </span>
@@ -667,12 +2642,65 @@ exports[`Badge w/ size: l 1`] = `
 `;
 
 exports[`Badge w/ size: m 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 crjkvJ"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>
@@ -680,12 +2708,65 @@ exports[`Badge w/ size: m 1`] = `
 `;
 
 exports[`Badge w/ size: s 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 8px;
+  height: 24px;
+  min-width: 32px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
 <span
-  class="Badgestyles__Box-i62nwy-0 gmEXPS"
+  class="c0"
   color="paris10"
 >
   <span
-    class="Badgestyles__Item-i62nwy-1 hejroX"
+    class="c1"
   >
     Badge text
   </span>

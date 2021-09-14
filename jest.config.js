@@ -17,6 +17,7 @@ module.exports = {
         '<rootDir>/workspaces/ui-pictogram',
     ],
     setupFiles: ['<rootDir>/scripts/jest/setup.js'],
+    setupFilesAfterEnv: ['<rootDir>/scripts/jest/setupTests.js'],
     testEnvironment: 'jsdom',
     testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
     testResultsProcessor: 'jest-bamboo-formatter',

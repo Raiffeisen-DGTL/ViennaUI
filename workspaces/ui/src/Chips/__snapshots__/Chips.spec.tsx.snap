@@ -1,25 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Chips 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #000000;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="3"
     role="option"
   >
@@ -29,25 +119,115 @@ exports[`Chips 1`] = `
 `;
 
 exports[`Chips w/ active 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #000000;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="3"
     role="option"
   >
@@ -57,25 +237,115 @@ exports[`Chips w/ active 1`] = `
 `;
 
 exports[`Chips w/ align 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #000000;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 yPYKc"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="3"
     role="option"
   >
@@ -85,26 +355,78 @@ exports[`Chips w/ align 1`] = `
 `;
 
 exports[`Chips w/ any props 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr className"
+  class="c0 className"
   id="id"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c1"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c1"
     id="3"
     role="option"
   >
@@ -114,25 +436,114 @@ exports[`Chips w/ any props 1`] = `
 `;
 
 exports[`Chips w/ design 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  background-color: #FEE600;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #FED500;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 GjXIy"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="3"
     role="option"
   >
@@ -142,25 +553,115 @@ exports[`Chips w/ design 1`] = `
 `;
 
 exports[`Chips w/ design 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #000000;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c2"
     id="3"
     role="option"
   >
@@ -170,25 +671,114 @@ exports[`Chips w/ design 2`] = `
 `;
 
 exports[`Chips w/ design 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: transparent;
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #D5D5D6;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: transparent;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 hcRtct"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kohHQH"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kohHQH"
+    class="c2"
     id="3"
     role="option"
   >
@@ -198,11 +788,108 @@ exports[`Chips w/ design 3`] = `
 `;
 
 exports[`Chips w/ disabled 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  background-color: #F4F4F4;
+  background-color: #FEE600;
+  color: #808185;
+  background-color: #D5D5D6;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #FED500;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 jAAPqS"
+    class="c1"
     disabled=""
     id="1"
     role="option"
@@ -211,7 +898,7 @@ exports[`Chips w/ disabled 1`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
+    class="c2"
     disabled=""
     id="2"
     role="option"
@@ -220,7 +907,7 @@ exports[`Chips w/ disabled 1`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
+    class="c2"
     disabled=""
     id="3"
     role="option"
@@ -232,11 +919,109 @@ exports[`Chips w/ disabled 1`] = `
 `;
 
 exports[`Chips w/ disabled 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  background-color: #F4F4F4;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+  color: #808185;
+  background-color: #D5D5D6;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #000000;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 lhvWtl"
+    class="c1"
     disabled=""
     id="1"
     role="option"
@@ -245,7 +1030,7 @@ exports[`Chips w/ disabled 2`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
+    class="c2"
     disabled=""
     id="2"
     role="option"
@@ -254,7 +1039,7 @@ exports[`Chips w/ disabled 2`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 iCxqMm"
+    class="c2"
     disabled=""
     id="3"
     role="option"
@@ -266,11 +1051,106 @@ exports[`Chips w/ disabled 2`] = `
 `;
 
 exports[`Chips w/ disabled 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: transparent;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+  background-color: #E9EAEA;
+  color: #AAABAD;
+  background-color: #F4F4F4;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c1:hover {
+  background-color: #D5D5D6;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: transparent;
+  pointer-events: none;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kGYMjp"
+    class="c1"
     disabled=""
     id="1"
     role="option"
@@ -279,7 +1159,7 @@ exports[`Chips w/ disabled 3`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 jOYZan"
+    class="c2"
     disabled=""
     id="2"
     role="option"
@@ -288,7 +1168,7 @@ exports[`Chips w/ disabled 3`] = `
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 jOYZan"
+    class="c2"
     disabled=""
     id="3"
     role="option"
@@ -300,25 +1180,115 @@ exports[`Chips w/ disabled 3`] = `
 `;
 
 exports[`Chips w/ multiple active 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  outline: 0;
+  margin-left: -8px;
+  width: 100%;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+}
+
+.c1:hover {
+  background-color: #E9EAEA;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 16px;
+  outline: 0;
+  color: #2B2D33;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c2:hover {
+  background-color: #E9EAEA;
+}
+
+.c2:hover {
+  background-color: #000000;
+}
+
 <div
-  class="Chipsstyles__Box-sc-1xafpmg-0 jnPUVr"
+  class="c0"
 >
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 kOgGBY"
+    class="c1"
     id="1"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c2"
     id="2"
     role="option"
   >
     Chip
   </div>
   <div
-    class="Chipsstyles__Item-sc-1xafpmg-1 fymOnN"
+    class="c2"
     id="3"
     role="option"
   >

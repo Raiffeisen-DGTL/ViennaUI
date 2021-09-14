@@ -1,8 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
     class="Cardstyles__Content-sc-2l30u5-3"
@@ -13,17 +30,67 @@ exports[`Card 1`] = `
 `;
 
 exports[`Card w/ actions 1`] = `
+.c3 {
+  font-feature-settings: normal;
+  vertical-align: baseline;
+  padding: 0;
+  font-family: Navigo,Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal !important;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
-    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
+    class="c1"
   >
     <div
-      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
+      class="c2"
     >
       <h5
-        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
+        class="c3"
         color="brand-primary"
       >
         Card title
@@ -58,8 +125,25 @@ exports[`Card w/ actions 1`] = `
 `;
 
 exports[`Card w/ any props 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi className"
+  class="c0 className"
   id="id"
 >
   <div
@@ -71,14 +155,41 @@ exports[`Card w/ any props 1`] = `
 `;
 
 exports[`Card w/ content title 1`] = `
+.c1 {
+  color: #808185;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.c1:not(:first-child) {
+  margin-top: 32px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
     class="Cardstyles__Content-sc-2l30u5-3"
   >
     <div
-      class="Cardstyles__ContentTitle-sc-2l30u5-6 cHBQAy"
+      class="c1"
     >
       Section header
     </div>
@@ -86,7 +197,7 @@ exports[`Card w/ content title 1`] = `
       Section 1
     </div>
     <div
-      class="Cardstyles__ContentTitle-sc-2l30u5-6 cHBQAy"
+      class="c1"
     >
       Section header
     </div>
@@ -98,8 +209,29 @@ exports[`Card w/ content title 1`] = `
 `;
 
 exports[`Card w/ footer 1`] = `
+.c1 {
+  margin-top: 32px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
     class="Cardstyles__Content-sc-2l30u5-3"
@@ -107,7 +239,7 @@ exports[`Card w/ footer 1`] = `
     Card content
   </div>
   <div
-    class="Cardstyles__Footer-sc-2l30u5-4 lpcqgz"
+    class="c1"
   >
     Card footer
   </div>
@@ -115,23 +247,77 @@ exports[`Card w/ footer 1`] = `
 `;
 
 exports[`Card w/ header 1`] = `
+.c3 {
+  font-feature-settings: normal;
+  vertical-align: baseline;
+  padding: 0;
+  font-family: Navigo,Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal !important;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c4 {
+  color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
-    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
+    class="c1"
   >
     <div
-      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
+      class="c2"
     >
       <h5
-        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
+        class="c3"
         color="brand-primary"
       >
         Card title
       </h5>
       <div
-        class="Cardstyles__Subtitle-sc-2l30u5-5 cCwuwd"
+        class="c4"
       >
         Card subtitle
       </div>
@@ -146,17 +332,75 @@ exports[`Card w/ header 1`] = `
 `;
 
 exports[`Card w/ stretch 1`] = `
+.c3 {
+  font-feature-settings: normal;
+  vertical-align: baseline;
+  padding: 0;
+  font-family: Navigo,Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal !important;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.c0 .Cardstyles__Content-sc-2l30u5-3 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 Tjoml"
+  class="c0"
 >
   <div
-    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
+    class="c1"
   >
     <div
-      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
+      class="c2"
     >
       <h5
-        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
+        class="c3"
         color="brand-primary"
       >
         Simple card
@@ -172,17 +416,67 @@ exports[`Card w/ stretch 1`] = `
 `;
 
 exports[`Card w/ titile 1`] = `
+.c3 {
+  font-feature-settings: normal;
+  vertical-align: baseline;
+  padding: 0;
+  font-family: Navigo,Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal !important;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
 <div
-  class="Cardstyles__Box-sc-2l30u5-7 dfXrBi"
+  class="c0"
 >
   <div
-    class="Cardstyles__Header-sc-2l30u5-0 xIVBi"
+    class="c1"
   >
     <div
-      class="Cardstyles__Title-sc-2l30u5-1 cRWity"
+      class="c2"
     >
       <h5
-        class="Headingstyles__Box-sc-1j4seq7-0 eRtSPB"
+        class="c3"
         color="brand-primary"
       >
         Card title

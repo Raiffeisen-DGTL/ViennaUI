@@ -1,8 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PaymentLogo 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="16"
@@ -29,8 +60,40 @@ exports[`PaymentLogo 1`] = `
 `;
 
 exports[`PaymentLogo w/ any props 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 cOTHMI className"
+  class="c0 className"
   id="alarm"
   title="title"
 >
@@ -59,16 +122,79 @@ exports[`PaymentLogo w/ any props 1`] = `
 `;
 
 exports[`PaymentLogo w/ children 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   Logo
 </div>
 `;
 
 exports[`PaymentLogo w/ clickable 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+  cursor: pointer;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 cOTHMI"
+  class="c0"
 >
   <svg
     height="16"
@@ -95,8 +221,39 @@ exports[`PaymentLogo w/ clickable 1`] = `
 `;
 
 exports[`PaymentLogo w/ design: ghost 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: transparent;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 efGNbj"
+  class="c0"
 >
   <svg
     height="16"
@@ -123,8 +280,39 @@ exports[`PaymentLogo w/ design: ghost 1`] = `
 `;
 
 exports[`PaymentLogo w/ design: whitebox 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #FFFFFF;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 gNfXKi"
+  class="c0"
 >
   <svg
     height="16"
@@ -151,8 +339,39 @@ exports[`PaymentLogo w/ design: whitebox 1`] = `
 `;
 
 exports[`PaymentLogo w/ design: wildsand 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="16"
@@ -179,8 +398,39 @@ exports[`PaymentLogo w/ design: wildsand 1`] = `
 `;
 
 exports[`PaymentLogo w/ logo: mastercard 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="16"
@@ -207,8 +457,39 @@ exports[`PaymentLogo w/ logo: mastercard 1`] = `
 `;
 
 exports[`PaymentLogo w/ logo: mir 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="11"
@@ -233,8 +514,39 @@ exports[`PaymentLogo w/ logo: mir 1`] = `
 `;
 
 exports[`PaymentLogo w/ logo: visa 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="11"
@@ -257,8 +569,39 @@ exports[`PaymentLogo w/ logo: visa 1`] = `
 `;
 
 exports[`PaymentLogo w/ size: l 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 72px;
+  height: 40px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 bUrtHv"
+  class="c0"
 >
   <svg
     height="20"
@@ -285,8 +628,39 @@ exports[`PaymentLogo w/ size: l 1`] = `
 `;
 
 exports[`PaymentLogo w/ size: m 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 56px;
+  height: 32px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 kPtcss"
+  class="c0"
 >
   <svg
     height="16"
@@ -313,8 +687,39 @@ exports[`PaymentLogo w/ size: m 1`] = `
 `;
 
 exports[`PaymentLogo w/ size: s 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 40px;
+  height: 24px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 cKuXdo"
+  class="c0"
 >
   <svg
     height="12"
@@ -341,8 +746,39 @@ exports[`PaymentLogo w/ size: s 1`] = `
 `;
 
 exports[`PaymentLogo w/ size: xl 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 86px;
+  height: 48px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 guuIXM"
+  class="c0"
 >
   <svg
     height="24"
@@ -369,8 +805,39 @@ exports[`PaymentLogo w/ size: xl 1`] = `
 `;
 
 exports[`PaymentLogo w/ size: xs 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 24px;
+  height: 16px;
+  background-color: #F4F4F4;
+}
+
 <div
-  class="PaymentLogostyles__Box-fttw7p-0 ieWYFT"
+  class="c0"
 >
   <svg
     height="8"

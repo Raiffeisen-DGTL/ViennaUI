@@ -1,26 +1,167 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover 1`] = `
+.c0 {
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 28px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  z-index: 1000;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  top: 22px;
+  left: 0px;
+  right: px;
+  bottom: px;
+  display: none;
+}
+
+.c5 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c4 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:active {
+  top: 1px;
+}
+
+.c1:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c2 > svg {
+  display: block;
+}
+
 <span
-  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+  class="c0"
   tabindex="0"
 >
   <button
-    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+    class="c1"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       Click me
     </span>
   </button>
   <div
-    class="Popoverstyles__Message-wdclke-1 ckagnX"
+    class="c3"
     width="250"
   >
     <div
-      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
+      class="c4"
     >
       <svg
         fill="currentColor"
@@ -36,12 +177,12 @@ exports[`Popover 1`] = `
       </svg>
     </div>
     <div
-      class="Popoverstyles__Header-wdclke-2 fYngzS"
+      class="c5"
     >
       This is header
     </div>
     <div
-      class="Popoverstyles__Content-wdclke-3 dNpuLA"
+      class="c6"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -50,18 +191,77 @@ exports[`Popover 1`] = `
 `;
 
 exports[`Popover w/ any props 1`] = `
+.c0 {
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 28px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  z-index: 1000;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  top: 22px;
+  left: 0px;
+  right: px;
+  bottom: px;
+  display: none;
+}
+
+.c3 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c2 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
 <span
-  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+  class="c0"
   id="id"
   tabindex="0"
   title="title"
 >
   <div
-    class="Popoverstyles__Message-wdclke-1 cWyuyv"
+    class="c1"
     width="250"
   >
     <div
-      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -77,33 +277,174 @@ exports[`Popover w/ any props 1`] = `
       </svg>
     </div>
     <div
-      class="Popoverstyles__Content-wdclke-3 dNpuLA"
+      class="c3"
     />
   </div>
 </span>
 `;
 
 exports[`Popover w/ design 1`] = `
+.c0 {
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 28px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  z-index: 1000;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+  top: 22px;
+  left: 0px;
+  right: px;
+  bottom: px;
+  display: none;
+}
+
+.c5 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c4 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:active {
+  top: 1px;
+}
+
+.c1:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c2 > svg {
+  display: block;
+}
+
 <span
-  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+  class="c0"
   tabindex="0"
 >
   <button
-    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+    class="c1"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       Click me
     </span>
   </button>
   <div
-    class="Popoverstyles__Message-wdclke-1 ckagnX"
+    class="c3"
     width="250"
   >
     <div
-      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
+      class="c4"
     >
       <svg
         fill="currentColor"
@@ -119,12 +460,12 @@ exports[`Popover w/ design 1`] = `
       </svg>
     </div>
     <div
-      class="Popoverstyles__Header-wdclke-2 fYngzS"
+      class="c5"
     >
       This is header
     </div>
     <div
-      class="Popoverstyles__Content-wdclke-3 dNpuLA"
+      class="c6"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>
@@ -133,26 +474,167 @@ exports[`Popover w/ design 1`] = `
 `;
 
 exports[`Popover w/ design 2`] = `
+.c0 {
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0;
+  width: 250px;
+  min-width: 250px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 28px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  z-index: 1000;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  top: 22px;
+  left: 0px;
+  right: px;
+  bottom: px;
+  display: none;
+}
+
+.c5 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c4 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c1:active {
+  top: 1px;
+}
+
+.c1:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c2 > svg {
+  display: block;
+}
+
 <span
-  class="Popoverstyles__Wrapper-wdclke-0 ftMJFT"
+  class="c0"
   tabindex="0"
 >
   <button
-    class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+    class="c1"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       Click me
     </span>
   </button>
   <div
-    class="Popoverstyles__Message-wdclke-1 cWyuyv"
+    class="c3"
     width="250"
   >
     <div
-      class="Popoverstyles__CloseIcon-wdclke-4 gURkzf"
+      class="c4"
     >
       <svg
         fill="currentColor"
@@ -168,12 +650,12 @@ exports[`Popover w/ design 2`] = `
       </svg>
     </div>
     <div
-      class="Popoverstyles__Header-wdclke-2 fYngzS"
+      class="c5"
     >
       This is header
     </div>
     <div
-      class="Popoverstyles__Content-wdclke-3 dNpuLA"
+      class="c6"
     >
       Ut ut dui non ipsum pharetra aliquam id in libero. Aenean placerat leo nec ex pharetra finibus. Nunc id turpis eu risus rhoncus cursus quis efficitur sapien. Donec vitae arcu at lectus placerat fringilla.
     </div>

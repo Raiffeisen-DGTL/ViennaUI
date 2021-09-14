@@ -1,34 +1,156 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Multiselect /w design 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -49,34 +171,158 @@ exports[`Multiselect /w design 1`] = `
 `;
 
 exports[`Multiselect /w design 2`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c1:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -97,6 +343,159 @@ exports[`Multiselect /w design 2`] = `
 `;
 
 exports[`Multiselect /w disabled 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c4 *,
+.c4 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-webkit-input-placeholder,
+.c4 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::-moz-placeholder,
+.c4 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *:-ms-input-placeholder,
+.c4 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c4 *::placeholder,
+.c4 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 .c3 {
+  width: calc(100% - 32px );
+}
+
 <Multiselect
   design="outline"
   disabled={true}
@@ -132,7 +531,7 @@ exports[`Multiselect /w disabled 1`] = `
       aria-autocomplete="list"
       aria-disabled={true}
       aria-invalid={false}
-      className="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+      className="c0"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -176,7 +575,7 @@ exports[`Multiselect /w disabled 1`] = `
       >
         <InputWrapper
           active={false}
-          className="Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+          className="c1"
           design="outline"
           disabled={true}
           size="l"
@@ -211,7 +610,7 @@ exports[`Multiselect /w disabled 1`] = `
         >
           <Inputstyles__Wrapper
             active={false}
-            className="Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+            className="c1"
             design="outline"
             disabled={true}
             size="l"
@@ -245,7 +644,7 @@ exports[`Multiselect /w disabled 1`] = `
             }
           >
             <label
-              className="Inputstyles__Wrapper-hc8ttv-6 eFbvRo Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+              className="c2 c1"
               disabled={true}
               size="l"
               target={
@@ -281,7 +680,7 @@ exports[`Multiselect /w disabled 1`] = `
                 disabled={true}
               >
                 <div
-                  className="Inputstyles__Wrapped-hc8ttv-5 eqanMK"
+                  className="c3 c4"
                   disabled={true}
                 >
                   <Multiselectstyles__Current
@@ -289,14 +688,14 @@ exports[`Multiselect /w disabled 1`] = `
                     size="l"
                   >
                     <div
-                      className="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+                      className="c5"
                       size="l"
                     >
                       <Multiselectstyles__Placeholder
                         disabled={true}
                       >
                         <div
-                          className="Multiselectstyles__Placeholder-sc-1tat4gv-6 cjQYwt"
+                          className="c6"
                           disabled={true}
                         />
                       </Multiselectstyles__Placeholder>
@@ -309,7 +708,7 @@ exports[`Multiselect /w disabled 1`] = `
                 size="l"
               >
                 <div
-                  className="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                  className="c7"
                   size="l"
                 >
                   <Multiselectstyles__Part
@@ -319,7 +718,7 @@ exports[`Multiselect /w disabled 1`] = `
                     right={true}
                   >
                     <div
-                      className="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+                      className="c8"
                       onMouseDown={[Function]}
                     >
                       <SelectOpenDown
@@ -353,6 +752,129 @@ exports[`Multiselect /w disabled 1`] = `
 `;
 
 exports[`Multiselect /w invalid 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c2:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c1 .c3 {
+  width: calc(100% - 32px );
+}
+
 <Multiselect
   design="outline"
   invalid={true}
@@ -388,7 +910,7 @@ exports[`Multiselect /w invalid 1`] = `
       aria-autocomplete="list"
       aria-disabled={false}
       aria-invalid={true}
-      className="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+      className="c0"
       onBlur={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -432,7 +954,7 @@ exports[`Multiselect /w invalid 1`] = `
       >
         <InputWrapper
           active={false}
-          className="Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+          className="c1"
           design="outline"
           invalid={true}
           size="l"
@@ -467,7 +989,7 @@ exports[`Multiselect /w invalid 1`] = `
         >
           <Inputstyles__Wrapper
             active={false}
-            className="Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+            className="c1"
             design="outline"
             invalid={true}
             size="l"
@@ -501,7 +1023,7 @@ exports[`Multiselect /w invalid 1`] = `
             }
           >
             <label
-              className="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+              className="c2 c1"
               size="l"
               target={
                 Object {
@@ -534,19 +1056,19 @@ exports[`Multiselect /w invalid 1`] = `
             >
               <Inputstyles__Wrapped>
                 <div
-                  className="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                  className="c3 c4"
                 >
                   <Multiselectstyles__Current
                     key=".1"
                     size="l"
                   >
                     <div
-                      className="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+                      className="c5"
                       size="l"
                     >
                       <Multiselectstyles__Placeholder>
                         <div
-                          className="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+                          className="c6"
                         />
                       </Multiselectstyles__Placeholder>
                     </div>
@@ -558,7 +1080,7 @@ exports[`Multiselect /w invalid 1`] = `
                 size="l"
               >
                 <div
-                  className="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+                  className="c7"
                   size="l"
                 >
                   <Multiselectstyles__Part
@@ -568,7 +1090,7 @@ exports[`Multiselect /w invalid 1`] = `
                     right={true}
                   >
                     <div
-                      className="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+                      className="c8"
                       onMouseDown={[Function]}
                     >
                       <SelectOpenDown
@@ -602,34 +1124,159 @@ exports[`Multiselect /w invalid 1`] = `
 `;
 
 exports[`Multiselect /w size 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 4px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 20px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 gPunPw Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 bVcpLM"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 hXXTHs"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 lldsPY"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -650,34 +1297,160 @@ exports[`Multiselect /w size 1`] = `
 `;
 
 exports[`Multiselect /w size 2`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 24px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 eablnU Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 aBqAw"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -698,34 +1471,160 @@ exports[`Multiselect /w size 2`] = `
 `;
 
 exports[`Multiselect /w size 3`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 24px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 aBqAw"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -746,34 +1645,164 @@ exports[`Multiselect /w size 3`] = `
 `;
 
 exports[`Multiselect /w size 4`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -794,34 +1823,164 @@ exports[`Multiselect /w size 4`] = `
 `;
 
 exports[`Multiselect /w size 5`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dUdgWZ"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -842,34 +2001,164 @@ exports[`Multiselect /w size 5`] = `
 `;
 
 exports[`Multiselect /w size 6`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c9 .c3 {
+  width: calc(100% - 20px );
+}
+
+.c10 .c3 {
+  width: calc(100% - 24px );
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe"
+  class="c0"
   role="combobox"
   tabindex="1"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 femZgC Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dUdgWZ"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"
@@ -890,36 +2179,158 @@ exports[`Multiselect /w size 6`] = `
 `;
 
 exports[`Multiselect w/ any props 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+.c6 {
+  width: 100%;
+  overflow: hidden;
+  color: #AAABAD;
+}
+
+.c2 .c3 {
+  width: calc(100% - 32px );
+}
+
 <div
   aria-autocomplete="list"
   aria-disabled="false"
   aria-invalid="false"
-  class="Multiselectstyles__Box-sc-1tat4gv-3 kvEYoe className"
+  class="c0 className"
   id="id"
   role="combobox"
   tabindex="1"
   title="title"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl Multiselectstyles__StyledInputWrapper-sc-1tat4gv-7 gKKySP"
+    class="c1 c2"
     target=".Multiselectstyles__Current-sc-1tat4gv-1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c3 c4"
     >
       <div
-        class="Multiselectstyles__Current-sc-1tat4gv-1 dterzX"
+        class="c5"
       >
         <div
-          class="Multiselectstyles__Placeholder-sc-1tat4gv-6 iKwBtQ"
+          class="c6"
         />
       </div>
     </div>
     <div
-      class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+      class="c7"
     >
       <div
-        class="Multiselectstyles__Part-sc-1tat4gv-0 cvCdgk"
+        class="c8"
       >
         <svg
           fill="currentColor"

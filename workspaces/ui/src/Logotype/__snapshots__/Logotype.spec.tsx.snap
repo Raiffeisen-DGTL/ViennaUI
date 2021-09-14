@@ -1,11 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logotype 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -23,7 +51,7 @@ exports[`Logotype 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -37,12 +65,40 @@ exports[`Logotype 1`] = `
 `;
 
 exports[`Logotype w/ any props 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo className"
+  class="c0 className"
   id="id"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -60,7 +116,7 @@ exports[`Logotype w/ any props 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -74,11 +130,32 @@ exports[`Logotype w/ any props 1`] = `
 `;
 
 exports[`Logotype w/ collapsed 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -99,11 +176,32 @@ exports[`Logotype w/ collapsed 1`] = `
 `;
 
 exports[`Logotype w/ collapsed 2`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -124,11 +222,32 @@ exports[`Logotype w/ collapsed 2`] = `
 `;
 
 exports[`Logotype w/ collapsed 3`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFFFFF;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 hBiqri"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -149,11 +268,39 @@ exports[`Logotype w/ collapsed 3`] = `
 `;
 
 exports[`Logotype w/ design 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -171,7 +318,7 @@ exports[`Logotype w/ design 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -185,11 +332,39 @@ exports[`Logotype w/ design 1`] = `
 `;
 
 exports[`Logotype w/ design 2`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #FFFFFF;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -207,7 +382,7 @@ exports[`Logotype w/ design 2`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 eQrkdB"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -221,11 +396,39 @@ exports[`Logotype w/ design 2`] = `
 `;
 
 exports[`Logotype w/ design 3`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFFFFF;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 hBiqri"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -243,7 +446,7 @@ exports[`Logotype w/ design 3`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -257,11 +460,39 @@ exports[`Logotype w/ design 3`] = `
 `;
 
 exports[`Logotype w/ design 4`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: transparent;
+  color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #FFFFFF;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 bLnbpD"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -279,7 +510,7 @@ exports[`Logotype w/ design 4`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 eQrkdB"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -293,11 +524,39 @@ exports[`Logotype w/ design 4`] = `
 `;
 
 exports[`Logotype w/ locale 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -315,7 +574,7 @@ exports[`Logotype w/ locale 1`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -329,11 +588,39 @@ exports[`Logotype w/ locale 1`] = `
 `;
 
 exports[`Logotype w/ locale 2`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 83px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -351,7 +638,7 @@ exports[`Logotype w/ locale 2`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 cdtUip"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path
@@ -363,11 +650,32 @@ exports[`Logotype w/ locale 2`] = `
 `;
 
 exports[`Logotype w/ size 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 16px;
+  height: 16px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -388,11 +696,32 @@ exports[`Logotype w/ size 1`] = `
 `;
 
 exports[`Logotype w/ size 2`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -413,11 +742,32 @@ exports[`Logotype w/ size 2`] = `
 `;
 
 exports[`Logotype w/ size 3`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -438,11 +788,32 @@ exports[`Logotype w/ size 3`] = `
 `;
 
 exports[`Logotype w/ size 4`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -463,11 +834,32 @@ exports[`Logotype w/ size 4`] = `
 `;
 
 exports[`Logotype w/ size 5`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 48px;
+  height: 48px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -488,11 +880,39 @@ exports[`Logotype w/ size 5`] = `
 `;
 
 exports[`Logotype w/ size 6`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 16px;
+  height: 16px;
+}
+
+.c2 {
+  height: 16px;
+  fill: #000000;
+  width: 56px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -510,7 +930,7 @@ exports[`Logotype w/ size 6`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 iIrCMP"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -524,11 +944,39 @@ exports[`Logotype w/ size 6`] = `
 `;
 
 exports[`Logotype w/ size 7`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+}
+
+.c2 {
+  height: 24px;
+  fill: #000000;
+  width: 84px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -546,7 +994,7 @@ exports[`Logotype w/ size 7`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 hVoQpJ"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -560,11 +1008,39 @@ exports[`Logotype w/ size 7`] = `
 `;
 
 exports[`Logotype w/ size 8`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -582,7 +1058,7 @@ exports[`Logotype w/ size 8`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -596,11 +1072,39 @@ exports[`Logotype w/ size 8`] = `
 `;
 
 exports[`Logotype w/ size 9`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+}
+
+.c2 {
+  height: 40px;
+  fill: #000000;
+  width: 141px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -618,7 +1122,7 @@ exports[`Logotype w/ size 9`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 dhNgBz"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -632,11 +1136,39 @@ exports[`Logotype w/ size 9`] = `
 `;
 
 exports[`Logotype w/ size 10`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 48px;
+  height: 48px;
+}
+
+.c2 {
+  height: 48px;
+  fill: #000000;
+  width: 169px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -654,7 +1186,7 @@ exports[`Logotype w/ size 10`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 kdDNxB"
+    class="c2"
     viewBox="0 0 190 54"
   >
     <path
@@ -668,11 +1200,39 @@ exports[`Logotype w/ size 10`] = `
 `;
 
 exports[`Logotype w/ size 11`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 16px;
+  height: 16px;
+}
+
+.c2 {
+  height: 16px;
+  fill: #000000;
+  width: 42px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 ilQYEL"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -690,7 +1250,7 @@ exports[`Logotype w/ size 11`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 hnvZoC"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path
@@ -702,11 +1262,39 @@ exports[`Logotype w/ size 11`] = `
 `;
 
 exports[`Logotype w/ size 12`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+}
+
+.c2 {
+  height: 24px;
+  fill: #000000;
+  width: 62px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -724,7 +1312,7 @@ exports[`Logotype w/ size 12`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 bVizNl"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path
@@ -736,11 +1324,39 @@ exports[`Logotype w/ size 12`] = `
 `;
 
 exports[`Logotype w/ size 13`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c2 {
+  height: 32px;
+  fill: #000000;
+  width: 83px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -758,7 +1374,7 @@ exports[`Logotype w/ size 13`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 cdtUip"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path
@@ -770,11 +1386,39 @@ exports[`Logotype w/ size 13`] = `
 `;
 
 exports[`Logotype w/ size 14`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+}
+
+.c2 {
+  height: 40px;
+  fill: #000000;
+  width: 104px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -792,7 +1436,7 @@ exports[`Logotype w/ size 14`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 kryoqu"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path
@@ -804,11 +1448,39 @@ exports[`Logotype w/ size 14`] = `
 `;
 
 exports[`Logotype w/ size 15`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c1 {
+  fill: #FFED00;
+  color: #000000;
+  width: 48px;
+  height: 48px;
+}
+
+.c2 {
+  height: 48px;
+  fill: #000000;
+  width: 125px;
+  margin-left: 8px;
+}
+
 <div
-  class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+  class="c0"
 >
   <svg
-    class="Logotypestyles__Logotype-sfvaw3-1 jkrAof"
+    class="c1"
     viewBox="0 0 56 56"
   >
     <rect
@@ -826,7 +1498,7 @@ exports[`Logotype w/ size 15`] = `
     />
   </svg>
   <svg
-    class="Logotypestyles__Title-sfvaw3-2 iqIpBt"
+    class="c2"
     viewBox="0 0 146 56"
   >
     <path

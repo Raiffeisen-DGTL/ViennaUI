@@ -1,11 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c3:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 bVOtWq"
+    class="c1"
     disabled=""
     tabindex="-1"
   >
@@ -23,31 +205,31 @@ exports[`Pagination 1`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDiJml"
+    class="c2"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     <svg
@@ -67,11 +249,193 @@ exports[`Pagination 1`] = `
 `;
 
 exports[`Pagination w/ currentPageNeighboursCount 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c3:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 bVOtWq"
+    class="c1"
     disabled=""
     tabindex="-1"
   >
@@ -89,31 +453,31 @@ exports[`Pagination w/ currentPageNeighboursCount 1`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDiJml"
+    class="c2"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     <svg
@@ -133,11 +497,193 @@ exports[`Pagination w/ currentPageNeighboursCount 1`] = `
 `;
 
 exports[`Pagination w/ initialPageIndex 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c1:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c1"
     tabindex="1"
   >
     <svg
@@ -154,31 +700,31 @@ exports[`Pagination w/ initialPageIndex 1`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c1"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c1"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c1"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDiJml"
+    class="c2"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 bVOtWq"
+    class="c3"
     disabled=""
     tabindex="-1"
   >
@@ -849,11 +1395,193 @@ exports[`Pagination w/ onChange (target) 2`] = `
 `;
 
 exports[`Pagination w/ size 1`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  height: 32px;
+  min-width: 32px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  height: 32px;
+  min-width: 32px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  height: 32px;
+  min-width: 32px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.c3:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 gXWkbU"
+    class="c1"
     disabled=""
     tabindex="-1"
   >
@@ -871,31 +1599,31 @@ exports[`Pagination w/ size 1`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 qgcsH"
+    class="c2"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 csdZFe"
+    class="c3"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 csdZFe"
+    class="c3"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 csdZFe"
+    class="c3"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 csdZFe"
+    class="c3"
     tabindex="1"
   >
     <svg
@@ -915,11 +1643,193 @@ exports[`Pagination w/ size 1`] = `
 `;
 
 exports[`Pagination w/ size 2`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 16px;
+  line-height: 26px;
+  height: 36px;
+  min-width: 36px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.c3:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 bVOtWq"
+    class="c1"
     disabled=""
     tabindex="-1"
   >
@@ -937,31 +1847,31 @@ exports[`Pagination w/ size 2`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDiJml"
+    class="c2"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 dWrcUk"
+    class="c3"
     tabindex="1"
   >
     <svg
@@ -981,11 +1891,193 @@ exports[`Pagination w/ size 2`] = `
 `;
 
 exports[`Pagination w/ size 3`] = `
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 18px;
+  line-height: 28px;
+  height: 40px;
+  min-width: 40px;
+  color: rgba(43,45,51,0.24);
+  border-color: transparent;
+}
+
+.c1 > svg {
+  display: block;
+}
+
+.c1:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 18px;
+  line-height: 28px;
+  height: 40px;
+  min-width: 40px;
+  color: #2B2D33;
+  background: #E9EAEA;
+}
+
+.c2 > svg {
+  display: block;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.c2:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  font-weight: 500;
+  border-color: transparent;
+  border-width: 2px;
+  color: #2B2D33;
+  background: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 18px;
+  line-height: 28px;
+  height: 40px;
+  min-width: 40px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.c3:hover {
+  background: #F8F8F8;
+  color: #00A5BC;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
 <div
-  class="Paginationstyles__Box-sc-7a3gdv-0 kCPgsd"
+  class="c0"
 >
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 gaebIT"
+    class="c1"
     disabled=""
     tabindex="-1"
   >
@@ -1003,31 +2095,31 @@ exports[`Pagination w/ size 3`] = `
     </svg>
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 kgWAfk"
+    class="c2"
     tabindex="1"
   >
     1
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDYgNB"
+    class="c3"
     tabindex="1"
   >
     2
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDYgNB"
+    class="c3"
     tabindex="1"
   >
     3
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDYgNB"
+    class="c3"
     tabindex="1"
   >
     4
   </button>
   <button
-    class="Pagerstyles__Box-sc-1weko6t-0 hDYgNB"
+    class="c3"
     tabindex="1"
   >
     <svg

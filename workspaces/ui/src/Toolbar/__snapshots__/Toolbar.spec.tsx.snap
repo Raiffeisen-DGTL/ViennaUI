@@ -155,100 +155,206 @@ Array [
 `;
 
 exports[`Toolbar w/ any props 1`] = `
+.c0 {
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 62px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1 {
+  padding-left: 32px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  min-width: auto;
+}
+
+.c1:first-child {
+  padding-left: 0px;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  padding: 0;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  color: #00809C;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
 <div
-  class="Toolbarstyles__Box-sc-1ksgo55-0 kpuFMM className"
+  class="c0 className"
   id="id"
   title="title"
 >
   <div
-    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 envJPA"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Option 1
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 envJPA"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Option 2
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 envJPA"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Option 3
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 envJPA"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Option 4
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
     </button>
   </div>
   <div
-    class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 envJPA"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -264,12 +370,12 @@ exports[`Toolbar w/ any props 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         More operation
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       />
     </button>
   </div>
@@ -277,38 +383,210 @@ exports[`Toolbar w/ any props 1`] = `
 `;
 
 exports[`Toolbar w/ operation 1`] = `
+.c0 {
+  padding-left: 32px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  min-width: auto;
+}
+
+.c0:first-child {
+  padding-left: 0px;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  padding: 0;
+}
+
+.c1:active {
+  top: 1px;
+}
+
+.c1:hover {
+  color: #00809C;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c2 > svg {
+  display: block;
+}
+
 <div
-  class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+  class="c0"
 >
   <button
-    class="Buttonstyles__Box-qfvnbt-0 envJPA"
+    class="c1"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     />
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       Action 5
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     />
   </button>
 </div>
 `;
 
 exports[`Toolbar w/ operation with icon 1`] = `
+.c0 {
+  padding-left: 32px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  min-width: auto;
+}
+
+.c0:first-child {
+  padding-left: 0px;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  padding: 0;
+}
+
+.c1:active {
+  top: 1px;
+}
+
+.c1:hover {
+  color: #00809C;
+}
+
+.c2 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c2:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c2 > svg {
+  display: block;
+}
+
 <div
-  class="Operationstyles__OpBox-sc-1iz83q6-0 lhupPN"
+  class="c0"
 >
   <button
-    class="Buttonstyles__Box-qfvnbt-0 envJPA"
+    class="c1"
     type="button"
   >
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -326,12 +604,12 @@ exports[`Toolbar w/ operation with icon 1`] = `
       </svg>
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     >
       Action 5
     </span>
     <span
-      class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+      class="c2"
     />
   </button>
 </div>

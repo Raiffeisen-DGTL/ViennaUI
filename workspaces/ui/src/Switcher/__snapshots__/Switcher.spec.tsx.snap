@@ -1,35 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Switcher 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
 <label
-  class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  class="c0"
 >
   <span
-    class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+    class="c1"
   />
   <input
-    class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+    class="c2"
     type="checkbox"
   />
 </label>
 `;
 
 exports[`Switcher w/ any props 1`] = `
+.c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
 <label
-  class="Switcherstyles__Box-nl4ecl-1 hnUnvl className"
+  class="c0 className"
   id="id"
   title="title"
 >
   <span
-    class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+    class="c1"
   />
   <input
-    class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+    class="c2"
     name="name"
     type="checkbox"
   />
   <span
-    class="Switcherstyles__Caption-nl4ecl-0 cydKQj"
+    class="c3"
   >
     Label
   </span>
@@ -38,33 +156,161 @@ exports[`Switcher w/ any props 1`] = `
 
 exports[`Switcher w/ checked 1`] = `
 Array [
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FEE600;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  left: calc(100% - 12px - 4px);
+}
+
+<label
+    class="c0"
   >
     <span
       checked=""
-      class="Switcherstyles__Handle-nl4ecl-3 fBkrAL"
+      class="c1"
     />
     <input
       checked=""
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       type="checkbox"
     />
   </label>,
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FEE600;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  left: calc(100% - 12px - 4px);
+}
+
+<label
+    class="c0"
   >
     <span
       checked=""
-      class="Switcherstyles__Handle-nl4ecl-3 fBkrAL"
+      class="c1"
     />
     <input
       checked=""
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       type="checkbox"
     />
     <span
-      class="Switcherstyles__Caption-nl4ecl-0 cydKQj"
+      class="c3"
     >
       Label
     </span>
@@ -74,39 +320,179 @@ Array [
 
 exports[`Switcher w/ checked and disabled 1`] = `
 Array [
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FEE600;
+  background-color: #D5D5D6;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  left: calc(100% - 12px - 4px);
+}
+
+.c1::before {
+  background-color: rgba(255,255,255,0.64);
+}
+
+<label
+    class="c0"
     disabled=""
   >
     <span
       checked=""
-      class="Switcherstyles__Handle-nl4ecl-3 buMWEi"
+      class="c1"
       disabled=""
     />
     <input
       checked=""
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       disabled=""
       type="checkbox"
     />
   </label>,
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+  color: rgba(43,45,51,0.24);
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #FEE600;
+  background-color: #D5D5D6;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  left: calc(100% - 12px - 4px);
+}
+
+.c1::before {
+  background-color: rgba(255,255,255,0.64);
+}
+
+<label
+    class="c0"
     disabled=""
   >
     <span
       checked=""
-      class="Switcherstyles__Handle-nl4ecl-3 buMWEi"
+      class="c1"
       disabled=""
     />
     <input
       checked=""
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       disabled=""
       type="checkbox"
     />
     <span
-      class="Switcherstyles__Caption-nl4ecl-0 ezLBpR"
+      class="c3"
       disabled=""
     >
       Label
@@ -117,35 +503,165 @@ Array [
 
 exports[`Switcher w/ disabled 1`] = `
 Array [
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #E9EAEA;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  background-color: rgba(43,45,51,0.24);
+}
+
+<label
+    class="c0"
     disabled=""
   >
     <span
-      class="Switcherstyles__Handle-nl4ecl-3 dHTjdo"
+      class="c1"
       disabled=""
     />
     <input
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       disabled=""
       type="checkbox"
     />
   </label>,
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+  color: rgba(43,45,51,0.24);
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #E9EAEA;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.c1::before {
+  background-color: rgba(43,45,51,0.24);
+}
+
+<label
+    class="c0"
     disabled=""
   >
     <span
-      class="Switcherstyles__Handle-nl4ecl-3 dHTjdo"
+      class="c1"
       disabled=""
     />
     <input
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       disabled=""
       type="checkbox"
     />
     <span
-      class="Switcherstyles__Caption-nl4ecl-0 ezLBpR"
+      class="c3"
       disabled=""
     >
       Label
@@ -155,18 +671,87 @@ Array [
 `;
 
 exports[`Switcher w/ label 1`] = `
+.c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
 <label
-  class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  class="c0"
 >
   <span
-    class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+    class="c1"
   />
   <input
-    class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+    class="c2"
     type="checkbox"
   />
   <span
-    class="Switcherstyles__Caption-nl4ecl-0 cydKQj"
+    class="c3"
   >
     Label
   </span>
@@ -175,31 +760,149 @@ exports[`Switcher w/ label 1`] = `
 
 exports[`Switcher w/ name 1`] = `
 Array [
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+<label
+    class="c0"
   >
     <span
-      class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+      class="c1"
     />
     <input
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       name="switcher1"
       type="checkbox"
     />
   </label>,
-  <label
-    class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  .c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+<label
+    class="c0"
   >
     <span
-      class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+      class="c1"
     />
     <input
-      class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+      class="c2"
       name="switcher2"
       type="checkbox"
     />
     <span
-      class="Switcherstyles__Caption-nl4ecl-0 cydKQj"
+      class="c3"
     >
       Label
     </span>
@@ -208,18 +911,87 @@ Array [
 `;
 
 exports[`Switcher w/ size: l 1`] = `
+.c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 12px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 40px;
+  height: 24px;
+  border-radius: 24px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 5px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+}
+
 <label
-  class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  class="c0"
 >
   <span
-    class="Switcherstyles__Handle-nl4ecl-3 cDhOpV"
+    class="c1"
   />
   <input
-    class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+    class="c2"
     type="checkbox"
   />
   <span
-    class="Switcherstyles__Caption-nl4ecl-0 bnhcym"
+    class="c3"
   >
     Label
   </span>
@@ -227,18 +999,87 @@ exports[`Switcher w/ size: l 1`] = `
 `;
 
 exports[`Switcher w/ size: m 1`] = `
+.c3 {
+  position: relative;
+  display: inline-block;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  left: -9999px;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  background-color: #D5D5D6;
+  vertical-align: middle;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 32px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.c1::before {
+  display: block;
+  content: '';
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: left 0.1s ease-in;
+  transition: left 0.1s ease-in;
+  left: 4px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+}
+
 <label
-  class="Switcherstyles__Box-nl4ecl-1 hnUnvl"
+  class="c0"
 >
   <span
-    class="Switcherstyles__Handle-nl4ecl-3 eiRxnP"
+    class="c1"
   />
   <input
-    class="Switcherstyles__Input-nl4ecl-2 ePUicI"
+    class="c2"
     type="checkbox"
   />
   <span
-    class="Switcherstyles__Caption-nl4ecl-0 cydKQj"
+    class="c3"
   >
     Label
   </span>

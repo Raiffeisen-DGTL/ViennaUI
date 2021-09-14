@@ -1,42 +1,266 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatepickerRange /w complete startDate 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 22.02.1988
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value="22.02.1988"
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -59,42 +283,266 @@ exports[`DatepickerRange /w complete startDate 1`] = `
 `;
 
 exports[`DatepickerRange /w date not in range 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 01.06.2000 - 14.06.2000
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value="01.06.2000 - 14.06.2000"
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -117,42 +565,267 @@ exports[`DatepickerRange /w date not in range 1`] = `
 `;
 
 exports[`DatepickerRange /w invalid 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 ДД.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="true"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value=""
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -175,42 +848,266 @@ exports[`DatepickerRange /w invalid 1`] = `
 `;
 
 exports[`DatepickerRange /w not complete 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 11.12.1900 - 22.02.1988
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value="11.12.1900 - 22.02.1988"
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -233,42 +1130,266 @@ exports[`DatepickerRange /w not complete 1`] = `
 `;
 
 exports[`DatepickerRange /w not complete endDate 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 22.02.1988 - 22.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value="22.02.1988 - 22"
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -291,42 +1412,266 @@ exports[`DatepickerRange /w not complete endDate 1`] = `
 `;
 
 exports[`DatepickerRange /w not complete startDate 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 22.02.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value="22.02"
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"
@@ -349,42 +1694,266 @@ exports[`DatepickerRange /w not complete startDate 1`] = `
 `;
 
 exports[`DatepickerRange 1`] = `
+.c7 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c8 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c8::-ms-clear,
+.c8::-ms-reveal {
+  display: none;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c4 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c4 > *,
+.c4 input {
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c3:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c6 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 228px;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+}
+
 <div
-  class="DatepickerRangestyles__Box-sc-1dd67xt-0 hsiRJA"
+  class="c0"
 >
   <div
-    class="DatepickerRangestyles__InputBox-sc-1dd67xt-1 jqEJOL"
+    class="c1"
   >
     <div
-      class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+      class="c2"
     >
       <label
-        class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+        class="c3"
       >
         <div
-          class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+          class="c4"
         >
           <div
-            class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+            class="c5"
           >
             <div
-              class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+              class="c6"
             >
               <div
-                class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                class="c7"
               >
                 ДД.ММ.ГГГГ
               </div>
             </div>
             <input
               aria-invalid="false"
-              class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+              class="c8"
               value=""
             />
           </div>
         </div>
         <div
-          class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+          class="c9"
         >
           <svg
             cursor="pointer"

@@ -2,163 +2,307 @@
 
 exports[`Grid 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       One of two columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       One of two columns
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 33.333333333333336%;
+  -webkit-flex-basis: 33.333333333333336%;
+  -ms-flex-preferred-size: 33.333333333333336%;
+  flex-basis: 33.333333333333336%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
+      class="c1"
       offset="0"
       size="4"
     >
       One of three columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
+      class="c1"
       offset="0"
       size="4"
     >
       One of three columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 hiAfBn"
+      class="c1"
       offset="0"
       size="4"
     >
       One of three columns
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
+      class="c1"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
+      class="c1"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
+      class="c1"
       offset="0"
       size="3"
     >
       One of four columns
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
+      class="c1"
       offset="0"
       size="3"
     >
@@ -170,33 +314,522 @@ Array [
 
 exports[`Grid adaptive 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.c2 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+@media only screen and (min-width:1px) {
+  .c1 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    max-width: 83.33333333333334%;
+    -webkit-flex-basis: 83.33333333333334%;
+    -ms-flex-preferred-size: 83.33333333333334%;
+    flex-basis: 83.33333333333334%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c1 {
+    max-width: 66.66666666666667%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c1 {
+    max-width: 50%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:2560px) {
+  .c1 {
+    max-width: 33.333333333333336%;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    max-width: 16.666666666666668%;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    max-width: 33.333333333333336%;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:2560px) {
+  .c2 {
+    max-width: 66.66666666666667%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
+}
+
+@media only screen and (min-width:2560px) {
+
+}
+
+@media only screen and (min-width:1px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
+}
+
+@media only screen and (min-width:2560px) {
+
+}
+
+@media only screen and (min-width:1px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
+}
+
+@media only screen and (min-width:2560px) {
+
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 jdiNzz"
+      class="c1"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kyNTyn"
+      class="c2"
       offset="0"
     >
       2
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c2 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+@media only screen and (min-width:1px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
+}
+
+@media only screen and (min-width:2560px) {
+
+}
+
+@media only screen and (min-width:1px) {
+
+}
+
+@media only screen and (min-width:768px) {
+
+}
+
+@media only screen and (min-width:1024px) {
+
+}
+
+@media only screen and (min-width:1440px) {
+
+}
+
+@media only screen and (min-width:2560px) {
+
+}
+
+@media only screen and (min-width:1px) {
+  .c1 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    max-width: 16.666666666666668%;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c1 {
+    max-width: 33.333333333333336%;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c1 {
+    max-width: 50%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:2560px) {
+  .c1 {
+    max-width: 66.66666666666667%;
+    -webkit-flex-basis: 66.66666666666667%;
+    -ms-flex-preferred-size: 66.66666666666667%;
+    flex-basis: 66.66666666666667%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1px) {
+  .c1 {
+    margin-left: 100%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c1 {
+    margin-left: 16.666666666666668%;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c1 {
+    margin-left: 33.333333333333336%;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c1 {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (min-width:2560px) {
+  .c1 {
+    margin-left: 66.66666666666667%;
+  }
+}
+
+@media only screen and (min-width:1px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    max-width: 16.666666666666668%;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .c2 {
+    max-width: 33.333333333333336%;
+    -webkit-flex-basis: 33.333333333333336%;
+    -ms-flex-preferred-size: 33.333333333333336%;
+    flex-basis: 33.333333333333336%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .c2 {
+    max-width: 16.666666666666668%;
+    -webkit-flex-basis: 16.666666666666668%;
+    -ms-flex-preferred-size: 16.666666666666668%;
+    flex-basis: 16.666666666666668%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media only screen and (min-width:2560px) {
+  .c2 {
+    max-width: 25%;
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fARQCD"
+      class="c1"
       offset="[object Object]"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fdNpvP"
+      class="c2"
       offset="0"
     >
       2
@@ -207,148 +840,396 @@ Array [
 
 exports[`Grid w align 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 hvzxOX"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 JfKSG"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 dniXrk"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 cxqmTn"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 kIVIMa"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kBeztn"
+      class="c1"
       offset="0"
       size="2"
     >
       1
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 qhQGs"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+.c0 > * {
+  width: unset;
+  -webkit-flex-basis: unset;
+  -ms-flex-preferred-size: unset;
+  flex-basis: unset;
+  max-width: unset;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 izyobK"
+      class="c1"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 izyobK"
+      class="c1"
       offset="0"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 izyobK"
+      class="c1"
       offset="0"
     >
       1
@@ -359,72 +1240,228 @@ Array [
 
 exports[`Grid w valign 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 jATAOT"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       top
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 gxtyku"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       middle
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 gaWcA"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       bottom
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
       Tall column
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fBNJND"
+      class="c1"
       offset="0"
       size="6"
     >
@@ -436,352 +1473,496 @@ Array [
 
 exports[`Grid w/ columnGap 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       24
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 eVascn"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -12px;
+  width: calc(100% + 12px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 12px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       12
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 fSFwUl"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -5px;
+  width: calc(100% + 5px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 5px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       5
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 gejdTA"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -0;
+  width: calc(100% + 0);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 0;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
       0
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cKjCxT"
+      class="c1"
       offset="0"
       size="1"
     >
@@ -793,124 +1974,414 @@ Array [
 
 exports[`Grid w/ offset 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 91.66666666666667%;
+}
+
+.c2 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 83.33333333333334%;
+}
+
+.c3 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 75%;
+}
+
+.c4 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 33.333333333333336%;
+  -webkit-flex-basis: 33.333333333333336%;
+  -ms-flex-preferred-size: 33.333333333333336%;
+  flex-basis: 33.333333333333336%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 66.66666666666667%;
+}
+
+.c5 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 41.66666666666667%;
+  -webkit-flex-basis: 41.66666666666667%;
+  -ms-flex-preferred-size: 41.66666666666667%;
+  flex-basis: 41.66666666666667%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 58.333333333333336%;
+}
+
+.c6 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 50%;
+}
+
+.c7 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 58.333333333333336%;
+  -webkit-flex-basis: 58.333333333333336%;
+  -ms-flex-preferred-size: 58.333333333333336%;
+  flex-basis: 58.333333333333336%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 41.66666666666667%;
+}
+
+.c8 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 66.66666666666667%;
+  -webkit-flex-basis: 66.66666666666667%;
+  -ms-flex-preferred-size: 66.66666666666667%;
+  flex-basis: 66.66666666666667%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 33.333333333333336%;
+}
+
+.c9 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 75%;
+  -webkit-flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 25%;
+}
+
+.c10 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 83.33333333333334%;
+  -webkit-flex-basis: 83.33333333333334%;
+  -ms-flex-preferred-size: 83.33333333333334%;
+  flex-basis: 83.33333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 16.666666666666668%;
+}
+
+.c11 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 91.66666666666667%;
+  -webkit-flex-basis: 91.66666666666667%;
+  -ms-flex-preferred-size: 91.66666666666667%;
+  flex-basis: 91.66666666666667%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 8.333333333333334%;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 eYwmTN"
+      class="c1"
       offset="11"
       size="1"
     >
       1
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 fLlrSU"
+      class="c2"
       offset="10"
       size="2"
     >
       2
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 gVaJdI"
+      class="c3"
       offset="9"
       size="3"
     >
       3
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 iXDlx"
+      class="c4"
       offset="8"
       size="4"
     >
       4
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kbORJT"
+      class="c5"
       offset="7"
       size="5"
     >
       5
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 cUxthn"
+      class="c6"
       offset="6"
       size="6"
     >
       6
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 kPmTjI"
+      class="c7"
       offset="5"
       size="7"
     >
       7
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 iWsSra"
+      class="c8"
       offset="4"
       size="8"
     >
       8
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 eTJpSl"
+      class="c9"
       offset="3"
       size="9"
     >
       9
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 hafaXP"
+      class="c10"
       offset="2"
       size="10"
     >
       10
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dVEHgM"
+      class="c11"
       offset="1"
       size="11"
     >
       11
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 25%;
+}
+
+.c2 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 16.666666666666668%;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 bKLlkt"
+      class="c1"
       offset="3"
       size="3"
     >
       offset: 3
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 gyKQGD"
+      class="c2"
       offset="2"
       size="3"
     >
       offset: 2
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 25%;
+  -webkit-flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c2 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 16.666666666666668%;
+  -webkit-flex-basis: 16.666666666666668%;
+  -ms-flex-preferred-size: 16.666666666666668%;
+  flex-basis: 16.666666666666668%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 25%;
+}
+
+.c3 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 8.333333333333334%;
+  -webkit-flex-basis: 8.333333333333334%;
+  -ms-flex-preferred-size: 8.333333333333334%;
+  flex-basis: 8.333333333333334%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 25%;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dwEruz"
+      class="c1"
       offset="0"
       size="3"
     >
       size 3
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 gqmUcd"
+      class="c2"
       offset="3"
       size="2"
     >
       size 2
     </div>
     <div
-      class="Colstyles__Box-sc-5cweqm-0 dgvfNV"
+      class="c3"
       offset="3"
       size="1"
     >
@@ -922,44 +2393,188 @@ Array [
 
 exports[`Grid w/ rowGap 1`] = `
 Array [
-  <div
-    class="Row-sc-1f9abgs-0 zEGIv"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 5px;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
+      class="c1"
       offset="0"
       size="12"
     >
       5px row gap
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 cjdkgr"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 10px;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
+      class="c1"
       offset="0"
       size="12"
     >
       10px row gap
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
+      class="c1"
       offset="0"
       size="12"
     >
       No row gap
     </div>
   </div>,
-  <div
-    class="Row-sc-1f9abgs-0 jqKtpu"
+  .c1 {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  margin-left: 0;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin-left: -24px;
+  width: calc(100% + 24px);
+  margin-bottom: 0;
+}
+
+.c0 > * {
+  padding-left: 24px;
+}
+
+<div
+    class="c0"
   >
     <div
-      class="Colstyles__Box-sc-5cweqm-0 RMCpn"
+      class="c1"
       offset="0"
       size="12"
     >

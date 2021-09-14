@@ -1,8 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex shots w/ alignContent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fsTOQf"
+  class="c0"
   direction="row"
 >
   <div>
@@ -21,8 +34,21 @@ exports[`Flex shots w/ alignContent 1`] = `
 `;
 
 exports[`Flex shots w/ alignContent 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: flex-end;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gNWiiI"
+  class="c0"
   direction="row"
 >
   <div>
@@ -41,8 +67,21 @@ exports[`Flex shots w/ alignContent 2`] = `
 `;
 
 exports[`Flex shots w/ alignContent 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 knvmta"
+  class="c0"
   direction="row"
 >
   <div>
@@ -61,8 +100,21 @@ exports[`Flex shots w/ alignContent 3`] = `
 `;
 
 exports[`Flex shots w/ alignContent 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: space-between;
+  align-content: space-between;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dxRIPa"
+  class="c0"
   direction="row"
 >
   <div>
@@ -81,8 +133,21 @@ exports[`Flex shots w/ alignContent 4`] = `
 `;
 
 exports[`Flex shots w/ alignContent 5`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hnTMxX"
+  class="c0"
   direction="row"
 >
   <div>
@@ -101,8 +166,21 @@ exports[`Flex shots w/ alignContent 5`] = `
 `;
 
 exports[`Flex shots w/ alignContent 6`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 cDtnAB"
+  class="c0"
   direction="row"
 >
   <div>
@@ -121,8 +199,21 @@ exports[`Flex shots w/ alignContent 6`] = `
 `;
 
 exports[`Flex shots w/ alignContent 7`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 krseBC"
+  class="c0"
   direction="row"
 >
   <div>
@@ -141,8 +232,21 @@ exports[`Flex shots w/ alignContent 7`] = `
 `;
 
 exports[`Flex shots w/ alignContent 8`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-content: baseline;
+  -ms-flex-line-pack: baseline;
+  align-content: baseline;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 WZWzy"
+  class="c0"
   direction="row"
 >
   <div>
@@ -161,8 +265,22 @@ exports[`Flex shots w/ alignContent 8`] = `
 `;
 
 exports[`Flex shots w/ alignItems 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: normal;
+  -webkit-box-align: normal;
+  -ms-flex-align: normal;
+  align-items: normal;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 bkiEnN"
+  class="c0"
   direction="row"
 >
   <div>
@@ -181,8 +299,22 @@ exports[`Flex shots w/ alignItems 1`] = `
 `;
 
 exports[`Flex shots w/ alignItems 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 iPFxpb"
+  class="c0"
   direction="row"
 >
   <div>
@@ -201,8 +333,22 @@ exports[`Flex shots w/ alignItems 2`] = `
 `;
 
 exports[`Flex shots w/ alignItems 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: initial;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 caTgfI"
+  class="c0"
   direction="row"
 >
   <div>
@@ -221,8 +367,22 @@ exports[`Flex shots w/ alignItems 3`] = `
 `;
 
 exports[`Flex shots w/ alignItems 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: unset;
+  -webkit-box-align: unset;
+  -ms-flex-align: unset;
+  align-items: unset;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hhaXLT"
+  class="c0"
   direction="row"
 >
   <div>
@@ -241,8 +401,22 @@ exports[`Flex shots w/ alignItems 4`] = `
 `;
 
 exports[`Flex shots w/ alignItems 5`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dcGXhx"
+  class="c0"
   direction="row"
 >
   <div>
@@ -261,8 +435,22 @@ exports[`Flex shots w/ alignItems 5`] = `
 `;
 
 exports[`Flex shots w/ alignItems 6`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 bpaEro"
+  class="c0"
   direction="row"
 >
   <div>
@@ -281,8 +469,22 @@ exports[`Flex shots w/ alignItems 6`] = `
 `;
 
 exports[`Flex shots w/ alignItems 7`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dMuEDj"
+  class="c0"
   direction="row"
 >
   <div>
@@ -301,8 +503,22 @@ exports[`Flex shots w/ alignItems 7`] = `
 `;
 
 exports[`Flex shots w/ alignItems 8`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 LVCnt"
+  class="c0"
   direction="row"
 >
   <div>
@@ -321,8 +537,22 @@ exports[`Flex shots w/ alignItems 8`] = `
 `;
 
 exports[`Flex shots w/ alignItems 9`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: self-start;
+  -webkit-box-align: self-start;
+  -ms-flex-align: self-start;
+  align-items: self-start;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dVvydT"
+  class="c0"
   direction="row"
 >
   <div>
@@ -341,8 +571,22 @@ exports[`Flex shots w/ alignItems 9`] = `
 `;
 
 exports[`Flex shots w/ alignItems 10`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: self-end;
+  -webkit-box-align: self-end;
+  -ms-flex-align: self-end;
+  align-items: self-end;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 leDrME"
+  class="c0"
   direction="row"
 >
   <div>
@@ -361,8 +605,22 @@ exports[`Flex shots w/ alignItems 10`] = `
 `;
 
 exports[`Flex shots w/ alignItems 11`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 YAkIB"
+  class="c0"
   direction="row"
 >
   <div>
@@ -381,8 +639,26 @@ exports[`Flex shots w/ alignItems 11`] = `
 `;
 
 exports[`Flex shots w/ center 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fanccl"
+  class="c0"
   direction="row"
 >
   <div>
@@ -401,8 +677,18 @@ exports[`Flex shots w/ center 1`] = `
 `;
 
 exports[`Flex shots w/ direction 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hSPiet"
+  class="c0"
   direction="column"
 >
   <div>
@@ -421,8 +707,18 @@ exports[`Flex shots w/ direction 1`] = `
 `;
 
 exports[`Flex shots w/ direction 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 kCQskg"
+  class="c0"
   direction="column-reverse"
 >
   <div>
@@ -441,8 +737,18 @@ exports[`Flex shots w/ direction 2`] = `
 `;
 
 exports[`Flex shots w/ direction 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  class="c0"
   direction="row"
 >
   <div>
@@ -461,8 +767,18 @@ exports[`Flex shots w/ direction 3`] = `
 `;
 
 exports[`Flex shots w/ direction 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 jTVUlw"
+  class="c0"
   direction="row-reverse"
 >
   <div>
@@ -481,8 +797,19 @@ exports[`Flex shots w/ direction 4`] = `
 `;
 
 exports[`Flex shots w/ gap 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 4px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gwgJnG"
+  class="c0"
   direction="row"
 >
   <div>
@@ -501,8 +828,19 @@ exports[`Flex shots w/ gap 1`] = `
 `;
 
 exports[`Flex shots w/ gap 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 8px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hQPngW"
+  class="c0"
   direction="row"
 >
   <div>
@@ -521,8 +859,19 @@ exports[`Flex shots w/ gap 2`] = `
 `;
 
 exports[`Flex shots w/ gap 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 12px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 iaOtYl"
+  class="c0"
   direction="row"
 >
   <div>
@@ -541,8 +890,19 @@ exports[`Flex shots w/ gap 3`] = `
 `;
 
 exports[`Flex shots w/ gap 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 16px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 kqcgp"
+  class="c0"
   direction="row"
 >
   <div>
@@ -561,8 +921,19 @@ exports[`Flex shots w/ gap 4`] = `
 `;
 
 exports[`Flex shots w/ gap 5`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 20px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dmmDbE"
+  class="c0"
   direction="row"
 >
   <div>
@@ -581,8 +952,19 @@ exports[`Flex shots w/ gap 5`] = `
 `;
 
 exports[`Flex shots w/ gap 6`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 24px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gLjUIE"
+  class="c0"
   direction="row"
 >
   <div>
@@ -601,8 +983,19 @@ exports[`Flex shots w/ gap 6`] = `
 `;
 
 exports[`Flex shots w/ gap 7`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 28px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 vOLek"
+  class="c0"
   direction="row"
 >
   <div>
@@ -621,8 +1014,19 @@ exports[`Flex shots w/ gap 7`] = `
 `;
 
 exports[`Flex shots w/ gap 8`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 32px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fBoldv"
+  class="c0"
   direction="row"
 >
   <div>
@@ -641,8 +1045,19 @@ exports[`Flex shots w/ gap 8`] = `
 `;
 
 exports[`Flex shots w/ gap 9`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 36px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 jalCKv"
+  class="c0"
   direction="row"
 >
   <div>
@@ -661,8 +1076,19 @@ exports[`Flex shots w/ gap 9`] = `
 `;
 
 exports[`Flex shots w/ gap 10`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 40px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 GrPMC"
+  class="c0"
   direction="row"
 >
   <div>
@@ -681,8 +1107,19 @@ exports[`Flex shots w/ gap 10`] = `
 `;
 
 exports[`Flex shots w/ gap 11`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 44px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 eseqia"
+  class="c0"
   direction="row"
 >
   <div>
@@ -701,8 +1138,19 @@ exports[`Flex shots w/ gap 11`] = `
 `;
 
 exports[`Flex shots w/ gap 12`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 48px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 jfpHoe"
+  class="c0"
   direction="row"
 >
   <div>
@@ -721,8 +1169,19 @@ exports[`Flex shots w/ gap 12`] = `
 `;
 
 exports[`Flex shots w/ gap 13`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 52px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hUtPDZ"
+  class="c0"
   direction="row"
 >
   <div>
@@ -741,8 +1200,19 @@ exports[`Flex shots w/ gap 13`] = `
 `;
 
 exports[`Flex shots w/ gap 14`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 56px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 qKGAB"
+  class="c0"
   direction="row"
 >
   <div>
@@ -761,8 +1231,19 @@ exports[`Flex shots w/ gap 14`] = `
 `;
 
 exports[`Flex shots w/ gap 15`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 60px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dfRYHs"
+  class="c0"
   direction="row"
 >
   <div>
@@ -781,8 +1262,19 @@ exports[`Flex shots w/ gap 15`] = `
 `;
 
 exports[`Flex shots w/ gap 16`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 64px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gREzcQ"
+  class="c0"
   direction="row"
 >
   <div>
@@ -801,8 +1293,18 @@ exports[`Flex shots w/ gap 16`] = `
 `;
 
 exports[`Flex shots w/ inline 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 ctyvaR"
+  class="c0"
   direction="row"
 >
   <div>
@@ -821,30 +1323,90 @@ exports[`Flex shots w/ inline 1`] = `
 `;
 
 exports[`Flex shots w/ item 1`] = `
+.c1 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.c2 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c3 {
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 100px;
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+}
+
+.c4 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex-basis: 200px;
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  class="c0"
   direction="row"
 >
   <div
-    class="Item-sc-22uhr0-0 gzuenM"
+    class="c1"
     order="2"
   >
     1
   </div>
   <div
-    class="Item-sc-22uhr0-0 ezzRfL"
+    class="c2"
     order="3"
   >
     2
   </div>
   <div
-    class="Item-sc-22uhr0-0 ijXOtp"
+    class="c3"
     order="4"
   >
     3
   </div>
   <div
-    class="Item-sc-22uhr0-0 cQPaHw"
+    class="c4"
     order="1"
   >
     4
@@ -853,8 +1415,22 @@ exports[`Flex shots w/ item 1`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: normal;
+  -webkit-justify-content: normal;
+  -ms-flex-pack: normal;
+  justify-content: normal;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dOEtLZ"
+  class="c0"
   direction="row"
 >
   <div>
@@ -873,8 +1449,22 @@ exports[`Flex shots w/ justifyContent 1`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: inherit;
+  -webkit-justify-content: inherit;
+  -ms-flex-pack: inherit;
+  justify-content: inherit;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gTdieH"
+  class="c0"
   direction="row"
 >
   <div>
@@ -893,8 +1483,22 @@ exports[`Flex shots w/ justifyContent 2`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: initial;
+  -webkit-justify-content: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fUNocc"
+  class="c0"
   direction="row"
 >
   <div>
@@ -913,8 +1517,22 @@ exports[`Flex shots w/ justifyContent 3`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 4`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: unset;
+  -webkit-justify-content: unset;
+  -ms-flex-pack: unset;
+  justify-content: unset;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 boWzCn"
+  class="c0"
   direction="row"
 >
   <div>
@@ -933,8 +1551,22 @@ exports[`Flex shots w/ justifyContent 4`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 5`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gdjUgh"
+  class="c0"
   direction="row"
 >
   <div>
@@ -953,8 +1585,22 @@ exports[`Flex shots w/ justifyContent 5`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 6`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 YMdYw"
+  class="c0"
   direction="row"
 >
   <div>
@@ -973,8 +1619,22 @@ exports[`Flex shots w/ justifyContent 6`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 7`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 gveVfn"
+  class="c0"
   direction="row"
 >
   <div>
@@ -993,8 +1653,22 @@ exports[`Flex shots w/ justifyContent 7`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 8`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 PvNAF"
+  class="c0"
   direction="row"
 >
   <div>
@@ -1013,8 +1687,22 @@ exports[`Flex shots w/ justifyContent 8`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 9`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fdxwDA"
+  class="c0"
   direction="row"
 >
   <div>
@@ -1033,8 +1721,22 @@ exports[`Flex shots w/ justifyContent 9`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 10`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 kyiQJu"
+  class="c0"
   direction="row"
 >
   <div>
@@ -1053,8 +1755,29 @@ exports[`Flex shots w/ justifyContent 10`] = `
 `;
 
 exports[`Flex shots w/ justifyContent 11`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+}
+
+.c0 > * {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 jgMbsW"
+  class="c0"
   direction="row"
 >
   <div>
@@ -1073,30 +1796,99 @@ exports[`Flex shots w/ justifyContent 11`] = `
 `;
 
 exports[`Flex shots w/ whitespcae 1`] = `
+.c1 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  padding: 4px;
+}
+
+.c2 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: 8px;
+}
+
+.c3 {
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 100px;
+  -ms-flex-preferred-size: 100px;
+  flex-basis: 100px;
+  padding: 1rem;
+}
+
+.c4 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-flex-basis: 200px;
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 20px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 dnydci"
+  class="c0"
   direction="row"
 >
   <div
-    class="Item-sc-22uhr0-0 jkkvxk"
+    class="c1"
     order="2"
   >
     1
   </div>
   <div
-    class="Item-sc-22uhr0-0 jnqfnL"
+    class="c2"
     order="3"
   >
     2
   </div>
   <div
-    class="Item-sc-22uhr0-0 djPysi"
+    class="c3"
     order="4"
   >
     3
   </div>
   <div
-    class="Item-sc-22uhr0-0 ewHKxK"
+    class="c4"
     order="1"
   >
     4
@@ -1105,8 +1897,21 @@ exports[`Flex shots w/ whitespcae 1`] = `
 `;
 
 exports[`Flex shots w/ wrap 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 fhLTnq"
+  class="c0"
   direction="row"
   wrap="wrap"
 >
@@ -1126,8 +1931,21 @@ exports[`Flex shots w/ wrap 1`] = `
 `;
 
 exports[`Flex shots w/ wrap 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 iiepJz"
+  class="c0"
   direction="row"
   wrap="nowrap"
 >
@@ -1147,8 +1965,21 @@ exports[`Flex shots w/ wrap 2`] = `
 `;
 
 exports[`Flex shots w/ wrap 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 hOUyUr"
+  class="c0"
   direction="row"
   wrap="wrap-reverse"
 >
@@ -1168,8 +1999,18 @@ exports[`Flex shots w/ wrap 3`] = `
 `;
 
 exports[`Flex shots w/o arguments 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 <div
-  class="Flexstyles__Box-s2hf84-0 flvMjR"
+  class="c0"
   direction="row"
 >
   <div>

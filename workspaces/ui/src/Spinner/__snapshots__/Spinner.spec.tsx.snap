@@ -1,16 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Spinner 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+
+.c1 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -21,18 +55,52 @@ exports[`Spinner 1`] = `
 `;
 
 exports[`Spinner w/ any props 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+
+.c1 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 jPiLVW className"
+  class="c0 className"
   id="Spinner"
   title="title"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -43,16 +111,57 @@ exports[`Spinner w/ any props 1`] = `
 `;
 
 exports[`Spinner w/ position: absolute 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  margin: auto;
+}
+
+.c1 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 eAchHT"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -63,16 +172,50 @@ exports[`Spinner w/ position: absolute 1`] = `
 `;
 
 exports[`Spinner w/ position: relative 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+
+.c1 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -83,16 +226,50 @@ exports[`Spinner w/ position: relative 1`] = `
 `;
 
 exports[`Spinner w/ size: l 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+}
+
+.c1 {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 jDmrri"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 lhJvVO"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -103,16 +280,50 @@ exports[`Spinner w/ size: l 1`] = `
 `;
 
 exports[`Spinner w/ size: m 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+
+.c1 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 jPiLVW"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -123,16 +334,50 @@ exports[`Spinner w/ size: m 1`] = `
 `;
 
 exports[`Spinner w/ size: s 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.c1 {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 eAFeS"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 lbgYES"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -143,16 +388,50 @@ exports[`Spinner w/ size: s 1`] = `
 `;
 
 exports[`Spinner w/ size: xl 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+}
+
+.c1 {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 gSyAmC"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 chftsm"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -163,16 +442,50 @@ exports[`Spinner w/ size: xl 1`] = `
 `;
 
 exports[`Spinner w/ size: xs 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+}
+
+.c1 {
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 qwZJG"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 cJuUPW"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"
@@ -183,16 +496,50 @@ exports[`Spinner w/ size: xs 1`] = `
 `;
 
 exports[`Spinner w/ size: xxl 1`] = `
+.c0 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+}
+
+.c1 {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.c2 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
 <div
-  class="Spinnerstyles__Box-moemrn-0 gSyAmC"
+  class="c0"
 >
   <svg
-    class="Spinnerstyles__Svg-moemrn-1 chftsm"
+    class="c1"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      class="Spinnerstyles__Circle-moemrn-2 cElquL"
+      class="c2"
       color="primary"
       cx="50"
       cy="50"

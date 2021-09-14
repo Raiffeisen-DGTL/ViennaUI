@@ -1,62 +1,235 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormField 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj"
+    class="c0"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     />
   </div>
 </div>
 `;
 
 exports[`FormField w/ any props 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB className"
+  class="className"
   id="alarm"
   title="title"
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj"
+    class="c0"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     />
   </div>
 </div>
 `;
 
 exports[`FormField w/ inline 1`] = `
+.c3 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c1 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 gIfyHx"
+  class="c0"
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj"
+    class="c1"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c2"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c3"
     >
       Message
     </div>
@@ -65,43 +238,158 @@ exports[`FormField w/ inline 1`] = `
 `;
 
 exports[`FormField w/ label any props 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj className"
+    class="c0 className"
     id="alarm"
     title="title"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     />
   </div>
 </div>
 `;
 
 exports[`FormField w/ label required 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     >
       Message
     </div>
@@ -110,20 +398,74 @@ exports[`FormField w/ label required 1`] = `
 `;
 
 exports[`FormField w/ message 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj"
+    class="c0"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     >
       Message
     </div>
@@ -132,21 +474,86 @@ exports[`FormField w/ message 1`] = `
 `;
 
 exports[`FormField w/ message align: center 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 eEFRxM"
+      class="c2"
     >
       Message
     </div>
@@ -155,21 +562,86 @@ exports[`FormField w/ message align: center 1`] = `
 `;
 
 exports[`FormField w/ message align: left 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 fJQMWZ"
+      class="c2"
     >
       Message
     </div>
@@ -178,21 +650,86 @@ exports[`FormField w/ message align: left 1`] = `
 `;
 
 exports[`FormField w/ message align: right 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 gLWqAu"
+      class="c2"
     >
       Message
     </div>
@@ -201,20 +738,74 @@ exports[`FormField w/ message align: right 1`] = `
 `;
 
 exports[`FormField w/ message any props 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 fgmzMj"
+    class="c0"
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc className"
+      class="c2 className"
       id="alarm"
       title="title"
     >
@@ -225,21 +816,83 @@ exports[`FormField w/ message any props 1`] = `
 `;
 
 exports[`FormField w/ message coloring: critical 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+  color: #EE505A;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 gtrxAu"
+      class="c2"
       color="critical"
     >
       Message
@@ -249,21 +902,83 @@ exports[`FormField w/ message coloring: critical 1`] = `
 `;
 
 exports[`FormField w/ message coloring: warning 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+  color: #F88545;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 ciSlzR"
+      class="c2"
       color="warning"
     >
       Message
@@ -273,26 +988,87 @@ exports[`FormField w/ message coloring: warning 1`] = `
 `;
 
 exports[`FormField w/ messages 1`] = `
+.c2 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #808185;
+  margin-top: 4px;
+}
+
+.c0 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #808185;
+  margin-right: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.c0::after {
+  content: '*';
+  top: 2px;
+  left: 5px;
+  color: #EE505A;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 <div
-  class="FormFieldstyles__Box-sc-2u45vx-0 eQlCB"
+  class=""
 >
   <label
-    class="Labelstyles__Box-gottoi-0 hCpbFY"
+    class="c0"
     required=""
   >
     Label
   </label>
   <div
-    class="Contentstyles__Box-sc-1ds2jb5-0 emdrOR"
+    class="c1"
   >
     Input
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     >
       Message
     </div>
     <div
-      class="Messagestyles__Box-sc-2hwjqm-0 BFhKc"
+      class="c2"
     >
       Message #2
     </div>

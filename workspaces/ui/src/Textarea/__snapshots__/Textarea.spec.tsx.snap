@@ -1,11 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Textarea 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
 <textarea
   aria-invalid="false"
   autocomplete="off"
   autocorrect="off"
-  class="Textareastyles__Box-hlpio7-0 caKrog"
+  class="c0"
   cols="50"
   rows="3"
   wrap="soft"
@@ -14,20 +105,194 @@ exports[`Textarea 1`] = `
 
 exports[`Textarea w/ design 1`] = `
 Array [
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 caKrog"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 fYDlcN"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
@@ -37,21 +302,195 @@ Array [
 
 exports[`Textarea w/ disabled 1`] = `
 Array [
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 caKrog"
+    class="c0"
     cols="50"
     disabled=""
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 fYDlcN"
+    class="c0"
     cols="50"
     disabled=""
     rows="3"
@@ -62,20 +501,196 @@ Array [
 
 exports[`Textarea w/ invalid 1`] = `
 Array [
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  box-shadow: 0px 0px 0px 1px #EE505A;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="true"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 hdLoNw"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-bottom: 1px solid #D5D5D6;
+  padding-bottom: 1px;
+  border-radius: 0;
+  border-bottom: 1px solid #EE505A;
+}
+
+.c0:hover {
+  border-bottom: 2px solid #2B2D33;
+}
+
+.c0:focus {
+  border-bottom: 1px solid #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="true"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 fBVaZQ"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
@@ -263,47 +878,502 @@ exports[`Textarea w/ onKeyUp() 1`] = `
 
 exports[`Textarea w/ size 1`] = `
 Array [
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 KCehh"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 jJHmpZ"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 caKrog"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 caKrog"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
   />,
-  <textarea
+  .c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+<textarea
     aria-invalid="false"
     autocomplete="off"
     autocorrect="off"
-    class="Textareastyles__Box-hlpio7-0 caKrog"
+    class="c0"
     cols="50"
     rows="3"
     wrap="soft"
@@ -312,11 +1382,102 @@ Array [
 `;
 
 exports[`Textarea w/ some props 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
 <textarea
   aria-invalid="false"
   autocomplete="off"
   autocorrect="off"
-  class="Textareastyles__Box-hlpio7-0 caKrog className"
+  class="c0 className"
   cols="50"
   id="id"
   name="textarea"
@@ -327,11 +1488,102 @@ exports[`Textarea w/ some props 1`] = `
 `;
 
 exports[`Textarea w/ value 1`] = `
+.c0 {
+  vertical-align: middle;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  color: #2B2D33;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px 1px #D5D5D6;
+  background-color: #FFFFFF;
+  color: #2B2D33;
+}
+
+.c0:hover {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:focus {
+  box-shadow: 0px 0px 0px 2px #2B2D33;
+}
+
+.c0:disabled,
+.c0:disabled::-webkit-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::-moz-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled:-ms-input-placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:disabled,
+.c0:disabled::placeholder {
+  cursor: not-allowed;
+  box-shadow: 0px 0px 0px 1px #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0::-ms-clear,
+.c0::-ms-reveal {
+  display: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0::-moz-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c0:-ms-input-placeholder {
+  color: #AAABAD;
+  line-height: auto;
+}
+
 <textarea
   aria-invalid="false"
   autocomplete="off"
   autocorrect="off"
-  class="Textareastyles__Box-hlpio7-0 caKrog"
+  class="c0"
   cols="50"
   rows="3"
   wrap="soft"

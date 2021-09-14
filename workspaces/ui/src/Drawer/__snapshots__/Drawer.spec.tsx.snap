@@ -1,17 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Drawer /w as drawer bottom 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0px;
+  opacity: 1;
+  min-width: 460px;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  height: 0px;
+  width: 0px;
+  max-width: 100%;
+  min-width: 100%;
+  bottom: -0px;
+}
+
+.c3 {
+  height: calc( 100% - 32px - 24px - 4px );
+}
+
+.c2 {
+  color: #AAABAD;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 32px 0 0 32px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline: none;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
 <div
-  class="Drawerstyles__Fade-sc-34en6x-0 cIwlCK"
+  class="c0"
 >
   <div
-    class="Drawerstyles__Box-sc-34en6x-1 oNlZK"
+    class="c1"
     height="0px"
     orientation="bottom"
     width="0px"
   >
     <div
-      class="Drawerstyles__CloseIcon-sc-34en6x-3 eSIqqc"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -27,7 +101,7 @@ exports[`Drawer /w as drawer bottom 1`] = `
       </svg>
     </div>
     <div
-      class="Drawerstyles__Content-sc-34en6x-2 hyZwjZ"
+      class="c3"
     >
       content
     </div>
@@ -36,17 +110,91 @@ exports[`Drawer /w as drawer bottom 1`] = `
 `;
 
 exports[`Drawer /w as drawer left 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0px;
+  opacity: 1;
+  min-width: 460px;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  height: 0px;
+  width: 0px;
+  max-width: 100%;
+  min-height: 100%;
+  left: -0px;
+}
+
+.c3 {
+  height: calc( 100% - 32px - 24px - 4px );
+}
+
+.c2 {
+  color: #AAABAD;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 32px 0 0 32px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline: none;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
 <div
-  class="Drawerstyles__Fade-sc-34en6x-0 cIwlCK"
+  class="c0"
 >
   <div
-    class="Drawerstyles__Box-sc-34en6x-1 bskFvj"
+    class="c1"
     height="0px"
     orientation="left"
     width="0px"
   >
     <div
-      class="Drawerstyles__CloseIcon-sc-34en6x-3 eSIqqc"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -62,7 +210,7 @@ exports[`Drawer /w as drawer left 1`] = `
       </svg>
     </div>
     <div
-      class="Drawerstyles__Content-sc-34en6x-2 hyZwjZ"
+      class="c3"
     >
       content
     </div>
@@ -71,17 +219,94 @@ exports[`Drawer /w as drawer left 1`] = `
 `;
 
 exports[`Drawer /w as drawer left show 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+  visibility: visible;
+  background-color: rgba(43,45,51,0.24);
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0px;
+  opacity: 1;
+  min-width: 460px;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  height: 0px;
+  width: 0px;
+  max-width: 100%;
+  min-height: 100%;
+  left: -0px;
+  left: 0;
+}
+
+.c3 {
+  height: calc( 100% - 32px - 24px - 4px );
+}
+
+.c2 {
+  color: #AAABAD;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 32px 0 0 32px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline: none;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
 <div
-  class="Drawerstyles__Fade-sc-34en6x-0 fUpiCd"
+  class="c0"
 >
   <div
-    class="Drawerstyles__Box-sc-34en6x-1 dKuBiN"
+    class="c1"
     height="0px"
     orientation="left"
     width="0px"
   >
     <div
-      class="Drawerstyles__CloseIcon-sc-34en6x-3 eSIqqc"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -97,7 +322,7 @@ exports[`Drawer /w as drawer left show 1`] = `
       </svg>
     </div>
     <div
-      class="Drawerstyles__Content-sc-34en6x-2 hyZwjZ"
+      class="c3"
     >
       content
     </div>
@@ -106,17 +331,91 @@ exports[`Drawer /w as drawer left show 1`] = `
 `;
 
 exports[`Drawer /w as drawer right 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0px;
+  opacity: 1;
+  min-width: 460px;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  height: 0px;
+  width: 0px;
+  max-width: 100%;
+  min-height: 100%;
+  right: -0px;
+}
+
+.c3 {
+  height: calc( 100% - 32px - 24px - 4px );
+}
+
+.c2 {
+  color: #AAABAD;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 32px 0 0 32px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline: none;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
 <div
-  class="Drawerstyles__Fade-sc-34en6x-0 cIwlCK"
+  class="c0"
 >
   <div
-    class="Drawerstyles__Box-sc-34en6x-1 iRIEdk"
+    class="c1"
     height="0px"
     orientation="right"
     width="0px"
   >
     <div
-      class="Drawerstyles__CloseIcon-sc-34en6x-3 eSIqqc"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -132,7 +431,7 @@ exports[`Drawer /w as drawer right 1`] = `
       </svg>
     </div>
     <div
-      class="Drawerstyles__Content-sc-34en6x-2 hyZwjZ"
+      class="c3"
     >
       content
     </div>
@@ -141,17 +440,91 @@ exports[`Drawer /w as drawer right 1`] = `
 `;
 
 exports[`Drawer /w as drawer top 1`] = `
+.c0 {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  background-color: rgba(43,45,51,0);
+  visibility: hidden;
+}
+
+.c1 {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  position: absolute;
+  border-radius: 0px;
+  opacity: 1;
+  min-width: 460px;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: auto;
+  height: 0px;
+  width: 0px;
+  max-width: 100%;
+  min-width: 100%;
+  top: -0px;
+}
+
+.c3 {
+  height: calc( 100% - 32px - 24px - 4px );
+}
+
+.c2 {
+  color: #AAABAD;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  margin: 32px 0 0 32px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline: none;
+}
+
+.c2:hover {
+  color: #2B2D33;
+}
+
 <div
-  class="Drawerstyles__Fade-sc-34en6x-0 cIwlCK"
+  class="c0"
 >
   <div
-    class="Drawerstyles__Box-sc-34en6x-1 dAAfTG"
+    class="c1"
     height="0px"
     orientation="top"
     width="0px"
   >
     <div
-      class="Drawerstyles__CloseIcon-sc-34en6x-3 eSIqqc"
+      class="c2"
     >
       <svg
         fill="currentColor"
@@ -167,7 +540,7 @@ exports[`Drawer /w as drawer top 1`] = `
       </svg>
     </div>
     <div
-      class="Drawerstyles__Content-sc-34en6x-2 hyZwjZ"
+      class="c3"
     >
       content
     </div>

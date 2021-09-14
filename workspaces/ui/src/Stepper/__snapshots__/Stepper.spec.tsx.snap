@@ -1,44 +1,168 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stepper 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       2
@@ -48,44 +172,169 @@ exports[`Stepper 1`] = `
 `;
 
 exports[`Stepper w/ orientation and not responsive: horizontal 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  width: 200px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 ebGAQv"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       2
@@ -95,44 +344,178 @@ exports[`Stepper w/ orientation and not responsive: horizontal 1`] = `
 `;
 
 exports[`Stepper w/ orientation and not responsive: vertical 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.c7 > .c5 {
+  text-align: center;
+}
+
+.c7:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c7:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c3:last-child {
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.c3 > .c5 {
+  text-align: left;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  height: 200px;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  width: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 diACVj"
+  class="c0"
   orientation="vertical"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 cKMygt"
+    class="c1"
     orientation="vertical"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 kgxhRh"
+    class="c2"
     orientation="vertical"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 ijaoU"
+    class="c3"
     orientation="vertical"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="vertical"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 lghnlH"
+      class="c5 c6"
       orientation="vertical"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 ijaoU"
+    class="c3"
     orientation="vertical"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="vertical"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 lghnlH"
+      class="c5 c6"
       orientation="vertical"
     >
       2
@@ -142,44 +525,168 @@ exports[`Stepper w/ orientation and not responsive: vertical 1`] = `
 `;
 
 exports[`Stepper w/ orientation: horizontal 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       2
@@ -189,44 +696,177 @@ exports[`Stepper w/ orientation: horizontal 1`] = `
 `;
 
 exports[`Stepper w/ orientation: vertical 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.c7 > .c5 {
+  text-align: center;
+}
+
+.c7:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c7:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c3:last-child {
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.c3 > .c5 {
+  text-align: left;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  width: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 fSNbFv"
+  class="c0"
   orientation="vertical"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 cKMygt"
+    class="c1"
     orientation="vertical"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 kgxhRh"
+    class="c2"
     orientation="vertical"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 ijaoU"
+    class="c3"
     orientation="vertical"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="vertical"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 lghnlH"
+      class="c5 c6"
       orientation="vertical"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 ijaoU"
+    class="c3"
     orientation="vertical"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="vertical"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 lghnlH"
+      class="c5 c6"
       orientation="vertical"
     >
       2
@@ -236,44 +876,206 @@ exports[`Stepper w/ orientation: vertical 1`] = `
 `;
 
 exports[`Stepper w/ size and error: l 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c8 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #EE505A;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background-color: #AAABAD;
+  margin-top: -4px;
+}
+
+.c4:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.c7 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background-color: #EE505A;
+  margin-top: -4px;
+}
+
+.c7:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 ffIeMS"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 cmxxrV"
+      class="c7"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 uTfFL"
+      class="c5 c8"
       orientation="horizontal"
     >
       2
@@ -283,44 +1085,192 @@ exports[`Stepper w/ size and error: l 1`] = `
 `;
 
 exports[`Stepper w/ size and error: s 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c8 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #EE505A;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c7 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #EE505A;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 gLTxEJ"
+      class="c7"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 uTfFL"
+      class="c5 c8"
       orientation="horizontal"
     >
       2
@@ -330,44 +1280,175 @@ exports[`Stepper w/ size and error: s 1`] = `
 `;
 
 exports[`Stepper w/ size: l 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background-color: #AAABAD;
+  margin-top: -4px;
+}
+
+.c4:after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 ffIeMS"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 ffIeMS"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       2
@@ -377,44 +1458,168 @@ exports[`Stepper w/ size: l 1`] = `
 `;
 
 exports[`Stepper w/ size: s 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: -100%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 RUUYR"
+    class="c2"
     orientation="horizontal"
     width="-100"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c6"
       orientation="horizontal"
     >
       2
@@ -424,44 +1629,193 @@ exports[`Stepper w/ size: s 1`] = `
 `;
 
 exports[`Stepper w/ value 1`] = `
+.c6 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c8 {
+  display: -webkit-box;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #AAABAD;
+  width: 100%;
+  margin-top: 12px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding-right: 8px;
+  width: calc(100% / 2);
+}
+
+.c3 > .c5 {
+  text-align: center;
+}
+
+.c3:nth-child(3) {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.c3:nth-child(3) > .c5 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: visible;
+}
+
+.c3:last-child {
+  width: calc(100% / 2 / 2);
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 0;
+}
+
+.c3:last-child > .c5 {
+  text-align: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.c4 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #00809C;
+}
+
+.c7 {
+  position: relative;
+  border-radius: 50%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background-color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 0%;
+  background-color: #66C9D7;
+  border-radius: 8px;
+  height: 8px;
+}
+
 <div
-  class="Stepperstyles__Box-isps26-0 iycJxe"
+  class="c0"
   orientation="horizontal"
 >
   <div
-    class="Stepperstyles__Line-isps26-1 heOLbh"
+    class="c1"
     orientation="horizontal"
   />
   <div
-    class="Stepperstyles__Progress-isps26-2 dKfPBZ"
+    class="c2"
     orientation="horizontal"
     width="0"
   />
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 eZYYYa"
+      class="c4"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 bTkXjg"
+      class="c5 c6"
       orientation="horizontal"
     >
       1
     </div>
   </div>
   <div
-    class="Stepstyles__Box-xs87tg-1 bYPBVL"
+    class="c3"
     orientation="horizontal"
   >
     <div
-      class="Stepstyles__Point-xs87tg-2 khSHdq"
+      class="c7"
       orientation="horizontal"
     />
     <div
-      class="Stepstyles__Title-xs87tg-0 dnwhVA"
+      class="c5 c8"
       orientation="horizontal"
     >
       2

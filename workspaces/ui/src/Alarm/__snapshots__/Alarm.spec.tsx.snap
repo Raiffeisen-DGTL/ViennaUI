@@ -1,14 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alarm 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #2B2D33;
+}
+
 <div
-  class="Alarmstyles__Box-sc-1k22vn9-0 jlXDJL"
+  class="c0"
 />
 `;
 
 exports[`Alarm w/ any props 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #2B2D33;
+}
+
 <div
-  class="Alarmstyles__Box-sc-1k22vn9-0 jlXDJL className"
+  class="c0 className"
   id="alarm"
   title="title"
 />
@@ -16,35 +64,231 @@ exports[`Alarm w/ any props 1`] = `
 
 exports[`Alarm w/ design 1`] = `
 Array [
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 HfwfI"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #EE505A;
+}
+
+<div
+    class="c0"
   />,
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 dpCONz"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #F88545;
+}
+
+<div
+    class="c0"
   />,
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 eBikTp"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #19B28D;
+}
+
+<div
+    class="c0"
   />,
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 hvWWms"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #00A5BC;
+}
+
+<div
+    class="c0"
   />,
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 jlXDJL"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #2B2D33;
+}
+
+<div
+    class="c0"
   />,
-  <div
-    class="Alarmstyles__Box-sc-1k22vn9-0 cyKRRz"
+  .c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #D5D5D6;
+}
+
+<div
+    class="c0"
   />,
 ]
 `;
 
 exports[`Alarm w/ position: absolute 1`] = `
+.c0 {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #2B2D33;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
 <div
-  class="Alarmstyles__Box-sc-1k22vn9-0 FgHtH"
+  class="c0"
 />
 `;
 
 exports[`Alarm w/ position: relative 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #2B2D33;
+}
+
 <div
-  class="Alarmstyles__Box-sc-1k22vn9-0 jlXDJL"
+  class="c0"
 />
 `;

@@ -1,18 +1,164 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sidebar 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -30,7 +176,7 @@ exports[`Sidebar 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -43,42 +189,42 @@ exports[`Sidebar 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
@@ -89,18 +235,184 @@ exports[`Sidebar 1`] = `
 `;
 
 exports[`Sidebar w/ active 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -118,7 +430,7 @@ exports[`Sidebar w/ active 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -131,42 +443,42 @@ exports[`Sidebar w/ active 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 jlnJY"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c10"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c10"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
@@ -177,19 +489,178 @@ exports[`Sidebar w/ active 1`] = `
 `;
 
 exports[`Sidebar w/ any props 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c8 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm className"
+  class="c0 className"
   id="id"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -207,7 +678,7 @@ exports[`Sidebar w/ any props 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -220,16 +691,16 @@ exports[`Sidebar w/ any props 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -245,20 +716,20 @@ exports[`Sidebar w/ any props 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -274,20 +745,20 @@ exports[`Sidebar w/ any props 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -305,7 +776,7 @@ exports[`Sidebar w/ any props 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Documents
         </div>
@@ -316,18 +787,184 @@ exports[`Sidebar w/ any props 1`] = `
 `;
 
 exports[`Sidebar w/ collapsed & icons 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c7 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+  width: 72px;
+}
+
+.c0 .c6 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c6[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c6 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c6 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 .c6 {
+  display: none;
+}
+
+.c0 .c6 .c9 {
+  display: none;
+}
+
+.c0 .c6 .Itemstyles__Notification-sc-1x0pl6d-2 {
+  display: none;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c5 {
+  display: block;
+  width: 100%;
+}
+
+.c5:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+  padding: 0 20px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 ccoxpD"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 jhkvyH"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -347,16 +984,16 @@ exports[`Sidebar w/ collapsed & icons 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c4"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c5"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c7"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -372,20 +1009,20 @@ exports[`Sidebar w/ collapsed & icons 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c5"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c7"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -401,20 +1038,20 @@ exports[`Sidebar w/ collapsed & icons 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c5"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c7"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -432,7 +1069,7 @@ exports[`Sidebar w/ collapsed & icons 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Documents
         </div>
@@ -443,18 +1080,183 @@ exports[`Sidebar w/ collapsed & icons 1`] = `
 `;
 
 exports[`Sidebar w/ collapsed 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+  width: 72px;
+}
+
+.c0 .c6 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c6[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c6 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c6 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 .c6 {
+  display: none;
+}
+
+.c0 .c6 .c8 {
+  display: none;
+}
+
+.c0 .c6 .Itemstyles__Notification-sc-1x0pl6d-2 {
+  display: none;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c5 {
+  display: block;
+  width: 100%;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c5:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c10 {
+  display: block;
+  width: 100%;
+}
+
+.c10:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+  padding: 0 20px;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 ccoxpD"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 jhkvyH"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -474,45 +1276,45 @@ exports[`Sidebar w/ collapsed 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c4"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 fQJkDR"
+      class="c5"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c6 c7"
         id="home"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c8 c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c10"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c6 c7"
         id="mail"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c8 c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c10"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c6 c7"
         id="docs"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c8 c9"
         >
           Documents
         </div>
@@ -523,18 +1325,186 @@ exports[`Sidebar w/ collapsed 1`] = `
 `;
 
 exports[`Sidebar w/ collapser 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c8 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c8[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c8 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c8 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c7 {
+  display: block;
+  width: 100%;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c7:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c11 {
+  display: block;
+  width: 100%;
+}
+
+.c11:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c5 {
+  cursor: pointer;
+  padding: 0 24px;
+  margin-bottom: 20px;
+}
+
+.c5:hover {
+  color: #00A5BC;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c6 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -552,7 +1522,7 @@ exports[`Sidebar w/ collapser 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -565,7 +1535,7 @@ exports[`Sidebar w/ collapser 1`] = `
     </div>
   </div>
   <span
-    class="Sidebarstyles__Collapser-efmgka-2 gpoTXU"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -581,45 +1551,45 @@ exports[`Sidebar w/ collapser 1`] = `
     </svg>
   </span>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c6"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 fQJkDR"
+      class="c7"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c8 c9"
         id="home"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c11"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c8 c9"
         id="mail"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c11"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c8 c9"
         id="docs"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Documents
         </div>
@@ -630,18 +1600,225 @@ exports[`Sidebar w/ collapser 1`] = `
 `;
 
 exports[`Sidebar w/ collapser 2`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c12 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c12 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c12 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c12 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+  width: 72px;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 .c7 {
+  display: none;
+}
+
+.c0 .c7 .c9 {
+  display: none;
+}
+
+.c0 .c7 .Itemstyles__Notification-sc-1x0pl6d-2 {
+  display: none;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c11 {
+  display: block;
+  width: 100%;
+}
+
+.c11:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c4 {
+  cursor: pointer;
+  padding: 0 24px;
+  margin-bottom: 20px;
+}
+
+.c4:hover {
+  color: #00A5BC;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+  padding: 0 20px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 ccoxpD"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 jhkvyH"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -661,7 +1838,7 @@ exports[`Sidebar w/ collapser 2`] = `
     </div>
   </div>
   <span
-    class="Sidebarstyles__Collapser-efmgka-2 gpoTXU"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -677,45 +1854,45 @@ exports[`Sidebar w/ collapser 2`] = `
     </svg>
   </span>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 fQJkDR"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="home"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c11"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="mail"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c11"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="docs"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9 c10"
         >
           Documents
         </div>
@@ -726,18 +1903,164 @@ exports[`Sidebar w/ collapser 2`] = `
 `;
 
 exports[`Sidebar w/ design 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -755,7 +2078,7 @@ exports[`Sidebar w/ design 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -768,42 +2091,42 @@ exports[`Sidebar w/ design 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
@@ -814,18 +2137,196 @@ exports[`Sidebar w/ design 1`] = `
 `;
 
 exports[`Sidebar w/ design 2`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #FFFFFF;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c10 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c10 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c10 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c10 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #2B2D33;
+  color: #F4F4F4;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #55575C;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #55575C;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #404247;
+  color: #F4F4F4;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #55575C;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #404247;
+  color: #F4F4F4;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,#2B2D33 70%) 0 100%,linear-gradient( #55575C,#55575C ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 cstCxh"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -843,7 +2344,7 @@ exports[`Sidebar w/ design 2`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 eQrkdB"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -856,42 +2357,42 @@ exports[`Sidebar w/ design 2`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 fxMwGC"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
@@ -902,18 +2403,181 @@ exports[`Sidebar w/ design 2`] = `
 `;
 
 exports[`Sidebar w/ footer 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c8 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
+.c11 {
+  margin-top: 24px;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -931,7 +2595,7 @@ exports[`Sidebar w/ footer 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -944,16 +2608,16 @@ exports[`Sidebar w/ footer 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -969,7 +2633,7 @@ exports[`Sidebar w/ footer 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Home
         </div>
@@ -977,13 +2641,13 @@ exports[`Sidebar w/ footer 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Footer-efmgka-5 fxvkvg"
+    class="c11"
   >
     <div
-      class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+      class="c7 c8"
     >
       <span
-        class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+        class="c9"
       >
         <svg
           fill="currentColor"
@@ -999,16 +2663,16 @@ exports[`Sidebar w/ footer 1`] = `
         </svg>
       </span>
       <div
-        class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+        class="c10"
       >
         Chat
       </div>
     </div>
     <div
-      class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+      class="c7 c8"
     >
       <span
-        class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+        class="c9"
       >
         <svg
           fill="currentColor"
@@ -1024,16 +2688,16 @@ exports[`Sidebar w/ footer 1`] = `
         </svg>
       </span>
       <div
-        class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+        class="c10"
       >
         Help
       </div>
     </div>
     <div
-      class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+      class="c7 c8"
     >
       <span
-        class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+        class="c9"
       >
         <svg
           fill="currentColor"
@@ -1051,7 +2715,7 @@ exports[`Sidebar w/ footer 1`] = `
         </svg>
       </span>
       <div
-        class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+        class="c10"
       >
         Settings
       </div>
@@ -1061,12 +2725,143 @@ exports[`Sidebar w/ footer 1`] = `
 `;
 
 exports[`Sidebar w/ header 1`] = `
+.c7 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c6 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c5 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c4 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c4[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c4 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c4 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c3 {
+  display: block;
+  width: 100%;
+}
+
+.c3:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1082,16 +2877,16 @@ exports[`Sidebar w/ header 1`] = `
     </svg>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c2"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c3"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c4 c5"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c6"
         >
           <svg
             fill="currentColor"
@@ -1107,20 +2902,20 @@ exports[`Sidebar w/ header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c7"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c3"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c4 c5"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c6"
         >
           <svg
             fill="currentColor"
@@ -1136,20 +2931,20 @@ exports[`Sidebar w/ header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c7"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c3"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c4 c5"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c6"
         >
           <svg
             fill="currentColor"
@@ -1167,7 +2962,7 @@ exports[`Sidebar w/ header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c7"
         >
           Documents
         </div>
@@ -1178,18 +2973,177 @@ exports[`Sidebar w/ header 1`] = `
 `;
 
 exports[`Sidebar w/ icons 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c8 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -1207,7 +3161,7 @@ exports[`Sidebar w/ icons 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -1220,23 +3174,23 @@ exports[`Sidebar w/ icons 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Sidebarstyles__Box-efmgka-0 kPvehm"
+        class="c0"
         width="250px"
       >
         <div
-          class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+          class="c1"
         >
           <div
-            class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+            class="c2"
           >
             <svg
-              class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+              class="c3"
               viewBox="0 0 56 56"
             >
               <rect
@@ -1254,7 +3208,7 @@ exports[`Sidebar w/ icons 1`] = `
               />
             </svg>
             <svg
-              class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+              class="c4"
               viewBox="0 0 190 54"
             >
               <path
@@ -1267,16 +3221,16 @@ exports[`Sidebar w/ icons 1`] = `
           </div>
         </div>
         <div
-          class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+          class="c5"
         >
           <div
-            class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+            class="c6"
           >
             <div
-              class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+              class="c7 c8"
             >
               <span
-                class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+                class="c9"
               >
                 <svg
                   fill="currentColor"
@@ -1292,20 +3246,20 @@ exports[`Sidebar w/ icons 1`] = `
                 </svg>
               </span>
               <div
-                class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+                class="c10"
               >
                 Home
               </div>
             </div>
           </div>
           <div
-            class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+            class="c6"
           >
             <div
-              class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+              class="c7 c8"
             >
               <span
-                class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+                class="c9"
               >
                 <svg
                   fill="currentColor"
@@ -1321,20 +3275,20 @@ exports[`Sidebar w/ icons 1`] = `
                 </svg>
               </span>
               <div
-                class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+                class="c10"
               >
                 Mail
               </div>
             </div>
           </div>
           <div
-            class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+            class="c6"
           >
             <div
-              class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+              class="c7 c8"
             >
               <span
-                class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+                class="c9"
               >
                 <svg
                   fill="currentColor"
@@ -1352,7 +3306,7 @@ exports[`Sidebar w/ icons 1`] = `
                 </svg>
               </span>
               <div
-                class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+                class="c10"
               >
                 Documents
               </div>
@@ -1366,18 +3320,199 @@ exports[`Sidebar w/ icons 1`] = `
 `;
 
 exports[`Sidebar w/ links 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c7 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c7:hover {
+  color: #2B2D33;
+}
+
+.c7:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c7 > * {
+  vertical-align: middle;
+}
+
+.c7 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c8 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c8[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c8 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c8 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -1395,7 +3530,7 @@ exports[`Sidebar w/ links 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -1408,20 +3543,20 @@ exports[`Sidebar w/ links 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c7"
         href="#"
       >
         <div
-          class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+          class="c8 c9"
         >
           <div
-            class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+            class="c10"
           >
             Home
           </div>
@@ -1429,17 +3564,17 @@ exports[`Sidebar w/ links 1`] = `
       </a>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c7"
         href="#"
       >
         <div
-          class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+          class="c8 c9"
         >
           <div
-            class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+            class="c10"
           >
             Mail
           </div>
@@ -1447,17 +3582,17 @@ exports[`Sidebar w/ links 1`] = `
       </a>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c7"
         href="#"
       >
         <div
-          class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+          class="c8 c9"
         >
           <div
-            class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+            class="c10"
           >
             Documents
           </div>
@@ -1469,18 +3604,207 @@ exports[`Sidebar w/ links 1`] = `
 `;
 
 exports[`Sidebar w/ notification 1`] = `
+.c12 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #00A5BC;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c10 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c11 {
+  font-weight: normal;
+  width: 36px;
+  padding-left: 4px;
+}
+
+.c8 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -1498,7 +3822,7 @@ exports[`Sidebar w/ notification 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -1511,16 +3835,16 @@ exports[`Sidebar w/ notification 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -1536,27 +3860,27 @@ exports[`Sidebar w/ notification 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Home
         </div>
         <div
-          class="Itemstyles__Notification-sc-1x0pl6d-2 ePwhGi"
+          class="c11"
         >
           <div
-            class="Alarmstyles__Box-sc-1k22vn9-0 hvWWms"
+            class="c12"
           />
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -1572,20 +3896,20 @@ exports[`Sidebar w/ notification 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c7 c8"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c9"
         >
           <svg
             fill="currentColor"
@@ -1603,7 +3927,7 @@ exports[`Sidebar w/ notification 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c10"
         >
           Documents
         </div>
@@ -1614,18 +3938,176 @@ exports[`Sidebar w/ notification 1`] = `
 `;
 
 exports[`Sidebar w/ parent active 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c4 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c7 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c7[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c7 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c7 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c6 {
+  display: block;
+  width: 100%;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c6:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c10 {
+  display: block;
+  width: 100%;
+}
+
+.c10:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  margin-bottom: 32px;
+  padding-right: 8px;
+  padding-left: 24px;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Header-efmgka-3 bVLbSB"
+    class="c1"
   >
     <div
-      class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+      class="c2"
     >
       <svg
-        class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+        class="c3"
         viewBox="0 0 56 56"
       >
         <rect
@@ -1643,7 +4125,7 @@ exports[`Sidebar w/ parent active 1`] = `
         />
       </svg>
       <svg
-        class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+        class="c4"
         viewBox="0 0 190 54"
       >
         <path
@@ -1656,45 +4138,45 @@ exports[`Sidebar w/ parent active 1`] = `
     </div>
   </div>
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c5"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 fQJkDR"
+      class="c6"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="home"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c10"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="mail"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c10"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 gxsTFy"
+        class="c7 c8"
         id="docs"
       >
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
@@ -1705,21 +4187,146 @@ exports[`Sidebar w/ parent active 1`] = `
 `;
 
 exports[`Sidebar w/o header 1`] = `
+.c6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c4 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #FFFFFF;
+  color: #2B2D33;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c3 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 40px;
+  padding-left: 24px;
+}
+
+.c0 .c3[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #D5D5D6;
+}
+
+.c0 .c3 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #F4F4F4;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 8px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c3 {
+  box-shadow: inset 1px 0 0 0 #E9EAEA;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+}
+
+.c2:hover {
+  background: #FBFBFB;
+  color: #2B2D33;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,white 70%) 0 100%,linear-gradient( #E9EAEA,#E9EAEA ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 kPvehm"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Menu-efmgka-4 ilLqUg"
+    class="c1"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c3 c4"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -1735,20 +4342,20 @@ exports[`Sidebar w/o header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c6"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c3 c4"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -1764,20 +4371,20 @@ exports[`Sidebar w/o header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c6"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 iEvicD"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c3 c4"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c5"
         >
           <svg
             fill="currentColor"
@@ -1795,7 +4402,7 @@ exports[`Sidebar w/o header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c6"
         >
           Documents
         </div>
@@ -1806,23 +4413,196 @@ exports[`Sidebar w/o header 1`] = `
 `;
 
 exports[`Sidebar with custom header 1`] = `
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c4 {
+  fill: #FFED00;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+}
+
+.c5 {
+  height: 24px;
+  fill: #FFFFFF;
+  width: 84px;
+  margin-left: 8px;
+}
+
+.c9 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.c7 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 4px 0 0 0 #FEE600 !important;
+  font-weight: 700;
+}
+
+.c10 {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px 0;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.08);
+  background-color: #2B2D33;
+  color: #F4F4F4;
+  width: 250px;
+  height: 100%;
+}
+
+.c0 .c6 {
+  font-size: 14px;
+  line-height: 22px;
+  padding-right: 8px;
+  height: 52px;
+  padding-left: 40px;
+}
+
+.c0 .c6[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #55575C;
+}
+
+.c0 .c6 .Itemstyles__Ripple-sc-1x0pl6d-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  opacity: 0;
+  -webkit-transform: translate(-50%,-50%) scale(0.1);
+  -ms-transform: translate(-50%,-50%) scale(0.1);
+  transform: translate(-50%,-50%) scale(0.1);
+  -webkit-transition: initial;
+  transition: initial;
+  background: #55575C;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0 {
+  padding-left: 20px;
+}
+
+.c0 .Submenustyles__SubmenuTitle-mtx5px-0:hover {
+  background: #404247;
+  color: #F4F4F4;
+}
+
+.c0 .Submenustyles__Menu-mtx5px-1 .c6 {
+  box-shadow: inset 1px 0 0 0 #55575C;
+}
+
+.c0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.c2 {
+  display: block;
+  width: 100%;
+}
+
+.c2:hover {
+  background: #404247;
+  color: #F4F4F4;
+}
+
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: auto;
+  background: linear-gradient(transparent,#2B2D33 70%) 0 100%,linear-gradient( #55575C,#55575C ) 24px 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,calc(100% - 48px) 1px;
+  background-attachment: local,scroll;
+}
+
 <div
-  class="Sidebarstyles__Box-efmgka-0 hntSO"
+  class="c0"
   width="250px"
 >
   <div
-    class="Sidebarstyles__Menu-efmgka-4 fxMwGC"
+    class="c1"
   >
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div>
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c3"
           style="margin-left:40px;margin-bottom:64px;margin-top:32px"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
+            class="c4"
             viewBox="0 0 56 56"
           >
             <rect
@@ -1840,7 +4620,7 @@ exports[`Sidebar with custom header 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 fcqypd"
+            class="c5"
             viewBox="0 0 190 54"
           >
             <path
@@ -1854,13 +4634,13 @@ exports[`Sidebar with custom header 1`] = `
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 fwNxLf"
+        class="c6 c7"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -1876,20 +4656,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -1905,20 +4685,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -1936,20 +4716,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -1965,20 +4745,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -1994,20 +4774,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2025,20 +4805,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2054,20 +4834,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2083,20 +4863,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2114,20 +4894,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2143,20 +4923,20 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Home
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2172,21 +4952,21 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Mail
         </div>
       </div>
     </div>
     <div
-      class="Sidebarstyles__ItemWrapper-efmgka-1 dvtBJO"
+      class="c2"
     >
       <div
-        class="Itemstyles__Box-sc-1x0pl6d-3 dmylbp"
+        class="c6 c10"
         disabled=""
       >
         <span
-          class="Itemstyles__Icon-sc-1x0pl6d-1 itEQFz"
+          class="c8"
         >
           <svg
             fill="currentColor"
@@ -2204,7 +4984,7 @@ exports[`Sidebar with custom header 1`] = `
           </svg>
         </span>
         <div
-          class="Itemstyles__Title-sc-1x0pl6d-0 kSGewh"
+          class="c9"
         >
           Documents
         </div>

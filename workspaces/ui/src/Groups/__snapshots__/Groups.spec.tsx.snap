@@ -1,42 +1,214 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Groups 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -52,7 +224,7 @@ exports[`Groups 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -62,46 +234,218 @@ exports[`Groups 1`] = `
 `;
 
 exports[`Groups w/ alignItems 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 gDfoPk"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -117,7 +461,7 @@ exports[`Groups w/ alignItems 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -127,48 +471,220 @@ exports[`Groups w/ alignItems 1`] = `
 `;
 
 exports[`Groups w/ any props 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc className"
+  class="c0 className"
   id="Counter"
   title="title"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -184,7 +700,7 @@ exports[`Groups w/ any props 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -194,102 +710,222 @@ exports[`Groups w/ any props 1`] = `
 `;
 
 exports[`Groups w/ clean (React.Fragment remove) 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         A
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         B
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         C
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         D
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         E
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         F
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 dcKhhz"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         J
       </span>
@@ -299,46 +935,218 @@ exports[`Groups w/ clean (React.Fragment remove) 1`] = `
 `;
 
 exports[`Groups w/ design: horizontal 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -354,7 +1162,7 @@ exports[`Groups w/ design: horizontal 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -364,46 +1172,213 @@ exports[`Groups w/ design: horizontal 1`] = `
 `;
 
 exports[`Groups w/ design: vertical 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 iFNDcQ"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 bcXHUW"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -419,7 +1394,7 @@ exports[`Groups w/ design: vertical 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -429,52 +1404,224 @@ exports[`Groups w/ design: vertical 1`] = `
 `;
 
 exports[`Groups w/ groups 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+      class="c0"
     >
       <div
-        class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+        class="c1"
       >
         <button
-          class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+          class="c4"
           type="button"
         >
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
             Download statement
           </span>
         </button>
       </div>
       <div
-        class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+        class="c1"
       >
         <button
-          class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+          class="c4"
           type="button"
         >
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
             <svg
               fill="currentColor"
@@ -490,7 +1637,7 @@ exports[`Groups w/ groups 1`] = `
             </svg>
           </span>
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
              Delete statement
           </span>
@@ -502,52 +1649,256 @@ exports[`Groups w/ groups 1`] = `
 `;
 
 exports[`Groups w/ height 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c5 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c5:active {
+  top: 1px;
+}
+
+.c5:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 hxvwrz"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+      class="c4"
     >
       <div
-        class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+        class="c1"
       >
         <button
-          class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+          class="c5"
           type="button"
         >
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
             Download statement
           </span>
         </button>
       </div>
       <div
-        class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+        class="c1"
       >
         <button
-          class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+          class="c5"
           type="button"
         >
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
             <svg
               fill="currentColor"
@@ -563,7 +1914,7 @@ exports[`Groups w/ height 1`] = `
             </svg>
           </span>
           <span
-            class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+            class="c3"
           >
              Delete statement
           </span>
@@ -575,46 +1926,218 @@ exports[`Groups w/ height 1`] = `
 `;
 
 exports[`Groups w/ justifyContent 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 hDAsnh"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -630,7 +2153,7 @@ exports[`Groups w/ justifyContent 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -640,32 +2163,204 @@ exports[`Groups w/ justifyContent 1`] = `
 `;
 
 exports[`Groups w/ null 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -681,7 +2376,7 @@ exports[`Groups w/ null 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -691,46 +2386,218 @@ exports[`Groups w/ null 1`] = `
 `;
 
 exports[`Groups w/ size: l 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -20px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 eZgkfB"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hoVngd"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hoVngd"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hoVngd"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -746,7 +2613,7 @@ exports[`Groups w/ size: l 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -756,46 +2623,218 @@ exports[`Groups w/ size: l 1`] = `
 `;
 
 exports[`Groups w/ size: m 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -811,7 +2850,7 @@ exports[`Groups w/ size: m 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -821,46 +2860,218 @@ exports[`Groups w/ size: m 1`] = `
 `;
 
 exports[`Groups w/ size: s 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -12px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 12px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 12px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fBejJs"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 gOSTmR"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 gOSTmR"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 gOSTmR"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -876,7 +3087,7 @@ exports[`Groups w/ size: s 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -886,46 +3097,218 @@ exports[`Groups w/ size: s 1`] = `
 `;
 
 exports[`Groups w/ size: xl 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -24px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 24px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 24px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 feKNWl"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hTmBcZ"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hTmBcZ"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 hTmBcZ"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -941,7 +3324,7 @@ exports[`Groups w/ size: xl 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>
@@ -951,46 +3334,218 @@ exports[`Groups w/ size: xl 1`] = `
 `;
 
 exports[`Groups w/ size: xs 1`] = `
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c2:active {
+  top: 1px;
+}
+
+.c2:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 20px;
+  height: 36px;
+  min-width: 36px;
+  color: #2B2D33;
+  background-color: transparent;
+  border: solid 2px #D5D5D6;
+}
+
+.c4:active {
+  top: 1px;
+}
+
+.c4:hover {
+  color: #2B2D33;
+  border: solid 2px #2B2D33;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c3:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c3 > svg {
+  display: block;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -8px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 8px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 8px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 dJximv"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 jolcIP"
+      class="c2"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Make payment
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         Download statement
       </span>
     </button>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 cmOVpV"
+    class="c1"
   >
     <button
-      class="Buttonstyles__Box-qfvnbt-0 ebCIkw"
+      class="c4"
       type="button"
     >
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
         <svg
           fill="currentColor"
@@ -1006,7 +3561,7 @@ exports[`Groups w/ size: xs 1`] = `
         </svg>
       </span>
       <span
-        class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+        class="c3"
       >
          Delete statement
       </span>

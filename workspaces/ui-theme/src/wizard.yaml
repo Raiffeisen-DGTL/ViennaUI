@@ -1,0 +1,92 @@
+space: wizard
+
+header:
+  base:
+    background-color: $color.primary.brand.primary
+    border-radius: $border.radius.l $border.radius.l 0 0
+    justify-content: center
+    align-items: center
+    padding: 0 20% 0 20%
+  orientation:
+    horizontal:
+      min-height: 88px
+      height: auto
+    vertical:
+      min-height: 120px
+      height: auto
+      flex-direction: column
+  title:
+    color: $color.primary.brand.white
+    font-size: $typography.b.b5.size
+    line-height: $typography.b.b5.height
+    font-family: $typography.b.family
+    text-align: center
+  stepsCount:
+    color: $color.primary.seattle.c30
+    white-space: nowrap;
+
+stepPoints:
+  base:
+    height: 100%
+    align-items: center
+    margin-bottom: -$layout.size.s2
+  orientation:
+    horizontal:
+      top: 50%;
+      transform: translateY(-50%)
+      padding-top: $layout.size.s2
+    vertical:
+      height: auto
+      margin-top: $layout.size.s3
+      flex-wrap: wrap
+  horizontalRight:
+    s: $layout.size.s4
+    m: $layout.size.s6
+    l: $layout.size.s8
+
+stepPoint:
+  base:
+    margin-right: $layout.size.s2
+    margin-bottom: $layout.size.s2
+    width: $layout.size.s3
+    height: $layout.size.s3
+    border-radius: 50%
+    border: 1px solid transparent
+  type:
+    empty:
+      border: 1px solid $color.primary.seattle.c60
+    active:
+      background-color: $color.primary.brand.accent
+    elapsed:
+      background-color: $color.primary.seattle.c60
+  hover:
+    empty:
+      border: 1px solid $color.primary.seattle.c30
+      cursor: pointer
+    active:
+      background-color: $color.primary.brand.onAccent
+      cursor: pointer
+    elapsed:
+      background-color: $color.primary.brand.onAccent
+      cursor: pointer
+
+form:
+  background-color: $color.primary.brand.white
+
+body:
+  size:
+    s:
+      padding: $layout.size.s4
+    m:
+      padding: $layout.size.s6
+    l:
+      padding: $layout.size.s8
+
+footer:
+  size:
+    s:
+      padding: 0 $layout.size.s4 $layout.size.s4 $layout.size.s4
+    m:
+      padding: 0 $layout.size.s6 $layout.size.s6 $layout.size.s6
+    l:
+      padding: 0 $layout.size.s8 $layout.size.s8 $layout.size.s8

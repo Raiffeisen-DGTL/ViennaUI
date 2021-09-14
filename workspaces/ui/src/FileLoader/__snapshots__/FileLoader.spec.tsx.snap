@@ -1,20 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FileLoader /w content 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #2B2D33;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  border: 1px dashed #D5D5D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: none;
+}
+
 <div
-  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
+  class="c0"
 >
   <div
-    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
+    class="c1"
   >
     <div
-      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
+      class="c2"
     >
       Перетащите файлы
     </div>
     <input
       accept=""
-      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
+      class="c3"
       multiple=""
       type="file"
       value=""
@@ -24,25 +95,124 @@ exports[`FileLoader /w content 1`] = `
 `;
 
 exports[`FileLoader /w content and subcontent 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #2B2D33;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #AAABAD;
+  width: 100%;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 4px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  border: 1px dashed #D5D5D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: none;
+}
+
 <div
-  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
+  class="c0"
 >
   <div
-    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
+    class="c1"
   >
     <div
-      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
+      class="c2"
     >
       Перетащите файлы
     </div>
     <div
-      class="FileLoaderstyles__SubContent-ymi30o-1 fMNhrg"
+      class="c3"
     >
       JPG, GIF, PNG, PDF или ZIP, до 150kb
     </div>
     <input
       accept=""
-      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
+      class="c4"
       multiple=""
       type="file"
       value=""
@@ -52,21 +222,135 @@ exports[`FileLoader /w content and subcontent 1`] = `
 `;
 
 exports[`FileLoader /w content as ReactNode 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #2B2D33;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  border: 1px dashed #D5D5D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  display: none;
+}
+
+.c5 {
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-image: none;
+  vertical-align: baseline !important;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #00809C;
+}
+
+.c3:hover {
+  color: #04607D;
+}
+
+.c3:hover .c4 {
+  background-image: linear-gradient(to right,#04607D,#04607D 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
 <div
-  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
+  class="c0"
 >
   <div
-    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
+    class="c1"
   >
     <div
-      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
+      class="c2"
     >
       Перетащите файлы сюда или 
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 gtrUrS"
+        class="c3"
       >
         <span
-          class="Linkstyles__Wrapper-sc-40rkfc-0 jXPYyj"
+          class="c4 c5"
         >
           загрузите документы
         </span>
@@ -74,7 +358,7 @@ exports[`FileLoader /w content as ReactNode 1`] = `
     </div>
     <input
       accept=""
-      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
+      class="c6"
       multiple=""
       type="file"
       value=""
@@ -84,37 +368,198 @@ exports[`FileLoader /w content as ReactNode 1`] = `
 `;
 
 exports[`FileLoader /w file 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  width: 100%;
+  height: 72px;
+  opacity: 0;
+  height: 0px;
+  -webkit-animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+  animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+}
+
+.c0:last-child {
+  margin-bottom: 0px;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 6px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  min-height: 40px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  border-radius: 4px;
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+  color: #2B2D33;
+}
+
+.c5:hover,
+.c5:focus {
+  color: #00809C;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: #AAABAD;
+}
+
+.c6:last-child {
+  margin-bottom: 0px;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+  min-width: 12px;
+}
+
+.c7:hover,
+.c7:focus {
+  color: #00809C;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <div
-  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+  class="c0"
 >
   <div
-    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+    class="c1"
   >
     <div
-      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+      class="c2"
     >
       doc
     </div>
   </div>
   <div
-    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+    class="c3"
   >
     <div
-      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+      class="c4"
     >
       <div
-        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+        class="c5"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+        class="c6"
       />
     </div>
   </div>
   <div
-    class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
+    class="c7"
     tabindex="0"
   >
     <svg
@@ -134,32 +579,175 @@ exports[`FileLoader /w file 1`] = `
 `;
 
 exports[`FileLoader /w file closable = false 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  width: 100%;
+  height: 72px;
+  opacity: 0;
+  height: 0px;
+  -webkit-animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+  animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+}
+
+.c0:last-child {
+  margin-bottom: 0px;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 6px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  min-height: 40px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  border-radius: 4px;
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+  color: #2B2D33;
+}
+
+.c5:hover,
+.c5:focus {
+  color: #00809C;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: #AAABAD;
+}
+
+.c6:last-child {
+  margin-bottom: 0px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <div
-  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+  class="c0"
 >
   <div
-    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+    class="c1"
   >
     <div
-      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+      class="c2"
     >
       doc
     </div>
   </div>
   <div
-    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+    class="c3"
   >
     <div
-      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+      class="c4"
     >
       <div
-        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+        class="c5"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+        class="c6"
       />
     </div>
   </div>
@@ -167,47 +755,244 @@ exports[`FileLoader /w file closable = false 1`] = `
 `;
 
 exports[`FileLoader /w file progress 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  width: 100%;
+  height: 72px;
+  opacity: 0;
+  height: 0px;
+  -webkit-animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+  animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+}
+
+.c0:last-child {
+  margin-bottom: 0px;
+}
+
+.c2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 6px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  min-height: 40px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  border-radius: 4px;
+  color: #2B2D33;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+  color: #2B2D33;
+}
+
+.c5:hover,
+.c5:focus {
+  color: #00809C;
+}
+
+.c6 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: #AAABAD;
+}
+
+.c6:last-child {
+  margin-bottom: 0px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+  min-width: 12px;
+}
+
+.c11:hover,
+.c11:focus {
+  color: #00809C;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.c8 {
+  position: relative;
+  width: 100%;
+  height: 4px;
+}
+
+.c9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E9EAEA;
+  border-radius: 8px;
+}
+
+.c10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  width: 50%;
+  border-radius: 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  overflow: hidden;
+  background-color: #00A5BC;
+}
+
 <div
-  class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+  class="c0"
 >
   <div
-    class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+    class="c1"
   >
     <div
-      class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+      class="c2"
     >
       doc
     </div>
   </div>
   <div
-    class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+    class="c3"
   >
     <div
-      class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+      class="c4"
     >
       <div
-        class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+        class="c5"
         tabindex="0"
       >
         file 1.doc
       </div>
       <div
-        class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+        class="c6"
       >
         Загружено 50%
       </div>
     </div>
     <div
-      class="Filestyles__Progress-sc-1sbri8o-8 exFAuN"
+      class="c7"
     >
       <div
-        class="Progressbarstyles__Box-sc-9u8n53-0 ebQjGZ"
+        class="c8"
       >
         <div
-          class="Progressbarstyles__Line-sc-9u8n53-1 lfqWLM"
+          class="c9"
         />
         <div
-          class="Progressbarstyles__Progress-sc-9u8n53-2 jGYoUl"
+          class="c10"
           color="oslo100"
           width="50"
         />
@@ -215,7 +1000,7 @@ exports[`FileLoader /w file progress 1`] = `
     </div>
   </div>
   <div
-    class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
+    class="c11"
     tabindex="0"
   >
     <svg
@@ -235,59 +1020,307 @@ exports[`FileLoader /w file progress 1`] = `
 `;
 
 exports[`FileLoader /w with files 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #2B2D33;
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+  border: 1px dashed #D5D5D6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  width: 100%;
+  height: 72px;
+  opacity: 0;
+  height: 0px;
+  -webkit-animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+  animation: bxUkRa 0.2s ease-in-out 0s alternate 1;
+}
+
+.c5:last-child {
+  margin-bottom: 0px;
+}
+
+.c7 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 6px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  min-height: 40px;
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  border-radius: 4px;
+  color: #2B2D33;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 {
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 4px;
+  color: #2B2D33;
+}
+
+.c10:hover,
+.c10:focus {
+  color: #00809C;
+}
+
+.c11 {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 8px;
+  color: #AAABAD;
+}
+
+.c11:last-child {
+  margin-bottom: 0px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #808185;
+  min-width: 12px;
+}
+
+.c12:hover,
+.c12:focus {
+  color: #00809C;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 <div
-  class="FileLoaderstyles__Wrapper-ymi30o-4 kZTuzU"
+  class="c0"
 >
   <div
-    class="FileLoaderstyles__Box-ymi30o-2 FteLg"
+    class="c1"
   >
     <div
-      class="FileLoaderstyles__Content-ymi30o-0 igzYZa"
+      class="c2"
     >
       Перетащите файлы
     </div>
     <input
       accept=""
-      class="FileLoaderstyles__InputFile-ymi30o-5 kIScVj"
+      class="c3"
       multiple=""
       type="file"
       value=""
     />
   </div>
   <div
-    class="FileLoaderstyles__List-ymi30o-3 lmKLMJ"
+    class="c4"
   >
     <div
-      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+      class="c5"
     >
       <div
-        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+        class="c6"
       >
         <div
-          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+          class="c7"
         >
           doc
         </div>
       </div>
       <div
-        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+        class="c8"
       >
         <div
-          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+          class="c9"
         >
           <div
-            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+            class="c10"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+            class="c11"
           />
         </div>
       </div>
       <div
-        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
+        class="c12"
         tabindex="0"
       >
         <svg
@@ -305,36 +1338,36 @@ exports[`FileLoader /w with files 1`] = `
       </div>
     </div>
     <div
-      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+      class="c5"
     >
       <div
-        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+        class="c6"
       >
         <div
-          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+          class="c7"
         >
           doc
         </div>
       </div>
       <div
-        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+        class="c8"
       >
         <div
-          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+          class="c9"
         >
           <div
-            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+            class="c10"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+            class="c11"
           />
         </div>
       </div>
       <div
-        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
+        class="c12"
         tabindex="0"
       >
         <svg
@@ -352,36 +1385,36 @@ exports[`FileLoader /w with files 1`] = `
       </div>
     </div>
     <div
-      class="Filestyles__Box-sc-1sbri8o-0 gRRDvd"
+      class="c5"
     >
       <div
-        class="Filestyles__Icon-sc-1sbri8o-2 jycNGT"
+        class="c6"
       >
         <div
-          class="Filestyles__Img-sc-1sbri8o-1 ejlgtk"
+          class="c7"
         >
           doc
         </div>
       </div>
       <div
-        class="Filestyles__Main-sc-1sbri8o-3 iiJeMn"
+        class="c8"
       >
         <div
-          class="Filestyles__Info-sc-1sbri8o-7 cvvNqD"
+          class="c9"
         >
           <div
-            class="Filestyles__Name-sc-1sbri8o-4 fSKaNn"
+            class="c10"
             tabindex="0"
           >
             file 1.doc
           </div>
           <div
-            class="Filestyles__Data-sc-1sbri8o-5 jnhkhy"
+            class="c11"
           />
         </div>
       </div>
       <div
-        class="Filestyles__CloseIcon-sc-1sbri8o-6 fjZhUW"
+        class="c12"
         tabindex="0"
       >
         <svg

@@ -1,27 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmptyState 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .EmptyStatestyles__Row-sc-9kuou6-4:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   />
 </div>
 `;
 
 exports[`EmptyState w/ actions 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Actions-sc-9kuou6-3 iOtENm"
+        class="c4"
       >
         EmptyState actions
       </div>
@@ -31,17 +135,76 @@ exports[`EmptyState w/ actions 1`] = `
 `;
 
 exports[`EmptyState w/ description 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c4 {
+  color: #808185;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Description-sc-9kuou6-2 fbplxg"
+        class="c4"
       >
         EmptyState description
       </div>
@@ -51,35 +214,163 @@ exports[`EmptyState w/ description 1`] = `
 `;
 
 exports[`EmptyState w/ loading: loading-false 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   />
 </div>
 `;
 
 exports[`EmptyState w/ loading: loading-true 1`] = `
+.c4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+}
+
+.c5 {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.c6 {
+  stroke-width: 12px;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke-dasharray: 85 195;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: bbUszM linear 2s infinite;
+  animation: bbUszM linear 2s infinite;
+  stroke: #2B2D33;
+}
+
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="Spinnerstyles__Box-moemrn-0 jPiLVW"
+        class="c4"
       >
         <svg
-          class="Spinnerstyles__Svg-moemrn-1 cPXsgS"
+          class="c5"
           viewBox="0 0 100 100"
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
-            class="Spinnerstyles__Circle-moemrn-2 cElquL"
+            class="c6"
             color="primary"
             cx="50"
             cy="50"
@@ -93,14 +384,66 @@ exports[`EmptyState w/ loading: loading-true 1`] = `
 `;
 
 exports[`EmptyState w/ some child 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div>
         Some child
@@ -111,29 +454,130 @@ exports[`EmptyState w/ some child 1`] = `
 `;
 
 exports[`EmptyState w/ some props 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .EmptyStatestyles__Row-sc-9kuou6-4:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs className"
+  class="c0 className"
   id="EmptyState"
   title="this is EmptyState"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   />
 </div>
 `;
 
 exports[`EmptyState w/ title 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c4 {
+  color: #2B2D33;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Title-sc-9kuou6-1 dBDBIE"
+        class="c4"
       >
         EmptyState title
       </div>
@@ -143,35 +587,111 @@ exports[`EmptyState w/ title 1`] = `
 `;
 
 exports[`EmptyState w/ title, descriptions, actions 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+}
+
+.c4 {
+  color: #2B2D33;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.c5 {
+  color: #808185;
+  line-height: 22px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+}
+
+.c1 > .c2:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 <div
-  class="EmptyStatestyles__Box-sc-9kuou6-0 fYMFPs"
+  class="c0"
 >
   <div
-    class="EmptyStatestyles__Content-sc-9kuou6-5 kRkxxs"
+    class="c1"
   >
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Title-sc-9kuou6-1 dBDBIE"
+        class="c4"
       >
         EmptyState title
       </div>
     </div>
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Description-sc-9kuou6-2 fbplxg"
+        class="c5"
       >
         EmptyState description
       </div>
     </div>
     <div
-      class="EmptyStatestyles__Row-sc-9kuou6-4 gAcuUG"
+      class="c2 c3"
     >
       <div
-        class="EmptyStatestyles__Actions-sc-9kuou6-3 iOtENm"
+        class="c6"
       >
         EmptyState actions
       </div>

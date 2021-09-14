@@ -1,23 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header 1`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -35,7 +141,7 @@ exports[`Header 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -53,23 +159,263 @@ exports[`Header 1`] = `
 `;
 
 exports[`Header w/ action 1`] = `
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 12px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 4px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c11:active {
+  top: 1px;
+}
+
+.c11:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c12 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c12:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.c12 > svg {
+  display: block;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c10 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c10:last-child {
+  margin-right: 0;
+}
+
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c7 {
+  max-width: 100%;
+  max-height: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c9 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -87,7 +433,7 @@ exports[`Header w/ action 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -101,20 +447,20 @@ exports[`Header w/ action 1`] = `
       </a>
     </div>
     <div
-      class="Headerstyles__Action-sc-13gyy28-3 YFoKK"
+      class="c7"
     >
       <div
-        class="Groupsstyles__Box-sc-1dief2o-0 hjQGIT Headerstyles__ActionGroups-sc-13gyy28-6 jXTjBT"
+        class="c8 c9"
       >
         <div
-          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+          class="c10"
         >
           <button
-            class="Buttonstyles__Box-qfvnbt-0 enpXpF"
+            class="c11"
             type="button"
           >
             <span
-              class="Buttonstyles__ContentWrapper-qfvnbt-1 gRlLrd"
+              class="c12"
             >
               Открыть
             </span>
@@ -127,23 +473,340 @@ exports[`Header w/ action 1`] = `
 `;
 
 exports[`Header w/ actions 1`] = `
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 16px;
+  height: 32px;
+  min-width: 32px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c12:active {
+  top: 1px;
+}
+
+.c12:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 16px;
+  height: 32px;
+  min-width: 32px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c14:active {
+  top: 1px;
+}
+
+.c14:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c13 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c13:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c13 > svg {
+  display: block;
+}
+
+.c8 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c10 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c10:last-child {
+  margin-right: 0;
+}
+
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c7 {
+  max-width: 100%;
+  max-height: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c9 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -161,7 +824,7 @@ exports[`Header w/ actions 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -175,40 +838,40 @@ exports[`Header w/ actions 1`] = `
       </a>
     </div>
     <div
-      class="Headerstyles__Action-sc-13gyy28-3 YFoKK"
+      class="c7"
     >
       <div
-        class="Groupsstyles__Box-sc-1dief2o-0 hjQGIT Headerstyles__ActionGroups-sc-13gyy28-6 jXTjBT"
+        class="c8 c9"
       >
         <div
-          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+          class="c10"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c11"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c10"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 fFyFwm"
+                class="c12"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c13"
                 >
                   Открыть
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c10"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 dkSKWW"
+                class="c14"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c13"
                 >
                    Закрыть 
                 </span>
@@ -223,23 +886,621 @@ exports[`Header w/ actions 1`] = `
 `;
 
 exports[`Header w/ all elements 1`] = `
+.c23 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 16px;
+  height: 32px;
+  min-width: 32px;
+  color: #2B2D33;
+  background-color: #FEE600;
+}
+
+.c23:active {
+  top: 1px;
+}
+
+.c23:hover {
+  background-color: #FED500;
+  color: #2B2D33;
+}
+
+.c25 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  border-radius: 8px;
+  border-color: transparent;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 500;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease,border-color 0.3s ease;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 16px;
+  height: 32px;
+  min-width: 32px;
+  color: #FFFFFF;
+  background-color: #2B2D33;
+}
+
+.c25:active {
+  top: 1px;
+}
+
+.c25:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.c24 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c24:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.c24 > svg {
+  display: block;
+}
+
+.c11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c12 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c12::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::-ms-clear,
+.c12::-ms-reveal {
+  display: none;
+}
+
+.c10 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c10 > *,
+.c10 input {
+  color: #2B2D33;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c9:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c19 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c22 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c21 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c21:last-child {
+  margin-right: 0;
+}
+
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c18 {
+  max-width: 100%;
+  max-height: 32px;
+  padding-left: 32px;
+  padding-bottom: 24px;
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c7 {
+  padding-right: 16px;
+  min-width: 200px;
+  padding-left: 64px;
+}
+
+.c20 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c14 {
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  color: #808185;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.c14:last-child {
+  margin-right: 0px;
+}
+
+.c14:before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 0;
+  height: 4px;
+  background-color: #2B2D33;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.c14:after {
+  position: absolute;
+  content: '';
+  right: 50%;
+  width: 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 0;
+  height: 4px;
+  background-color: #2B2D33;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.c14:hover {
+  color: #2B2D33;
+}
+
+.c16 {
+  position: relative;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  outline: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.c17 {
+  margin-left: 4px;
+  height: 20px;
+  display: inline-block;
+}
+
+.c15 {
+  margin-top: 6px;
+  min-height: 50px;
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c8 {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -257,7 +1518,7 @@ exports[`Header w/ all elements 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -270,27 +1531,27 @@ exports[`Header w/ all elements 1`] = `
         </div>
       </a>
       <div
-        class="Headerstyles__SearchContainer-sc-13gyy28-5 lcNeRv"
+        class="c7"
       >
         <div
           aria-autocomplete="list"
           aria-disabled="false"
           aria-invalid="false"
-          class="Searchstyles__Box-sc-1lyvud3-0 boYLWE"
+          class="c8"
           role="combobox"
         >
           <label
-            class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+            class="c9"
           >
             <div
-              class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+              class="c10"
             >
               <div
-                class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                class="c11"
               >
                 <input
                   aria-invalid="false"
-                  class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                  class="c12"
                   value=""
                 />
               </div>
@@ -300,39 +1561,39 @@ exports[`Header w/ all elements 1`] = `
       </div>
     </div>
     <div
-      class="Tabsstyles__Box-eokj1x-2 gzyEWW"
+      class="c13"
       tabindex="1"
     >
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c14 c15"
         label="Счета"
         value="score"
       >
         Счета
       </div>
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c14 c15"
         label="Операции"
         value="operations"
       >
         Операции
       </div>
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c14 c15"
         label="Реквизиты"
         value="requisites"
       >
         Реквизиты
       </div>
       <div
-        class="Tabsstyles__CombineTab-eokj1x-1 kPoDoU"
+        class="c16"
       >
         <div
-          class="Tabsstyles__Tab-eokj1x-0 iiJGIi"
+          class="c14"
         >
           Еще... 
           <span
-            class="Tabsstyles__Arrow-eokj1x-4 cThHZp"
+            class="c17"
           >
             <svg
               fill="currentColor"
@@ -351,40 +1612,40 @@ exports[`Header w/ all elements 1`] = `
       </div>
     </div>
     <div
-      class="Headerstyles__Action-sc-13gyy28-3 YFoKK"
+      class="c18"
     >
       <div
-        class="Groupsstyles__Box-sc-1dief2o-0 hjQGIT Headerstyles__ActionGroups-sc-13gyy28-6 jXTjBT"
+        class="c19 c20"
       >
         <div
-          class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+          class="c21"
         >
           <div
-            class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+            class="c22"
           >
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c21"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 fFyFwm"
+                class="c23"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c24"
                 >
                   Открыть
                 </span>
               </button>
             </div>
             <div
-              class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+              class="c21"
             >
               <button
-                class="Buttonstyles__Box-qfvnbt-0 dkSKWW"
+                class="c25"
                 type="button"
               >
                 <span
-                  class="Buttonstyles__ContentWrapper-qfvnbt-1 kJiCTN"
+                  class="c24"
                 >
                    Закрыть 
                 </span>
@@ -399,23 +1660,248 @@ exports[`Header w/ all elements 1`] = `
 `;
 
 exports[`Header w/ item 1`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c8 {
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-weight: 500;
+  color: #808185;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.c8:last-child {
+  margin-right: 0px;
+}
+
+.c8:before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 0;
+  height: 4px;
+  background-color: #2B2D33;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.c8:after {
+  position: absolute;
+  content: '';
+  right: 50%;
+  width: 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  bottom: 0;
+  height: 4px;
+  background-color: #2B2D33;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.c8:hover {
+  color: #2B2D33;
+}
+
+.c10 {
+  position: relative;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  outline: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.c11 {
+  margin-left: 4px;
+  height: 20px;
+  display: inline-block;
+}
+
+.c9 {
+  margin-top: 6px;
+  min-height: 50px;
+  margin-right: 24px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -433,7 +1919,7 @@ exports[`Header w/ item 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -447,39 +1933,39 @@ exports[`Header w/ item 1`] = `
       </a>
     </div>
     <div
-      class="Tabsstyles__Box-eokj1x-2 gzyEWW"
+      class="c7"
       tabindex="1"
     >
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c8 c9"
         label="Счета"
         value="score"
       >
         Счета
       </div>
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c8 c9"
         label="Операции"
         value="operations"
       >
         Операции
       </div>
       <div
-        class="Tabsstyles__Tab-eokj1x-0 Itemsstyles__Tab-sqwh36-0 iiJGIi dYtHrp"
+        class="c8 c9"
         label="Реквизиты"
         value="requisites"
       >
         Реквизиты
       </div>
       <div
-        class="Tabsstyles__CombineTab-eokj1x-1 kPoDoU"
+        class="c10"
       >
         <div
-          class="Tabsstyles__Tab-eokj1x-0 iiJGIi"
+          class="c8"
         >
           Еще... 
           <span
-            class="Tabsstyles__Arrow-eokj1x-4 cThHZp"
+            class="c11"
           >
             <svg
               fill="currentColor"
@@ -502,23 +1988,291 @@ exports[`Header w/ item 1`] = `
 `;
 
 exports[`Header w/ search 1`] = `
+.c11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c12 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c12::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c12::-ms-clear,
+.c12::-ms-reveal {
+  display: none;
+}
+
+.c10 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c10 > *,
+.c10 input {
+  color: #2B2D33;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c9:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c7 {
+  padding-right: 16px;
+  min-width: 200px;
+  padding-left: 64px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c8 {
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -536,7 +2290,7 @@ exports[`Header w/ search 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -549,27 +2303,27 @@ exports[`Header w/ search 1`] = `
         </div>
       </a>
       <div
-        class="Headerstyles__SearchContainer-sc-13gyy28-5 lcNeRv"
+        class="c7"
       >
         <div
           aria-autocomplete="list"
           aria-disabled="false"
           aria-invalid="false"
-          class="Searchstyles__Box-sc-1lyvud3-0 boYLWE"
+          class="c8"
           role="combobox"
         >
           <label
-            class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+            class="c9"
           >
             <div
-              class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+              class="c10"
             >
               <div
-                class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                class="c11"
               >
                 <input
                   aria-invalid="false"
-                  class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                  class="c12"
                   value=""
                 />
               </div>
@@ -583,23 +2337,129 @@ exports[`Header w/ search 1`] = `
 `;
 
 exports[`Header w/ size 1`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 48px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 12px 16px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 24px;
+  padding-bottom: 12px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+}
+
+.c6 {
+  height: 24px;
+  fill: #000000;
+  width: 84px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 jaLkoH"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 bpkOeo"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 gOUBoM"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 esGTGT"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -617,7 +2477,7 @@ exports[`Header w/ size 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 hVoQpJ"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -635,23 +2495,133 @@ exports[`Header w/ size 1`] = `
 `;
 
 exports[`Header w/ size 2`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -669,7 +2639,7 @@ exports[`Header w/ size 2`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -687,23 +2657,137 @@ exports[`Header w/ size 2`] = `
 `;
 
 exports[`Header w/ size 3`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 88px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08);
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 40px;
+  padding-bottom: 24px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+}
+
+.c6 {
+  height: 40px;
+  fill: #000000;
+  width: 141px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+
+}
+
+@media (max-width:1px) {
+
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 ckhrID"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 cyDIIv"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 iCISYb"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 gFciMf"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -721,7 +2805,7 @@ exports[`Header w/ size 3`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 dhNgBz"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path
@@ -739,23 +2823,128 @@ exports[`Header w/ size 3`] = `
 `;
 
 exports[`Header w/ without shadow 1`] = `
+.c0 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 24px 32px 0px;
+}
+
+.c2 {
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c5 {
+  fill: #FFED00;
+  color: #000000;
+  width: 32px;
+  height: 32px;
+}
+
+.c6 {
+  height: 32px;
+  fill: #000000;
+  width: 113px;
+  margin-left: 8px;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+  outline: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2B2D33;
+}
+
+.c3:hover {
+  color: #2B2D33;
+}
+
+.c3:hover .Linkstyles__Wrapper-sc-40rkfc-0 {
+  background-image: linear-gradient(to right,#00809C,#00809C 75%);
+}
+
+.c3 > * {
+  vertical-align: middle;
+}
+
+.c3 > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media (max-width:1px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="Headerstyles__Box-sc-13gyy28-0 cHmxZr"
+  class="c0"
 >
   <header
-    class="Headerstyles__HeaderBox-sc-13gyy28-2 kqjtdD"
+    class="c1"
   >
     <div
-      class="Headerstyles__SideContent-sc-13gyy28-4 cXgBda"
+      class="c2"
     >
       <a
-        class="Linkstyles__Box-sc-40rkfc-1 hNOTYR"
+        class="c3"
       >
         <div
-          class="Logotypestyles__Box-sfvaw3-0 kgFylo"
+          class="c4"
         >
           <svg
-            class="Logotypestyles__Logotype-sfvaw3-1 cdtiKn"
+            class="c5"
             viewBox="0 0 56 56"
           >
             <rect
@@ -773,7 +2962,7 @@ exports[`Header w/ without shadow 1`] = `
             />
           </svg>
           <svg
-            class="Logotypestyles__Title-sfvaw3-2 bAArcF"
+            class="c6"
             viewBox="0 0 190 54"
           >
             <path

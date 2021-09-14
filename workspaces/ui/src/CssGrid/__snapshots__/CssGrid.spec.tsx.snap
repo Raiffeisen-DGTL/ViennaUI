@@ -1,33 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CssGrid shots CSSGrid w/ whitespace 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.c1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 1;
+  padding: 4px;
+}
+
+.c2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 1;
+  padding: 8px;
+}
+
+.c3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-area: content;
+  width: 300px;
+}
+
+.c4 {
+  grid-column: 4;
+  grid-row: 2/3;
+  grid-area: toolbar;
+  padding: 1rem;
+}
+
+.c5 {
+  grid-column: 1/4;
+  grid-row: 4;
+  grid-area: footer;
+  padding: 20px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 gWximE"
+  class="c0"
   height="100%"
 >
   <div
-    class="Item-sc-12lovni-0 zymlG"
+    class="c1"
   >
     header
   </div>
   <div
-    class="Item-sc-12lovni-0 fxMlrM"
+    class="c2"
   >
     sidebar
   </div>
   <div
-    class="Item-sc-12lovni-0 cYiwPg"
+    class="c3"
     width="300px"
   >
     content
   </div>
   <div
-    class="Item-sc-12lovni-0 jkWjZ"
+    class="c4"
   >
     toolbar
   </div>
   <div
-    class="Item-sc-12lovni-0 bcjueE"
+    class="c5"
   >
     footer
   </div>
@@ -35,8 +82,15 @@ exports[`CssGrid shots CSSGrid w/ whitespace 1`] = `
 `;
 
 exports[`CssGrid shots base 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -70,49 +124,97 @@ exports[`CssGrid shots base 1`] = `
 `;
 
 exports[`CssGrid shots w/ Item & templateAreas 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 50px 40% 40% 50px;
+  grid-template-columns: 100px auto 100px;
+  grid-template-areas: "header header header""sidebar content toolbar""sidebar content2 toolbar""footer footer2 footer3";
+  height: 450px;
+}
+
+.c1 {
+  grid-area: header;
+  justify-self: start;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+}
+
+.c2 {
+  grid-area: sidebar;
+  height: 100px;
+  max-height: 200px;
+}
+
+.c3 {
+  grid-area: content;
+  width: 300px;
+}
+
+.c4 {
+  grid-area: content2;
+  place-self: center center;
+}
+
+.c5 {
+  grid-area: toolbar;
+}
+
+.c6 {
+  grid-area: footer;
+}
+
+.c7 {
+  grid-area: footer2;
+}
+
+.c8 {
+  grid-area: footer3;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 dqYYeC"
+  class="c0"
   height="450px"
 >
   <div
-    class="Item-sc-12lovni-0 iKbnzl"
+    class="c1"
   >
     1
   </div>
   <div
-    class="Item-sc-12lovni-0 iNDTph"
+    class="c2"
     height="100px"
   >
     2
   </div>
   <div
-    class="Item-sc-12lovni-0 euvBko"
+    class="c3"
     width="300px"
   >
     3
   </div>
   <div
-    class="Item-sc-12lovni-0 fQSObV"
+    class="c4"
   >
     4
   </div>
   <div
-    class="Item-sc-12lovni-0 igrqKQ"
+    class="c5"
   >
     5
   </div>
   <div
-    class="Item-sc-12lovni-0 bZNrzs"
+    class="c6"
   >
     6
   </div>
   <div
-    class="Item-sc-12lovni-0 leYxAm"
+    class="c7"
   >
     7
   </div>
   <div
-    class="Item-sc-12lovni-0 fGIqVz"
+    class="c8"
   >
     8
   </div>
@@ -120,33 +222,71 @@ exports[`CssGrid shots w/ Item & templateAreas 1`] = `
 `;
 
 exports[`CssGrid shots w/ Item 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
+.c1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 1;
+}
+
+.c2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 1;
+}
+
+.c3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-area: content;
+  width: 300px;
+}
+
+.c4 {
+  grid-column: 4;
+  grid-row: 2/3;
+  grid-area: toolbar;
+}
+
+.c5 {
+  grid-column: 1/4;
+  grid-row: 4;
+  grid-area: footer;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bfzjyb"
+  class="c0"
   height="100%"
 >
   <div
-    class="Item-sc-12lovni-0 ldIVmW"
+    class="c1"
   >
     header
   </div>
   <div
-    class="Item-sc-12lovni-0 dociiQ"
+    class="c2"
   >
     sidebar
   </div>
   <div
-    class="Item-sc-12lovni-0 cYiwPg"
+    class="c3"
     width="300px"
   >
     content
   </div>
   <div
-    class="Item-sc-12lovni-0 hGzkku"
+    class="c4"
   >
     toolbar
   </div>
   <div
-    class="Item-sc-12lovni-0 hVtbvG"
+    class="c5"
   >
     footer
   </div>
@@ -154,8 +294,18 @@ exports[`CssGrid shots w/ Item 1`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: start;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bmoAko"
+  class="c0"
   height="100%"
 >
   <div>
@@ -189,8 +339,18 @@ exports[`CssGrid shots w/ alignContent 1`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: end;
+  -ms-flex-line-pack: end;
+  align-content: end;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 cpAxMX"
+  class="c0"
   height="100%"
 >
   <div>
@@ -224,8 +384,18 @@ exports[`CssGrid shots w/ alignContent 2`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 gCapVH"
+  class="c0"
   height="100%"
 >
   <div>
@@ -259,8 +429,18 @@ exports[`CssGrid shots w/ alignContent 3`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 eDSLoX"
+  class="c0"
   height="100%"
 >
   <div>
@@ -294,8 +474,18 @@ exports[`CssGrid shots w/ alignContent 4`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 5`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 iVOfeC"
+  class="c0"
   height="100%"
 >
   <div>
@@ -329,8 +519,18 @@ exports[`CssGrid shots w/ alignContent 5`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 6`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: space-between;
+  align-content: space-between;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bEpzon"
+  class="c0"
   height="100%"
 >
   <div>
@@ -364,8 +564,18 @@ exports[`CssGrid shots w/ alignContent 6`] = `
 `;
 
 exports[`CssGrid shots w/ alignContent 7`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+  align-content: space-evenly;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hsDxoQ"
+  class="c0"
   height="100%"
 >
   <div>
@@ -399,8 +609,19 @@ exports[`CssGrid shots w/ alignContent 7`] = `
 `;
 
 exports[`CssGrid shots w/ alignItems 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-items: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 jTWmXf"
+  class="c0"
   height="100%"
 >
   <div>
@@ -434,8 +655,19 @@ exports[`CssGrid shots w/ alignItems 1`] = `
 `;
 
 exports[`CssGrid shots w/ alignItems 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-items: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 kiCAvs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -469,8 +701,19 @@ exports[`CssGrid shots w/ alignItems 2`] = `
 `;
 
 exports[`CssGrid shots w/ alignItems 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 fGpjro"
+  class="c0"
   height="100%"
 >
   <div>
@@ -504,8 +747,19 @@ exports[`CssGrid shots w/ alignItems 3`] = `
 `;
 
 exports[`CssGrid shots w/ alignItems 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 ePBlmw"
+  class="c0"
   height="100%"
 >
   <div>
@@ -539,8 +793,15 @@ exports[`CssGrid shots w/ alignItems 4`] = `
 `;
 
 exports[`CssGrid shots w/ autoFlow 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -574,8 +835,15 @@ exports[`CssGrid shots w/ autoFlow 1`] = `
 `;
 
 exports[`CssGrid shots w/ autoFlow 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -609,8 +877,15 @@ exports[`CssGrid shots w/ autoFlow 2`] = `
 `;
 
 exports[`CssGrid shots w/ autoFlow 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -644,8 +919,15 @@ exports[`CssGrid shots w/ autoFlow 3`] = `
 `;
 
 exports[`CssGrid shots w/ autoFlow 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 grRsNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -679,8 +961,18 @@ exports[`CssGrid shots w/ autoFlow 4`] = `
 `;
 
 exports[`CssGrid shots w/ dimensions 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100px;
+  width: 500px;
+  max-height: 300px;
+  max-width: 1000px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hfBKJg"
+  class="c0"
   height="100px"
   width="500px"
 >
@@ -715,8 +1007,19 @@ exports[`CssGrid shots w/ dimensions 1`] = `
 `;
 
 exports[`CssGrid shots w/ gap 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 4px;
+  -webkit-column-gap: 4px;
+  column-gap: 4px;
+  row-gap: 4px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hLcBob"
+  class="c0"
   height="100%"
 >
   <div>
@@ -750,8 +1053,19 @@ exports[`CssGrid shots w/ gap 1`] = `
 `;
 
 exports[`CssGrid shots w/ gap 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 8px;
+  -webkit-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 dOOJWv"
+  class="c0"
   height="100%"
 >
   <div>
@@ -785,8 +1099,19 @@ exports[`CssGrid shots w/ gap 2`] = `
 `;
 
 exports[`CssGrid shots w/ gap 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 12px;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 boHEMM"
+  class="c0"
   height="100%"
 >
   <div>
@@ -820,8 +1145,19 @@ exports[`CssGrid shots w/ gap 3`] = `
 `;
 
 exports[`CssGrid shots w/ gap 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 16px;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 flDIcY"
+  class="c0"
   height="100%"
 >
   <div>
@@ -855,8 +1191,19 @@ exports[`CssGrid shots w/ gap 4`] = `
 `;
 
 exports[`CssGrid shots w/ gap 5`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 dEYRsh"
+  class="c0"
   height="100%"
 >
   <div>
@@ -890,8 +1237,19 @@ exports[`CssGrid shots w/ gap 5`] = `
 `;
 
 exports[`CssGrid shots w/ gap 6`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 24px;
+  -webkit-column-gap: 24px;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hBUUIt"
+  class="c0"
   height="100%"
 >
   <div>
@@ -925,8 +1283,19 @@ exports[`CssGrid shots w/ gap 6`] = `
 `;
 
 exports[`CssGrid shots w/ gap 7`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 28px;
+  -webkit-column-gap: 28px;
+  column-gap: 28px;
+  row-gap: 28px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 dqVFkF"
+  class="c0"
   height="100%"
 >
   <div>
@@ -960,8 +1329,19 @@ exports[`CssGrid shots w/ gap 7`] = `
 `;
 
 exports[`CssGrid shots w/ gap 8`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 32px;
+  -webkit-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 dNKQrO"
+  class="c0"
   height="100%"
 >
   <div>
@@ -995,8 +1375,19 @@ exports[`CssGrid shots w/ gap 8`] = `
 `;
 
 exports[`CssGrid shots w/ gap 9`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 36px;
+  -webkit-column-gap: 36px;
+  column-gap: 36px;
+  row-gap: 36px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hKGTIa"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1030,8 +1421,19 @@ exports[`CssGrid shots w/ gap 9`] = `
 `;
 
 exports[`CssGrid shots w/ gap 10`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 40px;
+  -webkit-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bSHYOz"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1065,8 +1467,19 @@ exports[`CssGrid shots w/ gap 10`] = `
 `;
 
 exports[`CssGrid shots w/ gap 11`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 44px;
+  -webkit-column-gap: 44px;
+  column-gap: 44px;
+  row-gap: 44px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 uAGXP"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1100,8 +1513,19 @@ exports[`CssGrid shots w/ gap 11`] = `
 `;
 
 exports[`CssGrid shots w/ gap 12`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 48px;
+  -webkit-column-gap: 48px;
+  column-gap: 48px;
+  row-gap: 48px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bEEMGX"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1135,8 +1559,19 @@ exports[`CssGrid shots w/ gap 12`] = `
 `;
 
 exports[`CssGrid shots w/ gap 13`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 52px;
+  -webkit-column-gap: 52px;
+  column-gap: 52px;
+  row-gap: 52px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hdHsEc"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1170,8 +1605,19 @@ exports[`CssGrid shots w/ gap 13`] = `
 `;
 
 exports[`CssGrid shots w/ gap 14`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 56px;
+  -webkit-column-gap: 56px;
+  column-gap: 56px;
+  row-gap: 56px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 fFAaNs"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1205,8 +1651,19 @@ exports[`CssGrid shots w/ gap 14`] = `
 `;
 
 exports[`CssGrid shots w/ gap 15`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 60px;
+  -webkit-column-gap: 60px;
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 jtYFjx"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1240,8 +1697,19 @@ exports[`CssGrid shots w/ gap 15`] = `
 `;
 
 exports[`CssGrid shots w/ gap 16`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+  gap: 64px;
+  -webkit-column-gap: 64px;
+  column-gap: 64px;
+  row-gap: 64px;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 hVRnsN"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1275,8 +1743,15 @@ exports[`CssGrid shots w/ gap 16`] = `
 `;
 
 exports[`CssGrid shots w/ inline 1`] = `
+.c0 {
+  display: inline-grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 klFMVU"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1310,8 +1785,19 @@ exports[`CssGrid shots w/ inline 1`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 iKOTzr"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1345,8 +1831,19 @@ exports[`CssGrid shots w/ justifyContent 1`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 klZAIY"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1380,8 +1877,19 @@ exports[`CssGrid shots w/ justifyContent 2`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 djQpY"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1415,8 +1923,19 @@ exports[`CssGrid shots w/ justifyContent 3`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 gXEBOQ"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1450,8 +1969,19 @@ exports[`CssGrid shots w/ justifyContent 4`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 5`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 fwogRd"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1485,8 +2015,19 @@ exports[`CssGrid shots w/ justifyContent 5`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 6`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bfXTqg"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1520,8 +2061,19 @@ exports[`CssGrid shots w/ justifyContent 6`] = `
 `;
 
 exports[`CssGrid shots w/ justifyContent 7`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 eXnCHD"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1555,8 +2107,16 @@ exports[`CssGrid shots w/ justifyContent 7`] = `
 `;
 
 exports[`CssGrid shots w/ justifyItems 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  justify-items: start;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 jgFAks"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1590,8 +2150,16 @@ exports[`CssGrid shots w/ justifyItems 1`] = `
 `;
 
 exports[`CssGrid shots w/ justifyItems 2`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  justify-items: end;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 fkpHqf"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1625,8 +2193,16 @@ exports[`CssGrid shots w/ justifyItems 2`] = `
 `;
 
 exports[`CssGrid shots w/ justifyItems 3`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  justify-items: center;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bKWsVL"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1660,8 +2236,16 @@ exports[`CssGrid shots w/ justifyItems 3`] = `
 `;
 
 exports[`CssGrid shots w/ justifyItems 4`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  justify-items: stretch;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 doHmXH"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1695,8 +2279,16 @@ exports[`CssGrid shots w/ justifyItems 4`] = `
 `;
 
 exports[`CssGrid shots w/ placeContent 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  place-content: end space-between;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 bmAJPO"
+  class="c0"
   height="100%"
 >
   <div>
@@ -1730,8 +2322,16 @@ exports[`CssGrid shots w/ placeContent 1`] = `
 `;
 
 exports[`CssGrid shots w/ placeItems 1`] = `
+.c0 {
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  grid-template-columns: 100px auto 100px;
+  place-items: center stretch;
+  height: 100%;
+}
+
 <div
-  class="CssGridstyles__Box-sc-10ytnh-0 blOvUJ"
+  class="c0"
   height="100%"
 >
   <div>

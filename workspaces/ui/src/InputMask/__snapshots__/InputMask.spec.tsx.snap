@@ -1,27 +1,213 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputAccount 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           00000.810.0.000001_____
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         placeholder="_____.___._.___________"
         value="00000.810.0.000001"
       />
@@ -31,27 +217,213 @@ exports[`InputAccount 1`] = `
 `;
 
 exports[`InputCard 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           1234 1234 12__ ____
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         placeholder="____ ____ ____ ____"
         value="1234 1234 12"
       />
@@ -61,27 +433,213 @@ exports[`InputCard 1`] = `
 `;
 
 exports[`InputDate /w datetime 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           22.02.1988 21:00
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="22.02.1988 21:00"
       />
     </div>
@@ -90,27 +648,213 @@ exports[`InputDate /w datetime 1`] = `
 `;
 
 exports[`InputDate /w new Date 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           22.02.1988
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="22.02.1988"
       />
     </div>
@@ -119,27 +863,213 @@ exports[`InputDate /w new Date 1`] = `
 `;
 
 exports[`InputDate /w not in range 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           17.06.2000
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="17.06.2000"
       />
     </div>
@@ -148,27 +1078,213 @@ exports[`InputDate /w not in range 1`] = `
 `;
 
 exports[`InputDate /w time 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           21:00
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="21:00"
       />
     </div>
@@ -177,27 +1293,213 @@ exports[`InputDate /w time 1`] = `
 `;
 
 exports[`InputDate 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           22.02.1988
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="22.02.1988"
       />
     </div>
@@ -206,30 +1508,220 @@ exports[`InputDate 1`] = `
 `;
 
 exports[`InputDateRange /w not in range 1`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             01.06.2000 - 14.06.2000
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="01.06.2000 - 14.06.2000"
         />
       </div>
@@ -239,30 +1731,220 @@ exports[`InputDateRange /w not in range 1`] = `
 `;
 
 exports[`InputDateRange 1`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -272,30 +1954,220 @@ exports[`InputDateRange 1`] = `
 `;
 
 exports[`InputDateRange w/ design 1`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -305,30 +2177,224 @@ exports[`InputDateRange w/ design 1`] = `
 `;
 
 exports[`InputDateRange w/ design 2`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c1:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 hEzoQJ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 dyFbgS"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -338,30 +2404,223 @@ exports[`InputDateRange w/ design 2`] = `
 `;
 
 exports[`InputDateRange w/ size 1`] = `
+.c5 {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 gPunPw"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 jNacye"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 hbWobN"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -371,30 +2630,220 @@ exports[`InputDateRange w/ size 1`] = `
 `;
 
 exports[`InputDateRange w/ size 2`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -404,30 +2853,220 @@ exports[`InputDateRange w/ size 2`] = `
 `;
 
 exports[`InputDateRange w/ size 3`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -437,30 +3076,220 @@ exports[`InputDateRange w/ size 3`] = `
 `;
 
 exports[`InputDateRange w/ size 4`] = `
+.c5 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -470,30 +3299,220 @@ exports[`InputDateRange w/ size 4`] = `
 `;
 
 exports[`InputDateRange w/ size 5`] = `
+.c5 {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c1:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  min-width: 228px;
+}
+
 <div
-  class="InputDateRangestyles__Box-z67vxn-0 dsxpIC"
+  class="c0"
 >
   <label
-    class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd"
+    class="c1"
   >
     <div
-      class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+      class="c2"
     >
       <div
-        class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+        class="c3"
       >
         <div
-          class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+          class="c4"
         >
           <div
-            class="Inputstyles__Placeholder-hc8ttv-0 xqPUL"
+            class="c5"
           >
             12.02.1930 - 22.0М.ГГГГ
           </div>
         </div>
         <input
           aria-invalid="false"
-          class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+          class="c6"
           value="12.02.1930 - 22.0"
         />
       </div>
@@ -503,18 +3522,169 @@ exports[`InputDateRange w/ size 5`] = `
 `;
 
 exports[`InputDigital /w scale = 2 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="10.10"
       />
     </div>
@@ -523,18 +3693,169 @@ exports[`InputDigital /w scale = 2 1`] = `
 `;
 
 exports[`InputDigital 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="10.10"
       />
     </div>
@@ -543,18 +3864,169 @@ exports[`InputDigital 1`] = `
 `;
 
 exports[`InputDigital scale = 0 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="10.10"
       />
     </div>
@@ -563,18 +4035,169 @@ exports[`InputDigital scale = 0 1`] = `
 `;
 
 exports[`InputMask 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value=""
       />
     </div>
@@ -583,18 +4206,169 @@ exports[`InputMask 1`] = `
 `;
 
 exports[`InputNumber 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="1000000"
       />
     </div>
@@ -603,27 +4377,213 @@ exports[`InputNumber 1`] = `
 `;
 
 exports[`InputPhone /w completed 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c5::-ms-clear,
+.c5::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <div
-        class="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+        class="c3"
       >
         <div
-          class="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+          class="c4"
         >
           +7 (495) 919-12-42
         </div>
       </div>
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c5"
         value="4959191242"
       />
     </div>
@@ -632,6 +4592,198 @@ exports[`InputPhone /w completed 1`] = `
 `;
 
 exports[`InputPhone /w focused 1`] = `
+.c4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+  top: 12px;
+  line-height: normal;
+  overflow: hidden;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c6 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c6::-ms-clear,
+.c6::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  color: transparent;
+}
+
 <InputPhone
   value=""
 >
@@ -670,12 +4822,12 @@ exports[`InputPhone /w focused 1`] = `
           size="l"
         >
           <label
-            className="Inputstyles__Wrapper-hc8ttv-6 KDCUj"
+            className="c0"
             size="l"
           >
             <Inputstyles__Wrapped>
               <div
-                className="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+                className="c1"
               >
                 <NativeInput
                   aria-invalid={false}
@@ -693,23 +4845,23 @@ exports[`InputPhone /w focused 1`] = `
                 >
                   <Inputstyles__Box>
                     <div
-                      className="Inputstyles__Box-hc8ttv-1 bzkyqR"
+                      className="c2"
                     >
                       <Inputstyles__PlaceholderWrapper>
                         <div
-                          className="Inputstyles__PlaceholderWrapper-hc8ttv-7 frQCmf"
+                          className="c3"
                         >
                           <Inputstyles__Placeholder
                             design="outline"
                             size="l"
                           >
                             <div
-                              className="Inputstyles__Placeholder-hc8ttv-0 dDQzQZ"
+                              className="c4"
                               size="l"
                             >
                               <Inputstyles__Invisible>
                                 <span
-                                  className="Inputstyles__Invisible-hc8ttv-8 bCdWvB"
+                                  className="c5"
                                 >
                                   +7 (
                                 </span>
@@ -735,7 +4887,7 @@ exports[`InputPhone /w focused 1`] = `
                       >
                         <input
                           aria-invalid={false}
-                          className="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+                          className="c6"
                           onBlur={[Function]}
                           onChange={[Function]}
                           onFocus={[Function]}
@@ -760,18 +4912,169 @@ exports[`InputPhone /w focused 1`] = `
 `;
 
 exports[`InputPhone /w not complete 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="4953"
       />
     </div>
@@ -780,18 +5083,169 @@ exports[`InputPhone /w not complete 1`] = `
 `;
 
 exports[`InputPhone 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         value="+7 ("
       />
     </div>

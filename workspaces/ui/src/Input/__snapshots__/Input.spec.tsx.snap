@@ -1,18 +1,169 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -20,18 +171,169 @@ exports[`Input 1`] = `
 `;
 
 exports[`Input w/ any props 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         id="id"
         name="input"
         title="title"
@@ -42,18 +344,169 @@ exports[`Input w/ any props 1`] = `
 `;
 
 exports[`Input w/ design 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -61,11 +514,181 @@ exports[`Input w/ design 1`] = `
 `;
 
 exports[`Input w/ design 2`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -83,14 +706,14 @@ exports[`Input w/ design 2`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
@@ -98,23 +721,193 @@ exports[`Input w/ design 2`] = `
 `;
 
 exports[`Input w/ design 3`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -135,11 +928,200 @@ exports[`Input w/ design 3`] = `
 `;
 
 exports[`Input w/ design 4`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -157,19 +1139,19 @@ exports[`Input w/ design 4`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -190,18 +1172,172 @@ exports[`Input w/ design 4`] = `
 `;
 
 exports[`Input w/ design 5`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c0:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 dyFbgS"
+        class="c3"
       />
     </div>
   </div>
@@ -209,11 +1345,184 @@ exports[`Input w/ design 5`] = `
 `;
 
 exports[`Input w/ design 6`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c0:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -231,14 +1540,14 @@ exports[`Input w/ design 6`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 dyFbgS"
+        class="c4"
       />
     </div>
   </div>
@@ -246,23 +1555,196 @@ exports[`Input w/ design 6`] = `
 `;
 
 exports[`Input w/ design 7`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c0:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 dyFbgS"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -283,11 +1765,203 @@ exports[`Input w/ design 7`] = `
 `;
 
 exports[`Input w/ design 8`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-bottom: 1px solid #D5D5D6;
+  border-radius: 0;
+  padding: 0;
+}
+
+.c0:hover {
+  border-bottom-color: #2B2D33;
+  box-shadow: inset 0px -1px 0px 0px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 lkLMMk"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -305,19 +1979,19 @@ exports[`Input w/ design 8`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 dyFbgS"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -338,20 +2012,201 @@ exports[`Input w/ design 8`] = `
 `;
 
 exports[`Input w/ disabled 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c1 *,
+.c1 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::-moz-placeholder,
+.c1 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::placeholder,
+.c1 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eFbvRo"
+  class="c0"
   disabled=""
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 eqanMK"
+    class="c1"
     disabled=""
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         disabled=""
       />
     </div>
@@ -360,12 +2215,212 @@ exports[`Input w/ disabled 1`] = `
 `;
 
 exports[`Input w/ disabled 2`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c2 *,
+.c2 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::-moz-placeholder,
+.c2 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::placeholder,
+.c2 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eFbvRo"
+  class="c0"
   disabled=""
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -383,15 +2438,15 @@ exports[`Input w/ disabled 2`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 eqanMK"
+    class="c2"
     disabled=""
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
         disabled=""
       />
     </div>
@@ -400,26 +2455,226 @@ exports[`Input w/ disabled 2`] = `
 `;
 
 exports[`Input w/ disabled 3`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c1 *,
+.c1 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::-moz-placeholder,
+.c1 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c1 *::placeholder,
+.c1 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eFbvRo"
+  class="c0"
   disabled=""
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 eqanMK"
+    class="c1"
     disabled=""
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
         disabled=""
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -440,12 +2695,231 @@ exports[`Input w/ disabled 3`] = `
 `;
 
 exports[`Input w/ disabled 4`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c2 *,
+.c2 input {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::-moz-placeholder,
+.c2 input::-moz-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c2 *::placeholder,
+.c2 input::placeholder {
+  color: rgba(43,45,51,0.24);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  pointer-events: none;
+  border-color: #F4F4F4;
+  background-color: #F4F4F4;
+  color: rgba(43,45,51,0.24);
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eFbvRo"
+  class="c0"
   disabled=""
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -463,21 +2937,21 @@ exports[`Input w/ disabled 4`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 eqanMK"
+    class="c2"
     disabled=""
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
         disabled=""
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -498,18 +2972,170 @@ exports[`Input w/ disabled 4`] = `
 `;
 
 exports[`Input w/ invalid 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="true"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -517,11 +3143,182 @@ exports[`Input w/ invalid 1`] = `
 `;
 
 exports[`Input w/ invalid 2`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -539,14 +3336,14 @@ exports[`Input w/ invalid 2`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="true"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
@@ -554,23 +3351,194 @@ exports[`Input w/ invalid 2`] = `
 `;
 
 exports[`Input w/ invalid 3`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="true"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -591,11 +3559,201 @@ exports[`Input w/ invalid 3`] = `
 `;
 
 exports[`Input w/ invalid 4`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+  border-color: #EE505A;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 iaA-dFS"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -613,19 +3771,19 @@ exports[`Input w/ invalid 4`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="true"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -679,18 +3837,172 @@ exports[`Input w/ onFocus() 1`] = `
 `;
 
 exports[`Input w/ size 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 gPunPw"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 hbWobN"
+        class="c3"
       />
     </div>
   </div>
@@ -698,11 +4010,184 @@ exports[`Input w/ size 1`] = `
 `;
 
 exports[`Input w/ size 2`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 gPunPw"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kYAOvH"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -720,14 +4205,14 @@ exports[`Input w/ size 2`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 hbWobN"
+        class="c4"
       />
     </div>
   </div>
@@ -735,23 +4220,196 @@ exports[`Input w/ size 2`] = `
 `;
 
 exports[`Input w/ size 3`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 gPunPw"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 hbWobN"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 lldsPY"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -772,11 +4430,203 @@ exports[`Input w/ size 3`] = `
 `;
 
 exports[`Input w/ size 4`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 4px;
+  font-size: 12px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 24px;
+  border-radius: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 gPunPw"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kYAOvH"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -794,19 +4644,19 @@ exports[`Input w/ size 4`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 hbWobN"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 lldsPY"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -827,18 +4677,169 @@ exports[`Input w/ size 4`] = `
 `;
 
 exports[`Input w/ size 5`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -846,11 +4847,181 @@ exports[`Input w/ size 5`] = `
 `;
 
 exports[`Input w/ size 6`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -868,14 +5039,14 @@ exports[`Input w/ size 6`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
@@ -883,23 +5054,193 @@ exports[`Input w/ size 6`] = `
 `;
 
 exports[`Input w/ size 7`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -920,11 +5261,200 @@ exports[`Input w/ size 7`] = `
 `;
 
 exports[`Input w/ size 8`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 32px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 eablnU"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -942,19 +5472,19 @@ exports[`Input w/ size 8`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -975,18 +5505,169 @@ exports[`Input w/ size 8`] = `
 `;
 
 exports[`Input w/ size 9`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -994,11 +5675,181 @@ exports[`Input w/ size 9`] = `
 `;
 
 exports[`Input w/ size 10`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1016,14 +5867,14 @@ exports[`Input w/ size 10`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
@@ -1031,23 +5882,193 @@ exports[`Input w/ size 10`] = `
 `;
 
 exports[`Input w/ size 11`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -1068,11 +6089,200 @@ exports[`Input w/ size 11`] = `
 `;
 
 exports[`Input w/ size 12`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 36px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 hmYQOg"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1090,19 +6300,19 @@ exports[`Input w/ size 12`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -1123,18 +6333,169 @@ exports[`Input w/ size 12`] = `
 `;
 
 exports[`Input w/ size 13`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
@@ -1142,11 +6503,181 @@ exports[`Input w/ size 13`] = `
 `;
 
 exports[`Input w/ size 14`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1164,14 +6695,14 @@ exports[`Input w/ size 14`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
@@ -1179,23 +6710,193 @@ exports[`Input w/ size 14`] = `
 `;
 
 exports[`Input w/ size 15`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -1216,11 +6917,200 @@ exports[`Input w/ size 15`] = `
 `;
 
 exports[`Input w/ size 16`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 8px;
+  font-size: 14px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 daAZxl"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 euGNYx"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1238,19 +7128,19 @@ exports[`Input w/ size 16`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 bUBKOu"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 dvGfwK"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -1271,18 +7161,169 @@ exports[`Input w/ size 16`] = `
 `;
 
 exports[`Input w/ size 17`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c3"
       />
     </div>
   </div>
@@ -1290,11 +7331,181 @@ exports[`Input w/ size 17`] = `
 `;
 
 exports[`Input w/ size 18`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kmuzTc"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1312,14 +7523,14 @@ exports[`Input w/ size 18`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c4"
       />
     </div>
   </div>
@@ -1327,23 +7538,193 @@ exports[`Input w/ size 18`] = `
 `;
 
 exports[`Input w/ size 19`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -1364,11 +7745,200 @@ exports[`Input w/ size 19`] = `
 `;
 
 exports[`Input w/ size 20`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 48px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 dcSDdd"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kmuzTc"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1386,19 +7956,19 @@ exports[`Input w/ size 20`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+    class="c5"
   >
     <svg
       fill="currentColor"
@@ -1419,18 +7989,169 @@ exports[`Input w/ size 20`] = `
 `;
 
 exports[`Input w/ size 21`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 femZgC"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c3"
       />
     </div>
   </div>
@@ -1438,11 +8159,181 @@ exports[`Input w/ size 21`] = `
 `;
 
 exports[`Input w/ size 22`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 femZgC"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kmuzTc"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1460,14 +8351,14 @@ exports[`Input w/ size 22`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c4"
       />
     </div>
   </div>
@@ -1475,23 +8366,193 @@ exports[`Input w/ size 22`] = `
 `;
 
 exports[`Input w/ size 23`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c3 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c3::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c3::-ms-clear,
+.c3::-ms-reveal {
+  display: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c1 > *,
+.c1 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 femZgC"
+  class="c0"
 >
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c1"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c2"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c3"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+    class="c4"
   >
     <svg
       fill="currentColor"
@@ -1512,11 +8573,200 @@ exports[`Input w/ size 23`] = `
 `;
 
 exports[`Input w/ size 24`] = `
+.c3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: normal;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  background-color: transparent;
+  color: #2B2D33;
+  border: none;
+  outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.c4::-webkit-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-moz-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4:-ms-input-placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::placeholder {
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  width: 100%;
+  color: #AAABAD;
+  line-height: auto;
+}
+
+.c4::-ms-clear,
+.c4::-ms-reveal {
+  display: none;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #AAABAD;
+  margin: 0 12px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.c2 {
+  height: 100%;
+  width: 100%;
+  color: #2B2D33;
+}
+
+.c2 > *,
+.c2 input {
+  color: #2B2D33;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 8px;
+  width: 100%;
+  color: #2B2D33;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 52px;
+  border: 1px solid #D5D5D6;
+}
+
+.c0:hover {
+  border-color: #2B2D33;
+  box-shadow: inset 0px 0px 0px 1px #2B2D33;
+}
+
 <label
-  class="Inputstyles__Wrapper-hc8ttv-6 femZgC"
+  class="c0"
 >
   <div
-    class="Inputstyles__Prefix-hc8ttv-3 kmuzTc"
+    class="c1"
   >
     <svg
       fill="currentColor"
@@ -1534,19 +8784,19 @@ exports[`Input w/ size 24`] = `
     </svg>
   </div>
   <div
-    class="Inputstyles__Wrapped-hc8ttv-5 lhoBGY"
+    class="c2"
   >
     <div
-      class="Inputstyles__Box-hc8ttv-1 bzkyqR"
+      class="c3"
     >
       <input
         aria-invalid="false"
-        class="Inputstyles__StyledInput-hc8ttv-2 QjOJw"
+        class="c4"
       />
     </div>
   </div>
   <div
-    class="Inputstyles__Postfix-hc8ttv-4 cxucT"
+    class="c5"
   >
     <svg
       fill="currentColor"

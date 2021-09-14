@@ -1,22 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alarm w/ ghost 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 12px;
+  color: #2B2D33;
+  margin-left: -8px;
+  width: 100%;
+  background-color: #F4F4F4;
+}
+
+.c3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: none;
+  box-sizing: border-box;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.c4:not(:hover) {
+  color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 juVrZJ"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 lpUFm"
+        class="c3"
       >
         Пол
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
@@ -35,18 +155,18 @@ exports[`Alarm w/ ghost 1`] = `
     </div>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 juVrZJ"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 haXSsx"
+        class="c5"
       >
         Рост очень высокий
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
@@ -65,18 +185,18 @@ exports[`Alarm w/ ghost 1`] = `
     </div>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 juVrZJ"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 lpUFm"
+        class="c3"
       >
         Вес
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
@@ -98,22 +218,143 @@ exports[`Alarm w/ ghost 1`] = `
 `;
 
 exports[`Alarm w/ primary 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  padding: 0 12px;
+  color: #2B2D33;
+  margin-left: -8px;
+  width: 100%;
+  background-color: #2B2D33;
+  color: #FFFFFF;
+}
+
+.c3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: none;
+  box-sizing: border-box;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.c4:not(:hover) {
+  color: #AAABAD;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.c1 {
+  position: relative;
+  margin-bottom: 16px;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 16px;
+  width: auto;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.c1:last-child {
+  margin-right: 0;
+}
+
 <div
-  class="Groupsstyles__Box-sc-1dief2o-0 fGINAc"
+  class="c0"
 >
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 kYIhvW"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 lpUFm"
+        class="c3"
       >
         Пол
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
@@ -132,18 +373,18 @@ exports[`Alarm w/ primary 1`] = `
     </div>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 kYIhvW"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 haXSsx"
+        class="c5"
       >
         Рост очень высокий
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
@@ -162,18 +403,18 @@ exports[`Alarm w/ primary 1`] = `
     </div>
   </div>
   <div
-    class="Groupsstyles__Item-sc-1dief2o-1 htkhjN"
+    class="c1"
   >
     <div
-      class="Itemstyles__Box-sc-1dxtwiv-0 kYIhvW"
+      class="c2"
     >
       <div
-        class="Itemstyles__Label-sc-1dxtwiv-1 lpUFm"
+        class="c3"
       >
         Вес
       </div>
       <div
-        class="Itemstyles__Icon-sc-1dxtwiv-2 jfGbwv"
+        class="c4"
         tabindex="1"
       >
         <svg
