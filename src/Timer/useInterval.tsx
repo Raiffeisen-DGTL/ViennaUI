@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useCacheCallback } from '@fcc/react-use';
+import { useCacheCallback } from 'vienna.react-use';
 
 export function useInterval(callback: () => void, delay?: number) {
     const cached = useCacheCallback(callback);

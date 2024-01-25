@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { getScrollParent, usePortal } from '@fcc/react-use';
+import { getScrollParent, usePortal } from 'vienna.react-use';
 import { getPosition } from '../utils';
 import { Box, PropsBox } from './TolltipNative.styles';
 import { BoxStyled } from '../../Utils/styled';

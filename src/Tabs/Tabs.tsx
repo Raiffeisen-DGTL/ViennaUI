@@ -1,6 +1,6 @@
 import React, { useCallback, useState, FormEvent } from 'react';
-import { useCramList } from '@fcc/react-use';
-import { SelectOpenDown, SelectHide, Checkmark } from '@fcc/icons';
+import { useCramList } from 'vienna.react-use';
+import { SelectOpenDown, SelectHide, Checkmark } from 'vienna.icons';
 import { useLocalization } from '../Localization';
 import { TabsLocalizationProps, defaultTabsLocalization } from './localization';
 import { DropList } from '../DropList';

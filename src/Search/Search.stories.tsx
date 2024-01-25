@@ -2,7 +2,7 @@ import React from 'react';
 import { Story, Meta } from 'storybook';
 import { Search } from './Search';
 import { Groups } from '../Groups';
-import { TaskDone, TheaterOut, Violin } from '@fcc/icons';
+import { TaskDone, TheaterOut, Violin } from 'vienna.icons';
 import { Spinner } from '../Spinner';
 
 export default {

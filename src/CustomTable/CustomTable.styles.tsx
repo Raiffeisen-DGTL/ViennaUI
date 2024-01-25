@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tokens from '@fcc/tokens';
+import tokens from 'vienna.tokens';
 
 export const Table = styled.table`
     border-collapse: collapse;

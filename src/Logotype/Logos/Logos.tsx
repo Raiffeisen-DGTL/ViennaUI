@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import tokens from '@fcc/tokens';
+import tokens from 'vienna.tokens';
 import { Logotype, Logo } from '../Logotype.styles';
 import { LogotypeBaseProps } from '../Logotype';
 

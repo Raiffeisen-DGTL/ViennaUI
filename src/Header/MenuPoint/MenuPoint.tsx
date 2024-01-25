@@ -1,5 +1,5 @@
 import React, { FC, useCallback, MouseEvent } from 'react';
-import { GoLeft, GoRight } from '@fcc/icons';
+import { GoLeft, GoRight } from 'vienna.icons';
 import { Box, Title, Icon } from './MenuPoint.styles';
 
 export interface MenuPointProps {

@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import { MoreHor } from '@fcc/icons';
+import { MoreHor } from 'vienna.icons';
 import { Whitespace } from '../Whitespace';
 import { useCustomCramList } from './hooks';
 import { Box, PropsBox } from './Toolbar.styles';

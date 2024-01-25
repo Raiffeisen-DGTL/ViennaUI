@@ -1,6 +1,6 @@
 import React, { useCallback, useRef, FC, ReactNode } from 'react';
-import { useIsomorphicLayoutEffect } from '@fcc/react-use';
-import { Checkmark } from '@fcc/icons';
+import { useIsomorphicLayoutEffect } from 'vienna.react-use';
+import { Checkmark } from 'vienna.icons';
 import { StyledOption, PropsStyledOption, Value, Icon } from './Option.styles';
 import { ResponsiveProp, Breakpoints } from '../../Utils/responsiveness';
 import { BoxStyled } from '../../Utils/styled';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { Attach } from '@fcc/icons';
+import { Attach } from 'vienna.icons';
 import { Toolbar, ToolbarProps } from './Toolbar';
 
 export default {

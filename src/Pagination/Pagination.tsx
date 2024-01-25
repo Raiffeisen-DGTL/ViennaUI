@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useMemo, useEffect, useRef } from 'react';
-import { GoLeft, GoRight } from '@fcc/icons';
+import { GoLeft, GoRight } from 'vienna.icons';
 import { getLastIndex, getPagersNumbers } from './utils';
 import { Pager } from './Pager';
 import { Box, PropsBox } from './Pagination.styles';

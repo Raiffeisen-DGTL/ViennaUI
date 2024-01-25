@@ -39,7 +39,7 @@ export const logotypesMapper = ({ size, design, locale, type, collapsed, orienta
     if (design === 'monochrome-dark')
         // eslint-disable-next-line no-console
         console.warn(
-            'Данный дизайн monochrome-dark не утверждён официально и его использование не рекомендуется. В последующих версиях @fcc/ui свойство monochrome-dark может быть удалено. Рекомендуется использование дизайна dark для логотипа в тёмной теме.'
+            'Данный дизайн monochrome-dark не утверждён официально и его использование не рекомендуется. В последующих версиях vienna.ui свойство monochrome-dark может быть удалено. Рекомендуется использование дизайна dark для логотипа в тёмной теме.'
         );
 
     if (locale === 'ru') {

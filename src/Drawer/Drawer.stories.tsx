@@ -6,7 +6,7 @@ import { Groups } from '../Groups';
 import { Select } from '../Select';
 import { DrawerDemo } from './Drawer.styles';
 import { useModal } from '../Modal';
-import { Screen } from '@fcc/ui-primitives';
+import { Screen } from 'vienna.ui-primitives';
 
 export default {
     title: 'Development/Drawer',

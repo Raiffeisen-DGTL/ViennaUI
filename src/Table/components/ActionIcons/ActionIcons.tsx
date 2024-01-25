@@ -1,5 +1,5 @@
 import React, { FC, useState, useCallback, useEffect, ComponentProps } from 'react';
-import { MoreVert } from '@fcc/icons';
+import { MoreVert } from 'vienna.icons';
 import { Icon } from './ActionIcon.styles';
 import { useTableConfig } from '../Context/TableContext';
 

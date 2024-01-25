@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useMemo } from 'react';
-import { BurgerHor, Search as SearchIcon } from '@fcc/icons';
+import { BurgerHor, Search as SearchIcon } from 'vienna.icons';
 import { Checkbox } from '../../../Checkbox';
 import { Input } from '../../../Input';
 import { Link } from '../../../Link';

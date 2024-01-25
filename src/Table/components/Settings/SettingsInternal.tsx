@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
-import { Settings } from '@fcc/icons';
-import { ThemeProvider } from '@fcc/ui-primitives';
+import { Settings } from 'vienna.icons';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import { Popover } from '../../../Popover';
 import { Button } from '../../../Button';
 import { Text } from '../../../Typography';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { Download } from '@fcc/icons';
+import { Download } from 'vienna.icons';
 import { FileLoaderButton, FileLoaderButtonProps } from './FileLoaderButton';
 import { Groups } from '../Groups';
 import { Link } from '../Link';

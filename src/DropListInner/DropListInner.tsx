@@ -10,7 +10,7 @@ import React, {
     ReactElement,
 } from 'react';
 import ReactDOM from 'react-dom';
-import { useDrop, usePortal } from '@fcc/react-use';
+import { useDrop, usePortal } from 'vienna.react-use';
 import { Box } from '../DropList/DropList.styles';
 import { Breakpoints } from '../Utils/responsiveness';
 import { Item, ItemProps } from '../DropList/Item';

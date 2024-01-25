@@ -9,7 +9,7 @@ import React, {
     PropsWithChildren,
     RefObject,
 } from 'react';
-import { useIsomorphicLayoutEffect } from '@fcc/react-use';
+import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 import { StepProps, Step } from './Step';
 import { Line, Progress, Box } from './Stepper.styles';
 

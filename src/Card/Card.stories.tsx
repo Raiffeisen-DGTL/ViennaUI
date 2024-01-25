@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { CloseCancelX, Settings } from '@fcc/icons';
+import { CloseCancelX, Settings } from 'vienna.icons';
 import { Card, CardProps } from './Card';
 import { Groups } from '../Groups';
 import { Button } from '../Button';

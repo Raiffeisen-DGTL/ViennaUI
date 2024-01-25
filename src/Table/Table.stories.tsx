@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { Story, Meta } from 'storybook';
 import { Groups, DropList, Select, Link, Checkbox, Tooltip, Button, Badge, EmptyState, RoundIcon, Input } from '..';
-import { Edit, TrashDelete, AddRing, CloseCancelX, Checkmark } from '@fcc/icons';
+import { Edit, TrashDelete, AddRing, CloseCancelX, Checkmark } from 'vienna.icons';
 import { Table, TableProps } from './Table';
 import { TableState } from './types';
 import { CustomWrapperProps } from './components';

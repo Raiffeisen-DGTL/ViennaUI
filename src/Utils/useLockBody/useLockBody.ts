@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useIsomorphicLayoutEffect } from '@fcc/react-use';
+import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 
 type UseLockBodyOutput = [boolean, (locked: boolean) => void];
 

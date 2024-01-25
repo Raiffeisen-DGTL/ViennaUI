@@ -1,6 +1,6 @@
 import React, { useCallback, ReactNode, forwardRef, CSSProperties } from 'react';
-import { SelectHide, SelectOpenDown } from '@fcc/icons';
-import { useControlState } from '@fcc/react-use';
+import { SelectHide, SelectOpenDown } from 'vienna.icons';
+import { useControlState } from 'vienna.react-use';
 import { ItemWrapper } from '../Accordion.styles';
 import { Header, Content, IconBox, TextBox, PropsHeader } from './Item.styles';
 import { BoxStyled } from '../../Utils/styled';

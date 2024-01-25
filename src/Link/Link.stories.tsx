@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { ForwardArrowRight, Logo, Screw } from '@fcc/icons';
+import { ForwardArrowRight, Logo, Screw } from 'vienna.icons';
 import { Link, LinkProps } from './Link';
 
 export default {

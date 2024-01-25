@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
-import { WarningTr, WarningRing, InfoRing, Checkmark } from '@fcc/icons';
-import { ThemeProvider } from '@fcc/ui-primitives';
+import { WarningTr, WarningRing, InfoRing, Checkmark } from 'vienna.icons';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import {
     Box,
     IconContainer,

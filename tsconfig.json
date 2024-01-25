@@ -1,5 +1,5 @@
 {
-	"extends": "@fcc/config-typescript/tsconfig",
+	"extends": "vienna.config-typescript/tsconfig",
 	"compilerOptions": {
 		"outDir": "./dist"
 	},

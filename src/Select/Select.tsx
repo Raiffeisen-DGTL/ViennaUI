@@ -15,8 +15,8 @@ import React, {
     FC,
     MutableRefObject, useMemo,
 } from 'react';
-import { SelectOpenDown, SelectHide } from '@fcc/icons';
-import { useMask, IMaskProps } from '@fcc/react-use';
+import { SelectOpenDown, SelectHide } from 'vienna.icons';
+import { useMask, IMaskProps } from 'vienna.react-use';
 import { Box, Current, Part, Placeholder, StyledInputWrapper } from './Select.styles';
 import { Option, OptionProps } from './Option/Option';
 import { SelectLocalizationProps, defaultSelectLocalization } from './localization';

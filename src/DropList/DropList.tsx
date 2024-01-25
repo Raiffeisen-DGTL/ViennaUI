@@ -7,7 +7,7 @@ import React, {
     useRef,
 } from 'react';
 import ReactDOM from 'react-dom';
-import { useDrop, usePortal, type UseDropConfig } from '@fcc/react-use';
+import { useDrop, usePortal, type UseDropConfig } from 'vienna.react-use';
 import { Box, PropsBox } from './DropList.styles';
 import { Item, ItemProps } from './Item';
 import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';

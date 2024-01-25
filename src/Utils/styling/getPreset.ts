@@ -1,5 +1,5 @@
-import defaultTheme from '@fcc/ui-theme';
-import { readObjectByPath } from '@fcc/utils';
+import defaultTheme from 'vienna.ui-theme';
+import { readObjectByPath } from 'vienna.utils';
 
 /**
  * Function returns preset from theme by path.

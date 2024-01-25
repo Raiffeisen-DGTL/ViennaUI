@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Calendar as CalendarIcon } from '@fcc/icons';
+import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
 import { useFloating, offset, autoPlacement } from '@floating-ui/react';
-import { CalendarProps } from '@fcc/icons/dist/Calendar/Calendar';
-import { usePortal } from '@fcc/react-use';
+import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
+import { usePortal } from 'vienna.react-use';
 import { DatePickerRangeLocalizationProps } from './localization';
 import { Calendar, dateFunction, Dates, DateValue } from '../Calendar';
 import { InputDateRange, DateType } from '../InputMask';

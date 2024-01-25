@@ -1,5 +1,5 @@
 import React, { ReactNode, PureComponent } from 'react';
-import { CloseCancelX } from '@fcc/icons';
+import { CloseCancelX } from 'vienna.icons';
 import { ResponsiveProp } from '../../Utils/responsiveness';
 import { Alert, AlertProps } from '../../Alert';
 import { Flex } from '../../Flex';

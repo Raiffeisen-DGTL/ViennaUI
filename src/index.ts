@@ -1,5 +1,5 @@
-import * as presets from '@fcc/ui-theme/types/presets';
-import * as tokens from '@fcc/tokens/types/tokens';
+import * as presets from 'vienna.ui-theme/types/presets';
+import * as tokens from 'vienna.tokens/types/tokens';
 
 type DeepPartial<T> = T extends object
     ? {
@@ -14,8 +14,8 @@ type Tokens = typeof tokens;
 
 export { ThemePresets, Tokens };
 
-export * from '@fcc/ui-primitives';
-export * from '@fcc/tokens';
+export * from 'vienna.ui-primitives';
+export * from 'vienna.tokens';
 
 export * from './Utils/responsiveness/Breakpoints';
 export * from './Utils/styling/StylesProvider';

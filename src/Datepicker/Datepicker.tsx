@@ -1,8 +1,8 @@
 import React, { ComponentProps, FormEvent, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Calendar as CalendarIcon } from '@fcc/icons';
+import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
 import { useFloating, offset, autoPlacement, shift, FloatingPortal } from '@floating-ui/react';
-import { CalendarProps } from '@fcc/icons/dist/Calendar/Calendar';
+import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
 import { DatePickerLocalizationProps } from './localization';
 import { Calendar, Dates, DateValue, eventDateFunction } from '../Calendar';
 import { InputDate } from '../InputMask';

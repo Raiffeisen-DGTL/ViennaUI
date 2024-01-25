@@ -10,7 +10,7 @@ import React, {
     RefObject,
     useEffect,
 } from 'react';
-import { SelectOpenDown, SelectHide } from '@fcc/icons';
+import { SelectOpenDown, SelectHide } from 'vienna.icons';
 import { Wrapper, LeftButton, RightButton } from './ComboButton.styles';
 import { DropList } from '../DropList';
 import { ItemProps } from '../DropList/Item';

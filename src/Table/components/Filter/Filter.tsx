@@ -1,8 +1,8 @@
 import React, { useRef, useMemo, useState, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { usePopper } from 'react-popper';
-import { Filter as FilterIcon } from '@fcc/icons';
-import { useOutsideClick } from '@fcc/react-use';
+import { Filter as FilterIcon } from 'vienna.icons';
+import { useOutsideClick } from 'vienna.react-use';
 import { Groups } from '../../../Groups';
 import { SortInFilter, SortIcon } from '../Sort';
 import { useTableService, useTableConfig } from '../Context';

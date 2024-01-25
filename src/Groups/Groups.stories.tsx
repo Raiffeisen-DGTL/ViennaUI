@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { TrashDelete } from '@fcc/icons';
+import { TrashDelete } from 'vienna.icons';
 import { Groups, GroupsProps } from './Groups';
 import { Button } from '../Button';
 

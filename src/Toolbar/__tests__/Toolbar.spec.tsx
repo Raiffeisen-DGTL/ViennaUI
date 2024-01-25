@@ -1,5 +1,5 @@
 import React from 'react';
-import { Screw } from '@fcc/icons';
+import { Screw } from 'vienna.icons';
 import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Toolbar } from '../index';

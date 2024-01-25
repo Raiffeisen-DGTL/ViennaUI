@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { storybookLoader } from "../../Utils/playwright";
-import * as Icons from '@fcc/icons';
+import * as Icons from 'vienna.icons';
 
 const iconNames = Object.keys(Icons).sort();
 

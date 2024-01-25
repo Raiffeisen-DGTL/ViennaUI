@@ -14,7 +14,7 @@ import {
     Settings,
     DocEdit,
     DocPreview,
-} from '@fcc/icons';
+} from 'vienna.icons';
 
 const EXTENSION_ICONS = {
     xls: Xls,

@@ -1,5 +1,5 @@
 import React, { Children, FC, ReactNode } from 'react';
-import { ListOpen, ListClose } from '@fcc/icons';
+import { ListOpen, ListClose } from 'vienna.icons';
 import { Box, PropsBox, ItemWrapper, Header, Footer, Menu, Collapser } from './Sidebar.styles';
 import { Item } from './Item';
 import { Submenu } from './Submenu';

@@ -1,5 +1,5 @@
 import React, { ReactNode, useState, useCallback } from 'react';
-import { GoRightClassic, SelectOpenClassic } from '@fcc/icons';
+import { GoRightClassic, SelectOpenClassic } from 'vienna.icons';
 import { Item, ItemProps } from '../Item';
 import { Menu, SubmenuTitle } from './Submenu.styles';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import { Input, InputProps } from './Input';
-import { TaskDone } from '@fcc/icons';
+import { TaskDone } from 'vienna.icons';
 
 export default {
     title: 'Development/Input',

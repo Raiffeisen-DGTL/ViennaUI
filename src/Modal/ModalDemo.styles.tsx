@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Screen } from '@fcc/ui-primitives';
+import { Screen } from 'vienna.ui-primitives';
 import { useModal } from './ModalHook';
 import { Button } from '../Button';
 import { Groups } from '../Groups';

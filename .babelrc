@@ -2,7 +2,7 @@
 	"presets": ["@babel/env", "@babel/typescript", "@babel/react"],
 	"plugins": [
 		["@babel/plugin-proposal-class-properties", { "loose": true }],
-		["@fcc/babel-plugin-inline-import", { "loose": true }],
+		["babel-plugin-inline-import", { "loose": true }],
 		["babel-plugin-styled-components", { "loose": true }],
     ["@babel/plugin-transform-runtime", { "loose": true }],
     ["@babel/plugin-transform-private-methods", { "loose": true }],

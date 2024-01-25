@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { CloseCancelX } from '@fcc/icons';
+import { CloseCancelX } from 'vienna.icons';
 import { Box, PropsBox, Label, Icon } from './Item.styles';
 import { withTabFocusState } from '../../Utils';
 import { BoxStyled } from '../../Utils/styled';
