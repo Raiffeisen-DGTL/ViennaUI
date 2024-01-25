@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import * as Icons from '@fcc/icons';
+import * as Icons from 'vienna.icons';
 import { Groups } from "../Groups";
 
 export default {

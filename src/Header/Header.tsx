@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useRef, useState, useCallback, cloneElement, useMemo, ReactElement } from 'react';
-import { BurgerHor as Burger, CloseCancelX } from '@fcc/icons';
+import { BurgerHor as Burger, CloseCancelX } from 'vienna.icons';
 import {
     Box,
     BoxMobile,

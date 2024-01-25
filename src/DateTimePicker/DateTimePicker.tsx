@@ -1,7 +1,7 @@
 import React, { ComponentProps, useCallback } from 'react';
-import { History } from '@fcc/icons';
+import { History } from 'vienna.icons';
 import { Locale } from 'date-fns';
-import { ThemeProvider } from '@fcc/ui-primitives';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import { Select } from '../Select';
 import { InputDate } from '../InputMask';
 import { Datepicker } from '../Datepicker';

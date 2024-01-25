@@ -1,5 +1,5 @@
 import { useMemo, useState, useRef, RefObject, ReactNode } from 'react';
-import { useIsomorphicLayoutEffect, useWindowResize } from '@fcc/react-use';
+import { useIsomorphicLayoutEffect, useWindowResize } from 'vienna.react-use';
 
 const closureClassName = (() => {
     let count = 0;

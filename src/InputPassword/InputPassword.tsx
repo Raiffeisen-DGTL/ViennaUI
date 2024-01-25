@@ -1,5 +1,5 @@
 import React, { useState, useCallback, forwardRef } from 'react';
-import { EyeOpened, EyeClosed } from '@fcc/icons';
+import { EyeOpened, EyeClosed } from 'vienna.icons';
 import { Input, InputProps } from '../Input';
 import { IconWrapper } from './InputPassword.styles';
 

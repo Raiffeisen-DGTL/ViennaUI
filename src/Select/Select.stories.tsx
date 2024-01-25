@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Story, Meta } from 'storybook';
-import { Bust, TheaterOut, ToPay, Violin } from '@fcc/icons';
+import { Bust, TheaterOut, ToPay, Violin } from 'vienna.icons';
 import { Select, SelectProps } from './Select';
 import { Groups } from '../Groups';
 import { Button } from '../Button';

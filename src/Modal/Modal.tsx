@@ -11,9 +11,9 @@ import React, {
 } from 'react';
 import ReactDOM from 'react-dom';
 import ReactFocusLock from 'react-focus-lock';
-import { useDebounce, usePortal } from '@fcc/react-use';
-import { CloseCancelX } from '@fcc/icons';
-import { Screen } from '@fcc/ui-primitives';
+import { useDebounce, usePortal } from 'vienna.react-use';
+import { CloseCancelX } from 'vienna.icons';
+import { Screen } from 'vienna.ui-primitives';
 import { Fade, PropsFade, Box, CloseIcon } from './Modal.styles';
 import { useLockBody } from '../Utils';
 import { BoxStyled } from '../Utils/styled';

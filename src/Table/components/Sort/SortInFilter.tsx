@@ -1,5 +1,5 @@
 import React from 'react';
-import { UpArrow, DownArrow } from '@fcc/icons';
+import { UpArrow, DownArrow } from 'vienna.icons';
 import { Groups } from '../../../Groups';
 import { Button } from '../../../Button';
 import { useTableService, useTableLocalization } from '../Context/TableContext';

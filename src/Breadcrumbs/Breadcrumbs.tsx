@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Home, Back } from '@fcc/icons';
+import { Home, Back } from 'vienna.icons';
 import { useLocalization } from '../Localization';
 import { Box, BackIcon } from './Breadcrumbs.styles';
 import { Option } from './Option';

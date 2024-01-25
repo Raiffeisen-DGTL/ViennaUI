@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, ComponentProps } from 'react';
-import { ManPerson } from '@fcc/icons';
+import { ManPerson } from 'vienna.icons';
 import { Avatar } from '../Avatar/Avatar';
 import { RoundIcon } from '../RoundIcon/RoundIcon';
 import { DropList } from '../DropList/DropList';

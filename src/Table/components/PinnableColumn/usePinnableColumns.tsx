@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useIsomorphicLayoutEffect } from '@fcc/react-use';
+import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 import { debounce } from '../../../Utils';
 
 export const columnsOffsets = new Map();

@@ -1,6 +1,6 @@
 /* eslint-disable react/sort-comp */
 import React, { ReactNode, PureComponent } from 'react';
-import { ThemeProvider } from '@fcc/ui-primitives';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import { ResponsiveProp } from '../Utils/responsiveness';
 import { Notification } from './Notification';
 import { Box, PropsBox } from './Notifications.styles';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { TimerProps } from '@fcc/icons';
+import { TimerProps } from 'vienna.icons';
 import { Timer } from './Timer';
 
 export default {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from 'storybook';
-import { ForwardArrowRight, Violin } from '@fcc/icons';
+import { ForwardArrowRight, Violin } from 'vienna.icons';
 import { Button, ButtonProps } from './Button';
 
 export default {

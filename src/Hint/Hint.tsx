@@ -1,6 +1,6 @@
 import React, { useContext, useCallback, useMemo, ReactNode, FC, PropsWithChildren } from 'react';
 import { ThemeContext } from 'styled-components';
-import { ThemeProvider, getPresets } from '@fcc/ui-primitives';
+import { ThemeProvider, getPresets } from 'vienna.ui-primitives';
 import { Popover, PopoverProps } from '../Popover/Popover';
 import { Definition, Icon, Wrapper } from './Hint.styles';
 

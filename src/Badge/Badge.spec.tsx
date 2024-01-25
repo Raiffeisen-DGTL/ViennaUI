@@ -1,5 +1,5 @@
 import React from 'react';
-import { Attach } from '@fcc/icons';
+import { Attach } from 'vienna.icons';
 import { Badge, BadgeProps } from './Badge';
 
 test('Badge', () => {

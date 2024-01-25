@@ -8,7 +8,7 @@ import React, {
     ChangeEventHandler,
     FocusEventHandler,
 } from 'react';
-import { useControlState } from '@fcc/react-use';
+import { useControlState } from 'vienna.react-use';
 import { Box, PropsBox, Content, Icon, IconBox, Input } from './Checkbox.styles';
 import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
 import { BoxStyled } from '../Utils/styled';

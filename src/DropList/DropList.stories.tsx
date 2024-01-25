@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { ManPerson } from '@fcc/icons';
+import { ManPerson } from 'vienna.icons';
 import { DropList, DropListProps } from './DropList';
 import { RoundIcon } from '../RoundIcon';
 

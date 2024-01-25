@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from 'storybook';
-import { GoRight, GoLeft } from '@fcc/icons';
+import { GoRight, GoLeft } from 'vienna.icons';
 import { Wizard, WizardProps } from './Wizard';
 import { Button, Flex, Whitespace } from '../index';
 

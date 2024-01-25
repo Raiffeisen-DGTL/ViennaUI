@@ -1,6 +1,6 @@
 import React, { useRef, useCallback, useState, useEffect, FC, ComponentProps } from 'react';
-import { useWindowResize } from '@fcc/react-use';
-import { GoRight } from '@fcc/icons';
+import { useWindowResize } from 'vienna.react-use';
+import { GoRight } from 'vienna.icons';
 import { Tooltip } from '../../Tooltip';
 import { Box, Text, Icon, Link, HiddenText, PropsBox } from './Option.styles';
 import { BoxStyled } from '../../Utils/styled';

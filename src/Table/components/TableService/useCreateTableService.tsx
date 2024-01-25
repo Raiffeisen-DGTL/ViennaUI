@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useStateCallback } from '@fcc/react-use';
+import { useStateCallback } from 'vienna.react-use';
 import { UpdateTableState } from '../../types';
 import { ServiceFactoryConfig } from './ServiceFactory';
 import { tableService, TableService } from './TableService';

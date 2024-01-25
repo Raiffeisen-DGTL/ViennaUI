@@ -9,8 +9,8 @@ import React, {
     useMemo
 } from 'react';
 import { usePopper } from 'react-popper';
-import { useCramList } from '@fcc/react-use';
-import { SelectOpenDown, SelectHide, CloseCancelX } from '@fcc/icons';
+import { useCramList } from 'vienna.react-use';
+import { SelectOpenDown, SelectHide, CloseCancelX } from 'vienna.icons';
 import { Box, PropsBox, Current, Part, Chip, Extra, Placeholder, StyledInputWrapper } from './Multiselect.styles';
 import { Option, OptionProps } from './Option/Option';
 import {

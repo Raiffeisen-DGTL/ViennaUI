@@ -1,5 +1,5 @@
 import React, { CSSProperties, forwardRef, PropsWithChildren, ReactNode } from 'react';
-import { CloseCancelX } from '@fcc/icons';
+import { CloseCancelX } from 'vienna.icons';
 import { Message, Header, Content, CloseIcon, PropsMessage } from './Popover.styles';
 import { BoxStyled } from '../Utils/styled';
 

@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { SelectOpenDown, SelectHide } from '@fcc/icons';
+import { SelectOpenDown, SelectHide } from 'vienna.icons';
 import { useTableService, useTableConfig } from '../Context/TableContext';
 import { ExpanderCell, ExpanderIcon } from './ExpandingRow.styles';
 import { Pinner } from '../PinnableColumn';

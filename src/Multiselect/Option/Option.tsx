@@ -1,5 +1,5 @@
 import React, { useCallback, useRef } from 'react';
-import { useIsomorphicLayoutEffect } from '@fcc/react-use';
+import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 import { StyledOption, StyledCheckbox, Value } from './Option.styles';
 
 export interface OptionProps {

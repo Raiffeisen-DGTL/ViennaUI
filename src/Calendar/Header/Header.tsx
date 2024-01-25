@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo } from 'react';
 import { addMonths, addYears, format, subMonths, subYears } from 'date-fns';
-import { GoLeft, Back, CollapseLeft, CollapseRight, GoRight } from '@fcc/icons';
+import { GoLeft, Back, CollapseLeft, CollapseRight, GoRight } from 'vienna.icons';
 import { Spin, ViewMode } from '../types';
 import { FirstLetterUpper } from '../Calendar.styles';
 import { useCalendarLocale } from '../Context';

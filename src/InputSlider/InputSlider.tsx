@@ -8,7 +8,7 @@ import React, {
     ReactNode,
     ReactElement,
 } from 'react';
-import { useDebounce, useWindowResize } from '@fcc/react-use';
+import { useDebounce, useWindowResize } from 'vienna.react-use';
 import {
     Box,
     Container,

@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useRef, useMemo, ReactNode, useEffect, FC } from 'react';
-import { useWindowResize } from '@fcc/react-use';
+import { useWindowResize } from 'vienna.react-use';
 import {
     Box,
     Header,

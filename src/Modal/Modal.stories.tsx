@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import { ThemeProvider } from 'styled-components';
-import { Violin } from '@fcc/icons';
+import { Violin } from 'vienna.icons';
 import { Modal, ModalProps } from './Modal';
 import { Button } from '../Button';
 import { Groups } from '../Groups';

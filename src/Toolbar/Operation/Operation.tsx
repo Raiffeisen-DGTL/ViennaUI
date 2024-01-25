@@ -1,5 +1,5 @@
 import React, { useState, useCallback, MouseEvent, ReactNode, forwardRef, ComponentProps, useEffect } from 'react';
-import { UpChevron, DownChevron } from '@fcc/icons';
+import { UpChevron, DownChevron } from 'vienna.icons';
 import { OpBox, StyledItem } from './Operation.styles';
 import { Button } from '../../Button';
 import { DropList } from '../../DropList';

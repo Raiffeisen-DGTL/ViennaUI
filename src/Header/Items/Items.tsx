@@ -1,6 +1,6 @@
 import React, { FC, ReactElement, useCallback, useMemo, useContext, FormEvent } from 'react';
 import { ThemeContext } from 'styled-components';
-import { ThemeProvider } from '@fcc/ui-primitives';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import { TabsProps, TabProps, Tabs } from '../../Tabs';
 import { MenuPoint } from '../MenuPoint';
 import { Tab } from './Items.styles';

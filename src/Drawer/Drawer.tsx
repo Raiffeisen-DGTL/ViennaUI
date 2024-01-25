@@ -1,9 +1,9 @@
 import React, { useCallback, useState, useEffect, ForwardRefExoticComponent, useRef, PropsWithChildren } from 'react';
 import ReactDOM from 'react-dom';
 import ReactFocusLock from 'react-focus-lock';
-import { useDebounce, usePortal, useWindowResize } from '@fcc/react-use';
-import { CloseCancelX } from '@fcc/icons';
-import { Screen } from '@fcc/ui-primitives';
+import { useDebounce, usePortal, useWindowResize } from 'vienna.react-use';
+import { CloseCancelX } from 'vienna.icons';
+import { Screen } from 'vienna.ui-primitives';
 import { Fade, Box, CloseIcon, Content } from './Drawer.styles';
 import { withTabFocusState, useLockBody } from '../Utils';
 

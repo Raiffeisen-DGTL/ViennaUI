@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useEffect, PropsWithChildren } from 'react';
-import { CloseCancelX } from '@fcc/icons';
+import { CloseCancelX } from 'vienna.icons';
 import { Box, Icon, Main, Data, Name, CloseIcon, Info, Progress, ImgIcon } from './File.styles';
 import { Progressbar } from '../../Progressbar';
 import { getFileExtension, formatDate, formatBytes } from '../../Utils';

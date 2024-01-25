@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { MailOut, Settings, Lamp, ChartBar1, Chat2, Home, Document } from '@fcc/icons';
+import { MailOut, Settings, Lamp, ChartBar1, Chat2, Home, Document } from 'vienna.icons';
 import { Sidebar, SidebarProps } from './Sidebar';
 import { Alarm } from '../Alarm';
 import { Link } from '../Link';

@@ -1,9 +1,9 @@
 import React, { ComponentProps, FormEvent, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
-import { Calendar as CalendarIcon } from '@fcc/icons';
+import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
 import {useFloating, offset, autoPlacement} from '@floating-ui/react';
-import { CalendarProps } from '@fcc/icons/dist/Calendar/Calendar';
+import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
 import { DatePickerBetaLocalizationProps } from './localization';
 import { Calendar, Dates, DateValue, eventDateFunction } from '../Calendar';
 import { InputDateBeta } from '../InputDateBeta';
@@ -12,7 +12,7 @@ import { InputEvent } from '../Input';
 import { Box, InputBox, CalendarBox } from './DatePickerBeta.styles';
 import { checkIsDisabled } from '../Calendar/Utils';
 import { StartingWeekDay } from '../Calendar/types';
-import {usePortal} from "@fcc/react-use";
+import {usePortal} from "vienna.react-use";
 
 export interface DatePickerBetaProps
     extends Omit<ComponentProps<typeof InputDateBeta>, 'value' | 'type' | 'onChange' | 'onPaste' | 'localization'>,
