@@ -1,25 +1,15 @@
 module.exports = {
     roots: ['<rootDir>'],
-    projects: ['<rootDir>/workspaces/*/jest.config.js'],
+    projects: ['<rootDir>/src/jest.config.js'],
     cacheDirectory: '/tmp/tests',
-    coverageDirectory: '<rootDir>/coverage',
-    collectCoverageFrom: [
-        '<rootDir>/workspaces/**/*.{ts,tsx,js,jsx}',
-        '!<rootDir>/workspaces/**/*.spec.{ts,tsx,js,jsx}',
-        '!<rootDir>/workspaces/**/jest.config.js',
-    ],
-    coveragePathIgnorePatterns: [
-        '/esm',
-        '/dist',
-        '/node_modules',
-        '<rootDir>/workspaces/icons',
-        '<rootDir>/workspaces/config-eslint',
-        '<rootDir>/workspaces/ui-pictogram',
-    ],
-    setupFiles: ['<rootDir>/scripts/jest/setup.js'],
+    coverageDirectory: './coverage',
+    collectCoverageFrom: ['./src/**/*.{ts,tsx,js,jsx}', './src/**/*.spec.{ts,tsx,js,jsx}', './src/**/jest.config.js'],
+    coveragePathIgnorePatterns: ['/esm', '/dist', '/node_modules', './src/**/*.pw.spec.{ts,tsx,js,jsx}'],
+    setupFiles: ['./scripts/jest/setup.js'],
+    setupFilesAfterEnv: ['./scripts/jest/setupTests.js'],
     testEnvironment: 'jsdom',
     testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-    testResultsProcessor: 'jest-bamboo-formatter',
+    // testResultsProcessor: 'jest-bamboo-formatter',
     snapshotSerializers: ['enzyme-to-json/serializer'],
     transform: {
         '^.+\\.(js|ts)x?$': 'babel-jest',
@@ -29,9 +19,6 @@ module.exports = {
     },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
     modulePathIgnorePatterns: ['/esm', '/dist', '/node_modules'],
-    moduleNameMapper: {
-        'vienna.icons': '<rootDir>/workspaces/icons/src',
-    },
     globals: {
         snapshot: true,
     },

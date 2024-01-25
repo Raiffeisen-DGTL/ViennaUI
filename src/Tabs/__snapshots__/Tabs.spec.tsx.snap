@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs 1`] = `
+[
+  <Tab
+    active={true}
+    design="accent"
+    key=".0"
+    onClick={[Function]}
+    size="l"
+    value="Счета"
+  >
+    Счета
+  </Tab>,
+  <Tab
+    active={false}
+    design="accent"
+    key=".1"
+    onClick={[Function]}
+    size="l"
+    value="Операции"
+  >
+    Операции
+  </Tab>,
+  <Tab
+    active={false}
+    design="accent"
+    key=".2"
+    onClick={[Function]}
+    size="l"
+    value="Реквизиты"
+  >
+    Реквизиты
+  </Tab>,
+  <Tab
+    active={false}
+    design="accent"
+    key=".3"
+    onClick={[Function]}
+    size="l"
+    value="Овердрафт"
+  >
+    Овердрафт
+  </Tab>,
+  <Tab
+    active={false}
+    design="accent"
+    disabled={true}
+    key=".4"
+    onClick={[Function]}
+    size="l"
+    value="Аресты"
+  >
+    Аресты
+  </Tab>,
+]
+`;

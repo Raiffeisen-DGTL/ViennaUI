@@ -2,9 +2,13 @@ node_modules
 dist
 esm
 workspaces/icons/src
+workspaces/deprecated-icons/src
 workspaces/ui-pictogram/src
 .docz
 CHANGELOG.md
 package.json
 package-lock.json
 workspaces/dashboard/reports
+.gitlab-ci.yml
+.old-gitlab-ci.yml
+.next-gitlab-ci.yml

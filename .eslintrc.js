@@ -1,39 +1,35 @@
 module.exports = {
     root: true,
     extends: [
-        'vienna.config-eslint',
-        'vienna.config-eslint/rules/prettier',
-        'vienna.config-eslint/rules/react',
-        'vienna.config-eslint/rules/react-hooks',
-        'vienna.config-eslint/rules/jest',
+        '@fcc/config-eslint',
+        '@fcc/config-eslint/rules/react',
+        '@fcc/config-eslint/rules/react-hooks',
+        '@fcc/config-eslint/rules/jest',
+        '@fcc/config-eslint/rules/prettier',
+        '@fcc/config-eslint/rules/typescript',
     ].map(require.resolve),
     overrides: [
         {
-            files: ['**/*.ts', '**/*.tsx'],
-            extends: [
-                'vienna.config-eslint',
-                'vienna.config-eslint/rules/prettier-typescript',
-                'vienna.config-eslint/rules/react',
-                'vienna.config-eslint/rules/react-hooks',
-                'vienna.config-eslint/rules/typescript',
-                'vienna.config-eslint/rules/jest',
-            ].map(require.resolve),
             parserOptions: {
                 project: './tsconfig.json',
             },
+            files: ['**/*.ts', '**/*.tsx'],
             rules: {
                 '@typescript-eslint/no-explicit-any': 0,
+                '@typescript-eslint/naming-convention': 0,
+                'no-undef': 'off',
+                '@typescript-eslint/ban-types': 0,
+                'prefer-arrow-callback': 0,
+                'no-redeclare': 0,
+                'react/no-deprecated': 0,
+                'no-underscore-dangle': 0,
+            },
+        },
+        {
+            files: ['**/Table/**/*.tsx', '**/Stepper/**/*.tsx'],
+            rules: {
+                'react/no-unused-prop-types': 0,
             },
         },
     ],
-    env: {
-        es6: true,
-        node: true,
-        browser: true,
-    },
-    settings: {
-        react: {
-            version: 'latest',
-        },
-    },
 };

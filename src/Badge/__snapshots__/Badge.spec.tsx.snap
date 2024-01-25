@@ -1,0 +1,2404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge as link 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<a
+  class="c0"
+  href="https://raif.ru"
+  rel="noopener"
+  target="_blank"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</a>
+`;
+
+exports[`Badge w/ any props 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0 className"
+  id="id"
+  title="title"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: dubai10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFF4E8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: dubai30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE9D1;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: miami10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E7F8F4;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: miami30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #CFF1E9;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: nice10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFEFEF;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: nice30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE0E0;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: paris10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: paris30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E1E0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: seattle05 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F8F8F8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color and icon: seattle10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E9EAEA;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    <svg
+      fill="currentColor"
+      height="16"
+      viewBox="0 0 24 24"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M8.818 4.002C10.156 2.72 11.971 2 13.864 2c1.893 0 3.708.72 5.046 2.002C20.248 5.283 21 7.022 21 8.834c0 1.813-.752 3.551-2.09 4.833l-7.209 6.903A5.214 5.214 0 018.098 22a5.214 5.214 0 01-3.604-1.43A4.78 4.78 0 013 17.118c0-1.294.537-2.536 1.493-3.451L11.7 6.763a3.128 3.128 0 012.163-.858c.811 0 1.589.309 2.162.858.574.55.896 1.294.896 2.071 0 .777-.322 1.522-.895 2.071L8.818 17.81l-1.442-1.38 7.209-6.904a.956.956 0 00.298-.69.956.956 0 00-.298-.691 1.043 1.043 0 00-.721-.286c-.27 0-.53.103-.72.286l-7.21 6.903a2.867 2.867 0 00-.895 2.071c0 .777.322 1.522.896 2.072.573.549 1.351.857 2.162.857.811 0 1.59-.308 2.163-.857l7.208-6.904a4.78 4.78 0 001.493-3.452 4.78 4.78 0 00-1.493-3.452 5.214 5.214 0 00-3.604-1.43 5.214 5.214 0 00-3.604 1.43l-5.767 5.523-1.442-1.38 5.767-5.523z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </span>
+  <span
+    class="c1"
+  >
+     Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: dubai10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFF4E8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: dubai30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE9D1;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: miami10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E7F8F4;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: miami30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #CFF1E9;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: nice10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FFEFEF;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: nice30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #FEE0E0;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: paris10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: paris30 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E1E0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: seattle05 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F8F8F8;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ color: seattle10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #E9EAEA;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g0 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g1 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 8.333333333333334%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g2 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 16.666666666666668%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g3 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 25%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g4 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 33.333333333333336%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g5 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 41.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g6 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 50%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g7 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 58.333333333333336%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g8 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 66.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g9 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 75%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g10 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 83.33333333333334%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g11 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 91.66666666666667%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ grid: g12 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+  width: 100%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ reponsiveness 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .c0 {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 8px;
+    height: 24px;
+    min-width: 32px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 12px;
+    height: 36px;
+    min-width: 40px;
+  }
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ reponsiveness 2`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+  .c0 {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 8px;
+    height: 24px;
+    min-width: 32px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 12px;
+    height: 36px;
+    min-width: 40px;
+  }
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: l 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 36px;
+  min-width: 40px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: m 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 36px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;
+
+exports[`Badge w/ size: s 1`] = `
+.c0 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  appearance: none;
+  outline: 0;
+  position: relative;
+  font-family: 'ALS Hauss',Helvetica,'Helvetica New',Arial,sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: auto;
+  border-color: transparent;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 8px;
+  height: 24px;
+  min-width: 32px;
+  background-color: #F0F0FE;
+  color: #2B2D33;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c1:not(:last-child) {
+  margin-right: 4px;
+}
+
+.c1>svg {
+  display: block;
+}
+
+<span
+  class="c0"
+>
+  <span
+    class="c1"
+  >
+    Badge text
+  </span>
+</span>
+`;

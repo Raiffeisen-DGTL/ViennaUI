@@ -1,0 +1,19 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+  "plugins": [
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [true, {
+      "browsers": ["> 1%", "Last 2 versions", "not op_mini all"],
+      "ignore": ["-webkit-text-size-adjust"],
+      "ignorePartialSupport": true
+    }]
+  }
+}

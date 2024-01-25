@@ -15,4 +15,13 @@ __diff_output__
 *test-report.xml
 jest.json
 .docz
-workspaces/superapp/src/components/Playground.tsx
+playwright/node_modules/
+playwright/test-results/
+playwright/playwright-report/
+playwright/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# Reports
+/reports/outdated.html

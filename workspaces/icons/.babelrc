@@ -1,8 +1,0 @@
-{
-  "presets": ["@babel/env", "@babel/typescript", "@babel/react"],
-  "env": {
-    "esm": {
-      "presets": [["@babel/env", { "modules": false }]]
-    }
-  }
-}

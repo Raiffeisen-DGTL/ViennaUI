@@ -1,6 +1,0 @@
-space: datepickerrange
-calendar:
-  border-radius: $border.radius.m
-  box-shadow: $shadow.basic.xl
-  top: $layout.size.s2
-  z-index: '9'

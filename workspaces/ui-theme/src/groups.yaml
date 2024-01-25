@@ -1,9 +1,0 @@
-space: groups
-
-size:
-  xxs: $layout.size.s1
-  xs: $layout.size.s2
-  s: $layout.size.s3
-  m: $layout.size.s4
-  l: $layout.size.s5
-  xl: $layout.size.s6

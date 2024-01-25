@@ -1,5 +1,0 @@
-space: shadow
-basic:
-  xl: 0 8px 32px 0 rgba(0, 0, 0, 0.08)
-  l: 0 4px 20px 0 rgba(0, 0, 0, 0.08)
-  m: 0 2px 12px 0 rgba(0, 0, 0, 0.04)

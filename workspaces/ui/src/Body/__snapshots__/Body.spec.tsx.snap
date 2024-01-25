@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Body 1`] = `
-<div
-  class="Bodystyles__Box-sc-1jo0c1d-0 yfXEz"
->
-  Hello body!
-</div>
-`;

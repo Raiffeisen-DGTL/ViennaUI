@@ -1,22 +1,21 @@
-interface Snapshot {
-    render: (any) => any;
-    shallow: (any) => any;
-    mount: (any) => any;
-    screenshot: (any) => any;
-    screenshots: (any) => any;
+declare module '*.eot' {
+    const content: any;
+    export default content;
 }
 
-declare const snapshot: Snapshot;
-
-declare namespace NodeJS {
-    export interface Global {
-        snapshot: Snapshot;
-    }
+declare module '*.woff' {
+    const content: any;
+    export default content;
 }
 
-declare namespace jest {
-    interface Matchers<R> {
-        toMatchScreenshot: (options?) => void;
-        toMatchScreenshots: () => void;
-    }
+declare module '*.woff2' {
+    const content: any;
+    export default content;
 }
+
+declare module '*.svg' {
+    const content: any;
+    export default content;
+}
+
+declare type Nullable<T> = null | T;

@@ -1,7 +1,0 @@
-scripts
-.babelrc
-.browserslistrc
-jest.config.js
-README.md
-tsconfig.json
-node_modules
