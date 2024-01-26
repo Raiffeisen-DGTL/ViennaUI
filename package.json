@@ -1,6 +1,6 @@
 {
   "name": "vienna-ui",
-  "version": "11.11.4",
+  "version": "11.11.5",
   "description": "Raiffeisenbank Design System",
   "license": "MIT",
   "repository": {
@@ -56,7 +56,7 @@
     "vienna.icons": "^4.0.4",
     "vienna.react-use": "^3.1.0",
     "vienna.tokens": "^3.9.1",
-    "vienna.ui-primitives": "^3.2.0",
+    "vienna.ui-primitives": "^3.2.2",
     "vienna.ui-theme": "^4.8.0",
     "vienna.utils": "^3.1.0"
   },
