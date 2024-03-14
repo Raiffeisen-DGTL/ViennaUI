@@ -1,11 +1,9 @@
 import React, { FC, FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import ReactDOM from 'react-dom';
-import { usePopper } from 'react-popper';
+import { useFloating, offset, autoPlacement, shift, FloatingPortal } from '@floating-ui/react';
 import { format, Locale } from 'date-fns';
 import { ru } from 'date-fns/locale';
 import { Calendar as CalendarIcon } from 'vienna.icons';
 import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
-import { usePortal } from 'vienna.react-use';
 import { Calendar } from '../Calendar';
 import { Input, InputEvent, InputProps } from '../Input';
 import { Box, InputBox, CalendarBox } from './Monthpicker.styles';
@@ -47,13 +45,6 @@ export const Monthpicker: FC<MonthpickerProps> = ({
 }) => {
     const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen);
     const datepickerEl = useRef<HTMLDivElement>(null);
-    const [popperElement, setPopperElement] = useState(null);
-    const [referenceElement, setReferenceElement] = useState(null);
-    const containerPortal = usePortal('box', 'monthpicker-box');
-    const { styles, attributes } = usePopper(referenceElement, popperElement, {
-        placement: 'bottom-start',
-        modifiers: [{ name: 'offset', options: { offset: [0, 4] } }],
-    });
     interface inputType {
         date: Date;
         value: string;
@@ -65,6 +56,22 @@ export const Monthpicker: FC<MonthpickerProps> = ({
 
     const [inputValue, setInputValue] = useState<inputType | string | (() => inputType)>(initializedValue);
     const [active, setActive] = useState(false);
+
+    const { refs, floatingStyles } = useFloating({
+        middleware: [
+            offset({
+                mainAxis: 4,
+                crossAxis: 0,
+                alignmentAxis: 0,
+            }),
+            shift(),
+            autoPlacement({
+                alignment: 'start',
+                allowedPlacements: ['top-start', 'bottom-start'],
+                crossAxis: true,
+            }),
+        ],
+    });
 
     const handleInputFocus = useCallback(
         (event, data) => {
@@ -128,6 +135,15 @@ export const Monthpicker: FC<MonthpickerProps> = ({
         [isOpen, onKeyPress]
     );
 
+    const handleKeyDown = useCallback((event) => {
+        if (event.keyCode === 8) {
+            setInputValue('');
+            if (typeof onChange === 'function') {
+                onChange(event, { date: undefined, value: '', name });
+            }
+        }
+    }, []);
+
     const handleClickDocument = (event): void => {
         if (
             event.target instanceof Node &&
@@ -171,7 +187,7 @@ export const Monthpicker: FC<MonthpickerProps> = ({
     }, []);
 
     return (
-        <Box ref={setReferenceElement as any} id='monthpicker-box' onBlur={handleBlur} onClick={handleClickInput}>
+        <Box ref={refs.setReference} id='monthpicker-box' onBlur={handleBlur} onClick={handleClickInput}>
             <InputBox>
                 <Input
                     {...(attrs as {})}
@@ -195,15 +211,16 @@ export const Monthpicker: FC<MonthpickerProps> = ({
                     onChange={handleChangeInput}
                     onFocus={handleInputFocus}
                     onKeyPress={handleKeyPress}
+                    onKeyDown={handleKeyDown}
                 />
             </InputBox>
-            {isOpen &&
-                ReactDOM.createPortal(
+            {isOpen && (
+                <FloatingPortal>
                     <CalendarBox
-                        ref={setPopperElement as any}
-                        style={styles.popper}
-                        onMouseDown={handleMouseDownCalendar}
-                        {...attributes.popper}>
+                        data-id='calendar'
+                        ref={refs.setFloating}
+                        style={floatingStyles}
+                        onMouseDown={handleMouseDownCalendar}>
                         <Calendar
                             mode='month'
                             date={(inputValue as any)?.date}
@@ -211,9 +228,9 @@ export const Monthpicker: FC<MonthpickerProps> = ({
                             localization={localization}
                             onChangeMonth={handleClickMonth}
                         />
-                    </CalendarBox>,
-                    containerPortal ?? document.body
-                )}
+                    </CalendarBox>
+                </FloatingPortal>
+            )}
         </Box>
     );
 };

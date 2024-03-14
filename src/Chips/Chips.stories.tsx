@@ -62,18 +62,26 @@ export const ChipsWithTooltip: Story<ChipsProps> = (args) => {
 
     return (
         <Chips {...args} active={active} onClick={onClick} {...args}>
-            <Chips.Item size='l' id='1' tabIndex={1}>
-                <Tooltip content={'Chip 1 Tooltip text'}>Chip 1</Tooltip>
-            </Chips.Item>
-            <Chips.Item size='l' id='2' tabIndex={1}>
-                <Tooltip content={'Chip 2 Tooltip text'}>Chip 2</Tooltip>
-            </Chips.Item>
-            <Chips.Item size='l' id='3' tabIndex={1}>
-                <Tooltip content={'Chip 3 Tooltip text'}>Chip 3</Tooltip>{' '}
-            </Chips.Item>
-            <Chips.Item size='l' id='4' tabIndex={1} disabled>
-                <Tooltip content={'Chip 4 Tooltip text'}>Chip 4</Tooltip>
-            </Chips.Item>
+            <Tooltip action={'hover'} content={'Chip 1 Tooltip text'}>
+                <Chips.Item size='l' id='1' tabIndex={1}>
+                    Chip 1
+                </Chips.Item>
+            </Tooltip>
+            <Tooltip action={'hover'} content={'Chip 2 Tooltip text'}>
+                <Chips.Item size='l' id='2' tabIndex={1}>
+                    Chip 2
+                </Chips.Item>
+            </Tooltip>
+            <Tooltip action={'hover'} content={'Chip 3 Tooltip text'}>
+                <Chips.Item size='l' id='3' tabIndex={1}>
+                    Chip 3
+                </Chips.Item>
+            </Tooltip>
+            <Tooltip action={'hover'} content={'Chip 4 Tooltip text'}>
+                <Chips.Item size='l' id='4' tabIndex={1} disabled>
+                    Chip 4
+                </Chips.Item>
+            </Tooltip>
         </Chips>
     );
 };

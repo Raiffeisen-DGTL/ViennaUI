@@ -1,6 +1,5 @@
 import React, { useRef, useMemo, useState, useCallback } from 'react';
-import ReactDOM from 'react-dom';
-import { usePopper } from 'react-popper';
+import { useFloating, offset, autoPlacement, shift, FloatingPortal } from '@floating-ui/react';
 import { Filter as FilterIcon } from 'vienna.icons';
 import { useOutsideClick } from 'vienna.react-use';
 import { Groups } from '../../../Groups';
@@ -115,17 +114,21 @@ export const Filter: React.FC<TableFilterProps> = (props) => {
         );
     }, [id, title, isActive, icon, filter, setFilterCb]);
 
-    const [referenceElement, setReferenceElement] = useState(null);
-    const [popperElement, setPopperElement] = useState(null);
-    const { styles, attributes } = usePopper(referenceElement, popperElement, {
-        placement: 'bottom-start',
-        modifiers: [
-            {
-                name: 'offset',
-                options: {
-                    offset: getFilterPopupOffset(size),
-                },
-            },
+    const offsetPopup = getFilterPopupOffset(props.size);
+
+    const { refs, floatingStyles } = useFloating({
+        middleware: [
+            offset({
+                mainAxis: offsetPopup[0],
+                crossAxis: offsetPopup[1],
+                alignmentAxis: 0,
+            }),
+            shift(),
+            autoPlacement({
+                alignment: 'start',
+                allowedPlacements: ['top-start', 'bottom-start'],
+                crossAxis: true,
+            }),
         ],
     });
 
@@ -137,24 +140,20 @@ export const Filter: React.FC<TableFilterProps> = (props) => {
                 <ColumnTitle
                     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                     // @ts-ignore
-                    ref={setReferenceElement}
+                    ref={refs.setReference}
                     title={title}
                     active={isActive}
                     icon={icon}
                     forceIconVisibility={forceIconVisibility}
                     onClick={open}
                 />
-                {active &&
-                    ReactDOM.createPortal(
-                        <FilterPopup
-                            {...(attributes.popper as {})}
-                            $size={size}
-                            ref={setPopperElement as any}
-                            style={styles.popper}>
+                {active && (
+                    <FloatingPortal>
+                        <FilterPopup $size={size} ref={refs.setFloating} style={floatingStyles}>
                             <div ref={popupRef}>{content}</div>
-                        </FilterPopup>,
-                        document.body
-                    )}
+                        </FilterPopup>
+                    </FloatingPortal>
+                )}
             </div>
         </FilterProvider>
     );

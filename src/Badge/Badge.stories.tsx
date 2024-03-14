@@ -10,7 +10,7 @@ export default {
 
 export const Overview: Story<BadgeProps> = (args) => {
     return (
-        <Badge grid={1} {...args}>
+        <Badge grid={2} {...args}>
             Some text
         </Badge>
     );
@@ -18,7 +18,7 @@ export const Overview: Story<BadgeProps> = (args) => {
 
 export const WithIcon: Story<BadgeProps> = (args) => {
     return (
-        <Badge grid={1} {...args}>
+        <Badge grid={2} {...args}>
             <Attach size='s' />
             Some text
         </Badge>
@@ -28,7 +28,7 @@ WithIcon.storyName = 'С иконкой';
 
 export const WithAdaptive: Story<BadgeProps> = (args) => {
     return (
-        <Badge grid={1} size={{ belowS: 's', s: 'm', m: 'l' }}>
+        <Badge grid={2} size={{ belowS: 's', s: 'm', m: 'l' }}>
             <Attach size='s' />
             Some text
         </Badge>

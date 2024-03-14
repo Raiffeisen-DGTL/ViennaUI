@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from '../Utils/styling';
 import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { ColorType } from '../Typography/Text/Text.styles';
 
 const presets = getPresets('link', {
     base: null,
@@ -13,6 +14,10 @@ const presets = getPresets('link', {
     custom: null,
 });
 
+const typography = getPresets('typography', {
+    color: '$color',
+});
+
 const wrapper = getPresets('link.wrapper', {
     base: null,
     design: '$design',
@@ -23,6 +28,7 @@ const wrapper = getPresets('link.wrapper', {
 
 export interface PropsBox<B = Breakpoints> {
     $design?: 'accent' | 'accent-underline' | 'primary' | 'secondary';
+    $color?: ColorType;
     $size?: ResponsiveProp<'s' | 'm' | 'l' | 'xl' | 'xxl', B>;
     $loading?: boolean;
     $disabled?: boolean;
@@ -31,6 +37,7 @@ export interface PropsBox<B = Breakpoints> {
 export const Wrapper = styled.span<PropsBox>`
     ${wrapper.base}
     ${wrapper.design}
+    ${typography.color}
     // this should overwrite vertical-align on Box
     vertical-align: baseline !important;
 
@@ -56,6 +63,7 @@ export const Box = styled.a<PropsBox>`
     ${presets.base}
     ${presets.size}
     ${presets.design}
+    ${typography.color}
 
     &:hover,
     &:focus {

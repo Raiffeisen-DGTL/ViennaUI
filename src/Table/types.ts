@@ -16,6 +16,7 @@ import {
     GroupByState,
     SettingsConfig,
     ActionsColumnProps,
+    ColoredRowsState,
 } from './components';
 
 export interface TableConfig {
@@ -39,6 +40,7 @@ export interface TableState {
     selectRow?: SelectRowState;
     groupBy?: GroupByState;
     filter?: FilterState;
+    coloredRows?: ColoredRowsState;
 }
 
 export type UpdateTableState = (id: string, newState: TableState | ((prev: TableState) => TableState)) => void;

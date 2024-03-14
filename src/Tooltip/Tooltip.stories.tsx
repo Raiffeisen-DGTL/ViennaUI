@@ -11,8 +11,16 @@ export default {
 } as Meta;
 
 export const Overview: Story<TooltipProps<HTMLInputElement>> = (args) => {
+    const [state, setState] = React.useState(false);
+
+    React.useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setState(false);
+        });
+    }, [])
+
     return (
-        <Tooltip offset={[0,0]} placement={'bottom'} content='tooltip' {...args}>
+        <Tooltip action='hover' offset={[0,0]} visible={state} placement={'bottom'} content='tooltip' onVisibleChange={(event) => setState(event)} {...args}>
             {(ref)=><Input ref={ref} />}
         </Tooltip>
     );

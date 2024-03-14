@@ -18,7 +18,7 @@ export type PopoverProps<Pop extends HTMLElement = HTMLElement> = Omit<TriggerPr
     };
 
 function PopoverInternal<Pop extends HTMLElement>(
-    { content, width = 250, style, children, onOpen, onClose, ...attrs }: PopoverProps<Pop>,
+    { content, width = 250, style, children, disableOutsideClick, onOpen, onClose, ...attrs }: PopoverProps<Pop>,
     forwardedRef: Ref<ITrigger>
 ) {
     const triggerRef = useRef<ITrigger>(null);
@@ -29,7 +29,7 @@ function PopoverInternal<Pop extends HTMLElement>(
             <PopoverPopup
                 ref={ref}
                 width={width}
-                style={{ ...style, ...styles.popper }}
+                style={{ ...style, ...styles }}
                 onClose={closePopoverPopup}
                 {...(attrs as {})}>
                 {content}
@@ -54,6 +54,7 @@ function PopoverInternal<Pop extends HTMLElement>(
             ref={composeRef(forwardedRef, triggerRef)}
             renderTarget={renderTarget}
             renderPopup={renderPopup}
+            disableOutsideClick={disableOutsideClick}
             onOpen={onOpen}
             onClose={onClose}
             {...(attrs as {})}

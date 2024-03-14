@@ -17,6 +17,8 @@ export type InputNumberProps = Omit<InputMaskProps, 'value' | 'maxLength' | 'mas
         padFractionalZeros?: boolean;
         min?: number;
         max?: number;
+        /** По умолчанию false: если true, то при вводе значения (при фокусе) сохраняется маска */
+        isFocusAllowMask?: boolean;
         onChange?: (value: number | null) => void;
     };
 
@@ -31,6 +33,7 @@ export const InputNumber: FC<InputNumberProps> = forwardRef<HTMLInputElement, In
         thousandsSeparator = ' ',
         padFractionalZeros,
         value,
+        isFocusAllowMask,
         ...attrs
     } = props;
 
@@ -60,14 +63,17 @@ export const InputNumber: FC<InputNumberProps> = forwardRef<HTMLInputElement, In
 
     const handleFocus = useCallback(
         (event: FocusEvent<HTMLInputElement>) => {
-            setDynamicThousandsSeparator('');
-            setPadFractionalZeros(false);
-            setNormalizeZeros(false);
+            if (!isFocusAllowMask) {
+                setDynamicThousandsSeparator('');
+                setPadFractionalZeros(false);
+                setNormalizeZeros(false);
+            }
+
             if (typeof onFocus === 'function') {
                 onFocus(event, { name, value: event.target.value });
             }
         },
-        [onFocus, name]
+        [onFocus, name, isFocusAllowMask]
     );
 
     const maskOptions = {

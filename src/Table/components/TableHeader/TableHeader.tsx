@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
-import { useTableConfig, useTableService } from '../Context/TableContext';
+import { useTableConfig, useTableService } from '../Context';
 import { Header, Row, Th } from './TableHeader.styles';
-import { Resizer } from '../ResizableColumn/Resizer';
+import { Resizer } from '../ResizableColumn';
 import { Selector, SELECT_ALL } from '../SelectRow';
 import { DraggableColumn, useDraggableColumn } from '../DraggableColumn';
 import { ColumnGroupInternal } from '../ColumnGroup';
@@ -33,10 +33,7 @@ export const TableHeader = () => {
 
     const content = useMemo(() => {
         return columns().map((column, index) => {
-            // removing title from attrs
-            // eslint-disable-next-line  @typescript-eslint/no-unused-vars
-            const { id, title, sortable, resizable, draggable, groupId, filter, width, ...attrs } = column;
-
+            const { id, sortable, resizable, draggable, groupId, filter, ...attrs } = column;
             const pinned = pinnableColumns && (column.pinned || columnIdsInPinnedGroups.includes(id));
             const isHover = sortable ?? resizable ?? draggable ?? filter;
 
@@ -44,6 +41,8 @@ export const TableHeader = () => {
             if (columns()[index + 1]) {
                 hasRightDivider = groupId !== columns()[index + 1].groupId;
             }
+
+            const width = column.width ? column.width : null;
 
             const Title = filter ? Filter : sortable ? Sort : BasicTitle;
 
@@ -66,7 +65,7 @@ export const TableHeader = () => {
                     $hasBottomDivider
                     $hasRightDivider={hasRightDivider}
                     $pinned={pinned}
-                    $width={width}>
+                    $width={width || undefined}>
                     <Title column={column} size={size} />
                     {resizable && <Resizer size={size} />}
                     {draggable && <DraggableColumn />}

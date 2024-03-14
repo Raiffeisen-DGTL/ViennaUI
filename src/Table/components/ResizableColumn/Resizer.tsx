@@ -7,7 +7,7 @@ interface ResizerProps {
 }
 
 export const Resizer: FC<ResizerProps> = ({ size }) => {
-    const events = useResizableColumns();
+    const { resizerRef, onMouseDown } = useResizableColumns();
 
-    return <ResizerLine $size={size} {...events} />;
+    return <ResizerLine ref={resizerRef} $size={size} onMouseDown={onMouseDown} />;
 };

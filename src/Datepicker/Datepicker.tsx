@@ -80,6 +80,11 @@ export interface DatepickerProps
      * Дефолтное значение отображаемой даты
      */
     defaultDisplayedDate?: Date;
+
+    /**
+     * Портал для dropdown
+     */
+    dropdownPortal?: HTMLElement | React.MutableRefObject<HTMLElement | null> | null;
 }
 
 export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
@@ -107,6 +112,7 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
             locale,
             onChangeDisplayedDate,
             defaultDisplayedDate,
+            dropdownPortal = null,
             ...attrs
         },
         ref
@@ -116,7 +122,7 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
         const [active, setActive] = useState(false);
         const datepickerEl = useRef<HTMLDivElement>(null);
 
-        const { refs, floatingStyles } = useFloating({
+        const { refs, floatingStyles, update } = useFloating({
             middleware: [
                 offset({
                     mainAxis: 4,
@@ -145,6 +151,7 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
         useEffect(() => {
             if (isOpen) {
                 setActive(true);
+                update();
             }
         }, [isOpen]);
 
@@ -229,6 +236,10 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
             }
         };
 
+
+        const dateValue = useMemo(() => getDateFromString(value as Date | string), [value, isDisabled]);
+
+
         useEffect(() => {
             if (document.body) {
                 document.body.addEventListener('click', handleClickDocument);
@@ -239,9 +250,13 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
                     document.body.removeEventListener('click', handleClickDocument);
                 }
             };
-        });
+        }, []);
 
-        const dateValue = useMemo(() => getDateFromString(value as Date | string), [value, isDisabled]);
+        useEffect(() => {
+            if (value === null) {
+                handleChangeInput('');
+            }
+        }, [value, handleChangeInput]);
 
         const handleMouseDownCalendar = useCallback((e) => {
             e.preventDefault();
@@ -278,31 +293,30 @@ export const Datepicker = forwardRef<HTMLInputElement, DatepickerProps>(
                         onFocus={handleInputFocus}
                     />
                 </InputBox>
-                {isOpen && (
-                    <FloatingPortal>
-                        <CalendarBox
-                            data-id='calendar'
-                            ref={refs.setFloating}
-                            style={floatingStyles}
-                            onMouseDown={handleMouseDownCalendar}>
-                            <Calendar
-                                date={dateValue}
-                                eventDates={eventDates}
-                                weekendDates={weekendDates}
-                                maxDate={maxDate}
-                                minDate={minDate}
-                                todayButton={todayButton}
-                                disabledDates={disabledDates}
-                                startingWeekDay={startingWeekDay}
-                                localization={localization}
-                                locale={locale}
-                                defaultDisplayedDate={defaultDisplayedDate}
-                                onChange={handleClickDate}
-                                onChangeDisplayedDate={onChangeDisplayedDate}
-                            />
-                        </CalendarBox>
-                    </FloatingPortal>
-                )}
+                <FloatingPortal root={dropdownPortal}>
+                    <CalendarBox
+                        data-id='calendar'
+                        ref={refs.setFloating}
+                        style={floatingStyles}
+                        $hidden={!isOpen}
+                        onMouseDown={handleMouseDownCalendar}>
+                        <Calendar
+                            date={dateValue}
+                            eventDates={eventDates}
+                            weekendDates={weekendDates}
+                            maxDate={maxDate}
+                            minDate={minDate}
+                            todayButton={todayButton}
+                            disabledDates={disabledDates}
+                            startingWeekDay={startingWeekDay}
+                            localization={localization}
+                            locale={locale}
+                            defaultDisplayedDate={defaultDisplayedDate}
+                            onChange={handleClickDate}
+                            onChangeDisplayedDate={onChangeDisplayedDate}
+                        />
+                    </CalendarBox>
+                </FloatingPortal>
             </Box>
         );
     }

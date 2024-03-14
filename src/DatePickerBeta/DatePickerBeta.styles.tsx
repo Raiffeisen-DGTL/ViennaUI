@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { getPresets } from '../Utils/styling';
 
 const presets = getPresets('datepicker', {
@@ -16,6 +16,14 @@ export const InputBox = styled.div`
     position: relative;
 `;
 
-export const CalendarBox = styled.div`
+interface CalendarBoxProps {
+    $hidden: boolean;
+}
+export const CalendarBox = styled.div<CalendarBoxProps>`
     ${presets.calendar};
+    ${({ $hidden }) =>
+        $hidden &&
+        css`
+            display: none;
+        `};
 `;

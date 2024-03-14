@@ -166,7 +166,21 @@ export const Body: React.FC<Props> = (props) => {
                 );
             }
         }
-    }, [viewMode, displayedDate, date, dateStart, dateEnd, minDate, maxDate, disabledDates, allowMultiple]);
+    }, [
+        onChangeDate,
+        onChangeMonth,
+        onGoToMonth,
+        onGoToToday,
+        viewMode,
+        displayedDate,
+        date,
+        dateStart,
+        dateEnd,
+        minDate,
+        maxDate,
+        disabledDates,
+        allowMultiple,
+    ]);
 
     return <>{content}</>;
 };

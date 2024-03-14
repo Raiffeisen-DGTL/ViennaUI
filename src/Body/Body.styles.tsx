@@ -81,3 +81,41 @@ export const GlobalCustomFonts = createGlobalStyle`
         font-style: normal;
     }
 `;
+
+export const GlobalCustomFontsLocal = createGlobalStyle`
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('./resources/ALS_Hauss-Regular.eot') format('eot'), /* Fix IE11 */
+        url('./resources/ALS_Hauss-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('./resources/ALS_Hauss-Medium.eot') format('eot'), /* Fix IE11 */
+        url('./resources/ALS_Hauss-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('./resources/ALS_Hauss-Bold.eot') format('eot'), /* Fix IE11 */
+        url('./resources/ALS_Hauss-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('./resources/Navigo-Bold-Web.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+`;

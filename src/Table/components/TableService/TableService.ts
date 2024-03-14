@@ -8,6 +8,7 @@ import { draggableColumnService, DraggableColumnService } from '../DraggableColu
 import { columnGroupService, ColumnGroupService } from '../ColumnGroup/ColumnGroupService';
 import { groupByService, GroupByService } from '../GroupBy/GroupByService';
 import { filterService, FilterService } from '../Filter/FilterService';
+import { coloredRowsService, ColoredRowsService } from '../ColoredRows/ColoredRowsService';
 
 interface RootService {
     sync: (state, data) => void;
@@ -22,7 +23,8 @@ export type TableService = RootService &
     DraggableColumnService &
     ColumnGroupService &
     GroupByService &
-    FilterService;
+    FilterService &
+    ColoredRowsService;
 
 export type TableServiceFactory = (
     state: TableState,
@@ -54,5 +56,6 @@ export const tableService: TableServiceFactory = function (state, update, config
         ...columnGroupService(getState, update, config),
         ...groupByService(getState, update, config),
         ...filterService(getState, update),
+        ...coloredRowsService(getState, update),
     };
 };

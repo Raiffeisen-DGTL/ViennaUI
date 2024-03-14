@@ -53,7 +53,7 @@ export const MonthSingleDays: React.FC<MonthSingleProps<Date | Date[]>> = (props
                 onChangeDate(nextDateState);
             }
         },
-        [dateState, allowMultiple]
+        [onChangeDate, dateState, allowMultiple]
     );
 
     const checkIsActiveDay = useCallback(
@@ -155,18 +155,7 @@ export const MonthSingleDays: React.FC<MonthSingleProps<Date | Date[]>> = (props
 
             setDays(days);
         },
-        [
-            date,
-            disabledDates,
-            displayedDate,
-            eventDates,
-            maxDate,
-            minDate,
-            onChangeDate,
-            dateState,
-            startingWeekDay,
-            allowMultiple,
-        ]
+        [date, disabledDates, displayedDate, eventDates, maxDate, minDate, dateState, startingWeekDay, allowMultiple]
     );
 
     const initDate = useCallback(() => {
@@ -194,7 +183,7 @@ export const MonthSingleDays: React.FC<MonthSingleProps<Date | Date[]>> = (props
                 </Day>
             );
         });
-    }, [days, dateState, displayedDate]);
+    }, [handleChangeDate, days, dateState, displayedDate]);
 
     return (
         <>

@@ -44,7 +44,9 @@ export class HoverStrategy implements IActionStrategy {
         return this.clearPopup;
     }
 
-    private readonly onTargetMouseEnter = () => {!this.options.visible && this.options.onOpen();}
+    private readonly onTargetMouseEnter = () => {
+        !this.options.visible && this.options.onOpen();
+    };
 
     private readonly onPopupMouseEnter = () => {
         this.debouncedOnTargetMouseLeave.cancel();

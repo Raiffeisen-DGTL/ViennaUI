@@ -1,4 +1,4 @@
-import React, {Ref} from 'react';
+import React, { Ref } from 'react';
 import { ExecutionProps } from 'styled-components';
 import { Box, PropsBox } from './Text.styles';
 import { Breakpoints } from '../../Utils/responsiveness';
@@ -9,11 +9,11 @@ export interface TextProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsB
     size?: PropsBox<B>['$size'];
     weight?: PropsBox<B>['$weight'];
     color?: PropsBox<B>['$color'];
+    align?: PropsBox<B>['$align'];
     margin?: PropsBox<B>['$margin'];
     uppercase?: PropsBox<B>['$uppercase'];
     monospace?: PropsBox<B>['$monospace'];
     forwardedRef?: Ref<HTMLElement>;
-
 }
 
 export function Text<B = void>({
@@ -22,6 +22,7 @@ export function Text<B = void>({
     size = 'm',
     weight,
     color = 'brand-primary',
+    align,
     margin,
     uppercase,
     monospace,
@@ -36,6 +37,7 @@ export function Text<B = void>({
             $size={size}
             $weight={weight}
             $color={color}
+            $align={align}
             $margin={margin}
             $uppercase={uppercase}
             $monospace={monospace}>

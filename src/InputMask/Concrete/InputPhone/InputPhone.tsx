@@ -1,22 +1,18 @@
-import React, { forwardRef, useCallback, useState } from 'react';
+import React, { forwardRef, useCallback } from 'react';
 import { FactoryOpts } from 'imask';
 import { InputMask, InputMaskProps } from '../../InputMask';
 import { getMaskOptionsFromProps } from '../../utils';
 
 export type InputPhoneProps = Omit<InputMaskProps, 'maskOptions'> & FactoryOpts & {};
 
-const regexpFirstEight = /(8)(\d{10})/;
-
 export const InputPhone = forwardRef<HTMLInputElement, InputPhoneProps>((props, ref) => {
-    const [active, setActive] = useState(false);
     // @ts-ignore
     const maskOptions = getMaskOptionsFromProps(props);
 
-    const { onFocus, onBlur, onKeyDown, ...attrs } = props;
+    const { onFocus, onBlur, onKeyDown, placeholder, smartPlaceholder, value, ...attrs } = props;
 
     const handleFocus = useCallback(
         (e, data) => {
-            setActive(true);
             if (typeof onFocus === 'function') {
                 onFocus(e, data);
             }
@@ -26,7 +22,6 @@ export const InputPhone = forwardRef<HTMLInputElement, InputPhoneProps>((props, 
 
     const handleBlur = useCallback(
         (e, data) => {
-            setActive(false);
             if (typeof onBlur === 'function') {
                 onBlur(e, data);
             }
@@ -46,28 +41,40 @@ export const InputPhone = forwardRef<HTMLInputElement, InputPhoneProps>((props, 
         [onKeyDown]
     );
 
+    const isDefaultPlaceholder = !smartPlaceholder && !placeholder;
+    const correctPlaceholder = isDefaultPlaceholder ? '+7 (___) ___-__-__' : (smartPlaceholder as any) || placeholder;
+
+    const mask = (maskOptions.mask as string) || '+{7} (000) 000-00-00';
+
     return (
         <InputMask
             ref={ref}
+            value={value || ''}
             // @ts-ignore
             maskOptions={{
                 ...maskOptions,
-                mask: (maskOptions.mask as string) || '+{7} (000) 000-00-00',
+                mask,
                 lazy: true,
                 placeholderChar: maskOptions.placeholderChar || '',
                 prepare:
                     maskOptions.prepare ||
-                    ((value: string): string => {
-                        if (!value) {
+                    ((char, masked) => {
+                        if (char === undefined) {
                             return ' ';
                         }
-                        return value.replace(regexpFirstEight, '+7$2');
+
+                        if (isDefaultPlaceholder && char === '8' && !masked.value) {
+                            return ' ';
+                        }
+
+                        return char;
                     }),
             }}
+            placeholder={correctPlaceholder}
+            smartPlaceholder={correctPlaceholder}
             onKeyDown={handleKeyDown}
             onFocus={handleFocus}
             onBlur={handleBlur}
-            smartPlaceholder={active ? props.smartPlaceholder || '+7 (___) ___-__-__' : ''}
             {...attrs}
         />
     );

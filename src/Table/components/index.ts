@@ -19,3 +19,4 @@ export * from './ActionsColumn';
 export * from './Filter';
 export * from './ColumnTitle';
 export * from './TableService';
+export * from './ColoredRows';

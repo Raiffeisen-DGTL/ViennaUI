@@ -10,5 +10,5 @@ export default {
 export const Overview: Story<InputMaskProps> = (args) => {
     const [value, setValue] = useState('');
     const changeHandler = useCallback((value) => setValue(value), []);
-    return <InputMask mask={Date} value={value} onChange={changeHandler} {...args} />;
+    return <InputMask maskOptions={{mask: Date}} value={value} onChange={changeHandler} {...args} />;
 };

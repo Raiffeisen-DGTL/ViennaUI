@@ -18,6 +18,7 @@ const slider = getPresets('switcher.slider', {
 
 const control = getPresets('switcher.control', {
     base: null,
+    focus: null,
     size: responsivePreset('$size', 'm'),
     push: responsivePreset('$size', 'm'),
     disabledCheked: null,
@@ -73,6 +74,10 @@ export const Handle = styled.span<PropsHandle>`
 
         ${control.base}
         ${control.size}
+    }
+
+    &:focus {
+        ${control.focus}
     }
 
     ${({ $checked }) =>

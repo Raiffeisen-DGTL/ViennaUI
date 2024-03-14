@@ -36,7 +36,7 @@ const selectProps = {
     },
 };
 
-const LIMIT_DEFAULT_TIME_OPTIONS = 5;
+const LIMIT_DEFAULT_TIME_OPTIONS = 100;
 
 // вспомогательная функция для Select
 // генерирует набор данных постепенно для оптимизации первого рендера
@@ -177,6 +177,9 @@ export const DateTimePicker = React.forwardRef<HTMLDivElement, DateTimePickerPro
                         <Right $isInput={right.type === InputDate}>
                             {React.cloneElement(right, {
                                 value: pickTime(value),
+                                options: right.props.children
+                                    ? null
+                                    : right.props.options || getDefaultTimeOptions(step, timeFrom, timeTo),
                                 $options: right.props.children
                                     ? null
                                     : right.props.options || getDefaultTimeOptions(step, timeFrom, timeTo),
@@ -186,6 +189,7 @@ export const DateTimePicker = React.forwardRef<HTMLDivElement, DateTimePickerPro
                                 onSelect: timeChangeHandler,
                                 design,
                                 disabled,
+                                size,
                                 ...(right.type === Select ? selectProps : {}),
                             })}
                         </Right>

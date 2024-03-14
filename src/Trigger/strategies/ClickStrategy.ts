@@ -27,9 +27,11 @@ export class ClickStrategy implements IActionStrategy {
             this.options.onClose();
         };
 
-        document.addEventListener('click', (event) => isClickOutside([this.target, popup], event) && closePopup(), {
-            signal: controller.signal,
-        });
+        if (!this.options.disableOutsideClick) {
+            document.addEventListener('click', (event) => isClickOutside([this.target, popup], event) && closePopup(), {
+                signal: controller.signal,
+            });
+        }
 
         return abortController;
     }

@@ -11,6 +11,7 @@ import React, {
     useEffect,
 } from 'react';
 import { SelectOpenDown, SelectHide } from 'vienna.icons';
+import type { UseDropConfig } from 'vienna.react-use';
 import { Wrapper, LeftButton, RightButton } from './ComboButton.styles';
 import { DropList } from '../DropList';
 import { ItemProps } from '../DropList/Item';
@@ -34,6 +35,7 @@ export interface ComboButtonProps extends Pick<ButtonProps, 'design' | 'size' | 
     maxListWidth?: number;
     fixed?: boolean;
     float?: 'start' | 'end';
+    align?: UseDropConfig['align'];
 }
 
 export interface CBProps extends ComboButtonProps {
@@ -59,6 +61,7 @@ export function ComboButton({
     maxListHeight,
     fixed,
     maxListWidth,
+    align,
     float,
     disabled,
 }: PropsWithChildren<CBProps>): JSX.Element {
@@ -149,6 +152,7 @@ export function ComboButton({
                     width={maxListWidth}
                     fixed={fixed}
                     float={float}
+                    align={align}
                     followParentWhenScroll={fixed}
                     onHide={handleHide}>
                     {constructOptions()}

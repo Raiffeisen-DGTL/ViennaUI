@@ -22,6 +22,7 @@ const content = getPresets('accordion.item.content', {
 });
 
 export interface PropsHeader {
+    open?: boolean;
     $open?: boolean;
     $disabled?: boolean;
     $width?: number;

@@ -298,7 +298,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
                 onChange(null, { date: nextDate } as DateResponse<any>);
             }
         },
-        [dateState]
+        [onChange, dateState]
     );
 
     const handleChangeDate = useCallback(
@@ -329,7 +329,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
                 changeSingleDate(nextDate as Date);
             }
         },
-        [dateState, dateStartState, dateEndState]
+        [onChange, changeSingleDate, dateState, dateStartState, dateEndState]
     );
 
     const parsedMinDate = useMemo(
@@ -355,7 +355,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
         if (!ranged && !isDisabled) {
             changeSingleDate(today);
         }
-    }, [displayedDate]);
+    }, [changeSingleDate, displayedDate]);
 
     const initDate = useCallback(() => {
         const nextDate = parseOptionToDate({
@@ -393,7 +393,6 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
         formatDate,
         maxDate,
         minDate,
-        onChange,
         ranged,
         todayButton,
         defaultDisplayedDate,

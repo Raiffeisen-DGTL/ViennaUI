@@ -114,6 +114,7 @@ export const ContentWrapper = styled.span<PropsContentWrapper>`
 
     & > svg {
         display: block;
+        pointer-events: none;
     }
 
     ${presets.customWrapper}

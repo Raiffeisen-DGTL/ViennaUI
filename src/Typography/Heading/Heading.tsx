@@ -6,6 +6,7 @@ import { BoxStyled } from '../../Utils/styled';
 export interface HeadingProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsBox> {
     size?: PropsBox<B>['$size'];
     color?: PropsBox<B>['$color'];
+    align?: PropsBox<B>['$align'];
     margin?: PropsBox<B>['$margin'];
     uppercase?: PropsBox<B>['$uppercase'];
     monospace?: PropsBox<B>['$monospace'];
@@ -17,6 +18,7 @@ export function Heading<B = void>({
     type = 'h1',
     size = 'xl',
     color = 'brand-primary',
+    align,
     margin = 'none',
     uppercase,
     monospace,
@@ -28,6 +30,7 @@ export function Heading<B = void>({
             as={type}
             $size={size}
             $color={color}
+            $align={align}
             $margin={margin}
             $uppercase={uppercase}
             $monospace={monospace}>

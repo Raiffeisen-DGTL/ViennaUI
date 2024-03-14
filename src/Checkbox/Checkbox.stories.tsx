@@ -9,8 +9,9 @@ export default {
 } as Meta;
 
 export const Overview: Story<CheckboxProps> = (args) => {
+    const [checked, setChecked] = React.useState(false);
     return (
-        <Checkbox size={'l'} {...args}>
+        <Checkbox checked={checked} onChange={()=>setChecked(!checked)} size={'l'} {...args}>
             Checkbox
         </Checkbox>
     );

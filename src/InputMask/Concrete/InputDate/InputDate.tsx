@@ -1,10 +1,10 @@
 import React, { forwardRef, Ref, useEffect } from 'react';
-import { FactoryOpts, MaskedRange } from 'imask';
-import { useIMask } from 'react-imask';
+import { MaskedRange } from 'imask';
 import { InputDateLocalizationProps, defaultInputDateLocalization, InputDateLocalization } from './localization';
 import { InputMaskProps } from '../../InputMask';
 import { useLocalization } from '../../../Localization';
 import { Input } from '../../../Input';
+import { useMask } from '../../../Utils/useMask';
 
 export interface InputDateProps
     extends Omit<InputMaskProps, 'type' | 'value' | 'min' | 'max' | 'maskOptions'>,
@@ -122,17 +122,12 @@ export const InputDate = forwardRef<HTMLInputElement, InputDateProps>((props, ex
         ...rest
     } = props;
     const l10n = useLocalization(localization, defaultInputDateLocalization);
-    const maskProps = mask(type, min, max);
     const placeholderMask = l10n(`ds.inputDate.placeholder.${type}` as keyof InputDateLocalization);
-    const onAccept = (maskedValue, maskRef, inputEvent) => {
-        // вызываем onChange только на изменение инпута пользователем(в остальных случаях событие не приходит)
-        if (inputEvent) {
-            onChange?.(maskedValue);
-        }
-    };
 
-    const { ref, value, setValue, setTypedValue } = useIMask<HTMLInputElement, FactoryOpts>(maskProps, {
-        onAccept,
+    const { ref, value, setValue, setTypedValue, maskRef } = useMask({
+        maskOptions: mask(type, min, max),
+        externalValue,
+        onChange,
         onComplete,
     });
 
@@ -144,7 +139,20 @@ export const InputDate = forwardRef<HTMLInputElement, InputDateProps>((props, ex
         }
     }, [externalValue]);
 
-    return <Input {...rest} smartPlaceholder={lazy ? placeholderMask : ''} ref={composeRef(ref, externalRef)} />;
+    useEffect(() => {
+        if (value === '') {
+            maskRef.current?.updateValue();
+        }
+    }, [value]);
+
+    return (
+        <Input
+            {...rest}
+            value={value}
+            smartPlaceholder={lazy ? placeholderMask : ''}
+            ref={composeRef(ref, externalRef)}
+        />
+    );
 });
 
 InputDate.displayName = 'InputDate';

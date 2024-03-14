@@ -62,7 +62,6 @@ export const BoxItem = styled.span<PropsBoxItem>`
     ${({ $disabled }) =>
         $disabled &&
         css`
-            pointer-events: none;
             ${presets.disabled};
         `}
 
