@@ -9,7 +9,11 @@ export default {
 } as Meta;
 
 export const Overview: Story<AvatarProps> = (args) => {
-    return <Avatar src='https://bad.url.to.avatar/avatar.png' size={{ belowM: 'l', belowS: 's' }} {...args} />;
+    return <Avatar>
+        <RoundIcon color='nice10'>
+            A
+        </RoundIcon>
+    </Avatar>
 };
 
 export const NoIcon: Story<AvatarProps> = (args) => {

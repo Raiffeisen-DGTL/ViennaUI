@@ -182,7 +182,7 @@ return (
     onSelect={handleSelect}
 >
     <Select.Option value={{ name: 'Значение 1', text: 'Значение 1 - сложное' }} />
-    <Select.Option value={{ name: 'Значение 2', , text: 'Значение 2 - сложное' }} />
+    <Select.Option value={{ name: 'Значение 2',  text: 'Значение 2 - сложное' }} />
 </Select>
 ```
 

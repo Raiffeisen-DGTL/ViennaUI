@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { getPresets } from '../../Utils/styling';
 import { Breakpoints, ResponsiveProp, responsivePreset } from '../../Utils/responsiveness';
+import { ColorType } from '../Text/Text.styles';
 
 const presets = getPresets('typography.heading', {
     base: null,
@@ -14,22 +15,8 @@ const typography = getPresets('typography', {
 
 export interface PropsBox<B = Breakpoints> {
     $size?: ResponsiveProp<'xs' | 's' | 'm' | 'l' | 'xl', B>;
-    $color?:
-        | 'brand-accent'
-        | 'brand-white'
-        | 'brand-primary'
-        | 'geneva100'
-        | 'moscow100'
-        | 'osaka100'
-        | 'seattle01'
-        | 'seattle05'
-        | 'seattle10'
-        | 'seattle30'
-        | 'seattle60'
-        | 'seattle100'
-        | 'seattle120'
-        | 'seattle140'
-        | 'currentColor';
+    $color?: ColorType;
+    $align?: 'left' | 'center' | 'right' | 'justify';
     $margin?: ResponsiveProp<'none' | 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl', B>;
     $uppercase?: boolean;
     $monospace?: boolean;
@@ -42,6 +29,12 @@ export const Box = styled.h1<PropsBox>`
     ${presets.size}
     ${presets.margin}
     ${typography.color}
+
+    ${({ $align }) =>
+        $align &&
+        css`
+            text-align: ${$align};
+        `};
 
     ${({ $uppercase }) =>
         $uppercase &&

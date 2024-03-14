@@ -153,8 +153,8 @@ export const Interactive: Story<SidebarProps> = (args) => {
                 Mail
             </Sidebar.Item>
             <Sidebar.Item id='docs' onClick={onClick}>
-                <Tooltip content="Element with very long title that doesn't fit" anchor='right' design='dark' truncate>
-                    Element with very long title that doesn't fit
+                <Tooltip content="Element with very long title that doesn't fit" placement='right' design='dark' truncate>
+                    {()=>'Element with very long title that doesn\'t fit'}
                 </Tooltip>
             </Sidebar.Item>
             <Sidebar.Item id='analytics' onClick={onClick}>

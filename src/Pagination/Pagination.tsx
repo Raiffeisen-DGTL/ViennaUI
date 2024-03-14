@@ -82,8 +82,9 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
     );
     useEffect(() => {
         if (pageSize !== prevPageSize.current) {
-            setPage(page);
-            onChange(null, { pageIndex: page, pageSize });
+            const newPage = initialPageIndex && initialPageIndex <= lastPageIndex ? initialPageIndex : 0;
+            setPage(newPage);
+            onChange(null, { pageIndex: newPage, pageSize });
             prevPageSize.current = pageSize;
         }
     }, [pageSize, onChange]);

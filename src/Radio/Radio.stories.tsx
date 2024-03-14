@@ -8,7 +8,8 @@ export default {
 } as Meta;
 
 export const Overview: Story<RadioProps> = (args) => {
-    return <Radio {...args}>Check</Radio>;
+    const [checked, setChecked] = React.useState(false);
+    return <Radio  checked={checked} onChange={()=>setChecked(!checked)} {...args}>Check</Radio>;
 };
 
 export const WithAdaptive: Story<RadioProps> = (args) => {

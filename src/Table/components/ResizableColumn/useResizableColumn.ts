@@ -1,13 +1,12 @@
-import '../../../Utils/elementClosestPolyfill/elementClosestPolyfill';
-import { useEffect } from 'react';
-import { useTableService } from '../Context/TableContext';
+import  { useEffect, useRef } from 'react';
+import { useTableService } from '../Context';
 
 export const useResizableColumns = () => {
     const { setColumnWidth } = useTableService();
+    const resizerRef = useRef(null);
     let pageX;
     let curCol;
     let curColWidth;
-    let resizer;
     let tableHeight;
 
     const onMouseMove = (e) => {
@@ -16,18 +15,23 @@ export const useResizableColumns = () => {
             const diffX = e.pageX - pageX;
             const newWidth = curColWidth + diffX;
 
-            curCol.width = `${newWidth}px`;
+            setColumnWidth(curCol.dataset.column, `${newWidth}px`);
+
+            curCol.style.width = `${newWidth}px`;
         }
     };
 
     const onMouseUp = () => {
         // store new widths in state
-        setColumnWidth(curCol.id, curCol.width);
+        if (curCol) {
+            const colId = curCol.dataset.column;
+            setColumnWidth(colId, curCol.style.width);
+        }
 
-        // clean up
-        resizer.style.height = null;
-        resizer.style.opacity = null;
-        resizer = null;
+        // @ts-ignore
+        resizerRef.current.style.height = null;
+        // @ts-ignore
+        resizerRef.current.style.opacity = null;
         curCol = null;
         pageX = null;
         curColWidth = null;
@@ -38,8 +42,8 @@ export const useResizableColumns = () => {
     const onMouseDown = (e) => {
         e.preventDefault();
 
-        resizer = e.target;
-        curCol = e.target.parentElement;
+        const resizer = e.target;
+        curCol = resizer.parentElement;
         pageX = e.pageX;
 
         curColWidth = curCol.offsetWidth;
@@ -54,11 +58,11 @@ export const useResizableColumns = () => {
     };
 
     useEffect(() => {
-        return function cleanup() {
+        return () => {
             document.removeEventListener('mousemove', onMouseMove);
             document.removeEventListener('mouseup', onMouseUp);
         };
     }, []);
 
-    return { onMouseDown };
+    return { resizerRef, onMouseDown };
 };

@@ -1,7 +1,8 @@
 import React, { Ref, forwardRef, useEffect } from 'react';
-import { useIMask, ReactMaskProps } from 'react-imask';
+import { ReactMaskProps } from 'react-imask';
 import { FactoryOpts, InputElement } from 'imask';
 import { Input, InputProps } from '../Input';
+import { useMask } from '../Utils/useMask';
 
 export type InputMaskProps<Opts extends FactoryOpts = FactoryOpts> = Omit<InputProps, 'value' | 'onChange'> &
     Partial<Pick<ReactMaskProps<InputElement, Opts>, 'onComplete'>> & {
@@ -12,15 +13,10 @@ export type InputMaskProps<Opts extends FactoryOpts = FactoryOpts> = Omit<InputP
 
 export const InputMask = forwardRef<HTMLInputElement, InputMaskProps>(
     ({ value: externalValue, maskOptions, onChange, onComplete, ...rest }, externalRef) => {
-        const onAccept = (maskedValue, maskRef, inputEvent) => {
-            // вызываем onChange только на изменение инпута пользователем(в остальных случаях событие не приходит)
-            if (inputEvent) {
-                onChange?.(maskedValue);
-            }
-        };
-
-        const { ref, value, setValue, setTypedValue, maskRef } = useIMask<HTMLInputElement, FactoryOpts>(maskOptions, {
-            onAccept,
+        const { ref, value, setValue, setTypedValue, maskRef } = useMask({
+            maskOptions,
+            externalValue,
+            onChange,
             onComplete,
         });
 
@@ -33,9 +29,8 @@ export const InputMask = forwardRef<HTMLInputElement, InputMaskProps>(
         }, [externalValue]);
 
         useEffect(() => {
-            maskRef.current?.updateValue();
-            if (externalValue === '') {
-                setValue('');
+            if (value === '') {
+                maskRef.current?.updateValue();
             }
         }, [value]);
 

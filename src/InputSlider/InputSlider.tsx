@@ -23,21 +23,16 @@ import {
 } from './InputSlider.styles';
 import { InputNumber } from '../InputMask';
 import { InputMaskProps } from '../InputMask/InputMask';
+import { omit } from '../Utils/omit';
 
 const defaultOptions = (delimiter = '.', min, max) => ({
-    mask: Number,
     scale: 2,
-    signed: false,
     radix: delimiter,
-    mapToRadix: [',', '.'],
     min,
     max,
-    prepare: (value: string): string => {
-        return value.replace(/\.|,/gm, delimiter);
-    },
 });
 
-export type InputSliderProps = Omit<InputMaskProps, 'value' | 'min' | 'max'> &
+export type InputSliderProps = Omit<InputMaskProps, 'value' | 'min' | 'max' | 'maskOptions'> &
     Pick<InputMaskProps, 'onChange'> & {
         /** Разделитель разряда */
         delimiter?: '.' | ',';
@@ -57,6 +52,7 @@ export type InputSliderProps = Omit<InputMaskProps, 'value' | 'min' | 'max'> &
         children?: ReactNode;
         /** Событие onPointerUp для перехвата момента отпускания слайдера/полоски/тегов обрабатывает мышь и касания */
         onPointerUp?: (event: any) => void;
+        maskOptions?: InputMaskProps['maskOptions'];
     };
 
 // параметры сдвига, которые нельзя передать через css или пресеты
@@ -254,6 +250,12 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
     const handleFocus = useCallback(() => setIsDrag(true), [setIsDrag]);
     const handleBlur = useCallback(() => setIsDrag(false), [setIsDrag]);
 
+    const handleInputBlur = useCallback((event, data) => {
+        onChange(Number(data.value));
+    }, []);
+
+    const attrsWithoutMaskOptions: any = omit(attrs, 'maskOptions');
+
     return (
         <Box $disabled={disabled}>
             {noInput && prefix && <PartLeft>{prefix}</PartLeft>}
@@ -273,9 +275,9 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
                             active={isDrag}
                             prefix={prefix}
                             postfix={postfix}
-                            // @ts-ignore TODO fix it later
                             onChange={onChange}
-                            {...attrs}
+                            onBlur={handleInputBlur}
+                            {...attrsWithoutMaskOptions}
                         />
                     )}
                     <Line onClick={handleLineClick}>

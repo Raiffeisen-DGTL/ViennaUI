@@ -61,6 +61,7 @@ export const Item = forwardRef<HTMLDivElement, ItemProps>(
             <ItemWrapper {...(attrs as {})} ref={ref}>
                 <Header
                     role='header'
+                    open={open}
                     $open={open}
                     $disabled={disabled}
                     $width={width}

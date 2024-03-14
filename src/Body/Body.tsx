@@ -1,13 +1,13 @@
 import React, { ComponentProps, forwardRef } from 'react';
 import { ExecutionProps } from 'styled-components';
-import { Box, GlobalStyles, GlobalCustomFonts } from './Body.styles';
+import { Box, GlobalStyles, GlobalCustomFonts, GlobalCustomFontsLocal } from './Body.styles';
 
-export type BodyProps = Partial<ExecutionProps & ComponentProps<typeof Box>>;
+export type BodyProps = Partial<ExecutionProps & ComponentProps<typeof Box>> & { localFonts?: boolean };
 
-export const Body = forwardRef<HTMLDivElement, BodyProps>(({ ...attrs }, ref) => (
+export const Body = forwardRef<HTMLDivElement, BodyProps>(({ localFonts = false, ...attrs }, ref) => (
     <>
         <GlobalStyles />
-        <GlobalCustomFonts />
+        {localFonts ? <GlobalCustomFontsLocal /> : <GlobalCustomFonts />}
         <Box {...(attrs as {})} ref={ref} />
     </>
 ));

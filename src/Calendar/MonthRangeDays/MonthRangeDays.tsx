@@ -85,7 +85,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props) => 
                 onChangeDate(nextDate);
             }
         },
-        [dateState]
+        [onChangeDate, dateState]
     );
 
     const handleMouseOverOnDay = useCallback(
@@ -137,7 +137,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props) => 
                 </Day>
             );
         });
-    }, [days, dateState, displayedDate]);
+    }, [handleChangeDate, days, dateState, displayedDate]);
 
     const build = useCallback(
         (inputDate: Date = dateState?.start ?? today) => {
@@ -223,7 +223,7 @@ export const MonthRangeDays: React.FC<MonthProps<RangeDate<Date>>> = (props) => 
 
             setDays(days);
         },
-        [displayedDate, onChangeDate, minDate, maxDate, eventDates, disabledDates, date, hoveredDay, startingWeekDay]
+        [ displayedDate, minDate, maxDate, eventDates, disabledDates, date, hoveredDay, startingWeekDay]
     );
 
     const initDate = useCallback(() => {

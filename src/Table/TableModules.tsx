@@ -14,6 +14,7 @@ import {
     ActionsColumnModule,
     SortModule,
     FilterModule,
+    ColoredRowsModule,
 } from './components';
 
 const component2Module = {
@@ -27,6 +28,7 @@ const component2Module = {
     GroupBy: GroupByModule,
     Settings: SettingsModule,
     ActionsColumn: ActionsColumnModule,
+    ColoredRows: ColoredRowsModule,
 };
 
 const initModule = (module: Module, child, settings, config, state, features: TableFeatures) => {

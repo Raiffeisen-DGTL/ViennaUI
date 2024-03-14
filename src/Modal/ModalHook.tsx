@@ -1,6 +1,8 @@
 import React, { useState, Dispatch, ReactNode } from 'react';
-import  { createPortal, render } from "react-dom";
+import { createPortal, render } from 'react-dom';
+import { ThemeProvider } from 'styled-components';
 import { Modal, ModalProps } from './Modal';
+import { ComponentWrapper } from '../Utils/ComponentWrapper/ComponentWrapper';
 
 let modals: ReactNode[] = [];
 let setModals: Dispatch<ReactNode[]>;
@@ -24,9 +26,10 @@ export function useModal(): ModalHook;
 export function useModal(
     modal: ReactNode,
     onClose?: ModalHookClose,
-    modalProps?: Omit<ModalProps, 'state' | 'onClose' | 'children'>
+    modalProps?: Omit<ModalProps, 'state' | 'onClose' | 'children'>,
+    theme?: any
 ): [ModalHookOpen, ModalHookClose];
-export function useModal(modal?: any, onClose?: any, modalProps?: any): any {
+export function useModal(modal?: any, onClose?: any,  modalProps?: any, theme?: any): any {
     const modalRef: any = { current: { close: null } };
     let instance: ReactNode;
 
@@ -58,9 +61,11 @@ export function useModal(modal?: any, onClose?: any, modalProps?: any): any {
         };
 
         instance = (
-            <Modal key={Math.random()} state={state} ref={handleRef} onClose={closeHandler} {...modalProps}>
-                {modal}
-            </Modal>
+            <ComponentWrapper component={theme ? ThemeProvider : undefined} props={{ theme }}>
+                <Modal key={Math.random()} state={state} ref={handleRef} onClose={closeHandler} {...modalProps}>
+                    {modal}
+                </Modal>
+            </ComponentWrapper>
         );
 
         modals.push(instance);

@@ -1,9 +1,9 @@
 import React, { ComponentProps, FormEvent, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import ReactDOM from 'react-dom';
 import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
-import {useFloating, offset, autoPlacement} from '@floating-ui/react';
+import { useFloating, offset, autoPlacement, FloatingPortal } from '@floating-ui/react';
 import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
+import { usePortal } from 'vienna.react-use';
 import { DatePickerBetaLocalizationProps } from './localization';
 import { Calendar, Dates, DateValue, eventDateFunction } from '../Calendar';
 import { InputDateBeta } from '../InputDateBeta';
@@ -12,7 +12,6 @@ import { InputEvent } from '../Input';
 import { Box, InputBox, CalendarBox } from './DatePickerBeta.styles';
 import { checkIsDisabled } from '../Calendar/Utils';
 import { StartingWeekDay } from '../Calendar/types';
-import {usePortal} from "vienna.react-use";
 
 export interface DatePickerBetaProps
     extends Omit<ComponentProps<typeof InputDateBeta>, 'value' | 'type' | 'onChange' | 'onPaste' | 'localization'>,
@@ -118,7 +117,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         const datepickerEl = useRef<HTMLDivElement | null>(null);
         const containerPortal = usePortal('box', 'datepickerbeta-box');
 
-        const { refs, floatingStyles } = useFloating({
+        const { refs, floatingStyles, update } = useFloating({
             placement: 'bottom-start',
             middleware: [
                 offset({
@@ -126,7 +125,11 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
                     crossAxis: 0,
                     alignmentAxis: 0,
                 }),
-                autoPlacement({ alignment: 'start', allowedPlacements: ['top-start', 'bottom-start'], crossAxis: false}),
+                autoPlacement({
+                    alignment: 'start',
+                    allowedPlacements: ['top-start', 'bottom-start'],
+                    crossAxis: false,
+                }),
             ],
         });
 
@@ -143,6 +146,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         useEffect(() => {
             if (isOpen) {
                 setActive(true);
+                update();
             }
         }, [isOpen]);
 
@@ -274,31 +278,30 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
                         {...attrs}
                     />
                 </InputBox>
-                {isOpen &&
-                    ReactDOM.createPortal(
-                        <CalendarBox
-                            ref={refs.setFloating}
-                            data-id='calendar'
-                            onMouseDown={handleMouseDownCalendar}
-                            style={floatingStyles}>
-                            <Calendar
-                                date={dateValue}
-                                eventDates={eventDates}
-                                weekendDates={weekendDates}
-                                maxDate={maxDate}
-                                minDate={minDate}
-                                todayButton={todayButton}
-                                disabledDates={disabledDates}
-                                startingWeekDay={startingWeekDay}
-                                localization={localization}
-                                locale={locale}
-                                defaultDisplayedDate={defaultDisplayedDate}
-                                onChange={handleClickDate}
-                                onChangeDisplayedDate={onChangeDisplayedDate}
-                            />
-                        </CalendarBox>,
-                        containerPortal ?? document.body
-                    )}
+                <FloatingPortal root={containerPortal}>
+                    <CalendarBox
+                        ref={refs.setFloating}
+                        data-id='calendar'
+                        style={floatingStyles}
+                        $hidden={!isOpen}
+                        onMouseDown={handleMouseDownCalendar}>
+                        <Calendar
+                            date={dateValue}
+                            eventDates={eventDates}
+                            weekendDates={weekendDates}
+                            maxDate={maxDate}
+                            minDate={minDate}
+                            todayButton={todayButton}
+                            disabledDates={disabledDates}
+                            startingWeekDay={startingWeekDay}
+                            localization={localization}
+                            locale={locale}
+                            defaultDisplayedDate={defaultDisplayedDate}
+                            onChange={handleClickDate}
+                            onChangeDisplayedDate={onChangeDisplayedDate}
+                        />
+                    </CalendarBox>
+                </FloatingPortal>
             </Box>
         );
     }

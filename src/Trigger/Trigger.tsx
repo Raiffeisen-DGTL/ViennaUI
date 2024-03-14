@@ -9,6 +9,7 @@ import React, {
     useState,
 } from 'react';
 import { useControlState } from 'vienna.react-use';
+import { FloatingPortal } from '@floating-ui/react';
 import { composeRef } from '../Utils/composeRef';
 import {
     IActionStrategy,
@@ -18,21 +19,20 @@ import {
     ITriggerRendererTarget,
 } from './types';
 import { getStrategy } from './strategies';
-import { GetContainer, Portal } from '../Portal';
-import { PopperProps, IPopperRendererPopup, Popper } from '../Popper';
+import { Floating, FloatingProps, IFloatingRendererPopup } from '../Floating';
 
 export type TriggerProps<Target extends HTMLElement = HTMLElement, Popup extends HTMLElement = HTMLElement> = Pick<
-    PopperProps<Target, Popup>,
+    FloatingProps<Target, Popup>,
     'offset' | 'placement'
 > & {
     action?: TriggerActionType;
     visible?: boolean;
     defaultVisible?: boolean;
+    disableOutsideClick?: boolean;
     mouseEnterDelay?: number;
     mouseLeaveDelay?: number;
     renderTarget: ITriggerRendererTarget<Target>;
-    renderPopup?: IPopperRendererPopup<Popup, TriggerRendererPopupProps>;
-    getContainer?: GetContainer;
+    renderPopup?: IFloatingRendererPopup<Popup, TriggerRendererPopupProps>;
     onVisibleChange?: (visible: boolean) => void;
     onOpen?: () => void;
     onClose?: () => void;
@@ -45,11 +45,11 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
         placement = 'auto',
         visible: visibleProp,
         defaultVisible,
+        disableOutsideClick = false,
         mouseEnterDelay = 50,
         mouseLeaveDelay = 50,
         renderTarget,
         renderPopup,
-        getContainer,
         onVisibleChange,
         onOpen,
         onClose,
@@ -88,6 +88,7 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
             onClose: close,
             onOpen: open,
             visible,
+            disableOutsideClick,
         });
 
         setStrategy(strategy);
@@ -109,15 +110,16 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
     return (
         <>
             {renderTarget(setTargetElement, baseRendererProps)}
-            <Popper<Target, Popup> targetElement={targetElement} placement={placement} offset={offset}>
-                {(popupRef, props) => (
-                    <Portal getContainer={getContainer}>
-                        {visible &&
+            {visible && (
+                <FloatingPortal>
+                    <Floating<Target, Popup> targetElement={targetElement} placement={placement} offset={offset}>
+                        {(popupRef, props) =>
                             renderPopup &&
-                            renderPopup(composeRef(popupRef, ownPopupRef), { ...props, ...baseRendererProps })}
-                    </Portal>
-                )}
-            </Popper>
+                            renderPopup(composeRef(popupRef, ownPopupRef), { ...props, ...baseRendererProps })
+                        }
+                    </Floating>
+                </FloatingPortal>
+            )}
         </>
     );
 }

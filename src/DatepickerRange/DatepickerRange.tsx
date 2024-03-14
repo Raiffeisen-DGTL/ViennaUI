@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import ReactDOM from 'react-dom';
 import { Calendar as CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
-import { useFloating, offset, autoPlacement } from '@floating-ui/react';
+import { useFloating, offset, autoPlacement, FloatingPortal } from '@floating-ui/react';
 import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
 import { usePortal } from 'vienna.react-use';
 import { DatePickerRangeLocalizationProps } from './localization';
@@ -99,7 +98,7 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
     const [isDisabled, setIsDisabled] = useState<boolean>(false);
     const containerPortal = usePortal('box', 'datepickerrange-box');
 
-    const { refs, floatingStyles } = useFloating({
+    const { refs, floatingStyles, update } = useFloating({
         placement: 'bottom-start',
         middleware: [
             offset({
@@ -107,9 +106,19 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                 crossAxis: 0,
                 alignmentAxis: 0,
             }),
-            autoPlacement({ alignment: 'start', allowedPlacements: ['top-start', 'bottom-start'], crossAxis: false }),
+            autoPlacement({
+                alignment: 'start',
+                allowedPlacements: ['top-start', 'bottom-start'],
+                crossAxis: false,
+            }),
         ],
     });
+
+    useEffect(() => {
+        if (isOpen) {
+            update();
+        }
+    }, [isOpen]);
 
     useEffect(() => {
         setOpen(isCalendarOpen);
@@ -281,32 +290,31 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                     onKeyPress={handleKeyPress}
                 />
             </InputBox>
-            {isOpen &&
-                ReactDOM.createPortal(
-                    <CalendarBox
-                        data-id='calendar'
-                        ref={refs.setFloating}
-                        style={floatingStyles}
-                        onMouseDown={handleMouseDownCalendar}>
-                        <Calendar
-                            dateStart={dateValue.start}
-                            dateEnd={dateValue.end}
-                            eventDates={eventDates}
-                            maxDate={maxDate}
-                            minDate={minDate}
-                            todayButton={false}
-                            ranged
-                            disabledDates={disabledDates}
-                            startingWeekDay={startingWeekDay}
-                            localization={localization}
-                            locale={locale}
-                            defaultDisplayedDate={defaultDisplayedDate}
-                            onChange={handleClickDate}
-                            onChangeDisplayedDate={onChangeDisplayedDate}
-                        />
-                    </CalendarBox>,
-                    containerPortal ?? document.body
-                )}
+            <FloatingPortal root={containerPortal}>
+                <CalendarBox
+                    data-id='calendar'
+                    ref={refs.setFloating}
+                    style={floatingStyles}
+                    $hidden={!isOpen}
+                    onMouseDown={handleMouseDownCalendar}>
+                    <Calendar
+                        dateStart={dateValue.start}
+                        dateEnd={dateValue.end}
+                        eventDates={eventDates}
+                        maxDate={maxDate}
+                        minDate={minDate}
+                        todayButton={false}
+                        ranged
+                        disabledDates={disabledDates}
+                        startingWeekDay={startingWeekDay}
+                        localization={localization}
+                        locale={locale}
+                        defaultDisplayedDate={defaultDisplayedDate}
+                        onChange={handleClickDate}
+                        onChangeDisplayedDate={onChangeDisplayedDate}
+                    />
+                </CalendarBox>
+            </FloatingPortal>
         </Box>
     );
 };

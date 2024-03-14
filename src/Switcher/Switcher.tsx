@@ -61,7 +61,7 @@ export const Switcher = React.forwardRef(
 
         return (
             <Box {...(attrs as {})}>
-                <Handle $size={size} $disabled={disabled} $checked={checked} />
+                <Handle tabIndex={0} $size={size} $disabled={disabled} $checked={checked} />
                 <Input
                     ref={ref}
                     tabIndex={tabIndex}

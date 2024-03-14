@@ -12,11 +12,5 @@ import { readObjectByPath } from 'vienna.utils';
  * @return {Record<string, any>}
  */
 export function getPreset(preset: string, theme?: Record<string, any>): Record<string, any> {
-    const result = readObjectByPath(theme, preset);
-
-    if (result) {
-        return result;
-    }
-
-    return readObjectByPath(defaultTheme, preset);
+    return theme && readObjectByPath(theme, preset) || readObjectByPath(defaultTheme, preset);
 }

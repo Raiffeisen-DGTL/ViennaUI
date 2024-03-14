@@ -4,6 +4,7 @@ import { GoRight } from 'vienna.icons';
 import { Tooltip } from '../../Tooltip';
 import { Box, Text, Icon, Link, HiddenText, PropsBox } from './Option.styles';
 import { BoxStyled } from '../../Utils/styled';
+import { ComponentWrapper } from '../../Utils/ComponentWrapper/ComponentWrapper';
 
 export interface BreadcrumbsOptionProps
     extends Omit<BoxStyled<typeof Box, PropsBox>, 'onClick'>,
@@ -13,12 +14,24 @@ export interface BreadcrumbsOptionProps
     preLast?: PropsBox['$preLast'];
     altText?: string;
     last?: boolean;
+    withoutTooltip?: boolean;
     value?: any;
     onClick?: (e, data: { value: any }) => void;
 }
 
 export const Option: FC<BreadcrumbsOptionProps> = (props) => {
-    const { onClick, value, size, last, preLast, first, children, altText = '', ...attrs } = props;
+    const {
+        onClick,
+        value,
+        size,
+        last,
+        preLast,
+        first,
+        children,
+        altText = '',
+        withoutTooltip = false,
+        ...attrs
+    } = props;
 
     const { href, rel, type, tabIndex, target, hrefLang, ...boxAttrs } = attrs;
     const wrapperAttrs = { href, rel, type, tabIndex, target, hrefLang };
@@ -118,13 +131,22 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
                     <GoRight size={size === 's' ? 'xs' : 's'} />
                 </Icon>
             )}
-            <Tooltip truncate={!last && !first} disabled={!tooltipEnabled || first} design='dark' action='hover' content={children}>
+            <ComponentWrapper
+                component={withoutTooltip ? undefined : Tooltip}
+                props={{
+                    truncate: !last && !first,
+                    disabled: !tooltipEnabled || first,
+                    design: 'dark',
+                    action: 'hover',
+                    content: children,
+                    children,
+                }}>
                 <Link ref={wrapperRef} {...wrapperAttrs}>
                     <Text $first={first}>{text}</Text>
                     <HiddenText ref={hiddenTextRef}>{children}</HiddenText>
                     <HiddenText ref={hiddenAltTextRef}>{altText}</HiddenText>
                 </Link>
-            </Tooltip>
+            </ComponentWrapper>
         </Box>
     );
 };

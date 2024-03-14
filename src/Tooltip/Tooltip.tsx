@@ -4,6 +4,13 @@ import { composeRef } from '../Utils/composeRef';
 import { Trigger, TriggerProps, TriggerRendererPopupProps, ITrigger } from '../Trigger';
 import { omit } from '../Utils/omit';
 
+const isForwardRefComponent = (element: ReactElement): boolean => {
+    return (
+        typeof element.type === 'string' ||
+        (element.type && (element.type as any).$$typeof === Symbol.for('react.forward_ref'))
+    );
+};
+
 export type TooltipProps<Tlt extends HTMLElement> = Omit<TriggerProps, 'renderPopup' | 'renderTarget'> &
     Omit<BaseTooltipPopupProps, 'children' | 'placement'> & {
         /** Направление открытия */
@@ -45,11 +52,9 @@ function TooltipInternal<Tlt extends HTMLElement>(
 ) {
     const renderPopup = (ref: Ref<HTMLDivElement>, { styles, attributes }: TriggerRendererPopupProps) => {
         if (!content) return null;
-        const placement =
-            attributes?.popper &&
-            (attributes?.popper['data-popper-placement'] as 'left' | 'right' | 'top' | 'bottom' | undefined);
+        const placement = attributes?.placement as 'left' | 'right' | 'top' | 'bottom' | undefined;
 
-        const omitAttrs = omit(attrs, 'placement');
+        const omitAttrs = omit(attrs, 'placement', 'visible', 'onVisibleChange');
 
         return (
             <TooltipPopup
@@ -63,7 +68,7 @@ function TooltipInternal<Tlt extends HTMLElement>(
                 design={design}
                 size={size}
                 className={className}
-                style={{ ...style, ...styles.popper }}
+                style={{ ...style, ...styles }}
                 {...omitAttrs}>
                 {content}
             </TooltipPopup>
@@ -76,7 +81,8 @@ function TooltipInternal<Tlt extends HTMLElement>(
                 ? children
                 : () => {
                       const child = children as ReactElement & { ref: Ref<Tlt> };
-                      return React.cloneElement(child, { ref: composeRef(ref, child.ref) });
+                      const element = isForwardRefComponent(child) ? child : <span>{child}</span>;
+                      return React.cloneElement(element, { ref: composeRef(ref, child.ref) });
                   };
 
         return renderChildren(ref);

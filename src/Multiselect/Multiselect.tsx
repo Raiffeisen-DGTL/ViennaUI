@@ -1,14 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, {
-    useState,
-    useCallback,
-    RefAttributes,
-    ForwardRefExoticComponent,
-    useEffect,
-    ReactNode,
-    useMemo
-} from 'react';
-import { usePopper } from 'react-popper';
+import React, { useCallback, RefAttributes, ForwardRefExoticComponent, useEffect, ReactNode } from 'react';
 import { useCramList } from 'vienna.react-use';
 import { SelectOpenDown, SelectHide, CloseCancelX } from 'vienna.icons';
 import { Box, PropsBox, Current, Part, Chip, Extra, Placeholder, StyledInputWrapper } from './Multiselect.styles';
@@ -22,7 +13,7 @@ import {
 import { DropListInner } from '../DropListInner';
 import { useLocalization } from '../Localization';
 import { BoxStyled } from '../Utils/styled';
-import { defer } from '../Utils/defer';
+import { useSelect, PropsType as UseSelectPropsType } from '../Utils/useSelect';
 
 export type Size = 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
 export type Design = 'outline' | 'material';
@@ -39,8 +30,6 @@ interface Postfix {
 }
 
 type ChildrenFunc = (data: Data) => React.ReactNode;
-type CallbackFunc = (options: any[]) => any[] | Promise<any[]>;
-type ActionType = 'increment' | 'decrement';
 
 export type MultiselectEvent<T = React.FormEvent<HTMLInputElement>> = (
     event: T,
@@ -58,11 +47,12 @@ export type MultiselectScrollEvent<T = React.FormEvent<HTMLInputElement>> = (
 ) => void;
 
 export interface MultiselectProps
-    extends Omit<BoxStyled<typeof Box, PropsBox>, 'prefix' | 'children' | 'onKeyDown' | 'onScroll'>,
+    extends Omit<
+            BoxStyled<typeof Box, PropsBox>,
+            'prefix' | 'children' | 'onKeyDown' | 'onScroll' | 'onFocus' | 'onBlur'
+        >,
+        UseSelectPropsType,
         MultiselectLocalizationProps {
-    /** Имя компонента */
-    name?: string;
-
     /** ID компонента */
     id?: string;
 
@@ -78,17 +68,11 @@ export interface MultiselectProps
     /** Название стиля для компонента (опционально) */
     className?: string;
 
-    /** Компонент неактивен если true */
-    disabled?: boolean;
-
     /** Порядок получения фокуса (-1 = компонент не учавствует в фокусировке по нажатию TAB)  */
     tabIndex?: number;
 
     /** Компонент отображается как ошибочный если true */
     invalid?: boolean;
-
-    /** Список элементов в выпадающем списке: массив, callback функция или promise */
-    options?: any[] | CallbackFunc;
 
     /** Массив выбраных элементов (интерфейсы объектов options и values должны совпадать) */
     values?: any[];
@@ -104,23 +88,8 @@ export interface MultiselectProps
     /** Максимальная ширина выпадающего списка в пикселях */
     maxListWidth?: number;
 
-    /** Разворачивать список при получениее фокуса */
-    openWhenFocus?: boolean;
-
-    /** Обработчик события при прокрутке списка  */
-    onScroll?: MultiselectScrollEvent;
-
     /** Обработчик события при выборе элемента списка  */
     onSelect?: MultiselectEvent<React.FormEvent<HTMLInputElement>>;
-
-    /** Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе  */
-    onKeyDown?: MultiselectEvent<React.KeyboardEventHandler<HTMLInputElement>>;
-
-    /** Обработчик события при потере фокуса компонентом  */
-    onBlur?: MultiselectEvent<React.FocusEvent<HTMLInputElement>>;
-
-    /** Обработчик события при получении фокуса компонентом  */
-    onFocus?: MultiselectEvent<React.FocusEvent<HTMLInputElement>>;
 
     /** Элементы выпадающего списка в случае если не используется свойство options  */
     children?: React.ReactNode | ChildrenFunc;
@@ -138,7 +107,6 @@ export interface MultiselectProps
     minViewItems?: number;
     groupItems?: boolean;
     fixed?: boolean;
-    align?: 'top' | 'bottom' | 'auto';
     ref?: React.Ref<HTMLDivElement>;
 }
 
@@ -148,7 +116,6 @@ const omitNoWrapProp = ({ __nowrap__, ...props }) => props;
 const defaultPostfix = { down: <SelectOpenDown />, up: <SelectHide /> };
 
 const getIcon = (flag, icons, size) => {
-    size = size === 'xs' ? 's' : 'm';
     if (!icons) {
         icons = defaultPostfix;
     }
@@ -181,22 +148,18 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
         values = [],
         size = 'l',
         design = 'outline',
-        openWhenFocus = true,
         maxListHeight = 300,
         maxListWidth,
         valueToString = (item) => (typeof item === 'string' ? item : item?.value),
         compare = (item) => (typeof item === 'string' ? item : item?.value),
-        onScroll,
         onSelect,
-        onKeyDown,
-        onBlur,
         children,
         fitOptions = true,
-        onFocus,
         name,
         fixed,
         minViewItems = 0,
         localization,
+        readonly,
         ...attrs
     } = props;
 
@@ -214,25 +177,50 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
 
     const [containerRef, extraComponentRef, count] = useCramList(values as any, minViewItems);
 
-    const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-    const [referenceElement, setReferenceElement] = useState<HTMLDivElement | null>(null);
-    const { styles, attributes } = usePopper(referenceElement, null, {
-        placement: 'bottom-start',
-        modifiers: [{ name: 'offset', options: { offset: [0, 4] } }],
-    });
+    const reactNodeIsComponent = (elem: ReactNode, component: React.FC): boolean => {
+        return React.isValidElement(elem) ? elem?.type?.toString() === component.toString() : false;
+    };
 
-    useEffect(() => {
-        if (typeof ref === 'function') {
-            ref(referenceElement);
-        } else if (ref && 'current' in ref) {
-            (ref as any).current = referenceElement;
-        }
-    });
-    const [showList, setShowList] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState(-1);
-    const [active, setActive] = useState(false);
+    const reactNodeHasNowrap = (elem: ReactNode): boolean => {
+        return React.isValidElement(elem) ? Boolean(elem.props?.__nowrap__) : false;
+    };
 
-    const [localOptions, setLocalOptions] = useState<ReactNode[]>([]);
+    const handleSelect = useCallback(
+        (event, value) => {
+            if (typeof onSelect === 'function') {
+                if (value && typeof value !== 'string' && value.props) {
+                    if (value.props.disabled) {
+                        return;
+                    }
+                    if (value.props.value) {
+                        value = value.props.value;
+                    } else if (value.props.children && typeof value.props.children === 'string') {
+                        value = value.props.children;
+                    }
+                }
+                // Пытаемся найти и вернуть значение в зависимости от того как были переданы опции
+                onSelect(event, { name, value });
+            }
+        },
+        [onSelect, name]
+    );
+
+    const {
+        active,
+        setPopperElement,
+        showList,
+        hideDropdown,
+        currentIndex,
+        localOptions,
+        setLocalOptions,
+        align,
+        refSelect,
+        handleClick,
+        handleFocus,
+        handleKeyDown,
+        handleOptionMouseOver,
+        handleScroll,
+    } = useSelect(props, { handleSelect, forwardedRef: ref });
 
     // Получаем элементы для отображения в списке когда он открыт
     useEffect(() => {
@@ -260,156 +248,6 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
             }
         }
     }, [showList, options, children, props]);
-
-    const reactNodeIsComponent = (elem: ReactNode, component: React.FC): boolean => {
-        return React.isValidElement(elem) ? elem?.type?.toString() === component.toString() : false;
-    };
-
-    const reactNodeHasNowrap = (elem: ReactNode): boolean => {
-        return React.isValidElement(elem) ? Boolean(elem.props?.__nowrap__) : false;
-    };
-
-    const getNextIndex = (current: number, last: number, type: ActionType): number => {
-        if (type === 'increment') {
-            return current < last ? current + 1 : 0;
-        }
-        return current > 0 ? current - 1 : last;
-    };
-
-    const showDropdown = () => {
-        if (disabled) return;
-        setShowList(true);
-    };
-
-    const hideDropdown = () => {
-        setShowList(false);
-    };
-
-    const setFocusOnField = (event: any) => {
-        if (disabled) return;
-        const isNotActive = !active;
-        setActive(true);
-        if (openWhenFocus) {
-            showDropdown();
-        }
-        if (isNotActive && typeof onFocus === 'function') {
-            onFocus(event);
-        }
-    };
-
-    const setBlurOnFiled = (event: any) => {
-        const isActive = active;
-        setActive(false);
-        hideDropdown();
-        if (isActive && typeof onBlur === 'function') {
-            onBlur(event);
-        }
-    };
-
-    const changeCurrentIndex = (type: ActionType) => {
-        const lastIndex = localOptions.length - 1;
-        let index = currentIndex;
-        const nextIndex = getNextIndex(currentIndex, lastIndex, type);
-
-        index = reactNodeHasNowrap(localOptions[nextIndex]) ? getNextIndex(nextIndex, lastIndex, type) : nextIndex;
-        setCurrentIndex(index);
-    };
-
-    const handleOptionMouseOver = useCallback(
-        (e, option) => {
-            setCurrentIndex(localOptions.findIndex((v) => v === option)); // Запоминаем позицию при наведении
-        },
-        [localOptions]
-    );
-
-    const handleSelect = useCallback(
-        (event, value) => {
-            if (typeof onSelect === 'function') {
-                if (value && typeof value !== 'string' && value.props) {
-                    if (value.props.disabled) {
-                        return;
-                    }
-                    if (value.props.value) {
-                        value = value.props.value;
-                    } else if (value.props.children && typeof value.props.children === 'string') {
-                        value = value.props.children;
-                    }
-                }
-                // Пытаемся найти и вернуть значение в зависимости от того как были переданы опции
-                onSelect(event, { name, value });
-            }
-        },
-        [onSelect, name]
-    );
-
-    const handleKeyDown = useCallback(
-        (event) => {
-            switch (event.key) {
-                case 'Escape': {
-                    hideDropdown();
-                    break;
-                }
-                case 'ArrowDown': {
-                    event.preventDefault();
-
-                    if (showList) {
-                        changeCurrentIndex('increment');
-                    }
-                    break;
-                }
-                case 'ArrowUp': {
-                    event.preventDefault();
-                    if (showList) {
-                        changeCurrentIndex('decrement');
-                    } else {
-                        showDropdown();
-                    }
-                    break;
-                }
-                case 'Enter': {
-                    event.preventDefault();
-                    if (showList && currentIndex >= 0) {
-                        handleSelect(event, localOptions[currentIndex]);
-                    } else {
-                        showDropdown();
-                    }
-                    break;
-                }
-                case 'Tab': {
-                    setBlurOnFiled(event);
-                    break;
-                }
-            }
-
-            if (typeof onKeyDown === 'function') {
-                onKeyDown(event, { name, index: currentIndex });
-            }
-        },
-        [onKeyDown, currentIndex, handleSelect, localOptions, showList, name]
-    );
-
-    const handleScroll = useCallback(
-        (event) => {
-            const target: HTMLDivElement = event.target;
-            if (target.offsetHeight + target.scrollTop > target.scrollHeight - 10 && typeof options === 'function') {
-                const result = options(localOptions);
-                if (result instanceof Promise) {
-                    result.then(setLocalOptions).catch(() => null);
-                } else {
-                    setLocalOptions(result);
-                }
-            }
-            if (onScroll) {
-                onScroll(event, {
-                    target,
-                    height: target.offsetHeight,
-                    scrollTop: target.scrollTop,
-                    scrollHeight: target.scrollHeight,
-                });
-            }
-        },
-        [onScroll, localOptions, options, currentIndex]
-    );
 
     // Подготавливаем для отрисовки элементы списка
     const constructOptions = useCallback(() => {
@@ -479,13 +317,15 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
                             value && (
                                 <Chip key={index} $size={size}>
                                     <span>{valueToString(value)}</span>
-                                    <CloseCancelX
-                                        // eslint-disable-next-line react/forbid-component-props
-                                        style={{ minWidth: 'auto' }} // Исправляет некорректное поведение крестика в Safari
-                                        size='s'
-                                        onMouseDown={chipClickHandler(value)}
-                                        onTouchStart={chipClickHandler(value)}
-                                    />
+                                    {!readonly && (
+                                        <CloseCancelX
+                                            // eslint-disable-next-line react/forbid-component-props
+                                            style={{ minWidth: 'auto' }} // Исправляет некорректное поведение крестика в Safari
+                                            size='s'
+                                            onMouseDown={chipClickHandler(value)}
+                                            onTouchStart={chipClickHandler(value)}
+                                        />
+                                    )}
                                 </Chip>
                             )
                         );
@@ -498,48 +338,12 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
         return null;
     }, [valueToString, values, size, handleSelect, extraComponentRef, count, l10n]);
 
-    const handleClick = useCallback(
-        (event) => {
-            if (showList) {
-                hideDropdown();
-            } else {
-                setFocusOnField(event);
-            }
-        },
-        [disabled, showList]
-    );
-
-    const handleFocus = (event: React.FocusEvent) => {
-        if (!active) {
-            // Задержка нужна для программного проставления фокуса, потому что handleClickOutside отрабатывает позже фокуса
-            defer(setFocusOnField, [event]);
-        }
-    };
-
     const concretePostfix = getIcon(showList, postfix, size);
-
-    const align = useMemo(() => props.align !== 'auto' ? props.align : 'vertical', [props.align]);
-
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            const $popper = (popperElement as React.RefObject<HTMLDivElement> | null)?.current;
-            const $target = event.target as HTMLDivElement;
-
-            // Делаем иммитацию blur если клик произошел вне Box и DropListInner
-            if ((referenceElement || $popper) && !referenceElement?.contains($target) && !$popper?.contains($target)) {
-                setBlurOnFiled(event);
-            }
-        };
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, [referenceElement, popperElement]);
 
     return (
         <Box
             {...(attrs as {})}
-            ref={setReferenceElement}
+            ref={refSelect}
             tabIndex={tabIndex}
             role='listbox'
             aria-invalid={!!invalid}
@@ -572,8 +376,6 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
             {showList && (
                 <DropListInner
                     ref={setPopperElement as any}
-                    // eslint-disable-next-line react/forbid-component-props
-                    style={styles.popper}
                     size={getdropListSizeBySelectSize(size)}
                     fitItems={fitOptions}
                     groupItems={groupItems}
@@ -584,8 +386,7 @@ export const Multiselect = React.forwardRef<HTMLDivElement, MultiselectProps>((p
                     align={align}
                     followParentWhenScroll={fixed}
                     onHide={hideDropdown}
-                    onScroll={handleScroll}
-                    {...attributes.popper}>
+                    onScroll={handleScroll}>
                     {constructOptions()}
                 </DropListInner>
             )}

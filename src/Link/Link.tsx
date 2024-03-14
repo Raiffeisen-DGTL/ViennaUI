@@ -6,13 +6,14 @@ import { BoxStyled } from '../Utils/styled';
 
 export interface LinkProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsBox> {
     design?: PropsBox<B>['$design'];
+    color?: PropsBox<B>['$color'];
     size?: PropsBox<B>['$size'];
     loading?: PropsBox<B>['$loading'];
     disabled?: PropsBox<B>['$disabled'];
 }
 
 function LinkInternal<B = void>(props: LinkProps<B extends void ? Breakpoints : B>, ref: Ref<HTMLAnchorElement>) {
-    const { children, loading, disabled, design = 'primary', tabIndex: tab, size = 'm', ...attrs } = props;
+    const { children, loading, disabled, design = 'primary', color, tabIndex: tab, size = 'm', ...attrs } = props;
 
     const tabIndex = disabled ? -1 : tab;
 
@@ -20,7 +21,7 @@ function LinkInternal<B = void>(props: LinkProps<B extends void ? Breakpoints : 
         React.Children.map(children, (child: any) => {
             if (typeof child === 'string' || (child && child.type === 'span')) {
                 return (
-                    <Wrapper $design={design} $disabled={disabled} $loading={loading} $size={size}>
+                    <Wrapper $design={design} $color={color} $disabled={disabled} $loading={loading} $size={size}>
                         {child}
                     </Wrapper>
                 );
@@ -39,6 +40,7 @@ function LinkInternal<B = void>(props: LinkProps<B extends void ? Breakpoints : 
             ref={ref}
             tabIndex={tabIndex}
             $design={design}
+            $color={color}
             $disabled={loading ? true : disabled}
             $loading={loading}
             $size={size}>

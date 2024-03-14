@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { CloseCancelX } from 'vienna.icons';
 import { Box, PropsBox, Label, Icon } from './Item.styles';
 import { withTabFocusState } from '../../Utils';
@@ -21,7 +21,7 @@ interface PropInternal extends ItemProps {
     isFocusStateVisible: boolean;
 }
 
-export const Item: FC<ItemProps> = withTabFocusState<HTMLDivElement, PropInternal>((props) => {
+export const Item = withTabFocusState<HTMLDivElement, PropInternal>((props) => {
     const {
         children,
         size = 'm',

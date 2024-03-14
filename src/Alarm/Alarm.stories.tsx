@@ -8,7 +8,7 @@ export default {
 } as Meta;
 
 export const Overview: Story<AlarmProps> = (args) => {
-    return <Alarm {...args} />;
+    return <Alarm design='neutral' {...args} />;
 };
 
 export const Designs: Story<AlarmProps> = (args) => {

@@ -10,11 +10,21 @@ export interface BreadcrumbsProps extends BreadcrumbsLocalizationProps, BoxStyle
     size?: 's' | 'm' | 'l';
     noHomeButton?: boolean;
     noBackButton?: boolean;
+    withoutTooltip?: boolean;
     onClickHome?: (e, data: { value: React.ReactNode }) => void;
 }
 
 export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Option: typeof Option } = (props) => {
-    const { children, onClickHome, noHomeButton, noBackButton, size = 'm', localization, ...attrs } = props;
+    const {
+        children,
+        onClickHome,
+        noHomeButton,
+        noBackButton,
+        size = 'm',
+        localization,
+        withoutTooltip = false,
+        ...attrs
+    } = props;
 
     const l10n = useLocalization(localization, defaultBreadcrumbsLocalization);
 
@@ -28,7 +38,14 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Option: typeof Option }
 
         if (arr.length > 1 && !noHomeButton) {
             arr.unshift(
-                <Option key={0} aria-label='home' first size={size} value='home' onClick={onClickHome}>
+                <Option
+                    key={0}
+                    aria-label='home'
+                    first
+                    size={size}
+                    value='home'
+                    withoutTooltip={withoutTooltip}
+                    onClick={onClickHome}>
                     <Home size={size} />
                 </Option>
             );
@@ -37,7 +54,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Option: typeof Option }
         if (arr.length === 1 && !noBackButton) {
             const backTo = `${l10n('ds.breadcrumbs.backTo')} ${(arr[0] as any).props.children}`;
             arr[0] = (
-                <Option first size={size} {...(arr[0] as any).props}>
+                <Option first size={size} withoutTooltip={withoutTooltip} {...(arr[0] as any).props}>
                     <BackIcon key={0}>
                         <Back size={size} />
                     </BackIcon>
@@ -46,16 +63,19 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> & { Option: typeof Option }
             );
         }
 
-        return arr.map((child, index) =>
-            React.cloneElement(child as any, {
+        return arr.map((child: any, index) => {
+            const withoutTooltipProp =
+                child.props.withoutTooltip === undefined ? withoutTooltip : child.props.withoutTooltip;
+            return React.cloneElement(child, {
                 key: index,
                 size,
                 first: index === 0,
                 preLast: index === arr.length - 2,
                 last: arr.length > 1 && index === arr.length - 1,
-            })
-        );
-    }, [children, size, onClickHome, l10n]);
+                withoutTooltip: withoutTooltipProp,
+            });
+        });
+    }, [children, size, onClickHome, l10n, withoutTooltip]);
 
     return <Box {...(attrs as {})}>{constructChildren()}</Box>;
 };

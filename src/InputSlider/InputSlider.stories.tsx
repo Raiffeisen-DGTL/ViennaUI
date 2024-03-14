@@ -9,16 +9,13 @@ export default {
 
 export const Overview: Story<InputSliderProps> = (args) => {
     const [value, setValue] = React.useState(50);
-    const changeHandler = (e, data) => {
-        setValue(parseInt(data.value));
+    const changeHandler = (e) => {
+        setValue(parseInt(e));
     };
     return (
         <InputSlider
-            mask='V $'
-            lazy={false}
             min={20}
             max={100}
-            blocks={{ V: { mask: Number } }}
             onChange={changeHandler}
             value={value}
             postfix='15%'>

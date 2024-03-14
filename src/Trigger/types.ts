@@ -1,5 +1,5 @@
 import { ReactNode, Ref } from 'react';
-import { RendererPopupProps } from '../Popper';
+import { RendererPopupProps } from '../Floating';
 
 export type TriggerActionType = 'click' | 'hover';
 
@@ -30,4 +30,5 @@ export interface IActionStrategy {
 export interface BaseActionStrategyOptions {
     onOpen: () => void;
     onClose: () => void;
+    disableOutsideClick?: boolean;
 }

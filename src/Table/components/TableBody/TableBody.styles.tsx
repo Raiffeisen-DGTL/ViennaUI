@@ -89,6 +89,7 @@ export interface PropsRow {
     $selected?: any;
     $isRowClickable?: any;
     $isPinnedGroupTitle?: boolean;
+    $bg?: string;
 }
 export const Row = styled.tr<PropsRow>`
     ${({ $noHover }) =>
@@ -129,6 +130,14 @@ export const Row = styled.tr<PropsRow>`
         $isPinnedGroupTitle &&
         css`
             position: relative;
+        `}
+
+    ${({ $bg }) =>
+        $bg &&
+        css`
+            ${Td} {
+                background-color: ${$bg};
+            }
         `}
 
     ${custom.row}

@@ -10,7 +10,7 @@ import { Empty } from './Empty';
 import { Body, Row, Td } from './TableBody.styles';
 
 export const TableBody = (props: any) => {
-    const { columns, isRowSelected } = useTableService();
+    const { columns, isRowSelected, getColoredRowColor } = useTableService();
     const {
         columns: { templates },
         expandingRow,
@@ -91,6 +91,7 @@ export const TableBody = (props: any) => {
                         $noRowDivider
                         $isRowClickable={isRowClickable}
                         $isPinnedGroupTitle={item?.pinned}
+                        $bg={getColoredRowColor(dataKey?.(item, rowIndex) || '')}
                         onClick={handleRowClick(item)}
                         onDoubleClick={handleRowDoubleClick(item)}>
                         <GroupTitle group={item} />
@@ -107,6 +108,7 @@ export const TableBody = (props: any) => {
                         $noRowDivider={noBottomDivider}
                         $selected={isRowSelected(item)}
                         $isRowClickable={isRowClickable}
+                        $bg={getColoredRowColor(dataKey?.(item, rowIndex) || '')}
                         data-row={dataKey?.(item, rowIndex)}
                         onClick={handleRowClick(item)}
                         onDoubleClick={handleRowDoubleClick(item)}>
