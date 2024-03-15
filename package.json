@@ -54,7 +54,7 @@
     "vienna.icons": "^4.7.1",
     "vienna.react-use": "^3.2.0",
     "vienna.tokens": "^3.9.1",
-    "vienna.ui-primitives": "^3.13.0",
+    "vienna.ui-primitives": "^3.13.1",
     "vienna.ui-theme": "^4.17.0",
     "vienna.utils": "^3.3.0"
   },
