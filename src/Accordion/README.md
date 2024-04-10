@@ -31,6 +31,11 @@ import { Accordion } from 'vienna-ui';
 | columnStart | string \| undefined | |
 | columnEnd | string \| undefined | |
 | rowStart | string \| undefined | |
+| rowEnd | string \| undefined | |
+| column | string \| undefined | |
+| row | string \| undefined | |
+| area | string \| undefined | |
+| justifySelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
 
 
 
