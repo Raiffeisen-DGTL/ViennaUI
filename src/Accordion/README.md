@@ -8,13 +8,31 @@ Aккордеон это компонент для отображения спи
 import { Accordion } from 'vienna-ui';
 ```
 
-## Свойства / Props
+## React Props
 Свойства наследуются от [HTMLAttributes<HTMLDivElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1746)
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | size | 's' \| 'm' \| 'l' \| undefined | 'm' |  |
 | iconPosition | 'left' | 'right' \| 'none' \| undefined | 'right' | |;
+
+## HTMLAttributes
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| className | string \| undefined | |
+| style | CSSProperties \| undefined | |;
+
+## Item
+#### React Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| columnStart | string \| undefined | |
+| columnEnd | string \| undefined | |
+| rowStart | string \| undefined | |
+
+
 
 
 ## Использование
