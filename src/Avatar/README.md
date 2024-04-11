@@ -15,7 +15,7 @@ import { Avatar } from 'vienna-ui';
 | Prop     | Type                                           | Default | Description                 |
 | -------- | ---------------------------------------------- | ------- | --------------------------- |
 | children | ReactNode                                      |         |
-| size     | ResponsiveProp<'xs' | 's' | 'm' | 'l' | 'xl', B> \| undefined |         | Доступные размеры           |
+| size     | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl', B> \| undefined |         | Доступные размеры           |
 | align    | "left" \| "center" \| "right" \| undefined     |         | Выравнивание по горизонтали |
 | valign   | "center" \| "top" \| "bottom" \| undefined     |         | Выравнивание по вертикали   |
 | ref      | Ref<HTMLDivElement> \| undefined               |
