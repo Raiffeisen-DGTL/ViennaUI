@@ -21,7 +21,7 @@ import { Accordion } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | className | string \| undefined | |
-| style | CSSProperties \| undefined | |;
+| style | CSSProperties \| undefined | |
 
 ## Item
 #### React Props
@@ -36,7 +36,51 @@ import { Accordion } from 'vienna-ui';
 | row | string \| undefined | |
 | area | string \| undefined | |
 | justifySelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
+| alignSelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
+| placeSelf | string \| undefined | |
+| maxHeight | string \| undefined | |
+| maxWidth | string \| undefined | |
+| margin | Whitespace \| undefined | |
+| marginTop | Whitespace \| undefined | |
+| marginBottom | Whitespace \| undefined | |
+| marginLeft | Whitespace \| undefined | |
+| marginRight | Whitespace \| undefined | |
+| marginHorizontal | Whitespace \| undefined | |
+| marginVertical | Whitespace \| undefined | |
+| m | Whitespace \| undefined | |
+| mt | Whitespace \| undefined | |
+| mb | Whitespace \| undefined | |
+| ml | Whitespace \| undefined | |
+| mr | Whitespace \| undefined | |
+| mx | Whitespace \| undefined | |
+| my | Whitespace \| undefined | |
+| padding | Whitespace \| undefined | |
+| paddingTop | Whitespace \| undefined | |
+| paddingBottom | Whitespace \| undefined | |
+| paddingLeft | Whitespace \| undefined | |
+| paddingRight | Whitespace \| undefined | |
+| paddingHorizontal | Whitespace \| undefined | |
+| paddingVertical | Whitespace \| undefined | |
+| p | Whitespace \| undefined | |
+| pt | Whitespace \| undefined | |
+| pb | Whitespace \| undefined | |
+| pl | Whitespace \| undefined | |
+| pr | Whitespace \| undefined | |
+| px | Whitespace \| undefined | |
+| py | Whitespace \| undefined | |
 
+## HTMLAttributes
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| id | string \| undefined | |
+| title | string \| undefined | |
+| className | string \| undefined | |
+| role | string \| undefined | |
+| spellCheck | boolean \| undefined | |
+| tabIndex | number \| undefined | |
+| height | string \| undefined | |
+| width | string \| undefined | |
 
 
 
