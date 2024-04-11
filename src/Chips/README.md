@@ -15,24 +15,8 @@ import { Chips } from 'vienna-ui';
 | active  | string \| string[] \| undefined               |     | Активные элементы |
 | design  | 'accent' \| 'primary' \| 'ghost' \| undefined | |
 | align   | string \| undefined                           |   |
-| onClick | (event: React.FormEvent) => void              |      |
-
-## Свойства элемента / Item Props
-
-| Prop         | Type                                      | Default | Description             |
-| ------------ | ----------------------------------------- | ------- | ----------------------- |
-| id           | string \| undefined                       |    | Идентификатор элемента  |
-| active       | boolean \| undefined                      |    | Активный элемент        |
-| disabled     | boolean \| undefined                      |    | Заблокированный элемент |
-| onFocus      | ((event: FormEvent) => void) \| undefined |    |
-| onBlur       | ((event: FormEvent) => void) \| undefined |    |
-| onKeyUp      | ((event: FormEvent) => void) \| undefined |    |
-| onKeyDown    | ((event: FormEvent) => void) \| undefined |    |
-| onMouseUp    | ((event: FormEvent) => void) \| undefined |    |
-| onMouseDown  | ((event: FormEvent) => void) \| undefined |    |
-| onMouseEnter | ((event: FormEvent) => void) \| undefined |    |
-| onMouseOut   | ((event: FormEvent) => void) \| undefined |    |
-| onMouseLeave | ((event: FormEvent) => void) \| undefined |    |
+| onPressEnter | KeyboardEventHandler<HTMLDivElement> \| undefined |
+| size  | 'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl' \| undefined | |
 
 ## Использование
 
@@ -50,49 +34,99 @@ import { Chips } from 'vienna-ui';
 </Chips>
 ```
 
-## Дизайн
-
-##### Свойство `design`
+## Внешний вид
 
 Комопнент поддерживает 3 опции внешнего вида: `accent`, `primary` и `ghost`
 
-```jsx
-<Chips design='accent'>
-    <Chips.Item id='1' tabIndex='1' active>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='2' tabIndex='1'>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='3' tabIndex='1'>
-        Chip
-    </Chips.Item>
-</Chips>
+```
+    <Chips design='accent'>
+        <Chips.Item id='1' tabIndex='1' active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' tabIndex='1'>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' tabIndex='1'>
+            Chip
+        </Chips.Item>
+    </Chips>
+    <Chips design='primary'>
+        <Chips.Item id='1' tabIndex='1' active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' tabIndex='1'>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' tabIndex='1'>
+            Chip
+        </Chips.Item>
+    </Chips>
+    <Chips design='ghost'>
+        <Chips.Item id='1' tabIndex='1' active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' tabIndex='1'>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' tabIndex='1'>
+            Chip
+        </Chips.Item>
+    </Chips>
 ```
 
-## Выравнивание
 
-##### Свойство `align`
+## Размеры
 
-```jsx
-<Chips align='right'>
-    <Chips.Item id='1' active>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='2'>Chip</Chips.Item>
-    <Chips.Item id='3'>Chip</Chips.Item>
-</Chips>
+С помощью параметра `size` можно установить размеры чипсов. Поддерживается 6 размеров `xs`, `s`, `m`, `l`, `xl`, `xxl`.
+
+```
+    {() => {
+        const [active, setActive] = React.useState(null);
+        const onClick = (event) => setActive(event.target.id);
+        return (
+            <Chips onClick={onClick} active={active}>
+                <Chips.Item size='xs' id='1' active>
+                    Chip
+                </Chips.Item>
+                <Chips.Item size='s' id='2'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item size='m' id='3'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item size='l' id='4'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item size='xl' id='5'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item size='xxl' id='6'>
+                    Chip
+                </Chips.Item>
+            </Chips>
+        );
+    }}
 ```
 
-## Активный элемент
 
-##### Свойство `active`
+## Right aligned
 
-Активный элемент мможно выбрать, как установив свойство `active` для компонента `Chips`, который принимает строку или массив строк `id` компонентов `Chips.Item`, так и установив свойство `active` для компонента `Chips.Item` в `true`.
+```
+    <Chips align='right'>
+        <Chips.Item id='1' active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2'>Chip</Chips.Item>
+        <Chips.Item id='3'>Chip</Chips.Item>
+    </Chips>
+```
 
-```jsx
-{
-    () => {
+## Interactive
+
+#### Single selection
+
+```
+    {() => {
         const [active, setActive] = React.useState(null);
         const onClick = (event) => setActive(event.target.id);
         return (
@@ -106,46 +140,120 @@ import { Chips } from 'vienna-ui';
                 <Chips.Item id='3' tabIndex='1'>
                     Chip
                 </Chips.Item>
-                <Chips.Item id='4' tabIndex='1'>
+                <Chips.Item id='4' tabIndex='1' disabled>
                     Chip
                 </Chips.Item>
             </Chips>
         );
+    }}
+```
+
+#### Single selection with toggle
+
+```
+    {() => {
+        const [active, setActive] = React.useState(null);
+        const onClick = (event) => {
+            const id = event.target.id;
+            setActive(active !== id ? id : null);
+        };
+        return (
+            <Chips design='accent' onClick={onClick} active={active}>
+                <Chips.Item id='1' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='2' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='3' tabIndex='1'>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='4' tabIndex='1' disabled>
+                    Chip
+                </Chips.Item>
+            </Chips>
+        );
+    }}
+```
+
+## Multiple selection with toggle
+
+```
+<p>
+    <Alert>
+        Обратите внимание, что для мульти выбора следует указать role='checkbox'. По умолчанию Chips.Item имеет
+        role='option'
+    </Alert>
+</p>
+```
+
+
+
+```
+    {() => (<ChipsMultiple />)}
+```
+
+```tsx
+    const [active, setActive] = React.useState<string[]>([]);
+    const onClick = (event) => {
+        const id = event.currentTarget.id;
+        setActive(state => state.includes(id) ? state.filter(i => i !== id) : [ ...state, id])
     };
-}
+
+    return (
+        <Chips active={active} onClick={onClick}>
+            <Chips.Item id='1' tabIndex={1} role='checkbox'>
+                Chip 1
+            </Chips.Item>
+            <Chips.Item id='2' tabIndex={1} role='checkbox'>
+                Chip 2
+            </Chips.Item>
+            <Chips.Item id='3' tabIndex={1} role='checkbox'>
+                Chip 3
+            </Chips.Item>
+            <Chips.Item id='4' tabIndex={1} role='checkbox' disabled>
+                Chip 4
+            </Chips.Item>
+        </Chips>
+    );
 ```
 
-```jsx
-<Chips design='primary' onClick={onClick}>
-    <Chips.Item id='1' tabIndex='1' active>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='2' tabIndex='1'>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='3' tabIndex='1'>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='4' tabIndex='1'>
-        Chip
-    </Chips.Item>
-</Chips>
+## Состояния
+
+#### Disabled
+
 ```
-
-## Заблокированный элемент
-
-##### Свойство `disabled`
-
-```jsx
-<Chips design='accent'>
-    <Chips.Item id='1' disabled active>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='2' disabled>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='3' disabled>
-        Chip
-    </Chips.Item>
-</Chips>
+    <Chips design='accent'>
+        <Chips.Item id='1' disabled active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' disabled>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' disabled>
+            Chip
+        </Chips.Item>
+    </Chips>
+    <Chips design='primary'>
+        <Chips.Item id='1' disabled active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' disabled>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' disabled>
+            Chip
+        </Chips.Item>
+    </Chips>
+    <Chips design='ghost'>
+        <Chips.Item id='1' disabled active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2' disabled>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='3' disabled>
+            Chip
+        </Chips.Item>
+    </Chips>
 ```
