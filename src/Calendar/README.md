@@ -14,9 +14,9 @@ import { Calendar } from 'vienna-ui';
 | --- | --- | --- | --- |
 | date | DateValue \| Date \| \| Date[] \| undefined | | Selected/active date |
 | format | Format \| undefined |  |
-| onChange | ((event: FormEvent<HTMLInputElement> | Event | null, options: DateResponse<DateValue> | DateResponse<Date>) => void) \| undefined |  |
+| onChange | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: DateResponse<DateValue> \| DateResponse<Date>) => void) \| undefined |  |
 | defaultViewMode | ViewMode \| undefined |  | Начальный экран для отображения |
-| disabledDates | Date[] | DisabledDates | dateFunction  \| undefined |  | Неактивные дни |
+| disabledDates | Date[] \| DisabledDates \| dateFunction  \| undefined |  | Неактивные дни |
 | weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Выходные дни |
 | eventDates | Date[] \| eventDateFunction \| undefined |  | Даты событий |
 | ranged | boolean \| undefined |  | Возможность выбора периода дат |
@@ -26,7 +26,7 @@ import { Calendar } from 'vienna-ui';
 | minDate | DateValue \| Date \| undefined |  | Нижняя граница доступных для выбора дат |
 | maxDate | DateValue \| Date \| undefined |  | Верхняя граница доступных для выбора дат |
 | mode | "day" \| "month" \| undefined |  | Тип календаря - выбор дня или месяца |
-| onChangeMonth | ((event: FormEvent<HTMLInputElement> | Event | null, options: { date: Date | Date[]; value: string; }) => void) \| undefined |  | Обработчик для mode = ‘month’ |
+| onChangeMonth | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: { date: Date \| Date[]; value: string; }) => void) \| undefined |  | Обработчик для mode = ‘month’ |
 | startingWeekDay | StartingWeekDay \| undefined |
 | allowMultiple | boolean \| undefined |
 | localization | Localization<CalendarLocalization, undefined> \| undefined |
