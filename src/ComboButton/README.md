@@ -12,22 +12,55 @@ import { ComboButton } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| icons | { down: ReactNode, up: ReactNode } \| undefined | { down: <Down />, up: <Up /> } | Иконки открытого и закрытого состояния |
-| fitOptions | boolean \| undefined | true | Растягивание опций по ширине родителя |
-| options | ReactNode[] \| undefined | false | Опции |
-| maxListHeight | number \| undefined | false | Максимальная высота выпадающего списка в пикселях |
-| design | "critical" \| "accent" \| "primary" \| "outline" \| "outline-critical" \| "ghost" \| undefined | "primary" | Дизайн |
-| size | "xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl" \| undefined | "m" | Размеры |
+| icons | Icons \| undefined | | Иконки открытого и закрытого состояния |
+| Option | Props<Breakpoints> \| undefined  |
+| fitOptions | boolean \| undefined |  | Растягивание опций по ширине родителя |
+| options | ReactNode[] \| undefined |  | Опции |
+| maxListHeight | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
+|  maxListWidth | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
+| design | ButtonDesign \| undefined | | Дизайн |
+| fixed | boolean \| undefined  |
+| float | 'start' \| 'end' \| undefined |
+| size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
 
 ## Использование
 
-Компонент состоит из родительского контейнера `ComboButton` и дочерних пунктов `ComboButton.Option`.
+```
+    {() => {
+        const options = [
+            <ComboButton.Option onClick={(e) => console.log(e.target)} key={1}>
+                Option 1
+            </ComboButton.Option>,
+            <ComboButton.Option onClick={(e) => console.log(e.target)} key={2}>
+                Option 2
+            </ComboButton.Option>,
+            <ComboButton.Option onClick={(e) => console.log(e.target)} key={3}>
+                Option 3
+            </ComboButton.Option>,
+        ];
+        return (
+            <Groups>
+                <ComboButton options={options}>
+                    <Button onClick={(e) => console.log(e.target)}>Button</Button>
+                </ComboButton>
+                <ComboButton design='accent' options={options}>
+                    <Button onClick={(e) => console.log(e.target)}>Button</Button>
+                </ComboButton>
+                <ComboButton design='critical' options={options}>
+                    <Button onClick={(e) => console.log(e.target)}>Button</Button>
+                </ComboButton>
+                <ComboButton design='outline' options={options}>
+                    <Button onClick={(e) => console.log(e.target)}>Button</Button>
+                </ComboButton>
+            </Groups>
+        );
+    }}
+```
 
-> Для того, чтобы воспользоваться компонентом, нужно обязательно передать `Button` как дочерний элемент.
+## Однокнопочный вариант
 
-```jsx
-{
-    () => {
+ ```
+    {() => {
         const options = [
             <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
             <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
@@ -45,19 +78,13 @@ import { ComboButton } from 'vienna-ui';
                 </ComboButton>
             </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Дизайн `design`
+## Двухкнопочный вариант
 
-##### Свойство `design`
-
-Для компонента доступны следующие варианты дизайна: `critical`, `accent`, `primary` (по умолчанию), `outline`, `outline-critical`, `ghost`
-
-```jsx
-{
-    () => {
+```
+    {() => {
         const options = [
             <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
             <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
@@ -66,23 +93,26 @@ import { ComboButton } from 'vienna-ui';
             <ComboButton.Option key={5}>Option 5</ComboButton.Option>,
         ];
         return (
-            <ComboButton design='critical' options={options}>
-                <Button>Button</Button>
-            </ComboButton>
+            <Groups>
+                <ComboButton options={options}>
+                    <Button>Button</Button>
+                    <Button />
+                </ComboButton>
+                <ComboButton options={options} design='outline'>
+                    <Button>Button</Button>
+                    <Button />
+                </ComboButton>
+            </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Размер
+## Внешний вид и размеры
 
-##### Свойство `size`
+#### Дизайн Primary
 
-Доступны следующие размеры: `xs`, `s`, `m`, `l`, `xl`, `xxl`.
-
-```jsx
-{
-    () => {
+```
+    {() => {
         const options = [
             <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
             <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
@@ -91,23 +121,228 @@ import { ComboButton } from 'vienna-ui';
             <ComboButton.Option key={5}>Option 5</ComboButton.Option>,
         ];
         return (
-            <ComboButton size='xs' options={options}>
-                <Button>Button</Button>
-            </ComboButton>
+            <Groups design='vertical' size='xl'>
+                <Groups>
+                    <ComboButton size='xs' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton size='s' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton size='m' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton size='l' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton size='xl' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                </Groups>
+                <Groups>
+                    <ComboButton size='xs' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton size='s' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton size='m' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton size='l' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton size='xl' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                </Groups>
+            </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Максимальная высота списка
+#### Дизайн Accent
 
-##### Свойство `maxListHeight`
 
-Управляет максимальной высотой выпадающего списка.
+```
+    {() => {
+        const options = [
+            <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
+            <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
+            <ComboButton.Option key={3}>Option 3</ComboButton.Option>,
+            <ComboButton.Option key={4}>Option 4</ComboButton.Option>,
+            <ComboButton.Option key={5}>Option 5</ComboButton.Option>,
+        ];
+        return (
+            <Groups design='vertical' size='xl'>
+                <Groups>
+                    <ComboButton design='accent' size='xs' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='accent' size='s' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='accent' size='m' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='accent' size='l' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='accent' size='xl' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                </Groups>
+                <Groups>
+                    <ComboButton design='accent' size='xs' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='accent' size='s' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='accent' size='m' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='accent' size='l' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='accent' size='xl' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                </Groups>
+            </Groups>
+        );
+    }}
+```
 
-```jsx
-{
-    () => {
+
+#### Дизайн Critical
+
+```
+    {() => {
+        const options = [
+            <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
+            <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
+            <ComboButton.Option key={3}>Option 3</ComboButton.Option>,
+            <ComboButton.Option key={4}>Option 4</ComboButton.Option>,
+            <ComboButton.Option key={5}>Option 5</ComboButton.Option>,
+        ];
+        return (
+            <Groups design='vertical' size='xl'>
+                <Groups>
+                    <ComboButton design='critical' size='xs' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='critical' size='s' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='critical' size='m' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='critical' size='l' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='critical' size='xl' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                </Groups>
+                <Groups>
+                    <ComboButton design='critical' size='xs' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='critical' size='s' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='critical' size='m' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='critical' size='l' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='critical' size='xl' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                </Groups>
+            </Groups>
+        );
+    }}
+```
+
+#### Дизайн Outline
+
+```
+    {() => {
+        const options = [
+            <ComboButton.Option key={1}>Option 1</ComboButton.Option>,
+            <ComboButton.Option key={2}>Option 2</ComboButton.Option>,
+            <ComboButton.Option key={3}>Option 3</ComboButton.Option>,
+            <ComboButton.Option key={4}>Option 4</ComboButton.Option>,
+            <ComboButton.Option key={5}>Option 5</ComboButton.Option>,
+        ];
+        return (
+            <Groups design='vertical' size='xl'>
+                <Groups>
+                    <ComboButton design='outline' size='xs' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='outline' size='s' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='outline' size='m' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='outline' size='l' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                    <ComboButton design='outline' size='xl' options={options}>
+                        <Button>Button</Button>
+                    </ComboButton>
+                </Groups>
+                <Groups>
+                    <ComboButton design='outline' size='xs' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='outline' size='s' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='outline' size='m' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='outline' size='l' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                    <ComboButton design='outline' size='xl' options={options}>
+                        <Button>Button</Button>
+                        <Button />
+                    </ComboButton>
+                </Groups>
+            </Groups>
+        );
+    }}
+```
+
+## Свойство maxListHeight
+
+```
+    {() => {
         const options = Array.from(Array(20).keys()).map((i) => (
             <ComboButton.Option key={i}>Option {i}</ComboButton.Option>
         ));
@@ -118,6 +353,35 @@ import { ComboButton } from 'vienna-ui';
                 </ComboButton>
             </Groups>
         );
-    };
-}
+    }}
+```
+
+## Свойство fixed
+
+```
+    {() => {
+        const options = Array.from(Array(20).keys()).map((i) => (
+            <ComboButton.Option key={i}>Option {i}</ComboButton.Option>
+        ));
+        return (
+            <Groups>
+                <div
+                    style={{
+                        position: 'relative',
+                        overflow: 'auto',
+                        width: '300px',
+                        height: '100px',
+                        border: '1px solid',
+                    }}>
+                    <div style={{ width: '500px', height: '300px' }}>
+                        <div style={{ position: 'absolute', left: 'calc(50% - 20px)', top: 'calc(50% - 20px)' }}>
+                            <ComboButton maxListHeight={200} options={options} fixed>
+                                <Button>Button</Button>
+                            </ComboButton>
+                        </div>
+                    </div>
+                </div>
+            </Groups>
+        );
+    }}
 ```
