@@ -21,7 +21,7 @@ import { Datepicker } from 'vienna-ui';
 | maxDate | Date \| undefined |  | Верхняя граница выбора даты |
 | onChange | ((event: Event \| InputEvent> \| null, data: { value?: string \| undefined; name?: string \| undefined; isDisabled?: boolean \| undefined; }) => void) \| undefined |  |
 | disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Неактивные для выбора даты |
-| design | "outline" \| "material" \| undefined | "outline" | Дизайн |
+| design | "outline" \| "material" \| undefined | Дизайн |
 | startingWeekDay | 0 \| 1 \| undefined |
 | onChangeDisplayedDate | ((date: Date) => void) \| undefined|
 | defaultDisplayedDate | Date  \| undefined |  
