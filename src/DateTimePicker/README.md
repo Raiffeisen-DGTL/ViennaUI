@@ -17,7 +17,6 @@ import { DateTimePicker } from 'vienna-ui';
 | value    | Date \| DateObj \| undefined                   |      | Выбранное значение даты и времени  |
 | timeFrom | string \| undefined                            |   | Нижняя граница выбора времени      |
 | timeTo   | string \| undefined                            |    | Верхняя граница выбора времени     |
-| step     | number \| undefined                            |         | Шаг для доступных значений времени |
 | onChange | ChangeFunc \| undefined                        |      |
 | localization | Localization<DatePickerLocalization, undefined> \| undefined |
 | locale | Locale \| undefined |
