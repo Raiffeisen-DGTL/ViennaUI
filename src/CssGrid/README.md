@@ -20,7 +20,6 @@ import { CssGrid } from 'vienna-ui';
 | justifyItems | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
 | alignItems | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
 | placeItems | string \| undefined |
-
 | justifyContent | 'start' \| 'end' \| 'center' \| 'stretch' \| 'space-around' \| 'space-between' \| 'space-evenly' \| undefined |
 | alignContent | 'start' \| 'end' \| 'center' \| 'stretch' \| 'space-around' \| 'space-between' \| 'space-evenly' \| undefined |
 | placeContent | string \| undefined |
