@@ -12,27 +12,27 @@ import { Chips } from 'vienna-ui';
 
 | Prop    | Type                                          | Default   | Description       |
 | ------- | --------------------------------------------- | --------- | ----------------- |
-| active  | string \| string[] \| undefined               | false     | Активные элементы |
-| design  | 'accent' \| 'primary' \| 'ghost' \| undefined | 'primary' |
-| align   | string \| undefined                           | 'left'    |
-| onClick | (event: React.FormEvent) => void              | false     |
+| active  | string \| string[] \| undefined               |     | Активные элементы |
+| design  | 'accent' \| 'primary' \| 'ghost' \| undefined | |
+| align   | string \| undefined                           |   |
+| onClick | (event: React.FormEvent) => void              |      |
 
 ## Свойства элемента / Item Props
 
 | Prop         | Type                                      | Default | Description             |
 | ------------ | ----------------------------------------- | ------- | ----------------------- |
-| id           | string \| undefined                       | false   | Идентификатор элемента  |
-| active       | boolean \| undefined                      | false   | Активный элемент        |
-| disabled     | boolean \| undefined                      | false   | Заблокированный элемент |
-| onFocus      | ((event: FormEvent) => void) \| undefined | false   |
-| onBlur       | ((event: FormEvent) => void) \| undefined | false   |
-| onKeyUp      | ((event: FormEvent) => void) \| undefined | false   |
-| onKeyDown    | ((event: FormEvent) => void) \| undefined | false   |
-| onMouseUp    | ((event: FormEvent) => void) \| undefined | false   |
-| onMouseDown  | ((event: FormEvent) => void) \| undefined | false   |
-| onMouseEnter | ((event: FormEvent) => void) \| undefined | false   |
-| onMouseOut   | ((event: FormEvent) => void) \| undefined | false   |
-| onMouseLeave | ((event: FormEvent) => void) \| undefined | false   |
+| id           | string \| undefined                       |    | Идентификатор элемента  |
+| active       | boolean \| undefined                      |    | Активный элемент        |
+| disabled     | boolean \| undefined                      |    | Заблокированный элемент |
+| onFocus      | ((event: FormEvent) => void) \| undefined |    |
+| onBlur       | ((event: FormEvent) => void) \| undefined |    |
+| onKeyUp      | ((event: FormEvent) => void) \| undefined |    |
+| onKeyDown    | ((event: FormEvent) => void) \| undefined |    |
+| onMouseUp    | ((event: FormEvent) => void) \| undefined |    |
+| onMouseDown  | ((event: FormEvent) => void) \| undefined |    |
+| onMouseEnter | ((event: FormEvent) => void) \| undefined |    |
+| onMouseOut   | ((event: FormEvent) => void) \| undefined |    |
+| onMouseLeave | ((event: FormEvent) => void) \| undefined |    |
 
 ## Использование
 
