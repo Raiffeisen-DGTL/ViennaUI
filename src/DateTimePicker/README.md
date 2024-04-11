@@ -12,37 +12,82 @@ import { DateTimePicker } from 'vienna-ui';
 
 | Prop     | Type                                           | Default   | Description                        |
 | -------- | ---------------------------------------------- | --------- | ---------------------------------- |
-| design   | "outline" \| "material" \| undefined           | "outline" |
-| size     | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | "l"       |
-| value    | Date \| DateObj \| undefined                   | false     | Выбранное значение даты и времени  |
-| timeFrom | string \| undefined                            | '00:00'   | Нижняя граница выбора времени      |
-| timeTo   | string \| undefined                            | '23:30'   | Верхняя граница выбора времени     |
-| step     | number \| undefined                            | 30        | Шаг для доступных значений времени |
-| onChange | ChangeFunc \| undefined                        | false     |
+| design   | "outline" \| "material" \| undefined           |  |
+| size     | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined |        |
+| value    | Date \| DateObj \| undefined                   |      | Выбранное значение даты и времени  |
+| timeFrom | string \| undefined                            |   | Нижняя граница выбора времени      |
+| timeTo   | string \| undefined                            |    | Верхняя граница выбора времени     |
+| step     | number \| undefined                            |         | Шаг для доступных значений времени |
+| onChange | ChangeFunc \| undefined                        |      |
+| localization | Localization<DatePickerLocalization, undefined> \| undefined |
+| locale | Locale \| undefined |
+| ref | Ref<HTMLDivElement> \| undefined |
 
-## Использование
+
+## Внешний вид
 
 По умолчанию дизайн `outline` и размер `l`. Интервал по умолчанию 30 минут время начала 00:00 время окончания 23:30
 
-```jsx
-{
-    () => {
+#### Outline
+
+```
+    {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
         const changeHandler = React.useCallback((e, data) => setValue(data), []);
-        return <DateTimePicker onChange={changeHandler} value={value} />;
-    };
-}
+        return (
+            <Groups design='vertical'>
+                <DateTimePicker onChange={changeHandler} value={value} />
+                <DateTimePicker onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <Select />
+                </DateTimePicker>
+                <DateTimePicker onChange={changeHandler} value={value}>
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker onChange={changeHandler} value={value}>
+                    <Select />
+                </DateTimePicker>
+            </Groups>
+        );
+    }}
 ```
 
-## Использование с компонентом `Select`
+#### Material
 
-Для выбора значения времени можно использовать компонент `Select`, если время необходимо выбрать из ограниченных значений, которые будут в выпадающем списке.
+```
+    {() => {
+        const [value, setValue] = React.useState(new Date());
+        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        return (
+            <Groups design='vertical'>
+                <DateTimePicker design='material' onChange={changeHandler} value={value} />
+                <DateTimePicker design='material' onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker design='material' onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <Select />
+                </DateTimePicker>
+                <DateTimePicker design='material' onChange={changeHandler} value={value}>
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker design='material' onChange={changeHandler} value={value}>
+                    <Select />
+                </DateTimePicker>
+            </Groups>
+        );
+    }}
+```
 
-```jsx
-import { Select } from 'vienna-ui';
+## Произвольные интервалы времени
 
-{
-    () => {
+```
+    {() => {
         const [value, setValue] = React.useState(new Date());
         const changeHandler = React.useCallback((e, data) => setValue(data), []);
         return (
@@ -63,60 +108,13 @@ import { Select } from 'vienna-ui';
                 </DateTimePicker>
             </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Границы выбора времени
+## Состояния неактивности
 
-##### Свойство `timeFrom`, `timeTo`
-
-Границы выбора времени определяют нижнее и верхнее значения при выборе времени из выпадающего списка компонента `Select`. По умолчанию `timeFrom='00:00` и `timeTo='23:30`
-
-```jsx
-<DateTimePicker timeFrom='05:00' timeTo='15:00'>
-    <Select />
-</DateTimePicker>
 ```
-
-## Шаг для выбора времени
-
-##### Свойство `step`
-
-Шаг выбора времени определяет значения при выборе времени из выпадающего списка компонента `Select`. По умолчанию `step={30}`
-
-```jsx
-<DateTimePicker step={60}>
-    <Select />
-</DateTimePicker>
-```
-
-## Размеры
-
-##### Свойство `size`
-
-Компонент имеет стандартные размеры `xs`, `s`, `l` (по умолчанию) и `xl`.
-
-## Дизайн
-
-##### Свойство `design`
-
-Есть два доступных значения для свойства `design`: `outline` (по умолчанию) и `material`.
-
-```jsx
-<DateTimePicker design='material' />
-<DateTimePicker design='outline' />
-```
-
-## Состояние неактивности
-
-##### Свойство `disabled`
-
-Для того, чтобы отобразить компонент, как неактивный, необходимо установить свойство `disabled` тому дочернему элементу: **календарю или полю для выбора/ввода даты, или им обоим**, выбор значения в котором должнет быть заблокирован.
-
-```jsx
-{
-    () => {
+    {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
         const changeHandler = React.useCallback((e, data) => setValue(data), []);
         return (
@@ -135,19 +133,14 @@ import { Select } from 'vienna-ui';
                 </DateTimePicker>
             </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Состояние ошибки
 
-##### Свойство `invalid`
+## Состояния ошибки
 
-Для того, чтобы отобразить компонент, как невалидный, необходимо установить свойство `disabled` тому дочернему элементу: **календарю или полю для выбора/ввода даты, или им обоим**, значение в котором выбрано некорректно.
-
-```jsx
-{
-    () => {
+```
+    {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
         const changeHandler = React.useCallback((e, data) => setValue(data), []);
         return (
@@ -166,6 +159,54 @@ import { Select } from 'vienna-ui';
                 </DateTimePicker>
             </Groups>
         );
-    };
-}
+    }}
+```
+
+
+## Локализация
+
+Для того чтобы локализовать DateTimePicker, необходимо передать в `locale` значение из `date-fns/locale`, передать в `localization` обьект локализации
+
+```
+    {() => {
+        /* import { enGB } from 'date-fns/locale'; */
+        const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
+        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const inputDateLocalization = {
+            'ds.inputDate.placeholder.date': 'DD.MM.YYYY',
+            'ds.inputDate.placeholder.time': 'HH:MM',
+            'ds.inputDate.placeholder.datetime': 'DD.MM.YYYY HH:MM',
+        };
+        const calendarLocalization = {
+            'ds.calendar.body.today': 'Today',
+            'ds.calendar.day.monday': 'MO',
+            'ds.calendar.day.tuesday': 'TU',
+            'ds.calendar.day.wednesday': 'WE',
+            'ds.calendar.day.thursday': 'TH',
+            'ds.calendar.day.friday': 'FR',
+            'ds.calendar.day.saturday': 'SA',
+            'ds.calendar.day.sunday': 'SU',
+            'ds.calendar.month.january': 'Jan.',
+            'ds.calendar.month.february': 'Feb.',
+            'ds.calendar.month.march': 'Mar.',
+            'ds.calendar.month.april': 'Apr.',
+            'ds.calendar.month.may': 'May',
+            'ds.calendar.month.june': 'Jun.',
+            'ds.calendar.month.july': 'Jul',
+            'ds.calendar.month.august': 'Aug.',
+            'ds.calendar.month.september': 'Sep.',
+            'ds.calendar.month.october': 'Oct.',
+            'ds.calendar.month.november': 'Nov.',
+            'ds.calendar.month.december': 'Dec.',
+        };
+        const datePickerLocalization = { ...inputDateLocalization, ...calendarLocalization };
+        return (
+            <DateTimePicker
+                value={value}
+                onChange={changeHandler}
+                localization={datePickerLocalization}
+                locale={enGB}
+            />
+        );
+    }}
 ```
