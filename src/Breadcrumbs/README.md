@@ -20,7 +20,7 @@ import { Breadcrumbs } from 'vienna-ui';
 
 ## Option
 
-#### React Props 
+#### React Props
 
 
 | Prop | Type | Default | Description |
@@ -31,7 +31,7 @@ import { Breadcrumbs } from 'vienna-ui';
 | preLast | boolean \| undefined |
 | last | boolean \| undefined |
 | value | any |
-| onClick | ((e: any, data: { value: any; }) => void) | undefined |
+| onClick | ((e: any, data: { value: any; }) => void) \| undefined |
 
 
 
