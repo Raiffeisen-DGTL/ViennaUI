@@ -24,21 +24,21 @@ import { Body } from 'vienna-ui';
 ###### Шрифты ALS_Hauss
 
 ```
-@fcc/ui/src/Body/resources/ALS_Hauss-Bold.eot
-@fcc/ui/src/Body/resources/ALS_Hauss-Bold.woff
-@fcc/ui/src/Body/resources/ALS_Hauss-Bold.woff2
-@fcc/ui/src/Body/resources/ALS_Hauss-Medium.eot
-@fcc/ui/src/Body/resources/ALS_Hauss-Medium.woff
-@fcc/ui/src/Body/resources/ALS_Hauss-Medium.woff2
-@fcc/ui/src/Body/resources/ALS_Hauss-Regular.eot
-@fcc/ui/src/Body/resources/ALS_Hauss-Regular.woff
-@fcc/ui/src/Body/resources/ALS_Hauss-Regular.woff2
+vienna-ui/src/Body/resources/ALS_Hauss-Bold.eot
+vienna-ui/src/Body/resources/ALS_Hauss-Bold.woff
+vienna-ui/src/Body/resources/ALS_Hauss-Bold.woff2
+vienna-ui/src/Body/resources/ALS_Hauss-Medium.eot
+vienna-ui/src/Body/resources/ALS_Hauss-Medium.woff
+vienna-ui/src/Body/resources/ALS_Hauss-Medium.woff2
+vienna-ui/src/Body/resources/ALS_Hauss-Regular.eot
+vienna-ui/src/Body/resources/ALS_Hauss-Regular.woff
+vienna-ui/src/Body/resources/ALS_Hauss-Regular.woff2
 ```
 
 ###### Шрифты Navigo
 
 ```
-@fcc/ui/src/Body/resources/Navigo-Bold-Web.eot
-@fcc/ui/src/Body/resources/Navigo-Bold-Web.woff
-@fcc/ui/src/Body/resources/Navigo-Bold-Web.woff2
+vienna-ui/src/Body/resources/Navigo-Bold-Web.eot
+vienna-ui/src/Body/resources/Navigo-Bold-Web.woff
+vienna-ui/src/Body/resources/Navigo-Bold-Web.woff2
 ```
