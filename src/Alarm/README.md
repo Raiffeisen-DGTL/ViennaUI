@@ -26,3 +26,14 @@ import { Alarm } from 'vienna-ui';
 ```
 <Alarm design='success' />
 ```
+
+## Внешний вид
+
+```
+    <Alarm design='critical' />
+    <Alarm design='warning' />
+    <Alarm design='success' />
+    <Alarm design='accent' />
+    <Alarm design='neutral' />
+    <Alarm design='disabled' />
+```
