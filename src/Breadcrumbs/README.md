@@ -12,71 +12,176 @@ import { Breadcrumbs } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | "s" \| "m" \| "l" \| undefined | "m" |
-| onClickHome | ((e: any, data: { value: any; }) => void) \| undefined | false | Обработчик нажатия на кнопку "Домой" |
-| localization | [BreadcrumbsLocalization](../Breadcrumbs/localization.ts) | defaultBreadcrumbsLocalization | Локализация |
+| size | "s" \| "m" \| "l" \| undefined |
+| noHomeButton | boolean \| undefined |
+| noBackButton | boolean \| undefined |
+| onClickHome | ((e: any, data: { value: React.ReactNode; }) => void) \| undefined  | Обработчик нажатия на кнопку "Домой" |
+| localization | Localization<BreadcrumbsLocalization, undefined> | undefined  | Локализация |
 
-## Свойства шага / Option Props
+## Option
 
-| Prop    | Type                | Default | Description          |
-| ------- | ------------------- | ------- | -------------------- |
-| altText | string \| undefined | false   | Альтернативный текст |
+#### React Props 
 
-## Использование
 
-Компонент состоит из родительского контейнера `Breadcrumbs` и шагов `Breadcrumbs.Option`. Если был совершен только один шаг, то он будет слегка видоизменен под кнопку `Назад`.
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | "s" \| "m" \| "l" \| undefined |
+| altText | string \| undefined |
+| first | boolean \| undefined |
+| preLast | boolean \| undefined |
+| last | boolean \| undefined |
+| value | any |
+| onClick | ((e: any, data: { value: any; }) => void) | undefined |
 
-```jsx
-<Breadcrumbs>
-    <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
-    <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
-    <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
-</Breadcrumbs>
+
+
+```
+    <Breadcrumbs>
+        <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+        <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+    </Breadcrumbs>
 ```
 
-## Альтернативный текст
-
-##### Свойство `altText`
+## Внешний вид
 
 Для того чтобы компонент мог ужать текст при уменьшении можно задать альтернативный текст `altText`, иначе он будет сокращаться с обрезкой и добавлением `...`
 
-```jsx
-<Breadcrumbs>
-    <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
-    <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
-    <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
-</Breadcrumbs>
 ```
+    <Breadcrumbs>
+        <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+        <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+    </Breadcrumbs>
+```
+
 
 ## Размеры
 
-##### Свойство `size`
+Есть размеры - `s`, `m`, `l` (cтандартный размер - `m`).
 
-Есть размеры - `s`, `m` (по умолчанию), `l`.
+```
+    <Groups design='vertical'>
+        <Breadcrumbs size='s'>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs size='m'>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs size='l'>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
+```
 
-## Обработчики клика
+Если был совершен только один шаг, то он будет слегка видоизменен под кнопку `Назад`
 
-##### Свойство `onClick`, `onClickHome`
+```
+    <Groups design='vertical'>
+        <Breadcrumbs size='s'>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs size='m'>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs size='l'>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
+```
+
+
+## Поведение
+
+Поведение при сжатии с и без наличия `altText`
+
+```
+    <div style={{ width: '300px' }}>
+        <Breadcrumbs>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </div>
+```
+
+```
+    <div style={{ width: '300px' }}>
+        <Breadcrumbs>
+            <Breadcrumbs.Option>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </div>
+```
+
+## Пример с onClick + onClickHome
 
 Для работы с элементами достаточно обрабатывать их событие `onClick`, для случая нажатия на кнопку `Домой` используется событие `onClickHome`
 
-```jsx
-<Groups design='vertical'>
-    <Breadcrumbs onClickHome={console.log}>
-        <Breadcrumbs.Option onClick={console.log} value={{ data: 1 }} altText='Page 1'>
-            Long Name Page 1
-        </Breadcrumbs.Option>
-        <Breadcrumbs.Option onClick={console.log} value={2} altText='Page 2'>
-            Long Name Page 2
-        </Breadcrumbs.Option>
-        <Breadcrumbs.Option onClick={console.log} value='step 3' altText='Page 3'>
-            Long Name Page 3
-        </Breadcrumbs.Option>
-    </Breadcrumbs>
-    <Breadcrumbs>
-        <Breadcrumbs.Option onClick={console.log} value={1} altText='Page 1'>
-            Long Name Page 1
-        </Breadcrumbs.Option>
-    </Breadcrumbs>
-</Groups>
+```
+    <Groups design='vertical'>
+        <Breadcrumbs onClickHome={console.log}>
+            <Breadcrumbs.Option onClick={console.log} value={{ data: 1 }} altText='Page 1'>
+                Long Name Page 1
+            </Breadcrumbs.Option>
+            <Breadcrumbs.Option onClick={console.log} value={2} altText='Page 2'>
+                Long Name Page 2
+            </Breadcrumbs.Option>
+            <Breadcrumbs.Option onClick={console.log} value='step 3' altText='Page 3'>
+                Long Name Page 3
+            </Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs>
+            <Breadcrumbs.Option onClick={console.log} value={1} altText='Page 1'>
+                Long Name Page 1
+            </Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
+```
+
+## Элементы являются простыми ссылками
+
+Для работы с элементами достаточно обрабатывать их событие `onClick`, для случая нажатия на кнопку `Домой` используется событие `onClickHome`
+
+```
+    <Groups design='vertical'>
+        <Breadcrumbs onClickHome={console.log}>
+            <Breadcrumbs.Option href='' target='_blank' altText='open blank page'>
+                Open blank page
+            </Breadcrumbs.Option>
+            <Breadcrumbs.Option href='http://ds.raiffeisen.ru' target='_blank' altText='DS'>
+                Open DS in new window
+            </Breadcrumbs.Option>
+            <Breadcrumbs.Option href='http://ds.raiffeisen.ru' target='_self' altText='DS'>
+                Open DS in some window
+            </Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs>
+            <Breadcrumbs.Option href='http://ds.raiffeisen.ru' altText='DS'>
+                DS
+            </Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
+```
+
+## Свойство noBackButton и noHomeButton
+
+```
+    <Groups design='vertical'>
+        <Breadcrumbs noHomeButton>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs noBackButton>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
 ```
