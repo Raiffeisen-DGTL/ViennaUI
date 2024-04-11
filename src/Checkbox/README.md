@@ -14,17 +14,17 @@ import { Checkbox } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| children | ReactNode | false | Отображаемый лейбл |
-| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки |
+| children | ReactNode |  | Отображаемый лейбл |
+| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
 | size | ResponsiveProp<"s" \| "m" \| "l" , B> \| undefined | | Размеры |
-| invalid | boolean \| undefined | false | Компонент отображается как ошибочный если true |
+| invalid | boolean \| undefined |  | Компонент отображается как ошибочный если true |
 | indeterminate | boolean \| undefined |  | Частично выбранный чекбокс. Нельзя использовать совместно с checked |
-| onBlur | FocusEventHandler<HTMLInputElement> \| undefined | false | Обработчик события при потере фокуса компонентом |
-| onFocus | FocusEventHandler<HTMLInputElement>  \| undefined | false | Обработчик события при получении фокуса компонентом |
-| onChange | ChangeEventHandler<HTMLInputElement> \| undefined | false | Обработчик события при клике на компонент |
-| checked | boolean \| undefined | false | Статус выбранного значения |
-| disabled | boolean \| undefined | false |
-| name | string \| undefined | false |
+| onBlur | FocusEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при потере фокуса компонентом |
+| onFocus | FocusEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при получении фокуса компонентом |
+| onChange | ChangeEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при клике на компонент |
+| checked | boolean \| undefined |  | Статус выбранного значения |
+| disabled | boolean \| undefined |  |
+| name | string \| undefined |  |
 | active | boolean \| undefined |
 | ref | Ref<HTMLInputElement> \| undefined |
 
