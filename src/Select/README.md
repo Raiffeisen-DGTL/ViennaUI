@@ -12,7 +12,7 @@ import { Select } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-|| ref | Ref<HTMLInputElement> \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
+|ref | Ref<HTMLInputElement> \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
 | size | "xs" \| "s" \| "l" \| "xl" \| undefined |  | Размеры |
 | design | "outline" \| "material" \| undefined |  | Дизайн |
 | prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
@@ -90,7 +90,6 @@ import { Select } from 'vienna-ui';
 | typedValueEquals | (((value: any) => boolean) & ((value: any) => boolean)) \| undefined |
 | _initialized | boolean \| undefined |
 | _value | string \| undefined |
-
 | _refreshing | boolean \| undefined |
 | _isolated | boolean \| undefined |
 | state | (MaskedState & { _blocks: MaskedState[]; }) \| undefined |
@@ -126,7 +125,6 @@ import { Select } from 'vienna-ui';
 | exposeBlock | Masked<any> \| undefined |
 | _rebuildMask | (() => void) \| undefined |
 | isFixed | boolean \| undefined |
-
 | from | number \| undefined |
 | to | number \| undefined |
 | _matchFrom | number \| undefined |
