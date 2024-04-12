@@ -10,8 +10,7 @@
 | onChange | (InputEvent<FormEvent<HTMLInputElement>> & ((value: unknown) => void)) \| undefined |  |
 | design | "outline" \| "material" \| undefined |  | Дизайн |
 | prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
-| onFocus | MultiselectEvent<FocusEvent<HTMLInputElement, Element>>
- \| undefined |  | Обработчик события при получении фокуса компонентом |
+| onFocus | MultiselectEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |
 | onBlur | MultiselectEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при потере фокуса компонентом |
 | onKeyDown | MultiselectEvent<KeyboardEventHandler<HTMLInputElement>> \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
 | onKeyPress | KeyboardEventHandler \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
@@ -31,7 +30,7 @@
 | onUpdated | (() => void) \| undefined |  |
 | onComplete | ((value: string, maskRef: InputMask<FactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined |  |
 | maskOptions | FactoryOpts |
-| options | any[] | CallbackFunc \| undefined |  |
+| options | any[] \| CallbackFunc \| undefined |  |
 | maxListHeight | number \| undefined |  |
 | maxListWidth | number \| undefined |  |
 | openWhenFocus | boolean \| undefined |  |
@@ -42,9 +41,9 @@
 | compare | ((item: any) => any )\| undefined |  |
 | minViewItems | number \| undefined |  |
 | groupItems | boolean  \| undefined |  |
-| fixed  | | boolean  \| undefined  |
-| ref | Ref<HTMLDivElement> | undefined  |
-| align | 'top' | 'bottom' | 'auto' \| undefined |  |
+| fixed  | boolean  \| undefined  |
+| ref | Ref<HTMLDivElement> \| undefined  |
+| align | 'top' \| 'bottom' \| 'auto' \| undefined |  |
 | localization | Localization<MultiselectLocalizationMap, MultiselectLocalizationCotext> \| undefined  |
 
 
