@@ -12,26 +12,25 @@ import { Header } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | "s" \| "m" \| "l" \| undefined | "m" | Размеры |
-| logoHref | string \| undefined | false | Ссылка для лого |
-| shadow | boolean \| undefined | true | Свойство для отображения тени |
-| fixed | boolean \| undefined | false | Свойство для фиксации Header |
-| items | ReactElement \| undefined | false | Принимает Header.Items для отображения элементов |
-| search | ReactNode \| undefined | false | Принмает поле для поиска |
-| logo | ReactNode \| undefined | false | Заменяет лого |
-| disabledContent | boolean \| undefined | false |
-| isOpen | boolean \| undefined | false | Состояние открытие мобильного меню/контента |
-| mobileBelow | number \| undefined | 1 | Брейкпоинт для мобильной версии |
-| mobileMenu | ((obj: { items: ReactNode; onClose?: (() => void) \| undefined; }) => ReactNode) \| undefined | false |
-| onOpen | (() => void) \| undefined | false | Функция открытия мобильного меню/контента |
-| onClose | (() => void) \| undefined | false | Функция закрытия мобильного меню/контента |
+| size | "s" \| "m" \| "l" \| undefined || Размеры |
+| logoHref | string \| undefined |  | Ссылка для лого |
+| shadow | boolean \| undefined |  | Свойство для отображения тени |
+| fixed | boolean \| undefined |  | Свойство для фиксации Header |
+| items | ReactElement \| undefined |  | Принимает Header.Items для отображения элементов |
+| search | ReactNode \| undefined |  | Принмает поле для поиска |
+| logo | ReactNode \| undefined |  | Заменяет лого |
+| disabledContent | boolean \| undefined |  |
+| isOpen | boolean \| undefined |  | Состояние открытие мобильного меню/контента |
+| mobileBelow | number \| undefined |  | Брейкпоинт для мобильной версии |
+| mobileMenu | ((obj: { items: ReactNode; onClose?: (() => void) \| undefined; }) => ReactNode) \| undefined |  |
+| onOpen | (() => void) \| undefined |  | Функция открытия мобильного меню/контента |
+| onClose | (() => void) \| undefined |  | Функция закрытия мобильного меню/контента |
 
-## Свойства элементов / Items Props
+## HTMLAttributes
 
 | Prop           | Type                              | Default  | Description                 |
 | -------------- | --------------------------------- | -------- | --------------------------- |
-| align          | 'bottom' \| 'center' \| undefined | 'bottom' | Выравнивание по вертикали   |
-| justifyContent | string \| undefined               | 'center' | Выравнивание по горизонтали |
+| action          | ReactNode \| (({ isMobile: boolean }: { isMobile: any; }) => ReactNode)  |
 
 ## Использование
 
@@ -104,68 +103,235 @@ import { Header } from 'vienna-ui';
 }
 ```
 
-## Тень
+## Внешний вид
 
-##### Свойство `shadow`
+#### Shadow
 
-У компоненты Header есть свойство `shadow`, которое управляет тенью компоненты. По умолчанию `true`.
+У компоненты Header есть свойство shadow, которое управляет тенью компоненты.
 
-```jsx
-<Header shadow={false} size='l' />
+```
+    <Groups size='xl' design='vertical'>
+        <Header size='l' />
+        <Header shadow={false} size='l' />
+    </Groups>
+```
+#### Align
+
+У компоненты Header есть свойство pressCenter, которое прижимает табы к центру компоненты Header.
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Groups size='xl' design='vertical'>
+                <Header
+                    size='l'
+                    items={
+                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+                <Header
+                    size='m'
+                    items={
+                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+                <Header
+                    size='s'
+                    items={
+                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+            </Groups>
+        );
+    }}
 ```
 
-## Выравнивание пунктов шапки
+#### Justify Content
 
-##### Свойство `align`
-
-##### Свойство `justifyContent`
-
-```jsx
-<Header
-    size='l'
-    items={
-        <Header.Items
-            align='bottom'
-            justifyContent='flex-start'
-            design='primary'
-            onChange={handleChange}
-            value={state.value}>
-            {items.map(({ value, label }) => (
-                <Header.Item key={value} value={value} label={label} />
-            ))}
-        </Header.Items>
-    }
-/>
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Header
+                items={
+                    <Header.Items
+                        design='primary'
+                        align='center'
+                        justifyContent='flex-start'
+                        onChange={handleChange}
+                        value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+                action={
+                    <Button size='s' design='accent'>
+                        Открыть
+                    </Button>
+                }
+            />
+        );
+    }}
 ```
 
-## Размер
+## Размеры
 
-##### Свойство `size`
+#### Размер L
 
-Доступны размеры: `s`, `m` (по умолчанию), `l`.
-
-```jsx
-<Header
-    size='l'
-    items={
-        <Header.Items design='primary' onChange={handleChange} value={state.value}>
-            {items.map(({ value, label }) => (
-                <Header.Item key={value} value={value} label={label} />
-            ))}
-        </Header.Items>
-    }
-/>
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Header
+                size='l'
+                items={
+                    <Header.Items design='primary' onChange={handleChange} value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+                action={
+                    <Button size='s' design='accent'>
+                        Открыть
+                    </Button>
+                }
+            />
+        );
+    }}
 ```
 
-## Search
 
-##### Свойство `search`
+#### Размер M
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Header
+                size='m'
+                items={
+                    <Header.Items onChange={handleChange} value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+                action={
+                    <Button size='s' design='accent'>
+                        Открыть
+                    </Button>
+                }
+            />
+        );
+    }}
+```
+
+#### Размер S
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Header
+                size='s'
+                items={
+                    <Header.Items onChange={handleChange} value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+                action={
+                    <Button size='xs' design='accent'>
+                        Открыть
+                    </Button>
+                }
+            />
+        );
+    }}
+```
+
+## Внутренние компоненты
+
+#### Items
+
+Используйте свойство `items` для передачи компонентов Items и Item для отображения табов или списка.
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        const handleSearch = () => {};
+        return (
+            <Header
+                items={
+                    <Header.Items design='primary' onChange={handleChange} value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+            />
+        );
+    }}
+```
+
+#### Search
 
 Используйте свойство `search` для передачи компоненты поиска в Header.
 
-```jsx
-{
-    () => {
+```
+    {() => {
         const [state, setState] = React.useState({ value: '', suggests: [] });
         const handleChange = (e, data) => {
             const mock = [
@@ -201,35 +367,36 @@ import { Header } from 'vienna-ui';
                 }
             />
         );
-    };
-}
+    }}
 ```
 
-## Отображение логотипа
 
-##### Свойство `logoHref`
+#### Logo
 
 Используйте `logoHref` для передачи адреса на главную страницу.
 
-```jsx
-<Header logoHref='https://www.raiffeisen.ru/' />
+```
+    <Header logoHref='https://www.raiffeisen.ru/' />
 ```
 
-Так же можно применить свойтсво `logo`, если нужно изменить логотип.
+Так же можно применить свойтсво logo, если нужно изменить логотип.
 
-> `logo` не отображается при `size = s`.
-
-```jsx
-<Header logo={<Logotype collapsed />} />
+```
+    <Header logo={<Logotype collapsed />} />
 ```
 
-## Content
+`logo` не отображается при `size = s`.
+
+```
+    <Header size='s' />
+```
+
+#### Content
 
 К каждому `Header.Item` можно добавить дочерние элементы, которые будут отображатся при раскрытии пунктов меню.
 
-```jsx
-{
-    () => {
+```
+    {() => {
         const [state, setState] = React.useState({ value: '1' });
         const handleChange = (e, value) => setState({ value });
         const handleSearch = () => {};
@@ -291,19 +458,15 @@ import { Header } from 'vienna-ui';
                 </div>
             </>
         );
-    };
-}
+    }}
 ```
 
-## Управление подменю
+#### Свойство disabledContent
 
-##### Свойство `disabledContent`
+С помощью этого проперти можно заблокировать раскрытие подменю, даже если оно задано явно в дочерних элементах.
 
-С помощью этого свойства можно заблокировать раскрытие подменю, даже если оно задано явно в дочерних элементах.
-
-```jsx
-{
-    () => {
+```
+    {() => {
         const [state, setState] = React.useState({ value: 'score' });
         const handleChange = (e, value) => setState({ value });
         const handleSearch = () => {};
@@ -344,25 +507,19 @@ import { Header } from 'vienna-ui';
                 content={({ value }) => data[value]}
             />
         );
-    };
-}
+    }}
 ```
 
-## Кнопки действий
+#### Action
 
-##### Свойство `action`
-
-##### Свойство `isMobile`
-
-Используйте свойство `action` для дополнительных кнопок.
+Используйте свойство `action` для дополнительных конпок.
 
 `action` может принимать функцию, в которую приходит свойство `isMobile`.
 
-`isMobile` указывает на адаптивность компонента `Header`. Относительно `isMobile` можно менять компоненты в `action`.
+`isMobile` указывает на адаптивность компоненты Header. Относительно `isMobile` можно менять компоненты в action.
 
-```jsx
-{
-    () => {
+```
+    {() => {
         const actionContent = ({ isMobile }) =>
             isMobile ? (
                 <Passport size='m' />
@@ -377,21 +534,19 @@ import { Header } from 'vienna-ui';
                 </Groups>
             );
         return <Header action={actionContent} />;
-    };
-}
+    }}
 ```
 
 ## Адаптивный Header
 
-##### Свойство `mobileBelow`
+C помощью `mobileBelow` можно задать порог перехода в мобильное представление.
 
-C помощью `mobileBelow` можно задать порог перехода (breakpoint) в мобильное представление.
+Компонента Header адаптируется к разрешению экрана.
 
-> Компонента Header адаптируется к разрешению экрана. `items` будут открываться на весь экран списком, а `search` будет заменять весь `Header`.
+`items` будут открываться на весь экран листом, а `search` будет заменять весь Header.
 
-```jsx
-{
-    () => {
+```
+    {() => {
         const [state, setState] = React.useState({ value: '1' });
         const handleChange = (e, value) => {
             setState({ value });
@@ -409,27 +564,15 @@ C помощью `mobileBelow` можно задать порог переход
                     items={
                         <Header.Items design='primary' onChange={handleChange} value={state.value}>
                             <Header.Item key='1' value='1' label={<span>Счета</span>}>
-                                <div
-                                    style={{
-                                        maxWidth: 700,
-                                        height: 150,
-                                        backgroundColor: '#E6F6F8',
-                                        border: '1px dashed #00A5BC',
-                                    }}>
-                                    Счета
-                                </div>
+                                    <div style={{ maxWidth: 700, height: 150, backgroundColor: '#E6F6F8', border: '1px dashed #00A5BC' }}>
+                                        Счета
+                                    </div>
                             </Header.Item>
                             <Header.Item key='2' value='2' label={<span>Операции</span>}></Header.Item>
                             <Header.Item key='3' value='3' label={<span>Реквизиты</span>}>
-                                <div
-                                    style={{
-                                        maxWidth: 700,
-                                        height: 150,
-                                        backgroundColor: '#E6F6F8',
-                                        border: '1px dashed #00A5BC',
-                                    }}>
-                                    Реквизиты
-                                </div>
+                                    <div style={{ maxWidth: 700, height: 150, backgroundColor: '#E6F6F8', border: '1px dashed #00A5BC' }}>
+                                        Реквизиты
+                                    </div>
                             </Header.Item>
                         </Header.Items>
                     }
@@ -450,6 +593,57 @@ C помощью `mobileBelow` можно задать порог переход
                 </div>
             </>
         );
-    };
-}
+    }}
+```
+
+#### Кастомизация
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        const theme = {
+            header: {
+                custom: {
+                    sideContent: {
+                        background: 'blue',
+                    },
+                    tabs: {
+                        background: 'red',
+                    },
+                    tab: {
+                        background: 'green',
+                    },
+                },
+            },
+        };
+        return (
+            <ThemeProvider theme={theme}>
+                <Header
+                    items={
+                        <Header.Items
+                            design='primary'
+                            align='center'
+                            justifyContent='flex-start'
+                            onChange={handleChange}
+                            value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                    action={
+                        <Button size='s' design='accent'>
+                            Открыть
+                        </Button>
+                    }
+                />
+            </ThemeProvider>
+        );
+    }}
 ```
