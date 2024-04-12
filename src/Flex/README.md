@@ -75,7 +75,7 @@ import { Flex } from 'vienna-ui';
 | row | string \| undefined | |
 | area | string \| undefined | |
 | justifySelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
-| alignSelf | | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
+| alignSelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
 | placeSelf | string \| undefined | |
 | maxHeight | string \| undefined | |
 | maxWidth | string \| undefined | |

@@ -12,25 +12,13 @@ import { FormField } from 'vienna-ui';
 
 | Prop   | Type                 | Default | Description                                      |
 | ------ | -------------------- | ------- | ------------------------------------------------ |
-| inline | boolean \| undefined | false   | Заголовок и компонент отображается в одну строку |
+| inline | boolean \| undefined |    | Заголовок и компонент отображается в одну строку |
+| size | FormFieldSize  \| undefined |
+| fixateMessageHeight | boolean \| undefined |
 
-## Свойства сообщения / Message Props
-
-| Prop  | Type                          | Default | Description           |
-| ----- | ----------------------------- | ------- | --------------------- |
-| color | 'warning' \| 'critical'       |         | Цвет текста сообщения |
-| align | 'left' \| 'center' \| 'right' | 'left'  | Выравнивание текста   |
-
-## Свойства заголовка / Label Props
-
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| required | boolean |  | Отображение звездочки |
-| htmlFor | string |  | ID labelable-элемента, который находится в том же документе, что и компонент `FormField.Label` |
 
 ## Использование
 
-Компонент состоит из родительского компонента `FormField` и дочерних компонентов `FormField.Label`, `FormField.Content` и `FormField.Message`.
 
 ## Внешний вид
 
@@ -44,47 +32,94 @@ import { FormField } from 'vienna-ui';
 </FormField>
 ```
 
-## Обязательное поле
+## Размер
 
-##### Свойство `FormField.Label`, `required`
+По умолчанию `size` имеет значение `s`.
 
-Для отображение звездочки можно использовать свойство `required` компонента `FormField.Label`.
-
-```jsx
-<FormField>
-    <FormField.Label required>Обязательное поле</FormField.Label>
-    <FormField.Content>
-        <Input />
-    </FormField.Content>
-</FormField>
+```
+    <FormField size='s'>
+        <FormField.Label>Название поля</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message>Сообщение</FormField.Message>
+        </FormField.Content>
+    </FormField>
+    <FormField size='m'>
+        <FormField.Label>Название поля</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message>Сообщение</FormField.Message>
+        </FormField.Content>
+    </FormField>
 ```
 
-## Сообщения
+Чтобы изменить размер передаваемого поля, необходимо задать `size` для самого поля.
 
-##### Свойство `FormField.Message`, `color`
+```
+    <FormField size='m'>
+        <FormField.Label>Название поля</FormField.Label>
+        <FormField.Content>
+            <Input size='xl' />
+            <FormField.Message>Сообщение</FormField.Message>
+        </FormField.Content>
+    </FormField>
+```
+#### Без сообщения
 
-Для `FormField.Message` есть два доступных значения свойства `color`: `warning`, `critical`.
+```
+    <FormField>
+        <FormField.Label>Название поля (без сообщения)</FormField.Label>
+        <FormField.Content>
+            <Input />
+        </FormField.Content>
+    </FormField>
+```
 
-```jsx
-<FormField>
-    <FormField.Label>Название поля</FormField.Label>
-    <FormField.Content>
-        <Input />
-        <FormField.Message color='warning'>Предупреждение</FormField.Message>
-    </FormField.Content>
-</FormField>
+#### С меткой обязательности и ошибкой
+
+```
+    <FormField>
+        <FormField.Label required>Обязательное поле</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message color='critical'>Сообщение об ошибке</FormField.Message>
+        </FormField.Content>
+    </FormField>
+```
+
+#### С предупреждением
+
+```
+    <FormField>
+        <FormField.Label>Название поля</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message color='warning'>Предупреждение</FormField.Message>
+        </FormField.Content>
+    </FormField>
+```
+
+#### С предупреждением и ошибкой
+
+```
+    <FormField>
+        <FormField.Label>Название поля</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message color='warning'>Предупреждение</FormField.Message>
+            <FormField.Message color='critical'>Сообщение об ошибке</FormField.Message>
+        </FormField.Content>
+    </FormField>
 ```
 
 ## Строчное отображение
 
-##### Свойство `inline`
-
-```jsx
-<FormField inline>
-    <FormField.Label>Название поля в одну строку:</FormField.Label>
-    <FormField.Content>
-        <Input />
-        <FormField.Message>Сообщение</FormField.Message>
-    </FormField.Content>
-</FormField>
+```
+    <FormField inline>
+        <FormField.Label>Название поля в одну строку:</FormField.Label>
+        <FormField.Content>
+            <Input />
+            <FormField.Message>Сообщение</FormField.Message>
+        </FormField.Content>
+    </FormField>
 ```
