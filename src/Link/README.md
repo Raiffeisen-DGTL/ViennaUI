@@ -15,7 +15,6 @@ import { Link } from 'vienna-ui';
 | -------- | ---------------------------------------------------------- | -------- | ----------- |
 | design   | 'accent' \| 'accent-underline' \| 'primary' \| 'secondary' |  |
 | size     | ResponsiveProp<'s' \| 'm' \| 'l', Breakpoints> \| undefined
-                                       |     |
 | loading  | boolean \| undefined                                       |     |
 | disabled | boolean \| undefined                                       |     |
 | color     | 'brand-accent' /| 'brand-on-accent' /| 'brand-white' /| 'brand-primary' /| 'brand-on-primary' /| 'brand-wildsand' /| 'seattle01' /| 'seattle05' /| 'seattle10' /| 'seattle30' /| 'seattle60' /| ... 168 more ... \| undefined                                        |     |
