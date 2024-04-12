@@ -19,8 +19,8 @@ import { Drawer, useDrawer } from 'vienna-ui';
 | closeIcon | ReactNode | | Иконка для закрытия |
 | noScroll | boolean \| undefined |  | Управление возможностью прокрутки всего контента или только содержимого `Drawer.Body` |
 | orientation | "top" \| "bottom" \| "left" \| "right" \| undefined |  | Позиционирование |
-| onClose | ((data?: any) => boolean \| void \| Promise) \| undefined | false |
-| onPreDispose | (() => void) \| undefined | false | Обработчик события исчезновения drawer-a |
+| onClose | ((data?: any) => boolean \| void \| Promise) \| undefined |  |
+| onPreDispose | (() => void) \| undefined |  | Обработчик события исчезновения drawer-a |
 | state | any |  | Управление состоянием черех хук `useDrawer` |
 | ref | boolean \| undefined  |
 | closeByFade | boolean \| undefined  |
