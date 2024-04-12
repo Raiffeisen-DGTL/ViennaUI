@@ -39,7 +39,7 @@ import { Select } from 'vienna-ui';
 | align | 'top' \| 'bottom' \| 'auto'  \| undefined |
 | number | number \| undefined |
 | remove | (((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails)) \| undefined |
-| append | ((str: string, flags?: AppendFlags<MaskedState> | undefined, tail?: string | String | TailDetails | undefined) => ChangeDetails) \| undefined |
+| append | ((str: string, flags?: AppendFlags<MaskedState> \| undefined, tail?: string \| String \| TailDetails \| undefined) => ChangeDetails) \| undefined |
 | pad | (((flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) & ((flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) & ((flags?: AppendFlags<...> \| undefined) => ChangeDetails)) \| undefined |
 | mask | (NumberConstructor & string) \| undefined |
 | parent | Masked<any>  \| undefined |
@@ -50,9 +50,9 @@ import { Select } from 'vienna-ui';
 | format | (((value: number, masked: Masked<any>) => string) & ((value: string, masked: Masked<any>) => string) & ((value: any, masked: Masked<any>) => string) & ((value: DateValue, masked: Masked<...>) => string)) \| undefined |
 | parse | (((str: string, masked: Masked<any>) => number) & ((str: string, masked: Masked<any>) => string) & ((str: string, masked: Masked<any>) => any) & ((str: string, masked: Masked<...>) => DateValue)) \| undefined |
 | overwrite | boolean \| 'shift' \| undefined |
-| eager | boolean | 'remove' | 'append' \| undefined |
+| eager | 'remove' \| 'append' \| undefined |
 | skipInvalid | boolean \| undefined |
-| autofix | boolean | 'pad' \| undefined |
+| autofix | boolean \| 'pad' \| undefined |
 | radix | string \| undefined |
 | thousandsSeparator | string \| undefined |
 | mapToRadix | string[] \| undefined |
@@ -94,7 +94,7 @@ import { Select } from 'vienna-ui';
 | _isolated | boolean \| undefined |
 | state | (MaskedState & { _blocks: MaskedState[]; }) \| undefined |
 | reset | ((() => void) & (() => void)) \| undefined |
-| resolve | ((value: string, flags?: AppendFlags<MaskedState> | undefined) => void) \| undefined |
+| resolve | ((value: string, flags?: AppendFlags<MaskedState> \| undefined) => void) \| undefined |
 | rawInputValue | string \| undefined |
 | displayValue | string \| undefined |
 | isComplete | string \| undefined |
