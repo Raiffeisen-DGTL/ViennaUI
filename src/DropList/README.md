@@ -58,29 +58,6 @@ import { DropList } from 'vienna-ui';
     }}
 ```
 
-## Использование
-
-```
-    {() => {
-        const [isOpen, setOpen] = React.useState(false);
-        return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
-                {isOpen && (
-                    <DropList>
-                        <DropList.Item>Item 1</DropList.Item>
-                        <DropList.Item>Very very long Item 2</DropList.Item>
-                        <DropList.Item disabled>Item 3</DropList.Item>
-                        <DropList.Item>Item 4</DropList.Item>
-                        <DropList.Item selected>Item 5</DropList.Item>
-                        <DropList.Item>Item 6</DropList.Item>
-                        <DropList.Item>Item 7</DropList.Item>
-                    </DropList>
-                )}
-            </RoundIcon>
-        );
-    }}
-```
 ## Использование с fixed
 
 #### Передача координат
