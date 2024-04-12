@@ -26,9 +26,6 @@ import { Filter } from 'vienna-ui';
 | --- | --- | --- | --- |
 | height | 'full' \| 'auto' \| undefined |
 
-
-Свойства наследуются от GroupsProps компонента 'Groups'
-
 ## Использование
 
 ```
@@ -38,8 +35,6 @@ import { Filter } from 'vienna-ui';
         <Filter.Item>Вес</Filter.Item>
     </Filter>
 ```
-
-## Использованиее
 
 ## Дизайн
 
@@ -63,7 +58,7 @@ import { Filter } from 'vienna-ui';
     </Filter>
 ```
 
-## Длиные значения
+## Длинные значения
 
 ```
     <Filter>
