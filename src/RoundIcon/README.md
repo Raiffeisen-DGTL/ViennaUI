@@ -14,7 +14,7 @@ import { RoundIcon } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl', B extends void ? Breakpoints : B> |\| undefined |  | Доступные размеры |
+| size | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl', B extends void ? Breakpoints : B> \| undefined |  | Доступные размеры |
 | color | "seattle10" \| "seattle60" \| "oslo10" \| "oslo60" \| "miami10" \| "miami100" \| "nice10" \| "nice100" \| "dubai10" \| "dubai100" \| "paris10" \| "paris100" \| "sochi10" \| "sochi100" \| "tokyo10" \| ... 17 more ... \| undefined | | Цвет фона |
 | clickable | boolean \| undefined |  | Возможность нажатия на компонент |
 

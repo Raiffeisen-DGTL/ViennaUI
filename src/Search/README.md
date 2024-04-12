@@ -8,27 +8,29 @@
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки |
-| size | "xs" \| "s" \| "l" \| "xl" \| undefined | false | Размеры |
-| design | "outline" \| "material" \| undefined | false | Дизайн |
-| prefix | ReactNode | false | Значанеие отображаемое перед компонентом |
-| postfix | ReactNode | false | Значение отображаемое после компонента |
-| suggests | any[] \| undefined | false | Список элементов в выпадающем списке: массив |
-| value | any | false | Выбранный элемент (должен совпадать по интерфейсу с объектами массива) |
-| maxListHeight | number \| undefined | false | Максимальная высота выпадающего списка в пикселях |
-| invalid | boolean \| undefined | false | Компонент отображается как ошибочный если true |
-| children | string \| number \| boolean \| {} \| ReactElement ReactElement Component)> \| null) \| (new (props: any) => Component)> \| ... 4 more ... \| undefined | false | Элементы выпадающего списка в случае если не используется свойство suggests |
-| onSelect | SearchSelectEvent \| undefined | false | Обработчик события при выборе элемента списка |
-| onChange | SearchEvent> \| undefined | false | Обработчик события при наборе текста в поле ввода |
-| onFocus | InputEvent> \| undefined | false | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent> \| undefined | false | Обработчик события при потере фокуса компонентом |
-| onKeyDown | SearchEvent<(event: KeyboardEvent) => void> \| undefined | false | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
-| onKeyUp | ((event: KeyboardEvent) => void) \| undefined | false | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
-| onKeyPress | ((event: KeyboardEvent) => void) \| undefined | false | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
-| onScroll | ((event: UIEvent) => void) \| undefined | false | Обработчик события при прокрутке списка |
-| showInlineSuggest | boolean \| undefined | false | Показывать строчное дополнение (по умолчанию true) |
-| wrapSuggestions | boolean \| undefined | false | Разрешить перенос подсказки на следующую строку |
-| valueToString | ((item?: any) => string) \| undefined | false | Определяем значение которое надо вывести в компонент как текст выбранного значения |
+| ref | Ref<HTMLInputElement> \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
+| size | "xs" \| "s" \| "l" \| "xl" \| undefined |  | Размеры |
+| design | "outline" \| "material" \| undefined |  | Дизайн |
+| prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
+| postfix | ReactNode |  | Значение отображаемое после компонента |
+| suggests | any[] \| undefined |  | Список элементов в выпадающем списке: массив |
+| value | string \| undefined |  | Выбранный элемент (должен совпадать по интерфейсу с объектами массива) |
+| maxListHeight | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
+| maxListWidth | number \| undefined |
+| invalid | boolean \| undefined |  | Компонент отображается как ошибочный если true |
+| onSelect | SearchSelectEvent \| undefined |  | Обработчик события при выборе элемента списка |
+| onChange | SearchEvent<FormEvent<HTMLInputElement>> \| undefined | | Обработчик события при наборе текста в поле ввода |
+| onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
+| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined | Обработчик события при потере фокуса компонентом |
+| onKeyDown | SearchEvent<KeyboardEvent<HTMLInputElement>>  \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
+| onKeyUp | KeyboardEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
+| onKeyPress | KeyboardEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
+| onScroll | UIEventHandler<HTMLDivElement> \| undefined |  | Обработчик события при прокрутке списка |
+| showInlineSuggest | boolean \| undefined |  | Показывать строчное дополнение (по умолчанию true) |
+| wrapSuggestions | boolean \| undefined |  | Разрешить перенос подсказки на следующую строку |
+| valueToString | ((item?: any) => string) \| undefined |  | Определяем значение которое надо вывести в компонент как текст выбранного значения |
+| fitOptions | boolean \| undefined |
+| fixed | boolean \| undefined |
 
 ```jsx
 const [state, setValue] = React.useState({ value: '', suggests: [] });
