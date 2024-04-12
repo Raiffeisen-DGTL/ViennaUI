@@ -16,7 +16,7 @@
 | onClose | ((data?: unknown) => boolean \| void \| Promise<boolean>) \| undefined |
 | onPreDespose    | (() => void) \| undefined
 | ref    | any                                           |
-| closeByFade    | boolean | undefined |                                
+| closeByFade    | boolean \| undefined |                                
 
 
 ## HTMLAttributes
