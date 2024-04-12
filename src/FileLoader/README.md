@@ -29,14 +29,14 @@ import { FileLoader } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | file | FCCFile | Файл |
-| altText | string \| undefined | false |
-| invalid | boolean \| undefined | false | Состояние ошибки |
-| disabled | boolean \| undefined | false | Неактивное состояние |
-| closable | boolean \| undefined | false | Возможность закрытия |
-| progress | number \| undefined | false | Процент загрузки |
-| loading | number \| undefined | false | Состояние загрузки |
-| extension | string \| undefined | false | Расширение |
-| accept | string \| undefined | false | Перечесление через запятую поддерживаемых форматов и/или MIME типов \*/ |
+| altText | string \| undefined | |
+| invalid | boolean \| undefined |  | Состояние ошибки |
+| disabled | boolean \| undefined |  | Неактивное состояние |
+| closable | boolean \| undefined |  | Возможность закрытия |
+| progress | number \| undefined |  | Процент загрузки |
+| loading | number \| undefined |  | Состояние загрузки |
+| extension | string \| undefined |  | Расширение |
+| accept | string \| undefined |  | Перечесление через запятую поддерживаемых форматов и/или MIME типов \*/ |
 | onClick | ((file: FCCFile) => void) \| undefined |
 | onDelete | ((file: FCCFile) => void) \| undefined |
 
