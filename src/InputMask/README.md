@@ -32,12 +32,12 @@ import { InputMask } from 'vienna-ui';
 | ref | Ref<HTMLInputElement>  \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
 | invalid | boolean \| undefined |  |
 | placeholderValueAutoDiff | boolean \| undefined |  |
-| active | boolean \| undefined | false | Принудительный ховер |
+| active | boolean \| undefined |  | Принудительный ховер |
 | postfix | ReactNode |  | Значение отображаемое после компонента |
 | smartPlaceholder | ReactNode |  |
 | onDespose | (() => void) \| undefined |  |
 | onUpdated | (() => void) \| undefined |  |
-| onComplete | ((value: string, maskRef: InputMask<FactoryOpts>, e?: InputEvent | undefined) => void) \| undefined |  |
+| onComplete | ((value: string, maskRef: InputMask<FactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined |  |
 | maskOptions | FactoryOpts |
 
 
