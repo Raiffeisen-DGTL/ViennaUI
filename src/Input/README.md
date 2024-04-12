@@ -13,7 +13,7 @@ import { Input } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 |ref | Ref<HTMLInputElement> \| undefined | | |
-|size | ResponsiveProp<'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl', Breakpoints> \| undefined | | |
+|size | ResponsiveProp<'xs' /| 's' /| 'm' /| 'l' /| 'xl' /| 'xxl', Breakpoints> \| undefined | | |
 |design | 'outline' \| 'material' \| undefined | | |
 |prefix| ReactNode | | |
 |postfix |ReactNode | | |
