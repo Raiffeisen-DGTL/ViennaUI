@@ -12,54 +12,100 @@ import { Logotype } from 'vienna-ui';
 
 | Prop      | Type                                                   | Default | Description |
 | --------- | ------------------------------------------------------ | ------- | ----------- |
-| size      | 'xs' \| 's' \| 'm' \| 'l' \| 'xl'                      | false   |
-| design    | 'light' \| 'dark' \| 'monochrome' \| 'monochrome-dark' | false   |
-| locale    | 'ru' \| 'en'                                           | false   |
-| collapsed | boolean \| undefined                                   | false   |
+| size      | 'xs' \| 's' \| 'm' \| 'l' \| 'xl'                      |    |
+| design    | 'light' \| 'dark' \| 'monochrome' \| 'monochrome-dark' |    |
+| locale    | 'ru' \| 'en'                                           |    |
+| collapsed | boolean \| undefined                                   |    |
 
-## Использование
-
-```jsx
-<Logotype />
+```
+    <Logotype />
 ```
 
-## Свёрнутое состояние
+## Внешний вид
 
-##### Свойство `collapsed`
+```
+    <Logotype />
+```
+
+#### Свёрнутое состояние
 
 С помощью флага `collapsed` можно отобразить логотип в свёрнутом состоянии, при котором надпись отсутствует.
 
-```jsx
-<Logotype collapsed />
+```
+    <Logotype collapsed />
 ```
 
-## Чёрно-белый логотип
+#### Чёрно-белый логотип
 
-##### Свойство `design`
-
-```jsx
-<Logotype design='monochrome' />
+```
+    <Logotype design='monochrome' />
 ```
 
 #### Тёмная тема
 
-Установив свойство `design` в значение `dark` можно отобразить логотип для тёмной темы. Дизайн `monochrome-dark` исользуется для черно-белого логотипа в тёмной теме.
+Установив свойство `design` в значение `dark` можно отобразить логотип для тёмной темы.
 
-```jsx
-<Groups design='vertical' size='xl'>
-    <Logotype design='dark' />
-    <Logotype design='monochrome-dark' />
-</Groups>
+```
+    <Groups design='vertical' size='xl'>
+        <Logotype design='dark' />
+    </Groups>
 ```
 
-## Локализация
-
-##### Свойство `locale`
+## Locale
 
 С помощью параметра `locale` можно устновать язык логотипа. Поддерживается два значения `en` и `ru`.
 
+```
+    <Logotype locale='ru' />
+    <Logotype locale='en' />
+```
+
+## Однострочный логотип
+
+С помощью параметра `type` можно устновить стиль логотипа. Значение 'one-line' для отображение в одну строку.
+
+```
+    <Logotype type='one-line' />
+    <Logotype type='one-line' locale='en' />
+```
+
+## Вертикальный логотип
+
+С помощью свойства `orientation` в значении 'vertical' можно задать вертикальное отображение логотипа.
+
+```
+    <>
+        <Logotype orientation='vertical' />
+    </>
+```
+
 ## Размеры
 
-##### Свойство `size`
+С помощью параметра `size` можно установить размер логотипа. Поддерживается 5 размеров `xs`, `s`, `m`, `l`, `xl`, `xxl`.
 
-С помощью параметра `size` можно установить размер логотипа. Поддерживается 5 размеров `xs`, `s`, `m`, `l`, `xl`.
+```
+    <Groups design='vertical'>
+        <Logotype size='xs' collapsed />
+        <Logotype size='s' collapsed />
+        <Logotype size='m' collapsed />
+        <Logotype size='l' collapsed />
+        <Logotype size='xl' collapsed />
+        <Logotype size='xxl' collapsed />
+    </Groups>
+    <Groups design='vertical'>
+        <Logotype size='xs' />
+        <Logotype size='s' />
+        <Logotype size='m' />
+        <Logotype size='l' />
+        <Logotype size='xl' />
+        <Logotype size='xxl' />
+    </Groups>
+    <Groups design='vertical'>
+        <Logotype size='xs' locale='en' />
+        <Logotype size='s' locale='en' />
+        <Logotype size='m' locale='en' />
+        <Logotype size='l' locale='en' />
+        <Logotype size='xl' locale='en' />
+        <Logotype size='xxl' locale='en' />
+    </Groups>
+```
