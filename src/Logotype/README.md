@@ -17,9 +17,6 @@ import { Logotype } from 'vienna-ui';
 | locale    | 'ru' \| 'en'                                           |    |
 | collapsed | boolean \| undefined                                   |    |
 
-```
-    <Logotype />
-```
 
 ## Внешний вид
 
