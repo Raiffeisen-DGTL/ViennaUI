@@ -60,7 +60,7 @@ import { Flex } from 'vienna-ui';
 | spellCheck | boolean \| undefined | |
 | tabIndex | number \| undefined | |
 | wrap | ResponsiveProp<'wrap' \| 'nowrap' \| 'wrap-reverse', Breakpoints> \| undefined | |
-| media | { [x: string]: Props & WithMargin & WithPadding; base?: (Props & WithMargin & WithPadding) \| undefined; xs?: (Props & ... 1 more ... & WithPadding) \| undefined; ... 6 more ...; belowL?: (Props & ... 1 more ... & WithPadding) | undefined; } \| undefined | 
+| media | { [x: string]: Props & WithMargin & WithPadding; base?: (Props & WithMargin & WithPadding) \| undefined; xs?: (Props & ... 1 more ... & WithPadding) \| undefined; ... 6 more ...; belowL?: (Props & ... 1 more ... & WithPadding) \| undefined} \| undefined | 
 
 ## Item
 ### React Props 👇
@@ -74,8 +74,8 @@ import { Flex } from 'vienna-ui';
 | column | string \| undefined | |
 | row | string \| undefined | |
 | area | string \| undefined | |
-| justifySelf | 'start' | 'end' | 'center' | 'stretch' \| undefined |
-| alignSelf | | 'start' | 'end' | 'center' | 'stretch' \| undefined |
+| justifySelf | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
+| alignSelf | | 'start' \| 'end' \| 'center' \| 'stretch' \| undefined |
 | placeSelf | string \| undefined | |
 | maxHeight | string \| undefined | |
 | maxWidth | string \| undefined | |
