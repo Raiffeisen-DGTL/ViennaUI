@@ -28,7 +28,7 @@ import { FileLoader } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| file | FCCFile | Файл |
+| file | FCCFile | | Файл |
 | altText | string \| undefined | |
 | invalid | boolean \| undefined |  | Состояние ошибки |
 | disabled | boolean \| undefined |  | Неактивное состояние |

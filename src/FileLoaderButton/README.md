@@ -17,7 +17,7 @@ import { FileLoaderButton } from 'vienna-ui';
 | onChange | ((event: any, files: FCCFile[], errorFiles: FCCFileError[]) => void) \| undefined |  |
 | design | "critical" \| "accent" \| "primary" \| "outline" \| "outline-critical" \| "ghost" \| undefined |  | Дизайн |
 | size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
-| grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \|  | false | Размещение в сетке (аналогично `Button`) |
+| grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \|  |  | Размещение в сетке (аналогично `Button`) |
 | square | boolean \| undefined |  | Ширина равна высоте, если это возможно (аналогично `Button`) |
 | accept | string \| undefined |
 | multiple | boolean \| undefined |  | Поддержка множественного выбора файлов |
