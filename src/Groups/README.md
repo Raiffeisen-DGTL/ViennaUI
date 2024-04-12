@@ -12,16 +12,21 @@ import { Groups } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "horizontal" \| "vertical" \| undefined | 'horizontal' |
-| size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined | 'm' |
-| alignItems | "normal" \| "inherit" \| "initial" \| "unset" \| "stretch" \| "center" \| "flex-start" \| "flex-end" \| "self-start" \| "self-end" \| "baseline" \| undefined | 'center' |
-| justifyContent | "normal" \| "inherit" \| "initial" \| "unset" \| "center" \| "flex-start" \| "flex-end" \| "space-between" \| "space-around" \| undefined | 'flex-start' |
-| clean | boolean \| undefined | false | Игнорирование React.Fragment, переданные на первом уровне вложенности дочерних компонентов |
-| height | 'full' \| 'auto' \| undefined | 'auto' | Высота контейнера |
+| design | "horizontal" \| "vertical" \| undefined |  |
+| size | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined |  |
+| alignItems | "normal" \| "inherit" \| "initial" \| "unset" \| "stretch" \| "center" \| "flex-start" \| "flex-end" \| "self-start" \| "self-end" \| "baseline" \| undefined |  |
+| justifyContent | "normal" \| "inherit" \| "initial" \| "unset" \| "center" \| "flex-start" \| "flex-end" \| "space-between" \| "space-around" \| undefined | |
+| clean | boolean \| undefined |  | Игнорирование React.Fragment, переданные на первом уровне вложенности дочерних компонентов |
+
+## HTMLAttributes 👇
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| height | 'full' \| 'auto' \| undefined | | Высота контейнера |
 
 ## Использование
 
-Компонент принимает элементы (компоненты), которые необходжимло сгруппировать.
+Контейнер для объеденения элементов в группы с отступами между элементами.
 
 ```jsx
 <Groups>
@@ -49,69 +54,79 @@ import { Groups } from 'vienna-ui';
 </Groups>
 ```
 
-## Размеры
+## Дизайн
 
-##### Свойство `size`
+Компонент имееет дизайн `vertical` для вертикального выравнивания элементов.
+
+```
+    <Groups design='vertical'>
+        <Button design='accent'>Make payment</Button>
+        <Button design='outline'>Download statement</Button>
+        <Button design='outline'>
+            <TrashDelete /> Delete statement
+        </Button>
+    </Groups>
+```
+
+## Размеры
 
 Компонент имеет стандартные размеры `xs`, `s`, `m`, `l` и `xl`.
 
-```jsx
-<Groups design='vertical'>
-    <Groups size='xs'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
+```
+    <Groups design='vertical'>
+        <Groups size='xs'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </Groups>
+        <Groups size='s'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </Groups>
+        <Groups size='m'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </Groups>
+        <Groups size='l'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </Groups>
+        <Groups size='xl'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </Groups>
     </Groups>
-    <Groups size='s'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-    </Groups>
-    <Groups size='m'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-    </Groups>
-    <Groups size='l'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-    </Groups>
-    <Groups size='xl'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-    </Groups>
-</Groups>
 ```
 
 ## Обработка React.Fragment
 
-##### Свойство `clean`
+Компонент может раскрывать `React.Fragment` на первом уровне (удалять его) и добавлять элементы в первый уровень. Если вы хотите включить эту возможность, передайте параметр `clean` как `true`.
 
-Компонент может раскрывать `React.Fragment` на первом уровне (удалять его) и добавлять элементы в первый уровень вложенности. Если вы хотите включить эту возможность, передайте параметр `clean` как `true`.
-
-```jsx
-<Groups clean={true}>
-    <Button design='accent'>Make payment</Button>
-    <Button design='outline'>Download statement</Button>
-    <React.Fragment>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-        <Button design='outline'>
-            <Trash /> Delete statement
-        </Button>
-    </React.Fragment>
-</Groups>
+```
+    <Groups clean={true}>
+        <Button design='accent'>Make payment</Button>
+        <Button design='outline'>Download statement</Button>
+        <React.Fragment>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+            <Button design='outline'>
+                <TrashDelete /> Delete statement
+            </Button>
+        </React.Fragment>
+    </Groups>
 ```

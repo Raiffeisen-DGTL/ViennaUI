@@ -12,10 +12,10 @@ import { Grid } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| align | 'left' \| 'center' \| 'right' \| 'around' \| 'between' \| 'stretch' | false | Выравнивание по горизонтали |
-| valign | 'top' \| 'middle' \| 'bottom' | false | Выравнивание по вертикали |
-| columnGap | string \| undefined | '24px' | Расстояние между колонками, пожддерживается любое валидное css значение |
-| rowGap | string \| undefined | '0' | Отступ между строками, пожддерживается любое валидное css значение |
+| align | 'left' \| 'center' \| 'right' \| 'around' \| 'between' \| 'stretch' |  | Выравнивание по горизонтали |
+| valign | 'top' \| 'middle' \| 'bottom' |  | Выравнивание по вертикали |
+| columnGap | string \| undefined |  | Расстояние между колонками, пожддерживается любое валидное css значение |
+| rowGap | string \| undefined |  | Отступ между строками, пожддерживается любое валидное css значение |
 
 ## Свойства колонки / Col Props
 
