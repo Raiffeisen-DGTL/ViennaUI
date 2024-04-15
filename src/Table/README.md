@@ -20,7 +20,7 @@ import { Table } from 'vienna-ui';
 | minHeight | string \| undefined | |
 | noOverflow | boolean \| undefined | |
 | sort | { field: string; direction: 'asc' \| 'desc'} \| undefined | |
-| selected | any[] \| undefined | undefined | Массив выбранных строк |
+| selected | any[] \| undefined |  | Массив выбранных строк |
 | state | TableState \| undefined |  | Свойство для уроавления внутренним состоянием таблицы |
 | disableCheckboxSelectAll | boolean \| undefined | | Массив данных |
 | data | any[] \| undefined |  | Массив данных |
@@ -167,60 +167,6 @@ import { Table } from 'vienna-ui';
         );
     };
 }
-```
-
-```
-    {() => {
-        // Здесь и далее в примерах используются данные приведенного ниже формата:
-        const data = [
-            {
-                id: 0,
-                firstName: 'John',
-                lastName: 'Doe',
-                position: 'Software Engineer',
-                phone: '9163456789',
-                nickname: 'Stubborn D',
-                login: '@stubd',
-            },
-            {
-                id: 1,
-                firstName: 'Johnnie',
-                lastName: 'Walker',
-                position: 'Software Engineer',
-                phone: 'none',
-                nickname: 'Possessive W',
-                login: 'possw',
-            },
-            {
-                id: 2,
-                firstName: 'James',
-                lastName: 'Jameson',
-                position: 'CTO',
-                phone: '916456789',
-                nickname: 'Strident J',
-                login: 'strj',
-            },
-        ];
-        return (
-            <Table data={data}>
-                <Table.Column id='id' title='#'>
-                    {(person) => person.id}
-                </Table.Column>
-                <Table.Column id='firstName' title='First Name'>
-                    {(person) => person.firstName}
-                </Table.Column>
-                <Table.Column id='lastName' title='Last Name'>
-                    {(person) => person.lastName}
-                </Table.Column>
-                <Table.Column id='position' title='Position'>
-                    {(person) => person.position}
-                </Table.Column>
-                <Table.Column id='phone' title='Phone'>
-                    {(person) => person.phone}
-                </Table.Column>
-            </Table>
-        );
-    }}
 ```
 
 #### Table.Column
