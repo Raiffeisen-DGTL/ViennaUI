@@ -16,10 +16,10 @@ import { Alarm } from 'vienna-ui';
 | --- | --- | --- | --- |
 | design | AlarmDesign \| undefined | |
 | position | "relative" \| "absolute" \| undefined | |
-| top | string \| undefined | Свойство для вертикального позиционирования. Зависит от свойства position |
-| bottom | string \| undefined  | Свойство для вертикального позиционирования. Зависит от свойства position |
-| left | string \| undefined  | Свойство для горизонтального позиционирования. Зависит от свойства position |
-| right | string \| undefined  | Свойство для горизонтального позиционирования. Зависит от свойства position |
+| top | string \| undefined |  |
+| bottom | string \| undefined  |  |
+| left | string \| undefined  |  |
+| right | string \| undefined  |  |
 
 ## Использование
 
