@@ -21,7 +21,7 @@
 | onSelect | SearchSelectEvent \| undefined |  | Обработчик события при выборе элемента списка |
 | onChange | SearchEvent<FormEvent<HTMLInputElement>> \| undefined | | Обработчик события при наборе текста в поле ввода |
 | onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined | Обработчик события при потере фокуса компонентом |
+| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined | | Обработчик события при потере фокуса компонентом |
 | onKeyDown | SearchEvent<KeyboardEvent<HTMLInputElement>>  \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
 | onKeyUp | KeyboardEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
 | onKeyPress | KeyboardEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
