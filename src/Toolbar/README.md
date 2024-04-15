@@ -12,8 +12,16 @@ import { Toolbar } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "dark" \| "light" \| undefined | "light" |
-| onClick | (event: FormEvent<HTMLDivElement>, data?: { id?: string; name?: string }) => void \| undefined | false |
+| design | "dark" \| "light" \| undefined |  |
+| onClick | ClickEvent \| undefined |  |
+
+## HTMLAttributes
+
+ Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| id | string \| undefined |  |
+| name | string \| undefined |  |
+
 
 ## Свойства операции / Operation Props
 
@@ -27,55 +35,78 @@ import { Toolbar } from 'vienna-ui';
 
 ## Использование
 
-Компонент состоит из родительского контейнера `Toolbar` и дочерних операций (путнктов) `Toolbar.Operation`. Сами операции могут содержать подменю, которые тоже задаются через компонент `Toolbar.Operation`.
-
 ```
-<Toolbar>
-    <Toolbar.Operation icon={<Clip />} label='Action 1' />
-    <Toolbar.Operation icon={<Clip />} label='Action 2' />
-    <Toolbar.Operation icon={<Clip />} label='Action 3'>
-        <Toolbar.Operation label='Option 1' />
-        <Toolbar.Operation label='Option 2' />
-        <Toolbar.Operation label='Option 3' />
-    </Toolbar.Operation>
-</Toolbar>
-```
-
-## Дизайн
-
-##### Свойство `design`
-
-Дизайн доступен в двух значениях: `dark`, `light`.
-
-```
-<Toolbar design='dark'>
-    <Toolbar.Operation label='Action 1' />
-    <Toolbar.Operation label='Action 2' />
-</Toolbar>
+    <Toolbar>
+        <Toolbar.Operation icon={<Attach />} label={'Action 1'} />
+        <Toolbar.Operation icon={<Attach />} label={'Action 2'} />
+        <Toolbar.Operation icon={<Attach />} label={'Action 3'}>
+            <Toolbar.Operation label={'Option 1'} />
+            <Toolbar.Operation label={'Option 2'} />
+            <Toolbar.Operation label={'Option 3'} />
+        </Toolbar.Operation>
+        <Toolbar.Operation icon={<Attach />} label={'Action 4'} />
+        <Toolbar.Operation icon={<Attach />} label={'Action 5'}>
+            <Toolbar.Operation label={'Option 1'} />
+            <Toolbar.Operation label={'Option 2'} />
+            <Toolbar.Operation label={'Option 3'} />
+            <Toolbar.Operation label={'Option 4'} />
+        </Toolbar.Operation>
+        <Toolbar.Operation icon={<Attach />} label={'Action 6'} />
+        <Toolbar.Operation icon={<Attach />} label={'Action 7'} />
+    </Toolbar>
 ```
 
-## Заголовок
-
-##### Свойство `label`
-
-С помощью свойства `label` можно установить заголовок операции (пункта).
+## Внешний вид
 
 ```
-<Toolbar>
-    <Toolbar.Operation label='Action 1' />
-    <Toolbar.Operation label='Action 2' />
-</Toolbar>
+    {() => {
+        return (
+            <Toolbar>
+                <Toolbar.Operation icon={<Attach />} label={'Action 1'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 2'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 3'}>
+                    <Toolbar.Operation label={'Option 1'} />
+                    <Toolbar.Operation label={'Option 2'} />
+                    <Toolbar.Operation label={'Option 3'} />
+                </Toolbar.Operation>
+                <Toolbar.Operation icon={<Attach />} label={'Action 4'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 5'}>
+                    <Toolbar.Operation label={'Option 1'} />
+                    <Toolbar.Operation label={'Option 2'} />
+                    <Toolbar.Operation label={'Option 3'} />
+                    <Toolbar.Operation label={'Option 4'} />
+                </Toolbar.Operation>
+                <Toolbar.Operation icon={<Attach />} label={'Action 6'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 7'} />
+            </Toolbar>
+        );
+    }}
 ```
 
-## Иконка
-
-##### Свойство `icon`
-
-C помощью свойства `icon` можно добавить иконку к операции (пункту).
+## Темный дизайн
 
 ```
-<Toolbar>
-    <Toolbar.Operation icon={<Clip />} label='Action 1' />
-    <Toolbar.Operation icon={<Clip />} label='Action 2' />
-</Toolbar>
+    {() => {
+        return (
+            <Toolbar design='dark'>
+                <Toolbar.Operation icon={<Attach />} label={'Action 1'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 2'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 3'}>
+                    <Toolbar.Operation label={'Option 1'} />
+                    <Toolbar.Operation label={'Option 2'} />
+                    <Toolbar.Operation label={'Option 3'} />
+                </Toolbar.Operation>
+                <Toolbar.Operation icon={<Attach />} label={'Action 4'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 5'}>
+                    <Toolbar.Operation label={'Option 1'} />
+                    <Toolbar.Operation label={'Option 2'} />
+                    <Toolbar.Operation label={'Option 3'} />
+                    <Toolbar.Operation label={'Option 4'} />
+                </Toolbar.Operation>
+                <Toolbar.Operation icon={<Attach />} label={'Action 6'} />
+                <Toolbar.Operation icon={<Attach />} label={'Action 7'} />
+            </Toolbar>
+        );
+    }}
 ```
+
