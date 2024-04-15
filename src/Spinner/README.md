@@ -14,7 +14,7 @@ import { Spinner } from 'vienna-ui';
 
 | Prop     | Type                                                    | Default | Description |
 | -------- | ------------------------------------------------------- | ------- | ----------- |
-| size     | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", B extends void ? Breakpoints : B> \| undefined | false   |
+| size     | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", B extends void ? Breakpoints : B> \| undefined |    |
 | position | "relative" \| "absolute" \| undefined                   |    |
 | color | 'primary' \| 'accent' \| 'london120' \| 'white' \| undefined                 |    |
 
