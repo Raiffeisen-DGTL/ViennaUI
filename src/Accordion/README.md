@@ -13,8 +13,8 @@ import { Accordion } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | 's' \| 'm' \| 'l' \| undefined | 'm' |  |
-| iconPosition | 'left' | 'right' \| 'none' \| undefined | 'right' | |;
+| size | 's' \| 'm' \| 'l' \| undefined |  |  |
+| iconPosition | 'left' \| 'right' \| 'none' \| undefined |  | |;
 
 ## HTMLAttributes
 
