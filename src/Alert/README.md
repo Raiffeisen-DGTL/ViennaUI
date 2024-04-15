@@ -12,12 +12,12 @@ import { Alert } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| actions | ReactNode | Блок для кнопок |
+| actions | ReactNode | | Блок для кнопок |
 | design | AlertDesign \| undefined |
-| dynamic | boolean \| undefined  | Контролирует динамическую ширину компонента |
-| noIcon | boolean \| undefined  | Контролирует отображение иконки |
-| compactBelow | number \| undefined | Контролирует отображение коммпактного режима, когда ширина просмотра меньше заданного числа |
-| compact | ResponsiveProp<boolean, Breakpoints> | undefined |
+| dynamic | boolean \| undefined  | | Контролирует динамическую ширину компонента |
+| noIcon | boolean \| undefined  |  |Контролирует отображение иконки |
+| compactBelow | number \| undefined |  | Контролирует отображение коммпактного режима, когда ширина просмотра меньше заданного числа |
+| compact | ResponsiveProp<boolean, Breakpoints> \| undefined |
 
 ## HTMLAttributes
 | Prop | Type | Default | Description |
