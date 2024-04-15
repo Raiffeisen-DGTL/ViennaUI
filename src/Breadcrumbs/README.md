@@ -15,8 +15,8 @@ import { Breadcrumbs } from 'vienna-ui';
 | size | "s" \| "m" \| "l" \| undefined |
 | noHomeButton | boolean \| undefined |
 | noBackButton | boolean \| undefined |
-| onClickHome | ((e: any, data: { value: React.ReactNode; }) => void) \| undefined  | Обработчик нажатия на кнопку "Домой" |
-| localization | Localization<BreadcrumbsLocalization, undefined> \| undefined  | Локализация |
+| onClickHome | ((e: any, data: { value: React.ReactNode; }) => void) \| undefined  | | Обработчик нажатия на кнопку "Домой" |
+| localization | Localization<BreadcrumbsLocalization, undefined> \| undefined  | | Локализация |
 
 ## Option
 
