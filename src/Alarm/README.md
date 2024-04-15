@@ -14,15 +14,26 @@ import { Alarm } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "critical" \| "warning" \| "success" \| "accent" \| "neutral" \| "disabled" \| undefined | false |
-| position | "relative" \| "absolute" \| undefined | false |
-| top | string \| undefined | false | Свойство для вертикального позиционирования. Зависит от свойства position |
-| bottom | string \| undefined | false | Свойство для вертикального позиционирования. Зависит от свойства position |
-| left | string \| undefined | false | Свойство для горизонтального позиционирования. Зависит от свойства position |
-| right | string \| undefined | false | Свойство для горизонтального позиционирования. Зависит от свойства position |
+| design | AlarmDesign \| undefined | |
+| position | "relative" \| "absolute" \| undefined | |
+| top | string \| undefined |  |
+| bottom | string \| undefined  |  |
+| left | string \| undefined  |  |
+| right | string \| undefined  |  |
 
 ## Использование
 
 ```
 <Alarm design='success' />
+```
+
+## Внешний вид
+
+```
+    <Alarm design='critical' />
+    <Alarm design='warning' />
+    <Alarm design='success' />
+    <Alarm design='accent' />
+    <Alarm design='neutral' />
+    <Alarm design='disabled' />
 ```

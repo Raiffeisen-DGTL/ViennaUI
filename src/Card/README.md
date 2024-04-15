@@ -1,6 +1,6 @@
 # Card
 
-Компонент кароточек.
+Компонент карточек.
 
 ## Импорт
 
@@ -12,11 +12,34 @@ import { Card } from 'vienna-ui';
 
 | Prop    | Type            | Default | Description                                                 |
 | ------- | --------------- | ------- | ----------------------------------------------------------- |
-| header  | React.ReactNode | false   | Контент шапки                                               |
-| title   | string          | false   | Заголовок                                                   |
-| actions | React.ReactNode | false   | Контент в правой части шапки                                |
-| footer  | React.ReactNode | false   | Контент подвала                                             |
-| stretch | boolean         | false   | Может ли компонент растягиваться под родительский контейнер |
+| header  | React.ReactNode |    | Контент шапки                                               |
+| size   | ResponsiveProp<'s' \| 'm' \| 'l', B> \| undefined          |    |                                                    |
+| actions | React.ReactNode |    | Контент в правой части шапки                                |
+| footer  | React.ReactNode |    | Контент подвала                                             |
+| stretch | boolean   \| undefined       |    | Может ли компонент растягиваться под родительский контейнер |
+| margin | Whitespace \| undefined | |
+| marginTop | Whitespace \| undefined | |
+| marginBottom | Whitespace \| undefined | |
+| marginLeft | Whitespace \| undefined | |
+| marginRight | Whitespace \| undefined | |
+| marginHorizontal | Whitespace \| undefined | |
+| marginVertical | Whitespace \| undefined | |
+| m | Whitespace \| undefined | |
+| mt | Whitespace \| undefined | |
+| mb | Whitespace \| undefined | |
+| ml | Whitespace \| undefined | |
+| mr | Whitespace \| undefined | |
+| mx | Whitespace \| undefined | |
+| my | Whitespace \| undefined | |
+| ref | Ref<HTMLDivElement> \| undefined | |
+
+## HTMLAttributes 👇
+
+| Prop    | Type            | Default | Description                                                 |
+| ------- | --------------- | ------- | ----------------------------------------------------------- |
+| title  | string \| undefined|     
+
+
 
 ## Использование
 
@@ -24,107 +47,210 @@ import { Card } from 'vienna-ui';
 
 ```jsx
 <Card title='Simple card'>
-    <div style={{ width: '600px' }}>Content</div>
+        <ComponentHelpers.Card.Demo style={{ width: '600px' }} />
 </Card>
 ```
 
-## Контент блока "действия"
+## Размер
 
-##### Свойство `actions`
+С помощью свойства `size` можно указать размер карточки. Доступные значения: `s`, `m`, `l`. Размеры отличаются внутренними отступами, скруглением углов и тенью. Размер по умолчанию - `l`.
+
+```
+    <Grid.Row>
+        <Grid.Col size={4}>
+            <Card size='s'>
+                <ComponentHelpers.Card.Demo />
+            </Card>
+        </Grid.Col>
+        <Grid.Col size={4}>
+            <Card size='m'>
+                <ComponentHelpers.Card.Demo />
+            </Card>
+        </Grid.Col>
+        <Grid.Col size={4}>
+            <Card size='l'>
+                <ComponentHelpers.Card.Demo />
+            </Card>
+        </Grid.Col>
+    </Grid.Row>
+```
+
+## Just content
+
+```
+    <Card>
+        <ComponentHelpers.Card.Demo />
+    </Card>
+```
+
+## With actions
 
 В `actions` можно передать объект с иконкой, который будет отображён в правом верхнем углу карточки.
 
-```jsx
-<Card title='Card with actions' actions={<Settings1 />}>
-    Content
-</Card>
-<Card
-    title='Card with actions'
-    actions={
-        <Groups size='xs'>
-            <Settings1 />
-            <Close />
-        </Groups>
-    }>
-    Content
-</Card>
+```
+    <Card title='Card with actions' actions={<Settings />}>
+        <ComponentHelpers.Card.Demo />
+    </Card>
 ```
 
-## Шапка
+## Multiple actions
 
-##### Свойство `header`, `title`
-
-Для простых заголовков карточки достаточно передать строку в `title`. Для более сложных используется `header`, который приниает JSX-объект.
-
-```jsx
-<Card
-    header={
-        <Groups alignItems='baseline'>
-            <Card.Title>Card title</Card.Title>
-            <Card.Subtitle>Card subtitle</Card.Subtitle>
-        </Groups>
-    }>
-    <Demo />
-</Card>
+```
+    <Card
+        title='Card with actions'
+        actions={
+            <Groups size='xs'>
+                <Settings />
+                <CloseCancelX />
+            </Groups>
+        }>
+        <ComponentHelpers.Card.Demo />
+    </Card>
 ```
 
-#### Многострочный заголовок шапки
 
-##### Компонент `Card.Title`, `Card.Subtitle`
+## With header
 
-Для создания составных заголовском можно использовать компоненты `Card.Title`, `Card.Subtitle` и компонент `Groups`.
+Для простых заголовков кароточки достаточно передать строку в `title`. Для более сложных используется `header`, который приниает JSX-объект. Компонент также экспортирует вспомогательные подкомпоненты `Card.Title` и `Card.Subtitle` для создания загловка и подзаголовка карточки.
 
-```jsx
-<Card
-    title='Simple card'
-    header={
-        <Groups design='vertical' size='s'>
-            <Card.Title>Card title</Card.Title>
-            <Card.Subtitle>Card subtitle</Card.Subtitle>
-        </Groups>
-    }>
-    <Demo />
-</Card>
+```
+    <Card
+        header={
+            <Groups alignItems='baseline'>
+                <Card.Title>Card title</Card.Title>
+                <Card.Subtitle>Card subtitle</Card.Subtitle>
+            </Groups>
+        }>
+        <ComponentHelpers.Card.Demo />
+    </Card>
 ```
 
-## Подвал
+## Vertical header
 
-##### Свойство `footer`
-
-```jsx
-<Card
-    title='Card with footer'
-    footer={
-        <Groups justifyContent='flex-end'>
-            <Button design='outline'>Button example</Button>
-            <Button design='accent'>Button example</Button>
-        </Groups>
-    }>
-    <Demo />
-</Card>
+```
+    <Card
+        title='Simple card'
+        header={
+            <Groups design='vertical' size='s'>
+                <Card.Title>Card title</Card.Title>
+                <Card.Subtitle>Card subtitle</Card.Subtitle>
+            </Groups>
+        }>
+        <ComponentHelpers.Card.Demo />
+    </Card>
 ```
 
-## Заголовок в теле карточки
+## With footer
+```
+    <Card
+        title='Card with footer'
+        actions={<Settings />}
+        footer={
+            <Groups justifyContent='flex-end'>
+                <Button design='outline'>Button example</Button>
+                <Button design='accent'>Button example</Button>
+            </Groups>
+        }>
+        <ComponentHelpers.Card.Demo />
+    </Card>
+```
 
-##### Компонент `Card.ContentTitle`
+## ContentTitle
 
 Компонент также экспортирует подкомпонент `Card.ContentTitle` для заголовков внутри контента.
 
-```jsx
-<Card title='Content title' actions={<Settings1 />}>
-    <Card.ContentTitle>Section header</Card.ContentTitle>
-    <Demo />
-    <Card.ContentTitle>Section header</Card.ContentTitle>
-    <Demo />
-</Card>
+```
+    <Card title='Content title' actions={<Settings />}>
+        <Card.ContentTitle>Section header</Card.ContentTitle>
+        <ComponentHelpers.Card.Demo />
+        <Card.ContentTitle>Section header</Card.ContentTitle>
+        <ComponentHelpers.Card.Demo />
+    </Card>
 ```
 
-## Адаптивная высота
+## With tabs
 
-##### Свойство `stretch`
+```
+    <Card
+        header={
+            <Groups design='vertical'>
+                <Card.Title>Card with tabs</Card.Title>
+                <Tabs size='m' value='active'>
+                    <Tabs.Tab value='active'>Active</Tabs.Tab>
+                    <Tabs.Tab value='inactive'>Inactive</Tabs.Tab>
+                    <Tabs.Tab value='inactive'>Inactive</Tabs.Tab>
+                </Tabs>
+            </Groups>
+        }
+        actions={<Settings />}>
+        <ComponentHelpers.Card.Demo />
+    </Card>
+```
+
+## Tabs with subtitle
+
+```
+    <Card
+        header={
+            <Groups design='vertical'>
+                <Groups alignItems='baseline'>
+                    <Card.Title>Card header</Card.Title>
+                    <Card.Subtitle>Card subtitle</Card.Subtitle>
+                </Groups>
+                <Tabs size='m' value='active'>
+                    <Tabs.Tab value='active'>Active</Tabs.Tab>
+                    <Tabs.Tab value='inactive'>Inactive</Tabs.Tab>
+                    <Tabs.Tab value='inactive'>Inactive</Tabs.Tab>
+                </Tabs>
+            </Groups>
+        }
+        actions={<Settings />}>
+        <ComponentHelpers.Card.Demo />
+    </Card>
+```
+
+## Stretch
 
 Свойство `stretch` позволяет растянуть карточку по высоте до 100% высоты родителя.
 
-```jsx
-<Card stretch title='Simple card' />
+```
+    <Grid.Row>
+        <Grid.Col size={6}>
+            <Card
+                stretch
+                title='Simple card'
+                footer={
+                    <Groups justifyContent='flex-end'>
+                        <Button design='outline'>Button example</Button>
+                        <Button design='accent'>Button example</Button>
+                    </Groups>
+                }>
+                <ComponentHelpers.Card.Demo style={{ marginBottom: '5px' }} />
+                <ComponentHelpers.Card.Demo />
+            </Card>
+        </Grid.Col>
+        <Grid.Col size={6}>
+            <Card
+                stretch
+                title='Simple card'
+                footer={
+                    <Groups justifyContent='flex-end'>
+                        <Button design='outline'>Button example</Button>
+                        <Button design='accent'>Button example</Button>
+                    </Groups>
+                }>
+                <ComponentHelpers.Card.Demo />
+            </Card>
+        </Grid.Col>
+    </Grid.Row>
+```
+
+## Whitespace
+
+Так же компонент наследует margin-аттрибуты компонента `Whitespace` для управления внешними отступами карточки. Подробнее про эти атрибуты можно почитать на странице компонента [Whitespace](/components/whitespace)
+
+```
+    <Card title='Simple card' marginTop='s7' mb='s5'>
+        <ComponentHelpers.Card.Demo style={{ width: '600px' }} />
+    </Card>
 ```

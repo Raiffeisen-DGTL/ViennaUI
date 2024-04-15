@@ -10,19 +10,35 @@ import { Counter } from 'vienna-ui';
 
 ## Свойства / Props
 
-Свойства наследуются от [HTMLAttributes<HTMLDivElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1746)
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "critical" \| "warning" \| "success" \| "accent" \| "neutral" \| "disabled" \| undefined | false |
-| position | "relative" \| "absolute" \| undefined | false |
-| top | string \| undefined | false | Свойство для вертикального позиционирования. Зависит от свойства position |
-| bottom | string \| undefined | false | Свойство для вертикального позиционирования. Зависит от свойства position |
-| left | string \| undefined | false | Свойство для горизонтального позиционирования. Зависит от свойства position |
-| right | string \| undefined | false | Свойство для горизонтального позиционирования. Зависит от свойства position |
+| design | CounterDesign \| undefined |  |
+| position | "relative" \| "absolute" \| undefined |  |
+| top | string \| undefined |  | Свойство для вертикального позиционирования. Зависит от свойства position |
+| bottom | string \| undefined |  | Свойство для вертикального позиционирования. Зависит от свойства position |
+| left | string \| undefined |  | Свойство для горизонтального позиционирования. Зависит от свойства position |
+| right | string \| undefined |  | Свойство для горизонтального позиционирования. Зависит от свойства position |
 
 ## Использование
 
-```jsx
-<Counter>99+</Counter>
+```
+    <Groups>
+        <Counter>8</Counter>
+        <Counter>99</Counter>
+        <Counter>99+</Counter>
+    </Groups>
+```
+
+## Внешний вид
+
+```
+    <Groups>
+        <Counter design='critical'>9</Counter>
+        <Counter design='warning'>12</Counter>
+        <Counter design='success'>25</Counter>
+        <Counter design='accent'>99+</Counter>
+        <Counter design='neutral'>178</Counter>
+        <Counter design='disabled'>256</Counter>
+    </Groups>
 ```

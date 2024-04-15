@@ -12,103 +12,167 @@ import { InputMask } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| onChange | InputMaskChangeEvent \| undefined | false |
-| showMask | boolean \| undefined | false |
-| pipeRef | ((instance: { valueToMask: (string: any) => string; maskToValue: (string: any) => string; placeholder: (string: any) => string; } \| null) => void) \| RefObject<{ valueToMask: (string: any) => string; maskToValue: (string: any) => string; placeholder: (string: any) => string; }> \| null \| undefined | false |
-| design | "outline" \| "material" \| undefined | false | Дизайн |
-| prefix | ReactNode | false | Значанеие отображаемое перед компонентом |
-| autoCapitalize | string \| undefined | false | Автоматическая установка заглавной буквы |
-| onCopy | ((event: ClipboardEvent) => void) \| undefined | false | Обработчик копирования |
-| onCut | ((event: ClipboardEvent) => void) \| undefined | false | Обработчик вырезки |
-| onPaste | ((event: ClipboardEvent) => void) \| undefined | false | Обработчик вставки |
-| onFocus | InputEvent> \| undefined | false | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent> \| undefined | false | Обработчик события при потере фокуса компонентом |
-| onKeyDown | ((event: KeyboardEvent) => void) \| undefined | false | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
-| onKeyPress | ((event: KeyboardEvent) => void) \| undefined | false | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
-| onKeyUp | ((event: KeyboardEvent) => void) \| undefined | false | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
-| onMouseDown | Function \| undefined | false | Обработчик события первого полупериода клика |
-| onPointerDown | Function \| undefined | false | Обработчик события первого полупериода клика |
-| size | "xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl" \| undefined | false | Размеры |
-| value | string \| undefined | false | Значение в поле ввода |
-| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки |
-| invalid | boolean \| undefined | false |
-| active | boolean \| undefined | false | Принудительный ховер |
-| postfix | ReactNode | false | Значение отображаемое после компонента |
-| smartPlaceholder | ReactNode | false |
-| onDespose | (() => void) \| undefined | false |
-| radix | string \| undefined | false |
-| thousandsSeparator | string \| undefined | false |
-| mapToRadix | string[] \| undefined | false |
-| scale | number \| undefined | false |
-| signed | boolean \| undefined | false |
-| normalizeZeros | boolean \| undefined | false |
-| padFractionalZeros | boolean \| undefined | false |
-| allowNegative | boolean \| undefined | false |
-| number | number \| undefined | false |
-| updateOptions | (((opts: Partial) => void) & ((opts: Partial>) => void) & ((opts: Partial>) => void) & ((opts: Partial) => void) & ((opts: Partial<...>) => void)) \| undefined | false |
-| mask | any | false |
-| state | any | false |
-| unmaskedValue | string \| undefined | false |
-| typedValue | undefined | false |
-| rawInputValue | string \| undefined | false |
-| isComplete | boolean \| undefined | false |
-| parent | AnyMasked \| undefined | false |
-| prepare | (((value: string, masked: Masked, flags: AppendFlags) => string) & ((value: string, masked: Masked, flags: AppendFlags) => string) & ((value: string, masked: Masked<...>, flags: AppendFlags) => string) & ((value: string, masked: Masked<...>, flags: AppendFlags) => string)) \| undefined | false |
-| validate | (((value: string, masked: Masked, flags: AppendFlags) => boolean) & ((value: string, masked: Masked, flags: AppendFlags) => boolean) & ((value: string, masked: Masked<...>, flags: AppendFlags) => boolean) & ((value: string, masked: Masked<...>, flags: AppendFlags) => boolean)) \| undefined | false |
-| commit | (((value: string, masked: Masked) => void) & ((value: string, masked: Masked) => void) & ((value: string, masked: Masked) => void) & ((value: string, masked: Masked<...>) => void)) \| undefined | false |
-| overwrite | boolean \| undefined | false |
-| isInitialized | boolean \| undefined | false |
-| reset | ((() => void) & (() => void) & (() => void) & (() => void)) \| undefined | false |
-| resolve | (((value: string) => string) & ((value: string) => string) & ((value: string) => string) & ((value: string) => string)) \| undefined | false |
-| nearestInputPos | (((cursorPos: number, direction?: "NONE" \| "LEFT" \| "FORCE_LEFT" \| "RIGHT" \| "FORCE_RIGHT" \| undefined) => number) & ((cursorPos: number, direction?: "NONE" \| "LEFT" \| "FORCE_LEFT" \| "RIGHT" \| "FORCE_RIGHT" \| undefined) => number) & ((cursorPos: number, direction?: "NONE" \| ... 4 more ... \| undefined) => number) & (... | false |
-| extractTail | (((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails)) \| und... | false |
-| appendTail | (((tail: string \| TailDetails) => ChangeDetails) & ((tail: string \| TailDetails) => ChangeDetails) & ((tail: string \| TailDetails) => ChangeDetails) & ((tail: string \| TailDetails) => ChangeDetails)) \| undefined | false |
-| append | (((str: string, flags?: AppendFlags \| undefined, tail?: string \| TailDetails \| undefined) => ChangeDetails) & ((str: string, flags?: AppendFlags \| undefined, tail?: string \| TailDetails \| undefined) => ChangeDetails) & ((str: string, flags?: AppendFlags \| undefined, tail?: string \| ... 1 more ... \| undefined) => Cha... | false |
-| remove | (((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails... | false |
-| doPrepare | (((str: string, flags: AppendFlags) => string) & ((str: string, flags: AppendFlags) => string) & ((str: string, flags: AppendFlags) => string) & ((str: string, flags: AppendFlags) => string)) \| undefined | false |
-| doValidate | (((flags: AppendFlags) => boolean) & ((flags: AppendFlags) => boolean) & ((flags: AppendFlags) => boolean) & ((flags: AppendFlags) => boolean)) \| undefined | false |
-| doCommit | ((() => boolean) & (() => boolean) & (() => boolean) & (() => boolean)) \| undefined | false |
-| splice | (((start: number, deleteCount: number, inserted: string, removeDirection: Direction) => ChangeDetails) & ((start: number, deleteCount: number, inserted: string, removeDirection: Direction) => ChangeDetails) & ((start: number, deleteCount: number, inserted: string, removeDirection: Direction) => ChangeDetails) & ((st... | false |
-| blocks | { [key: string]: AnyMaskedOptions; } \| undefined | false |
-| definitions | Definitions \| undefined | false |
-| placeholderChar | string \| undefined | false |
-| lazy | boolean \| undefined | false |
-| maskedBlock | (((name: string) => PatternBlock \| undefined) & ((name: string) => PatternBlock \| undefined)) \| undefined | false |
-| maskedBlocks | (((name: string) => PatternBlock[]) & ((name: string) => PatternBlock[])) \| undefined | false |
-| from | number \| undefined | false |
-| to | number \| undefined | false |
-| autofix | boolean \| undefined | false |
-| parse | ((value: string) => Date) \| undefined | false |
-| format | ((value: Date) => string) \| undefined | false |
-| date | Date \| undefined | false |
-| isDateExist | ((str: string) => boolean) \| undefined | false |
+| onChange | (InputEvent<FormEvent<HTMLInputElement>> & ((value: unknown) => void)) \| undefined |  |
+| design | "outline" \| "material" \| undefined |  | Дизайн |
+| prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
+| autoCapitalize | string \| undefined |  | Автоматическая установка заглавной буквы |
+| onCopy | ClipboardEventHandler  \| undefined |  | Обработчик копирования |
+| onCut | ClipboardEventHandler  \| undefined |  | Обработчик вырезки |
+| onPaste | ClipboardEventHandler \| undefined |  | Обработчик вставки |
+| onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
+| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при потере фокуса компонентом |
+| onKeyDown | KeyboardEventHandler \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
+| onKeyPress | KeyboardEventHandler \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
+| onKeyUp | KeyboardEventHandler \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
+| onMouseDown | Function \| undefined |  | Обработчик события первого полупериода клика |
+| onPointerDown | Function \| undefined |  | Обработчик события первого полупериода клика |
+| size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
+| value | string \| undefined |  | Значение в поле ввода |
+| defaultValue | string \| undefined |  |
+| ref | Ref<HTMLInputElement>  \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
+| invalid | boolean \| undefined |  |
+| placeholderValueAutoDiff | boolean \| undefined |  |
+| active | boolean \| undefined |  | Принудительный ховер |
+| postfix | ReactNode |  | Значение отображаемое после компонента |
+| smartPlaceholder | ReactNode |  |
+| onDespose | (() => void) \| undefined |  |
+| onUpdated | (() => void) \| undefined |  |
+| onComplete | ((value: string, maskRef: InputMask<FactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined |  |
+| maskOptions | FactoryOpts |
 
-## Использование
+
+
+## HTMLAttributes
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| id | string \| undefined | |
+| title | string \| undefined | |
+| className | string \| undefined | |
+| spellCheck | boolean \| undefined | |
+| tabIndex | number \| undefined | |
+| height | string \| undefined | |
+| width | string \| undefined | |
+| style | CSSProperties \| undefined | |
+| name | string \| undefined | |
+| type | string \| undefined | |
+| maxLength | number \| undefined | |
+| autoComplete | string \| undefined | |
+| autoCorrect | string \| undefined | |
+| autoFocus | boolean \| undefined | |
+| readOnly | boolean \| undefined | |
+| placeholder | string \| undefined | |
+| disabled | boolean \| undefined | |
+
+# InputMask
+
+Компонент ввода данных по маске
+
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const changeHandler = React.useCallback((e, data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <InputMask
+                value={value}
+                onChange={changeHandler}
+                maskOptions={{mask: Date}}
+                placeholder='Введите дату в формате ДД.ММ.ГГГГ'
+            />
+        );
+    }}
+```
+
+## Внешний вид
 
 Дизайн, размеры и другие настройки полностью идентичны компоненту Input. Для использования необходимо ознакомится с работой IMask.
 
-```jsx
-const [value, setValue] = React.useState('');
-const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
-return <InputMask value={value} onChange={changeHandler} mask={Date} placeholder='Введите дату в формате ДД.ММ.ГГГГ' />;
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
+        return (
+            <Groups design='vertical'>
+                <InputMask
+                    value={value}
+                    onChange={changeHandler}
+                    maskOptions={{mask: Date}}
+                    placeholder='Введите дату в формате ДД.ММ.ГГГГ'
+                />
+            </Groups>
+        );
+    }}
 ```
 
 ## Стандартные элементы
 
 Для удобства реализовано несколько стандартных компонентов маски.
 
-#### Специализированые маски
+##### Account
 
-[Номер счета](Concrete/InputAccount)
+```
+    <InputAccount value='111111' />
+```
 
-[Номер карты](Concrete/InputCard)
+##### Card
 
-[Дата](Concrete/InputDate)
+```
+    <InputCard value='111111' />
+```
 
-[Период дат](Concrete/InputDateRange)
+##### Дата
 
-[Цифры](Concrete/InputDigital)
+```
+    <InputDate value='22.02.1' />
+```
 
-[Вещественные числа](Concrete/InputNumber)
+##### Дата с периодом
 
-[Телефон](Concrete/InputPhone)
+```
+    <InputDateRange value='11.12.1900 - 12' />
+```
+
+##### Digital
+
+```
+    <InputDigital value='1231' />
+```
+
+##### Число
+
+```
+    <InputNumber value='123123123.123' />
+```
+
+##### Телефон
+
+```
+    <InputPhone value='749539' />
+```
+
+## Паттерны масок
+
+Чтобы задать паттерн для маски, нужно использовать:
+0 - для любого числа,
+a - для любой буквы, * для любого символа
+
+Чтобы 0, а или * использовались как обычные символы, их нужно экранировать с помощью двойного обратного слэша
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const changeHandler = React.useCallback((data) => setValue(data), []);
+        return (
+            <Groups design='vertical'>
+                <InputMask
+                    value={value}
+                    onChange={changeHandler}
+                    maskOptions={{mask:"\\0000"}}
+                />
+            </Groups>
+        );
+    }}
+```

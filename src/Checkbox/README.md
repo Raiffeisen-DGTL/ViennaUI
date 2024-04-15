@@ -14,70 +14,180 @@ import { Checkbox } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| children | ReactNode | false | Отображаемый лейбл |
-| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined | false | Сcылка на нативный элемент input, доступна после отрисовки |
-| size | "s" \| "m" \| "l" \| undefined | "m" | Размеры |
-| invalid | boolean \| undefined | false | Компонент отображается как ошибочный если true |
-| indeterminate | boolean \| undefined | false | Частично выбранный чекбокс. Нельзя использовать совместно с checked |
-| onBlur | CheckboxEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при потере фокуса компонентом |
-| onFocus | CheckboxEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при получении фокуса компонентом |
-| onChange | CheckboxEvent<FocusEvent<HTMLInputElement>> \| undefined | false | Обработчик события при клике на компонент |
-| checked | boolean \| undefined | false | Статус выбранного значения |
-| disabled | boolean \| undefined | false |
-| name | string \| undefined | false |
+| children | ReactNode |  | Отображаемый лейбл |
+| ref | ((instance: HTMLInputElement \| null) => void) \| RefObject \| null \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
+| size | ResponsiveProp<"s" \| "m" \| "l" , B> \| undefined | | Размеры |
+| invalid | boolean \| undefined |  | Компонент отображается как ошибочный если true |
+| indeterminate | boolean \| undefined |  | Частично выбранный чекбокс. Нельзя использовать совместно с checked |
+| onBlur | FocusEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при потере фокуса компонентом |
+| onFocus | FocusEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при получении фокуса компонентом |
+| onChange | ChangeEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при клике на компонент |
+| checked | boolean \| undefined |  | Статус выбранного значения |
+| disabled | boolean \| undefined |  |
+| name | string \| undefined |  |
+| active | boolean \| undefined |
+| ref | Ref<HTMLInputElement> \| undefined |
+
+
+## HTMLAttributes 👇
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| disabled | boolean \| undefined |
+| checked | boolean \| undefined |
+| name |  name \| undefined |
 
 ## Использование
 
-В качестве дочернего элемента передается label для checkbox.
+```
+    <Checkbox checked onChange={(e) => console.log(e)}>
+        Checkbox
+    </Checkbox>
+```
 
-> Компонент является контролируемым, то есть чтобы отобразить чтобы отобразить выбранные элементы, необходимо получить ее значение через обработчик `onChange` и прокинуть проверку в `checked`.
-
-```jsx
-{
-    () => {
+## Внешний вид
+```
+    {() => {
         const [state, setState] = React.useState({ checked: false, checked2: true, indeterminate: true });
         return (
-            <Checkbox checked={state.checked} onChange={(e, { value }) => setState({ ...state, checked: value })}>
-                Checkbox
-            </Checkbox>
+            <Groups>
+                <Checkbox
+                    checked={state.checked}
+                    onChange={(e) => setState({ ...state, checked: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
+                <Checkbox
+                    checked={state.checked2}
+                    onChange={(e) => setState({ ...state, checked2: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
+                <Checkbox
+                    indeterminate={state.indeterminate}
+                    onChange={(e) => setState({ ...state, indeterminate: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
+            </Groups>
         );
-    };
-}
+    }}
 ```
 
-## Выбранный элемент
-
-##### Свойство `checked`
+#### Без лейбла
 
 ```
-<Checkbox checked>
-    Content
-</Checkbox>
+    {() => {
+        const [state, setState] = React.useState({ checked: false, checked2: true, indeterminate: true });
+        return (
+            <Groups>
+                <Checkbox
+                    checked={state.checked}
+                    onChange={(e) => setState({ ...state, checked: e.target.checked })}
+                />
+                <Checkbox
+                    checked={state.checked2}
+                    onChange={(e) => setState({ ...state, checked2: e.target.checked })}
+                />
+                <Checkbox
+                    indeterminate={state.indeterminate}
+                    onChange={(e) => setState({ ...state, indeterminate: e.target.checked })}
+                />
+            </Groups>
+        );
+    }}
 ```
 
 ## Размеры
 
-##### Свойство `size`
+Компонент имеет стандартные размеры `s`, `m` и `l`.
 
-Компонент имеет стандартные размеры `s`, `m` (по умолчанию) и `l`.
+```
+    {() => {
+        const [state, setState] = React.useState({ checked: false, checked2: true, checked3: true });
+        return (
+            <Groups>
+                <Checkbox
+                    size='s'
+                    checked={state.checked}
+                    onChange={(e) => setState({ ...state, checked: e.target.checked })}>
+                    Checkbox Size S
+                </Checkbox>
+                <Checkbox
+                    size='m'
+                    checked={state.checked2}
+                    onChange={(e) => setState({ ...state, checked2: e.target.checked })}>
+                    Checkbox Size M
+                </Checkbox>
+                <Checkbox
+                    size='l'
+                    checked={state.checked3}
+                    onChange={(e) => setState({ ...state, checked3: e.target.checked })}>
+                    Checkbox Size L
+                </Checkbox>
+            </Groups>
+        );
+    }}
+```
 
 ## Состояния
 
-##### Свойство `disabled`, `invalid`
-
 Компонент имеет состояние `disabled` и `invalid`
 
-```jsx
-<Checkbox disabled />
-<Checkbox invalid />
+```
+    {() => {
+        const [state, setState] = React.useState({ checked: false, checked2: true });
+        return (
+            <Groups>
+                <Checkbox
+                    disabled
+                    checked={state.checked}
+                    onChange={(e) => setState({ ...state, checked: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
+                <Checkbox
+                    invalid
+                    checked={state.checked2}
+                    onChange={(e) => setState({ ...state, checked2: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
+            </Groups>
+        );
+    }}
 ```
 
-## Частично выбранный чекбокс
+#### Адаптив
 
-##### Свойство `indeterminate`
+Для компонента Checkbox, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
 
-Частично выбранный чекбокс. Применяется если в интерфейсе необходимо использование группы чекбоксов. Если часть из них выбрана, то применяется состояние частично выбранного чекбокса у родительского компонента.
+Основные значения breakpoints:
 
-```jsx
-<Checkbox indeterminate>Label</Checkbox>
+```
+defaultBreakpoints = {
+    s: 768,
+    m: 1024,
+    l: 1920,
+    xl: 2560,
+};
+
+systemBreakpoints: Breakpoints = {
+    /* xs */
+    xs: `(max-width: ${defaultBreakpoints.s - 1}px)`,
+
+    /* s */
+    s: `(min-width: ${defaultBreakpoints.s}px)`,
+    belowS: `(max-width: ${defaultBreakpoints.s - 1}px)`,
+
+    /* m */
+    m: `(min-width: ${defaultBreakpoints.m}px)`,
+    belowM: `(max-width: ${defaultBreakpoints.m - 1}px)`,
+
+    /* l */
+    l: `(min-width: ${defaultBreakpoints.l}px)`,
+    belowL: `(max-width: ${defaultBreakpoints.l - 1}px)`,
+
+    /* xl */
+    xl: `(min-width: ${defaultBreakpoints.xl}px)`,
+};
+```
+
+```
+    <Checkbox size={{ base: 's', s: 'm', m: 'l' }}>Checkbox</Checkbox>
 ```
