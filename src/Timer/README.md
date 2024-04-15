@@ -13,7 +13,7 @@ import { Timer, useInterval } from 'vienna-ui';
 | Prop           | Type                                                             | Default | Description            |
 | -------------- | ---------------------------------------------------------------- | ------- | ---------------------- |
 | start          | number \| undefined                                              |       | Начальное значения     |
-| stop           | number \| undefined                                              | false   | Конечное значение      |
+| stop           | number \| undefined                                              |    | Конечное значение      |
 | delay          | number \| undefined                                              |     | Интервал обновления    |
 | countdown      | boolean \| undefined                                             |    |
 | allowNegatives | boolean \| undefined                                            |    | Отрицательные значения |
@@ -27,10 +27,6 @@ import { Timer, useInterval } from 'vienna-ui';
 | start          | number \| undefined  |
 | step          | number \| undefined  |
 
-
-## Использование
-
-`<Timer />`
 
 ## Внешний вид
 
