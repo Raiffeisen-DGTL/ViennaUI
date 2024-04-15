@@ -12,34 +12,34 @@ import { Table } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| service | TableServiceFactory \| undefined | Функция-конструктор табличного сервиса |
-| size | 's' \| 'm' \| 'l' | 's' | Размер таблицы |
+| service | TableServiceFactory \| undefined | | Функция-конструктор табличного сервиса |
+| size | 's' \| 'm' \| 'l' | | Размер таблицы |
 | noHeader | boolean \| undefined |  | Флаг отключающий отображение заголовка таблицы |
 | noRowDivider | boolean \| undefined |  | Флаг отключающий отображение разделителей строк |
 | maxHeight | string \| undefined |  | Максимальная высота таблицы |
 | minHeight | string \| undefined | |
 | noOverflow | boolean \| undefined | |
-| sort | { field: string; direction: 'asc' | 'desc'} \| undefined | |
+| sort | { field: string; direction: 'asc' \| 'desc'} \| undefined | |
 | selected | any[] \| undefined | undefined | Массив выбранных строк |
 | state | TableState \| undefined |  | Свойство для уроавления внутренним состоянием таблицы |
 | disableCheckboxSelectAll | boolean \| undefined | | Массив данных |
-| data | any[] \| undefined | false | Массив данных |
+| data | any[] \| undefined |  | Массив данных |
 | filter | FilterState \| undefined |  | |
 | dataKey | ((item: any, index: number) => string) \| undefined |  |
-| onFilter | ((data?: Record<string, any> | undefined) => void) \| undefined |  | 
-| initState | TableState | ((state: TableState) => TableState) \| undefined |  | 
+| onFilter | ((data?: Record<string, any> \| undefined) => void) \| undefined |  | 
+| initState | TableState \| ((state: TableState) => TableState) \| undefined |  | 
 | onUpdate | ((newState: TableState, id: string) => void) \| undefined |  | 
 | onInit | (({ service, state }: { service: TableService; state: TableState }) => void) \| undefined |  | 
 | onClickShowAllColumns | (() => void) \| undefined |  | 
 | disableSelectAll | boolean \| undefined |  | Флаг, отключщающий отображение чекбокса выбора всех строк в таблице |
 | pinnableColumns | boolean \| undefined |  | Флаг, включающий функциональность закрепленных колонок |
-| onStateUpdate | (newState: TableState) => void \| undefined | undefined | Обработчик изменения состояния таблицы |
-| onRowClick | ((event: MouseEvent<HTMLElement, MouseEvent>, data: Record<string, any>) => void) \| undefined | undefined | Обработчик одинарного клика по строке таблицы |
-| onRowDoubleClick | (event: React.MouseEvent<HTMLElement>, data: Record<string, any>) => void \| undefined | undefined | Обработчик двойного клика по строке таблицы |
-| onSort | ((event?: FormEvent<Element> \| undefined, data?: { field: string; direction: SortDirection } \| undefined) => void) \| undefined |  | Обработчик сортировки данных таблицы |
+| onStateUpdate | (newState: TableState) => void \| undefined |  | Обработчик изменения состояния таблицы |
+| onRowClick | ((event: MouseEvent<HTMLElement, MouseEvent>, data: Record<string, any>) => void) \| undefined |  | Обработчик одинарного клика по строке таблицы |
+| onRowDoubleClick | (event: React.MouseEvent<HTMLElement>, data: Record<string, any>) => void \| undefined |  | Обработчик двойного клика по строке таблицы |
+| onSort | ((event?: FormEvent<Element> \| undefined, data?: { field: string; direction: SortDirection } \| undefined) => void) \|  |  | Обработчик сортировки данных таблицы |
 | onSelect | ((event: FormEvent<Element>, data: any) => void) \| undefined |  | Обработчик выбора элемента данных таблицы |
 | onScroll | ((event: UIEvent<HTMLElement, UIEvent>) => void)  \| undefined |  | Обработчик прокрутки внутреннего контейнера таблицы |
-| onServiceInit | (service: TableService) => void \| undefined | undefined | Обработчик инициализации табличного сервиса |
+| onServiceInit | (service: TableService) => void \| undefined |  | Обработчик инициализации табличного сервиса |
 | localization | Localization<TableLocalization, undefined> \| undefined | | Локализация |
 | margin | Whitespace \| undefined | |
 | marginTop | Whitespace \| undefined | |
@@ -86,11 +86,11 @@ import { Table } from 'vienna-ui';
 
 | Prop      | Type                                       | Default   | Description                               |
 | --------- | ------------------------------------------ | --------- | ----------------------------------------- |
-| id        | string                                     | none      | Идентификатор колонки                     |
+| id        | string                                     |       | Идентификатор колонки                     |
 | title     | ReactNode \| undefined                     |  | Заголовок колонки                         |
 | align     | "left" \| "right" \| "center" \| undefined |  | Выравнивание содержимого колонки          |
 | width     | string \| undefined                        |  | Ширина колонки                            |
-| truncate  | boolean \| undefined                       | undefined | Флаг обрезания содержимого колонки        |
+| truncate  | boolean \| undefined                       |  | Флаг обрезания содержимого колонки        |
 | noWrap    | boolean \| undefined                       |  | Флаг запрещающий перенос строки в колонке |
 | hidden    | boolean \| undefined                       |  | Флаг невидимости колонки                  |
 | resizable | boolean \| undefined                       |  | Флаг доступности изменения ширины колонки |
