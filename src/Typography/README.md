@@ -44,7 +44,7 @@ import { Heading, H1, H2, H3, H4, H5, Text, P, Span } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| type | keyof IntrinsicElements | ComponentType<unknown> \| undefined | |
+| type | keyof IntrinsicElements \| ComponentType<unknown> \| undefined | |
 
 # Typography
 
