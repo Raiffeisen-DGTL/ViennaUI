@@ -1,8 +1,12 @@
 import React from 'react';
-import { CloseCancelX } from 'vienna.icons';
+import { CloseCancelXIcon } from 'vienna.icons';
 import { Box, PropsBox, Label, Icon } from './Item.styles';
 import { withTabFocusState } from '../../Utils';
 import { BoxStyled } from '../../Utils/styled';
+
+export const defaultFilterItemTestId: ItemProps['testId'] = {
+    cross: 'filter-item_cross',
+};
 
 export interface ItemProps extends BoxStyled<typeof Box, PropsBox> {
     /** Дизайн */
@@ -10,11 +14,15 @@ export interface ItemProps extends BoxStyled<typeof Box, PropsBox> {
     /** Размер */
     size?: PropsBox['$size'];
     /** Событие при щелчке на крестик */
-    onDelete?: (e: any) => void;
-    /** Максимальная длина */
+    onDelete?: (
+        e: React.MouseEvent<HTMLDivElement, MouseEvent> | React.KeyboardEvent<HTMLDivElement>
+    ) => void /** Максимальная длина */;
     maxWidth?: number;
     /** Порядок табуляции */
     tabIndex?: number;
+    testId?: {
+        cross?: string;
+    };
 }
 
 interface PropInternal extends ItemProps {
@@ -30,17 +38,20 @@ export const Item = withTabFocusState<HTMLDivElement, PropInternal>((props) => {
         maxWidth,
         isFocusStateVisible,
         tabIndex = 1,
+        testId = defaultFilterItemTestId,
         ...attrs
     } = props;
+
     return (
-        <Box {...(attrs as {})} $size={size} $design={design}>
+        <Box {...attrs} $size={size} $design={design}>
             <Label $maxWidth={maxWidth}>{children}</Label>
             <Icon
                 $isFocusStateVisible={isFocusStateVisible}
                 tabIndex={tabIndex}
+                data-testid={testId?.cross}
                 onClick={onDelete}
                 onKeyDown={onDelete}>
-                <CloseCancelX size='s' />
+                <CloseCancelXIcon size='s' />
             </Icon>
         </Box>
     );

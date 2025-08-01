@@ -1,32 +1,51 @@
 import styled, { css, keyframes } from 'styled-components';
+import { progressbar } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { ProgressColor, ProgressSize } from './Progressbar';
 
-const line = getPresets('progressbar.line', {
+const line = getPresets(
+    progressbar.line,
+    'progressbar.line'
+)({
     size: '$size',
     back: null,
 });
 
-const lineProgress = getPresets('progressbar.line.progress', {
+const lineProgress = getPresets(
+    progressbar.line.progress,
+    'progressbar.line.progress'
+)({
     base: null,
     color: '$color',
 });
 
-const circle = getPresets('progressbar.circle', {
+const circle = getPresets(
+    progressbar.circle,
+    'progressbar.circle'
+)({
     size: '$size',
     back: null,
 });
 
-const circleBox = getPresets('progressbar.circle.box', {
+const circleBox = getPresets(
+    progressbar.circle.box,
+    'progressbar.circle.box'
+)({
     size: '$size',
 });
 
-const circleProgress = getPresets('progressbar.circle.progress', {
+const circleProgress = getPresets(
+    progressbar.circle.progress,
+    'progressbar.circle.progress'
+)({
     base: null,
     color: '$color',
 });
 
-const circleContent = getPresets('progressbar.circle.content', {
+const circleContent = getPresets(
+    progressbar.circle.content,
+    'progressbar.circle.content'
+)({
     size: '$size',
 });
 
@@ -139,9 +158,9 @@ const RADIUS = {
     l: 64,
 };
 
-const calculateCircleLength = (r) => Math.PI * 2 * r;
+const calculateCircleLength = (r: number) => Math.PI * 2 * r;
 
-const calculateProgressLength = (r, value) => {
+const calculateProgressLength = (r: number, value: number) => {
     const circleLength = calculateCircleLength(r);
     return (circleLength * (100 - value)) / 100;
 };

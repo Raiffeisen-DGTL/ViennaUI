@@ -1,6 +1,7 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, ReactElement, ReactNode, useCallback } from 'react';
 import { Item } from './Item';
 import { Groups, GroupsProps } from '../Groups';
+import { SizeType } from '../Utils';
 
 export interface FilterProps extends Omit<GroupsProps, 'size' | 'design'> {
     /** Дизайн */
@@ -8,21 +9,29 @@ export interface FilterProps extends Omit<GroupsProps, 'size' | 'design'> {
     /** Выравнивание */
     align?: 'horizontal' | 'vertical';
     /** Размер */
-    size?: 'm';
+    size?: SizeType;
 }
 
 export const Filter: FC<FilterProps> & {
     Item: typeof Item;
 } = (props) => {
     const { children, size = 'm', design = 'primary', align = 'horizontal', ...attrs } = props;
-
     const constructChildren = useCallback(
-        () => React.Children.toArray(children).map((child: any) => React.cloneElement(child, { size, design })),
+        () =>
+            React.Children.toArray(children).map((child: ReactNode) => {
+                if (React.isValidElement(child)) {
+                    return React.cloneElement(child as ReactElement, {
+                        size: child.props.size || size,
+                        design,
+                    });
+                }
+                return child;
+            }),
         [children, size, design]
     );
 
     return (
-        <Groups {...(attrs as {})} design={align} size='xs'>
+        <Groups {...attrs} design={align} size='xs'>
             {constructChildren()}
         </Groups>
     );

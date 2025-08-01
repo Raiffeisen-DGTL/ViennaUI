@@ -1,1 +1,1 @@
-export { Radio, type RadioEvent, type RadioProps } from './Radio';
+export { Radio, type RadioEvent, type RadioProps, type RadioSize } from './Radio';

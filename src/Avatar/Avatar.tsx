@@ -1,11 +1,13 @@
-import React, { FC, forwardRef, Ref, ForwardedRef } from 'react';
+import React, { FC, forwardRef, Ref, ForwardedRef, useCallback, useRef } from 'react';
 import { Box, ImageLayer, PropsBox, PropsImageLayer } from './Avatar.styles';
 import { Breakpoints } from '../Utils/responsiveness';
 import { BoxStyled } from '../Utils/styled';
 
 export interface AvatarProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsBox> {
+    src?: string;
+    alt?: string;
+    hideImageOnError?: boolean;
     size?: PropsBox<B>['$size'];
-    src?: PropsImageLayer['$src'];
     align?: PropsImageLayer['$align'];
     valign?: PropsImageLayer['$valign'];
 }
@@ -13,18 +15,44 @@ export interface AvatarProps<B = Breakpoints> extends BoxStyled<typeof Box, Prop
 function AvatarInternal<B = void>(
     {
         src,
-        children,
+        alt = '',
+        hideImageOnError = true,
         align = 'center',
         valign = 'center',
         size = 'm',
+        children,
         ...attrs
     }: AvatarProps<B extends void ? Breakpoints : B>,
     ref: Ref<HTMLDivElement>
 ) {
+    const imageRef = useRef<HTMLImageElement>(null);
+
+    const handleImageError = useCallback(() => {
+        const imageStyle = imageRef.current?.style;
+        const boxStyle = imageRef.current?.parentElement?.style;
+
+        if (!hideImageOnError && boxStyle) {
+            boxStyle.overflow = 'visible';
+        }
+
+        if (hideImageOnError && imageStyle) {
+            imageStyle.display = 'none';
+        }
+    }, [imageRef, hideImageOnError]);
+
     return (
-        <Box {...(attrs as {})} $size={size} ref={ref}>
+        <Box {...attrs} $size={size} ref={ref}>
             {children}
-            <ImageLayer $src={src} $align={align} $valign={valign} />
+            {src && (
+                <ImageLayer
+                    ref={imageRef}
+                    src={src}
+                    alt={alt}
+                    $align={align}
+                    $valign={valign}
+                    onError={handleImageError}
+                />
+            )}
         </Box>
     );
 }

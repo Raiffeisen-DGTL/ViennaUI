@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { datepicker } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('datepicker', {
+const presets = getPresets(
+    datepicker,
+    'datepicker'
+)({
     calendar: null,
 });
 

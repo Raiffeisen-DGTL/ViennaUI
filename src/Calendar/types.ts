@@ -1,4 +1,6 @@
 import { ReactNode } from 'react';
+import { UseGridFocus } from './hooks';
+import { BodyTestId } from '@/Calendar/Body/Body';
 
 export type Spin = 'next' | 'prev';
 
@@ -12,6 +14,17 @@ export type DayType =
     | 'event'
     | ''
     | 'activeDisabled';
+
+export type HeaderButton =
+    | 'back'
+    | 'leftArrowDouble'
+    | 'leftArrow'
+    | 'rightArrow'
+    | 'rightArrowDouble'
+    | 'month'
+    | 'year';
+
+export type FooterButton = 'todayButton';
 
 export type ViewMode = 'month' | 'year_list' | 'month_list';
 
@@ -29,6 +42,9 @@ export interface MonthProps<T> {
     minDate?: Date;
     maxDate?: Date;
     startingWeekDay: StartingWeekDay;
+    setUpFocusProps: UseGridFocus['setUpFocusProps'];
+    resetSavedNodes: UseGridFocus['resetSavedNodes'];
+    testId?: Omit<BodyTestId, 'btnToday'>;
 }
 
 export interface DateItem {
@@ -47,3 +63,9 @@ export interface RangeDate<T> {
 export type DateFunction = (date: Date) => boolean;
 
 export type EventDateFunction = (date: Date) => ReactNode | undefined;
+
+export interface FocusActions {
+    setFocusHeader: () => void;
+    setFocusGrid: () => void;
+    setFocusFooter: () => void;
+}

@@ -1,39 +1,47 @@
-import React, { FC, ReactElement, useCallback, useMemo, useContext, FormEvent } from 'react';
+import React, { PropsWithChildren, ReactNode, ReactElement, useCallback, useMemo, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { ThemeProvider } from 'vienna.ui-primitives';
-import { TabsProps, TabProps, Tabs } from '../../Tabs';
+import { header } from 'vienna.ui-theme';
+import { TabsProps, TabProps, Tabs, TabsValueType } from '../../Tabs';
 import { MenuPoint } from '../MenuPoint';
 import { Tab } from './Items.styles';
-import { getPresets } from '../../Utils/styling';
+import { AnyObject } from '../../Utils';
+import { getPresets, getPresetsCustom } from '../../Utils/styling';
 
-export interface ItemProps extends TabProps {
-    label: string;
+export interface ItemProps<T = TabsValueType> extends TabProps<T>, PropsWithChildren {
+    label: ReactNode;
 }
 
-export interface ItemsProps extends Omit<TabsProps, 'onChange'> {
+export interface ItemsProps<T = TabsValueType> extends Omit<TabsProps<T>, 'onChange' | 'value'> {
     /** Выравнить табы по центру контейнера высоте */
     align?: 'bottom' | 'center';
     size?: 'l' | 'm' | 's';
     justifyContent?: string;
     isMobile?: boolean;
-    children: ReactElement<ItemProps>[];
-    onChange?: (event: FormEvent<HTMLDivElement>, value: string, hasContent: boolean) => void;
+    value?: T;
+    onChange?: (event: React.MouseEvent, value: T, hasContent?: boolean) => void;
 }
 
-const tabsPresets = getPresets('header.tabs', {
+const tabsPresets = getPresets(
+    header.tabs,
+    'header.tabs'
+)({
     base: null,
 });
 
-const tabPresets = getPresets('header.tab', {
+const tabPresets = getPresets(
+    header.tab,
+    'header.tab'
+)({
     base: null,
 });
 
-const customPresets = getPresets('header.custom', {
+const customPresets = getPresetsCustom('header.custom')({
     tabs: null,
     tab: null,
 });
 
-const buildTheme = (props) => {
+const buildTheme = <T,>(props: ItemsProps<T>) => {
     return {
         tabs: {
             base: {
@@ -41,23 +49,23 @@ const buildTheme = (props) => {
                 'justify-content': props.justifyContent,
                 alignItems: 'baseline',
                 minWidth: 0,
-            },
-            custom: customPresets.tabs(props),
+            } as AnyObject,
+            custom: customPresets.tabs(props) as AnyObject,
             tab: {
-                base: tabPresets.base(props),
-                custom: customPresets.tab(props),
+                base: tabPresets.base(props) as AnyObject,
+                custom: customPresets.tab(props) as AnyObject,
             },
         },
     };
 };
 
-const getHasContentMap = (items) =>
+const getHasContentMap = (items: ItemProps[]) =>
     items.reduce((acc, cur) => {
-        acc[cur.value] = Boolean(cur.children);
+        acc.set(cur.value, Boolean(cur.children));
         return acc;
-    }, {});
+    }, new Map());
 
-export const Items: FC<ItemsProps> = (props) => {
+export const Items = <T,>(props: ItemsProps<T>) => {
     const {
         children,
         value,
@@ -71,16 +79,16 @@ export const Items: FC<ItemsProps> = (props) => {
     } = props;
 
     const items = React.Children.map(React.Children.toArray(children), (child) => {
-        const { props: itemProps } = child as ReactElement<ItemProps>;
+        const { props: itemProps } = child as ReactElement<ItemProps<T>>;
         return itemProps;
     });
     const themedContext = useContext(ThemeContext);
-    const hasContentMap = useMemo(() => getHasContentMap(items), [items]);
+    const hasContentMap = useMemo(() => getHasContentMap(items as ItemProps[]), [items]);
 
     const handleChange = useCallback(
-        (e, itemValue) => {
+        (itemValue: T, e: React.MouseEvent) => {
             if (typeof onChange === 'function') {
-                onChange(e, itemValue, hasContentMap[itemValue]);
+                onChange(e, itemValue, hasContentMap.get(itemValue));
             }
         },
         [onChange, hasContentMap]
@@ -102,9 +110,14 @@ export const Items: FC<ItemsProps> = (props) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Tabs {...(attrs as {})} value={value} size={size} design={design} onChange={handleChange}>
+            <Tabs
+                {...attrs}
+                value={value}
+                size={size}
+                design={design}
+                onChange={({ value, event }) => handleChange(value, event)}>
                 {items.map(({ label, value }) => (
-                    <Tab key={String(value)} $align={align} value={value}>
+                    <Tab key={String(value)} $align={align} $size={size} value={value}>
                         {label}
                     </Tab>
                 ))}
@@ -113,6 +126,9 @@ export const Items: FC<ItemsProps> = (props) => {
     );
 };
 
-export const Item: React.FC<ItemProps> = (props) => {
+export const Item = <T,>(props: ItemProps<T>) => {
     return <span {...props} />;
 };
+
+Items.displayName = 'Items';
+Item.displayName = 'Item';

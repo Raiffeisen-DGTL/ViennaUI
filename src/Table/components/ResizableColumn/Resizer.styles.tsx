@@ -1,13 +1,18 @@
 import styled from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { getPresets } from '../../../Utils/styling';
+import { TableSize } from '../../types';
 
-const presets = getPresets('table.resizer', {
+const presets = getPresets(
+    table.resizer,
+    'table.resizer'
+)({
     base: null,
     size: '$size',
 });
 
 interface PropsResizerLine {
-    $size?: any;
+    $size?: TableSize;
 }
 export const ResizerLine = styled.div<PropsResizerLine>`
     opacity: 0;

@@ -26,3 +26,13 @@ export const Playwright: Story<FilterProps> = (args) => {
         </Filter>
     );
 };
+
+export const FilterSizeVsFilterItem: Story<FilterProps> = (args) => {
+    return (
+        <Filter {...args} size='xl'>
+            <Filter.Item size='xs'>Пол</Filter.Item>
+            <Filter.Item size='xs'>Рост</Filter.Item>
+            <Filter.Item size='xs'>Вес</Filter.Item>
+        </Filter>
+    );
+};

@@ -1,8 +1,50 @@
 {
-	"extends": "vienna.config-typescript/tsconfig",
-	"compilerOptions": {
-		"outDir": "./dist"
-	},
-	"include": ["src/**/*", "typings/*.d.ts"],
-	"exclude": ["node_modules", "dist", "esm", "**/*.spec.tsx", "**/*.stories.tsx"]
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2016", "es2017", "dom"],
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": false,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "paths": {
+      "@/atlant": ["./src/."],
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-plugin-styled-components",
+        "type": "config",
+        "exclude": ["/node_modules/"],
+        "displayName": false
+      }
+    ]
+  },
+  "include": ["src/**/*", "typings/*.d.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "esm",
+    "**/__tests__/**",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts"
+  ]
 }

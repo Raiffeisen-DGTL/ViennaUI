@@ -1,30 +1,41 @@
-import React, { useState, useRef, MutableRefObject } from 'react';
+import React, { useState, useRef, ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 import { Drawer } from './Drawer';
+import { RefFunc } from '../Modal/Modal';
 
-let drawers: React.ReactNode[] = [];
-let setDrawers: React.Dispatch<React.ReactNode[]>;
+let drawers: ReactNode[] = [];
+let setDrawers: React.Dispatch<ReactNode[]>;
 let container: HTMLDivElement;
 
 const DrawerContainer = () => {
-    const [drawers, _setDrawer] = useState<React.ReactNode[]>([]);
+    const [drawers, _setDrawer] = useState<ReactNode[]>([]);
     setDrawers = _setDrawer;
     return <>{drawers.map((modal) => modal)}</>;
 };
 
-type DrawerHookOpen = () => void;
-type DrawerHookClose = <T extends any>(data?: T) => void;
+export type DrawerHookOpen = () => void;
+export type DrawerHookClose = <T>(data?: T) => void;
 
 interface DrawerHook {
+    children: ReactNode;
+    onClose?: DrawerHookClose;
     open: DrawerHookOpen;
     close: DrawerHookClose;
+    _open: DrawerHookOpen;
+    _close: DrawerHookClose;
 }
-
+/**
+ * @deprecated
+ */
 export function useDrawer(): DrawerHook;
-export function useDrawer(drawer: React.ReactNode, onClose: DrawerHookClose): [DrawerHookOpen, DrawerHookClose];
-export function useDrawer(drawer?: any, onClose?: any): any {
+export function useDrawer(drawer: ReactNode, onClose: DrawerHookClose): [DrawerHookOpen, DrawerHookClose];
+export function useDrawer(
+    drawer?: ReactNode,
+    onClose?: DrawerHookClose
+): DrawerHook | [DrawerHookOpen, DrawerHookClose] {
     /** Ранее было { current: { close: null } }; */
-    const drawerRef: MutableRefObject<any> = useRef({ close: null });
+    const drawerRef = useRef<RefFunc | HTMLDivElement | null>({ close: (data: unknown) => close(data) });
+    const isOpenRef = useRef(false);
     let instance: React.ReactNode;
 
     const closeHandler: DrawerHookClose = (data) => {
@@ -35,8 +46,9 @@ export function useDrawer(drawer?: any, onClose?: any): any {
     };
 
     const close: DrawerHookClose = (data) => {
-        if (typeof drawerRef?.current?.close === 'function' && drawers.includes(instance)) {
-            drawerRef?.current?.close(data);
+        const drawerClose = (drawerRef?.current as RefFunc)?.close;
+        if (typeof drawerClose === 'function' && drawers.includes(instance)) {
+            drawerClose(data);
         }
     };
 
@@ -49,9 +61,14 @@ export function useDrawer(drawer?: any, onClose?: any): any {
 
         const state: { open: Nullable<DrawerHookOpen> } = { open: null };
 
-        const handleRef = (ref) => {
-            drawerRef.current = ref;
-            state.open?.();
+        isOpenRef.current = false;
+
+        const handleRef = (ref: RefFunc | HTMLDivElement | null) => {
+            if (!isOpenRef.current && ref) {
+                (drawerRef.current as HTMLDivElement | RefFunc | null) = ref;
+                state.open?.();
+                isOpenRef.current = true;
+            }
         };
 
         instance = (
@@ -67,26 +84,29 @@ export function useDrawer(drawer?: any, onClose?: any): any {
     };
 
     if (!drawer && !onClose) {
-        return {
-            set children(val) {
+        const state: DrawerHook = {
+            set children(val: ReactNode) {
                 drawer = val;
             },
-            set onClose(val) {
+            set onClose(val: DrawerHookClose | undefined) {
                 onClose = val;
             },
-            set open(val) {
-                this.nativeOpen = val;
+            _open: open,
+            _close: close,
+            set open(val: DrawerHookOpen) {
+                this._open = val;
             },
             get open() {
-                return open;
+                return this._open;
             },
-            set close(val) {
-                this.nativeClose = val;
+            set close(val: DrawerHookClose) {
+                this._close = val;
             },
             get close() {
-                return close;
+                return this._close;
             },
         };
+        return state;
     }
 
     return [open, close];

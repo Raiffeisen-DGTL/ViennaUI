@@ -10,7 +10,7 @@ export default {
 export const Overview: Story<UserProfileProps> = (args) => {
     return (
         <UserProfile
-            photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
+            photo='https://www.raiffeisen.ru/static/common/Digital_Marketing/Abstract/Abstract2.webp'
             name='Super User Name'
             description='Some Description'
             {...args}>
@@ -19,5 +19,15 @@ export const Overview: Story<UserProfileProps> = (args) => {
             <UserProfile.Item>Предложения</UserProfile.Item>
             <UserProfile.Item>Выход</UserProfile.Item>
         </UserProfile>
+    );
+};
+
+export const WithoutHover: Story<UserProfileProps> = (args) => {
+    return (
+        <UserProfile
+            photo='https://www.raiffeisen.ru/static/common/Digital_Marketing/Abstract/Abstract2.webp'
+            name='Super User Name'
+            description='Some Description'
+            {...args}></UserProfile>
     );
 };

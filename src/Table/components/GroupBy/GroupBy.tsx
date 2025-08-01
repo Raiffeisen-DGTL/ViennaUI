@@ -1,14 +1,19 @@
-import React, { FC } from 'react';
+import React, { ReactNode } from 'react';
+import { TableData } from '../../types';
 
-export interface GroupByProps {
+export interface GroupByProps<T> {
     id: string;
-    title: string;
-    filter: (data: any) => any;
+    title: ReactNode;
+    filter: (data: T) => boolean;
     pinned?: boolean;
+    expandable?: boolean;
+    selectable?: boolean;
+    expandedDefault?: boolean;
+    onExpand?: (id: string, e: React.MouseEvent<HTMLElement>) => void;
 }
 
-export const GroupBy: FC<GroupByProps> = (props) => {
+export function GroupBy<T = TableData>(props: GroupByProps<T>) {
     return <>{props.id}</>;
-};
+}
 
 GroupBy.displayName = 'GroupBy';

@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { inputPassword } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const inputPassword = getPresets('inputPassword', {
+const presets = getPresets(
+    inputPassword,
+    'inputPassword'
+)({
     base: null,
     hover: null,
     custom: null,
@@ -12,16 +16,16 @@ interface PropsIconWrapper {
 }
 export const IconWrapper = styled.div<PropsIconWrapper>`
     display: flex;
-    ${inputPassword.base}
+    ${presets.base}
     ${({ $visible }) =>
         $visible &&
         css`
-            ${inputPassword.hover}
+            ${presets.hover}
         `}
 
     &:hover {
-        ${inputPassword.hover}
+        ${presets.hover}
     }
 
-    ${inputPassword.custom}
+    ${presets.custom}
 `;

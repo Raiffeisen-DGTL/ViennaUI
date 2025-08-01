@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components';
+import { stepper } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 import { Design, Orientation, Size, Valign } from './Step';
 
-const pointer = getPresets('stepper.pointer', {
+const pointer = getPresets(
+    stepper.pointer,
+    'stepper.pointer'
+)({
     base: null,
     size: '$size',
     design: '$design',
@@ -11,14 +15,20 @@ const pointer = getPresets('stepper.pointer', {
     customDesign: '$design',
 });
 
-const title = getPresets('stepper.title', {
+const title = getPresets(
+    stepper.title,
+    'stepper.title'
+)({
     base: null,
     design: '$design',
     orientation: '$orientation',
     titleValignTop: null,
 });
 
-const step = getPresets('stepper.step', {
+const step = getPresets(
+    stepper.step,
+    'stepper.step'
+)({
     base: null,
 });
 

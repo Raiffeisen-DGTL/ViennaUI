@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { formField } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('formField.container', {
+const container = getPresets(
+    formField.container,
+    'formField.container'
+)({
     inline: null,
     custom: null,
 });
@@ -13,8 +17,8 @@ export const Box = styled.div<PropsBox>`
     ${({ $inline }) =>
         $inline &&
         css`
-            ${presets.inline}
+            ${container.inline}
         `};
 
-    ${presets.custom}
+    ${container.custom}
 `;

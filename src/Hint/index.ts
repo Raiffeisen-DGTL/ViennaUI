@@ -1,1 +1,1 @@
-export { Hint, type HintProps } from './Hint';
+export { Hint, type HintProps, type HintThemeProps } from './Hint';

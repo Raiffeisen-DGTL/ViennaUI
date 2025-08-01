@@ -1,13 +1,14 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import { FileLoader, FileLoaderProps } from './FileLoader';
-import { FCCFile } from './File';
+import { File as FileComponent, FCCFile } from '../File';
 import { FormField } from '../FormField';
 import { Link } from '../Link';
 import { Button } from '../Button';
 import { Notifications, Notifier } from '../Notifications';
 import { Groups } from '../Groups';
 import { Modal } from '../Modal';
+import { ContentFirst } from './FileLoader.styles';
 
 export default {
     title: 'Development/FileLoader',
@@ -17,7 +18,7 @@ export default {
 export const Overview: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -31,7 +32,7 @@ export const Overview: Story<FileLoaderProps> = (args) => {
     return (
         <FileLoader content={'Перетащите файлы'} onChange={changeHandler} {...args}>
             {files.map((f, i) => (
-                <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                <FileComponent key={i} file={f} onDelete={deleteHandler} />
             ))}
         </FileLoader>
     );
@@ -40,7 +41,7 @@ export const WithButton: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
     const ref = React.useRef<HTMLInputElement>(null);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -53,7 +54,7 @@ export const WithButton: Story<FileLoaderProps> = (args) => {
     );
     const content = (
         <>
-            Перетащите или{'\u00A0'}
+            <ContentFirst>Перетащите или{'\u00A0'}</ContentFirst>
             <Button design='outline' onClick={() => ref.current?.click()}>
                 загрузите документы
             </Button>
@@ -62,9 +63,15 @@ export const WithButton: Story<FileLoaderProps> = (args) => {
     const subContent = 'JPG, GIF, PNG, PDF или ZIP, до 150kb';
     return (
         <FormField>
-            <FileLoader ref={ref} content={content} subContent={subContent} onChange={changeHandler} {...args}>
+            <FileLoader
+                maxFiles={2}
+                ref={ref}
+                content={content}
+                subContent={subContent}
+                onChange={changeHandler}
+                {...args}>
                 {files.map((f, i) => (
-                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    <FileComponent key={i} file={f} onDelete={deleteHandler} />
                 ))}
             </FileLoader>
         </FormField>
@@ -75,7 +82,7 @@ export const WithLink: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
     const ref = React.useRef<HTMLInputElement>(null);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -99,7 +106,7 @@ export const WithLink: Story<FileLoaderProps> = (args) => {
         <FormField>
             <FileLoader ref={ref} content={content} subContent={subContent} onChange={changeHandler} {...args}>
                 {files.map((f, i) => (
-                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    <FileComponent key={i} file={f} onDelete={deleteHandler} />
                 ))}
             </FileLoader>
         </FormField>
@@ -108,7 +115,7 @@ export const WithLink: Story<FileLoaderProps> = (args) => {
 WithLink.storyName = 'Со ссылкой';
 export const WithFileValidation: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
-    const changeHandler = React.useCallback((e, newFiles, newErrorFiles) => {
+    const changeHandler = React.useCallback(({ value: newFiles, event: e, options: { errorFiles: newErrorFiles } }) => {
         setFiles((state) => [...state, ...newFiles]);
         newErrorFiles.forEach(({ file, errors }) => {
             const textErrors = [errors.accept && 'Некорректный формат.', errors.maxSizeByte && 'Некорректный размер.']
@@ -135,7 +142,7 @@ export const WithFileValidation: Story<FileLoaderProps> = (args) => {
                     onChange={changeHandler}
                     {...args}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <FileComponent key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -154,7 +161,7 @@ export const WithFileErrors: Story<FileLoaderProps> = (args) => {
     ]);
     const ref = React.useRef<HTMLInputElement>(null);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -167,7 +174,7 @@ export const WithFileErrors: Story<FileLoaderProps> = (args) => {
     );
     const content = (
         <>
-            Перетащите или{'\u00A0'}
+            <ContentFirst>Перетащите или{'\u00A0'}</ContentFirst>
             <Button design='outline' onClick={() => ref.current?.click()}>
                 загрузите документы
             </Button>
@@ -178,9 +185,9 @@ export const WithFileErrors: Story<FileLoaderProps> = (args) => {
         <FormField>
             <FileLoader ref={ref} content={content} subContent={subContent} onChange={changeHandler} {...args}>
                 {files.map((f, i) => (
-                    <FileLoader.File key={i} file={f} invalid onDelete={deleteHandler}>
+                    <FileComponent key={i} file={f} invalid onDelete={deleteHandler}>
                         При загрузке возникла ошибка. Удалите файл и попробуйте снова
-                    </FileLoader.File>
+                    </FileComponent>
                 ))}
             </FileLoader>
         </FormField>
@@ -190,9 +197,9 @@ WithFileErrors.storyName = 'С отображением ошибок в файл
 export const WithLoader: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
     const ref = React.useRef<HTMLInputElement>(null);
-    const interval = React.useRef<number | null>(null);
+    const interval = React.useRef<ReturnType<typeof setInterval> | null>(null);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -241,7 +248,7 @@ export const WithLoader: Story<FileLoaderProps> = (args) => {
         <FormField>
             <FileLoader ref={ref} content={content} subContent={subContent} onChange={changeHandler} {...args}>
                 {files.map((f, i) => (
-                    <FileLoader.File
+                    <FileComponent
                         key={i}
                         file={f}
                         progress={f.progress}
@@ -285,15 +292,20 @@ export const WithFiles: Story<FileLoaderProps> = (args) => {
             name: 'file 2.zip',
         },
         {
+            url: '3',
+            date: new Date('01.01.2023').toISOString(),
+            size: 1024,
+            name: 'file 3.zip',
+        },
+        {
             url: URL.createObjectURL(file),
             date: new Date('01.01.2023').toISOString(),
             size: file.size,
             name: file.name,
-            type: 'image/png',
         },
     ]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -309,7 +321,7 @@ export const WithFiles: Story<FileLoaderProps> = (args) => {
         <FormField>
             <FileLoader content={'Перетащите файлы'} onChange={changeHandler} {...args}>
                 {files.map((f) => (
-                    <FileLoader.File key={f.url} file={f} onDelete={deleteHandler} />
+                    <FileComponent key={f.url} file={f} onDelete={deleteHandler} />
                 ))}
             </FileLoader>
         </FormField>
@@ -322,7 +334,7 @@ export const InModal: Story<FileLoaderProps> = (args) => {
     const [show, setShow] = React.useState(false);
     const ref = React.useRef<HTMLInputElement>(null);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -359,7 +371,7 @@ export const InModal: Story<FileLoaderProps> = (args) => {
                                 onChange={changeHandler}
                                 {...args}>
                                 {files.map((f, i) => (
-                                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                                    <FileComponent key={i} file={f} onDelete={deleteHandler} />
                                 ))}
                             </FileLoader>
                         </FormField>
@@ -374,7 +386,7 @@ InModal.storyName = 'В модальном окне';
 export const ConfirmDelete: Story<FileLoaderProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles([...files, ...newFiles]);
         },
         [files]
@@ -390,15 +402,122 @@ export const ConfirmDelete: Story<FileLoaderProps> = (args) => {
         (file) => {
             return file.name !== 'very important file';
         },
+
         [files]
     );
 
     return (
         <FileLoader content={'Перетащите файлы'} onChange={changeHandler} {...args}>
             {files.map((f, i) => (
-                <FileLoader.File key={i} file={f} onDelete={deleteHandler} confirmDelete={confirmDelete} />
+                <FileComponent key={i} file={f} onDelete={deleteHandler} confirmDelete={confirmDelete} />
             ))}
         </FileLoader>
     );
 };
 ConfirmDelete.storyName = 'С подтверждением удаления';
+
+export const WithDisabled: Story<FileLoaderProps> = (args) => {
+    const [files, setFiles] = React.useState<FCCFile[]>([]);
+    const ref = React.useRef<HTMLInputElement>(null);
+    const changeHandler = React.useCallback(
+        ({ value: newFiles }) => {
+            setFiles([...files, ...newFiles]);
+        },
+        [files]
+    );
+    const deleteHandler = React.useCallback(
+        (file) => {
+            setFiles(files.filter((f) => f !== file));
+        },
+        [files]
+    );
+
+    const subContent = 'JPG, GIF, PNG, PDF или ZIP, до 150kb';
+    const content = (
+        <>
+            Перетащите файлы сюда или{'\u00A0'}
+            <Link design='accent' disabled onClick={() => ref.current?.click()}>
+                загрузите документы
+            </Link>
+        </>
+    );
+    return (
+        <FormField>
+            <FileLoader ref={ref} content={content} subContent={subContent} disabled onChange={changeHandler} {...args}>
+                {files.map((f, i) => (
+                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                ))}
+            </FileLoader>
+            <FormField.Message color='disabled' align='center'>
+                Необязательный текст
+            </FormField.Message>
+        </FormField>
+    );
+};
+WithDisabled.storyName = 'Со свойством disabled';
+
+export const WithPaste: Story<FileLoaderProps> = (args) => {
+    const [files, setFiles] = React.useState<FCCFile[]>([]);
+    const changeHandler = React.useCallback(
+        ({ value: newFiles }) => {
+            setFiles([...files, ...newFiles]);
+        },
+        [files]
+    );
+    const deleteHandler = React.useCallback(
+        (file) => {
+            setFiles(files.filter((f) => f !== file));
+        },
+        [files]
+    );
+    const pasteListenerRef = React.useRef<HTMLDivElement>(null);
+
+    return (
+        <div ref={pasteListenerRef}>
+            <FileLoader
+                content={'Перетащите или вставьте файлы из буфера'}
+                onChange={changeHandler}
+                pasteListenerRef={pasteListenerRef}
+                {...args}>
+                {files.map((f, i) => (
+                    <FileComponent key={i} file={f} onDelete={deleteHandler} />
+                ))}
+            </FileLoader>
+        </div>
+    );
+};
+WithPaste.storyName = 'С возможностью вставки из буфера обмена';
+
+export const WithHelperText: Story<FileLoaderProps> = (args) => {
+    const [files, setFiles] = React.useState<FCCFile[]>([]);
+    const changeHandler = React.useCallback(
+        (e, newFiles) => {
+            setFiles([...files, ...newFiles]);
+        },
+        [files]
+    );
+    const deleteHandler = React.useCallback(
+        (file) => {
+            setFiles(files.filter((f) => f !== file));
+        },
+        [files]
+    );
+    const pasteListenerRef = React.useRef<HTMLDivElement>(null);
+
+    return (
+        <div ref={pasteListenerRef}>
+            <FileLoader
+                content={'Перетащите или вставьте файлы из буфера'}
+                onChange={changeHandler}
+                pasteListenerRef={pasteListenerRef}
+                helperText='Пожалуйста, приложите файлы'
+                invalid
+                {...args}>
+                {files.map((f, i) => (
+                    <FileComponent key={i} file={f} onDelete={deleteHandler} />
+                ))}
+            </FileLoader>
+        </div>
+    );
+};
+WithHelperText.storyName = 'With Helper Text';

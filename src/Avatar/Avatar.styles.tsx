@@ -1,10 +1,14 @@
 import styled from 'styled-components';
+import { avatar } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const { base, size } = getPresets('avatar', {
+const presets = getPresets(
+    avatar,
+    'avatar'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
 });
 
 export interface PropsBox<B = Breakpoints> {
@@ -17,22 +21,21 @@ export const Box = styled.div<PropsBox>`
     justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
-    ${base}
-    ${size}
+    ${presets.base}
+    ${presets.size}
 `;
 
 export interface PropsImageLayer {
-    $src?: string;
     $align?: 'left' | 'center' | 'right';
     $valign?: 'top' | 'center' | 'bottom';
 }
-export const ImageLayer = styled.div<PropsImageLayer>`
+
+export const ImageLayer = styled.img<PropsImageLayer>`
     position: absolute;
+    left: 0;
     top: 0;
-    height: 100%;
     width: 100%;
-    background-image: ${({ $src }) => `url(${$src})`};
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: ${({ $align }) => $align} ${({ $valign }) => $valign};
+    height: 100%;
+    object-fit: cover;
+    object-position: ${({ $align }) => $align} ${({ $valign }) => $valign};
 `;

@@ -31,7 +31,7 @@ export function Text<B = void>({
 }: TextProps<B extends void ? Breakpoints : B>) {
     return (
         <Box
-            {...(attrs as {})}
+            {...attrs}
             as={type as string}
             ref={forwardedRef}
             $size={size}

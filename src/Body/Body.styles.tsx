@@ -1,12 +1,16 @@
 import styled, { createGlobalStyle } from 'styled-components';
+import { body } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const { base } = getPresets('body', {
+const presets = getPresets(
+    body,
+    'body'
+)({
     base: null,
 });
 
 export const Box = styled.div`
-    ${base}
+    ${presets.base}
     font-feature-settings: normal;
     -webkit-font-smoothing: antialiased;
     height: 100%;
@@ -43,79 +47,4 @@ export const GlobalStyles = createGlobalStyle`
     [hidden] {
         display: none;
     }
-`;
-
-export const GlobalCustomFonts = createGlobalStyle`
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.eot'); /* Fix IE11 */
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.eot'); /* Fix IE11 */
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Navigo';
-        font-display: swap;
-        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Bold-Web.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-`;
-
-export const GlobalCustomFontsLocal = createGlobalStyle`
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('./resources/ALS_Hauss-Regular.eot') format('eot'), /* Fix IE11 */
-        url('./resources/ALS_Hauss-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('./resources/ALS_Hauss-Medium.eot') format('eot'), /* Fix IE11 */
-        url('./resources/ALS_Hauss-Medium.woff') format('woff');
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'ALS Hauss';
-        font-display: swap;
-        src: url('./resources/ALS_Hauss-Bold.eot') format('eot'), /* Fix IE11 */
-        url('./resources/ALS_Hauss-Bold.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'Navigo';
-        font-display: swap;
-        src: url('./resources/Navigo-Bold-Web.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
 `;

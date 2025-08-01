@@ -1,0 +1,87 @@
+import * as AccordionStories from './Accordion.stories';
+import { DocsMeta, Playground } from '../showcase/';
+import { ThemeProvider } from 'vienna.ui-primitives';
+import {
+    Title,
+    Subtitle,
+    Description,
+    Primary,
+    PureArgsTable,
+    Stories,
+    Controls,
+    Source,
+    Unstyled,
+    Canvas,
+    Meta,
+    Story,
+} from '@storybook/addon-docs';
+
+<DocsMeta
+  componentName="Accordion"
+  themedStory={AccordionStories.WithTheme}
+  controlsCanvas={<Canvas of={AccordionStories.Overview} />}
+  figmaLink="https://www.figma.com/design/SBNBQInDC8Ms3GyiqtEzm3/%F0%9F%95%B9-Vienna-RDS-Components?node-id=56460-0&p=f&m=dev"
+>
+
+Aккордеон это компонент для отображения списка элементов. Каждый элемент можно раскрыть, нажав на заголовок.
+
+## Различные компоненты в заголовке
+
+<Playground>{AccordionStories.DifferentHeaders}</Playground>
+
+## Различный контент
+
+<Playground>{AccordionStories.DifferentContent}</Playground>
+
+## Размеры
+
+#### Размер l
+
+<Playground>{AccordionStories.SizeL}</Playground>
+
+#### Размер m
+
+<Playground>{AccordionStories.SizeM}</Playground>
+
+#### Размер s
+
+<Playground>{AccordionStories.SizeS}</Playground>
+
+## Положение стрелки
+
+#### Слева
+
+<Playground>{AccordionStories.IconPositionLeft}</Playground>
+
+#### Справа
+
+<Playground>{AccordionStories.IconPositionRight}</Playground>
+
+#### Нет стрелки
+
+<Playground>{AccordionStories.IconPositionNone}</Playground>
+
+## Режим, когда аккордеон изначально открыт
+
+Настраивается свойством Accordion.Item `initiallyOpen`, также состоянием можно управлять с помощью пропа `open`
+
+<Playground>{AccordionStories.InitiallyOpen}</Playground>
+
+## Accordion.Item
+
+#### Disabled состояние
+
+<Playground>{AccordionStories.DisabledState}</Playground>
+
+#### Ширина Accordion.Item
+
+<Playground>{AccordionStories.WidthAccordionItem}</Playground>
+
+#### Стилизация контента внутри Accordion.Item
+
+За стилизацию контента внутри `Accordion.Item` отвечает свойство `flexDirection` со значениями 'row' | 'column'. Значение по умолчанию - 'row', это значит, что контент будет располагаться в строку, а иначе в колонку.
+
+  <Playground>
+    {AccordionStories.FlexDirectionColumn}
+  </Playground>
+</DocsMeta>

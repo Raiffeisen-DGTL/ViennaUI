@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "incremental": true,
+    "noEmit": false,
+    "paths": {
+      "@/atlant": ["./src/."],
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-plugin-styled-components",
+        "type": "config",
+        "exclude": ["/node_modules/"],
+        "displayName": false
+      }
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "esm",
+    "**/__tests__/**",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/*.stories.tsx",
+    "src/showcase"
+  ]
+}

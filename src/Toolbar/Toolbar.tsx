@@ -1,12 +1,14 @@
-import React, { FC, ReactNode } from 'react';
-import { MoreHor } from 'vienna.icons';
+import React, { FC, ReactElement, ReactNode } from 'react';
+import { MoreHorIcon } from 'vienna.icons';
 import { Whitespace } from '../Whitespace';
 import { useCustomCramList } from './hooks';
 import { Box, PropsBox } from './Toolbar.styles';
 import { ClickEvent, Operation } from './Operation';
 import { BoxStyled } from '../Utils/styled';
+import { reactNodeIsComponent } from '../Utils';
+import { Props as OperationProps } from './Operation/Operation';
 
-export interface ToolbarProps extends BoxStyled<typeof Box, PropsBox> {
+export interface ToolbarProps extends Omit<BoxStyled<typeof Box, PropsBox>, 'onClick'> {
     design?: PropsBox['$design'];
     id?: string;
     name?: string;
@@ -15,6 +17,8 @@ export interface ToolbarProps extends BoxStyled<typeof Box, PropsBox> {
     moreOptionsText?: string;
     /** Вид иконок кнопок, которые содержат выпадающий список  */
     enableArrowIcons?: boolean;
+    /** Возможность менять расположение дроплиста  */
+    isFixed?: boolean;
 }
 
 export const Toolbar: FC<ToolbarProps> & { Operation: typeof Operation } = (props) => {
@@ -23,11 +27,14 @@ export const Toolbar: FC<ToolbarProps> & { Operation: typeof Operation } = (prop
         design = 'light',
         onClick,
         enableArrowIcons = false,
+        isFixed,
         moreOptionsText = 'More options',
         ...attrs
     } = props;
 
-    const childrenArray: any = React.Children.toArray(children as JSX.Element).filter(Boolean);
+    const childrenArray: ReactElement<OperationProps>[] = (React.Children.toArray(children) as ReactElement[]).filter(
+        Boolean
+    );
     const filteredLeft = childrenArray.filter((child) => !child.props.asSubOperation);
     const filteredRight = childrenArray.filter((child) => child.props.asSubOperation);
     const [containerRef, extraComponentRef, count] = useCustomCramList(
@@ -36,29 +43,36 @@ export const Toolbar: FC<ToolbarProps> & { Operation: typeof Operation } = (prop
         Boolean(filteredRight.length)
     );
 
-    const left = filteredLeft.map((child, idx) =>
-        React.cloneElement(child, { key: idx, design, onClick: onClick ?? child.props.onClick, enableArrowIcons })
-    );
-
-    const right = [...filteredRight, ...childrenArray.slice(childrenArray.length - count)]
-        .map((child, idx) =>
-        React.cloneElement(child, {
+    const left = filteredLeft.map((child, idx) => {
+        return React.cloneElement(child, {
             key: idx,
-            enableArrowIcons,
-            asSubOperation: true,
+            design,
+            isFixed,
             onClick: onClick ?? child.props.onClick,
-        })
-    );
+            enableArrowIcons: reactNodeIsComponent(child, Toolbar.Operation) ? enableArrowIcons : undefined,
+        });
+    });
+
+    const right = [...filteredRight, ...childrenArray.slice(childrenArray.length - count)].map((child, idx) => {
+        return React.cloneElement(child, {
+            key: idx,
+            asSubOperation: true,
+            isFixed,
+            onClick: onClick ?? child.props.onClick,
+            enableArrowIcons: reactNodeIsComponent(child, Toolbar.Operation) ? enableArrowIcons : undefined,
+        });
+    });
 
     return (
-        <Box {...(attrs as {})} ref={containerRef} $design={design}>
+        <Box {...attrs} ref={containerRef} $design={design}>
             {left}
             <Whitespace ml='auto' mr='0em'>
                 <Operation
                     ref={extraComponentRef}
                     design={design}
-                    icon={<MoreHor />}
+                    icon={<MoreHorIcon />}
                     label={moreOptionsText}
+                    isFixed={isFixed}
                     hideEllipsis>
                     {right}
                 </Operation>

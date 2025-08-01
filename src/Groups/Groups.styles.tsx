@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { groups } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('groups', {
+const presets = getPresets(
+    groups,
+    'groups'
+)({
     size: '$size',
     custom: null,
     customItem: null,
@@ -33,17 +37,23 @@ export interface PropsBox {
         | 'flex-end'
         | 'space-between'
         | 'space-around';
+    $bottomGap?: boolean;
 }
 export const Box = styled.div<PropsBox>`
-    display: ${({ $design }) => ($design === 'horizontal' ? 'inline-flex' : 'flex')};
+    display: ${({ $design }) => ($design === 'horizontal' ? 'flex' : 'flex')};
     flex-direction: ${({ $design }) => ($design === 'horizontal' ? 'row' : 'column')};
     justify-content: ${({ $justifyContent }) => $justifyContent};
     align-content: flex-start;
     align-items: ${({ $alignItems }) => $alignItems};
-    margin-bottom: -${presets.size};
     flex-wrap: wrap;
     vertical-align: middle;
     width: 100%;
+
+    ${({ $bottomGap }) =>
+        !$bottomGap &&
+        css`
+            margin-bottom: -${presets.size};
+        `}
 
     ${({ $height }) =>
         $height === 'full' &&

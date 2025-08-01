@@ -1,25 +1,28 @@
 import styled, { css } from 'styled-components';
-import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { badge } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 import { BadgeColor } from './Badge';
 
-const presets = getPresets('badge', {
+const presets = getPresets(
+    badge,
+    'badge'
+)({
     base: null,
     color: '$color',
-    size: responsivePreset('$size', 'm'),
-    gap: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
+    gap: ['$size', 'm'],
 });
 
-const custom = getPresets('badge.custom', {
+const custom = getPresetsCustom('badge.custom')({
     box: null,
     item: null,
 });
 
 export interface PropsBox<B = Breakpoints> {
     $color?: BadgeColor;
-    $size?: ResponsiveProp<'xs' | 's' | 'm' | 'l', B>;
+    $size?: ResponsiveProp<'xs' | 's' | 'm' | 'l' | 'xl', B>;
     $grid?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
-    $clickable?: boolean;
 }
 export const Box = styled.span<PropsBox>`
     display: inline-flex;
@@ -39,12 +42,6 @@ export const Box = styled.span<PropsBox>`
         $grid &&
         css`
             width: ${$grid ? `${(100 / 12) * $grid}%` : 'auto'};
-        `}
-
-    ${({ $clickable }) =>
-        $clickable &&
-        css`
-            cursor: pointer;
         `}
 
     ${custom.box}

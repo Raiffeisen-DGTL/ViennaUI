@@ -14,8 +14,13 @@ declare module '*.woff2' {
 }
 
 declare module '*.svg' {
-    const content: any;
+    const content: string;
     export default content;
 }
 
 declare type Nullable<T> = null | T;
+
+declare module '*.png' {
+    const value: any;
+    export default value;
+}

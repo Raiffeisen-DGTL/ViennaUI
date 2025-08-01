@@ -1,21 +1,21 @@
-import  { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useTableService } from '../Context';
 
 export const useResizableColumns = () => {
     const { setColumnWidth } = useTableService();
-    const resizerRef = useRef(null);
-    let pageX;
-    let curCol;
-    let curColWidth;
-    let tableHeight;
+    const resizerRef = useRef<HTMLDivElement>(null);
+    let pageX: number | null = null;
+    let curCol: HTMLElement | null = null;
+    let curColWidth: number | null = null;
+    let tableHeight: number | null = null;
 
-    const onMouseMove = (e) => {
+    const onMouseMove = (e: MouseEvent) => {
         e.preventDefault();
         if (curCol) {
-            const diffX = e.pageX - pageX;
-            const newWidth = curColWidth + diffX;
+            const diffX: number = e.pageX - (pageX || 0);
+            const newWidth: number = (curColWidth || 0) + diffX;
 
-            setColumnWidth(curCol.dataset.column, `${newWidth}px`);
+            setColumnWidth(curCol.dataset.column || '', `${newWidth}px`);
 
             curCol.style.width = `${newWidth}px`;
         }
@@ -25,13 +25,13 @@ export const useResizableColumns = () => {
         // store new widths in state
         if (curCol) {
             const colId = curCol.dataset.column;
-            setColumnWidth(colId, curCol.style.width);
+            setColumnWidth(colId || '', curCol.style.width);
         }
 
-        // @ts-ignore
-        resizerRef.current.style.height = null;
-        // @ts-ignore
-        resizerRef.current.style.opacity = null;
+        if (resizerRef.current) {
+            resizerRef.current.style.height = '';
+            resizerRef.current.style.opacity = '';
+        }
         curCol = null;
         pageX = null;
         curColWidth = null;
@@ -39,19 +39,19 @@ export const useResizableColumns = () => {
         document.removeEventListener('mouseup', onMouseUp);
     };
 
-    const onMouseDown = (e) => {
+    const onMouseDown = (e: MouseEvent) => {
         e.preventDefault();
 
-        const resizer = e.target;
+        const resizer = e.target as HTMLDivElement;
         curCol = resizer.parentElement;
         pageX = e.pageX;
 
-        curColWidth = curCol.offsetWidth;
+        curColWidth = curCol?.offsetWidth || null;
 
         const table = resizer.closest('table');
         tableHeight = table && table.offsetHeight;
-        resizer.style.height = `${tableHeight}px`;
-        resizer.style.opacity = 1;
+        resizer.style.height = tableHeight ? `${tableHeight}px` : '';
+        resizer.style.opacity = '1';
 
         document.addEventListener('mousemove', onMouseMove);
         document.addEventListener('mouseup', onMouseUp);

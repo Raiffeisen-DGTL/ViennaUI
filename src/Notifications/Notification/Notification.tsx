@@ -1,49 +1,61 @@
-import React, { ReactNode, PureComponent } from 'react';
-import { CloseCancelX } from 'vienna.icons';
-import { ResponsiveProp } from '../../Utils/responsiveness';
+import React, { useState, useRef, useEffect } from 'react';
 import { Alert, AlertProps } from '../../Alert';
 import { Flex } from '../../Flex';
-import { CloseBox, Box } from './Notification.styles';
+import { Box } from './Notification.styles';
+import { NotificationType as NotificationService } from '../NotificationService';
 
 export type Design = 'plain' | 'error' | 'warning' | 'success' | 'accent';
 
-export interface NotificationProps extends AlertProps {
-    title?: ReactNode;
-    actions?: ReactNode;
-    design?: Design;
-    delay?: number;
-    compactBelow?: number;
-    compact?: ResponsiveProp<boolean>;
-    pinWithMouse?: boolean;
-    onClose: (e, data) => void;
+export interface NotificationProps
+    extends Omit<AlertProps, 'onClose' | 'testId'>,
+        Omit<NotificationService, 'id' | 'message'> {
+    pinWithMouse?: boolean; // Default is false if not provided, so no need to set a default value here
+    onClose: (e: React.MouseEvent | null, data: Omit<NotificationProps, 'onClose'>) => void;
+    testId?: {
+        container?: string;
+        alert?: AlertProps['testId'];
+    };
 }
 
-interface State {
-    open: boolean;
-}
+export const Notification: React.FC<NotificationProps> = ({
+    pinWithMouse,
+    delay,
+    onClose,
+    testId,
+    compact,
+    design,
+    actions,
+    children,
+    ...attrs
+}) => {
+    const [open, setOpen] = useState<boolean>(true);
+    const containerRef = useRef<HTMLInputElement>(null);
 
-export class Notification extends PureComponent<NotificationProps, State> {
-    // eslint-disable-next-line react/sort-comp
-    private timer;
-    private readonly containerRef = React.createRef<HTMLInputElement>();
-    // Mouse handlers to pin Notification with mouse
-    private readonly mouseHandlers;
+    const setTimer = () => {
+        if (delay && delay > 0) {
+            return window.setTimeout(() => handleClose(null), delay);
+        }
+        return null;
+    };
 
-    public constructor(props: NotificationProps) {
-        super(props);
-        this.state = { open: true };
-        this.mouseHandlers = props.pinWithMouse
-            ? {
-                  onMouseEnter: this.cancelTimer,
-                  onMouseLeave: this.setTimer,
-              }
-            : {};
-    }
+    const cancelTimer = () => {
+        const timer = setTimer();
+        if (timer) {
+            clearTimeout(timer);
+        }
+    };
 
-    public componentDidMount() {
-        this.setTimer();
-        const container = this.containerRef.current;
-        const getContainerHeight = (container) => getComputedStyle(container).height;
+    const mouseHandlers = pinWithMouse
+        ? {
+              onMouseEnter: cancelTimer,
+              onMouseLeave: setTimer,
+          }
+        : {};
+
+    useEffect(() => {
+        setTimer();
+        const container = containerRef.current;
+        const getContainerHeight = (container: HTMLInputElement) => getComputedStyle(container).height;
 
         if (container) {
             const height = getContainerHeight(container);
@@ -54,60 +66,35 @@ export class Notification extends PureComponent<NotificationProps, State> {
 
             container.style.height = height;
         }
-    }
 
-    public componentWillUnmount() {
-        this.cancelTimer();
-    }
+        return () => {
+            cancelTimer();
+        };
+    }, [delay, containerRef]);
 
-    public render() {
-        const { children, compactBelow, compact, actions, design = 'plain', ...attrs } = this.props;
-        const { open } = this.state;
+    const handleClose = (e: React.MouseEvent | null) => {
+        setOpen(false);
 
-        return (
-            <Box {...(this.mouseHandlers as {})} ref={this.containerRef} $open={open} $compactBelow={compactBelow}>
-                <Alert
-                    {...(attrs as {})}
-                    design={design}
-                    actions={actions}
-                    compact={compact}
-                    compactBelow={compactBelow}
-                    rightContainer={
-                        <CloseBox $design={design} onClick={this.handleClose}>
-                            <CloseCancelX />
-                        </CloseBox>
-                    }>
-                    <Flex justifyContent={'space-between'}>{children}</Flex>
-                </Alert>
-            </Box>
-        );
-    }
-
-    private readonly setTimer = () => {
-        const { delay } = this.props;
-        if (delay && delay > 0 && !this.timer) {
-            this.timer = window.setTimeout(() => this.handleClose(null), delay);
+        if (onClose) {
+            setTimeout(() => {
+                onClose(e, attrs);
+            }, 500);
         }
+
+        cancelTimer();
     };
 
-    private readonly cancelTimer = () => {
-        if (this.timer) {
-            clearTimeout(this.timer);
-            this.timer = null;
-        }
-    };
-
-    private readonly handleClose = (e) => {
-        const { onClose, ...attrs } = this.props;
-
-        this.setState({ open: false }, () => {
-            if (onClose) {
-                setTimeout(() => {
-                    onClose(e, attrs);
-                }, 500);
-            }
-        });
-
-        this.cancelTimer();
-    };
-}
+    return (
+        <Box {...mouseHandlers} ref={containerRef} $open={open} $compact={compact} data-testid={testId?.container}>
+            <Alert
+                {...attrs}
+                design={design || 'plain'}
+                actions={actions}
+                compact={compact}
+                testId={testId?.alert}
+                onClose={handleClose}>
+                <Flex justifyContent={'space-between'}>{children}</Flex>
+            </Alert>
+        </Box>
+    );
+};

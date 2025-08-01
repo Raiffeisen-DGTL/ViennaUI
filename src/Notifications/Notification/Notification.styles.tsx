@@ -1,21 +1,29 @@
 import styled, { css, keyframes } from 'styled-components';
+import { notifications } from 'vienna.ui-theme';
 import { Design } from './Notification';
 import { getPresets } from '../../Utils/styling';
+import { ResponsiveProp } from '../../Utils/responsiveness';
 
-const presets = getPresets('notifications.notification', {
+const presets = getPresets(
+    notifications.notification,
+    'notifications.notification'
+)({
     size: null,
     sizeCompact: null,
     close: null,
     notificationsGap: null,
 });
 
-const close = getPresets('notifications.notification.close', {
+const close = getPresets(
+    notifications.notification.close,
+    'notifications.notification.close'
+)({
     base: null,
     design: '$design',
     hover: null,
 });
 
-interface PropsCloseBox {
+export interface PropsCloseBox {
     $design?: Design;
 }
 
@@ -51,19 +59,18 @@ const fadeOut = keyframes`
 
 export interface PropsBox {
     $open?: boolean;
-    $compactBelow?: number;
+    $compact?: ResponsiveProp<boolean>;
 }
+
 export const Box = styled.div<PropsBox>`
     transition: height 0.5s ease;
     ${presets.size}
     ${presets.notificationsGap}
 
-    ${({ $compactBelow }) =>
-        $compactBelow &&
+    ${({ $compact }) =>
+        $compact &&
         css`
-            @media (max-width: ${$compactBelow}px) {
-                ${presets.sizeCompact}
-            }
+            ${presets.sizeCompact}
         `}
 
     ${({ $open }) =>

@@ -1,47 +1,32 @@
 import React, { forwardRef, ReactNode, Ref, CSSProperties, HTMLAttributes } from 'react';
-import { Box } from './TooltipNative/TolltipNative.styles';
+import { Box, Arrow, Block, PropsBox } from './TooltipNative/TolltipNative.styles';
+import { FloatingPlacement, RendererPopupProps } from '../Floating';
+import { getOppositePlacement } from '@/Utils';
 
 export interface BaseTooltipPopupProps {
+    refArrow?: RendererPopupProps['attributes']['setArrowEl'];
     size?: 's' | 'm';
     anchor?: 'left' | 'right' | 'top' | 'bottom' | 'auto';
-    placement?: 'left' | 'right' | 'top' | 'bottom';
+    placement?: FloatingPlacement;
+    arrowX?: number;
+    arrowY?: number;
     width?: string | number;
     allowInteraction?: boolean;
-    design?: 'light' | 'dark';
+    /** Цветовая схема */
+    design?: 'light' | 'dark' | 'warning' | 'critical' | 'success';
     disabled?: boolean;
-    truncate?: boolean;
-    inline?: boolean;
     style?: CSSProperties;
     children: ReactNode;
 }
 
 export type TooltipPopupProps = HTMLAttributes<HTMLDivElement> & BaseTooltipPopupProps;
 
-const getOppositePlacement = (placement: BaseTooltipPopupProps['placement']): BaseTooltipPopupProps['placement'] => {
-    switch (placement) {
-        case 'top': {
-            return 'bottom';
-        }
-        case 'bottom': {
-            return 'top';
-        }
-        case 'left': {
-            return 'right';
-        }
-        case 'right': {
-            return 'left';
-        }
-        default: {
-            return placement;
-        }
-    }
-};
-
 export const TooltipPopup: React.ForwardRefExoticComponent<
     React.PropsWithoutRef<TooltipPopupProps> & React.RefAttributes<HTMLDivElement>
 > = forwardRef<HTMLDivElement, TooltipPopupProps>((props: TooltipPopupProps, ref: Ref<HTMLDivElement>) => {
-    const { size = 's', design = 'light', width, placement, ...attrs } = props;
+    const { refArrow, arrowX, arrowY, size = 's', design = 'light', width, placement, children, ...attrs } = props;
     const arrowPlacement = getOppositePlacement(placement);
+
     return (
         <Box
             ref={ref}
@@ -49,10 +34,18 @@ export const TooltipPopup: React.ForwardRefExoticComponent<
             $size={size}
             $width={width}
             $show
+            $placement={placement ? (placement.split('-')[0] as PropsBox['$placement']) : undefined}
             $arrow={arrowPlacement}
-            $placement={placement}
-            {...attrs}
-        />
+            {...attrs}>
+            {children}
+            <Block
+                $offsetX={arrowX}
+                $offsetY={arrowY}
+                $placement={arrowPlacement}
+                ref={(el) => refArrow?.(el ?? undefined)}>
+                <Arrow $design={design} />
+            </Block>
+        </Box>
     );
 });
 

@@ -1,17 +1,18 @@
-import React, { ComponentProps, FormEvent, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Calendar as CalendarIcon } from 'vienna.icons';
+import React, { ComponentProps, forwardRef, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
 import { useFloating, offset, autoPlacement, FloatingPortal } from '@floating-ui/react';
-import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
+import { CalendarIconProps as CalendarProps } from 'vienna.icons/dist/CalendarIcon/CalendarIcon';
 import { usePortal } from 'vienna.react-use';
 import { DatePickerBetaLocalizationProps } from './localization';
-import { Calendar, Dates, DateValue, eventDateFunction } from '../Calendar';
+import { Calendar, CalendarDates, eventDateFunction, PropsCalendar } from '../Calendar';
 import { InputDateBeta } from '../InputDateBeta';
 import { getDateFromString, getStringFromDate } from '../Utils/DateUtils';
-import { InputEvent } from '../Input';
 import { Box, InputBox, CalendarBox } from './DatePickerBeta.styles';
 import { checkIsDisabled } from '../Calendar/Utils';
 import { StartingWeekDay } from '../Calendar/types';
+import { DatePickerObject } from '../Datepicker/Datepicker';
+import { ComponentWrapper } from '../Utils';
 
 export interface DatePickerBetaProps
     extends Omit<ComponentProps<typeof InputDateBeta>, 'value' | 'type' | 'onChange' | 'onPaste' | 'localization'>,
@@ -34,7 +35,7 @@ export interface DatePickerBetaProps
     /**
      * Выходные даты
      */
-    weekendDates?: Dates;
+    weekendDates?: CalendarDates;
 
     /**
      * Отображение кнопки "Сегодня"
@@ -52,14 +53,14 @@ export interface DatePickerBetaProps
     maxDate?: Date;
 
     onChange?: (
-        event: InputEvent<FormEvent<HTMLInputElement>> | Event | null,
+        event: React.FormEvent<HTMLInputElement> | React.FocusEvent | Event | null,
         data: { value?: string; name?: string; isDisabled?: boolean; date?: Date }
     ) => void;
 
     /**
      * Неактивные для выбора даты
      */
-    disabledDates?: Dates;
+    disabledDates?: CalendarDates;
 
     /**
      * Дни недели отображаются с понедельника (1) или с воскресенья (0)
@@ -134,7 +135,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         });
 
         const handleInputFocus = useCallback(
-            (event, data) => {
+            (event: React.FocusEvent<HTMLInputElement>, data: DatePickerObject) => {
                 if (typeof onFocus === 'function') {
                     onFocus(event, { value: data.value, name });
                 }
@@ -161,7 +162,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         }, [active]);
 
         const handleChangeInput = useCallback(
-            (values, sourceInfo) => {
+            (values: { formattedValue: string }, sourceInfo: { event: Event | React.FocusEvent }) => {
                 const date = getDateFromString(values.formattedValue);
                 const nextIsDisabled =
                     !!date && checkIsDisabled({ dates: disabledDates, date, startingWeekDay, minDate, maxDate });
@@ -180,7 +181,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         );
 
         const handleBlur = useCallback(
-            (event) => {
+            (event: React.FocusEvent<HTMLInputElement>) => {
                 if (typeof onBlur === 'function') {
                     onBlur(event, {
                         value: typeof value === 'string' ? value : getStringFromDate(value as Date),
@@ -194,8 +195,8 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
             [onBlur, value, name, handleChangeInput]
         );
 
-        const handleClickDate = useCallback(
-            (event, { date }: { date?: DateValue | Date }) => {
+        const handleClickDate = useCallback<NonNullable<PropsCalendar['onChange']>>(
+            (event, { date }) => {
                 if (date) {
                     const clickedDateString = getStringFromDate(date as Date);
 
@@ -210,7 +211,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         );
 
         const handleKeyPress = useCallback(
-            (event) => {
+            (event: React.KeyboardEvent<HTMLInputElement>) => {
                 if (typeof onKeyPress === 'function') {
                     onKeyPress(event);
                 }
@@ -224,7 +225,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
             [isOpen, onKeyPress]
         );
 
-        const handleClickDocument = (event): void => {
+        const handleClickDocument = (event: MouseEvent): void => {
             if (
                 event.target instanceof Node &&
                 datepickerEl &&
@@ -249,12 +250,12 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
         });
 
         const dateValue = useMemo(() => getDateFromString(value as Date | string), [value, isDisabled]);
-        const handleMouseDownCalendar = useCallback((e) => {
+        const handleMouseDownCalendar = useCallback((e: React.MouseEvent) => {
             e.preventDefault();
         }, []);
 
         return (
-            <Box ref={refs.setReference} tabIndex={tabIndex} onBlur={handleBlur} id='datepickerbeta-box'>
+            <Box ref={refs.setReference} tabIndex={tabIndex} id='datepickerbeta-box' onBlur={handleBlur}>
                 <InputBox onClick={handleClickInput}>
                     <InputDateBeta
                         ref={ref}
@@ -272,13 +273,14 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
                         value={value}
                         active={active}
                         localization={localization}
-                        onChange={handleChangeInput}
                         onKeyDown={handleKeyPress}
                         onFocus={handleInputFocus}
                         {...attrs}
                     />
                 </InputBox>
-                <FloatingPortal root={containerPortal}>
+                <ComponentWrapper
+                    component={containerPortal ? FloatingPortal : undefined}
+                    props={{ root: containerPortal }}>
                     <CalendarBox
                         ref={refs.setFloating}
                         data-id='calendar'
@@ -301,7 +303,7 @@ export const DatePickerBeta = forwardRef<HTMLInputElement, DatePickerBetaProps>(
                             onChangeDisplayedDate={onChangeDisplayedDate}
                         />
                     </CalendarBox>
-                </FloatingPortal>
+                </ComponentWrapper>
             </Box>
         );
     }

@@ -1,17 +1,31 @@
-import React, { FC, FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react';
 import { useFloating, offset, autoPlacement, shift, FloatingPortal } from '@floating-ui/react';
 import { format, Locale } from 'date-fns';
 import { ru } from 'date-fns/locale';
-import { Calendar as CalendarIcon } from 'vienna.icons';
-import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
-import { Calendar } from '../Calendar';
-import { Input, InputEvent, InputProps } from '../Input';
+import { CalendarIcon } from 'vienna.icons';
+import { CalendarIconProps as CalendarProps } from 'vienna.icons/dist/CalendarIcon/CalendarIcon';
+import { Calendar, PropsCalendar } from '../Calendar';
+import { Input, InputProps } from '../Input';
 import { Box, InputBox, CalendarBox } from './Monthpicker.styles';
 import { MonthpickerLocalizationProps } from './localization';
 import { getStringFromDate } from '../Utils/DateUtils';
+import { OnChangeHandler, ComponentWrapper, defer, Pretty, composeRef } from '../Utils';
+import { CalendarTestId, defaultCalendarTestId } from '@/Calendar/Calendar';
+
+export const defaultMonthpickerTestId: MonthPickerTestId = {
+    postfixIcon: 'monthpicker_postfix-icon',
+    calendarBox: 'monthpicker_calendar-box',
+    calendar: defaultCalendarTestId,
+};
+
+export interface MonthPickerTestId {
+    postfixIcon?: string;
+    calendarBox?: string;
+    calendar?: CalendarTestId;
+}
 
 export interface MonthpickerProps
-    extends Omit<InputProps, 'value' | 'type' | 'onChange' | 'onPaste'>,
+    extends Omit<InputProps, 'value' | 'type' | 'onChange' | 'onPaste' | 'onBlur' | 'testId'>,
         MonthpickerLocalizationProps {
     value?: Date;
 
@@ -20,18 +34,57 @@ export interface MonthpickerProps
      */
     isCalendarOpen?: boolean;
 
-    onChange?: (
-        event: InputEvent<FormEvent<HTMLInputElement>> | Event | null,
-        data: { value?: string; date?: Date; name?: string }
-    ) => void;
+    /**
+     * Календарь всегда открыт
+     */
+    isCalendarAlwaysOpen?: boolean;
+
+    /**
+     * Ref для calendar
+     */
+    calendarBoxRef?: React.MutableRefObject<HTMLDivElement | null>;
+
+    onChange?: OnChangeHandler<
+        Date | undefined,
+        React.ChangeEvent<HTMLInputElement> | React.KeyboardEvent<HTMLInputElement> | null,
+        { month: string; name?: string }
+    >;
+
+    onBlur?: (event: React.FocusEvent<HTMLDivElement>, data: { value?: string; date?: Date; name?: string }) => void;
     /**
      * Локаль календаря
      */
     locale?: Locale;
+    dropdownPortal?: HTMLElement | React.MutableRefObject<HTMLElement | null> | null;
+    /** Ref, принимающий функции для внешнего обновления стейта  */
+    controlsRef?: React.MutableRefObject<MonthpickerControlRef | null>;
+    testId?: MonthPickerTestId;
+}
+export type MonthpickerControlRef =
+    | {
+          updateValue: (date: Date) => void;
+      }
+    | undefined;
+
+interface inputType {
+    date: Date;
+    value: string;
 }
 
-export const Monthpicker: FC<MonthpickerProps> = ({
+export namespace Monthpicker {
+    export type OnChange = Pretty.Func<
+        OnChangeHandler<
+            Date | undefined,
+            React.ChangeEvent<HTMLInputElement> | React.KeyboardEvent<HTMLInputElement> | null,
+            { month: string; name?: string }
+        >
+    >;
+    export type TestId = Pretty.fy<MonthPickerTestId>;
+}
+
+export function Monthpicker({
     isCalendarOpen = false,
+    isCalendarAlwaysOpen,
     name,
     size,
     value,
@@ -41,23 +94,28 @@ export const Monthpicker: FC<MonthpickerProps> = ({
     onKeyPress,
     localization,
     locale,
+    dropdownPortal = document.body,
+    controlsRef,
+    calendarBoxRef,
+    testId = defaultMonthpickerTestId,
     ...attrs
-}) => {
-    const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen);
+}: MonthpickerProps) {
+    const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen || isCalendarAlwaysOpen);
     const datepickerEl = useRef<HTMLDivElement>(null);
-    interface inputType {
-        date: Date;
-        value: string;
-    }
 
-    const initializedValue = useMemo(() => {
-        return value ? { date: value, value: format(value, 'LLLL yyyy', { locale: ru }) } : '';
-    }, [value]);
+    const getValue = (date: Date): inputType => ({ date, value: format(date, 'LLLL yyyy', { locale: ru }) });
 
+    const initializedValue = useMemo(() => (value ? getValue(value) : ''), [value]);
     const [inputValue, setInputValue] = useState<inputType | string | (() => inputType)>(initializedValue);
     const [active, setActive] = useState(false);
 
-    const { refs, floatingStyles } = useFloating({
+    useImperativeHandle(controlsRef, () => ({
+        updateValue: (date) => {
+            setInputValue(getValue(date));
+        },
+    }));
+
+    const { refs, floatingStyles, update } = useFloating({
         middleware: [
             offset({
                 mainAxis: 4,
@@ -73,7 +131,7 @@ export const Monthpicker: FC<MonthpickerProps> = ({
         ],
     });
 
-    const handleInputFocus = useCallback(
+    const handleInputFocus = useCallback<NonNullable<InputProps['onFocus']>>(
         (event, data) => {
             if (typeof onFocus === 'function') {
                 onFocus(event, { value: data.value, name });
@@ -83,92 +141,97 @@ export const Monthpicker: FC<MonthpickerProps> = ({
         [name, onFocus]
     );
 
-    const handleClickDateIcon = useCallback(
+    const handleClickDateIcon = useCallback<React.MouseEventHandler>(
         (e) => {
             e.stopPropagation();
-            setOpen(!isOpen);
+            !isCalendarAlwaysOpen && setOpen(!isOpen);
         },
-        [isOpen]
+        [isOpen, isCalendarAlwaysOpen]
     );
 
-    const handleClickInput = useCallback(() => {
+    const handleClickInput = useCallback<React.MouseEventHandler>(() => {
         if (active) {
             setOpen(true);
         }
     }, [isOpen, active]);
 
-    const handleClickMonth = useCallback(
-        (event, { date, value }) => {
+    const handleClickMonth = useCallback<NonNullable<PropsCalendar['onChangeMonth']>>(
+        ({ date, value }) => {
             if (date) {
-                setInputValue({ date, value });
+                setInputValue({ date: date as Date, value });
                 if (typeof onChange === 'function') {
-                    onChange(event, { value: value, date, name });
+                    onChange({ value: date as Date, event: null, options: { month: value, name } });
                 }
-                setOpen(false);
+                !isCalendarAlwaysOpen && setOpen(false);
                 setActive(true);
             }
         },
         [name, isOpen, active, onChange]
     );
 
-    const handleChangeInput = useCallback(
-        (event, value) => {
-            if (typeof onChange === 'function') {
-                onChange(event, value);
-            }
-        },
+    const handleChangeInput = useCallback<NonNullable<InputProps['onChange']>>(
+        ({ value: val, event, options }) =>
+            onChange?.({ value: undefined, event, options: { month: val, ...options } }),
         [name, onChange, value]
     );
 
-    const handleKeyPress = useCallback(
+    const handleKeyPress = useCallback<NonNullable<InputProps['onKeyPress']>>(
         (event) => {
             if (typeof onKeyPress === 'function') {
                 onKeyPress(event);
             }
             if (event.key === 'Enter') {
-                setOpen(!isOpen);
+                !isCalendarAlwaysOpen && setOpen(!isOpen);
             }
             if (event.key === 'Escape') {
-                setOpen(false);
+                !isCalendarAlwaysOpen && setOpen(false);
             }
         },
-        [isOpen, onKeyPress]
+        [isOpen, onKeyPress, isCalendarAlwaysOpen]
     );
 
-    const handleKeyDown = useCallback((event) => {
+    const handleKeyDown = useCallback<NonNullable<InputProps['onKeyDown']>>((event) => {
         if (event.keyCode === 8) {
             setInputValue('');
             if (typeof onChange === 'function') {
-                onChange(event, { date: undefined, value: '', name });
+                onChange({ value: undefined, event, options: { month: '', name } });
             }
         }
     }, []);
 
-    const handleClickDocument = (event): void => {
+    const handleClickDocument = (event: MouseEvent): void => {
         if (
             event.target instanceof Node &&
             datepickerEl &&
             datepickerEl.current &&
             !datepickerEl.current.contains(event.target)
         ) {
-            setOpen(false);
+            !isCalendarAlwaysOpen && setOpen(false);
             setActive(false);
         }
     };
 
     const handleBlur = useCallback(
-        (event) => {
+        (event: React.FocusEvent<HTMLDivElement>) => {
             if (typeof onBlur === 'function') {
                 onBlur(event, {
                     value: typeof value === 'string' ? value : getStringFromDate(value as Date),
                     name,
                 });
             }
-            setOpen(false);
+            !isCalendarAlwaysOpen && setOpen(false);
             setActive(false);
         },
-        [onBlur, value, name, active]
+        [onBlur, value, name, active, isCalendarAlwaysOpen]
     );
+
+    useEffect(() => {
+        defer(() => {
+            if (isOpen) {
+                update();
+            }
+        });
+    }, [isOpen]);
 
     useEffect(() => {
         if (document.body) {
@@ -182,7 +245,11 @@ export const Monthpicker: FC<MonthpickerProps> = ({
         };
     });
 
-    const handleMouseDownCalendar = useCallback((e) => {
+    useEffect(() => {
+        setOpen(isCalendarOpen || isCalendarAlwaysOpen);
+    }, [isCalendarOpen, isCalendarAlwaysOpen]);
+
+    const handleMouseDownCalendar = useCallback((e: React.MouseEvent) => {
         e.preventDefault();
     }, []);
 
@@ -190,11 +257,12 @@ export const Monthpicker: FC<MonthpickerProps> = ({
         <Box ref={refs.setReference} id='monthpicker-box' onBlur={handleBlur} onClick={handleClickInput}>
             <InputBox>
                 <Input
-                    {...(attrs as {})}
+                    {...attrs}
                     postfix={
                         <CalendarIcon
                             size={size === 'xxl' ? 'xl' : (size as CalendarProps['size'])}
                             cursor='pointer'
+                            data-testid={testId?.postfixIcon}
                             onClick={handleClickDateIcon}
                         />
                     }
@@ -203,9 +271,9 @@ export const Monthpicker: FC<MonthpickerProps> = ({
                     name={name}
                     value={
                         inputValue &&
-                        `${(inputValue as any).value?.split('')[0]?.toUpperCase()}${(inputValue as any).value?.slice(
-                            1
-                        )}`
+                        `${(inputValue as inputType).value?.split('')[0]?.toUpperCase()}${(
+                            inputValue as inputType
+                        ).value?.slice(1)}`
                     }
                     placeholder='Выберите месяц'
                     onChange={handleChangeInput}
@@ -215,24 +283,28 @@ export const Monthpicker: FC<MonthpickerProps> = ({
                 />
             </InputBox>
             {isOpen && (
-                <FloatingPortal>
+                <ComponentWrapper
+                    component={dropdownPortal ? FloatingPortal : undefined}
+                    props={{ root: dropdownPortal }}>
                     <CalendarBox
                         data-id='calendar'
-                        ref={refs.setFloating}
+                        ref={composeRef<HTMLDivElement>(refs.setFloating, calendarBoxRef)}
                         style={floatingStyles}
+                        data-testid={testId?.calendarBox}
                         onMouseDown={handleMouseDownCalendar}>
                         <Calendar
                             mode='month'
-                            date={(inputValue as any)?.date}
+                            date={(inputValue as inputType)?.date}
                             locale={locale}
                             localization={localization}
+                            testId={testId?.calendar}
                             onChangeMonth={handleClickMonth}
                         />
                     </CalendarBox>
-                </FloatingPortal>
+                </ComponentWrapper>
             )}
         </Box>
     );
-};
+}
 
 Monthpicker.displayName = 'Monthpicker';

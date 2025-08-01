@@ -23,15 +23,7 @@ export const Counter: FC<CounterProps> = ({
     ...attrs
 }) => {
     return (
-        <Box
-            {...(attrs as {})}
-            $design={design}
-            $position={position}
-            $top={top}
-            $bottom={bottom}
-            $left={left}
-            $right={right}
-        />
+        <Box {...attrs} $design={design} $position={position} $top={top} $bottom={bottom} $left={left} $right={right} />
     );
 };
 

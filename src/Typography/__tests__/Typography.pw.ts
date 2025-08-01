@@ -3,10 +3,10 @@ import { storybookLoader } from '../../Utils/playwright';
 
 test('typography screenshot heading, h1-h6', async ({ page }) => {
   const iframe = await storybookLoader(page, 'http://localhost:6006/?path=/story/development-typography--headings');
-  await expect(iframe.locator('#storybook-root')).toHaveScreenshot();
+  await expect(iframe.locator('#storybook-root')).toHaveScreenshot({ name: 'typography-screenshot-heading-h1-h6-1.png' });
 });
 
 test('typography screenshot span, text, p', async ({ page }) => {
   const iframe = await storybookLoader(page, 'http://localhost:6006/?path=/story/development-typography--playwright-tests');
-  await expect(iframe.locator('#storybook-root')).toHaveScreenshot();
+  await expect(iframe.locator('#storybook-root')).toHaveScreenshot({name: 'typography-screenshot-span-test-p-1.png'});
 });

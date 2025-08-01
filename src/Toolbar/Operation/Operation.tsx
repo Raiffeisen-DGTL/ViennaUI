@@ -1,13 +1,12 @@
 import React, { useState, useCallback, MouseEvent, ReactNode, forwardRef, ComponentProps, useEffect } from 'react';
-import { UpChevron, DownChevron } from 'vienna.icons';
+import { UpChevronIcon, DownChevronIcon } from 'vienna.icons';
 import { OpBox, StyledItem } from './Operation.styles';
 import { Button } from '../../Button';
 import { DropList } from '../../DropList';
 import { Spinner } from '../../Spinner';
 import { Flex } from '../../Flex';
 
-export type ClickEvent = (event: MouseEvent<HTMLDivElement>, data?: { id?: string; name?: string }) => void;
-
+export type ClickEvent = (data: { id?: string; name?: string }, event: MouseEvent<HTMLDivElement>) => void;
 export interface Props extends Omit<ComponentProps<typeof Button>, 'design' | 'onClick'> {
     id?: string;
     name?: string;
@@ -23,6 +22,7 @@ export interface Props extends Omit<ComponentProps<typeof Button>, 'design' | 'o
     /** Компонент неактивен, если disabled или loading true */
     disabled?: boolean;
     loading?: boolean;
+    isFixed?: boolean;
 }
 
 export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
@@ -39,6 +39,7 @@ export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
         loading = false,
         disabled = false,
         enableArrowIcons = false,
+        isFixed,
         onClick,
         ...attrs
     } = props;
@@ -47,7 +48,7 @@ export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
     const isGlobalDisabled = loading || disabled;
     const CurrentIcon = loading ? (
         <Flex>
-            <Spinner color='london120' />
+            <Spinner color={design === 'light' ? 'london120' : 'white'} />
         </Flex>
     ) : (
         icon
@@ -70,12 +71,12 @@ export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
     }, [setOpen]);
 
     const handleClick = useCallback(
-        (e) => {
+        (e: MouseEvent<HTMLDivElement>) => {
             e.stopPropagation();
             if (!isGlobalDisabled) {
                 setOpen(!open);
                 if (typeof onClick === 'function') {
-                    onClick(e, { id, name });
+                    onClick({ id, name }, e);
                 }
             }
         },
@@ -94,15 +95,20 @@ export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
         }
 
         if (!hideEllipsis && isChildren) {
-            return open ? <UpChevron /> : <DownChevron />;
+            return open ? <UpChevronIcon /> : <DownChevronIcon />;
         }
 
         return null;
     };
-
     return (
-        <OpBox ref={ref} $design={design} onMouseEnter={handleEnter} onMouseLeave={handleLeave} onClick={handleClick}>
-            <Button design='ghost' disabled={isGlobalDisabled} {...attrs}>
+        <OpBox
+            ref={ref}
+            $design={design}
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+            onClick={handleClick}
+            $disabled={isGlobalDisabled}>
+            <Button design={design === 'dark' ? 'ghost-white' : 'ghost'} disabled={isGlobalDisabled} {...attrs}>
                 {CurrentIcon}
                 {label}
                 {renderEllipsisIcon()}
@@ -111,6 +117,7 @@ export const Operation = forwardRef<HTMLDivElement, Props>((props, ref) => {
                 <DropList
                     align={asSubOperation ? 'horizontal' : 'vertical'}
                     float={'end'}
+                    fixed={isFixed}
                     scrollable={false}
                     margins={asSubOperation ? { x: 0, y: -8 } : { x: 0, y: 0 }}>
                     {React.Children.toArray(children)

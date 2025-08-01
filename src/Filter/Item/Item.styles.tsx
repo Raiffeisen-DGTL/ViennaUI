@@ -1,7 +1,12 @@
 import styled, { css } from 'styled-components';
+import { filter } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
+import { SizeType } from '../../Utils';
 
-const filter = getPresets('filter', {
+const presets = getPresets(
+    filter,
+    'filter'
+)({
     box: null,
     base: null,
     design: '$design',
@@ -12,33 +17,39 @@ const filter = getPresets('filter', {
     customIcon: null,
 });
 
-const icon = getPresets('filter.icon', {
+const icon = getPresets(
+    filter.icon,
+    'filter.icon'
+)({
     base: null,
     notHover: null,
     focus: null,
 });
 
-const label = getPresets('filter.label', {
+const label = getPresets(
+    filter.label,
+    'filter.label'
+)({
     base: null,
 });
 
 export interface PropsBox {
     $design?: 'primary' | 'ghost';
-    $size?: 'm';
+    $size?: SizeType;
 }
 export const Box = styled.div<PropsBox>`
     display: flex;
     align-items: center;
     flex-grow: 1;
     &:hover {
-        ${filter.hover}
+        ${presets.hover}
     }
-    ${filter.base}
-    ${filter.box}
-    ${filter.design}
-    ${filter.size}
+    ${presets.base}
+    ${presets.box}
+    ${presets.design}
+    ${presets.size}
     margin-left: 0;
-    ${filter.custom}
+    ${presets.custom}
 `;
 
 interface PropsLabel {
@@ -46,7 +57,7 @@ interface PropsLabel {
 }
 export const Label = styled.div<PropsLabel>`
     ${label.base}
-    ${filter.customLabel}
+    ${presets.customLabel}
     ${({ $maxWidth }) =>
         $maxWidth &&
         css`
@@ -72,5 +83,5 @@ export const Icon = styled.div<PropsIcon>`
             }
         `}
     ${icon.base}
-    ${filter.customLabel}
+    ${presets.customLabel}
 `;

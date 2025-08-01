@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { datepickerrange } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('datepickerrange', {
+const presets = getPresets(
+    datepickerrange,
+    'datepickerrange'
+)({
     calendar: null,
 });
 

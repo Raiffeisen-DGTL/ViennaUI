@@ -10,15 +10,16 @@ export interface AccordionProps extends BoxStyled<typeof AccordionList, PropsAcc
     iconPosition?: PropsAccordionList['$iconPosition'];
     className?: string;
     style?: CSSProperties;
+    hideByStyles?: boolean;
 }
-
 export const Accordion: React.FC<AccordionProps> & { Item: typeof Item } = ({
     children,
     size = 'm',
     iconPosition = 'right',
+    hideByStyles,
     ...attrs
 }) => {
-    const iconSize = size === 's' ? 'm' : 'l';
+    const iconSize = size === 's' || size === 'm' ? size : 'l';
 
     const content = Children.map(Children.toArray(children), (child) => {
         const el = child as ReactElement;
@@ -27,14 +28,20 @@ export const Accordion: React.FC<AccordionProps> & { Item: typeof Item } = ({
             typeof el.type !== 'string' &&
             (el.type as unknown as { displayName: string }).displayName === 'Item'
         ) {
-            return cloneElement(el, { $size: size, $iconPosition: iconPosition, $iconSize: iconSize });
+            return cloneElement(el, {
+                $size: size,
+                $iconPosition: iconPosition,
+                $iconSize: iconSize,
+                iconSize: iconSize,
+                hideByStyles,
+            });
         }
 
         return el;
     });
 
     return (
-        <AccordionList {...(attrs as {})} $size={size} $iconPosition={iconPosition} $iconSize={iconSize}>
+        <AccordionList {...attrs} $size={size} $iconPosition={iconPosition} $iconSize={iconSize}>
             {content}
         </AccordionList>
     );

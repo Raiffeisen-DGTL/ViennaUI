@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-import { getPresets } from '../Utils/styling';
+import { breadcrumbs } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 
-const breadcrumbs = getPresets('breadcrumbs', {
+const body = getPresetsCustom('breadcrumbs')({
     custom: null,
 });
 
-const backIcon = getPresets('breadcrumbs.backIcon', {
+const backIcon = getPresets(
+    breadcrumbs.backIcon,
+    'breadcrumbs.backIcon'
+)({
     base: null,
     custom: null,
 });
@@ -15,7 +19,7 @@ export const Box = styled.div`
     flex-direction: row;
     align-items: center;
     width: 100%;
-    ${breadcrumbs.custom}
+    ${body.custom}
 `;
 
 export const BackIcon = styled.div`

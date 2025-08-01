@@ -66,7 +66,7 @@ export const WithAdaptive: Story<AlertProps> = () => {
         </Alert>
     );
 };
-WithAllDesigns.storyName = 'Адаптив';
+WithAdaptive.storyName = 'Адаптив';
 
 export const PlaywrightAllCases: Story<AlertProps> = () => {
     return (

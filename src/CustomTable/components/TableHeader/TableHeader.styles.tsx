@@ -1,15 +1,22 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
-import { getPresets } from '../../../Utils/styling';
+import { table } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../../../Utils/styling';
 import { BoxStyled } from '../../../Utils/styled';
 
-const presets = getPresets('table', {
+const presets = getPresets(
+    table,
+    'table'
+)({
     header: null,
     size: '$size',
     pinned: null,
 });
 
-const cell = getPresets('table.cell.header', {
+const cell = getPresets(
+    table.cell.header,
+    'table.cell.header'
+)({
     base: null,
     hover: null,
     group: null,
@@ -18,21 +25,21 @@ const cell = getPresets('table.cell.header', {
     bottomDivider: null,
 });
 
-const custom = getPresets('table.custom.header', {
+const custom = getPresetsCustom('table.custom.header')({
     base: null,
     cell: null,
     group: null,
     pinned: null,
 });
 
-interface PropsHeaderStyled {
+export interface PropsHeaderStyled {
     $width?: string;
     $hasRightDivider?: boolean;
     $hasBottomDivider?: boolean;
     $group?: boolean;
     $pinned?: boolean;
     $isHover?: boolean;
-    $color?: any;
+    $color?: 'miami10' | 'sochi10' | 'paris10' | 'tokyo10' | 'dubai10' | 'nice10';
 }
 const HeaderStyled = styled.th<PropsHeaderStyled>`
     position: relative; // for IE
@@ -114,7 +121,7 @@ export const Header: FC<HeaderProps> = ({
 }) => {
     return (
         <HeaderStyled
-            {...(attrs as {})}
+            {...attrs}
             $width={width}
             $hasRightDivider={hasRightDivider}
             $hasBottomDivider={hasBottomDivider}

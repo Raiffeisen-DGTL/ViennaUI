@@ -1,200 +1,254 @@
-import React, { Ref, useCallback, useEffect, useRef, useState } from 'react';
-import { PropsType as UseDropdownPropsType, useDropdown } from '../useDropdown';
-import { defer } from '../defer';
+import React, { Ref, useEffect, useRef } from 'react';
+import { useDropdown } from '../useDropdown';
+import { OnChangeHandler, ValueToStringType, type SelectValueType } from '../types';
 
 export type SelectEvent<T = React.FormEvent<HTMLInputElement>> = (
     event: T,
-    data?: { name?: string; value?: string; index?: number }
+    data: { name?: string; value?: string; index?: number }
 ) => void;
 
-export type PropsType = UseDropdownPropsType & {
+type UseDropdownPropsType<T> = Pick<
+    ReturnType<typeof useDropdown<T>>,
+    'showDropdown' | 'popperElement' | 'hideDropdown' | 'showList' | 'currentIndex' | 'changeCurrentIndex'
+> & { localOptions: (React.ReactNode | T)[] };
+
+export interface SelectServiceType {
+    focus: () => void;
+    blur: () => void;
+}
+
+export type PropsType<T = SelectValueType> = UseDropdownPropsType<T> & {
     /** Имя компонента */
     name?: string;
     /** Разворачивать список при получениее фокуса */
     openWhenFocus?: boolean;
+    /** Если установлено, то onSelect будет вызываться с первым элементом из списка по нажатию на Enter,
+     *  если ничего не выбрано (по умолчанию false)
+     * */
+    selectFirstOnEnter?: boolean;
+    /** Обработчик события при выборе элемента списка  */
+    onSelect?: OnChangeHandler<T | undefined, React.MouseEvent | React.KeyboardEvent>;
     /** Обработчик события при потере фокуса компонентом  */
-    onBlur?: SelectEvent<React.FocusEvent<HTMLInputElement>>;
+    onBlur?: React.FocusEventHandler;
     /** Обработчик события при получении фокуса компонентом  */
-    onFocus?: SelectEvent<React.FocusEvent<HTMLInputElement>>;
+    onFocus?: React.FocusEventHandler;
     /** Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе  */
-    onKeyDown?: SelectEvent<React.KeyboardEventHandler<HTMLInputElement>>;
+    onKeyDown?: SelectEvent<React.KeyboardEvent>;
+
+    value?: T;
+    valueToString: ValueToStringType<T>;
+
+    forwardedRef: Ref<HTMLDivElement>;
+    inputRef: React.RefObject<HTMLInputElement>;
+    inputDirtyRef: React.MutableRefObject<boolean>;
+
+    /** Ref, принимающий функции для программного focus/blur  */
+    controlsRef?: React.MutableRefObject<SelectServiceType | null>;
 };
 
-export function useSelect(
-    props: PropsType,
-    {
-        forwardedRef,
-        handleSelect,
-    }: {
-        forwardedRef: Ref<HTMLDivElement>;
-        handleSelect: (event: any, value: any) => void;
-    }
-) {
-    const { disabled, name, openWhenFocus = true, onBlur, onFocus, onKeyDown } = props;
-
-    const [active, setActive] = useState(false);
-
-    const refSelect = useRef<HTMLDivElement>(null);
-
+export function useSelect<T>(props: PropsType<T>) {
     const {
+        name,
+        selectFirstOnEnter,
+        onSelect,
+        onBlur,
+        onFocus,
+        onKeyDown,
+        value,
+        valueToString,
+
+        localOptions,
+        showDropdown,
         popperElement,
-        setPopperElement,
+        hideDropdown,
         showList,
         currentIndex,
         changeCurrentIndex,
-        localOptions,
-        setLocalOptions,
-        align,
-        showDropdown,
-        hideDropdown,
-        handleOptionMouseOver,
-        handleScroll,
-    } = useDropdown(props);
 
-    const setFocusOnField = (event: any) => {
-        if (disabled) return;
-        const isNotActive = !active;
-        setActive(true);
-        if (openWhenFocus) {
-            showDropdown();
-        }
-        if (isNotActive && typeof onFocus === 'function') {
-            onFocus(event);
-        }
-    };
+        forwardedRef,
+        inputRef,
+        controlsRef,
+        inputDirtyRef,
+    } = props;
 
-    const setBlurOnFiled = (event: any) => {
-        const isActive = active;
-        setActive(false);
+    const refSelect = useRef<HTMLDivElement>(null);
+
+    const lastSelectedValue = useRef('');
+
+    const handleSelect = (selectedValue: T | undefined, event: React.MouseEvent | React.KeyboardEvent) => {
         hideDropdown();
-        if (isActive && typeof onBlur === 'function') {
-            onBlur(event);
-        }
-    };
 
-    const showDropdownWithSetFocus = (event: any) => {
-        if (document.activeElement === refSelect.current) {
-            setFocusOnField(event);
-        } else {
-            refSelect.current?.focus();
-        }
-    };
+        const mappedValue = selectedValue ? valueToString(selectedValue) : '';
 
-    const handleClick = useCallback(
-        (event) => {
-            if (showList) {
-                hideDropdown();
-            } else {
-                showDropdownWithSetFocus(event);
-            }
-        },
-        [disabled, showList]
-    );
+        lastSelectedValue.current = mappedValue;
 
-    const handleBlur = (event: React.FocusEvent) => {
-        setBlurOnFiled(event);
+        inputRef.current && (inputRef.current.value = mappedValue);
+
+        onSelect?.({ value: selectedValue, event, options: { name } });
+
+        (inputRef.current ?? refSelect.current)?.blur();
     };
 
     const handleFocus = (event: React.FocusEvent) => {
-        if (!active) {
-            // Задержка нужна для программного проставления фокуса, потому что handleClickOutside отрабатывает позже фокуса
-            defer(setFocusOnField, [event]);
-        }
+        showDropdown();
+
+        inputRef.current && (inputRef.current.value = '');
+
+        onFocus?.(event);
     };
 
-    const handleKeyDown = useCallback(
-        (event) => {
-            switch (event.key) {
-                case 'Escape': {
-                    hideDropdown();
-                    break;
-                }
-                case 'ArrowDown': {
-                    event.preventDefault();
+    const handleBlur = (event: React.FocusEvent) => {
+        const popper = (popperElement as React.RefObject<HTMLDivElement> | null)?.current;
+        const isDropdownChild = popper?.contains(event.relatedTarget);
 
-                    if (showList) {
-                        changeCurrentIndex('increment');
-                    }
-                    break;
-                }
-                case 'ArrowUp': {
-                    event.preventDefault();
-                    if (showList) {
-                        changeCurrentIndex('decrement');
-                    } else {
-                        showDropdown();
-                    }
-                    break;
-                }
-                case 'Enter': {
-                    event.preventDefault();
-                    if (showList && currentIndex >= 0) {
-                        const option = localOptions[currentIndex] as any;
-                        handleSelect(event, option?.props.value || option?.props.children);
-                    } else {
-                        showDropdown();
-                    }
-                    break;
-                }
-                case 'Tab': {
-                    setBlurOnFiled(event);
-                    break;
-                }
-            }
+        if (isDropdownChild) {
+            refSelect.current?.focus();
+            return;
+        }
 
-            if (typeof onKeyDown === 'function') {
-                onKeyDown(event, { name, index: currentIndex });
+        hideDropdown();
+
+        if (inputRef.current) {
+            // TODO: в 12 мажоре рассмотреть вариант с вызовом внешних хендлеров без передачи event
+            inputDirtyRef.current && dispatchOnChange(inputRef.current);
+            inputRef.current.value = lastSelectedValue.current;
+            inputDirtyRef.current = false;
+        }
+
+        onBlur?.(event);
+    };
+
+    const handleClickInner = (event: React.MouseEvent) => {
+        const isFocused = document.activeElement === refSelect.current;
+
+        if (!isFocused) return;
+
+        event.preventDefault();
+        refSelect.current?.blur();
+    };
+
+    const handleClick = (() => {
+        if (!inputRef.current) return handleClickInner;
+
+        const preventedBoxClick = (event: React.MouseEvent) => {
+            const target = event.target as HTMLElement;
+
+            const isIcon = target.nodeName === 'svg' || target.nodeName === 'path';
+            const isPart = (el: HTMLElement | null) => el?.dataset.testid === 'part';
+            const isPostfix = isPart(target) || (isIcon && isPart(target.closest('div')));
+            const isInput = target.id === 'editable-input';
+
+            if (isPostfix || isInput) return;
+
+            event.preventDefault();
+        };
+
+        return document.activeElement === inputRef.current ? preventedBoxClick : undefined;
+    })();
+
+    const handleKeyDown = (event: React.KeyboardEvent) => {
+        let properKeyFired = true;
+
+        switch (event.key) {
+            case 'Escape': {
+                refSelect.current?.blur();
+                break;
             }
-        },
-        [onKeyDown, currentIndex, handleSelect, localOptions, showList, name]
-    );
+            case 'ArrowDown': {
+                event.preventDefault();
+
+                if (showList) changeCurrentIndex('increment');
+
+                break;
+            }
+            case 'ArrowUp': {
+                event.preventDefault();
+
+                if (showList) changeCurrentIndex('decrement');
+
+                break;
+            }
+            case 'Enter': {
+                event.preventDefault();
+
+                const selectedIndex = selectFirstOnEnter && currentIndex < 0 ? 0 : currentIndex;
+
+                if (showList && selectedIndex >= 0) {
+                    const option = localOptions[selectedIndex];
+
+                    if (option === undefined) break;
+
+                    const optionVal = React.isValidElement<{ children: string; value?: string }>(option)
+                        ? (option.props.value ?? option.props.children)
+                        : option;
+
+                    handleSelect && handleSelect(optionVal as T, event);
+                } else {
+                    showDropdown();
+                }
+                break;
+            }
+            case 'Tab': {
+                if (!inputRef.current || event.shiftKey) break;
+
+                (inputRef.current ?? refSelect.current)?.blur();
+                break;
+            }
+            default:
+                properKeyFired = false;
+                break;
+        }
+
+        properKeyFired && onKeyDown?.(event, { name, index: currentIndex });
+    };
 
     useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            const $popper = (popperElement as React.RefObject<HTMLDivElement> | null)?.current;
-            const $target = event.target as HTMLDivElement;
+        if (!controlsRef) return;
 
-            // Делаем иммитацию blur если клик произошел вне Box и DropList
-            if (
-                (refSelect.current || $popper) &&
-                !refSelect.current?.contains($target) &&
-                !$popper?.contains($target)
-            ) {
-                setBlurOnFiled(event);
-            }
+        controlsRef.current = {
+            focus: () => (inputRef.current ?? refSelect.current)?.focus(),
+            blur: () => (inputRef.current ?? refSelect.current)?.blur(),
         };
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, [popperElement]);
+    }, [controlsRef]);
 
     useEffect(() => {
         if (typeof forwardedRef === 'function') {
             forwardedRef(refSelect.current);
         } else if (forwardedRef && 'current' in forwardedRef) {
-            (forwardedRef as any).current = refSelect.current;
+            (forwardedRef as React.MutableRefObject<HTMLDivElement | null>).current = refSelect.current;
         }
     }, [forwardedRef]);
 
+    // Обновляем значение uncontrolled input при изменении value снаружи
+    useEffect(() => {
+        if (!inputRef.current || inputDirtyRef.current) return;
+
+        const newValue = value ? valueToString(value) : '';
+
+        if (lastSelectedValue.current.toString() === newValue.toString()) return;
+
+        inputRef.current.value = newValue;
+        lastSelectedValue.current = newValue;
+    }, [value, valueToString]);
+
     return {
-        active,
-        popperElement,
-        setPopperElement,
-        showList,
-        showDropdown,
-        hideDropdown,
-        currentIndex,
-        localOptions,
-        setLocalOptions,
-        align,
         refSelect,
-        setBlurOnFiled,
+        handleSelect,
         handleClick,
         handleFocus,
         handleBlur,
         handleKeyDown,
-        handleOptionMouseOver,
-        handleScroll,
     };
+}
+
+function dispatchOnChange(input: HTMLInputElement) {
+    const nativeInputValueSetter = Object?.getOwnPropertyDescriptor?.(window.HTMLInputElement.prototype, 'value')?.set;
+
+    if (!nativeInputValueSetter) {
+        input.value = '';
+        return;
+    }
+
+    nativeInputValueSetter.call(input, '');
+    input.dispatchEvent(new Event('change', { bubbles: true }));
 }

@@ -1,0 +1,48 @@
+import { Result } from './Result';
+import { Button } from '../Button';
+import { Groups } from '../Groups';
+import { DocsMeta, Playground } from '../showcase/';
+
+import * as ResultStories from './Result.stories';
+
+import {
+    Title,
+    Subtitle,
+    Description,
+    Primary,
+    PureArgsTable,
+    Stories,
+    Controls,
+    Source,
+    Unstyled,
+    Canvas,
+    Meta,
+    Story,
+} from '@storybook/addon-docs';
+
+<DocsMeta
+    componentName="Result"
+    themedStory={ResultStories.WithTheme}
+    controlsCanvas={<Canvas of={ResultStories.Overview} />}
+    figmaLink='https://www.figma.com/design/SBNBQInDC8Ms3GyiqtEzm3/%F0%9F%95%B9-Vienna-RDS-Components?node-id=135086-7956&p=f&m=dev'
+>
+
+Компонент `Result` используется для ограничения доступа к странице продукта или сервиса в целом. Он принимает в качестве свойств:
+
+- до трех кнопок `actions`;
+- `imageSrc` - путь к изображению;
+- `errorText` - опциональное текстовое свойство;
+- `title` - текстовое свойство;
+- `description` - опциональное текстовое свойство;
+
+## Примеры использования
+
+#### Основной пример
+
+<Playground>{ResultStories.Overview}</Playground>
+
+#### Пример с ошибкой 404
+
+<Playground>{ResultStories.Error404}</Playground>
+
+</DocsMeta>

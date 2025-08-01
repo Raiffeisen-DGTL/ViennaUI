@@ -1,49 +1,47 @@
 import React, { forwardRef, ReactNode, Ref, ReactElement, CSSProperties } from 'react';
 import TooltipPopup, { BaseTooltipPopupProps } from './TooltipPopup';
-import { composeRef } from '../Utils/composeRef';
-import { Trigger, TriggerProps, TriggerRendererPopupProps, ITrigger } from '../Trigger';
-import { omit } from '../Utils/omit';
+import { composeRef, omit, PlacementType } from '../Utils';
+import { Trigger, TriggerProps, TriggerRendererPopupProps, ITrigger, TriggerTargetExtends } from '../Trigger';
 
 const isForwardRefComponent = (element: ReactElement): boolean => {
     return (
         typeof element.type === 'string' ||
-        (element.type && (element.type as any).$$typeof === Symbol.for('react.forward_ref'))
+        (element.type && (element.type as unknown as { $$typeof: symbol }).$$typeof === Symbol.for('react.forward_ref'))
     );
 };
 
-export type TooltipProps<Tlt extends HTMLElement> = Omit<TriggerProps, 'renderPopup' | 'renderTarget'> &
+export type TooltipProps<Tlt extends TriggerTargetExtends> = Omit<
+    TriggerProps<Tlt, HTMLDivElement>,
+    'renderPopup' | 'renderTarget'
+> &
     Omit<BaseTooltipPopupProps, 'children' | 'placement'> & {
         /** Направление открытия */
-        placement?: BaseTooltipPopupProps['anchor'];
+        placement?: PlacementType;
         /** Размеры */
         size?: 's' | 'm';
-        truncate?: boolean;
-        inline?: boolean;
         disabled?: boolean;
         /** Максимальная ширина подсказки (auto по умолчанию) */
         width?: string | number;
-        /** Цветовая схема */
-        design?: 'light' | 'dark';
         /** Включает взаимодействие с элементами внутри тултипа */
         allowInteraction?: boolean;
         displayName?: string;
         content?: ReactNode;
         className?: string;
         style?: CSSProperties;
+        /* Отключает автоматическое позиционирование Tooltip при нехватке места  */
+        disableFlip?: boolean;
         children: ReactNode | ((ref: Ref<Tlt>) => React.ReactNode);
     };
 
-function TooltipInternal<Tlt extends HTMLElement>(
+function TooltipInternal<Tlt extends TriggerTargetExtends>(
     {
         size = 's',
-        truncate,
-        inline,
         disabled,
-        allowInteraction,
         content,
         width = 'auto',
         design,
         className,
+        closeOnTargetClick,
         style = {},
         children,
         ...attrs
@@ -52,18 +50,32 @@ function TooltipInternal<Tlt extends HTMLElement>(
 ) {
     const renderPopup = (ref: Ref<HTMLDivElement>, { styles, attributes }: TriggerRendererPopupProps) => {
         if (!content) return null;
-        const placement = attributes?.placement as 'left' | 'right' | 'top' | 'bottom' | undefined;
 
-        const omitAttrs = omit(attrs, 'placement', 'visible', 'onVisibleChange');
+        const omitAttrs = omit(
+            attrs,
+            'allowInteraction',
+            'placement',
+            'visible',
+            'onVisibleChange',
+            'refArrow',
+            'arrowX',
+            'arrowY',
+            'mouseLeaveDelay',
+            'mouseEnterDelay',
+            'action',
+            'disableFlip'
+        );
+        const arrowX = attrs.arrowX || attributes.middlewareData.arrow?.x;
+        const arrowY = attrs.arrowY || attributes.middlewareData.arrow?.y;
 
         return (
             <TooltipPopup
                 ref={ref}
-                placement={placement}
-                truncate={truncate}
+                refArrow={attributes.setArrowEl}
+                arrowX={arrowX}
+                arrowY={arrowY}
+                placement={attributes.placement}
                 disabled={disabled}
-                inline={inline}
-                allowInteraction={allowInteraction}
                 width={width}
                 design={design}
                 size={size}
@@ -91,6 +103,8 @@ function TooltipInternal<Tlt extends HTMLElement>(
     return (
         <Trigger
             ref={forwardedRef}
+            disabled={disabled}
+            closeOnTargetClick={closeOnTargetClick}
             {...attrs}
             renderTarget={renderTarget}
             renderPopup={content ? renderPopup : undefined}
@@ -98,8 +112,10 @@ function TooltipInternal<Tlt extends HTMLElement>(
     );
 }
 
-export const Tooltip = forwardRef(TooltipInternal) as <Tlt extends HTMLElement>(
+export const Tooltip = forwardRef(TooltipInternal) as unknown as (<Tlt extends TriggerTargetExtends = HTMLElement>(
     p: TooltipProps<Tlt> & { ref?: Ref<ITrigger> }
-) => ReactElement;
-// @ts-ignore
+) => ReactElement) & {
+    displayName?: string;
+};
+
 Tooltip.displayName = 'Tooltip';

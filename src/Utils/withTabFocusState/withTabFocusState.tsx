@@ -7,9 +7,7 @@ export interface FocusableWithTab<El extends HTMLElement> {
     isFocusStateVisible: boolean;
 }
 
-export function withTabFocusState<El extends HTMLElement, P extends FocusableWithTab<El>>(
-    Component: React.FC<P>
-) {
+export function withTabFocusState<El extends HTMLElement, P extends FocusableWithTab<El>>(Component: React.FC<P>) {
     return forwardRef<El, Omit<P, 'isFocusStateVisible'>>((props, ref) => {
         const [isFocusStateVisible, setVisibleFocusedState] = useState(false);
         let insideMouseClick = false;
@@ -29,14 +27,14 @@ export function withTabFocusState<El extends HTMLElement, P extends FocusableWit
             props.onMouseUp?.(e);
         };
 
-        const newProps: any = {
+        const newProps = {
             ...props,
             ref,
             onFocus,
             onMouseDown,
             onMouseUp,
             isFocusStateVisible,
-        };
+        } as unknown as P;
 
         return <Component {...newProps} />;
     });

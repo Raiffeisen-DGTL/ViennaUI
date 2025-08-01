@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { notifications } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('notifications', {
+const presets = getPresets(
+    notifications,
+    'notifications'
+)({
     actionsGap: null,
     align: '$align',
     valign: '$valign',

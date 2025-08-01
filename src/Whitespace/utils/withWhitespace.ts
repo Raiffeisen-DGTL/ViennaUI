@@ -1,7 +1,7 @@
-import { RuleSet } from 'styled-components';
-import { responsiveProp } from '../../Utils/responsiveness';
-import { WithWhitespaceStyled, WithMarginStyled, WithPaddingStyled } from './types';
-import { parseProperty } from './utils';
+import { WithWhitespaceStyled, WithMarginStyled, WithPaddingStyled, WithWhitespace } from './types';
+import { getCssRules } from '../../Utils/styling';
+import { size } from './utils';
+import { AnyObject } from '../../Utils';
 
 const marginsMap: Record<keyof WithMarginStyled, string | string[]> = {
     $margin: 'margin',
@@ -42,11 +42,11 @@ const paddingsMap: Record<keyof WithPaddingStyled, string | string[]> = {
 };
 
 const whitespaceKeys = [...Object.keys(marginsMap), ...Object.keys(paddingsMap)];
-export const getWhitespaceStyledProps = (props: Record<string, any>) => {
-    const attrs: Record<string, any> = {};
+export const getWhitespaceStyledProps = (props: WithWhitespace | string) => {
+    const attrs: AnyObject = {};
     const propsStyled: WithMarginStyled & WithPaddingStyled = {};
     Object.entries(props).forEach(([key, value]) => {
-        const styledKey = `$${key}`;
+        const styledKey = `$${key}` as keyof typeof propsStyled;
         if (whitespaceKeys.includes(styledKey)) {
             propsStyled[styledKey] = value;
         } else {
@@ -56,26 +56,25 @@ export const getWhitespaceStyledProps = (props: Record<string, any>) => {
     return { attrs, propsStyled };
 };
 
-const useProps = (context, map, props) => {
-    return Object.keys(map)
-        .map((key) => {
-            return responsiveProp(context, key, (value) => {
-                return parseProperty(map[key], value);
-            })(props);
-        })
-        .filter((v): v is RuleSet[] => Boolean(v));
-};
+const createWithMap =
+    <Props>(map: typeof marginsMap | typeof paddingsMap) =>
+    (themeValue: AnyObject, themeKey: string) =>
+    (props: Props) => {
+        return Object.entries(map).map(([key, cssProperty]) => {
+            const cssProperties = Array.isArray(cssProperty) ? cssProperty : [cssProperty];
+            const rules = cssProperties.map((cssProperty) =>
+                getCssRules({
+                    props,
+                    themeKey,
+                    getThemeValue: (propValue) => themeValue[propValue],
+                    preset: [key, null],
+                    getCssData: (v: string) => ({ [cssProperty]: size(v) || v }),
+                })
+            );
+            return rules;
+        });
+    };
 
-const defaultContext = 'whitespace';
-
-export const withMargin = (context) => (props: WithMarginStyled) => {
-    return useProps(context ?? defaultContext, marginsMap, props);
-};
-
-export const withPadding = (context) => (props: WithPaddingStyled) => {
-    return useProps(context ?? defaultContext, paddingsMap, props);
-};
-
-export const withWhitespace = (context) => (props: WithWhitespaceStyled) => {
-    return [...withMargin(context)(props), ...withPadding(context)(props)];
-};
+export const withMargin = createWithMap<WithMarginStyled>(marginsMap);
+export const withPadding = createWithMap<WithPaddingStyled>(paddingsMap);
+export const withWhitespace = createWithMap<WithWhitespaceStyled>({ ...marginsMap, ...paddingsMap });

@@ -1,80 +1,86 @@
-import React, { forwardRef, useCallback } from 'react';
+import React, { forwardRef, useState, useEffect } from 'react';
 import { FactoryOpts } from 'imask';
-import { InputMask, InputMaskProps } from '../../InputMask';
+import { InputMask, InputMaskOnChangeType, InputMaskProps } from '../../InputMask';
 import { getMaskOptionsFromProps } from '../../utils';
 
-export type InputPhoneProps = Omit<InputMaskProps, 'maskOptions'> & FactoryOpts & {};
+export type InputPhoneProps = Omit<InputMaskProps, 'value' | 'maskOptions' | 'onChange'> &
+    FactoryOpts & {
+        value?: string;
+        onChange?: InputMaskOnChangeType<string>;
+    };
+
+const defaultPlaceholder = '+7 000 000-00-00';
 
 export const InputPhone = forwardRef<HTMLInputElement, InputPhoneProps>((props, ref) => {
-    // @ts-ignore
-    const maskOptions = getMaskOptionsFromProps(props);
+    const {
+        onFocus,
+        onBlur,
+        onKeyDown,
+        placeholder = defaultPlaceholder,
+        smartPlaceholder = defaultPlaceholder,
+        value: externalValue,
+        onChange,
+        ...attrs
+    } = props;
+    const [value, setValue] = useState(externalValue);
 
-    const { onFocus, onBlur, onKeyDown, placeholder, smartPlaceholder, value, ...attrs } = props;
+    useEffect(() => {
+        setValue(externalValue);
+    }, [externalValue]);
 
-    const handleFocus = useCallback(
-        (e, data) => {
-            if (typeof onFocus === 'function') {
-                onFocus(e, data);
-            }
-        },
-        [onFocus]
-    );
+    const handleFocus: InputMaskProps['onFocus'] = (e, data) => {
+        if (typeof onFocus === 'function') {
+            onFocus(e, data);
+        }
+    };
 
-    const handleBlur = useCallback(
-        (e, data) => {
-            if (typeof onBlur === 'function') {
-                onBlur(e, data);
-            }
-        },
-        [onBlur]
-    );
+    const handleBlur: InputMaskProps['onBlur'] = (e, data) => {
+        if (typeof onBlur === 'function') {
+            onBlur(e, data);
+        }
+    };
 
-    const handleKeyDown = useCallback(
-        (e) => {
-            if (e.key === 'Backspace' && e.target.value === '+7') {
-                e.preventDefault();
-            }
-            if (typeof onKeyDown === 'function') {
-                onKeyDown(e);
-            }
-        },
-        [onKeyDown]
-    );
+    const handleKeyDown: InputMaskProps['onKeyDown'] = (e) => {
+        if (typeof onKeyDown === 'function') {
+            onKeyDown(e);
+        }
+    };
 
-    const isDefaultPlaceholder = !smartPlaceholder && !placeholder;
-    const correctPlaceholder = isDefaultPlaceholder ? '+7 (___) ___-__-__' : (smartPlaceholder as any) || placeholder;
-
-    const mask = (maskOptions.mask as string) || '+{7} (000) 000-00-00';
+    const handleChange: InputMaskProps['onChange'] = ({ value: maskedValue, event, options }) => {
+        if (typeof maskedValue !== 'string') return;
+        setValue(maskedValue);
+        if (typeof onChange === 'function') {
+            onChange({ value: maskedValue, event, options });
+        }
+    };
 
     return (
         <InputMask
             ref={ref}
             value={value || ''}
-            // @ts-ignore
             maskOptions={{
-                ...maskOptions,
-                mask,
-                lazy: true,
-                placeholderChar: maskOptions.placeholderChar || '',
-                prepare:
-                    maskOptions.prepare ||
-                    ((char, masked) => {
-                        if (char === undefined) {
-                            return ' ';
+                mask: '+{7} 000 000-00-00',
+                placeholderChar: '',
+                prepare: (char, { value }) => {
+                    if (!value) {
+                        if (char.startsWith('8')) {
+                            return `7${char.substring(1)}`;
                         }
-
-                        if (isDefaultPlaceholder && char === '8' && !masked.value) {
-                            return ' ';
+                        if (char.startsWith('+7')) {
+                            return `7${char.substring(2)}`;
                         }
+                    }
 
-                        return char;
-                    }),
+                    return char;
+                },
+                ...getMaskOptionsFromProps(props),
             }}
-            placeholder={correctPlaceholder}
-            smartPlaceholder={correctPlaceholder}
+            placeholder={placeholder}
+            smartPlaceholder={smartPlaceholder}
             onKeyDown={handleKeyDown}
             onFocus={handleFocus}
             onBlur={handleBlur}
+            onChange={handleChange}
             {...attrs}
         />
     );

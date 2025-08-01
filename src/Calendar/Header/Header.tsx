@@ -1,11 +1,19 @@
 import React, { useCallback, useMemo } from 'react';
 import { addMonths, addYears, format, subMonths, subYears } from 'date-fns';
-import { GoLeft, Back, CollapseLeft, CollapseRight, GoRight } from 'vienna.icons';
+import { GoLeftIcon, BackIcon, CollapseLeftIcon, CollapseRightIcon, GoRightIcon } from 'vienna.icons';
 import { Spin, ViewMode } from '../types';
 import { FirstLetterUpper } from '../Calendar.styles';
 import { useCalendarLocale } from '../Context';
-import { Box, HeaderDoubleArrow, HeaderTitle, NavigationButton, BackButton, MonthName } from './Header.style';
-import { Button } from '../../Button';
+import { useHeaderFocus } from '../hooks';
+import { Box, HeaderDoubleArrow, HeaderTitle, Button, BackButton, MonthName } from './Header.style';
+
+export interface HeaderTestId {
+    btnYearPrev?: string;
+    btnYearNext?: string;
+    btnMonthPrev?: string;
+    btnMonthNext?: string;
+    btnViewMode?: string;
+}
 
 interface Props {
     viewMode: ViewMode;
@@ -14,12 +22,14 @@ interface Props {
     displayedDate: Date;
     hasNavigation: boolean;
     mode?: 'day' | 'month';
+    testId?: HeaderTestId;
 }
 
 export const Header: React.FC<Props> = (props) => {
-    const { mode, viewMode, onChangeDisplayedDate, onChangeViewMode, displayedDate, hasNavigation } = props;
+    const { mode, viewMode, onChangeDisplayedDate, onChangeViewMode, displayedDate, hasNavigation, testId } = props;
 
     const locale = useCalendarLocale();
+    const { setUpFocusProps } = useHeaderFocus(viewMode);
 
     const handleChangeYear = useCallback(
         (spin: Spin, step?: number) => () => {
@@ -82,32 +92,43 @@ export const Header: React.FC<Props> = (props) => {
         switch (viewMode) {
             case 'year_list': {
                 const startYear = Math.floor(displayedYear / 12) * 12;
-                const start = startYear <= 0 ? 0 : startYear;
-                const end = startYear + 11 >= 3000 ? 3000 : startYear + 11;
+                const start = Math.max(startYear, 1900);
+                const end = Math.min(start + 11, 3000);
 
                 return (
                     <Box>
                         {hasNavigation && (
-                            <BackButton>
-                                <Back
-                                    role='button'
-                                    size='s'
-                                    onClick={onChangeViewMode(mode === 'month' ? 'month_list' : 'month')}
-                                />
+                            <BackButton
+                                type='button'
+                                design='ghost'
+                                data-testid={testId?.btnViewMode}
+                                onClick={onChangeViewMode(mode === 'month' ? 'month_list' : 'month')}
+                                {...setUpFocusProps('back')}>
+                                <BackIcon role='button' size='s' />
                             </BackButton>
                         )}
 
-                        <NavigationButton>
-                            <GoLeft role='button' size='s' onClick={handleChangeYear('prev', 12)} />
-                        </NavigationButton>
+                        <Button
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnYearPrev}
+                            onClick={handleChangeYear('prev', 12)}
+                            {...setUpFocusProps('leftArrow')}>
+                            <GoLeftIcon role='button' size='s' />
+                        </Button>
 
                         <HeaderTitle>
                             {start}-{end}
                         </HeaderTitle>
 
-                        <NavigationButton>
-                            <GoRight role='button' size='s' onClick={handleChangeYear('next', 12)} />
-                        </NavigationButton>
+                        <Button
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnMonthNext}
+                            onClick={handleChangeYear('next', 12)}
+                            {...setUpFocusProps('rightArrow')}>
+                            <GoRightIcon role='button' size='s' />
+                        </Button>
                     </Box>
                 );
             }
@@ -115,24 +136,44 @@ export const Header: React.FC<Props> = (props) => {
                 return (
                     <Box>
                         {hasNavigation && (
-                            <BackButton>
-                                <Back role='button' size='s' onClick={onChangeViewMode('month')} />
+                            <BackButton
+                                type='button'
+                                design='ghost'
+                                data-testid={testId?.btnViewMode}
+                                onClick={onChangeViewMode('month')}
+                                {...setUpFocusProps('back')}>
+                                <BackIcon role='button' size='s' />
                             </BackButton>
                         )}
 
-                        <NavigationButton>
-                            <GoLeft role='button' size='s' onClick={handleChangeYear('prev', 1)} />
-                        </NavigationButton>
+                        <Button
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnYearPrev}
+                            onClick={handleChangeYear('prev', 1)}
+                            {...setUpFocusProps('leftArrow')}>
+                            <GoLeftIcon role='button' size='s' />
+                        </Button>
 
                         <HeaderTitle>
-                            <Button type='button' design='ghost' onClick={onChangeViewMode('year_list')}>
+                            <Button
+                                type='button'
+                                design='ghost'
+                                data-testid={testId?.btnViewMode}
+                                onClick={onChangeViewMode('year_list')}
+                                {...setUpFocusProps('year')}>
                                 <b>{displayedYear}</b>
                             </Button>
                         </HeaderTitle>
 
-                        <NavigationButton>
-                            <GoRight role='button' size='s' onClick={handleChangeYear('next', 1)} />
-                        </NavigationButton>
+                        <Button
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnYearNext}
+                            onClick={handleChangeYear('next', 1)}
+                            {...setUpFocusProps('rightArrow')}>
+                            <GoRightIcon role='button' size='s' />
+                        </Button>
                     </Box>
                 );
             }
@@ -140,36 +181,70 @@ export const Header: React.FC<Props> = (props) => {
             default: {
                 const monthValue = (
                     <MonthName>
-                        <Button type='button' design='ghost' onClick={onChangeViewMode('month_list')}>
+                        <Button
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnViewMode}
+                            onClick={onChangeViewMode('month_list')}
+                            {...setUpFocusProps('month')}>
                             <FirstLetterUpper>{monthName}</FirstLetterUpper>
                         </Button>
                     </MonthName>
                 );
                 const yearValue = (
-                    <Button type='button' design='ghost' onClick={onChangeViewMode('year_list')}>
+                    <Button
+                        type='button'
+                        design='ghost'
+                        data-testid={testId?.btnViewMode}
+                        onClick={onChangeViewMode('year_list')}
+                        {...setUpFocusProps('year')}>
                         <b>{displayedYear}</b>
                     </Button>
                 );
 
                 return (
                     <Box>
-                        <HeaderDoubleArrow>
-                            <CollapseLeft role='button' size='s' onClick={handleChangeYear('prev', 1)} />
+                        <HeaderDoubleArrow
+                            tabIndex={0}
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnYearPrev}
+                            onClick={handleChangeYear('prev', 1)}
+                            {...setUpFocusProps('leftArrowDouble')}>
+                            <CollapseLeftIcon role='button' size='s' />
                         </HeaderDoubleArrow>
-                        <NavigationButton>
-                            <GoLeft role='button' size='s' onClick={handleChangeMonth('prev')} />
-                        </NavigationButton>
+                        <Button
+                            tabIndex={0}
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnMonthPrev}
+                            onClick={handleChangeMonth('prev')}
+                            {...setUpFocusProps('leftArrow')}>
+                            <GoLeftIcon role='button' size='s' />
+                        </Button>
 
                         <HeaderTitle>
                             {monthValue}
                             {yearValue}
                         </HeaderTitle>
 
-                        <NavigationButton>
-                            <GoRight role='button' size='s' onClick={handleChangeMonth('next')} />
-                        </NavigationButton>
-                        <HeaderDoubleArrow>
-                            <CollapseRight role='button' size='s' onClick={handleChangeYear('next')} />
+                        <Button
+                            tabIndex={0}
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnMonthNext}
+                            onClick={handleChangeMonth('next')}
+                            {...setUpFocusProps('rightArrow')}>
+                            <GoRightIcon role='button' size='s' />
+                        </Button>
+                        <HeaderDoubleArrow
+                            tabIndex={0}
+                            type='button'
+                            design='ghost'
+                            data-testid={testId?.btnYearNext}
+                            onClick={handleChangeYear('next')}
+                            {...setUpFocusProps('rightArrowDouble')}>
+                            <CollapseRightIcon role='button' size='s' />
                         </HeaderDoubleArrow>
                     </Box>
                 );

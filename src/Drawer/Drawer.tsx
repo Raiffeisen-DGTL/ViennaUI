@@ -1,65 +1,109 @@
-import React, { useCallback, useState, useEffect, ForwardRefExoticComponent, useRef, PropsWithChildren } from 'react';
+import React, {
+    useCallback,
+    ReactNode,
+    useState,
+    useEffect,
+    ForwardRefExoticComponent,
+    useRef,
+    PropsWithChildren,
+    useImperativeHandle,
+    MutableRefObject,
+    RefAttributes,
+} from 'react';
 import ReactDOM from 'react-dom';
-import ReactFocusLock from 'react-focus-lock';
+import ReactFocusLock, { FreeFocusInside } from 'react-focus-lock';
 import { useDebounce, usePortal, useWindowResize } from 'vienna.react-use';
-import { CloseCancelX } from 'vienna.icons';
+import { CloseCancelXIcon } from 'vienna.icons';
 import { Screen } from 'vienna.ui-primitives';
 import { Fade, Box, CloseIcon, Content } from './Drawer.styles';
 import { withTabFocusState, useLockBody } from '../Utils';
+import { omit } from '../Utils/omit';
+import { useModal } from '../Utils/useModal';
+import { RefFunc } from '../Modal/Modal';
 
 const ANIMATION_DURATION = 400;
 
+export const defaultDrawerTestId: DrawerProps['testId'] = {
+    btnClose: 'drawer_btn-close',
+    overlay: 'drawer_overlay',
+};
+
 export type DrawerProps = PropsWithChildren<{
     id?: string;
-    state?: any;
+    state?: {
+        children?: ReactNode;
+        onClose?: (data?: unknown) => void;
+        open?: (() => void) | null;
+        close?: (data?: unknown, force?: boolean) => void;
+    };
     isOpen?: boolean;
-    closeIcon?: React.ReactNode;
+    closeIcon?: ReactNode;
+    width?: string | 'auto';
     noScroll?: boolean;
     orientation?: 'left' | 'right' | 'top' | 'bottom';
-    onClose?: (data?: any) => void | boolean | Promise<boolean>;
-    onPreDespose?: () => void;
-    ref?: any;
+    onClose?: (data?: unknown) => void | boolean | Promise<boolean>;
+    /** Callback функция открытия окна с учётом времени выполнения анимации */
+    onAfterOpen?: () => void;
+    onPreDispose?: () => void;
     closeByFade?: boolean;
+    closeByEscape?: boolean;
     lockBodyScroll?: boolean;
+    wrapperPortal?: HTMLElement | React.MutableRefObject<HTMLElement | null> | null;
+    testId?: {
+        btnClose?: string;
+        overlay?: string;
+    };
+    iconOrientation?: 'left' | 'right';
 }>;
 
-export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
+export const Drawer = React.forwardRef<RefFunc | HTMLDivElement, DrawerProps>((props, ref) => {
     const {
         id,
         children,
         state,
         onClose,
-        onPreDespose,
+        onAfterOpen,
+        onPreDispose,
         isOpen,
         orientation = 'right',
-        closeIcon = <CloseCancelX size='l' />,
+        closeIcon = <CloseCancelXIcon size='l' />,
+        width = '460px',
         closeByFade = true,
+        closeByEscape = false,
         lockBodyScroll = false,
+        wrapperPortal,
+        testId = defaultDrawerTestId,
+        iconOrientation = 'left',
     } = props;
 
+    const openTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const [init, setInit] = useState(false);
     const [show, setShow] = useState(false);
     const [toggle, setToggle] = useState(false);
 
-    const containerPortal = usePortal('drawer');
-    const windowRef = useRef<any>(); // ref to DrawerBox or DrawerBox, need for getting fact width
-    const [rect, setRect] = useState({ width: 'auto', height: 'auto' }); // drawer or drawer fact width, need for correct animation
+    const drawerPortal = usePortal('drawer');
+    const wrapperPortalRef = (wrapperPortal as MutableRefObject<HTMLElement | null>)?.current;
+    const containerPortal: HTMLElement | null =
+        wrapperPortalRef ?? (wrapperPortal as HTMLElement | null | undefined) ?? drawerPortal;
 
+    const windowRef = useRef<HTMLDivElement>(null); // ref to DrawerBox or DrawerBox, need for getting fact width
+    const [rect, setRect] = useState({
+        width: ['left', 'right'].includes(orientation) ? width : 'auto',
+        height: ['top', 'bottom'].includes(orientation) ? width : 'auto',
+    }); // drawer or drawer fact width, need for correct animation
     if (state && isOpen) {
         // eslint-disable-next-line no-console
         console.warn('Нельзя одновременно использовать свойства state и isOpen');
     }
-
     // need for styled-components accept the changes
     const initDebouncer = useDebounce(setInit, ANIMATION_DURATION);
     const toggleDebouncer = useDebounce(setToggle, 100);
 
     const predesposeHandler = useCallback(() => {
-        setRect({ width: 'auto', height: 'auto' });
-        if (typeof onPreDespose === 'function') {
-            onPreDespose();
+        if (typeof onPreDispose === 'function') {
+            onPreDispose();
         }
-    }, [onPreDespose]);
+    }, [onPreDispose]);
 
     // close animation process
     const playCloseAnimation = useCallback(() => {
@@ -73,7 +117,7 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
     }, [toggleDebouncer, initDebouncer, predesposeHandler]);
 
     const close = useCallback(
-        (data, force = false) => {
+        (data: unknown, force = false) => {
             if (force || typeof onClose !== 'function') {
                 playCloseAnimation();
                 return;
@@ -87,7 +131,7 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
                         }
                     },
                     // eslint-disable-next-line no-console
-                    (error) => console.error(error)
+                    (error: Error) => console.error(error)
                 );
                 return;
             }
@@ -106,16 +150,18 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
         state.close = close;
     }
 
-    const prevTarget = useRef();
+    const prevTarget = useRef<HTMLElement>();
     const fadeMouseDown = useCallback(
-        (e) => {
-            prevTarget.current = e.target;
+        (e: React.MouseEvent<HTMLElement>) => {
+            if (e.target instanceof HTMLElement) {
+                prevTarget.current = e.target;
+            }
         },
         [prevTarget]
     );
 
     const handleClickFade = useCallback(
-        (e) => {
+        (e: React.MouseEvent<HTMLDivElement>) => {
             // Ignore the events not coming from the "fade"
             // We don't want to close the dialog when clicking the dialog content.
             if (e.target !== e.currentTarget) {
@@ -132,8 +178,7 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
     );
 
     const handleClose = useCallback(() => close(null), [close]);
-
-    const boxMouseDown = useCallback((event) => event.stopPropagation(), []);
+    const { useModalEscapeHandler } = useModal({ closeByEscape, handleClose });
 
     // ***** ANIMATION START
 
@@ -142,26 +187,34 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
         if (typeof isOpen === 'boolean') {
             if (isOpen) {
                 setInit(true);
+                openTimeoutRef.current = setTimeout(() => {
+                    onAfterOpen?.();
+                }, ANIMATION_DURATION);
             } else if (init) {
                 close(null, true);
             }
         }
     }, [isOpen, close]);
 
+    // reset timeout if init state was set to false
+    useEffect(() => {
+        if (!init && openTimeoutRef.current !== null) {
+            clearTimeout(openTimeoutRef.current);
+        }
+    }, [init]);
+
     // when portal created show fade
     const updateSize = useCallback(() => {
         if (init && windowRef.current) {
-            const drawerRect = (windowRef.current as HTMLDivElement).getBoundingClientRect();
-            const scrollWidth = (windowRef.current as HTMLDivElement).scrollWidth;
-
+            const drawerRect = windowRef.current.getBoundingClientRect();
+            const scrollWidth = windowRef.current.scrollWidth;
             if (orientation === 'left' || orientation === 'right') {
                 setRect({
-                    width: `${drawerRect.width}px`,
+                    width: width === 'auto' ? `${drawerRect.width}px` : width,
                     height: '100%',
                 });
                 return;
             }
-
             setRect({
                 width: scrollWidth === window.innerWidth ? '100%' : `${scrollWidth}px`,
                 height: `${drawerRect.height}px`,
@@ -185,16 +238,9 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
 
     useLockBody(lockBodyScroll && isOpen);
 
-    useEffect(
-        () => () => {
-            if (typeof ref === 'function') {
-                ref({ close: (data?) => close(data), updateSize });
-            } else if (ref && 'current' in ref) {
-                ref.current = { close: (data?) => close(data), updateSize };
-            }
-        },
-        [ref, close, updateSize]
-    );
+    useImperativeHandle(ref, () => {
+        return { close: (data?: unknown) => close(data), updateSize };
+    }, [close, updateSize]);
 
     // if we unmount component - despose debouncers
     useEffect(
@@ -205,6 +251,8 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
         []
     );
 
+    useModalEscapeHandler();
+
     if (typeof window === 'undefined') {
         return null;
     }
@@ -212,11 +260,13 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
     const WrappedCloseIcon = withTabFocusState((props) => (
         <CloseIcon
             tabIndex={0}
+            data-testid={testId?.btnClose}
             onClick={handleClose}
             onKeyPress={(e: React.KeyboardEvent) => {
                 if (e.key === 'Enter') handleClose();
             }}
-            {...props}>
+            $orientation={iconOrientation}
+            {...omit(props, 'isFocusStateVisible')}>
             {closeIcon}
         </CloseIcon>
     ));
@@ -225,29 +275,33 @@ export const Drawer = React.forwardRef<any, DrawerProps>((props, ref) => {
         document &&
         ReactDOM.createPortal(
             init && (
-                <ReactFocusLock returnFocus autoFocus={false}>
-                    <Fade
-                        id={id}
-                        $show={show}
-                        onClick={closeByFade ? handleClickFade : () => {}}
-                        onMouseDown={fadeMouseDown}>
-                        <Box
-                            ref={windowRef}
-                            $orientation={orientation}
-                            $toggle={toggle}
-                            $width={rect.width}
-                            $height={rect.height}
-                            onMouseDown={boxMouseDown}>
-                            {closeIcon && <WrappedCloseIcon />}
-                            <Content>{children}</Content>
-                        </Box>
-                    </Fade>
+                <ReactFocusLock autoFocus={false}>
+                    <FreeFocusInside>
+                        <Fade
+                            id={id}
+                            $show={show}
+                            data-testid={testId?.overlay}
+                            onClick={closeByFade ? handleClickFade : () => {}}
+                            onMouseDown={fadeMouseDown}>
+                            <Box
+                                ref={windowRef}
+                                $orientation={orientation}
+                                $toggle={toggle}
+                                $width={rect.width}
+                                $height={rect.height}>
+                                {closeIcon && <WrappedCloseIcon />}
+                                <Content $hasClose={!!closeIcon} $orientation={iconOrientation}>
+                                    {children}
+                                </Content>
+                            </Box>
+                        </Fade>
+                    </FreeFocusInside>
                 </ReactFocusLock>
             ),
             containerPortal ?? document.body
         )
     );
-}) as ForwardRefExoticComponent<DrawerProps> & {
+}) as ForwardRefExoticComponent<DrawerProps & RefAttributes<RefFunc | HTMLDivElement>> & {
     Layout: typeof Screen;
     Head: typeof Screen.Head;
     Title: typeof Screen.Title;

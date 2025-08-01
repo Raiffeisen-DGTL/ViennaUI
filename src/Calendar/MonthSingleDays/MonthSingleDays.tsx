@@ -1,14 +1,9 @@
-/**
- * imports of components
- */
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { addDays, isEqual, isSameDay, lastDayOfMonth, subDays } from 'date-fns';
-import { DateItem, DayType, MonthProps } from '../types';
-import { MONDAY_INDEX, SUNDAY_INDEX, WEEK_LENGTH } from '../constants';
+import { isSameDay } from 'date-fns';
+import { DateItem, MonthProps } from '../types';
 import { Day, DayState } from '../Calendar.styles';
-import { checkIsWeekend, getLocalDay } from '../Utils';
-import { checkIsDisabled } from '../Utils/checkIsDisabled';
 import { DaysWeek } from '../DaysWeek';
+import { build } from '../Utils/build';
 
 interface MonthSingleProps<T> extends MonthProps<T> {
     allowMultiple?: boolean;
@@ -26,11 +21,46 @@ export const MonthSingleDays: React.FC<MonthSingleProps<Date | Date[]>> = (props
         onChangeDate,
         startingWeekDay,
         allowMultiple,
+        setUpFocusProps,
+        resetSavedNodes,
+        testId,
     } = props;
-    const [dateState, setDateState] = useState<Date | Date[] | undefined>();
-    const [days, setDays] = useState<DateItem[]>([]);
-    const monthEl = useRef<HTMLDivElement>(null);
-    const today: Date = new Date();
+    const initialDateState = allowMultiple ? (date ?? []) : (date ?? new Date());
+
+    const [dateState, setDateState] = useState<Date | Date[]>(initialDateState);
+    const isInitialMount = useRef(true);
+    const checkIsActiveDay = useCallback(
+        (value: Date) => {
+            if (!dateState) {
+                return false;
+            }
+
+            if (allowMultiple) {
+                return (dateState as Date[]).some((day) => isSameDay(day, value));
+            }
+
+            return isSameDay(value, dateState as Date);
+        },
+        [dateState, allowMultiple]
+    );
+
+    const today = useMemo(() => new Date(), []);
+
+    const [days, setDays] = useState<DateItem[]>(
+        build({
+            inputDate: displayedDate || today,
+            startingWeekDay,
+            today,
+            eventDates,
+            weekendDates,
+            disabledDates,
+            minDate,
+            maxDate,
+            checkIsActiveDay,
+        })
+    );
+
+    const monthEl = useRef<HTMLButtonElement | null>(null);
 
     const handleChangeDate = useCallback(
         (nextDate: Date) => () => {
@@ -56,134 +86,88 @@ export const MonthSingleDays: React.FC<MonthSingleProps<Date | Date[]>> = (props
         [onChangeDate, dateState, allowMultiple]
     );
 
-    const checkIsActiveDay = useCallback(
-        (value: Date) => {
-            if (!dateState) {
-                return false;
-            }
-
-            if (allowMultiple) {
-                return (dateState as Date[]).some((day) => isSameDay(day, value));
-            }
-
-            return isSameDay(value, dateState as Date);
-        },
-        [dateState, allowMultiple]
-    );
-
-    const build = useCallback(
-        (inputDate: Date = today) => {
-            const monthDays = lastDayOfMonth(inputDate).getDate();
-
-            const firstDay = new Date(inputDate.getFullYear(), inputDate.getMonth(), 1);
-            const firstDayOfWeek = getLocalDay(firstDay, startingWeekDay);
-
-            const lastDay = new Date(inputDate.getFullYear(), inputDate.getMonth(), monthDays);
-            const lastDayOfWeek = getLocalDay(lastDay, startingWeekDay);
-
-            const days: DateItem[] = [];
-
-            if (firstDayOfWeek !== MONDAY_INDEX) {
-                for (let i = 1; i < firstDayOfWeek; i++) {
-                    const prevDate = subDays(firstDay, firstDayOfWeek - i);
-                    days.push({
-                        value: prevDate,
-                        type: ['not-active'],
-                    });
-                }
-            }
-
-            for (let i = 1; i <= monthDays; i++) {
-                let type: DayType[] = [];
-                let component;
-                const value = new Date(inputDate.getFullYear(), inputDate.getMonth(), i);
-
-                if (isSameDay(value, today)) {
-                    type.push('today');
-                }
-
-                if (Array.isArray(eventDates)) {
-                    const hasEvent = eventDates.find((date) => isEqual(value, date));
-                    if (hasEvent) {
-                        type.push('event');
-                    }
-                } else if (typeof eventDates === 'function') {
-                    const eventComponent = eventDates(value);
-                    if (eventComponent) {
-                        type.push('event');
-                        component = eventComponent;
-                    }
-                }
-
-                if (weekendDates && checkIsWeekend({ dates: weekendDates, date: value, startingWeekDay })) {
-                    type = [...type, 'weekend'];
-                }
-
-                const isActive = checkIsActiveDay(value);
-                const isDisabled = checkIsDisabled({
-                    dates: disabledDates,
-                    maxDate,
-                    minDate,
-                    date: value,
-                    startingWeekDay,
-                });
-                if (isDisabled && isActive) {
-                    type = ['activeDisabled'];
-                } else if (isDisabled) {
-                    type = ['disabled'];
-                } else if (isActive) {
-                    type = ['active'];
-                }
-
-                days.push({
-                    type,
-                    value,
-                    component,
-                    label: i,
-                });
-            }
-
-            if (lastDayOfWeek !== SUNDAY_INDEX) {
-                for (let i = 1; i < WEEK_LENGTH - lastDayOfWeek; i++) {
-                    const nextDate = addDays(lastDay, i);
-                    days.push({
-                        value: nextDate,
-                        type: ['not-active'],
-                    });
-                }
-            }
-
-            setDays(days);
-        },
-        [date, disabledDates, displayedDate, eventDates, maxDate, minDate, dateState, startingWeekDay, allowMultiple]
-    );
-
-    const initDate = useCallback(() => {
-        setDateState(date);
-        build(displayedDate);
-    }, [build, date, displayedDate]);
-
-    useEffect(() => {
-        initDate();
-    }, [initDate]);
-
     const monthDays = useMemo(() => {
+        resetSavedNodes();
+        let emptyCells = 0;
+
         return days.map((day: DateItem, index: number) => {
             const type = day.type;
             const component = day.component;
             const canChange = !type.some((value) => value === 'disabled' || value === 'not-active');
+            emptyCells += canChange ? 0 : 1;
+
+            const { forwardedRef, onKeyDown: handleOnKeyDown } = setUpFocusProps(index - emptyCells);
 
             return (
                 <Day
                     key={index}
-                    ref={monthEl}
+                    ref={(node: HTMLButtonElement | null) => {
+                        monthEl.current = node;
+
+                        if (canChange) {
+                            forwardedRef(node);
+                        }
+                    }}
                     $type={type}
-                    onClick={canChange ? handleChangeDate(day.value) : undefined}>
+                    type='button'
+                    data-type={type}
+                    tabIndex={canChange ? 0 : -1}
+                    data-testid={testId?.btnCalendarCell?.(day.value)}
+                    onClick={canChange ? handleChangeDate(day.value) : undefined}
+                    onKeyDown={canChange ? handleOnKeyDown : undefined}>
                     {component ?? <DayState>{day.label}</DayState>}
                 </Day>
             );
         });
     }, [handleChangeDate, days, dateState, displayedDate]);
+
+    useEffect(() => {
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+            setDateState(initialDateState);
+            setDays(
+                build({
+                    inputDate: displayedDate || today,
+                    startingWeekDay,
+                    today,
+                    eventDates,
+                    weekendDates,
+                    disabledDates,
+                    minDate,
+                    maxDate,
+                    checkIsActiveDay,
+                })
+            );
+        } else {
+            // Only update days if displayedDate changes
+            if (displayedDate) {
+                setDays(
+                    build({
+                        inputDate: displayedDate,
+                        startingWeekDay,
+                        today,
+                        eventDates,
+                        weekendDates,
+                        disabledDates,
+                        minDate,
+                        maxDate,
+                        checkIsActiveDay,
+                    })
+                );
+            }
+        }
+    }, [
+        displayedDate, // Only re-run the effect if displayedDate changes
+        startingWeekDay,
+        today,
+        eventDates,
+        weekendDates,
+        disabledDates,
+        minDate,
+        maxDate,
+        checkIsActiveDay,
+        allowMultiple,
+    ]);
 
     return (
         <>

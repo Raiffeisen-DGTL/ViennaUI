@@ -1,63 +1,77 @@
-import React, { Ref, forwardRef, useEffect } from 'react';
+import React, { forwardRef, useMemo } from 'react';
 import { ReactMaskProps } from 'react-imask';
-import { FactoryOpts, InputElement } from 'imask';
+import { createMask, FactoryOpts, InputElement } from 'imask';
 import { Input, InputProps } from '../Input';
 import { useMask } from '../Utils/useMask';
+import { composeRef, OnChangeHandler, Pretty } from '../Utils';
+import { ViewOnly } from '@/ViewOnly';
+import { getViewOnlySize } from '@/ViewOnly/utils';
 
-export type InputMaskProps<Opts extends FactoryOpts = FactoryOpts> = Omit<InputProps, 'value' | 'onChange'> &
-    Partial<Pick<ReactMaskProps<InputElement, Opts>, 'onComplete'>> & {
-        maskOptions: Opts;
-        value?: unknown;
-        onChange?: (value: unknown) => void;
-    };
+export type InputMaskEventType = InputEvent | undefined;
+export interface InputMaskEventOptionsType {
+    name?: string;
+    isComplete: boolean;
+    unmaskedValue?: unknown;
+}
+export type InputMaskOnChangeType<T = string | number | null> = OnChangeHandler<
+    T,
+    InputMaskEventType,
+    InputMaskEventOptionsType
+>;
+
+export interface InputMaskProps<Opts extends FactoryOpts = FactoryOpts>
+    extends Omit<InputProps, 'value' | 'onChange'>,
+        Partial<Pick<ReactMaskProps<InputElement, Opts>, 'onComplete'>> {
+    maskOptions: Opts;
+    value?: string | number | Date | null;
+    readOnly?: boolean;
+    onChange?: InputMaskOnChangeType;
+}
+
+export namespace InputMask {
+    export type onChange = Pretty.Func<InputMaskOnChangeType>;
+}
 
 export const InputMask = forwardRef<HTMLInputElement, InputMaskProps>(
-    ({ value: externalValue, maskOptions, onChange, onComplete, ...rest }, externalRef) => {
-        const { ref, value, setValue, setTypedValue, maskRef } = useMask({
+    (
+        {
+            value: externalValue,
+            name,
+            size = 'l',
+            design = 'outline',
             maskOptions,
-            externalValue,
+            viewOnly,
+            viewOnlyText,
             onChange,
             onComplete,
+            ...rest
+        },
+        externalRef
+    ) => {
+        const { ref } = useMask({
+            maskOptions,
+            externalValue,
+            name,
+            onChange,
+            onComplete,
+            viewOnly,
         });
+        const maskValue = useMemo(() => {
+            const imask = createMask(maskOptions);
 
-        useEffect(() => {
-            if (typeof externalValue === 'string') {
-                setValue(externalValue);
-            } else {
-                setTypedValue(externalValue);
+            if (externalValue !== null && externalValue !== undefined) {
+                imask.typedValue = externalValue ?? '';
             }
-        }, [externalValue]);
+            return imask.value;
+        }, [externalValue, maskOptions]);
 
-        useEffect(() => {
-            if (value === '') {
-                maskRef.current?.updateValue();
-            }
-        }, [value]);
+        if (viewOnly) {
+            return <ViewOnly size={getViewOnlySize(size)}>{viewOnlyText ?? maskValue}</ViewOnly>;
+        }
 
-        return <Input value={value} {...rest} ref={composeRef(ref, externalRef)} />;
+        return <Input name={name} size={size} design={design} {...rest} ref={composeRef(ref, externalRef)} />;
     }
 );
 
 InputMask.displayName = 'InputMask';
-InputMask.defaultProps = {
-    size: 'l',
-    design: 'outline',
-};
-
 export default InputMask;
-
-function composeRef<T>(...refs: Ref<T>[]): Ref<T> {
-    if (refs.length <= 1) {
-        return refs[0];
-    }
-
-    return (node: T) => {
-        refs.forEach((ref) => {
-            if (typeof ref === 'function') {
-                ref(node);
-            } else if (typeof ref === 'object' && ref && 'current' in ref) {
-                (ref as unknown as Record<string, T>).current = node;
-            }
-        });
-    };
-}

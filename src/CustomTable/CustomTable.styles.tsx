@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tokens from 'vienna.tokens';
+import { color, typography, layout } from 'vienna.tokens';
 
 export const Table = styled.table`
     border-collapse: collapse;
@@ -7,35 +7,35 @@ export const Table = styled.table`
 `;
 
 export const TableHead = styled.thead`
-    border-bottom: 1px solid ${tokens.color.primary.seattle.c10};
+    border-bottom: 1px solid ${color.primary.seattle.c10};
 `;
 
 export const TableBody = styled.tbody`
     tr:not(:last-child) {
-        border-bottom: 1px solid ${tokens.color.primary.seattle.c10};
+        border-bottom: 1px solid ${color.primary.seattle.c10};
     }
     tr:hover {
-        background: ${tokens.color.primary.seattle.c05};
+        background: ${color.primary.seattle.c05};
     }
 `;
 
 export const TableRow = styled.tr`
-    background: ${tokens.color.primary.brand.white};
+    background: ${color.primary.brand.white};
 `;
 
 export const TableData = styled.td`
-    font-family: ${tokens.typography.b.family};
-    font-size: ${tokens.typography.b.b2.size}px;
-    font-weight: ${tokens.typography.weight.normal};
-    line-height: ${tokens.typography.b.b2.height}px;
-    padding: ${tokens.layout.size.s2}px;
+    font-family: ${typography.b.family};
+    font-size: ${typography.b.b2.size}px;
+    font-weight: ${typography.weight.normal};
+    line-height: ${typography.b.b2.height}px;
+    padding: ${layout.size.s2}px;
 `;
 
 export const TableHeader = styled.th`
-    font-family: ${tokens.typography.b.family};
-    font-size: ${tokens.typography.b.b2.size}px;
-    font-weight: ${tokens.typography.weight.medium};
-    line-height: ${tokens.typography.b.b2.height}px;
-    padding: ${tokens.layout.size.s2}px;
-    color: ${tokens.color.primary.seattle.c60};
+    font-family: ${typography.b.family};
+    font-size: ${typography.b.b2.size}px;
+    font-weight: ${typography.weight.medium};
+    line-height: ${typography.b.b2.height}px;
+    padding: ${layout.size.s2}px;
+    color: ${color.primary.seattle.c60};
 `;

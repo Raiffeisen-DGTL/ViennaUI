@@ -99,7 +99,7 @@ import { CustomTable } from 'vienna-ui';
         useReactTable,
     } from '@tanstack/react-table';
 
-   import { CustomTable } from '@fcc/ui';
+   import { CustomTable } from 'vienna.ui';
 
     const defaultData = [
         {
@@ -230,7 +230,7 @@ import {
     useReactTable,
 } from '@tanstack/react-table';
 
-import { Checkbox, CustomTable } from '@fcc/ui';
+import { Checkbox, CustomTable } from 'vienna.ui';
 
 const TableWithSelector = (args) => {
     const [rowSelection, setRowSelection] = React.useState({});
@@ -395,7 +395,7 @@ import {
     useReactTable,
 } from '@tanstack/react-table';
 
-import { CustomTable, SelectHide, SelectOpenDown} from '@fcc/ui';
+import { CustomTable, SelectHide, SelectOpenDown} from 'vienna.ui';
 
 const TableWithExpand = (args) => {
     const [expanded, setExpanded] = React.useState({});
@@ -561,7 +561,7 @@ import {
     useReactTable,
 } from '@tanstack/react-table';
 
-import { CustomTable, HintRing } from '@fcc/ui';
+import { CustomTable, HintRing } from 'vienna.ui';
 
 () => {
     const defaultData = [
@@ -694,7 +694,7 @@ import { CustomTable, HintRing } from '@fcc/ui';
 
 ```tsx
 import React from 'react';
-import { CustomTable } from '@fcc/ui';
+import { CustomTable } from 'vienna.ui';
 
 import {
     createColumnHelper,
@@ -832,7 +832,7 @@ import {
 
 ```tsx
 import React from 'react';
-import { CustomTable } from '@fcc/ui';
+import { CustomTable } from 'vienna.ui';
 
 import {
     createColumnHelper,
@@ -1007,7 +1007,7 @@ import {
     getCoreRowModel,
     useReactTable,
 } from '@tanstack/react-table';
-import { CustomTable } from '@fcc/ui';
+import { CustomTable } from 'vienna.ui';
 
  type Person = {
         firstName: string
@@ -1156,7 +1156,7 @@ import {
     PaginationState,
 } from '@tanstack/react-table';
 
-import { CustomTable } from '@fcc/ui';
+import { CustomTable } from 'vienna.ui';
 
     const defaultData = [
         {
@@ -1387,8 +1387,8 @@ import {
 } from '@tanstack/react-table';
 
 
-import {CustomTable } from '@fcc/ui';
-import { SelectHide, SelectOpenDown } from '@fcc/icons';
+import {CustomTable } from 'vienna.ui';
+import { SelectHide, SelectOpenDown } from 'vienna.icons';
  const defaultData = [
         {
             id: '1',
@@ -1543,7 +1543,7 @@ import {
 } from '@tanstack/react-table';
 
 
-import {  CustomTable } from '@fcc/ui';
+import {  CustomTable } from 'vienna.ui';
 
  type Person = {
         firstName: string

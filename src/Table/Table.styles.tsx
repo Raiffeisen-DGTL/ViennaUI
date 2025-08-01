@@ -1,14 +1,18 @@
 import styled, { css } from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { WithMarginStyled, withMargin } from '../Whitespace/utils';
-import { getPresets } from '../Utils/styling';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 
-const presets = getPresets('table', {
+const presets = getPresets(
+    table,
+    'table'
+)({
     base: null,
     empty: null,
     outlined: null,
 });
 
-const custom = getPresets('table.custom', {
+const custom = getPresetsCustom('table.custom')({
     wrapper: null,
     tableWrapper: null,
     box: null,
@@ -19,13 +23,14 @@ export interface PropsWrapper extends WithMarginStyled {
     $maxHeight?: string;
     $minHeight?: string;
     $outlined?: boolean;
+    $maxContent?: boolean;
 }
 export const Wrapper = styled.div<PropsWrapper>`
     display: flex;
     flex-direction: column;
     background: white;
     position: relative;
-    width: 100%;
+    width: ${({ $maxContent }) => ($maxContent ? 'max-content' : '100%')};
 
     ${({ $maxHeight }) =>
         $maxHeight &&
@@ -44,7 +49,7 @@ export const Wrapper = styled.div<PropsWrapper>`
             ${presets.outlined}
         `}
 
-    ${withMargin('table')}
+    ${withMargin(table, 'table')}
 
     ${custom.wrapper}
 `;
@@ -69,18 +74,8 @@ export const Box = styled.table`
     ${presets.base}
 
     border-spacing: 0;
-    min-width: 100%;
-    width: max-content;
-
+    width: 100%;
     ${custom.box}
-`;
-
-export const BoxShadow = styled.div`
-    position: absolute;
-    left: 0;
-    top: 0;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-    z-index: 3;
 `;
 
 export const Empty = styled.div`

@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components';
+import { textarea } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const presets = getPresets('textarea', {
+const presets = getPresets(
+    textarea,
+    'textarea'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     design: '$design',
     hover: '$design',
     disabled: '$design',
@@ -12,12 +16,18 @@ const presets = getPresets('textarea', {
     invalid: '$design',
 });
 
-const placeholder = getPresets('textarea.placeholder', {
+const placeholder = getPresets(
+    textarea.placeholder,
+    'textarea.placeholder'
+)({
     base: null,
     disabled: null,
 });
 
-const counter = getPresets('textarea.counter', {
+const counter = getPresets(
+    textarea.counter,
+    'textarea.counter'
+)({
     base: null,
 });
 
@@ -27,9 +37,10 @@ export const Root = styled.div`
 
 export interface PropsBox<B = Breakpoints> {
     $design: 'outline' | 'material';
-    $size: ResponsiveProp<'xs' | 's' | 'm' | 'l' | 'xl' | B>;
+    $size: ResponsiveProp<'s' | 'm' | 'l', B>;
     $invalid?: boolean;
     $maxHeight?: number;
+    $showCounter?: boolean;
 }
 export const Box = styled.textarea<PropsBox>`
     vertical-align: middle;
@@ -72,6 +83,11 @@ export const Box = styled.textarea<PropsBox>`
             ${presets.invalid}
         `}
 
+    ${({ $showCounter }) =>
+        $showCounter &&
+        css`
+            padding-bottom: 20px;
+        `}
 
     &::-ms-clear,
     &::-ms-reveal {

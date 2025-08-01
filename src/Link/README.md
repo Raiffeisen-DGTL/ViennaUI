@@ -76,7 +76,7 @@ import { Link } from 'vienna-ui';
 
 ```jsx
 import { Link as RouterLink } from 'react-router-dom';
-import { Link } from '@fcc/ui';
+import { Link } from 'vienna.ui';
 
 export default (props) => (
     <Link {...props} as={RouterLink} to='/episodes'>

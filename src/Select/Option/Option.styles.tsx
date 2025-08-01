@@ -1,14 +1,18 @@
 import styled, { css } from 'styled-components';
+import { dropList } from 'vienna.ui-theme';
 import { Item } from '../../DropList/Item';
 import { getPresets } from '../../Utils/styling';
 
-const item = getPresets('dropList.item', {
+const item = getPresets(
+    dropList.item,
+    'dropList.item'
+)({
     hover: null,
 });
 
 export interface PropsStyledOption {
     $hover?: boolean;
-    $selected?: any;
+    $selected?: boolean;
 }
 export const StyledOption = styled(Item)<PropsStyledOption>`
     justify-content: space-between;
@@ -16,13 +20,13 @@ export const StyledOption = styled(Item)<PropsStyledOption>`
         $hover
             ? item.hover
             : $selected
-            ? ''
-            : css`
-                  background-color: transparent !important;
-              `}
+              ? ''
+              : css`
+                    background-color: transparent !important;
+                `}
 `;
 
-interface PropsValue {
+export interface PropsValue {
     $wrapLine?: boolean;
 }
 export const Value = styled.div<PropsValue>`

@@ -1,16 +1,23 @@
 import styled, { css } from 'styled-components';
+import { typography } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../../Utils/responsiveness';
 import { ColorType } from '../Text/Text.styles';
 
-const presets = getPresets('typography.heading', {
-    base: null,
-    size: responsivePreset('$size', 'm'),
-    margin: responsivePreset('$margin', 'none'),
+const presets = getPresets(
+    typography,
+    'typography'
+)({
+    color: '$color',
 });
 
-const typography = getPresets('typography', {
-    color: '$color',
+const heading = getPresets(
+    typography.heading,
+    'typography.heading'
+)({
+    base: null,
+    size: ['$size', 'm'],
+    margin: ['$margin', null],
 });
 
 export interface PropsBox<B = Breakpoints> {
@@ -25,10 +32,10 @@ export const Box = styled.h1<PropsBox>`
     font-feature-settings: ${({ $monospace }) => ($monospace ? `'tnum' on, 'lnum' on` : 'normal')};
     vertical-align: baseline;
     padding: 0;
-    ${presets.base}
-    ${presets.size}
-    ${presets.margin}
-    ${typography.color}
+    ${heading.base}
+    ${heading.size}
+    ${heading.margin}
+    ${presets.color}
 
     ${({ $align }) =>
         $align &&

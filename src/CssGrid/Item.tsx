@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef, Ref } from 'react';
 import styled, { css } from 'styled-components';
 import { WithWhitespace, WithWhitespaceStyled, getWhitespaceStyledProps, withWhitespace } from '../Whitespace/utils';
 import { BoxStyled } from '../Utils/styled';
 
-interface PropsItemStyled extends WithWhitespaceStyled {
+export interface PropsItemStyled extends WithWhitespaceStyled {
     $columnStart?: string;
     $columnEnd?: string;
     $rowStart?: string;
@@ -98,7 +98,7 @@ const ItemStyled = styled.div<PropsItemStyled>`
             max-width: ${$maxWidth};
         `}
 
-    ${withWhitespace('cssgridItem')}
+    ${withWhitespace({}, 'cssgridItem')}
 `;
 
 export interface ItemProps extends BoxStyled<typeof ItemStyled, PropsItemStyled>, WithWhitespace {
@@ -121,45 +121,53 @@ export interface ItemProps extends BoxStyled<typeof ItemStyled, PropsItemStyled>
     maxWidth?: PropsItemStyled['$maxWidth'];
 }
 
-export const Item: React.FC<ItemProps> = ({
-    children,
-    columnStart,
-    columnEnd,
-    rowStart,
-    rowEnd,
-    column,
-    row,
-    area,
-    justifySelf,
-    alignSelf,
-    placeSelf,
-    height,
-    width,
-    maxHeight,
-    maxWidth,
-    ...rest
-}) => {
-    const { attrs, propsStyled } = getWhitespaceStyledProps(rest);
+export const Item = forwardRef(
+    (
+        {
+            children,
+            columnStart,
+            columnEnd,
+            rowStart,
+            rowEnd,
+            column,
+            row,
+            area,
+            justifySelf,
+            alignSelf,
+            placeSelf,
+            height,
+            width,
+            maxHeight,
+            maxWidth,
+            ...rest
+        }: ItemProps,
+        ref: Ref<HTMLDivElement>
+    ) => {
+        const { attrs, propsStyled } = getWhitespaceStyledProps(rest);
 
-    return (
-        <ItemStyled
-            {...(attrs as {})}
-            {...(propsStyled as {})}
-            $columnStart={columnStart}
-            $columnEnd={columnEnd}
-            $rowStart={rowStart}
-            $rowEnd={rowEnd}
-            $column={column}
-            $row={row}
-            $area={area}
-            $justifySelf={justifySelf}
-            $alignSelf={alignSelf}
-            $placeSelf={placeSelf}
-            $height={height}
-            $width={width}
-            $maxHeight={maxHeight}
-            $maxWidth={maxWidth}>
-            {children}
-        </ItemStyled>
-    );
-};
+        return (
+            <ItemStyled
+                {...attrs}
+                {...propsStyled}
+                ref={ref}
+                $columnStart={columnStart}
+                $columnEnd={columnEnd}
+                $rowStart={rowStart}
+                $rowEnd={rowEnd}
+                $column={column}
+                $row={row}
+                $area={area}
+                $justifySelf={justifySelf}
+                $alignSelf={alignSelf}
+                $placeSelf={placeSelf}
+                $height={height}
+                $width={width}
+                $maxHeight={maxHeight}
+                $maxWidth={maxWidth}>
+                {children}
+            </ItemStyled>
+        );
+    }
+);
+
+Item.displayName = 'Item';

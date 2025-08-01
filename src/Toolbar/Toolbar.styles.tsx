@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import { toolbar } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const toolbar = getPresets('toolbar', {
+const presets = getPresets(
+    toolbar,
+    'toolbar'
+)({
     base: null,
     design: '$design',
     custom: null,
@@ -13,7 +17,7 @@ export interface PropsBox {
 export const Box = styled.div<PropsBox>`
     outline: none;
     box-sizing: border-box;
-    ${toolbar.base}
-    ${toolbar.design}
-    ${toolbar.custom}
+    ${presets.base}
+    ${presets.design}
+    ${presets.custom}
 `;

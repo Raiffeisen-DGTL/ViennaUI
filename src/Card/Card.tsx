@@ -48,17 +48,16 @@ function CardInternal<B extends void>(
     }, [header, title]);
 
     const { attrs, propsStyled } = getWhitespaceStyledProps(rest);
-
     return (
-        <Box {...(attrs as {})} {...(propsStyled as {})} ref={ref} $size={size} $stretch={stretch}>
+        <Box {...attrs} {...propsStyled} ref={ref} $size={size} $stretch={stretch}>
             {showHeader && (
-                <Header>
+                <Header $size={size}>
                     {<Title>{cardTitle}</Title>}
                     {actions && <Actions>{actions}</Actions>}
                 </Header>
             )}
             <Content>{children}</Content>
-            {footer && <Footer>{footer}</Footer>}
+            {footer && <Footer $size={size}>{footer}</Footer>}
         </Box>
     );
 }

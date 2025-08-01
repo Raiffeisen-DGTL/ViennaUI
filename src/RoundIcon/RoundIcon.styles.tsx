@@ -1,11 +1,15 @@
 import styled, { css } from 'styled-components';
+import { roundIcon } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const { base, color, custom, size } = getPresets('roundIcon', {
+const presets = getPresets(
+    roundIcon,
+    'roundIcon'
+)({
     base: null,
     color: '$color',
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     custom: null,
 });
 
@@ -14,6 +18,7 @@ export interface PropsBox<B = Breakpoints> {
     $clickable?: boolean;
     $color?:
         | 'seattle10'
+        | 'seattle30'
         | 'seattle60'
         | 'oslo10'
         | 'oslo60'
@@ -53,10 +58,10 @@ export const Box = styled.div<PropsBox>`
     justify-content: center;
     flex-shrink: 0;
 
-    ${base}
-    ${size}
-    ${color}
-    ${custom}
+    ${presets.base}
+    ${presets.size}
+    ${presets.color}
+    ${presets.custom}
 
     ${({ $clickable }) =>
         $clickable &&

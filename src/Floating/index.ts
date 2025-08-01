@@ -1,2 +1,2 @@
 export * from './types';
-export { Floating, type FloatingProps } from './Floating';
+export { Floating, type FloatingProps, type FloatingPlacement } from './Floating';

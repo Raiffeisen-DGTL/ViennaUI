@@ -1,13 +1,17 @@
 import styled from 'styled-components';
-import { getPresets } from '../../../Utils/styling';
+import { table } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../../../Utils/styling';
 
-const presets = getPresets('table.settings.columns', {
+const presets = getPresets(
+    table.settings.columns,
+    'table.settings.columns'
+)({
     list: null,
     column: null,
     search: null,
 });
 
-const custom = getPresets('table.settings.custom.columns', {
+const custom = getPresetsCustom('table.settings.custom.columns')({
     box: null,
     list: null,
     column: null,
@@ -43,4 +47,11 @@ export const Column = styled.div`
 export const Search = styled.div`
     ${presets.search}
     ${custom.search}
+`;
+
+export const TitleBox = styled.div`
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 152px;
 `;

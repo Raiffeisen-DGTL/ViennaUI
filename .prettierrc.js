@@ -1,3 +1,3 @@
 module.exports = {
-    ...require('@fcc/config-prettier'),
+    ...require('vienna.config-prettier'),
 };

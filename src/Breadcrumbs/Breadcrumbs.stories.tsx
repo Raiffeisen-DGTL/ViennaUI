@@ -68,3 +68,28 @@ export const HomeButtonsAndSizes: Story<BreadcrumbsProps> = (args) => {
         </>
     );
 };
+
+export const WithHomeButton: Story<BreadcrumbsProps> = (args) => {
+    return (
+        <Breadcrumbs {...args} noBackButton>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+    );
+};
+
+export const CheckTooltip: Story<BreadcrumbsProps> = (args) => {
+    return (
+        <>
+            <Breadcrumbs noHomeButton>
+                <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+                <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+                <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+            </Breadcrumbs>
+            <Breadcrumbs noBackButton>
+                <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+                <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+                <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+            </Breadcrumbs>
+        </>
+    );
+};

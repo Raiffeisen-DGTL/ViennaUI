@@ -1,5 +1,16 @@
-import React, { useCallback, useState, useRef, useMemo, ReactNode, useEffect, FC } from 'react';
+import React, {
+    useCallback,
+    useState,
+    useRef,
+    useMemo,
+    ReactNode,
+    useEffect,
+    FC,
+    isValidElement,
+    ReactElement,
+} from 'react';
 import { useWindowResize } from 'vienna.react-use';
+import { wizard } from 'vienna.ui-theme';
 import {
     Box,
     Header,
@@ -23,8 +34,9 @@ import {
 } from './localization';
 import { getPresets } from '../Utils/styling';
 import { BoxStyled } from '../Utils/styled';
+import { reactNodeIsComponent } from '../Utils';
 
-export interface WizardProps extends Omit<BoxStyled<typeof Box, {}>, 'onChange'>, WizardLocalizationProps {
+export interface WizardProps extends Omit<BoxStyled<typeof Box, object>, 'onChange'>, WizardLocalizationProps {
     /** Размеры */
     size?: Size;
 
@@ -35,7 +47,10 @@ export interface WizardProps extends Omit<BoxStyled<typeof Box, {}>, 'onChange'>
     onChange?: (value: number, data: { isActive: boolean }) => void;
 }
 
-const stepPoints = getPresets('wizard.stepPoints', {
+const stepPoints = getPresets(
+    wizard.stepPoints,
+    'wizard.stepPoints'
+)({
     horizontalRight: '$size',
 });
 
@@ -82,25 +97,27 @@ export const Wizard: FC<WizardProps> & {
     useWindowResize(handleResize);
 
     const footer = useMemo(() => {
-        const footerBox: any = childrenArray.find((child: any) => child && String(child.type) === String(Footer));
-        return React.cloneElement(footerBox, { $size: size });
+        const footerBox = childrenArray.find((child) => isValidElement(child) && reactNodeIsComponent(child, Footer));
+        return footerBox ? React.cloneElement(footerBox, { size }) : '';
     }, [childrenArray, size]);
 
-    const body = useMemo((): any => {
-        return childrenArray.find((child: any) => child && String(child.type) === String(Body));
+    const body = useMemo(() => {
+        return childrenArray.find((child) => isValidElement(child) && reactNodeIsComponent(child, Body));
     }, [childrenArray]);
 
     const steps = useMemo(() => {
-        const steps = body?.props?.children.filter((child: any) => child && String(child.type) === String(Step));
+        const steps = (body?.props?.children as ReactNode[])?.filter(
+            (child) => isValidElement(child) && reactNodeIsComponent(child, Step)
+        );
         return Array.isArray(steps) ? steps : [];
     }, [childrenArray]);
 
     const activeStep = useMemo(() => {
-        return Array.isArray(steps) && steps[value];
+        return (Array.isArray(steps) && steps[value]) as ReactElement<{ title?: string }> | undefined;
     }, [steps, value]);
 
     const handleClick = useCallback(
-        (index) => () => {
+        (index: number) => () => {
             if (typeof onChange === 'function') {
                 onChange(index, { isActive: index <= value });
             }
@@ -118,12 +135,14 @@ export const Wizard: FC<WizardProps> & {
         const stepPoints: ReactNode[] = [];
 
         for (let index = 0; index < stepsCount; index++) {
+            const { children, ...rest } = steps[index].props;
             stepPoints.push(
                 <StepPoint
                     $canClickStep={typeof onChange === 'function'}
                     $type={index === value ? 'active' : index < value ? 'elapsed' : 'empty'}
                     key={index}
                     onClick={handleClick(index)}
+                    {...rest}
                 />
             );
         }
@@ -145,10 +164,12 @@ export const Wizard: FC<WizardProps> & {
         <Box {...attrs}>
             {header}
             <Form>
-                {React.cloneElement(body, {
-                    $size: size,
-                    children: React.cloneElement(activeStep, { ...activeStep.props, title: undefined }),
-                })}
+                {body &&
+                    React.cloneElement(body, {
+                        size,
+                        children:
+                            activeStep && React.cloneElement(activeStep, { ...activeStep.props, title: undefined }),
+                    })}
                 {footer}
             </Form>
         </Box>
@@ -156,10 +177,6 @@ export const Wizard: FC<WizardProps> & {
 };
 
 Wizard.displayName = 'Wizard';
-Wizard.defaultProps = {
-    size: 'm',
-    value: 0,
-};
 Wizard.Step = Step;
 Wizard.Body = Body;
 Wizard.Footer = Footer;

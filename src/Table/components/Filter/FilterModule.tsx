@@ -1,10 +1,12 @@
-import { Module } from '../../types';
+import { Module, TableData } from '../../types';
+import { ColumnProps } from '../Column';
+import { AnyObject } from '../../../Utils';
 
-export type FilterState = Record<string, any>;
+export type FilterState<T> = AnyObject | ColumnProps<T>['filter'];
 
-export const FilterModule: Module = {
+export const FilterModule: Module<undefined, FilterState<TableData>, TableData> = {
     name: 'filter',
-    initState: ({ settings }): FilterState => {
+    initState: ({ settings }): FilterState<TableData> => {
         return settings.filter;
     },
 };

@@ -147,7 +147,7 @@ export const Box = styled.div<PropsBox>`
             row-gap: ${size($rowGap)};
         `}
 
-    ${withWhitespace('cssGrid')}
+    ${withWhitespace({}, 'cssGrid')}
 `;
 
 interface PropsCssGridDemo {

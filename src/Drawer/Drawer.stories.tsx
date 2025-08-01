@@ -4,7 +4,7 @@ import { Drawer, DrawerProps } from './Drawer';
 import { Button } from '../Button';
 import { Groups } from '../Groups';
 import { Select } from '../Select';
-import { DrawerDemo } from './Drawer.styles';
+import { DrawerDemo, DrawerWrapper } from './Drawer.styles';
 import { useModal } from '../Modal';
 import { Screen } from 'vienna.ui-primitives';
 
@@ -399,6 +399,102 @@ export const ConfirmDrawer: Story<DrawerProps> = (args) => {
                     <Drawer.Footer>
                         <Groups>
                             <Button size='l' design='outline' onClick={() => setToggle(!toggle)}>
+                                Button example
+                            </Button>
+                            <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                Close
+                            </Button>
+                        </Groups>
+                    </Drawer.Footer>
+                </Drawer.Layout>
+            </Drawer>
+        </>
+    );
+};
+
+export const WithRightCloseIcon: Story<DrawerProps> = (args) => {
+    const [isOpen, setOpen] = React.useState(false);
+
+    return (
+        <>
+            <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+            <Drawer {...args} iconOrientation='right' isOpen={isOpen} onClose={() => setOpen(false)}>
+                <Drawer.Layout>
+                    <Drawer.Head>
+                        <Drawer.Title>Документы для валютного контроля</Drawer.Title>
+                        <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                    </Drawer.Head>
+                    <Drawer.Body>
+                        <DrawerDemo>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo donec enim. Sit
+                            amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium lectus quam id leo in.
+                            Duis ut diam quam nulla porttitor massa. Id volutpat lacus laoreet non. Etiam non quam lacus
+                            suspendisse faucibus. Mollis aliquam ut porttitor leo a diam. Auctor urna nunc id cursus
+                            metus aliquam. In dictum non consectetur a erat nam at lectus. Facilisi cras fermentum odio
+                            eu feugiat. Risus commodo viverra maecenas accumsan. Interdum velit euismod in pellentesque
+                            massa placerat duis ultricies. Ac ut consequat semper viverra nam libero justo. Dapibus
+                            ultrices in iaculis nunc sed augue lacus viverra.
+                        </DrawerDemo>
+                        <Select placeholder='Выберите значение'>
+                            <Select.Option>Значение 1</Select.Option>
+                            <Select.Option>Значение 2</Select.Option>
+                            <Select.Option>Значение 3</Select.Option>
+                            <Select.Option>Значение 4</Select.Option>
+                            <Select.Option>Значение 5</Select.Option>
+                        </Select>
+                    </Drawer.Body>
+                    <Drawer.Footer>
+                        <Groups>
+                            <Button size='l' design='outline'>
+                                Button example
+                            </Button>
+                            <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                Close
+                            </Button>
+                        </Groups>
+                    </Drawer.Footer>
+                </Drawer.Layout>
+            </Drawer>
+        </>
+    );
+};
+
+export const AnimationBug: Story<DrawerProps> = (args) => {
+    const [isOpen, setOpen] = React.useState(false);
+
+    return (
+        <>
+            <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+            <Drawer isOpen={isOpen} onClose={() => setOpen(false)} width={'calc(460px - 20px)'} {...args}>
+                <Drawer.Layout>
+                    <Drawer.Head>
+                        <Drawer.Title>Документы для валютного контроля</Drawer.Title>
+                        <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                    </Drawer.Head>
+                    <Drawer.Body>
+                        <DrawerDemo>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo donec enim. Sit
+                            amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium lectus quam id leo in.
+                            Duis ut diam quam nulla porttitor massa. Id volutpat lacus laoreet non. Etiam non quam lacus
+                            suspendisse faucibus. Mollis aliquam ut porttitor leo a diam. Auctor urna nunc id cursus
+                            metus aliquam. In dictum non consectetur a erat nam at lectus. Facilisi cras fermentum odio
+                            eu feugiat. Risus commodo viverra maecenas accumsan. Interdum velit euismod in pellentesque
+                            massa placerat duis ultricies. Ac ut consequat semper viverra nam libero justo. Dapibus
+                            ultrices in iaculis nunc sed augue lacus viverra.
+                        </DrawerDemo>
+                        <Select placeholder='Выберите значение'>
+                            <Select.Option>Значение 1</Select.Option>
+                            <Select.Option>Значение 2</Select.Option>
+                            <Select.Option>Значение 3</Select.Option>
+                            <Select.Option>Значение 4</Select.Option>
+                            <Select.Option>Значение 5</Select.Option>
+                        </Select>
+                    </Drawer.Body>
+                    <Drawer.Footer>
+                        <Groups>
+                            <Button size='l' design='outline'>
                                 Button example
                             </Button>
                             <Button size='l' design='accent' onClick={() => setOpen(false)}>

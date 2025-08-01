@@ -13,12 +13,17 @@ export const Overview: Story<InputSliderProps> = (args) => {
         setValue(parseInt(e));
     };
     return (
-        <InputSlider
-            min={20}
-            max={100}
-            onChange={changeHandler}
-            value={value}
-            postfix='15%'>
+        <InputSlider min={20} max={100} onChange={changeHandler} value={value} postfix='15%'>
+            <InputSlider.Tag val={20}>20 $</InputSlider.Tag>
+            <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+            <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+        </InputSlider>
+    );
+};
+
+export const ViewOnly: Story<InputSliderProps> = (args) => {
+    return (
+        <InputSlider min={20} max={100} value={50} viewOnly postfix='15%'>
             <InputSlider.Tag val={20}>20 $</InputSlider.Tag>
             <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
             <InputSlider.Tag val={100}>100 $</InputSlider.Tag>

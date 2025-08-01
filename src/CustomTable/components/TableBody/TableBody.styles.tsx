@@ -1,30 +1,38 @@
-import React, { FC } from 'react';
+import React, { FC, forwardRef, ReactNode } from 'react';
 import styled, { css } from 'styled-components';
-import { getPresets } from '../../../Utils/styling';
+import { table } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../../../Utils/styling';
 import { BoxStyled } from '../../../Utils/styled';
+import { TableSize } from '../../../Table/types';
 
-const presets = getPresets('table', {
+const presets = getPresets(
+    table,
+    'table'
+)({
     body: null,
     size: '$size',
     selected: null,
     pinned: null,
 });
 
-const cell = getPresets('table.cell', {
+const cell = getPresets(
+    table.cell,
+    'table.cell'
+)({
     hover: null,
     divider: null,
     truncate: null,
     rightDivider: null,
 });
 
-const custom = getPresets('table.custom.body', {
+const custom = getPresetsCustom('table.custom.body')({
     base: null,
     row: null,
     cell: null,
 });
 
 interface PropsTdStyled {
-    $size: any;
+    $size?: TableSize;
     $hasRightDivider?: boolean;
     $truncate?: boolean;
     $align?: 'left' | 'center' | 'right';
@@ -106,7 +114,7 @@ export const Td: FC<TdProps> = ({
 }) => {
     return (
         <TdStyled
-            {...(attrs as {})}
+            {...attrs}
             $size={size}
             $hasRightDivider={hasRightDivider}
             $truncate={truncate}
@@ -169,11 +177,15 @@ export interface RowProps extends BoxStyled<typeof RowStyled, PropsRowStyled> {
     noRowDivider?: PropsRowStyled['$noRowDivider'];
     selected?: PropsRowStyled['$selected'];
     isRowClickable?: PropsRowStyled['$isRowClickable'];
+    children: ReactNode;
 }
-export const Row: FC<RowProps> = ({ children, noHover, noRowDivider, selected, isRowClickable, ...attrs }) => {
+
+export const Row = forwardRef<HTMLTableRowElement, RowProps>((props, ref) => {
+    const { children, noHover, noRowDivider, selected, isRowClickable, ...attrs } = props;
     return (
         <RowStyled
-            {...(attrs as {})}
+            {...attrs}
+            ref={ref}
             $noHover={noHover}
             $noRowDivider={noRowDivider}
             $selected={selected}
@@ -181,7 +193,7 @@ export const Row: FC<RowProps> = ({ children, noHover, noRowDivider, selected, i
             {children}
         </RowStyled>
     );
-};
+});
 
 export const Body = styled.tbody`
     ${presets.body}

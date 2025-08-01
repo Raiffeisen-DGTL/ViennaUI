@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { TableFooter } from './Footer.styles';
 import { BoxStyled } from '../../../Utils/styled';
 
-export interface FooterProps extends BoxStyled<typeof TableFooter, {}> {
+export interface FooterProps extends BoxStyled<typeof TableFooter, object> {
     id?: string;
 }
 

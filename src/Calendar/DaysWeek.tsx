@@ -2,13 +2,12 @@ import React from 'react';
 import { WeekDay } from './Calendar.styles';
 import { StartingWeekDay } from './types';
 import { useCalendarLocalization } from './Context';
-import { CalendarLocalization } from './localization';
 
 export const DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'] as const;
 
 export const DaysWeek: React.FC<{ startingWeekDay: StartingWeekDay }> = ({ startingWeekDay }) => {
     const localize = useCalendarLocalization();
-    const days = DAYS.map((day) => localize(`ds.calendar.day.${day}` as keyof CalendarLocalization));
+    const days = DAYS.map((day) => localize(`ds.calendar.day.${day}`));
 
     if (startingWeekDay === 'sunday') {
         const lastDay = days.pop();

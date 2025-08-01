@@ -1,7 +1,11 @@
 import styled, { keyframes } from 'styled-components';
+import { progressbar } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 
-const pattern = getPresets('progressbar.pattern', {
+const pattern = getPresets(
+    progressbar.pattern,
+    'progressbar.pattern'
+)({
     rect: null,
     svg: null,
 });

@@ -6,6 +6,6 @@ export interface BreadcrumbsLocalization {
 
 export type BreadcrumbsLocalizationProps = DSLocalizationProps<BreadcrumbsLocalization>;
 
-export const defaultBreadcrumbsLocalization: BreadcrumbsLocalization = {
+export const defaultBreadcrumbsLocalization: Required<BreadcrumbsLocalization> = {
     'ds.breadcrumbs.backTo': 'Вернуться к',
 };

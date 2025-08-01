@@ -1,12 +1,24 @@
 import React, { useState, useCallback, forwardRef } from 'react';
-import { EyeOpened, EyeClosed } from 'vienna.icons';
+import { EyeOpenedIcon, EyeClosedIcon } from 'vienna.icons';
 import { Input, InputProps } from '../Input';
 import { IconWrapper } from './InputPassword.styles';
+import { omit } from '@/Utils';
 
-export const InputPassword = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+export const defaultInputPasswordTestId: InputPasswordProps['testId'] = {
+    postfixIcon: 'input-password_postfix-icon',
+};
+
+export interface InputPasswordProps extends Omit<InputProps, 'testId'> {
+    testId?: {
+        postfixIcon?: string;
+    };
+}
+
+export const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>((props, ref) => {
+    const { testId = defaultInputPasswordTestId } = props;
     const [visibility, setVisibility] = useState(false); // Включение / выключение видимости пароля
 
-    const Icon = visibility ? EyeOpened : EyeClosed; // Иконка
+    const Icon = visibility ? EyeOpenedIcon : EyeClosedIcon; // Иконка
 
     // Клик по иконке
     const handleClickIcon = useCallback(() => {
@@ -16,11 +28,18 @@ export const InputPassword = forwardRef<HTMLInputElement, InputProps>((props, re
     // Иконка
     const postfix = (
         <IconWrapper $visible={visibility}>
-            <Icon onClick={handleClickIcon} />
+            <Icon data-testid={testId?.postfixIcon} onClick={handleClickIcon} />
         </IconWrapper>
     );
 
-    return <Input ref={ref} type={visibility ? 'text' : 'password'} postfix={postfix} {...props} />;
+    return (
+        <Input
+            ref={ref}
+            type={visibility ? 'text' : 'password'}
+            postfix={postfix}
+            {...omit(props, 'testId', 'postfix', 'ref', 'type')}
+        />
+    );
 });
 
 InputPassword.displayName = 'InputPassword';

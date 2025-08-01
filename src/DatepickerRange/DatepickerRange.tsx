@@ -1,20 +1,30 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Calendar as CalendarIcon } from 'vienna.icons';
+import { CalendarIcon } from 'vienna.icons';
 import { Locale } from 'date-fns';
 import { useFloating, offset, autoPlacement, FloatingPortal } from '@floating-ui/react';
-import { CalendarProps } from 'vienna.icons/dist/Calendar/Calendar';
-import { usePortal } from 'vienna.react-use';
+import { CalendarIconProps as CalendarProps } from 'vienna.icons/dist/CalendarIcon/CalendarIcon';
 import { DatePickerRangeLocalizationProps } from './localization';
-import { Calendar, dateFunction, Dates, DateValue } from '../Calendar';
+import { Calendar, dateFunction, CalendarDates, PropsCalendar } from '../Calendar';
 import { InputDateRange, DateType } from '../InputMask';
 import { getDateFromString, getStringFromDate } from '../Utils/DateUtils';
-import { InputEvent, InputProps } from '../Input';
+import { InputProps } from '../Input';
 import { Box, InputBox, CalendarBox } from './DatepickerRange.styles';
 import { checkIsDisabled } from '../Calendar/Utils';
-import { StartingWeekDay } from '../Calendar/types';
+import { FocusActions, StartingWeekDay, ViewMode } from '../Calendar/types';
+import { composeRef, OnChangeHandler, ComponentWrapper, defer, Pretty } from '../Utils';
+import { InputDateRangeProps } from '../InputMask/Concrete/InputDateRange/InputDateRange';
+import { WithViewOnly } from '@/ViewOnly';
+import { defaultCalendarTestId } from '@/Calendar/Calendar';
+
+export const defaultDatepickerRangeTestId: DatepickerRangeProps['testId'] = {
+    container: 'datepicker-range_container',
+    calendarBox: 'datepicker-range_calendar-box',
+    calendar: defaultCalendarTestId,
+};
 
 export interface DatepickerRangeProps
-    extends Omit<InputProps, 'onChange' | 'onPaste'>,
+    extends Omit<InputProps, 'onChange' | 'onBlur' | 'onPaste' | 'testId'>,
+        WithViewOnly,
         DatePickerRangeLocalizationProps {
     /**
      * дата передается строкой вида 01.01.2021-12.01.2021
@@ -27,9 +37,19 @@ export interface DatepickerRangeProps
     isCalendarOpen?: boolean;
 
     /**
+     * Календарь всегда открыт
+     */
+    isCalendarAlwaysOpen?: boolean;
+
+    /**
      * Даты-событие
      */
     eventDates?: Date[] | dateFunction;
+
+    /**
+     * Отображение кнопки "Сегодня"
+     */
+    todayButton?: boolean;
 
     /**
      * Нижняя граница выбора даты
@@ -41,15 +61,18 @@ export interface DatepickerRangeProps
      */
     maxDate?: Date;
 
-    onChange?: (
-        event: InputEvent<React.FormEvent<HTMLInputElement>> | Event | null,
-        data: { value?: string; valueAsDate: DateType; name?: string; isDisabled?: boolean }
-    ) => void;
+    onChange?: OnChangeHandler<
+        string,
+        React.FormEvent<HTMLInputElement> | Event | null,
+        { valueAsDate: DateType; name?: string; isDisabled?: boolean }
+    >;
+
+    onBlur?: (event: React.FocusEvent, data: { value: string; name?: string }) => void;
 
     /**
      * Неактивные для выбора даты
      */
-    disabledDates?: Dates;
+    disabledDates?: CalendarDates;
 
     /**
      * Дни недели отображаются с понедельника (1) или с воскресенья (0)
@@ -67,17 +90,47 @@ export interface DatepickerRangeProps
      * Дефолтное значение отображаемой даты
      */
     defaultDisplayedDate?: Date;
+    /**
+     * Выбор режима отображения "месяцы" и "года"
+     */
+    view?: ViewMode;
+    dropdownPortal?: HTMLElement | React.MutableRefObject<HTMLElement | null> | null;
+
+    /**
+     * Реф на контейнер календаря
+     */
+    calendarBoxRef?: React.MutableRefObject<HTMLDivElement | null>;
+
+    testId?: {
+        container?: string;
+        calendarBox?: string;
+        calendar?: PropsCalendar['testId'];
+    };
 }
 
-export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
+export namespace DatepickerRange {
+    export type OnChange = Pretty.Func<
+        OnChangeHandler<
+            string,
+            React.FormEvent<HTMLInputElement> | Event | null,
+            { valueAsDate: DateType; name?: string; isDisabled?: boolean }
+        >
+    >;
+    export type EventDates = Pretty.fy<Date[] | dateFunction>;
+    export type DisabledDates = Pretty.fy<CalendarDates>;
+}
+
+export function DatepickerRange({
     eventDates,
     isCalendarOpen = false,
+    isCalendarAlwaysOpen,
     maxDate,
     minDate,
     name,
     postfix,
     prefix,
     size,
+    todayButton = false,
     value,
     onChange,
     onFocus,
@@ -90,13 +143,17 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
     locale,
     onChangeDisplayedDate,
     defaultDisplayedDate,
+    view,
+    dropdownPortal = document.body,
+    calendarBoxRef,
+    testId = defaultDatepickerRangeTestId,
     ...attrs
-}) => {
-    const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen);
+}: DatepickerRangeProps) {
+    const [isOpen, setOpen] = useState<boolean | undefined>(isCalendarOpen || isCalendarAlwaysOpen);
     const [active, setActive] = useState(false);
     const datepickerRangeEl = useRef<HTMLDivElement>(null);
+    const actionsRef = useRef<FocusActions>({} as FocusActions);
     const [isDisabled, setIsDisabled] = useState<boolean>(false);
-    const containerPortal = usePortal('box', 'datepickerrange-box');
 
     const { refs, floatingStyles, update } = useFloating({
         placement: 'bottom-start',
@@ -115,16 +172,18 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
     });
 
     useEffect(() => {
-        if (isOpen) {
-            update();
-        }
+        defer(() => {
+            if (isOpen) {
+                update();
+            }
+        });
     }, [isOpen]);
 
     useEffect(() => {
-        setOpen(isCalendarOpen);
-    }, [isCalendarOpen]);
+        setOpen(isCalendarOpen || isCalendarAlwaysOpen);
+    }, [isCalendarOpen, isCalendarAlwaysOpen]);
 
-    const handleInputFocus = useCallback(
+    const handleInputFocus = useCallback<NonNullable<InputDateRangeProps['onFocus']>>(
         (event, data) => {
             if (typeof onFocus === 'function') {
                 onFocus(event, { value: data.value, name });
@@ -140,12 +199,12 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
         }
     }, [isOpen, active]);
 
-    const getInputValueArray = useCallback((dateString) => {
+    const getInputValueArray = useCallback((dateString?: string | null) => {
         return typeof dateString === 'string' ? dateString.replace(/\s+/g, '').split('-') : [];
     }, []);
 
-    const handleChangeInput = useCallback(
-        (value) => {
+    const handleChangeInput = useCallback<NonNullable<InputDateRangeProps['onChange']>>(
+        ({ value }) => {
             const inputValueArray = getInputValueArray(value);
             const startInputDate = getDateFromString(inputValueArray[0]);
             const endInputDate = getDateFromString(inputValueArray[1]);
@@ -156,20 +215,21 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                 (!!endInputDate && checkIsDisabled({ dates: disabledDates, date: endInputDate, startingWeekDay }));
             setIsDisabled(isDisabled);
 
-            if (typeof onChange === 'function') {
-                onChange(null, {
-                    value,
+            onChange?.({
+                value: value ?? '',
+                event: null,
+                options: {
                     valueAsDate: { from: startInputDate, to: endInputDate },
                     name,
                     isDisabled,
-                });
-            }
+                },
+            });
         },
         [name, onChange]
     );
 
-    const handleClickDate = useCallback(
-        (event, { dateStart, dateEnd }: { dateStart?: DateValue | Date; dateEnd?: DateValue | Date }) => {
+    const handleClickDate = useCallback<NonNullable<PropsCalendar['onChange']>>(
+        (event, { dateStart, dateEnd }) => {
             let newInputValue = '';
             if (dateStart) {
                 newInputValue = getStringFromDate(dateStart as Date);
@@ -185,56 +245,36 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                 const formattedEndDate = getStringFromDate(dateEnd);
 
                 newInputValue = `${formattedStartDate} - ${formattedEndDate}`;
-                isOpen && setOpen(false);
+                Boolean(isOpen) && !isCalendarAlwaysOpen && setOpen(false);
                 setActive(true);
             }
 
-            if (typeof onChange === 'function') {
-                onChange(event, { value: newInputValue, valueAsDate: { from: dateStart, to: dateEnd }, name });
-            }
+            onChange?.({
+                value: newInputValue,
+                event,
+                options: { valueAsDate: { from: dateStart, to: dateEnd }, name },
+            });
         },
-        [name, onChange, isOpen]
+        [name, onChange, isOpen, isCalendarAlwaysOpen]
     );
 
-    const handleKeyPress = useCallback(
+    const handleKeyPress = useCallback<NonNullable<InputDateRangeProps['onKeyPress']>>(
         (event) => {
             if (typeof onKeyPress === 'function') {
                 onKeyPress(event);
             }
             if (event.key === 'Enter') {
-                setOpen(!isOpen);
+                !isCalendarAlwaysOpen && setOpen(!isOpen);
+            }
+            if (event.key === 'ArrowDown') {
+                actionsRef.current?.setFocusGrid();
             }
         },
         [isOpen, onKeyPress]
     );
 
-    const handleClickDocument = useCallback((event): void => {
-        if (
-            event.target instanceof Node &&
-            datepickerRangeEl &&
-            datepickerRangeEl.current &&
-            !datepickerRangeEl.current.contains(event.target)
-        ) {
-            setOpen(false);
-            setActive(false);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (document.body && isOpen) {
-            document.body.addEventListener('click', handleClickDocument);
-        }
-
-        return () => {
-            if (document.body) {
-                document.body.removeEventListener('click', handleClickDocument);
-            }
-        };
-    }, [isOpen, handleClickDocument]);
-
     const dateValue = useMemo(() => {
         const inputValueArray = getInputValueArray(value);
-        dateValue?.end?.setSeconds(dateValue?.end?.getSeconds() + 3600 * 23 + 59 * 60 + 59);
 
         return isDisabled
             ? {}
@@ -244,33 +284,68 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
               };
     }, [value]);
 
-    const handleMouseDownCalendar = useCallback((e) => {
+    const handleMouseDownCalendar = useCallback<React.MouseEventHandler<HTMLDivElement>>((e) => {
         e.preventDefault();
     }, []);
 
+    const isFocusedOutside = useCallback(
+        (event: React.FocusEvent) => !datepickerRangeEl?.current?.contains(event.relatedTarget),
+        []
+    );
+
     const handleBlur = useCallback(
-        (event) => {
+        (event: React.FocusEvent) => {
             if (typeof onBlur === 'function') {
                 onBlur(event, {
                     value: `${dateValue.start}-${dateValue.end}`,
                     name,
                 });
             }
-            setOpen(false);
+            !isCalendarAlwaysOpen && setOpen(false);
             setActive(false);
         },
-        [onBlur, dateValue, minDate, name]
+        [onBlur, dateValue, minDate, name, isCalendarAlwaysOpen]
     );
+
+    const handleInputBlur = useCallback<NonNullable<InputDateRangeProps['onBlur']>>(
+        (event) => {
+            if (isFocusedOutside(event)) {
+                const value = event.target.value;
+                const completeLength = 23;
+                handleBlur(event);
+                handleChangeInput({
+                    value,
+                    event: undefined,
+                    options: {
+                        name,
+                        isComplete: value.length === completeLength,
+                        unmaskedValue: value,
+                    },
+                });
+            }
+        },
+        [handleBlur, handleChangeInput, isFocusedOutside, name]
+    );
+
+    const handleCalendarBlur = useCallback<NonNullable<PropsCalendar['onBlur']>>(
+        (event) => {
+            if (isFocusedOutside(event)) {
+                handleBlur(event);
+            }
+        },
+        [handleBlur, isFocusedOutside]
+    );
+
     return (
         <Box
             ref={refs.setReference}
-            onClick={handleClickInput}
             tabIndex={tabIndex}
-            onBlur={handleBlur}
-            id='datepickerrange-box'>
+            id='datepickerrange-box'
+            data-testid={testId?.container}
+            onClick={handleClickInput}>
             <InputBox>
                 <InputDateRange
-                    {...(attrs as {})}
+                    {...attrs}
                     postfix={
                         postfix ?? (
                             <CalendarIcon
@@ -282,41 +357,53 @@ export const DatepickerRange: React.FC<DatepickerRangeProps> = ({
                     prefix={prefix ?? null}
                     size={size}
                     name={name}
+                    min={minDate}
+                    max={maxDate}
                     active={active}
                     value={value}
                     localization={localization}
                     onChange={handleChangeInput}
                     onFocus={handleInputFocus}
-                    onKeyPress={handleKeyPress}
+                    onBlur={handleInputBlur}
+                    onKeyDown={handleKeyPress}
                 />
             </InputBox>
-            <FloatingPortal root={containerPortal}>
-                <CalendarBox
-                    data-id='calendar'
-                    ref={refs.setFloating}
-                    style={floatingStyles}
-                    $hidden={!isOpen}
-                    onMouseDown={handleMouseDownCalendar}>
-                    <Calendar
-                        dateStart={dateValue.start}
-                        dateEnd={dateValue.end}
-                        eventDates={eventDates}
-                        maxDate={maxDate}
-                        minDate={minDate}
-                        todayButton={false}
-                        ranged
-                        disabledDates={disabledDates}
-                        startingWeekDay={startingWeekDay}
-                        localization={localization}
-                        locale={locale}
-                        defaultDisplayedDate={defaultDisplayedDate}
-                        onChange={handleClickDate}
-                        onChangeDisplayedDate={onChangeDisplayedDate}
-                    />
-                </CalendarBox>
-            </FloatingPortal>
+            {isOpen && (
+                <ComponentWrapper
+                    component={dropdownPortal ? FloatingPortal : undefined}
+                    props={{ root: dropdownPortal }}>
+                    <CalendarBox
+                        data-id='calendar'
+                        data-testid={testId?.calendarBox}
+                        ref={composeRef<HTMLDivElement>(refs.setFloating, calendarBoxRef, datepickerRangeEl)}
+                        style={floatingStyles}
+                        $hidden={!isOpen}
+                        onMouseDown={handleMouseDownCalendar}>
+                        <Calendar
+                            dateStart={dateValue.start}
+                            dateEnd={dateValue.end}
+                            eventDates={eventDates}
+                            maxDate={maxDate}
+                            minDate={minDate}
+                            todayButton={todayButton}
+                            ranged
+                            disabledDates={disabledDates}
+                            startingWeekDay={startingWeekDay}
+                            localization={localization}
+                            locale={locale}
+                            defaultDisplayedDate={defaultDisplayedDate}
+                            defaultViewMode={view}
+                            actionsRef={actionsRef}
+                            testId={testId?.calendar}
+                            onChange={handleClickDate}
+                            onChangeDisplayedDate={onChangeDisplayedDate}
+                            onBlur={handleCalendarBlur}
+                        />
+                    </CalendarBox>
+                </ComponentWrapper>
+            )}
         </Box>
     );
-};
+}
 
 DatepickerRange.displayName = 'DatepickerRange';

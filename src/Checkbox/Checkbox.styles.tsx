@@ -1,19 +1,26 @@
 import styled, { css } from 'styled-components';
+import { checkbox } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const checkbox = getPresets('checkbox', {
+const presets = getPresets(
+    checkbox,
+    'checkbox'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     hover: null,
     disabled: null,
     error: null,
     checked: null,
 });
 
-const label = getPresets('checkbox.label', {
+const label = getPresets(
+    checkbox.label,
+    'checkbox.label'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     disabled: null,
 });
 
@@ -22,11 +29,11 @@ export const IconBox = styled.span`
     align-self: flex-start;
 `;
 
-interface Size<B = Breakpoints> {
+export interface Size<B = Breakpoints> {
     $size?: ResponsiveProp<'s' | 'm' | 'l', B>;
 }
 
-interface PropsIcon<B = Breakpoints> extends Size<B> {
+export interface PropsIcon<B = Breakpoints> extends Size<B> {
     $disabled?: boolean;
     $checked?: boolean;
     $indeterminate?: boolean;
@@ -41,32 +48,32 @@ export const Icon = styled.svg<PropsIcon>`
     color: transparent;
     transition: all 0.2s;
 
-    ${checkbox.base}
+    ${presets.base}
 
-    ${checkbox.size}
+    ${presets.size}
 
     ${({ $checked, $indeterminate }) =>
         ($checked || $indeterminate) &&
         css`
-            ${checkbox.checked}
+            ${presets.checked}
         `}
 
     ${({ $disabled }) =>
         $disabled &&
         css`
-            ${checkbox.disabled}
+            ${presets.disabled}
         `}
 
     ${({ $invalid }) =>
         $invalid &&
         css`
-            ${checkbox.error}
+            ${presets.error}
         `}
 
     ${({ $active }) =>
         $active &&
         css`
-            ${checkbox.hover}
+            ${presets.hover}
         `}
 `;
 
@@ -84,11 +91,11 @@ export const Box = styled.label<PropsBox>`
     align-items: center;
 
     &:hover ${Icon} {
-        ${checkbox.hover}
+        ${presets.hover}
         ${({ $disabled }) =>
             $disabled &&
             css`
-                ${checkbox.disabled}
+                ${presets.disabled}
             `}
     }
 

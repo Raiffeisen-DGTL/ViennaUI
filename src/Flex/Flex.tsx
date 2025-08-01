@@ -4,7 +4,7 @@ import { Item } from './Item';
 import { Box, PropsBox } from './Flex.styles';
 import { WithMedia } from '../Utils/responsiveness';
 
-interface FlexBaseProps {
+export interface FlexBaseProps {
     direction?: PropsBox['$direction'];
     /** This sets display to inline-flex */
     inline?: PropsBox['$inline'];
@@ -20,6 +20,13 @@ interface FlexBaseProps {
     flow?: PropsBox['$flow'];
     /** This sets spacing between the items inside the container */
     gap?: PropsBox['$gap'];
+    /** This sets the vertical spacing between the items inside the container */
+    rowGap?: PropsBox['$gap'];
+    /** This sets the horizontal spacing between the items inside the container */
+    columnGap?: PropsBox['$gap'];
+    flex?: PropsBox['$flex'];
+    minHeight?: PropsBox['$minHeight'];
+    minWidth?: PropsBox['$minWidth'];
 }
 
 export interface FlexProps
@@ -40,6 +47,11 @@ export const Flex = forwardRef<HTMLDivElement, FlexProps>((props, ref) => {
         wrap,
         flow,
         gap,
+        rowGap,
+        columnGap,
+        flex,
+        minHeight,
+        minWidth,
         ...rest
     } = props;
 
@@ -47,8 +59,8 @@ export const Flex = forwardRef<HTMLDivElement, FlexProps>((props, ref) => {
 
     return (
         <Box
-            {...(attrs as {})}
-            {...(propsStyled as {})}
+            {...attrs}
+            {...propsStyled}
             ref={ref}
             $inline={inline}
             $direction={direction}
@@ -58,7 +70,12 @@ export const Flex = forwardRef<HTMLDivElement, FlexProps>((props, ref) => {
             $alignContent={alignContent}
             $wrap={wrap}
             $flow={flow}
-            $gap={gap}>
+            $gap={gap}
+            $rowGap={rowGap}
+            $columnGap={columnGap}
+            $flex={flex}
+            $minHeight={minHeight}
+            $minWidth={minWidth}>
             {children}
         </Box>
     );

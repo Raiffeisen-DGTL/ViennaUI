@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { pagination } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('pagination', {
+const presets = getPresets(
+    pagination,
+    'pagination'
+)({
     gap: '$size',
 });
 

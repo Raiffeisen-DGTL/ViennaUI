@@ -34,7 +34,7 @@ export interface ColProps extends BoxStyled<typeof Box, PropsBox> {
 
 export const Col: FC<ColProps> = ({ children, size = 'auto', offset = 0, order, ...attrs }) => {
     return (
-        <Box {...(attrs as {})} $size={size} $offset={offset} $order={order}>
+        <Box {...attrs} $size={size} $offset={offset} $order={order}>
             {children}
         </Box>
     );

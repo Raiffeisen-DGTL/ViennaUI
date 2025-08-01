@@ -1,12 +1,19 @@
 import styled from 'styled-components';
+import { datetimepicker } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const left = getPresets('datetimepicker.left', {
+const left = getPresets(
+    datetimepicker.left,
+    'datetimepicker.left'
+)({
     base: null,
     custom: null,
 });
 
-const right = getPresets('datetimepicker.right', {
+const right = getPresets(
+    datetimepicker.right,
+    'datetimepicker.right'
+)({
     base: null,
     isInput: null,
     custom: null,

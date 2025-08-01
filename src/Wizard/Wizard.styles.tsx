@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled, { css } from 'styled-components';
+import { wizard } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { BoxStyled } from '../Utils/styled';
 
-const header = getPresets('wizard.header', {
+const header = getPresets(
+    wizard.header,
+    'wizard.header'
+)({
     base: null,
     orientation: '$orientation',
     title: null,
@@ -11,27 +15,42 @@ const header = getPresets('wizard.header', {
     stepTitle: null,
 });
 
-const stepPoints = getPresets('wizard.stepPoints', {
+const stepPoints = getPresets(
+    wizard.stepPoints,
+    'wizard.stepPoints'
+)({
     base: null,
     orientation: '$orientation',
     horizontalRight: '$size',
 });
 
-const stepPoint = getPresets('wizard.stepPoint', {
+const stepPoint = getPresets(
+    wizard.stepPoint,
+    'wizard.stepPoint'
+)({
     base: null,
     type: '$type',
     hover: '$type',
 });
 
-const body = getPresets('wizard.body', {
+const body = getPresets(
+    wizard.body,
+    'wizard.body'
+)({
     size: '$size',
 });
 
-const footer = getPresets('wizard.footer', {
+const footer = getPresets(
+    wizard.footer,
+    'wizard.footer'
+)({
     size: '$size',
 });
 
-const presets = getPresets('wizard', {
+const presets = getPresets(
+    wizard,
+    'wizard'
+)({
     form: null,
     custom: null,
 });
@@ -50,10 +69,9 @@ export const Header = styled.div<PropsHeader>`
     position: relative;
     display: flex;
 
-    ${({ $padding }) =>
-        css`
-            padding: 0 ${$padding}px 0 ${$padding}px;
-        `}
+    ${({ $padding }) => css`
+        padding: 0 ${$padding}px 0 ${$padding}px;
+    `}
 
     ${header.base}
     ${header.orientation}
@@ -132,10 +150,11 @@ interface PropsBodyStyled {
 const BodyStyled = styled.div<PropsBodyStyled>`
     ${body.size}
 `;
-interface PropsBody extends BoxStyled<typeof BodyStyled, PropsBodyStyled> {
+export interface PropsBody extends BoxStyled<typeof BodyStyled, PropsBodyStyled> {
     size?: PropsBodyStyled['$size'];
+    children?: ReactNode;
 }
-export const Body: React.FC<PropsBody> = ({ size = 'm', ...attrs }) => <BodyStyled {...(attrs as {})} $size={size} />;
+export const Body: React.FC<PropsBody> = ({ size = 'm', ...attrs }) => <BodyStyled {...attrs} $size={size} />;
 
 interface PropsFooterStyled {
     $size: Size;
@@ -143,11 +162,10 @@ interface PropsFooterStyled {
 const FooterStyled = styled.div<PropsFooterStyled>`
     ${footer.size}
 `;
-interface PropsFooter extends BoxStyled<typeof FooterStyled, PropsFooterStyled> {
+export interface PropsFooter extends BoxStyled<typeof FooterStyled, PropsFooterStyled> {
     size?: PropsFooterStyled['$size'];
+    children?: ReactNode;
 }
-export const Footer: React.FC<PropsFooter> = ({ size = 'm', ...attrs }) => (
-    <FooterStyled {...(attrs as {})} $size={size} />
-);
+export const Footer: React.FC<PropsFooter> = ({ size = 'm', ...attrs }) => <FooterStyled {...attrs} $size={size} />;
 
 export const Step = styled.div``;

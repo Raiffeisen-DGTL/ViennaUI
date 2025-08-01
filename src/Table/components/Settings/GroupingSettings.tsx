@@ -1,14 +1,15 @@
 import React, { FC, ReactNode, useCallback, useMemo } from 'react';
 import { Text } from '../../../Typography';
-import { Select } from '../../../Select';
+import { Select, SelectProps } from '../../../Select';
 import { FormField } from '../../../FormField';
 import { Box } from './GroupingSettings.styles';
 import { useTableService, useTableLocalization } from '../Context';
-import { GroupByOption } from '../GroupBy/GroupByModule';
+import { GroupByOption, GroupByProps } from '../GroupBy';
+import { TableReactComponent } from '../../types';
 
 interface GroupProps {
     children: ReactNode;
-    onGroupBy?: (event: React.MouseEvent<HTMLElement>, data: { id?: string }) => void;
+    onGroupBy?: (event: React.MouseEvent<HTMLElement>, data: { id: string }) => void;
 }
 interface ItemProps {
     id: string;
@@ -19,44 +20,50 @@ interface ItemProps {
 
 export type GroupingSettingsProps = FC<GroupProps> & { Item: FC<ItemProps> };
 
-const parseGroupingOptions = (children): [GroupByOption[], string] => {
-    let selectedOption;
-    const options: GroupByOption[] = React.Children.map(React.Children.toArray(children), (child: any) => {
-        // checks child type
-        if (!child?.type?.displayName || child.type?.displayName !== 'Table.GroupingSettings.Item') {
-            // eslint-disable-next-line no-console
-            console.warn(`Unrecognized component, expected: Table.GroupingSettings.Item, received: ${child?.type}`);
-            return undefined;
-        }
-
-        const { id, name, selected, children } = child.props;
-
-        if (selected) {
-            selectedOption = id;
-        }
-
-        const groups = React.Children.map(React.Children.toArray(children), (child: any) => {
-            if (!child?.type?.displayName || child.type?.displayName !== 'GroupBy') {
+const parseGroupingOptions = <T,>(children: ReactNode): [GroupByOption<T>[], string] => {
+    let selectedOption: string = '';
+    const options: GroupByOption<T>[] = React.Children.map(
+        React.Children.toArray(children) as TableReactComponent[],
+        (child: TableReactComponent) => {
+            // checks child type
+            if (!child?.type?.displayName || child.type?.displayName !== 'Table.GroupingSettings.Item') {
                 // eslint-disable-next-line no-console
-                console.warn(`Unrecognized component, expected: Table.GroupBy, received: ${child?.type}`);
+                console.warn(`Unrecognized component, expected: Table.GroupingSettings.Item, received: ${child?.type}`);
                 return undefined;
             }
 
-            return child.props;
-        });
+            const { id, name, selected, children } = (child as TableReactComponent<ItemProps>).props;
 
-        return { id, name, groups };
-    });
+            if (selected) {
+                selectedOption = id;
+            }
+
+            const groups = React.Children.map(
+                React.Children.toArray(children) as TableReactComponent[],
+                (child: TableReactComponent) => {
+                    if (!child?.type?.displayName || child.type?.displayName !== 'GroupBy') {
+                        // eslint-disable-next-line no-console
+                        console.warn(`Unrecognized component, expected: Table.GroupBy, received: ${child?.type}`);
+                        return undefined;
+                    }
+
+                    return (child as TableReactComponent<GroupByProps<T>>).props;
+                }
+            );
+
+            return { id, name, groups };
+        }
+    );
 
     return [options, selectedOption];
 };
 
-export const GroupingSettings: GroupingSettingsProps = (props) => {
+export const GroupingSettings: GroupingSettingsProps = <T,>(props: GroupProps) => {
     const { children, onGroupBy } = props;
     const localize = useTableLocalization();
-    const { getGroupBy, setGroupBy, setGroupByOptions } = useTableService();
+    const { getGroupBy, setGroupBy, setGroupByOptions } = useTableService<T>();
     const list = useMemo(() => {
-        const [list, selected] = parseGroupingOptions(children);
+        const [list, selected] = parseGroupingOptions<T>(children);
         setGroupByOptions(list, selected);
 
         return list;
@@ -70,16 +77,17 @@ export const GroupingSettings: GroupingSettingsProps = (props) => {
         ));
     }, [list]);
 
-    const onSelect = useCallback(
-        (e, data) => {
-            setGroupBy(data.value.id);
+    const onSelect: SelectProps<GroupByOption<T>>['onSelect'] = ({ value, event }) => {
+        const id = (value as GroupByOption<T>).id;
+        setGroupBy(id);
 
-            if (typeof onGroupBy === 'function') {
-                onGroupBy(e, { id: data.value.id });
-            }
-        },
-        [list, setGroupBy]
-    );
+        if (typeof onGroupBy === 'function') {
+            // TODO: некорректный тип в SelectProps или в onGroupBy
+            onGroupBy(event as React.MouseEvent<HTMLElement>, { id });
+        }
+    };
+
+    const onSelectMemo = useCallback(onSelect, [list, setGroupBy]);
 
     const currentGroupBy = useMemo(() => list.find((group) => group.id === getGroupBy()?.id), [getGroupBy(), list]);
 
@@ -94,8 +102,8 @@ export const GroupingSettings: GroupingSettingsProps = (props) => {
                 <FormField.Content>
                     <Select
                         size='m'
-                        onSelect={onSelect}
-                        valueToString={(item) => {
+                        onSelect={onSelectMemo}
+                        valueToString={(item: GroupByOption<T>) => {
                             return item?.name ?? '';
                         }}
                         value={currentGroupBy}>
@@ -107,7 +115,7 @@ export const GroupingSettings: GroupingSettingsProps = (props) => {
     );
 };
 
-const Item = (props) => <>{props.name}</>;
+const Item = (props: ItemProps) => <>{props.name}</>;
 Item.displayName = 'Table.GroupingSettings.Item';
 
 GroupingSettings.Item = Item;

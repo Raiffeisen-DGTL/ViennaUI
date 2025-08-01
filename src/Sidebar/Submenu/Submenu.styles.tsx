@@ -1,25 +1,35 @@
 import styled, { css } from 'styled-components';
+import { sidebar } from 'vienna.ui-theme';
 import { Box as Item } from '../Item/Item.styles';
-import { getPresets } from '../../Utils/styling';
+import { getPresets, getPresetsCustom } from '../../Utils/styling';
 
-const presets = getPresets('sidebar.submenu', {
+const presets = getPresets(
+    sidebar.submenu,
+    'sidebar.submenu'
+)({
     item: null,
 });
 
-const menu = getPresets('sidebar.submenu.menu', {
+const menu = getPresets(
+    sidebar.submenu.menu,
+    'sidebar.submenu.menu'
+)({
     base: null,
     item: null,
 });
 
-const item = getPresets('sidebar.item', {
+const item = getPresets(
+    sidebar.item,
+    'sidebar.item'
+)({
     active: null,
 });
 
-const custom = getPresets('sidebar.item.custom', {
+const custom = getPresetsCustom('sidebar.item.custom')({
     active: null,
 });
 
-interface PropsSubmenuTitle {
+export interface PropsSubmenuTitle {
     $active?: boolean;
 }
 export const SubmenuTitle = styled.div<PropsSubmenuTitle>`
@@ -34,7 +44,7 @@ export const SubmenuTitle = styled.div<PropsSubmenuTitle>`
         `}
 
     ${Item} {
-        flex-grow: 1;
+        flex-grow: 0;
         ${presets.item}
     }
 `;

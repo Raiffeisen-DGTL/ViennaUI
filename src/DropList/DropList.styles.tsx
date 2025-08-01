@@ -1,12 +1,18 @@
 import styled, { css } from 'styled-components';
+import { dropList } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
+import { ReactRefType } from '../Utils';
 
-const list = getPresets('dropList.list', {
+const list = getPresets(
+    dropList.list,
+    'dropList.list'
+)({
     base: null,
     custom: null,
 });
 
 export interface PropsBox {
+    ref?: ReactRefType<HTMLDivElement>;
     $width?: number;
     $maxHeight?: number;
     $fitItems?: boolean;

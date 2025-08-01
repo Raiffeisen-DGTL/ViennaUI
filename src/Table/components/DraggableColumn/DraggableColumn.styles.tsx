@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { getPresets } from '../../../Utils/styling';
 
-const presets = getPresets('table.draggable', {
+const presets = getPresets(
+    table.draggable,
+    'table.draggable'
+)({
     box: null,
     drop: null,
 });

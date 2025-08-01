@@ -17,6 +17,7 @@ export const Visa: FC<VisaProps> = (props) => {
     const [width, height] = sizes[size];
 
     return (
+        // eslint-disable-next-line @typescript-eslint/ban-types
         <svg {...(attrs as {})} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 57 19' width={width} height={height}>
             <path
                 fill='#20347D'

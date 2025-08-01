@@ -14,6 +14,7 @@ src/Table/components/Settings/GroupingSettings.tsx
 **/*.stories.tsx
 **/__tests__/**
 **/*.spec.tsx
+**/*.test.tsx
 .docz
 package-lock.json
 src/jest.config.js

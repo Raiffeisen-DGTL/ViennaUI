@@ -1,10 +1,10 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { Download } from 'vienna.icons';
+import { DownloadIcon as Download } from 'vienna.icons';
 import { FileLoaderButton, FileLoaderButtonProps } from './FileLoaderButton';
 import { Groups } from '../Groups';
 import { Link } from '../Link';
-import { FCCFile } from '../FileLoader';
+import { FCCFile } from '../File';
 
 export default {
     title: 'Development/FileLoaderButton',
@@ -12,16 +12,16 @@ export default {
 } as Meta;
 
 export const Overview: Story<FileLoaderButtonProps> = (args) => {
-    const [files, setFiles] = React.useState<FCCFile[]>([]);
+    const [files, setFiles] = React.useState<File[]>([]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
-            setFiles(newFiles);
+        ({ value: newFiles }) => {
+            setFiles([...files, ...newFiles]);
         },
         [files]
     );
     return (
         <Groups>
-            <FileLoaderButton {...args} accept='xls,xlsx' onChange={changeHandler}>
+            <FileLoaderButton onChange={changeHandler} {...args}>
                 <Download /> Загрузить файл
             </FileLoaderButton>
             {files[0] && (
@@ -37,16 +37,16 @@ export const Overview: Story<FileLoaderButtonProps> = (args) => {
 };
 
 export const MultipleFiles: Story<FileLoaderButtonProps> = (args) => {
-    const [files, setFiles] = React.useState([]);
+    const [files, setFiles] = React.useState<File[]>([]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
-            setFiles(newFiles);
+        ({ value: newFiles }) => {
+            setFiles([...files, ...newFiles]);
         },
         [files]
     );
     return (
         <Groups>
-            <FileLoaderButton multiple onChange={changeHandler} {...args}>
+            <FileLoaderButton files={files} multiple onChange={changeHandler} maxFiles={3} {...args}>
                 <Download /> Загрузить файл
             </FileLoaderButton>
             {!!files.length && (
@@ -65,7 +65,7 @@ MultipleFiles.storyName = 'Множественный выбор файлов';
 export const Playwright: Story<FileLoaderButtonProps> = (args) => {
     const [files, setFiles] = React.useState<FCCFile[]>([{ date: new Date('01.01.2023').toISOString() }]);
     const changeHandler = React.useCallback(
-        (e, newFiles) => {
+        ({ value: newFiles }) => {
             setFiles(newFiles);
         },
         [files]

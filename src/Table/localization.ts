@@ -17,9 +17,12 @@ export interface TableLocalization {
     'ds.table.emptyColumns.title'?: string;
     'ds.table.emptyColumns.description'?: string;
     'ds.table.emptyColumns.showAllColumns'?: string;
+    'ds.table.invalidData.title'?: string;
+    'ds.table.invalidData.description'?: string;
+    'ds.table.settings.selectAll.cancel'?: string;
 }
 
-export const defaultTableLocalization: TableLocalization = {
+export const defaultTableLocalization: Required<TableLocalization> = {
     'ds.table.filter.sortDown': 'Сортировать',
     'ds.table.settings': 'Настройка таблицы',
     'ds.table.filter.sortUp': 'Сортировать',
@@ -33,4 +36,7 @@ export const defaultTableLocalization: TableLocalization = {
     'ds.table.emptyColumns.description':
         'В таблице отключены все колонки. Выберите колонки для отображения в настройках таблицы или включите все доступные.',
     'ds.table.emptyColumns.showAllColumns': 'Включить все колонки',
+    'ds.table.invalidData.title': 'Некорректные данные для отображения',
+    'ds.table.invalidData.description': 'Переданные в таблицу данные не являются списком и не могут быть отображены',
+    'ds.table.settings.selectAll.cancel': 'Отменить',
 };

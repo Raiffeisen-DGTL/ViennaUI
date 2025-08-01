@@ -2,7 +2,6 @@ import { FC, ReactNode, useState } from 'react';
 import { useInterval } from './useInterval';
 
 export interface TimerProps {
-    children?: ReactNode;
     id?: string;
     start?: number;
     stop?: number;
@@ -12,10 +11,10 @@ export interface TimerProps {
     allowNegatives?: boolean;
     onChange?: (count: number, id?: string) => void;
     onStop?: (count: number, id?: string) => void;
+    children?: ReactNode | ((count: number, id?: string) => ReactNode);
 }
 
 export const Timer: FC<TimerProps> = ({
-    children,
     id,
     stop,
     delay = 1000,
@@ -25,6 +24,7 @@ export const Timer: FC<TimerProps> = ({
     onStop,
     start = 0,
     step = 1,
+    children,
 }: TimerProps) => {
     const [count, setCount] = useState(start);
 
@@ -42,7 +42,6 @@ export const Timer: FC<TimerProps> = ({
         onStop(count, id);
     }
 
-    // @ts-ignore
     return children && typeof children === 'function' ? children(count, id) : count;
 };
 

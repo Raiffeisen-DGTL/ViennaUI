@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import { Input, InputProps } from './Input';
-import { TaskDone } from 'vienna.icons';
+import { TaskDoneIcon as TaskDone } from 'vienna.icons';
 
 export default {
     title: 'Development/Input',
@@ -80,4 +80,20 @@ export const States: Story<InputProps> = (args) => {
             <Input placeholder='Placeholder' design='material' disabled />
         </>
     );
+};
+
+export const Placeholders = (args) => {
+    return (
+        <>
+            <Input smartPlaceholder='000000' />
+            <Input smartPlaceholder='000000' value='111' />
+            <Input placeholder='placeholder' />
+            <Input placeholder='placeholder' smartPlaceholder='000000' />
+            <Input placeholder='placeholder' smartPlaceholder='000000' value='111' />
+        </>
+    );
+};
+
+export const ViewOnly: Story<InputProps> = (args) => {
+    return <Input viewOnly value={'Какой-то текст...'} />;
 };

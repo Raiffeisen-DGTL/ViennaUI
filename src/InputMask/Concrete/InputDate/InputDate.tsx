@@ -1,13 +1,14 @@
-import React, { forwardRef, Ref, useEffect } from 'react';
+import React, { forwardRef, useCallback, useRef, useState } from 'react';
 import { MaskedRange } from 'imask';
-import { InputDateLocalizationProps, defaultInputDateLocalization, InputDateLocalization } from './localization';
-import { InputMaskProps } from '../../InputMask';
+import { endOfDay, format, parse, startOfDay } from 'date-fns';
+import { InputDateLocalizationProps, defaultInputDateLocalization } from './localization';
+import InputMask, { InputMaskOnChangeType, InputMaskProps } from '../../InputMask';
 import { useLocalization } from '../../../Localization';
-import { Input } from '../../../Input';
-import { useMask } from '../../../Utils/useMask';
+import { dateFormat } from '../../utils';
+import { isFalsy } from '@/Utils/isFalsy/isFalsy';
 
 export interface InputDateProps
-    extends Omit<InputMaskProps, 'type' | 'value' | 'min' | 'max' | 'maskOptions'>,
+    extends Omit<InputMaskProps, 'type' | 'value' | 'min' | 'max' | 'maskOptions' | 'onChange'>,
         InputDateLocalizationProps {
     /** Вариант маски (date по умолчанию) */
     type?: 'date' | 'time' | 'datetime';
@@ -15,160 +16,168 @@ export interface InputDateProps
     lazy?: boolean;
     min?: Date;
     max?: Date;
+    onChange?: InputMaskOnChangeType<string | Date>;
 }
 
-const format = (value: any) => (value.toString().length >= 2 ? value : `0${value}`);
-
-const mask = (type, min, max): any => {
+const mask = ({ type, min, max }: Pick<InputDateProps, 'type' | 'min' | 'max'>) => {
     // Включаем сами значения в диапазон
-    const normilizeMin = min ? new Date(min.setHours(0, 0, 0, 0)) : new Date(1900, 0, 1);
-    const normilizeMax = max ? new Date(max.setHours(23, 59, 59, 999)) : new Date(9999, 0, 1);
+    const normalizeMin = min ? startOfDay(min) : new Date(1900, 0, 1);
+    const normalizeMax = max ? endOfDay(max) : new Date(9999, 11, 31);
 
     switch (type) {
         case 'time':
             return {
-                mask: 'HH:MM',
+                mask: 'HH:mm',
                 blocks: {
                     HH: {
                         mask: MaskedRange,
                         from: 0,
                         to: 23,
                     },
-                    MM: {
-                        mask: MaskedRange,
-                        from: 0,
-                        to: 59,
-                    },
-                },
-            };
-        case 'datetime':
-            return {
-                mask: 'DATE HH:MM',
-                blocks: {
-                    DATE: {
-                        mask: Date,
-                        min: normilizeMin,
-                        max: normilizeMax,
-                    },
-                    HH: {
-                        mask: MaskedRange,
-                        from: 0,
-                        to: 23,
-                    },
-                    MM: {
+                    mm: {
                         mask: MaskedRange,
                         from: 0,
                         to: 59,
                     },
                 },
                 format: (value: string | Date) => {
-                    let result = value || '';
-                    if (value instanceof Date) {
-                        // методы toIsoString/toGMTString toUTCString - возвращают время и дату без поправки на локальную временную зону
-                        // метод toLocalString - возвращает в локальном формате и невозможно применить общую регулярку
-                        // оставшиеся методы возвращают number, который необходимо дополнить первым 0 если это необходимо
-                        const day = format(value.getDate());
-                        const month = format(value.getMonth() + 1);
-                        const year = format(value.getFullYear());
-                        const hours = format(value.getHours());
-                        const minutes = format(value.getMinutes());
-                        result = `${day}.${month}.${year} ${hours}:${minutes}`;
-                    }
-
-                    return result;
+                    return (value instanceof Date ? format(value, 'HH:mm') : value) || '';
+                },
+            };
+        case 'datetime':
+            return {
+                mask: 'DATE HH:mm',
+                blocks: {
+                    DATE: {
+                        mask: Date,
+                        min: normalizeMin,
+                        max: normalizeMax,
+                    },
+                    HH: {
+                        mask: MaskedRange,
+                        from: 0,
+                        to: 23,
+                    },
+                    mm: {
+                        mask: MaskedRange,
+                        from: 0,
+                        to: 59,
+                    },
+                },
+                format: (value: string | Date) => {
+                    return (value instanceof Date ? format(value, 'dd.MM.yyyy HH:mm') : value) || '';
                 },
             };
         case 'date':
         default:
             return {
                 mask: Date,
-                min: normilizeMin,
-                max: normilizeMax,
-                format: (date: string | Date) => {
-                    if (!date || typeof date === 'string') {
-                        return date;
-                    }
-
-                    const day = date.getDate();
-                    const month = date.getMonth() + 1;
-                    const year = date.getFullYear();
-
-                    return [day < 10 ? `0${day}` : day, month < 10 ? `0${month}` : month, year].join('.');
+                format: (value: string | Date) => {
+                    return dateFormat(value);
                 },
-
-                parse: (str) => {
-                    const yearMonthDay = str.split('.');
-                    const isYearSim = normilizeMin.getFullYear() === normilizeMax.getFullYear();
-                    return new Date(
-                        isYearSim ? normilizeMin.getFullYear() : yearMonthDay[2],
-                        yearMonthDay[1] - 1,
-                        yearMonthDay[0]
-                    );
+                parse: (str: string) => {
+                    const parsedDate = parse(str, 'dd.MM.yyyy', new Date());
+                    if (normalizeMin && parsedDate.valueOf() < normalizeMin.valueOf()) {
+                        return normalizeMin;
+                    }
+                    if (normalizeMax && parsedDate.valueOf() > normalizeMax.valueOf()) {
+                        return normalizeMax;
+                    }
+                    return parsedDate;
                 },
             };
     }
 };
 
-export const InputDate = forwardRef<HTMLInputElement, InputDateProps>((props, externalRef) => {
+export const InputDate = forwardRef<HTMLInputElement, InputDateProps>((props, ref) => {
     const {
-        value: externalValue,
+        value,
+        type = 'date',
+        placeholder,
+        name,
         min,
         max,
-        type = 'date',
         lazy = true,
         onChange,
         onComplete,
+        onBlur,
         localization,
         ...rest
     } = props;
     const l10n = useLocalization(localization, defaultInputDateLocalization);
-    const placeholderMask = l10n(`ds.inputDate.placeholder.${type}` as keyof InputDateLocalization);
+    const placeholderMask = l10n(`ds.inputDate.placeholder.${type}`);
+    const innerValue = useRef<InputDateProps['value']>(value);
+    const innerIsComplete = useRef<boolean>(false);
+    const [hasMinMax, setHasMinMax] = useState<boolean>(false);
 
-    const { ref, value, setValue, setTypedValue, maskRef } = useMask({
-        maskOptions: mask(type, min, max),
-        externalValue,
-        onChange,
-        onComplete,
+    // Необходимо, так как значение может обновиться извне.
+    // Например, при выставлении даты через календарь в компоненте Datepicker.
+    innerValue.current = value;
+    const maskOptions = mask({
+        type,
+        min: hasMinMax ? min : undefined,
+        max: hasMinMax ? max : undefined,
     });
 
-    useEffect(() => {
-        if (externalValue instanceof Date) {
-            setTypedValue(externalValue);
-        } else if (externalValue !== value) {
-            setValue(externalValue || '');
-        }
-    }, [externalValue]);
+    const maskedValue = maskOptions.format?.(value ?? '');
 
-    useEffect(() => {
-        if (value === '') {
-            maskRef.current?.updateValue();
+    const handleChange = useCallback<NonNullable<InputMaskProps['onChange']>>(
+        ({ value, event, options }) => {
+            setHasMinMax(true);
+            if (isFalsy(value)) {
+                if (onChange && typeof onChange === 'function') {
+                    onChange({ value: '', event, options });
+                }
+                return;
+            }
+            if (typeof onChange !== 'function' || typeof value !== 'string') {
+                return;
+            }
+            innerValue.current = value;
+            innerIsComplete.current = options.isComplete;
+            if (options.isComplete) {
+                onChange({ value, event, options });
+            }
+        },
+        [maskedValue, onChange]
+    );
+
+    const handleBlur: InputMaskProps['onBlur'] = (e) => {
+        setHasMinMax(false);
+        if (typeof onBlur === 'function') {
+            onBlur(e, {
+                value: innerValue.current instanceof Date ? innerValue.current.toString() : innerValue.current || '',
+            });
         }
-    }, [value]);
+        if (typeof onChange !== 'function' || maskedValue === innerValue.current) {
+            return;
+        }
+
+        onChange({
+            value: innerValue.current || '',
+            event: undefined,
+            options: {
+                name,
+                isComplete: innerIsComplete.current,
+                unmaskedValue: value,
+            },
+        });
+    };
 
     return (
-        <Input
-            {...rest}
+        <InputMask
+            ref={ref}
+            maskOptions={maskOptions as InputMaskProps['maskOptions']}
             value={value}
+            name={name}
+            placeholder={placeholder ?? placeholderMask}
             smartPlaceholder={lazy ? placeholderMask : ''}
-            ref={composeRef(ref, externalRef)}
+            onChange={handleChange}
+            onComplete={onComplete}
+            onBlur={handleBlur}
+            {...rest}
         />
     );
 });
 
 InputDate.displayName = 'InputDate';
-
-function composeRef<T>(...refs: Ref<T>[]): Ref<T> {
-    if (refs.length <= 1) {
-        return refs[0];
-    }
-
-    return (node: T) => {
-        refs.forEach((ref) => {
-            if (typeof ref === 'function') {
-                ref(node);
-            } else if (typeof ref === 'object' && ref && 'current' in ref) {
-                (ref as unknown as Record<string, T>).current = node;
-            }
-        });
-    };
-}

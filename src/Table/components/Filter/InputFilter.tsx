@@ -1,19 +1,22 @@
-import React, { useCallback } from 'react';
-import { Input } from '../../../Input';
+import React, { useMemo, useState } from 'react';
+import { Input, InputProps } from '../../../Input';
 import { useTableService } from '../Context';
 import { useFilterContext } from './FilterContext';
+import { debounce } from '../../../Utils';
 
-export const InputFilter = (props) => {
+export const InputFilter = (props: Omit<InputProps, 'value' | 'size' | 'onChange'>) => {
     const id = useFilterContext();
     const { getFilterColumn, setFilter } = useTableService();
-    const value = getFilterColumn(id) ?? '';
+    const value: string = (getFilterColumn(id) as string) ?? '';
 
-    const onChange = useCallback(
-        (_, { value }) => {
-            setFilter(id, value || undefined);
-        },
-        [setFilter]
-    );
+    const [localValue, setLocalValue] = useState(value);
 
-    return <Input {...props} value={value} size='s' onChange={onChange} />;
+    const debounced = useMemo(() => debounce(setFilter), [setFilter]);
+
+    const onChange: InputProps['onChange'] = ({ value: newValue }) => {
+        setLocalValue(newValue);
+        debounced(id, newValue);
+    };
+
+    return <Input {...props} value={localValue} size='s' onChange={onChange} />;
 };

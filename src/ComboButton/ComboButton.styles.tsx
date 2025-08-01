@@ -1,15 +1,22 @@
 import styled from 'styled-components';
+import { comboButton } from 'vienna.ui-theme';
 import { Button, ButtonProps } from '../Button';
 import { getPresets } from '../Utils/styling';
 
-const leftButton = getPresets('comboButton.leftButton', {
+const leftButton = getPresets(
+    comboButton.leftButton,
+    'comboButton.leftButton'
+)({
     base: null,
     design: '$design',
     focus: '$design',
     custom: null,
 });
 
-const rightButton = getPresets('comboButton.rightButton', {
+const rightButton = getPresets(
+    comboButton.rightButton,
+    'comboButton.rightButton'
+)({
     base: null,
     design: '$design',
     custom: null,
@@ -22,7 +29,7 @@ export const Wrapper = styled.div`
 `;
 
 interface PropsButton {
-    $design: ButtonProps['design'];
+    $design?: ButtonProps['design'];
 }
 
 export const LeftButton = styled(Button)<PropsButton>`

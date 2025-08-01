@@ -1,19 +1,24 @@
 import styled, { css } from 'styled-components';
+import { alert } from 'vienna.ui-theme';
+import { CloseCancelXIcon } from 'vienna.icons';
 import { getPresets } from '../Utils/styling';
-import { responsiveProp, responsivePreset, ResponsiveProp } from '../Utils/responsiveness';
+import { ResponsiveProp } from '../Utils/responsiveness';
 
-const presets = getPresets('alert', {
+const presets = getPresets(
+    alert,
+    'alert'
+)({
     base: null,
     design: '$design',
     dynamic: null,
     title: null,
     icon: null,
     rightContainer: null,
-    titleGap: null,
     actionsGap: null,
+    titleGap: null,
     custom: null,
     textContainer: null,
-    compact: responsivePreset('$compact', false),
+    compact: ['$compact', false],
 });
 
 export const IconContainer = styled.div`
@@ -37,12 +42,11 @@ export const ContentContainer = styled.div`
     width: 100%;
 `;
 
-type AlertDesign = 'plain' | 'error' | 'warning' | 'success' | 'accent';
+export type AlertDesign = 'plain' | 'error' | 'warning' | 'success' | 'accent';
 export interface PropsBox {
     $design?: AlertDesign;
     $dynamic?: boolean;
     $compact?: ResponsiveProp<boolean>;
-    $compactBelow?: number;
 }
 export const Box = styled.div<PropsBox>`
     display: flex;
@@ -60,36 +64,31 @@ export const Box = styled.div<PropsBox>`
         `}
 
     ${TextContainer} {
-        ${responsiveProp(
-            'alert',
-            '$compact',
-            (isCompact: boolean) => css`
+        ${presets.compact.responsive(
+            (isCompact) => css`
                 flex-direction: ${isCompact ? 'column' : 'row'};
             `
-        )};
+        )}
+        ${({ $compact }) =>
+            $compact &&
+            css`
+                ${Title} {
+                    ${presets.titleGap}
+                }
+            `}
     }
 
     ${Title} {
         ${presets.compact}
     }
 
-    ${({ $compactBelow }) =>
-        $compactBelow &&
-        css`
-            @media (max-width: ${$compactBelow}px) {
-                ${TextContainer} {
-                    flex-direction: column;
-
-                    ${Title} {
-                        ${presets.titleGap}
-                    }
-                }
-            }
-        `}
-
     ${presets.custom}
 `;
 
 export const Actions = styled.div`
     ${presets.actionsGap}
+`;
+
+export const CloseIcon = styled(CloseCancelXIcon)`
+    cursor: pointer;
 `;

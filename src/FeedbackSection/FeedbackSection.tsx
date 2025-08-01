@@ -1,13 +1,20 @@
 import React, { useEffect, useState, FC } from 'react';
-import { Like, Dislike, CheckmarkFilled } from 'vienna.icons';
+import { LikeIcon, DislikeIcon, CheckmarkFilledIcon } from 'vienna.icons';
 import { color } from 'vienna.tokens';
 import { Form, DescriptionWrapper } from './FeedbackSection.styles';
 import { Flex } from '../Flex';
 import { Text } from '../Typography';
 import { Button } from '../Button';
-import { Textarea, TextareaProps } from '../Textarea';
+import { Textarea, TextareaProps, TextareaPropsWithRef } from '../Textarea';
 import { FormField } from '../FormField';
 import { useForm } from '../Utils/useForm';
+import { AnyObject } from '../Utils';
+
+export const defaultFeedbackSectionTestId: FeedbackSectionProps['testId'] = {
+    btnYes: 'feedback-section_btn-yes',
+    btnNo: 'feedback-section_btn-no',
+    btnSubmit: 'feedback-section_btn-submit',
+};
 
 export interface FeedbackSectionLang {
     title?: string;
@@ -29,9 +36,17 @@ export interface FeedbackSectionProps {
     lang?: FeedbackSectionLang;
     onSubmit?: (
         data: FeedbackSectionState,
-        resolve: (value: unknown) => void,
-        reject: (reason?: any) => void
+        resolve: <T>(value: T) => void,
+        reject: (reason?: string | AnyObject | Error) => void
     ) => Promise<void> | void;
+    onYesClick?: () => void;
+    onNoClick?: () => void;
+    textareaProps?: TextareaPropsWithRef;
+    testId?: {
+        btnYes?: string;
+        btnNo?: string;
+        btnSubmit?: string;
+    };
 }
 
 export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
@@ -47,6 +62,7 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
         ...props.lang,
     };
 
+    const { onYesClick, onNoClick, textareaProps, testId = defaultFeedbackSectionTestId } = props;
     const [success, setSuccess] = useState<boolean>(false);
     const { state, setPartialState, validationObject, submitForm, sending } = useForm<FeedbackSectionState>(
         props.state || {
@@ -75,14 +91,17 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
 
     const yesClickHandler = () => {
         setPartialState({ useful: true });
+        onYesClick?.();
     };
 
     const noClickHandler = () => {
         setPartialState({ useful: false });
+        onNoClick?.();
     };
 
-    const commentChangeHandler: TextareaProps['onChange'] = (event, data) => {
-        setPartialState({ comment: data?.value || '' });
+    const commentChangeHandler: TextareaProps['onChange'] = (data) => {
+        setPartialState({ comment: data.value || '' });
+        textareaProps?.onChange?.(data);
     };
 
     useEffect(() => {
@@ -95,7 +114,7 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
         <section>
             {success ? (
                 <Flex alignItems={'center'} gap={'s3'}>
-                    <CheckmarkFilled color={color.utilitarian.geneva.c100} />
+                    <CheckmarkFilledIcon color={color.utilitarian.geneva.c100} />
                     <Text size={'xxl'} weight={'medium'}>
                         {lang.successText}
                     </Text>
@@ -107,12 +126,18 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
                             {lang.title}
                         </Text>
                         <Flex alignItems={'center'} gap={'s4'}>
-                            <Button design={state.useful === true ? 'accent' : 'outline'} onClick={yesClickHandler}>
-                                <Like />
+                            <Button
+                                design={state.useful === true ? 'primary' : 'outline'}
+                                data-testid={testId?.btnYes}
+                                onClick={yesClickHandler}>
+                                <LikeIcon />
                                 Да
                             </Button>
-                            <Button design={state.useful === false ? 'accent' : 'outline'} onClick={noClickHandler}>
-                                <Dislike />
+                            <Button
+                                design={state.useful === false ? 'primary' : 'outline'}
+                                data-testid={testId?.btnNo}
+                                onClick={noClickHandler}>
+                                <DislikeIcon />
                                 Нет
                             </Button>
                         </Flex>
@@ -128,6 +153,7 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
                                     invalid={validationObject.comment.error}
                                     resize
                                     showCounter
+                                    {...textareaProps}
                                     onChange={commentChangeHandler}
                                 />
                                 {validationObject.comment.error && validationObject.comment.msg && (
@@ -138,7 +164,11 @@ export const FeedbackSection: FC<FeedbackSectionProps> = (props) => {
                             </FormField>
                             <DescriptionWrapper>
                                 <Flex.Item>
-                                    <Button type='submit' design='accent' loading={sending}>
+                                    <Button
+                                        type='submit'
+                                        design='accent'
+                                        loading={sending}
+                                        data-testid={testId?.btnSubmit}>
                                         {lang.buttonText}
                                     </Button>
                                 </Flex.Item>

@@ -1,2 +1,2 @@
-export { InputDateRange, type DateType } from './InputDateRange';
+export { InputDateRange, type DateType, type InputDateRangeProps } from './InputDateRange';
 export { type InputDateRangeLocalization } from './localization';

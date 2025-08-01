@@ -1,19 +1,20 @@
-import React, { FC, useCallback, MouseEvent } from 'react';
-import { GoLeft, GoRight } from 'vienna.icons';
+import React, { useCallback, MouseEvent, ReactNode } from 'react';
+import { GoLeftIcon, GoRightIcon } from 'vienna.icons';
 import { Box, Title, Icon } from './MenuPoint.styles';
+import { TabsValueType } from '../../Tabs/Tabs';
 
-export interface MenuPointProps {
-    value?: unknown;
-    label: string;
-    onClick?: (event: MouseEvent<HTMLDivElement>, value: unknown) => void;
+export interface MenuPointProps<T = TabsValueType> {
+    value?: T;
+    label: ReactNode;
+    onClick?: (value: T, event: MouseEvent) => void;
     leftArrow?: boolean;
 }
 
-export const MenuPoint: FC<MenuPointProps> = ({ value, label, leftArrow = false, onClick }) => {
+export const MenuPoint = <T,>({ value, label, leftArrow = false, onClick }: MenuPointProps<T>) => {
     const handleClick = useCallback(
-        (e) => {
+        (e: MouseEvent) => {
             if (typeof onClick === 'function') {
-                onClick(e, value);
+                onClick(value as T, e);
             }
         },
         [value]
@@ -21,10 +22,12 @@ export const MenuPoint: FC<MenuPointProps> = ({ value, label, leftArrow = false,
 
     return (
         <Box onClick={handleClick}>
-            <Icon $leftArrow={leftArrow}>{leftArrow ? <GoLeft /> : <GoRight />}</Icon>
+            <Icon $leftArrow={leftArrow}>{leftArrow ? <GoLeftIcon /> : <GoRightIcon />}</Icon>
             <Title $leftArrow={leftArrow} size='l'>
                 {label}
             </Title>
         </Box>
     );
 };
+
+MenuPoint.displayName = 'MenuPoint';

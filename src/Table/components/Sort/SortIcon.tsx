@@ -1,15 +1,22 @@
-import React from 'react';
-import { UpArrow, DownArrow } from 'vienna.icons';
-import { useTableService } from '../Context/TableContext';
+import React, { type FC } from 'react';
+import { UpArrowIcon, DownArrowIcon } from 'vienna.icons';
+import { useTableService } from '../Context';
+import { SortDirection } from '../../types';
 
-export const SortIcon = ({ field }) => {
+export interface SortPropsType {
+    column: string;
+}
+
+export const SortIcon: FC<SortPropsType> = ({ column }) => {
     const { getSortColumn } = useTableService();
-    const isAsc = getSortColumn()?.field === field && getSortColumn()?.direction === 'asc';
+    const sortColumn = getSortColumn();
 
     return (
         <>
-            {!isAsc && <DownArrow size='s' />}
-            {isAsc && <UpArrow size='s' />}
+            {(sortColumn?.field !== column || sortColumn?.direction === SortDirection.Desc) && (
+                <DownArrowIcon size='s' />
+            )}
+            {sortColumn?.field === column && sortColumn?.direction === SortDirection.Asc && <UpArrowIcon size='s' />}
         </>
     );
 };

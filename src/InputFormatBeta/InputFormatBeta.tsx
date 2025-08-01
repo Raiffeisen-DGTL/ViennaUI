@@ -20,9 +20,9 @@ export const InputFormatBeta: FC<InputFormatBetaProps> = ({ onChange, onBlur, on
     return (
         <PatternFormat
             customInput={Input}
-            onChange={onChange as any}
-            onBlur={onBlur as any}
-            onFocus={onFocus as any}
+            onChange={onChange as React.ChangeEventHandler<HTMLInputElement> | undefined}
+            onBlur={onBlur as React.FocusEventHandler<HTMLInputElement> | undefined}
+            onFocus={onFocus as React.FocusEventHandler<HTMLInputElement> | undefined}
             {...rest}
         />
     );

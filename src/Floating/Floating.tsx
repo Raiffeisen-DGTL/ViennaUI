@@ -1,26 +1,44 @@
-import React, { forwardRef, useEffect } from 'react';
-import { useFloating, Placement, offset as floatingOffset, autoPlacement } from '@floating-ui/react';
-import { IFloatingRendererPopup, Offset } from './types';
+import React, { useState, useEffect } from 'react';
+import {
+    useFloating,
+    Placement,
+    offset as floatingOffset,
+    autoPlacement,
+    autoUpdate,
+    flip,
+    shift,
+    arrow,
+} from '@floating-ui/react';
+import { IFloatingRendererPopup, Offset, RendererPopupProps } from './types';
+import { TriggerTargetExtends } from '@/Trigger';
 
-export interface FloatingProps<Target extends HTMLElement = HTMLElement, Popup extends HTMLElement = HTMLElement> {
+export type FloatingPlacement = Placement | 'auto' | 'center';
+
+export interface FloatingProps<Target extends TriggerTargetExtends, Popup extends HTMLElement> {
     targetElement: Target | null;
-    placement?: Placement | 'auto' | 'center';
+    placement?: FloatingPlacement;
     offset?: Offset;
+    disableFlip?: boolean;
     children: IFloatingRendererPopup<Popup>;
 }
 
-function FloatingInternal<Target extends HTMLElement, Popup extends HTMLElement>({
+export function Floating<Target extends TriggerTargetExtends, Popup extends HTMLElement>({
     targetElement,
     placement,
     offset,
+    disableFlip,
     children,
 }: FloatingProps<Target, Popup>) {
+    const [arrowEl, setArrowEl] = useState<HTMLDivElement>();
     const {
         refs,
         floatingStyles,
         placement: currentPlacement,
+        isPositioned,
+        middlewareData,
     } = useFloating({
         placement: ['auto', 'center'].includes(placement || '') ? undefined : (placement as Placement),
+        whileElementsMounted: autoUpdate,
         middleware: [
             placement === 'center'
                 ? floatingOffset(({ rects }) => -rects.reference.height / 2 - rects.floating.height / 2)
@@ -36,6 +54,14 @@ function FloatingInternal<Target extends HTMLElement, Popup extends HTMLElement>
                       }),
                   ]
                 : []),
+            ...(!['auto', 'center'].includes(placement || '') && !disableFlip
+                ? [flip({ padding: 5, crossAxis: false, fallbackAxisSideDirection: 'start' })]
+                : []),
+            shift(),
+            arrow({
+                element: arrowEl as HTMLDivElement,
+                padding: 12,
+            }),
         ],
     });
 
@@ -43,9 +69,20 @@ function FloatingInternal<Target extends HTMLElement, Popup extends HTMLElement>
         refs.setReference(targetElement);
     }, [targetElement]);
 
-    return <>{children(refs.setFloating, { styles: floatingStyles, attributes: { placement: currentPlacement } })}</>;
-}
+    // Костыль для floating-ui, чтобы не происходил скачок при позиционировании
+    const styles: React.CSSProperties = { ...floatingStyles };
+    styles.visibility = isPositioned ? 'visible' : 'hidden';
 
-export const Floating = forwardRef(FloatingInternal) as <Target extends HTMLElement, Popup extends HTMLElement>(
-    p: FloatingProps<Target, Popup> & { ref?: any }
-) => JSX.Element;
+    return (
+        <>
+            {children(refs.setFloating, {
+                styles,
+                attributes: {
+                    placement: currentPlacement as Required<RendererPopupProps>['attributes']['placement'],
+                    setArrowEl,
+                    middlewareData,
+                },
+            })}
+        </>
+    );
+}

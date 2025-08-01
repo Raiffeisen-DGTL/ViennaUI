@@ -6,7 +6,6 @@ import { BoxStyled } from '../Utils/styled';
 export interface PaymentLogoProps extends BoxStyled<typeof Box, PropsBox> {
     design?: PropsBox['$design'];
     size?: PropsBox['$size'];
-    clickable?: PropsBox['$clickable'];
     logo?: 'mastercard' | 'mir' | 'visa';
 }
 
@@ -19,11 +18,10 @@ const logotypes = {
 export const PaymentLogo = forwardRef<HTMLDivElement, PaymentLogoProps>((props, ref) => {
     const { children, size = 'm', logo = 'mastercard', design = 'wildsand', ...attrs } = props;
 
-    const clickable = Boolean(props.onClick) ?? props.clickable;
     const Logotype = logotypes[logo];
 
     return (
-        <Box {...(attrs as {})} ref={ref} $size={size} $clickable={clickable} $design={design}>
+        <Box {...attrs} ref={ref} $size={size} $clickable={!!props.onClick} $design={design}>
             {children ?? <Logotype size={size} />}
         </Box>
     );

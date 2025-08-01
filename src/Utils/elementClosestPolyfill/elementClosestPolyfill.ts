@@ -1,12 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-/* eslint-disable */
 if (typeof window !== 'undefined') {
     if (!Element.prototype.matches) {
         Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
     }
 
     if (!Element.prototype.closest) {
-        Element.prototype.closest = function (s) {
+        Element.prototype.closest = function (s: string) {
             let el = this;
 
             do {

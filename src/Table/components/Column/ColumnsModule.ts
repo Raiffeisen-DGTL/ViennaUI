@@ -1,19 +1,21 @@
-import { Module } from '../../types';
+/* eslint-disable @typescript-eslint/ban-types */
+import { ReactNode, ReactElement } from 'react';
+import { Module, TableData } from '../../types';
 import { ColumnProps } from './Column';
 
-export interface ColumnsConfig {
-    templates: Map<string, Function>;
+export interface ColumnsConfig<T> {
+    templates: Map<string, (item: T, rowIndex: number) => ReactNode>;
     filters?: Map<string, Function>;
 }
 
-export interface ColumnsState {
-    list: ColumnProps[];
+export interface ColumnsState<T> {
+    list: ColumnProps<T>[];
 }
 
-export const ColumnsModule: Module = {
+export const ColumnsModule: Module<ColumnsConfig<TableData>, ColumnsState<TableData>, TableData> = {
     name: 'columns',
-    initConfig: ({ child, config }): ColumnsConfig => {
-        const { id, filter, children } = child.props;
+    initConfig: ({ child, config }): ColumnsConfig<TableData> => {
+        const { id, filter, children } = (child as ReactElement<ColumnProps<TableData>>).props;
 
         const columnsMap = config?.templates ?? new Map();
         columnsMap.set(id, children);
@@ -29,8 +31,8 @@ export const ColumnsModule: Module = {
         };
     },
 
-    initState: ({ child, config, settings }): ColumnsState => {
-        const { id, filter, ...attrs } = child.props;
+    initState: ({ child, config, settings }): ColumnsState<TableData> => {
+        const { id, filter, ...attrs } = (child as ReactElement<ColumnProps<TableData>>).props;
         const { groupId } = settings;
         const isFilter = Boolean(filter);
 

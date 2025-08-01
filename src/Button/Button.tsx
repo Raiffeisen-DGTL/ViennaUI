@@ -4,6 +4,13 @@ import { Spinner } from '../Spinner';
 import { Breakpoints } from '../Utils/responsiveness';
 import { withTabFocusState } from '../Utils';
 import { BoxStyled } from '../Utils/styled';
+import { omit } from '../Utils/omit';
+import { isProperKey } from '../Utils';
+
+export const defaultButtonTestId: ButtonTestId = {
+    button: 'button_button',
+    spinner: 'button_spinner',
+};
 
 export type ButtonDesign =
     | 'primary'
@@ -13,8 +20,14 @@ export type ButtonDesign =
     | 'outline-critical'
     | 'ghost'
     | 'ghost-accent'
-    | 'white';
+    | 'white'
+    | 'ghost-white'
+    | 'neutral';
 
+export interface ButtonTestId {
+    button?: string;
+    spinner?: string;
+}
 export interface ButtonProps<B = Breakpoints>
     extends BoxStyled<typeof Box, PropsBox>,
         Pick<AnchorHTMLAttributes<HTMLAnchorElement>, 'referrerPolicy' | 'download' | 'rel' | 'href' | 'target'> {
@@ -28,13 +41,14 @@ export interface ButtonProps<B = Breakpoints>
     loading?: PropsBox<B>['$loading'];
     disabled?: PropsBox<B>['$disabled'];
     forwardedRef?: Ref<HTMLButtonElement>;
+    testId?: ButtonTestId;
 }
 
 const correctSpinnerSizes = {
     xxl: 'l',
     xl: 'l',
     l: 'm',
-};
+} satisfies ButtonProps['size'];
 
 interface ButtonInternalProps<B = Breakpoints> extends ButtonProps<B> {
     isFocusStateVisible: boolean;
@@ -53,6 +67,8 @@ function ButtonComponent<B = void>(props: ButtonInternalProps<B extends void ? B
         pressed,
         square,
         type = 'button',
+        href,
+        testId = defaultButtonTestId,
         ...attrs
     } = props;
 
@@ -70,30 +86,38 @@ function ButtonComponent<B = void>(props: ButtonInternalProps<B extends void ? B
         if (el?.type?.toString().includes('svg')) {
             return <ContentWrapperIcon $size={size}>{child}</ContentWrapperIcon>;
         }
+
         return <ContentWrapper $size={size}>{child}</ContentWrapper>;
     });
 
     let spinner: ReactNode = null;
 
     let disabled = disabledProps;
+
     // TODO: Сверить с дизайом, верно ли расчитывается size?
     if (loading) {
         disabled = true;
         spinner = (
             <Spinner
                 key='spinner'
-                size={typeof size === 'string' ? correctSpinnerSizes[size] || size : size}
+                size={
+                    typeof size === 'string' && isProperKey(correctSpinnerSizes, size)
+                        ? correctSpinnerSizes[size]
+                        : size
+                }
                 position='absolute'
-                color='london120'
+                color={design === 'ghost-white' ? 'white' : 'london120'}
+                data-testid={testId?.spinner}
             />
         );
     }
 
-    const as = attrs.href ? 'a' : 'button';
-
+    const as = href ? 'a' : 'button';
     return (
         <Box
-            {...(attrs as {})}
+            data-testid={testId?.button}
+            {...(disabled ? omit(attrs, 'onClick') : attrs)}
+            href={disabled ? '#!' : href}
             type={type}
             ref={forwardedRef}
             as={as}

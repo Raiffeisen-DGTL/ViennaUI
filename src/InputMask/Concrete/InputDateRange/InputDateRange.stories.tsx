@@ -14,6 +14,10 @@ export default {
 
 export const Overview: Story = () => {
     const [value, setValue] = useState();
-    const handleChange = useCallback((value) => setValue(value), []);
+    const handleChange = useCallback(({ value: data }) => setValue(data), []);
     return <InputDateRange value={value} onChange={handleChange} />;
+};
+
+export const ViewOnly: Story = () => {
+    return <InputDateRange viewOnly value={'08.04.2024 - 14.04.2024'} />;
 };

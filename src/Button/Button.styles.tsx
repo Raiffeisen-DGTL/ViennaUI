@@ -1,19 +1,24 @@
 import styled, { css } from 'styled-components';
+import { button } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 import { ButtonDesign } from './Button';
 
-const presets = getPresets('button', {
+const presets = getPresets(
+    button,
+    'button'
+)({
     base: null,
     loading: null,
     focus: '$design',
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     design: '$design',
     hover: '$design',
     disabled: '$design',
-    gap: responsivePreset('$size', 'm'),
+    gap: ['$size', 'm'],
     custom: null,
     customWrapper: null,
+    pressed: '$design',
 });
 
 export interface PropsBox<B = Breakpoints> {
@@ -49,18 +54,22 @@ export const Box = styled.button<PropsBox>`
     ${presets.size}
     ${presets.design}
 
-    &:active {
-        top: 1px;
-    }
+    ${({ $disabled }) =>
+        !$disabled &&
+        css`
+            &:active {
+                top: 1px;
+            }
 
-    &:hover {
-        ${({ $disabled }) => (!$disabled ? presets.hover : '')}
-    }
+            &:hover {
+                ${presets.hover}
+            }
+        `}
 
     ${({ $pressed }) =>
         $pressed &&
         css`
-            ${presets.hover}
+            ${presets.pressed}
         `}
 
     ${({ $grid }) =>
@@ -93,6 +102,16 @@ export const Box = styled.button<PropsBox>`
         $square &&
         css`
             padding: 0;
+        `}
+
+    // for overriding responsive sizes
+    ${({ $square, $size }) =>
+        $square &&
+        typeof $size !== 'string' &&
+        css`
+            & {
+                padding: 0;
+            }
         `}
 
     ${presets.custom}

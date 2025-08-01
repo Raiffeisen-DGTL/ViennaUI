@@ -1,22 +1,28 @@
 import { useContext, useMemo } from 'react';
 import { ThemeContext } from 'styled-components';
+import { alert } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
+import { AlertThemeProps } from './Alert';
+import { ThemePresets } from '../index';
 
-const presets = getPresets('alert.buttons', {
+const presets = getPresets(
+    alert.buttons,
+    'alert.buttons'
+)({
     base: null,
     design: 'design',
 });
 
-const buildTheme = (props) => {
+const buildTheme = (props: AlertThemeProps) => {
     return {
         button: {
-            custom: presets.base(props),
+            base: presets.base(props) as ThemePresets,
             ...presets.design(props),
         },
-    };
+    } as ThemePresets;
 };
 
-export const useTheme = (props) => {
+export const useTheme = (props: AlertThemeProps) => {
     const themedContext = useContext(ThemeContext);
     const theme = useMemo(() => {
         return buildTheme({ ...props, theme: themedContext });

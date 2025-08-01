@@ -5,4 +5,3 @@ jest.config.js
 README.mdx
 tsconfig.json
 src
-gitlab-ci.yml

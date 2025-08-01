@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Sizes, SizeOption, ColumnSize, ColumnOffset, ColumnOrder } from './Col';
-import { getPresets } from '../../Utils/styling';
+import { Sizes, SizeOption, ColumnSize, ColumnOffset, ColumnOrder, BasedSize, OffsetOption, OrderOption } from './Col';
+import { getPresetsCustom } from '../../Utils/styling';
 
-const presets = getPresets('grid.column', {
+const column = getPresetsCustom('grid.column')({
     custom: null,
 });
 
@@ -42,14 +42,20 @@ function columnSize(props: PropsBox): string {
     // responsive size
     if (typeof $size === 'object') {
         const { base, ...other } = $size;
+
         style += `
             ${buildSizeBlock(base || 'auto')}
         `;
-        // eslint-disable-next-line guard-for-in
+
         for (const s in other) {
+            const sizeKey = s as keyof BasedSize<SizeOption>;
+            const mappedSize = $size[sizeKey];
+
+            if (mappedSize === undefined) continue;
+
             style += `
-                @media only screen and ${viewports[s]} {
-                    ${buildSizeBlock($size[s])}
+                @media only screen and ${viewports[s as keyof Sizes<string>]} {
+                    ${buildSizeBlock(mappedSize)}
                 }
             `;
         }
@@ -68,11 +74,12 @@ function columnOffset(props: PropsBox): string {
 
     // reponsive offset
     if (typeof $offset === 'object') {
-        // eslint-disable-next-line guard-for-in
         for (const s in $offset) {
+            const mappedOffset = $offset[s as keyof Sizes<OffsetOption>];
+
             style += `
-                @media only screen and ${viewports[s]} {
-                    margin-left: ${$offset[s] && `${(100 / 12) * $offset[s]}%`}
+                @media only screen and ${viewports[s as keyof Sizes<string>]} {
+                    margin-left: ${mappedOffset && `${(100 / 12) * mappedOffset}%`}
                 }
             `;
         }
@@ -92,10 +99,12 @@ function columnOrder(props: PropsBox): string {
     // reponsive offset
     if (typeof $order === 'object') {
         for (const s in $order) {
-            if ($order[s]) {
+            const mappedOrder = $order[s as keyof Sizes<OrderOption>];
+
+            if (mappedOrder) {
                 style += `
-                    @media only screen and ${viewports[s]} {
-                        order: ${$order[s]};
+                    @media only screen and ${viewports[s as keyof Sizes<string>]} {
+                        order: ${mappedOrder};
                     }
                 `;
             }
@@ -117,5 +126,5 @@ export const Box = styled.div<PropsBox>`
     ${columnOffset}
     ${columnOrder}
 
-    ${presets.custom}
+    ${column.custom}
 `;

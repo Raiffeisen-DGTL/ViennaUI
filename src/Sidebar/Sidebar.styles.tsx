@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components';
-import { Box as Item, Title, Notification, Ripple } from './Item/Item.styles';
+import { sidebar } from 'vienna.ui-theme';
+import { Box as Item, Title, Icon, Notification, Ripple } from './Item/Item.styles';
 import { SubmenuTitle, Menu as Submenu } from './Submenu/Submenu.styles';
 import { Design, Size } from './Sidebar';
-import { getPresets } from '../Utils/styling';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 
-const presets = getPresets('sidebar', {
+const presets = getPresets(
+    sidebar,
+    'sidebar'
+)({
     base: null,
     design: '$design',
     collapsed: null,
@@ -12,29 +16,38 @@ const presets = getPresets('sidebar', {
     footer: null,
 });
 
-const collapser = getPresets('sidebar.collapser', {
+const collapser = getPresets(
+    sidebar.collapser,
+    'sidebar.collapser'
+)({
     base: null,
     hover: null,
 });
 
-const customCollapser = getPresets('sidebar.custom.collapser', {
+const customCollapser = getPresetsCustom('sidebar.custom.collapser')({
     base: null,
     hover: null,
 });
 
-const header = getPresets('sidebar.header', {
+const header = getPresets(
+    sidebar.header,
+    'sidebar.header'
+)({
     base: null,
     size: '$size',
     collapsed: null,
 });
 
-const headerCustom = getPresets('sidebar.header.custom', {
+const headerCustom = getPresetsCustom('sidebar.header.custom')({
     base: null,
     size: '$size',
     collapsed: null,
 });
 
-const item = getPresets('sidebar.item', {
+const item = getPresets(
+    sidebar.item,
+    'sidebar.item'
+)({
     base: null,
     active: null,
     size: '$size',
@@ -42,7 +55,7 @@ const item = getPresets('sidebar.item', {
     disabled: '$design',
 });
 
-const customItem = getPresets('sidebar.item.custom', {
+const customItem = getPresetsCustom('sidebar.item.custom')({
     base: null,
     active: null,
     size: '$size',
@@ -50,17 +63,23 @@ const customItem = getPresets('sidebar.item.custom', {
     disabled: '$design',
 });
 
-const ripple = getPresets('sidebar.item.ripple', {
+const ripple = getPresets(
+    sidebar.item.ripple,
+    'sidebar.item.ripple'
+)({
     base: null,
     design: '$design',
 });
 
-const submenu = getPresets('sidebar.submenu', {
+const submenu = getPresets(
+    sidebar.submenu,
+    'sidebar.submenu'
+)({
     size: '$size',
     design: '$design',
 });
 
-const custom = getPresets('sidebar.custom', {
+const custom = getPresetsCustom('sidebar.custom')({
     box: null,
     item: null,
     menu: null,
@@ -73,6 +92,7 @@ export interface PropsBox {
     $collapsed?: boolean;
     $width?: string;
 }
+
 export const Box = styled.div<PropsBox>`
     display: flex;
     flex-direction: column;
@@ -126,6 +146,12 @@ export const Box = styled.div<PropsBox>`
 
             ${Item} {
                 display: none;
+                padding-left: 0;
+                padding-right: 0;
+
+                ${Icon} {
+                    margin: 0 auto;
+                }
 
                 ${Title} {
                     display: none;
@@ -145,24 +171,26 @@ export const Box = styled.div<PropsBox>`
     ${custom.box}
 `;
 
-interface PropsItemWrapper {
+export interface PropsItemWrapper {
     $design?: Design;
     $active?: boolean;
+    $disabled?: boolean;
 }
 export const ItemWrapper = styled.div<PropsItemWrapper>`
     display: block;
     width: 100%;
-
-    &:hover {
-        ${item.hover}
-        ${customItem.hover}
-    }
 
     ${({ $active }) =>
         $active &&
         css`
             ${item.active}
             ${customItem.active}
+        `}
+    ${({ $disabled }) =>
+        $disabled &&
+        css`
+            ${item.disabled}
+            ${customItem.disabled}
         `}
 
     ${custom.item}
@@ -179,7 +207,7 @@ export const Collapser = styled.span`
     }
 `;
 
-interface PropsHeader {
+export interface PropsHeader {
     $size?: Size;
     $isCollapsed?: boolean;
 }
@@ -197,7 +225,7 @@ export const Header = styled.div<PropsHeader>`
         `}
 `;
 
-interface PropsMenu {
+export interface PropsMenu {
     $design?: Design;
 }
 export const Menu = styled.div<PropsMenu>`

@@ -1,9 +1,10 @@
-import React, { FC } from 'react';
-import { ActionsColumn } from './ActionColumnInternal.styles';
+import React, { FC, Fragment } from 'react';
+import { ActionsColumn, HoveringActionsWrapper } from './ActionColumnInternal.styles';
 import { BoxStyled } from '../../../Utils/styled';
 import { PropsTd } from '../TableBody/TableBody.styles';
 
-interface Props extends Omit<BoxStyled<typeof ActionsColumn, PropsTd>, 'valign'> {
+export interface Props extends Omit<BoxStyled<typeof ActionsColumn, PropsTd>, 'valign'> {
+    shrinkActionsColumn?: boolean;
     align?: PropsTd['$align'];
     hasRightDivider?: PropsTd['$hasRightDivider'];
     noWrap?: PropsTd['$noWrap'];
@@ -15,10 +16,25 @@ interface Props extends Omit<BoxStyled<typeof ActionsColumn, PropsTd>, 'valign'>
 }
 
 export const ActionsColumnInternal: FC<Props> = (props) => {
-    const { children, align, hasRightDivider, noWrap, pinned, size, truncate, valign, width, ...attrs } = props;
+    const {
+        children,
+        align,
+        hasRightDivider,
+        pinned,
+        size,
+        noWrap,
+        truncate,
+        valign,
+        width,
+        shrinkActionsColumn,
+        ...attrs
+    } = props;
+
+    const Wrapper = shrinkActionsColumn ? HoveringActionsWrapper : Fragment;
+
     return (
         <ActionsColumn
-            {...(attrs as {})}
+            {...attrs}
             $hasRightDivider={hasRightDivider}
             $align={align}
             $noWrap={noWrap}
@@ -26,8 +42,9 @@ export const ActionsColumnInternal: FC<Props> = (props) => {
             $size={size}
             $truncate={truncate}
             $valign={valign}
-            $width={width}>
-            {children}
+            $width={shrinkActionsColumn ? '0px' : width}
+            $shrinkActionsColumn={shrinkActionsColumn}>
+            <Wrapper>{children}</Wrapper>
         </ActionsColumn>
     );
 };

@@ -1,7 +1,12 @@
 import styled, { css } from 'styled-components';
+import { tooltip } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
+import { PlacementType } from '@/Utils';
 
-const tooltip = getPresets('tooltip', {
+const presets = getPresets(
+    tooltip,
+    'tooltip'
+)({
     base: null,
     size: '$size',
     design: '$design',
@@ -9,14 +14,19 @@ const tooltip = getPresets('tooltip', {
     custom: null,
 });
 
-const arrowDem = getPresets('tooltip.arrow', {
+const arrow = getPresets(
+    tooltip.arrow,
+    'tooltip.arrow'
+)({
     base: null,
-    width: null,
     design: '$design',
-    position: '$arrow',
+    position: '$placement',
 });
 
-const floor = getPresets('tooltip.floor', {
+const floor = getPresets(
+    tooltip.floor,
+    'tooltip.floor'
+)({
     base: null,
 });
 
@@ -25,22 +35,22 @@ export interface PropsBox {
     $left?: number;
     $bottom?: number;
     $right?: number;
-    $arrow?: 'left' | 'right' | 'top' | 'bottom';
-    $placement?: 'left' | 'right' | 'top' | 'bottom';
-    $arrowShift?: any;
+    $arrow?: PlacementType<'left' | 'right' | 'top' | 'bottom'>;
+    $placement?: PlacementType<'left' | 'right' | 'top' | 'bottom'>;
+    $arrowShift?: { top?: number; left?: number; bottom?: number; right?: number };
     $show?: boolean;
     $width?: number | string;
-    $design?: 'light' | 'dark';
+    $design?: 'light' | 'dark' | 'warning' | 'critical' | 'success';
     $size?: 's' | 'm';
     $allowInteraction?: boolean;
 }
 
 export const Box = styled.div<PropsBox>`
     position: fixed;
-    ${tooltip.base}
-    ${tooltip.placement}
-    ${tooltip.size}
-    ${tooltip.design}
+    ${presets.base}
+    ${presets.placement}
+    ${presets.size}
+    ${presets.design}
 
     display: flex;
     align-items: center;
@@ -73,17 +83,7 @@ export const Box = styled.div<PropsBox>`
         `}
 
 
-    ${tooltip.custom}
-
-    &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        ${arrowDem.design}
-        ${arrowDem.position}
-        ${({ $arrowShift }) => $arrowShift}
-    }
+    ${presets.custom}
 
     ${({ $allowInteraction }) =>
         $allowInteraction &&
@@ -99,4 +99,39 @@ export const Box = styled.div<PropsBox>`
     > svg {
         vertical-align: top;
     }
+`;
+
+export interface ArrowProps {
+    $placement?: PlacementType<'left' | 'right' | 'top' | 'bottom'>;
+    $design?: 'light' | 'dark' | 'warning' | 'critical' | 'success';
+    $offsetX?: number;
+    $offsetY?: number;
+}
+
+export const Block = styled.div<ArrowProps>`
+    ${arrow.position}
+    ${arrow.base}
+
+    ${({ $offsetX }) =>
+        $offsetX !== undefined &&
+        css`
+            left: ${$offsetX}px;
+        `}
+    ${({ $offsetY }) =>
+        $offsetY !== undefined &&
+        css`
+            top: ${$offsetY}px;
+        `}
+    width: 14px;
+    height: 7px;
+`;
+
+export const Arrow = styled.div<ArrowProps>`
+    ${arrow.design}
+
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    border-radius: 3px 0 0 0;
+    margin-top: 2px;
 `;

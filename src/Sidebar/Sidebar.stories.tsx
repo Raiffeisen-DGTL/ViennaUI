@@ -1,6 +1,14 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { MailOut, Settings, Lamp, ChartBar1, Chat2, Home, Document } from 'vienna.icons';
+import {
+    MailOutIcon as MailOut,
+    SettingsIcon as Settings,
+    LampIcon as Lamp,
+    ChartBar1Icon as ChartBar1,
+    Chat2Icon as Chat2,
+    HomeIcon as Home,
+    DocumentIcon as Document,
+} from 'vienna.icons';
 import { Sidebar, SidebarProps } from './Sidebar';
 import { Alarm } from '../Alarm';
 import { Link } from '../Link';
@@ -14,7 +22,7 @@ export default {
 
 export const Overview: Story<SidebarProps> = (args) => {
     return (
-        <Sidebar {...args}>
+        <Sidebar collapsed {...args}>
             <Sidebar.Item>Home</Sidebar.Item>
             <Sidebar.Item>Mail</Sidebar.Item>
             <Sidebar.Item>Documents</Sidebar.Item>
@@ -23,10 +31,16 @@ export const Overview: Story<SidebarProps> = (args) => {
 };
 export const WithIcons: Story<SidebarProps> = (args) => {
     return (
-        <Sidebar {...args}>
-            <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-            <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-            <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        <Sidebar collapsed {...args}>
+            <Sidebar.Item icon={<Home />} notification={<Alarm design='accent' />} ripple>
+                Home
+            </Sidebar.Item>
+            <Sidebar.Item icon={<MailOut />} notification={<Alarm design='accent' />}>
+                Mail
+            </Sidebar.Item>
+            <Sidebar.Item icon={<Document />} notification={<Alarm design='accent' />}>
+                Documents
+            </Sidebar.Item>
         </Sidebar>
     );
 };
@@ -153,8 +167,8 @@ export const Interactive: Story<SidebarProps> = (args) => {
                 Mail
             </Sidebar.Item>
             <Sidebar.Item id='docs' onClick={onClick}>
-                <Tooltip content="Element with very long title that doesn't fit" placement='right' design='dark' truncate>
-                    {()=>'Element with very long title that doesn\'t fit'}
+                <Tooltip content="Element with very long title that doesn't fit" placement='right' design='dark'>
+                    {() => "Element with very long title that doesn't fit"}
                 </Tooltip>
             </Sidebar.Item>
             <Sidebar.Item id='analytics' onClick={onClick}>
@@ -191,3 +205,73 @@ export const Controllable: Story<SidebarProps> = () => {
     );
 };
 Controllable.storyName = 'Controllable';
+
+const Submenu = ({ active }) => {
+    const [expanded, toggleExpanded] = React.useState(true);
+    const onClick = () => toggleExpanded((prev) => !prev);
+    const title = 'Submenu 2';
+
+    return (
+        <Sidebar.Submenu title={title} expanded={expanded} active={active === title} onClick={onClick}>
+            <Sidebar.Item>Home 2</Sidebar.Item>
+            <Sidebar.Item>Mail 2</Sidebar.Item>
+        </Sidebar.Submenu>
+    );
+};
+
+export const WithSubmenu: Story<SidebarProps> = () => {
+    const [expanded, toggleExpanded] = React.useState(true);
+    const onClick = () => toggleExpanded((prev) => !prev);
+    const title = 'Submenu';
+
+    return (
+        <Sidebar>
+            <Submenu active={'Submenu 2'} />
+            <Sidebar.Submenu title={title} icon={<ChartBar1 />} expanded={expanded} onClick={onClick}>
+                <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
+                <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
+                <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            </Sidebar.Submenu>
+        </Sidebar>
+    );
+};
+WithSubmenu.storyName = 'WithSubmenu';
+
+export const WithDisabled: Story<SidebarProps> = (args) => {
+    return (
+        <Sidebar design='dark' {...args}>
+            <Link>
+                <Sidebar.Item disabled icon={<Home />} notification={<Alarm design='accent' />}>
+                    Home
+                </Sidebar.Item>
+            </Link>
+            <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        </Sidebar>
+    );
+};
+WithDisabled.storyName = 'With Disabled';
+
+export const WithProperMargins: Story<SidebarProps> = (args) => {
+    return (
+        <Sidebar active='submenu' collapsed onCollapse={() => {}} size='l' {...args}>
+            <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
+            <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1 />}>
+                <Sidebar.Item icon={<Home />} active>
+                    Home
+                </Sidebar.Item>
+                <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
+                <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            </Sidebar.Submenu>
+            <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
+            <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1 />}>
+                <Sidebar.Item icon={<Home />} active>
+                    Home
+                </Sidebar.Item>
+                <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
+                <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            </Sidebar.Submenu>
+        </Sidebar>
+    );
+};
+WithProperMargins.storyName = 'With Proper Margins';

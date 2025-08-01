@@ -1,8 +1,13 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, ReactNode, useContext } from 'react';
 
-export const FilterContext = createContext({});
+export const FilterContext = createContext('');
 
-export const FilterProvider = ({ id, children }) => {
+export interface FilterProviderProps {
+    id: string;
+    children: ReactNode;
+}
+
+export const FilterProvider = ({ id, children }: FilterProviderProps) => {
     return <FilterContext.Provider value={id}>{children}</FilterContext.Provider>;
 };
 

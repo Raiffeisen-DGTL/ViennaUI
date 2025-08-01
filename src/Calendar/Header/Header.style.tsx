@@ -1,42 +1,58 @@
 import styled from 'styled-components';
+import { calendar } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
+import { Button as ButtonBase } from '../../Button';
 
-const navigationIconButton = getPresets('calendar.navigationIconButton', {
+const navigationIconButton = getPresets(
+    calendar.navigationIconButton,
+    'calendar.navigationIconButton'
+)({
     base: null,
     hover: null,
 });
 
-const headerDoubleArrow = getPresets('calendar.headerDoubleArrow', {
+const headerDoubleArrow = getPresets(
+    calendar.headerDoubleArrow,
+    'calendar.headerDoubleArrow'
+)({
     base: null,
     hover: null,
     lastChild: null,
 });
 
-const header = getPresets('calendar.header', {
+const header = getPresets(
+    calendar.header,
+    'calendar.header'
+)({
     base: null,
     title: null,
 });
 
-export const HeaderDoubleArrow = styled.div`
-    display: flex;
-    align-items: flex-end;
+export const Button = styled(ButtonBase)`
+    // reset
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    //
 
-    ${headerDoubleArrow.base}
+    display: flex;
+    align-items: center;
+    min-width: 16px;
+
     ${navigationIconButton.base}
 
-    &:hover {
-        ${headerDoubleArrow.hover}
+    &:hover,
+    &:focus {
         ${navigationIconButton.hover}
     }
 `;
 
-export const NavigationButton = styled.div`
-    display: flex;
-
-    ${navigationIconButton.base}
+export const HeaderDoubleArrow = styled(Button)`
+    ${headerDoubleArrow.base}
 
     &:hover {
-        ${navigationIconButton.hover}
+        ${headerDoubleArrow.hover}
     }
 `;
 
@@ -63,16 +79,14 @@ export const HeaderTitle = styled.div`
     ${header.title}
 `;
 
-export const BackButton = styled.div`
-    display: flex;
+export const BackButton = styled(Button)`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 16px;
-    ${navigationIconButton.base}
 
-    &:hover {
-        ${navigationIconButton.hover}
+    &:active {
+        top: 50%;
     }
 `;
 

@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { datepicker } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('datepicker', {
+const presets = getPresets(
+    datepicker,
+    'datepicker'
+)({
     calendar: null,
 });
 
@@ -16,7 +20,7 @@ export const InputBox = styled.div`
     position: relative;
 `;
 
-interface CalendarBoxProps {
+export interface CalendarBoxProps {
     $hidden: boolean;
 }
 export const CalendarBox = styled.div<CalendarBoxProps>`
