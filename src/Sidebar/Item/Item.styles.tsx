@@ -1,14 +1,20 @@
 import styled, { css } from 'styled-components';
+import { sidebar } from 'vienna.ui-theme';
 import { ItemProps } from './Item';
-import { getPresets } from '../../Utils/styling';
+import { getPresets, getPresetsCustom } from '../../Utils/styling';
+import { Design } from '../Sidebar';
 
-const presets = getPresets('sidebar.item', {
+const presets = getPresets(
+    sidebar.item,
+    'sidebar.item'
+)({
     active: null,
     icon: null,
     notification: null,
+    disabled: '$design',
 });
 
-const custom = getPresets('sidebar.item.custom', {
+const custom = getPresetsCustom('sidebar.item.custom')({
     active: null,
     icon: null,
     notification: null,
@@ -36,10 +42,11 @@ export const Notification = styled.div`
     ${presets.notification}
     ${custom.notification}
 `;
-
 export interface PropsBox {
     $hasIcon?: boolean;
     $active?: boolean;
+    $disabled?: boolean;
+    $design?: Design;
 }
 export const Box = styled.div<PropsBox>`
     /*
@@ -58,6 +65,12 @@ export const Box = styled.div<PropsBox>`
         css`
             ${presets.active}
             ${custom.active}
+        `}
+
+    ${({ $disabled }) =>
+        $disabled &&
+        css`
+            ${presets.disabled}
         `}
 `;
 

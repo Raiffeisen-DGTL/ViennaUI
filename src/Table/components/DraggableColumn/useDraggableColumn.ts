@@ -1,13 +1,14 @@
+import React from 'react';
 import '../../../Utils/elementClosestPolyfill/elementClosestPolyfill';
 import { useTableService } from '../Context';
 
 export function useDraggableColumn() {
     const { moveColumn } = useTableService();
-    let tableHeight;
-    let drag;
-    let currentIdx;
-    let drop;
-    let currentId;
+    let tableHeight: number;
+    let drag: HTMLDivElement | null;
+    let currentIdx: string | null;
+    let drop: HTMLDivElement | null;
+    let currentId: string | null;
 
     const clean = () => {
         // clean stuff
@@ -22,13 +23,13 @@ export function useDraggableColumn() {
         }
     };
 
-    const onDragStart = (e) => {
+    const onDragStart = (e: React.DragEvent<HTMLTableHeaderCellElement>) => {
         const target = e.currentTarget;
 
-        const tableWrapper = target.closest("[data-id='table-wrapper']");
+        const tableWrapper = target.closest('[data-id="table-wrapper"]') as HTMLDivElement;
         tableHeight = tableWrapper && tableWrapper.offsetHeight;
 
-        drag = target.querySelector("[data-id='dragable']");
+        drag = target.querySelector('[data-id="dragable"]');
 
         if (drag) {
             drag.style.height = `${tableHeight}px`;
@@ -38,7 +39,7 @@ export function useDraggableColumn() {
         currentId = target.getAttribute('data-column');
     };
 
-    const onDrop = (e) => {
+    const onDrop = (e: React.DragEvent<HTMLTableHeaderCellElement>) => {
         e.preventDefault();
         clean();
 
@@ -50,26 +51,26 @@ export function useDraggableColumn() {
         }
     };
 
-    const onDragEnter = (e) => {
+    const onDragEnter = (e: React.DragEvent) => {
         e.preventDefault();
 
         const target = e.currentTarget;
         const targetIdx = target.getAttribute('data-index');
-        const [left, right] = target.querySelectorAll("[data-id='drop']");
+        const [left, right]: HTMLDivElement[] = Array.from(target.querySelectorAll('[data-id="drop"]'));
 
         // chek if left or right border should be shown
-        drop = targetIdx < currentIdx ? left : right;
+        drop = Number(targetIdx) < Number(currentIdx) ? left : right;
         if (drop) {
             drop.style.height = `${tableHeight}px`;
         }
     };
 
-    const onDragLeave = (e) => {
+    const onDragLeave = (e: React.DragEvent<HTMLTableHeaderCellElement>) => {
         const target = e.currentTarget;
 
-        if (!target.contains(e.relatedTarget)) {
+        if (!target.contains(e.relatedTarget as HTMLTableHeaderCellElement)) {
             // clean the borders
-            const [left, right] = target.querySelectorAll("[data-id='drop']");
+            const [left, right]: HTMLDivElement[] = Array.from(target.querySelectorAll('[data-id="drop"]'));
             if (left && right) {
                 left.style.height = '0';
                 right.style.height = '0';
@@ -77,12 +78,12 @@ export function useDraggableColumn() {
         }
     };
 
-    const onDragEnd = (e) => {
+    const onDragEnd = (e: React.DragEvent) => {
         e.preventDefault();
         clean();
     };
 
-    const onDragOver = (e) => {
+    const onDragOver = (e: React.DragEvent) => {
         e.preventDefault();
     };
 

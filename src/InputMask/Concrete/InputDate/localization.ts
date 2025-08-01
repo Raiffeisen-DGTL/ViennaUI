@@ -8,7 +8,7 @@ export interface InputDateLocalization {
 
 export type InputDateLocalizationProps = DSLocalizationProps<InputDateLocalization>;
 
-export const defaultInputDateLocalization: InputDateLocalization = {
+export const defaultInputDateLocalization: Required<InputDateLocalization> = {
     'ds.inputDate.placeholder.date': 'ДД.ММ.ГГГГ',
     'ds.inputDate.placeholder.time': 'ЧЧ:ММ',
     'ds.inputDate.placeholder.datetime': 'ДД.ММ.ГГГГ ЧЧ:ММ',

@@ -477,7 +477,7 @@ open();
 -   Создаем файл `ConfirmModal.tsx`
 
 ```javascript
-import { useModal } from '@fcc/ui';
+import { useModal } from 'vienna.ui';
 
 export const ComponentHelpers.Modal.confirmModal = async (message) => {
     return new Promise((resolve) => {

@@ -53,7 +53,7 @@ export const Progressbar: FC<ProgressbarProps> = ({
     switch (view) {
         case 'circle': {
             return (
-                <CircleBox {...(attrs as {})}>
+                <CircleBox {...attrs}>
                     <CircleSVG $size={size}>
                         <CircleBack $size={size} />
                         <CircleProgress $size={size} $color={color} $indeterminate={indeterminate} $value={value} />
@@ -65,7 +65,7 @@ export const Progressbar: FC<ProgressbarProps> = ({
         case 'line':
         default: {
             return (
-                <Box {...(attrs as {})} $size={size}>
+                <Box {...attrs} $size={size}>
                     <Line />
                     <Progress $indeterminate={indeterminate} $width={value && value > 100 ? 100 : value} $color={color}>
                         {!indeterminate && loading && <Loading />}

@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useCallback, ComponentProps } from 'react';
-import { ManPerson } from 'vienna.icons';
-import { Avatar } from '../Avatar/Avatar';
-import { RoundIcon } from '../RoundIcon/RoundIcon';
+import { ManPersonIcon } from 'vienna.icons';
 import { DropList } from '../DropList/DropList';
 import { Link } from './Link/Link';
 import { Box, Profile, Name, Description, Size, PropsBox } from './UserProfile.styles';
 import { Breakpoints } from '../Utils/responsiveness';
 import { ItemProps } from '../DropList/Item/Item';
 import { BoxStyled } from '../Utils/styled';
+import { IconContainer } from '../IconContainer';
 
 export interface UserProfileProps<B = Breakpoints>
     extends BoxStyled<typeof Box, PropsBox>,
@@ -51,7 +50,7 @@ export function UserProfile<B = void>(
     }, [setOpen, close]);
 
     const handleClickDropdown = useCallback(
-        (event) => {
+        (event: React.MouseEvent) => {
             event.stopPropagation();
             open();
         },
@@ -59,7 +58,7 @@ export function UserProfile<B = void>(
     );
 
     const handleEnterKeyPress = useCallback(
-        (event) => {
+        (event: React.KeyboardEvent) => {
             event.stopPropagation();
             if (event.key === 'Enter') {
                 open();
@@ -74,17 +73,20 @@ export function UserProfile<B = void>(
         };
     }, [close]);
 
+    const withoutHover = !children && !to;
+
     const component = (
         <Box
-            {...(attrs as {})}
+            {...attrs}
             tabIndex={tabIndex}
             role={role}
             $position={align}
+            $noHover={withoutHover}
             onClick={to ? undefined : handleClickDropdown}
             onKeyPress={to ? undefined : handleEnterKeyPress}>
-            <Avatar src={photo} size={size} title={name} valign='top'>
-                <RoundIcon color={photo ? 'seattle10' : 'dubai10'}>{name ? name[0] : <ManPerson />}</RoundIcon>
-            </Avatar>
+            <IconContainer color={photo ? 'seattle10' : 'dubai10'} size={size} title={name}>
+                {photo ? <img src={photo} alt='Аватар' /> : name ? name[0] : <ManPersonIcon />}
+            </IconContainer>
 
             {name && (
                 <Profile $position={align}>

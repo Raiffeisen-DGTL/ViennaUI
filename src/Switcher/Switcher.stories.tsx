@@ -9,7 +9,7 @@ export default {
 
 export const Overview: Story<SwitcherProps> = (args) => {
     const [value, setValue] = React.useState(false);
-    const handleChange = (e, data) => setValue(data.value);
+    const handleChange = ({ value }) => setValue(value);
     return (
         <Switcher {...args} checked={value} onChange={handleChange}>
             Switcher
@@ -19,7 +19,7 @@ export const Overview: Story<SwitcherProps> = (args) => {
 
 export const WithAdaptive: Story<SwitcherProps> = (args) => {
     const [value, setValue] = React.useState(false);
-    const handleChange = (e, data) => setValue(data.value);
+    const handleChange = ({ value }) => setValue(value);
     return (
         <Switcher size={{ m: 'm', s: 'l' }} {...args} checked={value} onChange={handleChange}>
             Switcher
@@ -28,3 +28,11 @@ export const WithAdaptive: Story<SwitcherProps> = (args) => {
 };
 
 WithAdaptive.storyName = 'Адаптив';
+
+export const ViewOnly: Story<SwitcherProps> = (args) => {
+    return (
+        <Switcher viewOnly checked={false}>
+            Switcher
+        </Switcher>
+    );
+};

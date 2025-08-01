@@ -1,39 +1,61 @@
 import styled, { css } from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { getPresets } from '../../../Utils/styling';
 
-const presets = getPresets('table.cell.header.title', {
+const presets = getPresets(
+    table.cell.header.title,
+    'table.cell.header.title'
+)({
     base: null,
     hover: null,
+    box: null,
 });
 
-const icon = getPresets('table.cell.header.title.icon', {
-    base: null,
+const icon = getPresets(
+    table.cell.header.title.icon,
+    'table.cell.header.title.icon'
+)({
     active: null,
 });
 
 export const Icon = styled.span`
     visibility: hidden;
     display: inline-flex;
-    ${icon.base}
 `;
 
 export interface PropsBox {
     $forceIconVisibility?: boolean;
     $active?: boolean;
+    $align?: 'left' | 'center' | 'right';
+    $isIcon?: boolean;
 }
 export const Box = styled.div<PropsBox>`
     display: flex;
     align-items: center;
-    cursor: pointer;
     max-width: 100%;
+    width: 100%;
 
-    &:hover {
-        ${presets.hover}
+    ${({ $align }) =>
+        $align &&
+        css`
+            justify-content: ${$align};
+            flex-direction: ${$align === 'right' ? 'row-reverse' : 'row'};
+        `}
 
-        ${Icon} {
-            visibility: visible;
-        }
-    }
+    ${({ $isIcon }) =>
+        $isIcon &&
+        css`
+            cursor: pointer;
+            ${presets.box}
+
+            &:hover {
+                ${presets.hover}
+
+                ${Icon} {
+                    visibility: visible;
+                }
+            }
+        `}
 
     ${({ $forceIconVisibility }) =>
         $forceIconVisibility &&
@@ -53,6 +75,15 @@ export const Box = styled.div<PropsBox>`
                 ${icon.active}
             }
         `}
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
 `;
 
 export const Title = styled.span`

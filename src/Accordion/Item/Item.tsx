@@ -1,30 +1,42 @@
-import React, { useCallback, ReactNode, forwardRef, CSSProperties } from 'react';
-import { SelectHide, SelectOpenDown } from 'vienna.icons';
+import React, { forwardRef, CSSProperties } from 'react';
+import { SelectHideIcon, SelectOpenDownIcon } from 'vienna.icons';
 import { useControlState } from 'vienna.react-use';
 import { ItemWrapper } from '../Accordion.styles';
-import { Header, Content, IconBox, TextBox, PropsHeader } from './Item.styles';
+import { Header, Content, IconBox, TextBox, PropsHeader, ContentTextWrapper } from './Item.styles';
 import { BoxStyled } from '../../Utils/styled';
+import { Collapse } from '../../Collapse';
+import { WrapperProps } from '../../Collapse/Wrapper';
+
+export const defaultAccordionItemTestId: ItemProps['testId'] = {
+    header: 'accordion-item_header',
+    content: 'accordion-item_content',
+};
 
 export interface ItemProps extends BoxStyled<typeof Header, PropsHeader> {
     /** Компонент неактивен если true */
-    disabled?: PropsHeader['$disabled'];
+    disabled?: WrapperProps['disabled'];
     /** Управление состоянием */
-    open?: PropsHeader['$open'];
+    open?: WrapperProps['open'];
     width?: PropsHeader['$width'];
-    /** Заголовок */
-    header: ReactNode;
-    /**  Контент */
-    children: ReactNode;
-    iconSize?: 's' | 'm' | 'l';
-    /** Открыт/закрыт аккордеон изначально */
     initiallyOpen?: boolean;
-    /** Компонент всегда развернут, если false */
-    collapsible?: boolean;
+    /** Заголовок */
+    header: WrapperProps['header'];
+    /**  Контент */
+    children: WrapperProps['children'];
+    iconSize?: 's' | 'm' | 'l';
     headerClassName?: string;
     headerStyle?: CSSProperties;
     contentClassName?: string;
     contentStyle?: CSSProperties;
-    onOpenChange?: (open: boolean) => void;
+    /** Компонент всегда развернут, если false */
+    collapsible?: WrapperProps['collapsible'];
+    hideByStyles?: WrapperProps['hideByStyles'];
+    onOpenChange?: WrapperProps['onOpenChange'];
+    flexDirection?: 'row' | 'column';
+    testId?: {
+        header?: string;
+        content?: string;
+    };
 }
 
 export const Item = forwardRef<HTMLDivElement, ItemProps>(
@@ -38,10 +50,13 @@ export const Item = forwardRef<HTMLDivElement, ItemProps>(
             open: openProp,
             width,
             iconSize,
+            hideByStyles,
             headerClassName,
             headerStyle,
             contentClassName,
             contentStyle,
+            flexDirection = 'row',
+            testId = defaultAccordionItemTestId,
             onOpenChange,
             ...attrs
         },
@@ -53,31 +68,40 @@ export const Item = forwardRef<HTMLDivElement, ItemProps>(
             defaultStateValue: initiallyOpen,
             onChange: onOpenChange,
         });
-
-        const toggleOpen = useCallback(() => setOpen(!open), [open, setOpen]);
-        const icon = open ? <SelectHide size={iconSize} /> : <SelectOpenDown size={iconSize} />;
+        const icon = open ? <SelectHideIcon size={iconSize} /> : <SelectOpenDownIcon size={iconSize} />;
 
         return (
-            <ItemWrapper {...(attrs as {})} ref={ref}>
-                <Header
-                    role='header'
+            <ItemWrapper {...attrs} ref={ref}>
+                <Collapse.Wrapper
+                    header={
+                        <Header
+                            role='header'
+                            open={open}
+                            $open={open}
+                            $disabled={disabled}
+                            $width={width}
+                            className={headerClassName}
+                            // eslint-disable-next-line react/forbid-component-props
+                            style={headerStyle}
+                            data-testid={testId?.header}>
+                            <TextBox>{header}</TextBox>
+                            <IconBox> {icon}</IconBox>
+                        </Header>
+                    }
+                    disabled={disabled}
+                    collapsible={collapsible}
                     open={open}
-                    $open={open}
-                    $disabled={disabled}
-                    $width={width}
-                    className={headerClassName}
-                    // eslint-disable-next-line react/forbid-component-props
-                    style={headerStyle}
-                    onClick={!disabled && collapsible ? toggleOpen : undefined}>
-                    <TextBox>{header}</TextBox>
-                    <IconBox> {icon}</IconBox>
-                </Header>
-                {open && (
-                    // eslint-disable-next-line react/forbid-component-props
-                    <Content role='content' className={contentClassName} style={contentStyle}>
-                        {children}
+                    hideByStyles={hideByStyles}
+                    onOpenChange={setOpen}>
+                    <Content
+                        role='content'
+                        className={contentClassName}
+                        style={contentStyle}
+                        data-testid={testId?.content}
+                        $flexDirection={flexDirection}>
+                        {typeof children === 'string' ? <ContentTextWrapper>{children}</ContentTextWrapper> : children}
                     </Content>
-                )}
+                </Collapse.Wrapper>
             </ItemWrapper>
         );
     }

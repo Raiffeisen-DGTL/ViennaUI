@@ -1,28 +1,41 @@
 import styled, { css } from 'styled-components';
-import { Header, Content, IconBox } from './Item/Item.styles';
-import { getPresets } from '../Utils/styling';
+import { accordion } from 'vienna.ui-theme';
+import { Header, Content, IconBox, TextBox, ContentTextWrapper } from './Item/Item.styles';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 
-const presets = getPresets('accordion', {
+const presets = getPresets(
+    accordion,
+    'accordion'
+)({
     list: null,
     box: null,
 });
 
-const custom = getPresets('accordion.custom', {
+const custom = getPresetsCustom('accordion.custom')({
     box: null,
     list: null,
 });
 
-const item = getPresets('accordion.item', {
-    iconLeft: null,
-    iconRight: null,
-});
-
-const header = getPresets('accordion.item.header', {
+const header = getPresets(
+    accordion.item.header,
+    'accordion.item.header'
+)({
     size: '$size',
 });
 
-const content = getPresets('accordion.item.content', {
+const gap = getPresets(
+    accordion.item.header.gap,
+    'accordion.item.header.gap'
+)({
     size: '$size',
+});
+
+const content = getPresets(
+    accordion.item.content,
+    'accordion.item.content'
+)({
+    size: '$size',
+    textWrapper: '$size',
 });
 
 export const ItemWrapper = styled.div`
@@ -51,22 +64,18 @@ export const AccordionList = styled.div<PropsAccordionList>`
         ${Content} {
             ${content.size}
         }
+        ${ContentTextWrapper} {
+            ${content.textWrapper}
+        }
         ${IconBox} {
-            ${({ $iconPosition }) =>
-                $iconPosition === 'right' &&
-                css`
-                    ${item.iconLeft}
-                `}
-            ${({ $iconPosition }) =>
-                $iconPosition === 'left' &&
-                css`
-                    ${item.iconRight}
-                `}
             ${({ $iconPosition }) =>
                 $iconPosition === 'none' &&
                 css`
                     display: none;
                 `}
+        }
+        ${TextBox} {
+            ${gap.size}
         }
     }
     ${ItemWrapper}:last-child > ${Content} {

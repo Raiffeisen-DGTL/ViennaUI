@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-export const useRipple = () => {
-    const [rippleStyles, setrippleStyles] = useState<any>({});
+export const useRipple: () => [React.CSSProperties, (e: React.MouseEvent<HTMLDivElement>) => void] = () => {
+    const [rippleStyles, setrippleStyles] = useState<React.CSSProperties>({});
     let timer = 0;
 
     const handleClick = (e: React.MouseEvent<HTMLDivElement>): void => {

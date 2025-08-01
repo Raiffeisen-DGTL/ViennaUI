@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { ForwardArrowRight, Logo, Screw } from 'vienna.icons';
+import { ForwardArrowRightIcon, LogoIcon, ScrewIcon } from 'vienna.icons';
 import { Link, LinkProps } from './Link';
 
 export default {
@@ -15,7 +15,7 @@ export const Overview: Story<LinkProps> = (args) => {
 export const WithIcon: Story<LinkProps> = (args) => {
     return (
         <Link {...args}>
-            Вперед <ForwardArrowRight />
+            Вперед <ForwardArrowRightIcon />
         </Link>
     );
 };
@@ -24,7 +24,7 @@ WithIcon.storyName = 'С иконкой';
 export const Guideline: Story<LinkProps> = (args) => {
     return (
         <Link {...args}>
-            <Logo size='s' />
+            <LogoIcon size='s' />
             I'm a link
         </Link>
     );
@@ -34,7 +34,7 @@ Guideline.storyName = 'Гайдлайн ';
 export const IconLink: Story<LinkProps> = (args) => {
     return (
         <Link {...args}>
-            <Screw />
+            <ScrewIcon />
         </Link>
     );
 };

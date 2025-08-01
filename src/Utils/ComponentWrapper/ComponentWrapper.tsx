@@ -1,11 +1,12 @@
 import React, { FC, ForwardRefRenderFunction, PropsWithChildren, ReactElement, Ref } from 'react';
+import { AnyObject } from '../types';
 
-interface ComponentWrapperProps<Props = {}> {
+interface ComponentWrapperProps<Props = object> {
     component?: FC<PropsWithChildren<Props>> | ForwardRefRenderFunction<Ref<HTMLDivElement>, Props>;
     props?: Props;
 }
 
-export const ComponentWrapper = <Props extends Record<string, any>>({
+export const ComponentWrapper = <Props extends AnyObject>({
     component: Component,
     props,
     children,

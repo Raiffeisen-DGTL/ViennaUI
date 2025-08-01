@@ -1,36 +1,41 @@
 import React from 'react';
-import { UpArrow, DownArrow } from 'vienna.icons';
+import { DownArrowIcon, UpArrowIcon } from 'vienna.icons';
 import { Groups } from '../../../Groups';
 import { Button } from '../../../Button';
-import { useTableService, useTableLocalization } from '../Context/TableContext';
+import { useTableService, useTableLocalization } from '../Context';
 import { SortDirection } from '../../types';
 import { SortState } from './SortModule';
 
-export const SortInFilter = ({ field }) => {
+export interface SortInFilterProps {
+    field: string;
+}
+
+export const SortInFilter = <T,>({ field }: SortInFilterProps) => {
     const localize = useTableLocalization();
-    const { setSortColumn, getSortColumn } = useTableService();
+    const { setSortColumn, getSortColumn } = useTableService<T>();
     const current = getSortColumn() ?? ({} as SortState);
 
     const isCurrentSort = current.field === field;
     const isAsc = current.direction === SortDirection.Asc;
+    const isDesc = current.direction === SortDirection.Desc;
 
     const onClick = (direction: SortDirection) => {
         return () => {
             if (isCurrentSort && current.direction === direction) {
-                return;
+                setSortColumn(field, SortDirection.None);
+            } else {
+                setSortColumn(field, direction);
             }
-
-            setSortColumn(field, direction);
         };
     };
 
     return (
         <Groups design='vertical'>
             <Button design='ghost' size='xs' pressed={isCurrentSort && isAsc} onClick={onClick(SortDirection.Asc)}>
-                <UpArrow size='m' /> {localize('ds.table.filter.sortUp')}
+                <UpArrowIcon size='m' /> {localize('ds.table.filter.sortUp')}
             </Button>
-            <Button design='ghost' size='xs' pressed={isCurrentSort && !isAsc} onClick={onClick(SortDirection.Desc)}>
-                <DownArrow size='m' /> {localize('ds.table.filter.sortDown')}
+            <Button design='ghost' size='xs' pressed={isCurrentSort && isDesc} onClick={onClick(SortDirection.Desc)}>
+                <DownArrowIcon size='m' /> {localize('ds.table.filter.sortDown')}
             </Button>
         </Groups>
     );

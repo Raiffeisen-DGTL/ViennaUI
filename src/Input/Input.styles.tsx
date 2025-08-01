@@ -1,51 +1,77 @@
 import styled, { css } from 'styled-components';
-import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { input } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const input = getPresets('input.native', {
+const native = getPresets(
+    input.native,
+    'input.native'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     design: '$design',
 });
 
-const placeholder = getPresets('input.placeholder', {
+const placeholder = getPresets(
+    input.placeholder,
+    'input.placeholder'
+)({
     base: null,
     gap: null,
 });
 
-const wrapper = getPresets('input.wrapper', {
+const wrapper = getPresets(
+    input.wrapper,
+    'input.wrapper'
+)({
     base: null,
     design: '$design',
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     hover: '$design',
     invalid: '$design',
     disabled: '$design',
+    focus: '$design',
 });
 
-const wrapped = getPresets('input.wrapped', {
+const wrapped = getPresets(
+    input.wrapped,
+    'input.wrapped'
+)({
     base: null,
     disabled: null,
 });
 
-const disabledColor = getPresets('input.wrapped.disabled', {
+const disabledColor = getPresets(
+    input.wrapped.disabled,
+    'input.wrapped.disabled'
+)({
     color: null,
 });
 
-const infix = getPresets('input.infix', {
+const infix = getPresets(
+    input.infix,
+    'input.infix'
+)({
     base: null,
     hover: null,
     size: '$size',
 });
 
-const prefix = getPresets('input.prefix', {
+const prefix = getPresets(
+    input.prefix,
+    'input.prefix'
+)({
     base: null,
 });
 
-const postfix = getPresets('input.postfix', {
+const postfix = getPresets(
+    input.postfix,
+    'input.postfix'
+)({
     base: null,
 });
 
-const custom = getPresets('input.custom', {
+const custom = getPresetsCustom('input.custom')({
     input: null,
     placeholder: null,
     wrapper: null,
@@ -63,8 +89,8 @@ interface PropsPlaceholder {
     $disabled?: boolean;
 }
 export const Placeholder = styled.div<PropsPlaceholder>`
-    ${input.size}
-    ${input.design}
+    ${native.size}
+    ${native.design}
     ${placeholder.base}
     ${placeholder.gap}
     line-height: normal;
@@ -96,14 +122,13 @@ export interface PropsStyledInput<B = Breakpoints> {
 export const StyledInput = styled.input<PropsStyledInput>`
     position: relative;
     padding: 0;
-    ${input.base}
-    ${input.size}
-    ${input.design}
+    ${native.base}
+    ${native.size}
+    ${native.design}
 
-    ${({ $align }) =>
-        css`
-            text-align: ${$align};
-        `}
+    ${({ $align }) => css`
+        text-align: ${$align};
+    `}
 
     &::placeholder {
         ${placeholder.base}
@@ -164,7 +189,7 @@ export const Wrapped = styled.div<PropsWrapped>`
         $disabled &&
         css`
             ${wrapped.disabled}
-            & *, input {
+            & >* input {
                 // fix text color dim in safari
                 ${wrapped.disabled}
                 opacity: 1;
@@ -184,6 +209,7 @@ interface PropsWrapper {
     $disabled?: boolean;
     $invalid?: boolean;
     $active?: boolean;
+    $wrap?: boolean;
 }
 export const Wrapper = styled.label<PropsWrapper>`
     display: flex;
@@ -199,15 +225,24 @@ export const Wrapper = styled.label<PropsWrapper>`
     ${wrapper.base}
     ${wrapper.size}
     ${wrapper.design}
-
+ 
     ${custom.wrapper}
 
     ${({ $design, $disabled }) => $disabled && wrapper.disabled({ $design })}
     ${({ $design, $invalid }) => $invalid && wrapper.invalid({ $design })}
     ${({ $design, $active }) => $active && wrapper.hover({ $design })}
+    ${({ $wrap }) =>
+        $wrap &&
+        css`
+            flex-wrap: wrap;
+        `}
 
     &:hover {
         ${wrapper.hover}
+    }
+
+    &:focus-within {
+        ${wrapper.focus}
     }
 `;
 
@@ -224,4 +259,16 @@ export const PlaceholderWrapper = styled.div`
 export const Invisible = styled.span`
     color: transparent;
     opacity: 0;
+`;
+
+interface PropsInputDisabledWrapper {
+    $disabled?: boolean;
+}
+export const InputDisabledWrapper = styled.div<PropsInputDisabledWrapper>`
+    width: 100%;
+    ${({ $disabled }) =>
+        $disabled &&
+        css`
+            cursor: not-allowed;
+        `}
 `;

@@ -1,8 +1,12 @@
 import styled from 'styled-components';
+import { formField } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 import { FormFieldSize } from '../FormField';
 
-const presets = getPresets('formField.message', {
+const message = getPresets(
+    formField.message,
+    'formField.message'
+)({
     base: null,
     design: '$color',
     custom: null,
@@ -11,14 +15,14 @@ const presets = getPresets('formField.message', {
 });
 
 export interface PropsBox {
-    $color?: 'warning' | 'critical';
+    $color?: 'warning' | 'critical' | 'disabled';
     $align?: 'left' | 'center' | 'right';
     $size?: FormFieldSize;
 }
 export const Box = styled.div<PropsBox>`
-    ${presets.base}
-    ${presets.design}
-    ${presets.align}
-    ${presets.custom}
-    ${presets.size}
+    ${message.base}
+    ${message.design}
+    ${message.align}
+    ${message.custom}
+    ${message.size}
 `;

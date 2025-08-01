@@ -1,6 +1,6 @@
 import React, { useRef, useCallback, useState, useEffect, FC, ComponentProps } from 'react';
 import { useWindowResize } from 'vienna.react-use';
-import { GoRight } from 'vienna.icons';
+import { GoRightIcon } from 'vienna.icons';
 import { Tooltip } from '../../Tooltip';
 import { Box, Text, Icon, Link, HiddenText, PropsBox } from './Option.styles';
 import { BoxStyled } from '../../Utils/styled';
@@ -10,13 +10,14 @@ export interface BreadcrumbsOptionProps
     extends Omit<BoxStyled<typeof Box, PropsBox>, 'onClick'>,
         Pick<ComponentProps<typeof Link>, 'href' | 'rel' | 'type' | 'target' | 'hrefLang'> {
     size?: PropsBox['$size'];
+    noHomeButton?: boolean;
     first?: PropsBox['$first'];
     preLast?: PropsBox['$preLast'];
     altText?: string;
     last?: boolean;
     withoutTooltip?: boolean;
-    value?: any;
-    onClick?: (e, data: { value: any }) => void;
+    value?: React.ReactNode;
+    onClick?: (e: React.MouseEvent<HTMLDivElement>, data: { value: React.ReactNode }) => void;
 }
 
 export const Option: FC<BreadcrumbsOptionProps> = (props) => {
@@ -27,6 +28,7 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
         last,
         preLast,
         first,
+        noHomeButton,
         children,
         altText = '',
         withoutTooltip = false,
@@ -36,13 +38,12 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
     const { href, rel, type, tabIndex, target, hrefLang, ...boxAttrs } = attrs;
     const wrapperAttrs = { href, rel, type, tabIndex, target, hrefLang };
 
-    const containerRef = useRef<any>();
-    const wrapperRef = useRef<any>();
-    const iconRef = useRef<any>();
-    const hiddenTextRef = useRef<any>();
-    const hiddenAltTextRef = useRef<any>();
-
-    const checkpointWidth = useRef<any>(0);
+    const containerRef = useRef<HTMLDivElement | null>(null);
+    const wrapperRef = useRef<HTMLAnchorElement | null>(null);
+    const iconRef = useRef<HTMLDivElement | null>(null);
+    const hiddenTextRef = useRef<HTMLDivElement | null>(null);
+    const hiddenAltTextRef = useRef<HTMLDivElement | null>(null);
+    const checkpointWidth = useRef<number | undefined>(0);
 
     const [text, setText] = useState(children);
     const [tooltipEnabled, setTooltipEnabled] = useState(false);
@@ -78,15 +79,17 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
             В начальном состоянии она равно 0, но если элементу пришлось схлопнуться он запомнит ширину родителя начиная с которой он не вместился,
             в дальнейшем мы сможем раскрыть элемент если ширина родителя станет выше сохраненной, а так же мы сократим число установок нового состояния.
         */
-        if (wrapperRef.current && hiddenTextRef.current) {
-            if (!checkpointWidth.current && wrapperRef.current.offsetWidth < hiddenTextRef.current.offsetWidth) {
-                checkpointWidth.current = checkpointWidth.current || containerRef?.current?.parentNode?.offsetWidth;
+        const parentElement = containerRef?.current?.parentNode;
+
+        if (wrapperRef.current && hiddenTextRef?.current && parentElement instanceof HTMLElement) {
+            if (!checkpointWidth.current && wrapperRef.current.offsetWidth < hiddenTextRef?.current.offsetWidth) {
+                checkpointWidth.current = checkpointWidth.current || parentElement?.offsetWidth;
                 setText(altText || children);
                 setTooltipEnabled(true);
                 return;
             }
 
-            if (checkpointWidth.current && containerRef?.current?.parentNode?.offsetWidth > checkpointWidth.current) {
+            if (checkpointWidth.current && parentElement?.offsetWidth > checkpointWidth.current) {
                 checkpointWidth.current = 0;
                 setText(children);
                 setTooltipEnabled(false);
@@ -102,7 +105,7 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
     useWindowResize(resizeHandler);
 
     const handleClick = useCallback(
-        (e) => {
+        (e: React.MouseEvent<HTMLDivElement>) => {
             if (typeof onClick === 'function') {
                 onClick(e, { value });
             }
@@ -112,15 +115,16 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
 
     const minWidth =
         // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
-        (hiddenAltTextRef?.current?.offsetWidth || hiddenTextRef?.current?.offsetWidth / 2 || 0) +
-        (iconRef?.current?.offsetWidth || 0);
+        (hiddenAltTextRef?.current?.offsetWidth ||
+            (hiddenTextRef?.current && hiddenTextRef?.current?.offsetWidth / 2) ||
+            0) + (iconRef?.current?.offsetWidth || 0);
 
     return (
         <Box
-            {...(boxAttrs as {})}
+            {...(boxAttrs as PropsBox)}
             ref={containerRef}
             $size={size}
-            $first={first}
+            $first={!noHomeButton ? first : undefined}
             $active={last}
             $minWidth={minWidth}
             $preLast={preLast}
@@ -128,14 +132,13 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
             onClick={handleClick}>
             {!first && (
                 <Icon ref={iconRef} $size={size}>
-                    <GoRight size={size === 's' ? 'xs' : 's'} />
+                    <GoRightIcon size={size === 's' ? 'xs' : 's'} />
                 </Icon>
             )}
             <ComponentWrapper
                 component={withoutTooltip ? undefined : Tooltip}
                 props={{
-                    truncate: !last && !first,
-                    disabled: !tooltipEnabled || first,
+                    disabled: !tooltipEnabled,
                     design: 'dark',
                     action: 'hover',
                     content: children,
@@ -150,3 +153,5 @@ export const Option: FC<BreadcrumbsOptionProps> = (props) => {
         </Box>
     );
 };
+
+Option.displayName = 'Option';

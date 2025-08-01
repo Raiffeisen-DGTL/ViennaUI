@@ -10,29 +10,34 @@ import React, {
 } from 'react';
 import { useControlState } from 'vienna.react-use';
 import { FloatingPortal } from '@floating-ui/react';
-import { composeRef } from '../Utils/composeRef';
 import {
     IActionStrategy,
     ITrigger,
     TriggerActionType,
     TriggerRendererPopupProps,
     ITriggerRendererTarget,
+    BaseActionStrategyOptions,
+    TriggerTargetExtends,
 } from './types';
 import { getStrategy } from './strategies';
 import { Floating, FloatingProps, IFloatingRendererPopup } from '../Floating';
+import { composeRef, ComponentWrapper } from '../Utils';
 
-export type TriggerProps<Target extends HTMLElement = HTMLElement, Popup extends HTMLElement = HTMLElement> = Pick<
+export type TriggerProps<Target extends TriggerTargetExtends, Popup extends HTMLElement> = Pick<
     FloatingProps<Target, Popup>,
-    'offset' | 'placement'
+    'offset' | 'placement' | 'disableFlip'
 > & {
     action?: TriggerActionType;
     visible?: boolean;
     defaultVisible?: boolean;
+    disabled?: boolean;
     disableOutsideClick?: boolean;
     mouseEnterDelay?: number;
     mouseLeaveDelay?: number;
+    closeOnTargetClick?: NonNullable<BaseActionStrategyOptions['closeOnTargetClick']>;
     renderTarget: ITriggerRendererTarget<Target>;
     renderPopup?: IFloatingRendererPopup<Popup, TriggerRendererPopupProps>;
+    popupPortal?: HTMLElement | React.MutableRefObject<HTMLElement | null> | null;
     onVisibleChange?: (visible: boolean) => void;
     onOpen?: () => void;
     onClose?: () => void;
@@ -45,11 +50,15 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
         placement = 'auto',
         visible: visibleProp,
         defaultVisible,
+        disabled = false,
+        disableFlip,
         disableOutsideClick = false,
         mouseEnterDelay = 50,
         mouseLeaveDelay = 50,
+        closeOnTargetClick,
         renderTarget,
         renderPopup,
+        popupPortal = document.body,
         onVisibleChange,
         onOpen,
         onClose,
@@ -84,11 +93,12 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
 
         const strategy = getStrategy(action, targetElement, {
             mouseEnterDelay,
-            mouseLeaveDelay,
+            mouseLeaveDelay: mouseEnterDelay > mouseLeaveDelay ? mouseEnterDelay : mouseLeaveDelay,
             onClose: close,
             onOpen: open,
             visible,
             disableOutsideClick,
+            closeOnTargetClick,
         });
 
         setStrategy(strategy);
@@ -110,20 +120,27 @@ function TriggerInternal<Target extends HTMLElement, Popup extends HTMLElement>(
     return (
         <>
             {renderTarget(setTargetElement, baseRendererProps)}
-            {visible && (
-                <FloatingPortal>
-                    <Floating<Target, Popup> targetElement={targetElement} placement={placement} offset={offset}>
+            {visible && !disabled && (
+                <ComponentWrapper component={popupPortal ? FloatingPortal : undefined} props={{ root: popupPortal }}>
+                    <Floating<Target, Popup>
+                        targetElement={targetElement}
+                        placement={placement}
+                        offset={offset}
+                        disableFlip={disableFlip}>
                         {(popupRef, props) =>
                             renderPopup &&
                             renderPopup(composeRef(popupRef, ownPopupRef), { ...props, ...baseRendererProps })
                         }
                     </Floating>
-                </FloatingPortal>
+                </ComponentWrapper>
             )}
         </>
     );
 }
 
-export const Trigger = forwardRef(TriggerInternal) as <Popup extends HTMLElement, Target extends HTMLElement>(
+export const Trigger = forwardRef(TriggerInternal) as <
+    Popup extends HTMLElement | SVGElement,
+    Target extends HTMLElement,
+>(
     p: TriggerProps<Popup, Target> & { ref?: Ref<ITrigger> }
 ) => ReactElement;

@@ -1,28 +1,43 @@
 import styled, { css } from 'styled-components';
+import { userprofile } from 'vienna.ui-theme';
+import { color } from 'vienna.tokens';
 import { getPresets } from '../Utils/styling';
-import { responsivePreset, ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
+import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
 
-const box = getPresets('userprofile', {
+const presets = getPresets(
+    userprofile,
+    'userprofile'
+)({
     base: null,
     baseHover: null,
     profile: null,
 });
 
-const profile = getPresets('userprofile.profile', {
+const profile = getPresets(
+    userprofile.profile,
+    'userprofile.profile'
+)({
     left: null,
     right: null,
 });
 
-const name = getPresets('userprofile.name', {
-    size: responsivePreset('$size', 'm'),
+const name = getPresets(
+    userprofile.name,
+    'userprofile.name'
+)({
+    size: ['$size', 'm'],
 });
 
-const description = getPresets('userprofile.description', {
+const description = getPresets(
+    userprofile.description,
+    'userprofile.description'
+)({
     base: null,
 });
 
 export interface PropsBox {
     $position: 'left' | 'right';
+    $noHover?: boolean;
 }
 export const Box = styled.span<PropsBox>`
     position: relative;
@@ -35,16 +50,28 @@ export const Box = styled.span<PropsBox>`
     cursor: pointer;
     user-select: none;
     outline: none;
-    ${box.base}
+    ${presets.base}
 
     &:hover {
-        ${box.baseHover}
+        ${presets.baseHover}
     }
 
     &:focus {
-        ${box.baseHover}
+        ${presets.baseHover}
     }
 
+    ${({ $noHover }) =>
+        $noHover &&
+        css`
+            pointer-events: none;
+            cursor: auto;
+            &:hover {
+                color: ${color.primary.brand.primary};
+            }
+            &:focus {
+                color: ${color.primary.brand.primary};
+            }
+        `}
     ${({ $position }) =>
         $position === 'right' &&
         css`
@@ -52,7 +79,7 @@ export const Box = styled.span<PropsBox>`
         `}
 `;
 
-interface PropsProfile {
+export interface PropsProfile {
     $position: 'left' | 'right';
 }
 export const Profile = styled.span<PropsProfile>`

@@ -1,19 +1,26 @@
 import styled, { css } from 'styled-components';
+import { calendar } from 'vienna.ui-theme';
 import { DayType } from './types';
 import { getPresets } from '../Utils/styling';
 
 const DAY_SIZE = 32;
 
-const presets = getPresets('calendar', {
+const presets = getPresets(
+    calendar,
+    'calendar'
+)({
     base: null,
     dayWeek: null,
 });
 
-const day = getPresets('calendar.day', {
+const day = getPresets(
+    calendar.day,
+    'calendar.day'
+)({
     base: null,
     active: null,
     today: null,
-    ['not-active']: null,
+    'not-active': null,
     disabled: null,
     weekend: null,
     range: null,
@@ -23,10 +30,14 @@ const day = getPresets('calendar.day', {
     activeDisabled: null,
 });
 
-const dayHover = getPresets('calendar.dayHover', {
+const dayHover = getPresets(
+    calendar.dayHover,
+    'calendar.dayHover'
+)({
     hover: null,
     active: null,
     range: null,
+    disabled: null,
 });
 
 export const Box = styled.div`
@@ -48,20 +59,58 @@ export const DayState = styled.div`
     ${day.base}
 `;
 
-interface PropsDay {
+export interface PropsDay {
     $type?: DayType[];
 }
-export const Day = styled.div<PropsDay>`
+export const Day = styled.button<PropsDay>`
+    ${calendar.base}
     width: ${DAY_SIZE}px;
     height: ${DAY_SIZE}px;
     position: relative;
+
+    // reset
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    //
+
+    &:hover,
+    &:focus {
+        ${({ $type }) =>
+            ($type?.includes('active') &&
+                css`
+                    ${DayState} {
+                        ${dayHover.active}
+                    }
+                `) ||
+            ($type?.includes('range') &&
+                css`
+                    ${DayState} {
+                        ${dayHover.range}
+                    }
+                `) ||
+            ($type?.includes('disabled') &&
+                css`
+                    ${dayHover.disabled}
+                `) ||
+            ($type?.includes('not-active') &&
+                css`
+                    ${dayHover.disabled}
+                `) ||
+            css`
+                ${DayState} {
+                    ${dayHover.hover}
+                }
+            `}
+    }
 
     ${DayState} {
         // Combines types for day states
         ${({ $type }) =>
             $type &&
             css`
-                ${$type.map((item) => item !== 'event' && day[item])}
+                ${$type.map((item) => item !== 'event' && item && day[item])}
             `}
 
         ${({ $type }) =>
@@ -74,21 +123,6 @@ export const Day = styled.div<PropsDay>`
                     ${day.event};
                 }
             `}
-
-        &:hover {
-            ${({ $type }) =>
-                ($type?.includes('active') &&
-                    css`
-                        ${dayHover.active}
-                    `) ||
-                ($type?.includes('range') &&
-                    css`
-                        ${dayHover.range}
-                    `) ||
-                css`
-                    ${dayHover.hover}
-                `}
-        }
     }
 `;
 

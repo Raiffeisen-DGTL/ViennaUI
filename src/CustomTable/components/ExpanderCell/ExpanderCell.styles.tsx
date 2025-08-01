@@ -1,17 +1,21 @@
 import styled from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { Td } from '../TableBody/TableBody.styles';
 import { getPresets } from '../../../Utils/styling';
 
-const presets = getPresets('table.expander', {
+const expander = getPresets(
+    table.expander,
+    'table.expander'
+)({
     cell: null,
     hover: null,
 });
 
 export const ExpanderTd = styled(Td)`
-    ${presets.cell}
+    ${expander.cell}
 
     &:hover {
-        ${presets.hover}
+        ${expander.hover}
     }
 `;
 

@@ -1,24 +1,34 @@
 import styled, { css } from 'styled-components';
+import { radio } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints } from '../Utils/responsiveness';
 import { RadioSize } from './Radio';
 
-const radio = getPresets('radio', {
+const presets = getPresets(
+    radio,
+    'radio'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     hover: null,
     disabled: null,
     invalid: null,
     checked: null,
 });
 
-const label = getPresets('radio.label', {
+const label = getPresets(
+    radio.label,
+    'radio.label'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     disabled: null,
 });
 
-const checkmark = getPresets('radio.checkmark', {
+const checkmark = getPresets(
+    radio.checkmark,
+    'radio.checkmark'
+)({
     base: null,
     disabled: null,
 });
@@ -36,19 +46,19 @@ export const Icon = styled.span<PropsIcon>`
     transition: all 0.2s;
     align-self: flex-start;
 
-    ${radio.base}
-    ${radio.size}
+    ${presets.base}
+    ${presets.size}
 
     ${({ $disabled }) =>
         $disabled &&
         css`
-            ${radio.disabled}
+            ${presets.disabled}
         `}
 
     ${({ $invalid }) =>
         $invalid &&
         css`
-            ${radio.invalid}
+            ${presets.invalid}
         `}
 `;
 
@@ -72,11 +82,11 @@ export const Box = styled.label<PropsBox>`
     transition: all 0.2s;
 
     &:hover ${Icon} {
-        ${radio.hover}
+        ${presets.hover}
         ${({ $disabled }) =>
             $disabled &&
             css`
-                ${radio.disabled}
+                ${presets.disabled}
             `}
     }
 
@@ -105,18 +115,18 @@ export const Input = styled.input<PropsInput>`
     z-index: -1;
 
     &:checked ~ ${Icon} {
-        ${radio.checked}
+        ${presets.checked}
 
         ${({ $disabled }) =>
             $disabled &&
             css`
-                ${radio.disabled}
+                ${presets.disabled}
             `}
 
         ${({ $invalid }) =>
             $invalid &&
             css`
-                ${radio.invalid}
+                ${presets.invalid}
             `}
 
         &::after {
@@ -141,6 +151,6 @@ export const Input = styled.input<PropsInput>`
     }
 
     &:focus ~ ${Icon} {
-        ${radio.hover}
+        ${presets.hover}
     }
 `;

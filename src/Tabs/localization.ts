@@ -6,6 +6,6 @@ export interface TabsLocalization {
 
 export type TabsLocalizationProps = DSLocalizationProps<TabsLocalization>;
 
-export const defaultTabsLocalization: TabsLocalization = {
+export const defaultTabsLocalization: Required<TabsLocalization> = {
     'ds.tabs.rest': 'Еще...',
 };

@@ -1,17 +1,21 @@
 import styled, { css } from 'styled-components';
+import { card } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { WithMarginStyled, withMargin } from '../Whitespace/utils';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 
-const presets = getPresets('card', {
+const presets = getPresets(
+    card,
+    'card'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     header: null,
     footer: null,
     subtitle: null,
     contentTitle: null,
     contentTitleGap: null,
-
+    actions: null,
     custom: null,
     customHeader: null,
     customTitle: null,
@@ -20,10 +24,32 @@ const presets = getPresets('card', {
     customFooter: null,
 });
 
-export const Header = styled.div`
+const header = getPresets(
+    card.header,
+    'card.header'
+)({
+    base: null,
+    size: '$size',
+});
+const contentTitle = getPresets(
+    card.contentTitle,
+    'card.contentTitle'
+)({
+    base: null,
+    size: '$size',
+});
+const footer = getPresets(
+    card.footer,
+    'card.footer'
+)({
+    base: null,
+    size: '$size',
+});
+
+export const Header = styled.div<PropsBox>`
     display: flex;
     ${presets.header}
-
+    ${header.size}
     ${presets.customHeader}
 `;
 
@@ -34,6 +60,7 @@ export const Title = styled.div`
 `;
 
 export const Actions = styled.div`
+    ${presets.actions}
     ${presets.customActions}
 `;
 
@@ -41,9 +68,9 @@ export const Content = styled.div`
     ${presets.customContent}
 `;
 
-export const Footer = styled.div`
+export const Footer = styled.div<PropsBox>`
     ${presets.footer}
-
+    ${footer.size}
     ${presets.customFooter}
 `;
 
@@ -80,8 +107,15 @@ export const Box = styled.div<PropsBox>`
                 flex-grow: 1;
             }
         `}
+    ${({ $size }) =>
+        $size &&
+        css`
+            ${ContentTitle} {
+                ${contentTitle.size}
+            }
+        `}
 
-    ${withMargin('card')}
+    ${withMargin(card, 'card')}
 
     ${presets.custom}
 `;

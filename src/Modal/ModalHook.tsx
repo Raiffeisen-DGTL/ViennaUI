@@ -1,8 +1,8 @@
-import React, { useState, Dispatch, ReactNode } from 'react';
+import React, { useState, Dispatch, ReactNode, MutableRefObject } from 'react';
 import { createPortal, render } from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import { Modal, ModalProps } from './Modal';
-import { ComponentWrapper } from '../Utils/ComponentWrapper/ComponentWrapper';
+import { Modal, ModalProps, RefFunc } from './Modal';
+import { ComponentWrapper } from '../Utils';
 
 let modals: ReactNode[] = [];
 let setModals: Dispatch<ReactNode[]>;
@@ -14,23 +14,34 @@ const ModalContainer = () => {
     return <>{modals.map((modal) => modal)}</>;
 };
 
-type ModalHookOpen = () => void;
-type ModalHookClose = <T extends any>(data?: T) => void;
-
+export type ModalHookOpen = () => void;
+export type ModalHookClose = <T>(data?: T) => void;
 interface ModalHook {
+    children: ReactNode;
+    onClose?: ModalHookClose;
     open: ModalHookOpen;
     close: ModalHookClose;
+    _open: ModalHookOpen;
+    _close: ModalHookClose;
 }
-
+type ThemeType = Parameters<typeof ThemeProvider>[0]['theme'];
+/**
+ * @deprecated
+ */
 export function useModal(): ModalHook;
 export function useModal(
     modal: ReactNode,
     onClose?: ModalHookClose,
     modalProps?: Omit<ModalProps, 'state' | 'onClose' | 'children'>,
-    theme?: any
+    theme?: ThemeType
 ): [ModalHookOpen, ModalHookClose];
-export function useModal(modal?: any, onClose?: any,  modalProps?: any, theme?: any): any {
-    const modalRef: any = { current: { close: null } };
+export function useModal(
+    modal?: ReactNode,
+    onClose?: ModalHookClose,
+    modalProps?: Omit<ModalProps, 'state' | 'onClose' | 'children'>,
+    theme?: ThemeType
+): ModalHook | [ModalHookOpen, ModalHookClose] {
+    const modalRef: MutableRefObject<RefFunc> = { current: { close: (data: unknown) => close(data) } };
     let instance: ReactNode;
 
     const closeHandler: ModalHookClose = (data) => {
@@ -40,13 +51,13 @@ export function useModal(modal?: any, onClose?: any,  modalProps?: any, theme?: 
         }
     };
 
-    const close: ModalHookClose = (data) => {
+    let close: ModalHookClose = (data) => {
         if (typeof modalRef.current.close === 'function' && modals.includes(instance)) {
             modalRef.current.close(data);
         }
     };
 
-    const open: ModalHookOpen = () => {
+    let open: ModalHookOpen = () => {
         if (!container) {
             container = document.createElement('div');
             document.body.appendChild(container);
@@ -55,13 +66,15 @@ export function useModal(modal?: any, onClose?: any,  modalProps?: any, theme?: 
 
         const state: { open: (() => void) | null } = { open: null };
 
-        const handleRef = (ref) => {
-            modalRef.current = ref;
+        const handleRef = (ref: RefFunc | HTMLDivElement | null) => {
+            if (modalRef) {
+                (modalRef.current as HTMLDivElement | RefFunc | null) = ref;
+            }
             state.open?.();
         };
 
         instance = (
-            <ComponentWrapper component={theme ? ThemeProvider : undefined} props={{ theme }}>
+            <ComponentWrapper component={theme ? ThemeProvider : undefined} props={theme ? { theme } : undefined}>
                 <Modal key={Math.random()} state={state} ref={handleRef} onClose={closeHandler} {...modalProps}>
                     {modal}
                 </Modal>
@@ -75,26 +88,29 @@ export function useModal(modal?: any, onClose?: any,  modalProps?: any, theme?: 
     };
 
     if (!modal && !onClose) {
-        return {
-            set children(val) {
+        const state: ModalHook = {
+            set children(val: React.ReactNode) {
                 modal = val;
             },
-            set onClose(val) {
+            set onClose(val: ModalHookClose | undefined) {
                 onClose = val;
             },
-            set open(val) {
-                this.nativeOpen = val;
+            _open: open,
+            _close: close,
+            set open(val: ModalHookOpen) {
+                this._open = val;
             },
             get open() {
-                return open;
+                return this._open;
             },
-            set close(val) {
-                this.nativeClose = val;
+            set close(val: ModalHookClose) {
+                this._close = val;
             },
             get close() {
-                return close;
+                return this._close;
             },
         };
+        return state;
     }
 
     return [open, close];

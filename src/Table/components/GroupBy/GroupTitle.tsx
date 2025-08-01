@@ -1,45 +1,24 @@
-import React, { FC, useCallback } from 'react';
-import { Checkbox } from '../../../Checkbox';
-import { useTableService, useTableConfig } from '../Context';
-import { Td, SelectTd, GroupTitleContainer } from './GroupTitle.styles';
+import React from 'react';
 import { GroupByProps } from './GroupBy';
+import { GroupTitleContent } from './GroupTitleContent';
+import { useTableService } from '../Context';
+import { GroupTitleRoot } from './GroupTitle.styles';
 
-export interface GroupTitleInterface extends GroupByProps {
-    isGroupTitle: boolean;
+export interface GroupTitleInterface<T> extends GroupByProps<T> {
+    isGroupTitle?: boolean;
 }
 
-export interface GroupTitleProps {
-    group: GroupTitleInterface;
+export interface GroupTitleProps<T> {
+    group: GroupTitleInterface<T>;
+    disabled?: boolean;
+    isSelectAll?: boolean;
 }
 
-export const GroupTitle: FC<GroupTitleProps> = (props) => {
-    const { group } = props;
-    const { colSpan, toggleSelectGroup, isRowSelected } = useTableService();
-    const { selectRow } = useTableConfig();
-
-    const onChange = useCallback(
-        (e) => {
-            toggleSelectGroup(group, e.target.checked);
-
-            if (typeof selectRow?.onSelect === 'function') {
-                const data = {
-                    item: group.id,
-                    isChecked: e.target.checked,
-                };
-                selectRow.onSelect(e, data);
-            }
-        },
-        [toggleSelectGroup, selectRow, group]
-    );
-
+export const GroupTitle = <T,>(props: GroupTitleProps<T>) => {
+    const { colSpan } = useTableService();
     return (
-        <GroupTitleContainer key={group.id} $pinned={group?.pinned}>
-            {selectRow && (
-                <SelectTd>
-                    <Checkbox checked={isRowSelected(group.id)} onChange={onChange} />
-                </SelectTd>
-            )}
-            <Td colSpan={colSpan()}>{group.title}</Td>
-        </GroupTitleContainer>
+        <GroupTitleRoot key={props.group.id} colSpan={colSpan()}>
+            <GroupTitleContent {...props} />
+        </GroupTitleRoot>
     );
 };

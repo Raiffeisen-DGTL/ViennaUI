@@ -1,9 +1,10 @@
 import React, { ComponentProps } from 'react';
 import styled, { ExecutionProps } from 'styled-components';
+import { whitespace } from 'vienna.ui-theme';
 import { WithWhitespace, WithWhitespaceStyled, getWhitespaceStyledProps, withWhitespace } from './utils';
 
 const Box = styled.div<WithWhitespaceStyled>`
-    ${withWhitespace('whitespace')}
+    ${withWhitespace(whitespace, 'whitespace')}
 `;
 
 export type WhitespaceProps = ExecutionProps &
@@ -14,8 +15,10 @@ export const Whitespace = React.forwardRef<HTMLDivElement, WhitespaceProps>(({ c
     const { attrs, propsStyled } = getWhitespaceStyledProps(rest);
 
     return (
-        <Box {...(attrs as {})} {...(propsStyled as {})} ref={ref}>
+        <Box {...attrs} {...propsStyled} ref={ref}>
             {children}
         </Box>
     );
 });
+
+Whitespace.displayName = 'Whitespace';

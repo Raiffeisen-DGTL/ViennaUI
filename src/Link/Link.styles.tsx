@@ -1,12 +1,16 @@
 import styled, { css } from 'styled-components';
+import { link, typography } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 import { ColorType } from '../Typography/Text/Text.styles';
 
-const presets = getPresets('link', {
+const presets = getPresets(
+    link,
+    'link'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
-    gap: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
+    gap: ['$size', 'm'],
     design: '$design',
     hover: '$design',
     disabled: null,
@@ -14,11 +18,17 @@ const presets = getPresets('link', {
     custom: null,
 });
 
-const typography = getPresets('typography', {
+const typographyPresets = getPresets(
+    typography,
+    'typography'
+)({
     color: '$color',
 });
 
-const wrapper = getPresets('link.wrapper', {
+const wrapper = getPresets(
+    link.wrapper,
+    'link.wrapper'
+)({
     base: null,
     design: '$design',
     hover: '$design',
@@ -37,7 +47,7 @@ export interface PropsBox<B = Breakpoints> {
 export const Wrapper = styled.span<PropsBox>`
     ${wrapper.base}
     ${wrapper.design}
-    ${typography.color}
+    ${typographyPresets.color}
     // this should overwrite vertical-align on Box
     vertical-align: baseline !important;
 
@@ -63,7 +73,7 @@ export const Box = styled.a<PropsBox>`
     ${presets.base}
     ${presets.size}
     ${presets.design}
-    ${typography.color}
+    ${typographyPresets.color}
 
     &:hover,
     &:focus {

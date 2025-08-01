@@ -1,10 +1,10 @@
-import { ServiceFactory } from '../TableService/ServiceFactory';
+import { TableState } from '../../types';
 
 export interface DraggableColumnService {
     moveColumn: (target: string, destination: string) => void;
 }
 
-function moveElementInsideArray(arr: any[], target: number, destination: number) {
+const moveElementInsideArray = <T>(arr: T[], target: number, destination: number) => {
     // If any of indexes is incorrect return the original array
     if (
         target < 0 ||
@@ -17,20 +17,23 @@ function moveElementInsideArray(arr: any[], target: number, destination: number)
         return arr;
     }
 
-    const element = arr[target];
-    arr.splice(target, 1);
-    arr.splice(destination, 0, element);
+    const copy = [...arr];
 
-    return arr;
-}
+    const element = copy[target];
+    copy.splice(target, 1);
+    copy.splice(destination, 0, element);
+
+    return copy;
+};
 
 export const draggableColumnServiceId = 'dragColumn';
 
-export const draggableColumnService: ServiceFactory<DraggableColumnService> = (getState, update) => {
+export const draggableColumnService: <T>(
+    getState: () => TableState<T>,
+    update: (id: string, newState: TableState<T> | ((prev: TableState<T>) => TableState<T>)) => void
+) => DraggableColumnService = (getState, update) => {
     const moveColumn = (target: string, destination: string) => {
-        const state = getState();
-
-        const columns = state?.columns?.list ?? [];
+        const columns = getState()?.columns?.list ?? [];
         const targetIdx = columns.findIndex((c) => c.id === target);
         const destinationIdx = columns.findIndex((c) => c.id === destination);
 
@@ -40,7 +43,7 @@ export const draggableColumnService: ServiceFactory<DraggableColumnService> = (g
 
         const list = moveElementInsideArray(columns, targetIdx, destinationIdx);
 
-        update(draggableColumnServiceId, { ...state, columns: { list } });
+        update(draggableColumnServiceId, { ...getState(), columns: { list } });
     };
 
     return { moveColumn };

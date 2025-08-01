@@ -1,22 +1,43 @@
-import React, { useContext, useCallback, useMemo, ReactNode, FC, PropsWithChildren } from 'react';
-import { ThemeContext } from 'styled-components';
-import { ThemeProvider, getPresets } from 'vienna.ui-primitives';
+import React, { useContext, useCallback, useMemo, ReactNode } from 'react';
+import { DefaultTheme, ThemeContext } from 'styled-components';
+import { ThemeProvider } from 'vienna.ui-primitives';
 import { Popover, PopoverProps } from '../Popover/Popover';
 import { Definition, Icon, Wrapper } from './Hint.styles';
+import { getPresetsCustom } from '../Utils/styling';
+import { SizeType, ThemePresets } from '../index';
 
-export interface HintProps extends Omit<PopoverProps, 'children'> {
+export const defaultHintTestId: HintTestId = {
+    popover: 'hint_popover', //'Popover.Message'
+    targetIcon: 'hint_target-icon',
+    closeIcon: 'hint_close-icon',
+};
+
+type AllPopoverProps = PopoverProps<SVGSVGElement>;
+type PopoverTestId = NonNullable<AllPopoverProps['testId']>;
+
+interface HintTestId extends PopoverTestId {
+    popover?: string;
+    targetIcon?: string;
+}
+
+export interface HintProps extends Omit<AllPopoverProps, 'children' | 'size' | 'testId'> {
     id?: string;
-    size?: 's' | 'm' | 'l';
+    size?: SizeType<'s' | 'm' | 'l'>;
+    popoverSize?: Required<AllPopoverProps>['size'];
     action?: 'hover' | 'click';
     anchorIcon?: 'info' | 'question';
     children?: ReactNode;
+    showPopoverWithArrow?: boolean;
+    testId?: HintTestId;
 }
-
+export interface HintThemeProps extends HintProps {
+    theme?: DefaultTheme;
+}
 // configuring theme for popover component
-const presets = getPresets('hint', {
+const presets = getPresetsCustom('hint')({
     popover: null,
 });
-const buildTheme = (props) => {
+const buildTheme = (props: HintThemeProps) => {
     return {
         popover: {
             wrapper: {
@@ -28,12 +49,21 @@ const buildTheme = (props) => {
             },
 
             ...presets.popover(props),
-        },
+        } as ThemePresets,
     };
 };
 
-export const Hint: FC<PropsWithChildren<HintProps>> = (props) => {
-    const { children, size = 'm', anchorIcon = 'info', action = 'click', ...attrs } = props;
+export const Hint = (props: HintProps) => {
+    const {
+        children,
+        size = 'm',
+        anchorIcon = 'info',
+        action = 'click',
+        popoverSize,
+        showPopoverWithArrow,
+        testId = defaultHintTestId,
+        ...attrs
+    } = props;
 
     // getting custom theme
     const themedContext = useContext(ThemeContext);
@@ -57,10 +87,16 @@ export const Hint: FC<PropsWithChildren<HintProps>> = (props) => {
             {constructDefinition()}
             <ThemeProvider theme={theme}>
                 {anchorIcon === 'info' && (
-                    <Popover action={action} {...(attrs as {})}>
+                    <Popover<SVGSVGElement>
+                        // eslint-disable-next-line @typescript-eslint/ban-types
+                        {...(attrs as {})}
+                        action={action}
+                        size={popoverSize}
+                        showPopoverWithArrow={showPopoverWithArrow}
+                        testId={testId}
+                        data-testid={testId?.popover}>
                         {(ref) => (
                             <Icon
-                                // @ts-ignore
                                 ref={ref}
                                 tabIndex={1}
                                 width='18'
@@ -68,7 +104,8 @@ export const Hint: FC<PropsWithChildren<HintProps>> = (props) => {
                                 viewBox='0 0 18 18'
                                 fill='none'
                                 $size={size}
-                                xmlns='http://www.w3.org/2000/svg'>
+                                xmlns='http://www.w3.org/2000/svg'
+                                data-testid={testId?.targetIcon}>
                                 <path
                                     d='M9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0ZM9 7.2H7.2V9H8.1V11.7H6.3V13.5H11.7V11.7H9.9V8.1C9.9 7.60294 9.49706 7.2 9 7.2ZM9 3.6C8.25441 3.6 7.65 4.20442 7.65 4.95C7.65 5.69558 8.25441 6.3 9 6.3C9.74558 6.3 10.35 5.69558 10.35 4.95C10.35 4.20442 9.74558 3.6 9 3.6Z'
                                     fill='currentcolor'
@@ -78,10 +115,15 @@ export const Hint: FC<PropsWithChildren<HintProps>> = (props) => {
                     </Popover>
                 )}
                 {anchorIcon === 'question' && (
-                    <Popover action={action} {...(attrs as {})}>
+                    <Popover<SVGSVGElement>
+                        // eslint-disable-next-line @typescript-eslint/ban-types
+                        {...(attrs as {})}
+                        action={action}
+                        size={popoverSize}
+                        showPopoverWithArrow={showPopoverWithArrow}
+                        data-testid={testId?.popover}>
                         {(ref) => (
                             <Icon
-                                // @ts-ignore
                                 ref={ref}
                                 tabIndex={1}
                                 xmlns='http://www.w3.org/2000/svg'
@@ -90,7 +132,8 @@ export const Hint: FC<PropsWithChildren<HintProps>> = (props) => {
                                 viewBox='2 2 20 20'
                                 width='24'
                                 height='24'
-                                fill='none'>
+                                fill='none'
+                                data-testid={testId?.targetIcon}>
                                 <path
                                     fill='currentColor'
                                     fillRule='evenodd'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { CustomTable } from './CustomTable';
 import { Story, Meta } from 'storybook';
 import {
@@ -385,6 +385,32 @@ const Container = styled.div`
     width: 1000px;
     height: 500px;
 `;
+
+export const Overview: Story<PropsWithChildren> = () => {
+    return (
+        <CustomTable>
+            <CustomTable.Head>
+                <CustomTable.Row>
+                    <CustomTable.Header>Name</CustomTable.Header>
+                    <CustomTable.Header>Surname</CustomTable.Header>
+                    <CustomTable.Header>Position</CustomTable.Header>
+                    <CustomTable.Header>Phone</CustomTable.Header>
+                </CustomTable.Row>
+            </CustomTable.Head>
+            <CustomTable.Body>
+                {defaultData.map((row) => (
+                    <CustomTable.Row key={row.id}>
+                        {Object.keys(row)
+                            .filter((d) => !['id', 'level', 'subRows'].includes(d))
+                            .map((key) => (
+                                <CustomTable.Data key={key}>{row[key]}</CustomTable.Data>
+                            ))}
+                    </CustomTable.Row>
+                ))}
+            </CustomTable.Body>
+        </CustomTable>
+    );
+};
 
 export const BasicCustomTable: Story<any> = (args) => {
     const columnHelper = createColumnHelper<Person>();

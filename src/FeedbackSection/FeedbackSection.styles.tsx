@@ -1,7 +1,11 @@
 import styled from 'styled-components';
+import { feedbackSection } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('feedbackSection', {
+const presets = getPresets(
+    feedbackSection,
+    'feedbackSection'
+)({
     form: null,
     descriptionWrapper: null,
 });

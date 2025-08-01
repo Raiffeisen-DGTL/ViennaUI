@@ -27,7 +27,7 @@ export type CalendarLocalizationProps = DSLocalizationProps<CalendarLocalization
 
 export type CalendarLocalizationContext = DSLocalization<CalendarLocalization>;
 
-export const defaultCalendarLocalization: CalendarLocalization = {
+export const defaultCalendarLocalization: Required<CalendarLocalization> = {
     'ds.calendar.body.today': 'Сегодня',
     'ds.calendar.day.monday': 'ПН',
     'ds.calendar.day.tuesday': 'ВТ',

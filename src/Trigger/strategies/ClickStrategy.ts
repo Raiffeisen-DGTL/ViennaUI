@@ -28,13 +28,27 @@ export class ClickStrategy implements IActionStrategy {
         };
 
         if (!this.options.disableOutsideClick) {
-            document.addEventListener('click', (event) => isClickOutside([this.target, popup], event) && closePopup(), {
-                signal: controller.signal,
-            });
+            document.addEventListener(
+                'mousedown',
+                (event) => isClickOutside([this.target, popup], event) && closePopup(),
+                {
+                    signal: controller.signal,
+                }
+            );
         }
 
         return abortController;
     }
 
-    private readonly onClick = () => this.options.onOpen();
+    private readonly onClick = () => {
+        if (this.options.closeOnTargetClick) {
+            if (this.options.visible) {
+                this.options.onClose();
+            } else {
+                this.options.onOpen();
+            }
+        } else {
+            this.options.onOpen();
+        }
+    };
 }

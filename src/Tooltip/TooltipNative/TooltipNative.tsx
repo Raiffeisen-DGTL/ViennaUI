@@ -53,8 +53,8 @@ export const TooltipNative: React.FC<TooltipNativeProps> = ({
         document.body &&
         ReactDOM.createPortal(
             <Box
-                {...(attrs as {})}
-                {...(innerPos as {})}
+                {...attrs}
+                {...innerPos}
                 ref={ref}
                 $allowInteraction={allowInteraction}
                 $width={width}

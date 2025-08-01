@@ -1,101 +1,86 @@
-/* eslint-disable react/sort-comp */
-import React, { ReactNode, PureComponent } from 'react';
+import React, { useState, useEffect, ReactNode } from 'react';
 import { ThemeProvider } from 'vienna.ui-primitives';
-import { ResponsiveProp } from '../Utils/responsiveness';
-import { Notification } from './Notification';
+import { notifications } from 'vienna.ui-theme';
+import { Notification, NotificationProps } from './Notification';
 import { Box, PropsBox } from './Notifications.styles';
-import { NotificationService, Notification as NotificationProps } from './NotificationService';
+import { NotificationService, NotificationType as NotificationServiceProps } from './NotificationService';
 import { BoxStyled } from '../Utils/styled';
 import { getPresets } from '../Utils/styling';
+import { AnyObject } from '../Utils';
+import { defaultAlertTestId } from '@/Alert/Alert';
 
-export interface NotificationsProps extends BoxStyled<typeof Box, PropsBox> {
+export const defaultNotificationsTestId: NotificationsProps['testId'] = {
+    container: 'notifications_container',
+    alert: defaultAlertTestId,
+};
+
+export interface NotificationsProps
+    extends Omit<BoxStyled<typeof Box, PropsBox>, 'children'>,
+        Pick<NotificationServiceProps, 'onClose' | 'compact'> {
     align?: PropsBox['$align'];
     valign?: PropsBox['$valign'];
     service: NotificationService;
     delay?: number;
-    onClose?: (e, data) => void;
-    children?: ReactNode | ((data: NotificationProps) => ReactNode) | any;
+    children?: ReactNode | ((data: NotificationServiceProps) => ReactNode);
     limit?: number;
     pinWithMouse?: boolean;
-    compactBelow?: number;
-    compact?: ResponsiveProp<boolean>;
+    testId?: NotificationProps['testId'];
 }
 
-export class Notifications extends PureComponent<NotificationsProps> {
-    public static displayName = 'Notifications';
+export const Notifications: React.FC<NotificationsProps> & {
+    Notification: typeof Notification;
+} = (props) => {
+    const {
+        service,
+        onClose,
+        compact,
+        delay,
+        children,
+        pinWithMouse,
+        align = 'center',
+        valign = 'top',
+        testId = defaultNotificationsTestId,
+        limit,
+        ...attrs
+    } = props;
+    const [, setRefresh] = useState(0);
+    const [theme, setTheme] = useState<AnyObject>({}); // Initialize with an empty object
 
-    public static Notification = Notification;
+    const forceUpdate = () => setRefresh((prev) => prev + 1);
 
-    private readonly service: NotificationService;
-    private readonly theme;
+    useEffect(() => {
+        const builtTheme = buildTheme();
+        setTheme(builtTheme);
+        service.init(forceUpdate, limit);
 
-    public constructor(props) {
-        super(props);
-        this.service = props.service;
-        this.theme = this.buildTheme();
-    }
+        return () => {
+            service.clear();
+        };
+    }, [service, limit]);
 
-    public componentDidMount() {
-        this.service.init(() => this.forceUpdate(), this.props.limit);
-    }
+    const handleClose = (
+        e: React.MouseEvent<HTMLSpanElement> | null,
+        data: NotificationServiceProps,
+        handler: NotificationServiceProps['onClose']
+    ) => {
+        if (data.id) {
+            service.remove(data.id);
+        }
 
-    public render() {
-        const {
-            delay,
-            children,
-            compactBelow,
-            compact,
-            pinWithMouse,
-            align = 'center',
-            valign = 'top',
-            ...attrs
-        } = this.props;
+        if (handler) {
+            handler(e, data);
+        }
 
-        const content = this.service.get().map((props) => {
-            const { message, actions, ...attrs } = props;
-
-            const params = {
-                delay: (props.delay ? props.delay : delay) ?? 5000,
-                compactBelow: props.compactBelow ? props.compactBelow : compactBelow,
-                compact: props.compact ? props.compact : compact,
-                onClose: this.handleClose,
-                pinWithMouse,
-                ...attrs,
-            };
-
-            if (children && typeof children === 'function') {
-                return children({ message, actions, ...params });
-            }
-
-            return (
-                <Notification key={props.id} actions={actions} {...params}>
-                    {message}
-                </Notification>
-            );
-        });
-        return (
-            <ThemeProvider theme={this.theme}>
-                <Box {...(attrs as {})} $align={align} $valign={valign}>
-                    {content}
-                </Box>
-            </ThemeProvider>
-        );
-    }
-
-    public componentWillUnmount() {
-        this.service.clear();
-    }
-
-    private readonly handleClose = (e, data) => {
-        this.service.remove(data.id);
-
-        if (this.props.onClose) {
-            this.props.onClose(e, data);
+        if (onClose) {
+            onClose(e, data);
         }
     };
 
-    private readonly buildTheme = () => {
-        const presets = getPresets('notifications.notification', {
+    const buildTheme = () => {
+        const presets = getPresets(
+            notifications.notification,
+            'notifications.notification'
+        )({
             design: null,
             button: null,
             actionsGap: null,
@@ -104,18 +89,52 @@ export class Notifications extends PureComponent<NotificationsProps> {
 
         return {
             alert: {
-                design: presets.design(this.props),
-                custom: presets.notificationsGap(this.props),
+                design: presets.design(props) as AnyObject,
+                custom: presets.notificationsGap(props) as AnyObject,
                 buttons: {
                     design: {
-                        success: presets.button(this.props),
-                        error: presets.button(this.props),
-                        warning: presets.button(this.props),
-                        plain: presets.button(this.props),
-                        accent: presets.button(this.props),
+                        success: presets.button(props) as AnyObject,
+                        error: presets.button(props) as AnyObject,
+                        warning: presets.button(props) as AnyObject,
+                        plain: presets.button(props) as AnyObject,
+                        accent: presets.button(props) as AnyObject,
                     },
                 },
             },
         };
     };
-}
+
+    const content = service.get().map((props) => {
+        const { message, actions, onClose: serviceOnClose, ...attrs } = props;
+
+        const params = {
+            delay: (props.delay ? props.delay : delay) ?? 5000,
+            compact: props.compact ? props.compact : compact,
+            onClose: (e: React.MouseEvent | null, data: NotificationServiceProps) =>
+                handleClose(e as React.MouseEvent<HTMLSpanElement>, data, serviceOnClose),
+            pinWithMouse,
+            testId: testId,
+            ...attrs,
+        };
+
+        if (children && typeof children === 'function') {
+            return children({ message, actions, ...params });
+        }
+
+        return (
+            <Notification key={props.id} actions={actions} {...params}>
+                {message}
+            </Notification>
+        );
+    });
+
+    return (
+        <ThemeProvider theme={theme}>
+            <Box {...attrs} $align={align} $valign={valign}>
+                {content}
+            </Box>
+        </ThemeProvider>
+    );
+};
+Notifications.displayName = 'Notifications';
+Notifications.Notification = Notification;

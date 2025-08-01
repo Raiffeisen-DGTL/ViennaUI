@@ -11,20 +11,22 @@ export interface AlarmProps extends BoxStyled<typeof Box, PropsBox> {
     bottom?: PropsBox['$bottom'];
     left?: PropsBox['$left'];
     right?: PropsBox['$right'];
+    size?: PropsBox['$size'];
 }
 
 export const Alarm = forwardRef<HTMLDivElement, AlarmProps>(
-    ({ children, design, position, top, bottom, left, right, ...attrs }, ref) => {
+    ({ children, design, position, top, bottom, left, right, size = 's', ...attrs }, ref) => {
         return (
             <Box
-                {...(attrs as {})}
+                {...attrs}
                 ref={ref}
                 $design={design}
                 $position={position}
                 $top={top}
                 $bottom={bottom}
                 $left={left}
-                $right={right}>
+                $right={right}
+                $size={size}>
                 {children}
             </Box>
         );

@@ -1,7 +1,7 @@
 import { Ref } from 'react';
 
 export function composeRef<T>(...refs: (Ref<T> | undefined)[]): Ref<T> {
-    const _refs = refs.filter((ref) => ref !== undefined) as Ref<T>[];
+    const _refs = refs.filter((ref) => ref !== undefined);
 
     if (refs.length <= 1) {
         return _refs[0];

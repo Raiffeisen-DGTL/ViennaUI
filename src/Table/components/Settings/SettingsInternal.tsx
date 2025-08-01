@@ -1,14 +1,23 @@
-import React, { PropsWithChildren } from 'react';
-import { Settings } from 'vienna.icons';
+import React, { PropsWithChildren, ReactNode, useRef, useState } from 'react';
+import { SettingsIcon } from 'vienna.icons';
+import { border } from 'vienna.tokens';
 import { ThemeProvider } from 'vienna.ui-primitives';
 import { Popover } from '../../../Popover';
-import { Button } from '../../../Button';
 import { Text } from '../../../Typography';
-import { useTableLocalization } from '../Context';
-import { Box } from './SettingsInternal.styles';
+import { Box, SettingsBackground } from './SettingsInternal.styles';
+import { Alarm, Button, Flex, ITrigger } from '../../..';
+import { TableSize } from '../../types';
+import { SettingsProps } from './Settings';
+
+export const defaultTableSettingsTestId: SettingsProps['testId'] = {
+    button: 'table_settings_button',
+};
 
 interface SettingsInternalProps {
-    size: any;
+    size: TableSize;
+    showAlarm?: boolean;
+    settingsTitle?: ReactNode;
+    testId?: SettingsProps['testId'];
 }
 
 const theme = {
@@ -16,31 +25,56 @@ const theme = {
         message: {
             custom: {
                 padding: '24px',
+                borderRadius: border.radius.xl,
             },
         },
     },
 };
 
 export const SettingsInternal: React.FC<PropsWithChildren<SettingsInternalProps>> = (props) => {
-    const { size, children } = props;
-    const localize = useTableLocalization();
+    const { size, showAlarm, children, settingsTitle, testId = defaultTableSettingsTestId } = props;
+    const [visible, setVisible] = useState(false);
+    const ref = useRef<HTMLDivElement & ITrigger>(null);
+    const handleButtonClick = () => {
+        setVisible((prev) => !prev);
+        visible && ref.current?.close();
+    };
+    const onClosePopover = () => setVisible(false);
+
     return (
         <Box $size={size}>
             <ThemeProvider theme={theme}>
                 <Popover<HTMLButtonElement>
-                    placement='auto'
+                    placement='bottom-end'
                     header={
-                        <Text size='xxl' weight='bold'>
-                            {localize('ds.table.settings')}
-                        </Text>
+                        settingsTitle && (
+                            <Text size='xxl' weight='bold'>
+                                {settingsTitle}
+                            </Text>
+                        )
                     }
                     content={children}
                     width={288}
-                    noClose>
+                    ref={ref}
+                    noClose
+                    onClose={onClosePopover}>
                     {(ref) => (
-                        <Button forwardedRef={ref} design='ghost' size='xs' data-id='table-settings-button'>
-                            <Settings size='m' />
-                        </Button>
+                        <SettingsBackground>
+                            <Button
+                                forwardedRef={ref}
+                                design='ghost'
+                                size='xs'
+                                data-id='table-settings-button'
+                                data-testid={testId?.button}
+                                onClick={handleButtonClick}>
+                                <Flex>
+                                    <SettingsIcon size='m' />
+                                    {showAlarm && (
+                                        <Alarm position={'absolute'} top={'-4px'} left={'16px'} design='accent' />
+                                    )}
+                                </Flex>
+                            </Button>
+                        </SettingsBackground>
                     )}
                 </Popover>
             </ThemeProvider>

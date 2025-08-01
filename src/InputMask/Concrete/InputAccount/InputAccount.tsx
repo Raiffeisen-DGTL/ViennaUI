@@ -1,16 +1,19 @@
 import React, { useCallback, forwardRef, FocusEvent } from 'react';
 import { FactoryOpts } from 'imask';
-import { InputMask, InputMaskProps } from '../../InputMask';
+import { InputMask, InputMaskOnChangeType, InputMaskProps } from '../../InputMask';
 import { getMaskOptionsFromProps } from '../../utils';
 
-export type InputAccountProps = Omit<InputMaskProps, 'maskOptions'> & FactoryOpts;
+export type InputAccountProps = Omit<InputMaskProps, 'maskOptions' | 'onChange'> &
+    FactoryOpts & {
+        onChange?: InputMaskOnChangeType<string>;
+    };
 
 export const InputAccount = forwardRef<HTMLInputElement, InputAccountProps>((props, ref) => {
-    const { onBlur, onFocus, ...attrs } = props;
-    const handleBlur = useCallback(
-        (event: FocusEvent<HTMLInputElement>) => {
+    const { onBlur, onFocus, onChange, ...attrs } = props;
+    const handleBlur = useCallback<NonNullable<InputMaskProps['onBlur']>>(
+        (event) => {
             if (typeof onBlur === 'function') {
-                onBlur(event, { value: event.target.value });
+                onBlur(event, { value: (event.target as HTMLInputElement).value });
             }
         },
         [onBlur]
@@ -25,19 +28,18 @@ export const InputAccount = forwardRef<HTMLInputElement, InputAccountProps>((pro
         [onFocus]
     );
 
-    // @ts-ignore
-    const maskOptions = getMaskOptionsFromProps(props);
     return (
         <InputMask
             ref={ref}
+            placeholder='_____.___._.___________'
             smartPlaceholder='_____.___._.___________'
-            // @ts-ignore
             maskOptions={{
-                ...maskOptions,
-                mask: maskOptions.mask || '00000{.}000{.}0{.}00000000000',
+                mask: '00000{.}000{.}0{.}00000000000',
+                ...getMaskOptionsFromProps(props),
             }}
             onBlur={handleBlur}
             onFocus={handleFocus}
+            onChange={onChange as InputMaskProps['onChange']}
             {...attrs}
         />
     );

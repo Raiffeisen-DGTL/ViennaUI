@@ -1,5 +1,5 @@
-import { ServiceFactory } from '../TableService/ServiceFactory';
 import { ColoredRowsModule, ColoredRowsState, ColoredRowsStateItem } from './ColoredRowsModule';
+import { TableState } from '../../types';
 
 export interface ColoredRowsService {
     getColoredRows: () => ColoredRowsState;
@@ -12,7 +12,10 @@ export interface ColoredRowsService {
     toggleSingleColoredRow: (item: ColoredRowsStateItem) => void;
 }
 
-export const coloredRowsService: ServiceFactory<ColoredRowsService> = function (getState, updateState) {
+export const coloredRowsService: <T>(
+    getState: () => TableState<T>,
+    update: (id: string, newState: TableState<T> | ((prev: TableState<T>) => TableState<T>)) => void
+) => ColoredRowsService = function (getState, updateState) {
     const getColoredRows: ColoredRowsService['getColoredRows'] = () => {
         return getState().coloredRows || [];
     };
@@ -25,7 +28,7 @@ export const coloredRowsService: ServiceFactory<ColoredRowsService> = function (
         updateState(ColoredRowsModule.name, (prev) => {
             return {
                 ...prev,
-                coloredRows: state,
+                coloredRows: [...(prev.coloredRows || []), ...state],
             };
         });
     };

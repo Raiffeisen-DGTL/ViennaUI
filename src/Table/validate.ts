@@ -2,13 +2,13 @@
 import { TableProps } from './Table';
 import { TableConfig, TableFeatures, TableState } from './types';
 
-interface ValidateParams {
-    props: TableProps;
-    config: TableConfig;
-    state: TableState;
+interface ValidateParams<T> {
+    props: TableProps<T>;
+    config: TableConfig<T>;
+    state: TableState<T>;
     features: TableFeatures;
 }
-export const validate = (params: ValidateParams) => {
+export const validate = <T>(params: ValidateParams<T>) => {
     const { state } = params;
 
     // table configuration

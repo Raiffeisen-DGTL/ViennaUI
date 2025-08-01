@@ -26,7 +26,7 @@ export function Heading<B = void>({
 }: HeadingProps<B extends void ? Breakpoints : B>) {
     return (
         <Box
-            {...(attrs as {})}
+            {...(attrs as PropsBox)}
             as={type}
             $size={size}
             $color={color}

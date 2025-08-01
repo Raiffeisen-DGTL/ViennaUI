@@ -1,40 +1,11 @@
+import { whitespace } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
-import { Whitespace } from './types';
 
-const preset = getPresets('whitespace', {
+const presets = getPresets(
+    whitespace,
+    'whitespace'
+)({
     size: '$size',
 });
 
-export const size = (size) => preset.size({ $size: size });
-
-export const parseValue = (val?: Whitespace) => {
-    if (!val || typeof val !== 'string') {
-        return null;
-    }
-
-    const preset = size(val);
-
-    if (!preset) {
-        return val;
-    }
-
-    return preset;
-};
-
-export const parseProperty = (cssProperty: string | string[], propValue?: Whitespace) => {
-    const value = parseValue(propValue);
-
-    if (!value) {
-        return null;
-    }
-
-    if (Array.isArray(cssProperty)) {
-        return cssProperty
-            .map((prop) => {
-                return `${prop}:${value};`;
-            })
-            .join('');
-    }
-
-    return `${cssProperty}:${value};`;
-};
+export const size = ($size: string | boolean | null) => presets.size({ $size });

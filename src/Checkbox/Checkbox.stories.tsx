@@ -11,7 +11,7 @@ export default {
 export const Overview: Story<CheckboxProps> = (args) => {
     const [checked, setChecked] = React.useState(false);
     return (
-        <Checkbox checked={checked} onChange={()=>setChecked(!checked)} size={'l'} {...args}>
+        <Checkbox checked={checked} onChange={() => setChecked(!checked)} size={'l'} {...args}>
             Checkbox
         </Checkbox>
     );
@@ -66,3 +66,59 @@ export const PlaywrightWithCases: Story<CheckboxProps> = (args) => {
 };
 
 PlaywrightWithCases.storyName = 'Для тестирования';
+
+export const WithNewIcons: Story<CheckboxProps> = (args) => {
+    const [checked, setChecked] = React.useState(false);
+    return (
+        <>
+            <Checkbox checked={checked} onChange={() => setChecked(!checked)} size={'l'} {...args}>
+                Checkbox
+            </Checkbox>
+            <Checkbox indeterminate size={'l'} {...args}>
+                Checkbox
+            </Checkbox>
+        </>
+    );
+};
+
+export const ViewOnly: Story<CheckboxProps> = () => {
+    const [state, setState] = React.useState({
+        checked: false,
+        checked2: true,
+        checked3: false,
+    });
+    return (
+        <>
+            <Groups>
+                <Checkbox viewOnly checked={state.checked}>
+                    Checkbox
+                </Checkbox>
+                <Checkbox viewOnly checked={state.checked2}>
+                    Checkbox
+                </Checkbox>
+                <Checkbox viewOnly checked={state.checked3}>
+                    Checkbox
+                </Checkbox>
+            </Groups>
+            <Groups>
+                <Checkbox viewOnly checked={state.checked2}>
+                    Checkbox
+                </Checkbox>
+            </Groups>
+            <Groups>
+                <Checkbox viewOnly viewOnlyDisableIcon checked={state.checked2}>
+                    Checkbox
+                </Checkbox>
+            </Groups>
+        </>
+    );
+};
+
+export const CheckboxNewColor: Story<CheckboxProps> = (args) => {
+    const [checked, setChecked] = React.useState(false);
+    return (
+        <Checkbox checked={checked} onChange={() => setChecked(!checked)} size={'l'} invalid {...args}>
+            Checkbox
+        </Checkbox>
+    );
+};

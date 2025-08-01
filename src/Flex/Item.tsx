@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import React, { ComponentProps } from 'react';
 import { WithWhitespace, WithWhitespaceStyled, getWhitespaceStyledProps, withWhitespace } from '../Whitespace/utils';
-import { ResponsiveProp, WithMedia, WithMediaStyled, responsiveProp } from '../Utils/responsiveness';
+import { ResponsiveProp, WithMedia, WithMediaStyled } from '../Utils/responsiveness';
+import { getPresetsCustom } from '../Utils/styling';
 
 interface PropsBox extends WithWhitespaceStyled, WithMediaStyled {
     $order?: ResponsiveProp<string>;
@@ -23,15 +24,24 @@ interface PropsBox extends WithWhitespaceStyled, WithMediaStyled {
     >;
 }
 
-const Box = styled.div<PropsBox>`
-    ${responsiveProp('flex', '$order', 'order')};
-    ${responsiveProp('flex', '$grow', 'flex-grow')};
-    ${responsiveProp('flex', '$shrink', 'flex-shrink')};
-    ${responsiveProp('flex', '$basis', 'flex-basis')};
-    ${responsiveProp('flex', '$flex', 'flex')};
-    ${responsiveProp('flex', '$alignSelf', 'align-self')};
+const flex = getPresetsCustom('flex')({
+    order: ['$order'],
+    grow: ['$grow'],
+    shrink: ['$shrink'],
+    basis: ['$basis'],
+    flex: ['$flex'],
+    alignSelf: ['$alignSelf'],
+});
 
-    ${withWhitespace('flexItem')}
+const Box = styled.div<PropsBox>`
+    ${flex.order.responsive('order')};
+    ${flex.grow.responsive('flex-grow')};
+    ${flex.shrink.responsive('flex-shrink')};
+    ${flex.basis.responsive('flex-basis')};
+    ${flex.flex.responsive('flex')};
+    ${flex.alignSelf.responsive('align-self')};
+
+    ${withWhitespace({}, 'flexItem')}
 `;
 
 interface PropsItemBase {
@@ -43,7 +53,7 @@ interface PropsItemBase {
     alignSelf?: PropsBox['$alignSelf'];
 }
 
-interface PropsItem
+export interface PropsItem
     extends PropsItemBase,
         Omit<ComponentProps<typeof Box>, keyof PropsBox>,
         WithWhitespace,
@@ -54,8 +64,8 @@ export const Item: React.FC<PropsItem> = ({ children, order, grow, shrink, basis
 
     return (
         <Box
-            {...(attrs as {})}
-            {...(propsStyled as {})}
+            {...attrs}
+            {...propsStyled}
             $order={order}
             $grow={grow}
             $shrink={shrink}

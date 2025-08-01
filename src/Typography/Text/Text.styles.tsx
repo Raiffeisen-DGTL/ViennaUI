@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { typography } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
-import { Breakpoints, ResponsiveProp, responsivePreset } from '../../Utils/responsiveness';
+import { Breakpoints, ResponsiveProp } from '../../Utils/responsiveness';
 
 export type ColorType =
     | 'brand-accent'
@@ -183,16 +184,22 @@ export type ColorType =
     | 'porto180'
     | 'currentColor';
 
-const presets = getPresets('typography.text', {
-    base: null,
-    size: responsivePreset('$size', 'm'),
-    margin: responsivePreset('$margin', 'none'),
-    custom: null,
-});
-
-const typography = getPresets('typography', {
+const presets = getPresets(
+    typography,
+    'typography'
+)({
     weight: '$weight',
     color: '$color',
+});
+
+const text = getPresets(
+    typography.text,
+    'typography.text'
+)({
+    base: null,
+    size: ['$size', 'm'],
+    margin: ['$margin', null],
+    custom: null,
 });
 
 export interface PropsBox<B = Breakpoints> {
@@ -208,11 +215,11 @@ export const Box = styled.span<PropsBox>`
     font-feature-settings: ${({ $monospace }) => ($monospace ? `'tnum' on, 'lnum' on` : 'normal')};
     vertical-align: baseline;
     padding: 0;
-    ${presets.base}
-    ${presets.size}
-    ${presets.margin}
-    ${typography.weight}
-    ${typography.color}
+    ${text.base}
+    ${text.size}
+    ${text.margin}
+    ${presets.weight}
+    ${presets.color}
 
     ${({ $align }) =>
         $align &&
@@ -226,5 +233,5 @@ export const Box = styled.span<PropsBox>`
             text-transform: uppercase;
         `};
 
-    ${presets.custom}
+    ${text.custom}
 `;

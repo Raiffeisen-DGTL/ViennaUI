@@ -1,33 +1,45 @@
 import styled, { css } from 'styled-components';
+import { switcher } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { responsivePreset } from '../Utils/responsiveness';
 import { Size } from './Switcher';
 
-const switcher = getPresets('switcher', {
+const presets = getPresets(
+    switcher,
+    'switcher'
+)({
     base: null,
 });
 
-const slider = getPresets('switcher.slider', {
+const slider = getPresets(
+    switcher.slider,
+    'switcher.slider'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     active: null,
     checked: null,
-    disabledCheked: null,
-    disabledUnCheked: null,
+    disabledChecked: null,
+    disabledUnChecked: null,
 });
 
-const control = getPresets('switcher.control', {
+const control = getPresets(
+    switcher.control,
+    'switcher.control'
+)({
     base: null,
     focus: null,
-    size: responsivePreset('$size', 'm'),
-    push: responsivePreset('$size', 'm'),
-    disabledCheked: null,
-    disabledUnCheked: null,
+    size: ['$size', 'm'],
+    push: ['$size', 'm'],
+    disabledChecked: null,
+    disabledUnChecked: null,
 });
 
-const label = getPresets('switcher.label', {
+const label = getPresets(
+    switcher.label,
+    'switcher.label'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     disabled: null,
 });
 
@@ -45,12 +57,14 @@ export const Caption = styled.span<PropsCaption>`
 
 export const Box = styled.label`
     display: inline-flex;
-    ${switcher.base}
+    ${presets.base}
 `;
 
 export const Input = styled.input`
     position: absolute;
     left: -9999px;
+    top: 0;
+    visibility: hidden;
 `;
 
 interface PropsHandle {
@@ -93,10 +107,10 @@ export const Handle = styled.span<PropsHandle>`
     ${({ $disabled, $checked }) =>
         $disabled &&
         css`
-            ${$checked ? slider.disabledCheked : slider.disabledUnCheked}
+            ${$checked ? slider.disabledChecked : slider.disabledUnChecked}
 
             &::before {
-                ${$checked ? control.disabledCheked : control.disabledUnCheked}
+                ${$checked ? control.disabledChecked : control.disabledUnChecked}
             }
         `}
 `;

@@ -1,5 +1,5 @@
 export interface Breakpoints {
-    [key: string]: any;
+    [key: string]: string | undefined;
 
     /* default size for unspecified viewport */
     base?: string;
@@ -24,14 +24,14 @@ export interface Breakpoints {
     belowL?: string;
 }
 
-const defaultBreakpoints = {
+export const defaultBreakpoints = {
     s: 768,
     m: 1024,
     l: 1920,
     xl: 2560,
 };
 
-const systemBreakpoints: Breakpoints = {
+export const systemBreakpoints: Breakpoints = {
     /* xs */
     xs: `(max-width: ${defaultBreakpoints.s - 1}px)`,
 
@@ -50,13 +50,3 @@ const systemBreakpoints: Breakpoints = {
     /* xl */
     xl: `(min-width: ${defaultBreakpoints.xl}px)`,
 };
-
-let customBreakpoints = null;
-
-export function getBreakpoints() {
-    return customBreakpoints ?? systemBreakpoints;
-}
-
-export function setBreakpoints(breakpoints) {
-    customBreakpoints = breakpoints;
-}

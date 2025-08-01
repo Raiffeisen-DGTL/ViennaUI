@@ -1,4 +1,4 @@
-import React, { ReactNode, isValidElement, FC, Fragment, Children, cloneElement } from 'react';
+import React, { ReactNode, isValidElement, FC, Fragment, Children, cloneElement, ReactElement } from 'react';
 import { Box, Item, PropsBox } from './Groups.styles';
 import { BoxStyled } from '../Utils/styled';
 
@@ -9,6 +9,7 @@ export interface GroupsProps extends BoxStyled<typeof Box, PropsBox> {
     alignItems?: PropsBox['$alignItems'];
     justifyContent?: PropsBox['$justifyContent'];
     clean?: boolean;
+    bottomGap?: boolean;
 }
 
 export const Groups: FC<GroupsProps> = ({
@@ -19,6 +20,7 @@ export const Groups: FC<GroupsProps> = ({
     clean = false,
     alignItems = 'center',
     justifyContent = 'flex-start',
+    bottomGap = false,
     ...attrs
 }) => {
     const items = Children.toArray(children);
@@ -28,8 +30,9 @@ export const Groups: FC<GroupsProps> = ({
               .reduce<ReactNode[]>((result, item: ReactNode) => {
                   if (isValidElement(item)) {
                       if (item.type === Fragment) {
-                          if (item.props.children) {
-                              result.push(...Children.toArray(item.props.children));
+                          const itemChildren = (item as ReactElement<React.PropsWithChildren>).props.children;
+                          if (itemChildren) {
+                              result.push(...Children.toArray(itemChildren));
                           }
                       } else {
                           result.push(item);
@@ -49,12 +52,13 @@ export const Groups: FC<GroupsProps> = ({
 
     return (
         <Box
-            {...(attrs as {})}
+            {...attrs}
             $design={design}
             $size={size}
             $height={height}
             $alignItems={alignItems}
-            $justifyContent={justifyContent}>
+            $justifyContent={justifyContent}
+            $bottomGap={bottomGap}>
             {Children.map(list, (child: ReactNode) =>
                 child ? (
                     <Item $design={design} $size={size}>

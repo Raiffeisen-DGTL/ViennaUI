@@ -7,7 +7,7 @@ type OmitFunc = <T extends object, K extends [...(keyof T)[]]>(
 
 export const omit: OmitFunc = (obj, ...keys) => {
     const ret = {} as {
-        [K in keyof typeof obj]: typeof obj[K];
+        [K in keyof typeof obj]: (typeof obj)[K];
     };
     let key: keyof typeof obj;
     for (key in obj) {

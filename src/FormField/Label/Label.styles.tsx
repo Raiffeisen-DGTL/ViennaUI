@@ -1,13 +1,20 @@
 import styled, { css } from 'styled-components';
+import { formField } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 import { FormFieldSize } from '../FormField';
 
-const star = getPresets('formField.star', {
+const star = getPresets(
+    formField.star,
+    'formField.star'
+)({
     base: null,
     custom: null,
 });
 
-const box = getPresets('formField.label', {
+const box = getPresets(
+    formField.label,
+    'formField.label'
+)({
     base: null,
     custom: null,
     size: '$size',

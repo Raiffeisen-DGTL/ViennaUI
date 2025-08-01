@@ -1,11 +1,15 @@
 import styled from 'styled-components';
-import { getPresets } from '../../../Utils/styling';
+import { table } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../../../Utils/styling';
 
-const presets = getPresets('table', {
+const presets = getPresets(
+    table,
+    'table'
+)({
     base: null,
 });
 
-const custom = getPresets('table.custom', {
+const custom = getPresetsCustom('table.custom')({
     box: null,
 });
 

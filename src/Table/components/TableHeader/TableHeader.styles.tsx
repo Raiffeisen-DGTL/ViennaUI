@@ -1,15 +1,22 @@
 import styled, { css } from 'styled-components';
+import { table } from 'vienna.ui-theme';
 import { tableLayers } from '../../TableLayers';
 import { Icon } from '../ColumnTitle/ColumnTitle.styles';
-import { getPresets } from '../../../Utils/styling';
+import { getPresets, getPresetsCustom } from '../../../Utils/styling';
 
-const presets = getPresets('table', {
+const presets = getPresets(
+    table,
+    'table'
+)({
     header: null,
     size: '$size',
     pinned: null,
 });
 
-const cell = getPresets('table.cell.header', {
+const cell = getPresets(
+    table.cell.header,
+    'table.cell.header'
+)({
     base: null,
     hover: null,
     group: null,
@@ -18,7 +25,7 @@ const cell = getPresets('table.cell.header', {
     bottomDivider: null,
 });
 
-const custom = getPresets('table.custom.header', {
+const custom = getPresetsCustom('table.custom.header')({
     base: null,
     row: null,
     cell: null,
@@ -30,22 +37,25 @@ export const Row = styled.tr`
     ${custom.row}
 `;
 
-interface PropsTh {
-    $size?: any;
-    $color?: any;
+export interface PropsTh {
+    $size?: 'xs' | 's' | 'm' | 'l';
+    $color?: string;
     $width?: string;
+    $minWidth?: string;
     $hasRightDivider?: boolean;
     $hasBottomDivider?: boolean;
     $group?: boolean;
     $pinned?: boolean;
-    $isHover?: any;
+    $isHover?: boolean;
+    $draggable?: boolean;
+    $padding?: string;
 }
 export const Th = styled.th<PropsTh>`
     position: relative; // for IE
-    position: sticky;
     box-sizing: border-box;
     top: 0;
     z-index: ${tableLayers.header};
+    overflow: hidden;
 
     ${cell.base}
     ${presets.size}
@@ -55,8 +65,19 @@ export const Th = styled.th<PropsTh>`
         $width &&
         css`
             width: ${$width};
-            min-width: ${$width};
             max-width: ${$width};
+        `}
+
+    ${({ $minWidth }) =>
+        $minWidth &&
+        css`
+            min-width: ${$minWidth};
+        `}
+
+    ${({ $padding }) =>
+        $padding &&
+        css`
+            padding: ${$padding};
         `}
 
     ${({ $color }) =>
@@ -104,11 +125,24 @@ export const Th = styled.th<PropsTh>`
                 }
             }
         `}
+    ${({ $draggable }) =>
+        $draggable &&
+        css`
+            cursor: grab;
+
+            &:active {
+                cursor: grabbing;
+            }
+        `}
 
     ${custom.cell}
 `;
 
 export const Header = styled.thead`
+    // for multiple rows in header
+    position: sticky;
+    top: 0;
+    z-index: 4;
     ${presets.header}
     ${custom.base}
 `;

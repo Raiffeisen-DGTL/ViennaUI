@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "outDir": "./esm",
+    "target": "ES5",
+    "module": "es2020",
+    "lib": ["es2016", "es2017", "dom"],
+    "jsx": "react",
+    "incremental": true,
+    "noEmit": false,
+    "paths": {
+      "@/atlant": ["./src/."],
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-plugin-styled-components",
+        "type": "config",
+        "exclude": ["/node_modules/"],
+        "displayName": false
+      }
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "esm",
+    "**/__tests__/**",
+    "**/*.spec.tsx",
+    "**/*.spec.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/*.stories.tsx",
+    "src/showcase"
+  ]
+}

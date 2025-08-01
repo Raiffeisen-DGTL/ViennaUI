@@ -1,20 +1,30 @@
 import styled, { css } from 'styled-components';
+import { header } from 'vienna.ui-theme';
 import { Span } from '../../Typography';
 import { getPresets } from '../../Utils/styling';
 
-const menuPointPresets = getPresets('header.menuPoint', {
+const menuPointPresets = getPresets(
+    header.menuPoint,
+    'header.menuPoint'
+)({
     base: null,
     hover: null,
     active: null,
     focus: null,
 });
 
-const menuPointTitle = getPresets('header.menuPoint.title', {
+const menuPointTitle = getPresets(
+    header.menuPoint.title,
+    'header.menuPoint.title'
+)({
     base: null,
     hover: null,
 });
 
-const menuPointIcon = getPresets('header.menuPoint.icon', {
+const menuPointIcon = getPresets(
+    header.menuPoint.icon,
+    'header.menuPoint.icon'
+)({
     base: null,
     hover: null,
 });

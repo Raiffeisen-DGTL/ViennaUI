@@ -17,6 +17,7 @@ export const MasterCard: FC<MasterCardProps> = (props) => {
     const [width, height] = sizes[size];
 
     return (
+        // eslint-disable-next-line @typescript-eslint/ban-types
         <svg {...(attrs as {})} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 16' width={width} height={height}>
             <path fill='#FF5F00' fillRule='evenodd' d='M9.713 1.997h9.313v11.98H9.713V1.996z' clipRule='evenodd' />
             <path

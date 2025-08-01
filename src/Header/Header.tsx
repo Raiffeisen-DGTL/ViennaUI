@@ -1,5 +1,5 @@
 import React, { FC, ReactNode, useRef, useState, useCallback, cloneElement, useMemo, ReactElement } from 'react';
-import { BurgerHor as Burger, CloseCancelX } from 'vienna.icons';
+import { BurgerHorIcon as Burger, CloseCancelXIcon } from 'vienna.icons';
 import {
     Box,
     BoxMobile,
@@ -16,8 +16,9 @@ import {
 import { Button } from '../Button';
 import { Logotype } from '../Logotype';
 import { Link } from '../Link';
-import { Items, Item, ItemProps } from './Items';
+import { Items, Item, ItemProps, ItemsProps } from './Items';
 import { MenuPoint } from './MenuPoint';
+import { TabsValueType } from '../Tabs/Tabs';
 
 export interface HeaderProps {
     /** Размеры */
@@ -88,14 +89,14 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
     onClose,
 }) => {
     const boxRef = useRef<HTMLDivElement>(null);
-    const [currentItemValue, setCurrentItemValue] = useState(null);
+    const [currentItemValue, setCurrentItemValue] = useState<TabsValueType | null>(null);
 
     const currentItem = useMemo(() => {
         if (!items || disabledContent || !currentItemValue) {
             return null;
         }
 
-        return React.Children.toArray(items.props.children).find(
+        return React.Children.toArray((items as { props: { children: ReactElement } }).props.children).find(
             (item) => (item as ReactElement<ItemProps>).props.value === currentItemValue
         );
     }, [currentItemValue, items, disabledContent]);
@@ -107,8 +108,8 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
     const contentRef = useRef<HTMLDivElement>(null); // Потребуется для проверки что кликаем за пределами
 
     const closeIfClickOutside = useCallback(
-        (e) => {
-            if (typeof onClose === 'function' && !contentRef.current?.contains(e.target)) {
+        (e: MouseEvent) => {
+            if (typeof onClose === 'function' && !contentRef.current?.contains(e.target as Node)) {
                 onClose();
                 setCurrentItemValue(null); // Так как value все еще приходит из родителя но оно нужно для подсветки таба см. handleCloseContent
                 if (document) {
@@ -120,9 +121,10 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
     );
 
     const onChange = useCallback(
-        (e, newValue, hasContent) => {
-            if (items?.props.onChange) {
-                items.props.onChange(e, newValue);
+        (e: React.MouseEvent, newValue: TabsValueType, hasContent: boolean) => {
+            const itemsOnChange = (items as ReactElement<ItemsProps> | undefined)?.props.onChange;
+            if (itemsOnChange) {
+                itemsOnChange(e, newValue);
             }
             // Как показывается контент внизу компонента если он есть у элемента списка:
             // Прокидываем наружу события onClose или onOpen, которые установят флаг isOpen в родителе
@@ -167,7 +169,7 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
     }, [isOpen, onClose, onOpen, handleCloseContent]);
 
     const handleReturnBack = useCallback(
-        (e) => {
+        (_: undefined, e: React.MouseEvent) => {
             e.stopPropagation();
             e?.nativeEvent.stopImmediatePropagation();
             onChange(e, null, true);
@@ -201,7 +203,7 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
                         {typeof action === 'function' ? action({ isMobile: true }) : action}
                         {items && (
                             <Button square design='ghost' size={iconButtonSize[size]} onClick={handleChangeList}>
-                                {isOpen ? <CloseCancelX size={size} /> : <Burger size={size} />}
+                                {isOpen ? <CloseCancelXIcon size={size} /> : <Burger size={size} />}
                             </Button>
                         )}
                     </ActionGroups>
@@ -241,7 +243,7 @@ export const Header: FC<HeaderProps> & { Items: typeof Items; Item: typeof Item 
                 {isOpen && !!currentItemContent && (
                     <Content ref={contentRef} $size={size}>
                         <CloseButton size='xs' square design='ghost' onClick={handleChangeList}>
-                            <CloseCancelX size='s' />
+                            <CloseCancelXIcon size='s' />
                         </CloseButton>
                         {currentItemContent}
                     </Content>

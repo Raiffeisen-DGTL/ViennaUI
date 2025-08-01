@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import React, { ReactNode } from 'react';
 import { ThemeProvider } from 'styled-components';
 

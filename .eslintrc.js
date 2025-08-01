@@ -1,34 +1,55 @@
 module.exports = {
     root: true,
-    extends: [
-        '@fcc/config-eslint',
-        '@fcc/config-eslint/rules/react',
-        '@fcc/config-eslint/rules/react-hooks',
-        '@fcc/config-eslint/rules/jest',
-        '@fcc/config-eslint/rules/prettier',
-        '@fcc/config-eslint/rules/typescript',
-    ].map(require.resolve),
+    extends: ['eslint:recommended', 'react-app', 'plugin:prettier/recommended'],
+    rules: {
+        '@typescript-eslint/ban-ts-comment': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
+        'react-hooks/exhaustive-deps': 'off',
+        'typescript-styled-plugin': 'off',
+        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'off',
+        'jsx-a11y/role-supports-aria-props': 'off',
+        '@typescript-eslint/ban-types': [
+            'error',
+            {
+                types: {
+                    object: false,
+                    '{}': {
+                        message: 'Use object instead',
+                        fixWith: 'object',
+                    },
+                    Object: {
+                        message: 'Use object instead',
+                        fixWith: 'object',
+                    },
+                },
+            },
+        ],
+        'consistent-return': 'off',
+
+        eqeqeq: 'error',
+        'no-console': 'error',
+        'no-return-assign': 'error',
+        'no-unneeded-ternary': 'warn',
+        'no-useless-computed-key': 'warn',
+        'no-useless-concat': 'error',
+        'no-useless-return': 'warn',
+        'prefer-const': 'error',
+        'no-redeclare': 'off',
+        '@typescript-eslint/no-redeclare': 'off',
+    },
     overrides: [
         {
-            parserOptions: {
-                project: './tsconfig.json',
-            },
-            files: ['**/*.ts', '**/*.tsx'],
+            files: ['src/Utils/**/*.ts', 'src/Utils/**/*.tsx'],
             rules: {
-                '@typescript-eslint/no-explicit-any': 0,
-                '@typescript-eslint/naming-convention': 0,
-                'no-undef': 'off',
-                '@typescript-eslint/ban-types': 0,
-                'prefer-arrow-callback': 0,
-                'no-redeclare': 0,
-                'react/no-deprecated': 0,
-                'no-underscore-dangle': 0,
+                '@typescript-eslint/no-explicit-any': 'warn',
             },
         },
         {
-            files: ['**/Table/**/*.tsx', '**/Stepper/**/*.tsx'],
+            files: ['**/*.spec.tsx', '**/*.spec.ts'],
             rules: {
-                'react/no-unused-prop-types': 0,
+                '@typescript-eslint/ban-ts-comment': 'off',
+                '@typescript-eslint/ban-types': 'off',
             },
         },
     ],

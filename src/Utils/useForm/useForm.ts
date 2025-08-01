@@ -1,8 +1,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { useObjectState } from '../useObjectState';
+import { getKeys } from '../typesafeGetters';
+import { AnyObject } from '../types';
 
+type ReasonRejectType = string | AnyObject | Error;
 export type ResolveType = (value: unknown) => void;
-export type RejectType = (reason?: any) => void;
+export type RejectType = (reason?: ReasonRejectType) => void;
 export type ValidationObject<T extends object> = {
     [K in keyof T]: {
         error: boolean;
@@ -12,7 +15,7 @@ export type ValidationObject<T extends object> = {
 
 const generateValidationObject = <T extends object>(state: T): ValidationObject<T> => {
     const result = {} as ValidationObject<T>;
-    Object.keys(state).forEach((key) => {
+    getKeys(state).forEach((key) => {
         result[key] = {
             error: false,
             msg: '',
@@ -41,8 +44,8 @@ export function useForm<T extends object>(
     const validation = (): boolean => {
         let valid = true;
         if (validators) {
-            Object.keys(validators).forEach((key) => {
-                const validateMsg = validators[key]();
+            getKeys(validators).forEach((key) => {
+                const validateMsg = validators[key]?.();
                 setPartialValidationObject({
                     [key]: {
                         error: !!validateMsg,
@@ -64,7 +67,7 @@ export function useForm<T extends object>(
                         success(e);
                     }
                 })
-                .catch((e) => {
+                .catch((e: ReasonRejectType) => {
                     if (error) {
                         error(e);
                     }

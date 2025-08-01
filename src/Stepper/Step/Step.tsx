@@ -1,4 +1,4 @@
-import React, { MutableRefObject, PropsWithChildren } from 'react';
+import React, { FC, MutableRefObject, PropsWithChildren } from 'react';
 import { Box, Title, Point } from './Step.styles';
 import { Tooltip } from '../../Tooltip';
 
@@ -13,15 +13,16 @@ export interface StepProps {
     title?: string;
     size?: Size;
     value: string;
-    el?: MutableRefObject<any>;
+    el?: MutableRefObject<HTMLDivElement>;
     hasTooltip?: boolean;
+    tooltipText?: string;
     valign?: Valign;
     count?: number;
     inverted?: boolean;
 }
 
-export const Step: React.FC<PropsWithChildren<StepProps>> = (props) => {
-    const { title, design, size, orientation, el, hasTooltip, valign, count, inverted } = props;
+export const Step: FC<PropsWithChildren<StepProps>> = (props) => {
+    const { title, design, size, orientation, el, hasTooltip, tooltipText, valign, count, inverted } = props;
     const titleContainer = (
         <Title ref={el} $design={design} $orientation={orientation} $valign={valign} $size={size}>
             {title}
@@ -33,8 +34,13 @@ export const Step: React.FC<PropsWithChildren<StepProps>> = (props) => {
             <Point $design={design} $size={size} $orientation={orientation} $valign={valign} />
 
             {hasTooltip ? (
-                <Tooltip design='dark' content={title as any} width={160}>
-                    {titleContainer}
+                <Tooltip
+                    design='dark'
+                    placement={orientation === 'vertical' ? 'right' : 'bottom'}
+                    content={tooltipText ?? title}
+                    width={160}
+                    action='hover'>
+                    <div> {titleContainer}</div>
                 </Tooltip>
             ) : (
                 titleContainer
@@ -42,3 +48,5 @@ export const Step: React.FC<PropsWithChildren<StepProps>> = (props) => {
         </Box>
     );
 };
+
+Step.displayName = 'Step';

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { forwardRef, ForwardRefExoticComponent, Ref, RefAttributes } from 'react';
 import { WithWhitespace, getWhitespaceStyledProps } from '../Whitespace/utils';
 import { Box, PropsBox } from './CssGrid.styles';
 import { Item } from './Item';
@@ -37,38 +37,42 @@ export interface CssGridProps extends BoxStyled<typeof Box, PropsBox>, WithWhite
     gap?: PropsBox['$gap'];
 }
 
-export const CssGrid: FC<CssGridProps> & { Item: typeof Item } = ({
-    children,
-    inline,
-    templateRows,
-    templateColumns,
-    templateAreas,
-    gridTemplate,
-    justifyItems,
-    alignItems,
-    placeItems,
-    justifyContent,
-    alignContent,
-    placeContent,
-    autoColumns,
-    autoRows,
-    autoFlow,
-    grid,
-    height,
-    width,
-    maxHeight,
-    maxWidth,
-    columnGap,
-    rowGap,
-    gap,
-    ...rest
-}) => {
+const CssGridInternal = (
+    {
+        children,
+        inline,
+        templateRows,
+        templateColumns,
+        templateAreas,
+        gridTemplate,
+        justifyItems,
+        alignItems,
+        placeItems,
+        justifyContent,
+        alignContent,
+        placeContent,
+        autoColumns,
+        autoRows,
+        autoFlow,
+        grid,
+        height,
+        width,
+        maxHeight,
+        maxWidth,
+        columnGap,
+        rowGap,
+        gap,
+        ...rest
+    }: CssGridProps,
+    ref: Ref<HTMLDivElement>
+) => {
     const { attrs, propsStyled } = getWhitespaceStyledProps(rest);
 
     return (
         <Box
-            {...(attrs as {})}
-            {...(propsStyled as {})}
+            {...attrs}
+            {...propsStyled}
+            ref={ref}
             $inline={inline}
             $templateRows={templateRows}
             $templateColumns={templateColumns}
@@ -96,4 +100,11 @@ export const CssGrid: FC<CssGridProps> & { Item: typeof Item } = ({
     );
 };
 
+export const CssGrid = forwardRef(CssGridInternal) as ForwardRefExoticComponent<
+    CssGridProps & RefAttributes<HTMLDivElement>
+> & {
+    Item: typeof Item;
+};
+
+CssGrid.displayName = 'CssGrid';
 CssGrid.Item = Item;

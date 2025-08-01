@@ -52,7 +52,7 @@ const resizeHandler = (
         const main: HTMLElement[] = elementsRef.refs;
 
         const extraElement = extraComponentRef.current;
-        const extra: number = extraElement.offsetWidth || main[items.length].offsetWidth;
+        const extra: number = extraElement.offsetWidth || main[items.length]?.offsetWidth || 0;
         const paddingsWidth = paddingsSum(containerRef.current);
         const parentWidth = containerRef.current.offsetWidth - paddingsWidth;
 

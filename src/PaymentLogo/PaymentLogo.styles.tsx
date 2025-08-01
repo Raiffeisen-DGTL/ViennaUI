@@ -1,7 +1,11 @@
 import styled, { css } from 'styled-components';
+import { paymentlogo } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 
-const presets = getPresets('paymentlogo', {
+const presets = getPresets(
+    paymentlogo,
+    'paymentlogo'
+)({
     base: null,
     size: '$size',
     design: '$design',

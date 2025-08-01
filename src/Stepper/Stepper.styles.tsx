@@ -1,16 +1,26 @@
 import styled, { css } from 'styled-components';
+import { stepper } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { Orientation } from './Stepper';
 
-const presets = getPresets('stepper.base', {
+const presets = getPresets(
+    stepper.base,
+    'stepper.base'
+)({
     orientation: '$orientation',
 });
 
-const line = getPresets('stepper.line', {
+const line = getPresets(
+    stepper.line,
+    'stepper.line'
+)({
     orientation: '$orientation',
 });
 
-const progress = getPresets('stepper.progress', {
+const progress = getPresets(
+    stepper.progress,
+    'stepper.progress'
+)({
     base: null,
     orientation: '$orientation',
 });

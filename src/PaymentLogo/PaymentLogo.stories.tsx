@@ -8,11 +8,11 @@ export default {
 } as Meta;
 
 export const Overview: Story<PaymentLogoProps> = (args) => {
-    return  <PaymentLogo logo="visa" {...args}/>
+    return <PaymentLogo logo='visa' {...args} />;
 };
 export const Mir: Story<PaymentLogoProps> = (args) => {
-    return <PaymentLogo logo="mir" {...args}/>
+    return <PaymentLogo logo='mir' {...args} />;
 };
 export const Mastercard: Story<PaymentLogoProps> = (args) => {
-    return <PaymentLogo logo="mastercard" {...args}/>
+    return <PaymentLogo logo='mastercard' {...args} />;
 };

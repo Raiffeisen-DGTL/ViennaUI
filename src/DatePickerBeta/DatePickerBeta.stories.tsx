@@ -8,7 +8,7 @@ export default {
 } as Meta;
 
 export const Overview: Story<DatePickerBetaProps> = (args) => {
-    const [value, setValue] = React.useState();
+    const [value, setValue] = React.useState('09.04.2024');
     const ref = useRef();
 
     const handleChange = React.useCallback((e, data) => setValue(data.value), []);

@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components';
+import { header } from 'vienna.ui-theme';
 import { Groups } from '../Groups';
 import { Button } from '../Button';
-import { getPresets } from '../Utils/styling';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 
 interface PropsBox {
     $size?: 'l' | 'm' | 's';
@@ -18,7 +19,10 @@ interface PropsContainer extends Pick<PropsBox, '$size'> {
     $isMobile?: boolean;
 }
 
-const presets = getPresets('header', {
+const presets = getPresets(
+    header,
+    'header'
+)({
     base: null,
     header: null,
     list: null,
@@ -28,46 +32,70 @@ const presets = getPresets('header', {
     size: '$size',
 });
 
-const sideContent = getPresets('header.sideContent', {
+const sideContent = getPresets(
+    header.sideContent,
+    'header.sideContent'
+)({
     base: null,
     size: '$size',
 });
 
-const searchContainer = getPresets('header.searchContainer', {
+const searchContainer = getPresets(
+    header.searchContainer,
+    'header.searchContainer'
+)({
     base: null,
     size: '$size',
 });
 
-const action = getPresets('header.action', {
+const action = getPresets(
+    header.action,
+    'header.action'
+)({
     base: null,
     size: '$size',
 });
 
-const box = getPresets('header.box', {
+const box = getPresets(
+    header.box,
+    'header.box'
+)({
     size: '$size',
 });
 
-const boxMobile = getPresets('header.boxMobile', {
+const boxMobile = getPresets(
+    header.boxMobile,
+    'header.boxMobile'
+)({
     size: '$size',
 });
 
-const content = getPresets('header.content', {
+const content = getPresets(
+    header.content,
+    'header.content'
+)({
     base: null,
     size: '$size',
 });
 
-const contentMobile = getPresets('header.contentMobile', {
+const contentMobile = getPresets(
+    header.contentMobile,
+    'header.contentMobile'
+)({
     base: null,
     size: '$size',
     height: '$size',
 });
 
-const fade = getPresets('header.fade', {
+const fade = getPresets(
+    header.fade,
+    'header.fade'
+)({
     base: null,
     custom: null,
 });
 
-const custom = getPresets('header.custom', {
+const custom = getPresetsCustom('header.custom')({
     box: null,
     boxMobile: null,
     content: null,

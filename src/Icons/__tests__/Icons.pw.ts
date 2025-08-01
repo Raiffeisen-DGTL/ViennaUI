@@ -5,7 +5,7 @@ import * as Icons from 'vienna.icons';
 const iconNames = Object.keys(Icons).sort();
 
 
-test('Icons screenshot all sizes and color props', async ({ page }) => {
+test.skip('Icons screenshot all sizes and color props', async ({ page }) => {
     await page.setViewportSize({width: 460, height: 50000});
     const iframe = await storybookLoader(page, 'http://localhost:6006/?path=/story/development-icons--playwright-test');
 

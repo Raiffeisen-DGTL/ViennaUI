@@ -8,16 +8,31 @@ import { useLocalization } from '../Localization';
 import { Header } from './Header';
 import { Body } from './Body';
 import { CalendarProvider } from './Context';
+
 import { CalendarLocalizationProps, defaultCalendarLocalization } from './localization';
 /**
  * imports of interfaces, types and constants
  */
-import { Dates, EventDateFunction, RangeDate, StartingWeekDay, ViewMode } from './types';
+import { Dates, EventDateFunction, FocusActions, RangeDate, StartingWeekDay, ViewMode } from './types';
 /**
  * imports of styles
  */
 import { Box, DayState } from './Calendar.styles';
 import { checkIsDisabled } from './Utils';
+import { convertValueToDate } from './Utils/convertValueToDate';
+import { useActionsRef } from './hooks';
+import { HeaderTestId } from '@/Calendar/Header/Header';
+import { BodyTestId } from '@/Calendar/Body/Body';
+
+export const defaultCalendarTestId: CalendarTestId = {
+    btnYearPrev: 'calendar_btn-year-prev',
+    btnYearNext: 'calendar_btn-year-next',
+    btnMonthPrev: 'calendar_btn-month-prev',
+    btnMonthNext: 'calendar_btn-month-next',
+    btnViewMode: 'calendar_btn-view-mode',
+    btnToday: 'calendar_btn-today',
+    btnCalendarCell: (date: Date) => `calendar_${date.toISOString()}`,
+};
 
 export interface DateValue {
     day: number;
@@ -31,7 +46,9 @@ export interface DateResponse<T> {
     date?: T;
 }
 
-type Format = 'date' | 'object';
+export type Format = 'date' | 'object';
+
+export interface CalendarTestId extends HeaderTestId, BodyTestId {}
 
 export interface PropsCalendar extends CalendarLocalizationProps {
     /**
@@ -41,8 +58,9 @@ export interface PropsCalendar extends CalendarLocalizationProps {
     format?: Format;
     onChange?: (
         event: React.FormEvent<HTMLInputElement> | Event | null,
-        options: DateResponse<DateValue> | DateResponse<Date>
+        options: DateResponse<DateValue | Date>
     ) => void;
+    onBlur?: (event: React.FocusEvent<HTMLDivElement>) => void;
 
     /**
      * Тип экрана календаря, отображаемого по умолчанию
@@ -102,10 +120,7 @@ export interface PropsCalendar extends CalendarLocalizationProps {
     /**
      * Метод вызывается при mode = 'month'
      */
-    onChangeMonth?: (
-        event: React.FormEvent<HTMLInputElement> | Event | null,
-        options: { date: Date | Date[]; value: string }
-    ) => void;
+    onChangeMonth?: (options: { date: Date | Date[]; value: string }) => void;
 
     /**
      * Дни недели отображаются с понедельника (1) или с воскресенья (0)
@@ -131,9 +146,31 @@ export interface PropsCalendar extends CalendarLocalizationProps {
      * Дефолтное значение отображаемой даты
      */
     defaultDisplayedDate?: Date;
+    visible?: boolean;
+
+    /**
+     * Рефка содержащая методы для установки фокуса
+     */
+    actionsRef?: React.MutableRefObject<FocusActions>;
+
+    /**
+     * Реф на контейнер календаря
+     */
+    calendarRef?: React.MutableRefObject<HTMLDivElement | null>;
+
+    /**
+     * Изменение режима отображения
+     */
+    onChangeViewMode?: (viewMode: ViewMode) => void;
+
+    /**
+     * Добавление атрибута data-testid
+     */
+    testId?: CalendarTestId;
 }
 
-export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
+const CalendarContent: React.FC<PropsCalendar> = ({
+    visible = true,
     date,
     dateEnd,
     dateStart,
@@ -145,6 +182,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
     maxDate,
     minDate,
     onChange,
+    onBlur,
     ranged = false,
     todayButton = true,
     mode,
@@ -154,37 +192,78 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
     locale,
     onChangeDisplayedDate,
     defaultDisplayedDate,
-    localization,
+    calendarRef,
+    actionsRef,
+    onChangeViewMode,
+    testId = defaultCalendarTestId,
 }) => {
     const firstUpdate = useRef(true);
     const today: Date = new Date();
-    const [dateState, setDateState] = useState<Date | Date[] | undefined>();
-    const [dateStartState, setDateStartState] = useState<Date | undefined>();
-    const [dateEndState, setDateEndState] = useState<Date | undefined>();
-    const [displayedDate, setDisplayedDate] = useState<Date>(defaultDisplayedDate ?? today);
-    const boxEl = useRef<HTMLDivElement>(null);
-    const l10n = useLocalization(localization, defaultCalendarLocalization);
-    const initializedMode = useMemo((): ViewMode => {
-        if (mode === 'month') {
-            return 'month_list';
-        }
+    today.setHours(0, 0, 0, 0);
 
-        return defaultViewMode ?? 'month';
-    }, [mode, defaultViewMode]);
+    const [dateState, setDateState] = useState<Date | Date[] | undefined>(() => {
+        const convertedDate = convertValueToDate(date);
+        return convertedDate !== null ? convertedDate : undefined;
+    });
+
+    const [dateStartState, setDateStartState] = useState<Date | undefined>(() => {
+        const convertedDateStart = convertValueToDate(dateStart);
+        return convertedDateStart !== null ? convertedDateStart : undefined;
+    });
+
+    const [dateEndState, setDateEndState] = useState<Date | undefined>(() => {
+        const convertedDateEnd = convertValueToDate(dateEnd);
+        return convertedDateEnd !== null ? convertedDateEnd : undefined;
+    });
+
+    const [displayedDate, setDisplayedDate] = useState<Date>(defaultDisplayedDate ?? today);
+    const isInitialized = useRef<boolean>(false);
+
+    const initializedMode = mode === 'month' ? 'month_list' : (defaultViewMode ?? 'month');
     const [viewMode, setViewMode] = useState<ViewMode>(initializedMode);
+    useEffect(() => {
+        if (onChangeViewMode) {
+            onChangeViewMode(viewMode);
+        }
+    }, [viewMode]);
 
     useEffect(() => {
-        if (typeof onChangeDisplayedDate === 'function') {
+        if (!visible && date) {
+            const newDate = convertValueToDate(date);
+            newDate && setDisplayedDate(newDate);
+        }
+    }, [date, visible]);
+
+    useEffect(() => {
+        if (isInitialized.current && typeof onChangeDisplayedDate === 'function') {
             onChangeDisplayedDate(displayedDate);
         }
     }, [displayedDate]);
+
+    useEffect(() => {
+        isInitialized.current = true;
+        return () => {
+            isInitialized.current = false;
+        };
+    }, []);
+
+    useActionsRef({ ref: actionsRef, viewMode });
+
+    const handleOnBlur = useCallback(
+        (event: React.FocusEvent<HTMLDivElement>) => {
+            if (typeof onBlur === 'function') {
+                onBlur(event);
+            }
+        },
+        [onBlur]
+    );
 
     const handleGoToMonth = useCallback(
         (year: number, month: number) => () => {
             const nextDate = new Date(year, month, 1);
 
             if (mode === 'month' && isValid(nextDate) && onChangeMonth) {
-                onChangeMonth(null, {
+                onChangeMonth({
                     date: nextDate,
                     value: format(nextDate, 'LLLL yyyy', { locale: locale ?? ru }),
                 });
@@ -206,7 +285,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
             const nextDate = new Date(year, month, 1);
 
             setDisplayedDate(nextDate);
-            onChangeMonth(null, {
+            onChangeMonth({
                 date: nextDate,
                 value: format(nextDate, 'LLLL yyyy', { locale: locale ?? ru }),
             });
@@ -257,33 +336,30 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
 
             return nextDate;
         },
-        [boxEl, allowMultiple]
+        [allowMultiple]
     );
 
-    const parseDateToOption = useCallback(
-        (options: { date: Date; formatDate?: Format }): DateValue | Date | null => {
-            let formattedDate: DateValue | Date | null = null;
+    const parseDateToOption = useCallback((options: { date: Date; formatDate?: Format }): DateValue | Date => {
+        let formattedDate: DateValue | Date | null = null;
 
-            switch (options.formatDate) {
-                case 'object': {
-                    formattedDate = {
-                        year: options.date.getFullYear(),
-                        month: options.date.getMonth() + 1,
-                        day: options.date.getDate(),
-                    };
-                    break;
-                }
-                case 'date':
-                default: {
-                    formattedDate = options.date;
-                    break;
-                }
+        switch (options.formatDate) {
+            case 'object': {
+                formattedDate = {
+                    year: options.date.getFullYear(),
+                    month: options.date.getMonth() + 1,
+                    day: options.date.getDate(),
+                };
+                break;
             }
+            case 'date':
+            default: {
+                formattedDate = options.date;
+                break;
+            }
+        }
 
-            return formattedDate;
-        },
-        [boxEl]
-    );
+        return formattedDate;
+    }, []);
 
     const changeSingleDate = useCallback(
         (dateValue: Date) => {
@@ -295,41 +371,45 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
                     date: dateValue,
                 });
 
-                onChange(null, { date: nextDate } as DateResponse<any>);
+                onChange(null, { date: nextDate });
             }
         },
         [onChange, dateState]
     );
 
+    const changeRangeDate = (nextDate: RangeDate<Date>) => {
+        const { start, end } = nextDate;
+        setDateStartState(start);
+        setDateEndState(end);
+
+        if (typeof onChange === 'function' && start) {
+            const nextDateStart = parseDateToOption({
+                formatDate,
+                date: start,
+            });
+            const nextDateEnd =
+                end &&
+                parseDateToOption({
+                    formatDate,
+                    date: end,
+                });
+
+            onChange(null, {
+                dateStart: nextDateStart,
+                dateEnd: nextDateEnd,
+            });
+        }
+    };
+
     const handleChangeDate = useCallback(
         (nextDate: Date | RangeDate<Date> | Date[]) => {
             if (ranged) {
-                const { start, end } = nextDate as RangeDate<Date>;
-                setDateStartState(start);
-                setDateEndState(end);
-
-                if (typeof onChange === 'function' && start) {
-                    const nextDateStart = parseDateToOption({
-                        formatDate,
-                        date: start,
-                    });
-                    const nextDateEnd =
-                        end &&
-                        parseDateToOption({
-                            formatDate,
-                            date: end,
-                        });
-
-                    onChange(null, {
-                        dateStart: nextDateStart,
-                        dateEnd: nextDateEnd,
-                    } as DateResponse<any>);
-                }
+                changeRangeDate(nextDate as RangeDate<Date>);
             } else {
                 changeSingleDate(nextDate as Date);
             }
         },
-        [onChange, changeSingleDate, dateState, dateStartState, dateEndState]
+        [onChange, changeSingleDate, changeRangeDate, dateState, dateStartState, dateEndState]
     );
 
     const parsedMinDate = useMemo(
@@ -352,10 +432,20 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
         });
         setDisplayedDate(today);
 
-        if (!ranged && !isDisabled) {
+        if (isDisabled) return;
+
+        if (!ranged) {
             changeSingleDate(today);
+            return;
         }
-    }, [changeSingleDate, displayedDate]);
+
+        if (dateStartState && !dateEndState) {
+            changeRangeDate({ start: dateStartState, end: today });
+            return;
+        }
+
+        changeRangeDate({ start: today });
+    }, [ranged, changeSingleDate, changeRangeDate, dateStartState, dateEndState]);
 
     const initDate = useCallback(() => {
         const nextDate = parseOptionToDate({
@@ -380,6 +470,7 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
         }
 
         setDateState(nextDate);
+
         setDateStartState(nextDateStart as Date);
         setDateEndState(nextDateEnd as Date);
     }, [
@@ -403,38 +494,47 @@ export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({
     }, [initDate]);
 
     return (
+        <Box ref={calendarRef} onBlur={handleOnBlur}>
+            <Header
+                mode={mode}
+                viewMode={viewMode}
+                displayedDate={displayedDate}
+                hasNavigation={mode !== 'month' || viewMode === 'year_list'}
+                testId={testId}
+                onChangeViewMode={handleChangeViewMode}
+                onChangeDisplayedDate={setDisplayedDate}
+            />
+            <Body
+                viewMode={viewMode}
+                displayedDate={displayedDate}
+                date={dateState ?? undefined}
+                dateStart={dateStartState ?? undefined}
+                dateEnd={dateEndState ?? undefined}
+                maxDate={parsedMaxDate}
+                minDate={parsedMinDate}
+                ranged={ranged}
+                todayButton={todayButton}
+                disabledDates={disabledDates}
+                weekendDates={weekendDates}
+                eventDates={eventDates}
+                hasNavigation={mode !== 'month'}
+                startingWeekDay={startingWeekDay}
+                allowMultiple={allowMultiple}
+                testId={testId}
+                onGoToMonth={handleGoToMonth}
+                onChangeDate={handleChangeDate}
+                onGoToToday={handleGoToToday}
+                onChangeMonth={handleChangeMonth}
+            />
+        </Box>
+    );
+};
+
+export const Calendar: React.FC<PropsCalendar> & { Day: typeof DayState } = ({ localization, locale, ...rest }) => {
+    const l10n = useLocalization(localization, defaultCalendarLocalization);
+    return (
         <CalendarProvider localization={l10n} locale={locale}>
-            <Box ref={boxEl}>
-                <Header
-                    mode={mode}
-                    viewMode={viewMode}
-                    displayedDate={displayedDate}
-                    hasNavigation={mode !== 'month' || viewMode === 'year_list'}
-                    onChangeViewMode={handleChangeViewMode}
-                    onChangeDisplayedDate={setDisplayedDate}
-                />
-                <Body
-                    viewMode={viewMode}
-                    displayedDate={displayedDate}
-                    date={dateState}
-                    dateStart={dateStartState}
-                    dateEnd={dateEndState}
-                    maxDate={parsedMaxDate}
-                    minDate={parsedMinDate}
-                    ranged={ranged}
-                    todayButton={todayButton}
-                    disabledDates={disabledDates}
-                    weekendDates={weekendDates}
-                    eventDates={eventDates}
-                    hasNavigation={mode !== 'month'}
-                    startingWeekDay={startingWeekDay}
-                    allowMultiple={allowMultiple}
-                    onGoToMonth={handleGoToMonth}
-                    onChangeDate={handleChangeDate}
-                    onGoToToday={handleGoToToday}
-                    onChangeMonth={handleChangeMonth}
-                />
-            </Box>
+            <CalendarContent {...rest} />
         </CalendarProvider>
     );
 };

@@ -1,59 +1,79 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { TableProps } from './Table';
 import { TableState } from './types';
 import { TableService, FilterModule, SortModule } from './components';
 
-export interface TableEvents {
-    Init: (service: TableService, state: TableState) => void;
-    Update: (state: TableState, id: string) => void;
+export interface TableEvents<T> {
+    Init: (service: TableService<T>, state: TableState<T>) => void;
+    Update: (state: TableState<T>, id: string) => void;
 }
 
-interface TableHandlers {
-    onInit: TableProps['onInit'];
-    onUpdate: TableProps['onUpdate'];
-    onSort: TableProps['onSort'];
-    onFilter: TableProps['onFilter'];
+interface TableHandlers<T> {
+    onInit: TableProps<T>['onInit'];
+    onUpdate: TableProps<T>['onUpdate'];
+    onSort: TableProps<T>['onSort'];
+    onFilter: TableProps<T>['onFilter'];
 }
 
 // Some of the handlers accept an event which doesn't exists in this context as a first argument
 // Those handlers will be refactored, but meanwhile using undefined as a temporary stub
-const e = undefined;
+const DEFAULT_EVENT = undefined;
+
+type HandlersType<T> =
+    | ((handlers: TableHandlers<T>, state: TableState<T>, service: TableService<T>) => void)
+    | ((handlers: TableHandlers<T>, state: TableState<T>, id: string) => void)
+    | ((handlers: TableHandlers<T>, state: TableState<T>) => void)
+    | undefined;
 
 const handlers = {
-    init: (handlers: TableHandlers, service: TableService, state: TableState) => {
+    init: <T>(handlers: TableHandlers<T>, state: TableState<T>, service: TableService<T>) => {
         const handler = handlers.onInit;
-        handler?.({ service, state });
+        handler?.({ state, service });
     },
-    update: (handlers: TableHandlers, state: TableState, id: string) => {
+    update: <T>(handlers: TableHandlers<T>, state: TableState<T>, id: string) => {
         const handler = handlers.onUpdate;
         handler?.(state, id);
     },
-    [SortModule.name]: (handlers: TableHandlers, state: TableState) => {
+    [SortModule.name]: <T>(handlers: TableHandlers<T>, state: TableState<T>) => {
         const handler = handlers.onSort;
-        handler?.(e, state[SortModule.name]);
+        handler?.({ value: state[SortModule.name], event: DEFAULT_EVENT });
     },
-    [FilterModule.name]: (handlers: TableHandlers, state: TableState) => {
+    [FilterModule.name]: <T>(handlers: TableHandlers<T>, state: TableState<T>) => {
         const handler = handlers.onFilter;
-        handler?.(state[FilterModule.name]);
+        handler?.(structuredClone(state[FilterModule.name]));
     },
 };
 
-const call = (eventId, config: TableHandlers, args) => {
-    const handler: any = handlers[eventId];
+const call = <T>(
+    eventId: string,
+    config: TableHandlers<T>,
+    args: [TableState<T>, TableService<T> | string | undefined]
+) => {
+    const handler: HandlersType<T> = handlers[eventId];
 
     if (!handler) {
         return;
     }
 
-    handler(config, ...args);
+    if (args[1]) {
+        (handler as (handlers: TableHandlers<T>, state: TableState<T>, service: TableService<T> | string) => void)(
+            config,
+            args[0],
+            args[1]
+        );
+    } else {
+        (handler as (handlers: TableHandlers<T>, state: TableState<T>) => void)(config, args[0]);
+    }
 };
 
-export const initEvents = (config: TableHandlers): TableEvents => {
+export const initEvents = <T>(config: TableHandlers<T>): TableEvents<T> => {
     return {
         Init: (service, state) => {
-            call('init', config, [service, state]);
+            call('init', config, [state, service]);
         },
         Update: (state, id) => {
-            call(id, config, [state]);
+            call(id, config, [state, undefined]);
             call('update', config, [state, id]);
         },
     };

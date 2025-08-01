@@ -2,6 +2,7 @@ import { ReactNode, Ref } from 'react';
 import { RendererPopupProps } from '../Floating';
 
 export type TriggerActionType = 'click' | 'hover';
+export type TriggerTargetExtends = HTMLElement | SVGElement;
 
 export interface ITrigger {
     open: () => void;
@@ -17,7 +18,7 @@ export interface TriggerRendererTargetProps {
     visible: boolean;
 }
 
-export type ITriggerRendererTarget<Target extends HTMLElement> = (
+export type ITriggerRendererTarget<Target extends TriggerTargetExtends> = (
     ref: Ref<Target>,
     props: TriggerRendererTargetProps
 ) => ReactNode;
@@ -30,5 +31,7 @@ export interface IActionStrategy {
 export interface BaseActionStrategyOptions {
     onOpen: () => void;
     onClose: () => void;
+    visible: boolean;
     disableOutsideClick?: boolean;
+    closeOnTargetClick?: boolean;
 }

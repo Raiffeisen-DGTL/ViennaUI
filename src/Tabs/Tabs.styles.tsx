@@ -1,14 +1,23 @@
 import styled, { css } from 'styled-components';
 import React from 'react';
+import { tabs } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { BoxStyled } from '../Utils/styled';
+import { TabsValueType } from './Tabs';
+import { Wrapper } from '@/Link/Link.styles';
 
-const tabs = getPresets('tabs', {
+const presets = getPresets(
+    tabs,
+    'tabs'
+)({
     base: null,
     custom: null,
 });
 
-const tab = getPresets('tabs.tab', {
+const tab = getPresets(
+    tabs.tab,
+    'tabs.tab'
+)({
     base: null,
     size: '$size',
     active: null,
@@ -17,14 +26,20 @@ const tab = getPresets('tabs.tab', {
     custom: null,
 });
 
-const line = getPresets('tabs.tab.line', {
+const line = getPresets(
+    tabs.tab.line,
+    'tabs.tab.line'
+)({
     base: null,
     left: null,
     right: null,
     design: '$design',
 });
 
-const combineTab = getPresets('tabs.combineTab', {
+const combineTab = getPresets(
+    tabs.combineTab,
+    'tabs.combineTab'
+)({
     base: null,
     item: '$size',
 });
@@ -34,16 +49,30 @@ export interface PropsTabStyled {
     $size?: 'l' | 'm' | 's';
     $active?: boolean;
     $disabled?: boolean;
+    $isLastTab?: boolean;
+    $alignMiddle?: boolean;
 }
+
+export type TabsLinkProps = Omit<React.HTMLAttributes<HTMLDivElement>, keyof PropsTabStyled> & {
+    href?: string;
+    to?: string;
+};
+
 export const TabStyled = styled.div<PropsTabStyled>`
     position: relative;
     box-sizing: border-box;
+    text-decoration: none;
     ${tab.base}
     ${tab.size}
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: 0;
     }
+    ${({ $isLastTab }) =>
+        $isLastTab &&
+        css`
+            margin-right: 0;
+        `}
 
     ${({ $active }) => $active && tab.active}
 
@@ -83,43 +112,71 @@ export const TabStyled = styled.div<PropsTabStyled>`
         ${tab.hover}
     }
     ${tab.custom}
+
+    ${({ $alignMiddle }) =>
+        $alignMiddle &&
+        css`
+            padding-bottom: 0;
+        `}
+        ${Wrapper} {
+        text-decoration: none;
+}}
 `;
 
-export interface PropsTab extends BoxStyled<typeof TabStyled, PropsTabStyled> {
+export interface PropsTab<T = TabsValueType> extends BoxStyled<typeof TabStyled, PropsTabStyled>, TabsLinkProps {
     design?: PropsTabStyled['$design'];
     size?: PropsTabStyled['$size'];
     active?: PropsTabStyled['$active'];
     disabled?: PropsTabStyled['$disabled'];
-    value?: any;
+    value?: T;
+    isLastTab?: boolean;
+    alignMiddle?: boolean;
 }
-export const Tab: React.FC<PropsTab> = ({ children, design, size, active, disabled, ...attrs }) => (
-    <TabStyled {...(attrs as {})} $design={design} $size={size} $active={active} $disabled={disabled}>
-        {children}
-    </TabStyled>
-);
+export const Tab = <T,>({
+    children,
+    design,
+    size,
+    active,
+    disabled,
+    isLastTab,
+    alignMiddle,
+    ...attrs
+}: PropsTab<T>) => {
+    return (
+        <TabStyled
+            {...attrs}
+            $design={design}
+            $size={size}
+            $active={active}
+            $disabled={disabled}
+            $isLastTab={isLastTab}
+            $alignMiddle={alignMiddle}>
+            {children}
+        </TabStyled>
+    );
+};
 
 type PropsCombineTab = Pick<PropsTabStyled, '$size'>;
 export const CombineTab = styled.div<PropsCombineTab>`
     position: relative;
-    visibility: hidden;
     ${combineTab.base}
 `;
 
 export type PropsBox = Pick<PropsTabStyled, '$design' | '$size'> & {
-    $resizable?: boolean;
+    $alignMiddle?: boolean;
 };
 export const Box = styled.div<PropsBox>`
     outline: none;
-    ${({ $resizable }) =>
-        !$resizable
+    ${({ $alignMiddle }) =>
+        $alignMiddle
             ? css`
                   width: 100%;
                   height: 100%;
               `
             : ''}
 
-    ${tabs.base}
-    ${tabs.custom}
+    ${presets.base}
+    ${presets.custom}
 `;
 
 type PropsItem = Pick<PropsTabStyled, '$size'>;

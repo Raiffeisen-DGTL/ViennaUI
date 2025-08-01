@@ -2,6 +2,16 @@ import React, { useState, useCallback } from 'react';
 import { NativeInput, NativeInputProps } from './NativeInput';
 import { InputWrapper } from './InputWrapper';
 import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
+import { InputDisabledWrapper } from './Input.styles';
+import { OnChangeHandler, Pretty } from '../Utils';
+import { ViewOnly, WithViewOnly } from '@/ViewOnly';
+import { getViewOnlySize } from '@/ViewOnly/utils';
+
+export const defaultInputTestId: InputTestId = {
+    input: 'input_input',
+    inputDisabledWrapper: 'input_disabled-wrapper',
+    inputWrapper: 'input_wrapper',
+};
 
 export type InputEvent<T> = (
     event: T,
@@ -11,8 +21,15 @@ export type InputEvent<T> = (
     }
 ) => void;
 
+export interface InputTestId {
+    input?: string;
+    inputDisabledWrapper?: string;
+    inputWrapper?: string;
+}
+
 export interface InputProps<B = Breakpoints>
-    extends Partial<Omit<NativeInputProps<B>, 'prefix' | 'onChange' | 'onFocus' | 'onBlur'>> {
+    extends Partial<Omit<NativeInputProps<B>, 'prefix' | 'onChange' | 'onFocus' | 'onBlur'>>,
+        WithViewOnly {
     /** Сcылка на нативный элемент input, доступна после отрисовки */
     ref?: React.Ref<HTMLInputElement>;
     /** Размеры */
@@ -30,8 +47,11 @@ export interface InputProps<B = Breakpoints>
     /** Принудительный ховер  */
     active?: boolean;
 
+    /** Режим для включения Close icon в компоненте Search */
+    additionalPostfix?: React.ReactNode;
+
     /** Обработчик события при вводе символов  */
-    onChange?: InputEvent<React.ChangeEvent<HTMLInputElement>>;
+    onChange?: OnChangeHandler<string, React.ChangeEvent<HTMLInputElement>>;
 
     /** Обработчик события при потере фокуса компонентом  */
     onBlur?: InputEvent<React.FocusEvent<HTMLInputElement>>;
@@ -57,15 +77,10 @@ export interface InputProps<B = Breakpoints>
     /** Обработчик вырезки  */
     onCut?: React.ClipboardEventHandler<HTMLInputElement>;
 
-    /** для передачи дополнительных нативных атрибутов,
-     *  которые своим названием могут конфликтовать с имеющимися в компоненте пропсами,
-     * например size */
-    extraNativeProps?: {
-        [key: string]: any;
-    };
+    testId?: InputTestId;
 }
 
-export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+const InputInternal = <B,>(props: InputProps<B>, ref: React.ForwardedRef<HTMLInputElement>) => {
     const {
         prefix,
         postfix,
@@ -80,14 +95,17 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
         style,
         className,
         active: activeProps,
-        extraNativeProps,
+        additionalPostfix,
+        viewOnly,
+        viewOnlyText,
+        testId = defaultInputTestId,
         ...attrs
     } = props;
 
     const [active, setActive] = useState(false);
 
     const handleEvent = useCallback(
-        (event: React.FormEvent<HTMLInputElement>, callback: InputEvent<any>): void => {
+        (event: React.FocusEvent<HTMLInputElement>, callback: InputProps['onFocus'] | InputProps['onBlur']): void => {
             if (disabled) {
                 return;
             }
@@ -101,13 +119,9 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
         [disabled, name]
     );
 
-    const handleChange = useCallback(
-        (event: React.FormEvent<HTMLInputElement>): void => {
-            if (typeof onChange === 'function') {
-                handleEvent(event, onChange);
-            }
-        },
-        [onChange, handleEvent]
+    const handleChange = useCallback<React.ChangeEventHandler<HTMLInputElement>>(
+        (event) => onChange?.({ value: event.currentTarget.value, event, options: { name } }),
+        [onChange, name]
     );
 
     const handleBlur = useCallback(
@@ -130,32 +144,51 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref)
         [handleEvent, onFocus]
     );
 
+    if (viewOnly) {
+        return <ViewOnly size={getViewOnlySize(size)}>{viewOnlyText ?? attrs.value}</ViewOnly>;
+    }
+
     return (
-        <InputWrapper
-            design={design}
-            size={size}
-            active={activeProps ?? active}
-            disabled={disabled}
-            style={style}
-            className={className}
-            invalid={invalid}>
-            {prefix}
-            <NativeInput
-                {...(attrs as {})}
-                extraNativeProps={extraNativeProps}
-                ref={ref}
+        <InputDisabledWrapper className={className} $disabled={disabled} data-testid={testId?.inputDisabledWrapper}>
+            <InputWrapper
                 design={design}
                 size={size}
+                active={activeProps ?? active}
                 disabled={disabled}
-                name={name}
-                aria-invalid={!!invalid}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                onFocus={handleFocus}
-            />
-            {postfix}
-        </InputWrapper>
+                style={style}
+                invalid={invalid}
+                data-testid={testId?.inputWrapper}>
+                {prefix}
+                <NativeInput
+                    data-testid={testId?.input}
+                    {...attrs}
+                    ref={ref}
+                    design={design}
+                    size={size}
+                    disabled={disabled}
+                    name={name}
+                    aria-invalid={!!invalid}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    onFocus={handleFocus}
+                />
+                {additionalPostfix}
+                {postfix}
+            </InputWrapper>
+        </InputDisabledWrapper>
     );
-});
+};
+
+export namespace Input {
+    export type OnChange = Pretty.Func<OnChangeHandler<string, React.ChangeEvent<HTMLInputElement>>>;
+    export type OnBlur = Pretty.Func<InputEvent<React.FocusEvent<HTMLInputElement>>>;
+    export type OnFocus = Pretty.Func<InputEvent<React.FocusEvent<HTMLInputElement>>>;
+}
+
+export const Input = React.forwardRef(InputInternal) as (<B>(
+    props: InputProps<B> & React.RefAttributes<HTMLInputElement>
+) => ReturnType<typeof InputInternal>) & {
+    displayName?: string;
+};
 
 Input.displayName = 'Input';

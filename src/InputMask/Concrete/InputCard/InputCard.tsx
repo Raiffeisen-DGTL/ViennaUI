@@ -1,22 +1,24 @@
 import React, { forwardRef } from 'react';
 import { FactoryOpts } from 'imask';
-import { InputMask, InputMaskProps } from '../../InputMask';
+import { InputMask, InputMaskOnChangeType, InputMaskProps } from '../../InputMask';
 import { getMaskOptionsFromProps } from '../../utils';
 
-export type InputCardProps = Omit<InputMaskProps, 'maskOptions'> & FactoryOpts;
+export type InputCardProps = Omit<InputMaskProps, 'maskOptions' | 'onChange'> &
+    FactoryOpts & {
+        onChange?: InputMaskOnChangeType<string>;
+    };
 
-export const InputCard = forwardRef<HTMLInputElement, InputCardProps>((props, ref) => {
-    // @ts-ignore
-    const maskOptions = getMaskOptionsFromProps(props);
+export const InputCard = forwardRef<HTMLInputElement, InputCardProps>(({ onChange, ...props }, ref) => {
     return (
         <InputMask
             ref={ref}
-            // @ts-ignore
             maskOptions={{
-                ...maskOptions,
-                mask: maskOptions.mask || '0000 0000 0000 0000',
+                mask: '0000 0000 0000 0000',
+                ...getMaskOptionsFromProps(props),
             }}
+            placeholder={'____ ____ ____ ____'}
             smartPlaceholder={'____ ____ ____ ____'}
+            onChange={onChange as InputMaskProps['onChange']}
             {...props}
         />
     );

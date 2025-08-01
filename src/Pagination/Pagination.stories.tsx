@@ -10,3 +10,7 @@ export default {
 export const Overview: Story<PaginationProps> = (args) => {
     return <Pagination pageSize={25} totalItemsCount={500} onChange={() => ''} {...args} />;
 };
+export const Only: Story<PaginationProps> = (args) => {
+    return <Pagination pageSize={10} totalItemsCount={0} onChange={() => ''} {...args} />;
+};
+Only.storyName = 'Единственная страница';

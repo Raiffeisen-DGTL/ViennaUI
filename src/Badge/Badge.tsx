@@ -6,20 +6,45 @@ import { BoxStyled } from '../Utils/styled';
 export type BadgeColor =
     | 'paris10'
     | 'paris30'
+    | 'paris100'
     | 'miami10'
     | 'miami30'
+    | 'miami100'
     | 'dubai10'
     | 'dubai30'
+    | 'dubai100'
     | 'nice10'
     | 'nice30'
+    | 'nice100'
     | 'seattle05'
-    | 'seattle10';
+    | 'seattle10'
+    | 'seattle30'
+    | 'seattle100'
+    | 'sochi10'
+    | 'sochi30'
+    | 'sochi100'
+    | 'tokyo10'
+    | 'tokyo30'
+    | 'tokyo100'
+    | 'dublin100'
+    | 'bern100'
+    | 'manila100'
+    | 'tallin100'
+    | 'seoul100'
+    | 'havana100'
+    | 'madrid100'
+    | 'porto100'
+    | 'oslo10'
+    | 'oslo30'
+    | 'oslo100'
+    | 'osaka10'
+    | 'osaka30'
+    | 'osaka100';
 
 export interface BadgeProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsBox> {
     color?: PropsBox<B>['$color'];
     size?: PropsBox<B>['$size'];
     grid?: PropsBox<B>['$grid'];
-    clickable?: PropsBox<B>['$clickable'];
     href?: string;
 }
 
@@ -28,10 +53,9 @@ function BadgeInternal<B = void>(
     ref: Ref<HTMLSpanElement>
 ) {
     const as = attrs.href ? 'a' : 'span';
-    const clickable = (attrs.onClick && attrs.href && attrs.clickable) || false;
 
     return (
-        <Box {...(attrs as {})} ref={ref} as={as} $size={size} $color={color} $clickable={clickable} $grid={grid}>
+        <Box {...attrs} ref={ref} as={as} $size={size} $color={color} $grid={grid}>
             {Children.map(children, (child: ReactNode) => (child ? <Item>{child}</Item> : null))}
         </Box>
     );

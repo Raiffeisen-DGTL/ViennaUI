@@ -1,16 +1,23 @@
 import styled, { css } from 'styled-components';
+import { calendar } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 
 const DAY_SIZE = 32;
 const CELL_WIDTH = 74;
 const CELL_HEIGHT = 56;
 
-const presets = getPresets('calendar', {
+const presets = getPresets(
+    calendar,
+    'calendar'
+)({
     body: null,
     footer: null,
 });
 
-const cell = getPresets('calendar.cell', {
+const cell = getPresets(
+    calendar.cell,
+    'calendar.cell'
+)({
     base: null,
     hover: null,
     active: null,
@@ -34,7 +41,13 @@ export const Footer = styled.div`
 interface PropsCalendarCell {
     $isActive?: boolean;
 }
-export const CalendarCell = styled.div<PropsCalendarCell>`
+export const CalendarCell = styled.button<PropsCalendarCell>`
+    // reset
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    //
     width: ${CELL_WIDTH}px;
     height: ${CELL_HEIGHT}px;
     display: flex;
@@ -42,7 +55,8 @@ export const CalendarCell = styled.div<PropsCalendarCell>`
     justify-content: center;
     ${cell.base}
 
-    &:hover {
+    &:hover,
+    &:focus {
         ${cell.hover}
     }
 

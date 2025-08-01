@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { CloseCancelX, Settings } from 'vienna.icons';
+import { CloseCancelXIcon, SettingsIcon } from 'vienna.icons';
 import { Card, CardProps } from './Card';
 import { Groups } from '../Groups';
 import { Button } from '../Button';
@@ -10,6 +10,12 @@ import { ComponentHelperCard } from './Card.styles';
 export default {
     title: 'Development/Card',
     component: Card,
+    argTypes: {
+        size: {
+            control: 'radio',
+            options: ['s', 'm', 'l'],
+        },
+    },
 } as Meta;
 
 export const Overview: Story<CardProps> = (args) => {
@@ -23,8 +29,8 @@ export const WithActions: Story<CardProps> = (args) => {
             title='Card with actions'
             actions={
                 <Groups size='xs'>
-                    <Settings />
-                    <CloseCancelX />
+                    <SettingsIcon />
+                    <CloseCancelXIcon />
                 </Groups>
             }>
             <ComponentHelperCard />
@@ -47,12 +53,22 @@ export const WithHeader: Story<CardProps> = (args) => {
     );
 };
 WithHeader.storyName = 'С заголовком';
+
+export const WithContentTitle: Story<CardProps> = (args) => {
+    return (
+        <Card {...args} header={<Card.Title>Card with tabs</Card.Title>} actions={<SettingsIcon />}>
+            <Card.ContentTitle> Content title</Card.ContentTitle>
+            <ComponentHelperCard />
+        </Card>
+    );
+};
+WithContentTitle.storyName = 'С заголовком контента';
 export const WithFooter: Story<CardProps> = (args) => {
     return (
         <Card
             {...args}
             title='Card with footer'
-            actions={<Settings />}
+            actions={<SettingsIcon />}
             footer={
                 <Groups justifyContent='flex-end'>
                     <Button design='outline'>Button example</Button>
@@ -78,7 +94,7 @@ export const WithTabs: Story<CardProps> = (args) => {
                     </Tabs>
                 </Groups>
             }
-            actions={<Settings />}>
+            actions={<SettingsIcon />}>
             <ComponentHelperCard />
         </Card>
     );

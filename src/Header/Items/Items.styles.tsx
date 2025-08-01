@@ -1,15 +1,19 @@
 import styled from 'styled-components';
+import { header } from 'vienna.ui-theme';
 import { Tabs } from '../../Tabs';
-import { getPresets } from '../../Utils/styling';
-
-const tabPresets = getPresets('header.tab', {
-    align: ({ $align, $size }) => `header.tab.align.${$align}.size.${$size}`,
-});
+import { isProperKey } from '../../Utils';
 
 interface PropsTab {
     $align?: string;
+    $size?: string;
 }
 
 export const Tab = styled(Tabs.Tab)<PropsTab>`
-    ${tabPresets.align}
+    ${({ $size, $align }) => {
+        if (!$align || !$size || !isProperKey(header.tab.align, $align)) return;
+
+        const size = header.tab.align[$align].size;
+
+        return size[$size as keyof typeof size];
+    }}
 `;

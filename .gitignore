@@ -22,6 +22,10 @@ playwright/playwright/.cache/
 /test-results/
 /playwright-report/
 /playwright/.cache/
-
+/storybook-static/
+.npmrc
 # Reports
 /reports/outdated.html
+/coverage-ts
+tsconfig.cjs.tsbuildinfo
+tsconfig.esm.tsbuildinfo

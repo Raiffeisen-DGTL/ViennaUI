@@ -1,12 +1,16 @@
 import styled from 'styled-components';
+import { formField } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 
-const presets = getPresets('formField.content', {
+const content = getPresets(
+    formField.content,
+    'formField.content'
+)({
     base: null,
     custom: null,
 });
 
 export const Box = styled.div`
-    ${presets.base}
-    ${presets.custom}
+    ${content.base}
+    ${content.custom}
 `;

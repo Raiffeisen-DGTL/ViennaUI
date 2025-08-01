@@ -1,14 +1,21 @@
 import styled, { css } from 'styled-components';
+import { breadcrumbs } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 
-const option = getPresets('breadcrumbs.option', {
+const option = getPresets(
+    breadcrumbs.option,
+    'breadcrumbs.option'
+)({
     base: null,
     hover: null,
     size: '$size',
     custom: null,
 });
 
-const icon = getPresets('breadcrumbs.icon', {
+const icon = getPresets(
+    breadcrumbs.icon,
+    'breadcrumbs.icon'
+)({
     size: '$size',
     custom: null,
 });

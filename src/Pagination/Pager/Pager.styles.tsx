@@ -1,10 +1,15 @@
 import styled, { css } from 'styled-components';
+import { pagination } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 
-const presets = getPresets('pagination.pager', {
+const presets = getPresets(
+    pagination.pager,
+    'pagination.pager'
+)({
     size: '$size',
     base: null,
     hover: null,
+    focus: null,
     active: null,
     disabled: null,
     gap: '$size',
@@ -29,6 +34,7 @@ export const Box = styled.button<PropsBox>`
     vertical-align: top;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: inherit;
 
     & > svg {
         display: block;
@@ -52,6 +58,10 @@ export const Box = styled.button<PropsBox>`
         css`
             &:hover {
                 ${presets.hover}
+            }
+
+            &:focus {
+                ${presets.focus}
             }
         `}
 

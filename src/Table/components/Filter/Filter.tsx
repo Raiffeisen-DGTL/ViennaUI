@@ -1,6 +1,6 @@
-import React, { useRef, useMemo, useState, useCallback } from 'react';
-import { useFloating, offset, autoPlacement, shift, FloatingPortal } from '@floating-ui/react';
-import { Filter as FilterIcon } from 'vienna.icons';
+import React, { useRef, useMemo, useState, useCallback, MutableRefObject, ReactNode } from 'react';
+import { useFloating, offset, autoPlacement, shift, Placement, FloatingPortal } from '@floating-ui/react';
+import { FilterSortIcon as FilterIcon } from 'vienna.icons';
 import { useOutsideClick } from 'vienna.react-use';
 import { Groups } from '../../../Groups';
 import { SortInFilter, SortIcon } from '../Sort';
@@ -11,25 +11,27 @@ import { tableLayers } from '../../TableLayers';
 import { ColumnProps } from '../Column';
 import { TableProps } from '../../Table';
 import { FilterPopup } from './Filter.styles';
+import { TableSize, SortDirection } from '../../types';
 
-export interface TableFilterProps {
-    column: ColumnProps;
+export interface TableFilterProps<T> {
+    column: ColumnProps<T>;
     size?: TableProps['size'];
 }
 
-const toggleParentTh = (ref, isOpen) => {
-    if (ref.current && ref.current.closest('th')) {
+const toggleParentTh = (ref: MutableRefObject<HTMLDivElement | null>, isOpen: boolean) => {
+    const $th = ref.current?.closest('th');
+    if ($th) {
         const zIndex = isOpen ? `${tableLayers.activeFilter}` : '';
-        ref.current.closest('th').style.zIndex = zIndex;
+        $th.style.zIndex = zIndex;
     }
 };
 
-const getFilterPopupOffset = (size): any => {
+const getFilterPopupOffset = (size?: TableSize): [number, number] => {
     // defined in preset filterPopover.base
     const lineHeight = 18;
 
     // defined in preset: table.filterPopover.size
-    const paddings = {
+    const paddings: Record<TableSize, number> = {
         xs: 4,
         s: 8,
         m: 12,
@@ -37,11 +39,11 @@ const getFilterPopupOffset = (size): any => {
     };
 
     const horizontal = 16; // filterPopover horizontal padding
-    const vertical = lineHeight + paddings[size]; // cell lineHeight +  filterPopover vertical padding
+    const vertical = lineHeight + (size ? paddings[size] : 0); // cell lineHeight +  filterPopover vertical padding
     return [-horizontal, -vertical];
 };
 
-const findAttrValue = (element, attr, value) => {
+const findAttrValue = (element: Element | null, attr: string, value: string) => {
     while (element) {
         if (element.isEqualNode(document)) {
             return false;
@@ -49,15 +51,15 @@ const findAttrValue = (element, attr, value) => {
         if (element.hasAttribute(attr) && element.getAttribute(attr) === value) {
             return true;
         }
-        element = element.parentNode;
+        element = element.parentNode as Element;
     }
 
     return false;
 };
 
-export const Filter: React.FC<TableFilterProps> = (props) => {
+export const Filter = <T,>(props: TableFilterProps<T>) => {
     const { column, size } = props;
-    const { id, title, sortable, forceIconVisibility } = column;
+    const { id, title, sortable, forceIconVisibility, align } = column;
 
     const { setFilter, getFilterColumn, getSortColumn } = useTableService();
     const {
@@ -71,16 +73,17 @@ export const Filter: React.FC<TableFilterProps> = (props) => {
     const popupRef = useRef<HTMLDivElement>(null);
 
     const setFilterCb = React.useCallback(
-        (value) => {
+        (value: string) => {
             setFilter(id, value);
         },
         [setFilter]
     );
 
-    const isActiveFilter = getFilterColumn(id) !== undefined && getFilterColumn(id) !== null;
-    const isActiveSort = getSortColumn()?.field === id;
+    const filterValue = getFilterColumn(id);
+    const isActiveFilter = typeof filterValue === 'number' ? true : !!filterValue;
+    const isActiveSort = getSortColumn()?.field === id && getSortColumn()?.direction !== SortDirection.None;
     const isActive = isActiveFilter || isActiveSort;
-    const icon = isActiveFilter || !isActiveSort ? <FilterIcon size='s' /> : <SortIcon field={id} />;
+    const icon = isActiveFilter || !isActiveSort ? <FilterIcon size='s' /> : <SortIcon column={id} />;
 
     const open = useCallback(() => {
         setActive(true);
@@ -88,17 +91,22 @@ export const Filter: React.FC<TableFilterProps> = (props) => {
     }, [setActive, toggleParentTh]);
 
     const close = useCallback(
-        (event) => {
-            const hasValue = findAttrValue(event.target, 'data-id', 'calendar');
+        (event: React.MouseEvent) => {
+            const hasValue = findAttrValue(event.target as Element, 'data-id', 'calendar');
+
             if (hasValue) return;
-            setActive(false);
-            toggleParentTh(titleRef, false);
+
+            requestAnimationFrame(() => {
+                setActive(false);
+                toggleParentTh(titleRef, false);
+            });
         },
         [setActive, toggleParentTh]
     );
 
     const content = useMemo(() => {
-        const filterContent = typeof filter === 'function' ? filter(setFilterCb) : filter;
+        const filterContent: ReactNode | undefined = typeof filter === 'function' ? filter(setFilterCb) : filter;
+
         return (
             <Groups design='vertical'>
                 <ColumnTitle
@@ -106,45 +114,53 @@ export const Filter: React.FC<TableFilterProps> = (props) => {
                     active={isActive}
                     icon={icon}
                     forceIconVisibility={forceIconVisibility}
+                    align={align}
                     onClick={close}
                 />
                 <div style={{ flexGrow: 1 }}>{filterContent}</div>
                 {sortable && <SortInFilter field={id} />}
             </Groups>
         );
-    }, [id, title, isActive, icon, filter, setFilterCb]);
+    }, [id, title, isActive, filter, setFilterCb]);
 
     const offsetPopup = getFilterPopupOffset(props.size);
+
+    const alignPlacementMap: Record<NonNullable<typeof align>, Placement[]> = {
+        left: ['top-start', 'bottom-start'],
+        center: ['top', 'bottom'],
+        right: ['top-end', 'bottom-end'],
+    };
+
+    const allowedPlacements = align ? alignPlacementMap[align] : alignPlacementMap.left;
 
     const { refs, floatingStyles } = useFloating({
         middleware: [
             offset({
                 mainAxis: offsetPopup[0],
-                crossAxis: offsetPopup[1],
                 alignmentAxis: 0,
             }),
             shift(),
             autoPlacement({
                 alignment: 'start',
-                allowedPlacements: ['top-start', 'bottom-start'],
+                allowedPlacements,
                 crossAxis: true,
             }),
         ],
     });
 
-    useOutsideClick(popupRef, close, { isEnabled: active });
+    // TODO: изменить тип для useOutsideClick
+    useOutsideClick(popupRef, close as unknown as (e: MouseEvent | TouchEvent) => void, { isEnabled: active });
 
     return (
         <FilterProvider id={id}>
             <div ref={titleRef}>
                 <ColumnTitle
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-ignore
                     ref={refs.setReference}
                     title={title}
                     active={isActive}
                     icon={icon}
                     forceIconVisibility={forceIconVisibility}
+                    align={align}
                     onClick={open}
                 />
                 {active && (

@@ -2,13 +2,17 @@ import React, { useCallback, ForwardedRef, FC } from 'react';
 import { Box, PropsBox, Input, Icon, Content } from './Radio.styles';
 import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
 import { BoxStyled } from '../Utils/styled';
+import { OnChangeHandler } from '../Utils/types/values.types';
+import { ViewOnly, WithViewOnlyAndDisabledIcon } from '@/ViewOnly';
+import { Pretty } from '@/Utils';
 
 export type RadioSize<B = Breakpoints> = ResponsiveProp<'s' | 'm' | 'l', B>;
 
-export type RadioEvent<T> = (event: T, data?: { name?: string; value: string }) => void;
+export type RadioEvent<T> = (event: T, data: { name?: string; value: string }) => void;
 
 export interface RadioProps<B = Breakpoints>
-    extends Omit<BoxStyled<typeof Box, PropsBox>, 'onFocus' | 'onBlur' | 'onChange'> {
+    extends Omit<BoxStyled<typeof Box, PropsBox>, 'ref' | 'onFocus' | 'onBlur' | 'onChange'>,
+        WithViewOnlyAndDisabledIcon {
     /** Размеры */
     size?: ResponsiveProp<'s' | 'm' | 'l', B>;
     /** Имя компонента (важно для группировки) */
@@ -26,7 +30,7 @@ export interface RadioProps<B = Breakpoints>
     /** Обработчик события при получении фокуса компонентом  */
     onFocus?: RadioEvent<React.FocusEvent<HTMLInputElement>>;
     /** Обработчик события при клике на компонент  */
-    onChange?: RadioEvent<React.ChangeEvent<HTMLInputElement>>;
+    onChange?: OnChangeHandler<string, React.ChangeEvent<HTMLInputElement>>;
 }
 
 function RadioInternal<B = void>(
@@ -39,6 +43,9 @@ function RadioInternal<B = void>(
         name,
         value,
         tabIndex,
+        viewOnly,
+        viewOnlyText,
+        viewOnlyDisableIcon,
         onChange,
         onBlur,
         onFocus,
@@ -47,8 +54,8 @@ function RadioInternal<B = void>(
     ref: React.Ref<HTMLInputElement>
 ) {
     const handleEvent = useCallback(
-        (callback: RadioEvent<any> | undefined) => {
-            return (event: React.FormEvent<HTMLInputElement>) => {
+        <T,>(callback: RadioEvent<T> | undefined) => {
+            return (event: T) => {
                 if (!disabled && typeof callback === 'function') {
                     callback(event, { name, value });
                 }
@@ -57,8 +64,24 @@ function RadioInternal<B = void>(
         [disabled, name, value]
     );
 
+    const handleChange = useCallback<React.ChangeEventHandler<HTMLInputElement>>(
+        (event) => onChange?.({ value, event, options: { name } }),
+        [disabled, name, value, onChange]
+    );
+
+    if (viewOnly) {
+        return (
+            <ViewOnly
+                size={size}
+                hasCancel={viewOnlyDisableIcon ? undefined : !checked}
+                hasCheck={viewOnlyDisableIcon ? undefined : checked}>
+                {viewOnlyText ?? children}
+            </ViewOnly>
+        );
+    }
+
     return (
-        <Box {...(attrs as {})} $size={size} $disabled={disabled}>
+        <Box {...attrs} $size={size} $disabled={disabled}>
             <Input
                 ref={ref}
                 type='radio'
@@ -71,7 +94,7 @@ function RadioInternal<B = void>(
                 $invalid={invalid}
                 aria-invalid={!!invalid}
                 checked={checked}
-                onChange={handleEvent(onChange)}
+                onChange={handleChange}
                 onBlur={handleEvent(onBlur)}
                 onFocus={handleEvent(onFocus)}
             />
@@ -79,6 +102,12 @@ function RadioInternal<B = void>(
             {children ? <Content $size={size}>{children}</Content> : null}
         </Box>
     );
+}
+
+export namespace Radio {
+    export type OnChange = Pretty.Func<OnChangeHandler<string, React.ChangeEvent<HTMLInputElement>>>;
+    export type OnBlur = Pretty.Func<RadioEvent<React.FocusEvent<HTMLInputElement>>>;
+    export type OnFocus = Pretty.Func<RadioEvent<React.FocusEvent<HTMLInputElement>>>;
 }
 
 export const Radio = React.forwardRef(RadioInternal) as <B = Breakpoints>(

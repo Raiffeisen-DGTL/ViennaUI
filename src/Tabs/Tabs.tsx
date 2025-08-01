@@ -1,45 +1,50 @@
-import React, { useCallback, useState, FormEvent } from 'react';
+import React, { useCallback, useState, PropsWithChildren, useMemo } from 'react';
 import { useCramList } from 'vienna.react-use';
-import { SelectOpenDown, SelectHide, Checkmark } from 'vienna.icons';
+import { SelectOpenDownIcon, SelectHideIcon } from 'vienna.icons';
 import { useLocalization } from '../Localization';
 import { TabsLocalizationProps, defaultTabsLocalization } from './localization';
 import { DropList } from '../DropList';
 import { Box, Tab, CombineTab, Item, Arrow, PropsTab, PropsBox } from './Tabs.styles';
 import { BoxStyled } from '../Utils/styled';
+import { AnyObject, OnChangeHandler, Pretty } from '../Utils';
 
-export type TabProps = PropsTab;
+export type TabsValueType = string | number | AnyObject | null | undefined;
 
-export interface TabsProps extends Omit<BoxStyled<typeof Box, PropsBox>, 'onChange'> {
+export type TabProps<T = TabsValueType> = PropsTab<T>;
+
+export interface TabsProps<T = TabsValueType>
+    extends Omit<BoxStyled<typeof Box, PropsBox>, 'onChange'>,
+        PropsWithChildren,
+        TabsLocalizationProps {
     /** Дизайн */
     design?: PropsBox['$design'];
     /** Размеры */
     size?: PropsBox['$size'];
-    /** Включает или отключает изменение размера по умолчанию включено */
-    resizable?: PropsBox['$resizable'];
+    /** Включает или отключает изменение размера по умолчанию выключено (добавление опций в "Еще...") */
+    resizable?: boolean;
     /** Выбранный таб (совпадает с value Tabs.Tab) */
-    value?: any;
+    value?: T;
+    /** Свойство отвечает за растягивание по высоте (по умолчанию выключено) */
+    alignMiddle?: PropsBox['$alignMiddle'];
     /** Функция сравнения, которая определяет активный элемент */
-    comparator?: (value: any, tabValue: any) => boolean;
+    comparator?: (value?: T, tabValue?: T) => boolean;
     /** Обработчик события при переключении таба */
-    onChange?: (event: FormEvent<HTMLDivElement>, value: any) => void;
+    onChange?: OnChangeHandler<T, React.MouseEvent, null>;
 }
 
-const constructItems = (item, idx, size) => {
-    const { active, disabled, onClick, children } = item.props;
-    return (
-        <DropList.Item key={idx} selected={active} disabled={disabled} onClick={onClick}>
-            {<Item $size={size}>{children}</Item>}
-            {active && <Checkmark size='m' />}
-        </DropList.Item>
-    );
-};
+export namespace Tabs {
+    export type OnChange<T = string | number | AnyObject | null | undefined> = Pretty.Func<
+        OnChangeHandler<T, React.MouseEvent, null>
+    >;
+}
 
-export const Tabs: React.FC<TabsProps & TabsLocalizationProps> & { Tab: typeof Tab } = (props) => {
+export function Tabs<T>(props: TabsProps<T>) {
     const {
         children,
         value,
         design = 'accent',
         size = 'l',
+        alignMiddle = false,
         onChange,
         comparator = (value, tabValue) => value === tabValue,
         resizable = false,
@@ -52,71 +57,78 @@ export const Tabs: React.FC<TabsProps & TabsLocalizationProps> & { Tab: typeof T
     const [containerRef, extraComponentRef, count] = useCramList(children as React.ReactNode[]);
 
     const handleChange = useCallback(
-        (e, value: string) => {
-            if (typeof onChange === 'function') {
-                onChange(e, value);
-            }
+        (event: React.MouseEvent, value: T) => {
+            onChange?.({ value, event });
             setOpen(false);
         },
-        [onChange]
+        [setOpen, onChange]
     );
-
-    const buildChildren = useCallback(
-        () =>
-            React.Children.toArray(children).map((child: any) =>
-                React.cloneElement(child, {
-                    active: child.props.active ? child.props.active : comparator?.(value, child.props.value),
-                    design,
-                    size,
-                    onClick: (e) => {
-                        e.preventDefault();
-                        if (!child.props.disabled) {
-                            handleChange(e, child.props.value);
-                        }
-                    },
-                })
-            ),
-        [design, size, value, handleChange, comparator, children]
-    );
-
     const handleClickOnCombined = useCallback(() => {
-        setOpen(!open);
-    }, [open, setOpen]);
-
+        setOpen((open) => !open);
+    }, [setOpen]);
     const handleBlur = useCallback(() => {
         setOpen(false);
-    }, []);
+    }, [setOpen]);
 
-    const preparedChildren = buildChildren();
+    const preparedChildren = useMemo(() => {
+        return React.Children.toArray(children).map((item) => {
+            const child = item as React.ReactElement<TabProps<T>>;
+
+            const isLink = 'to' in child.props || 'href' in child.props;
+
+            return React.cloneElement(child, {
+                active: child.props.active ? child.props.active : comparator?.(value, child.props.value),
+                design,
+                size,
+                value: child.props.value,
+                alignMiddle: child.props.alignMiddle ?? alignMiddle,
+                onClick: isLink
+                    ? child.props.onClick
+                    : (e: React.MouseEvent) => {
+                          e.preventDefault();
+                          if (!child.props.disabled) {
+                              handleChange(e, child.props.value as T);
+                          }
+                      },
+            });
+        });
+    }, [design, size, value, handleChange, comparator, children, alignMiddle]);
+
     const dropList = preparedChildren.slice(preparedChildren.length - count);
+    const activeState = extraComponentRef.current
+        ? comparator?.(value, dropList.find((child) => child.props.active)?.props.value)
+        : false;
 
     return (
         <Box
-            {...(attrs as {})}
+            {...attrs}
             ref={containerRef}
             tabIndex={1}
-            $resizable={resizable}
+            $alignMiddle={alignMiddle}
             $design={design}
             $size={size}
             onBlur={handleBlur}>
             {preparedChildren}
             {resizable && (
                 <CombineTab ref={extraComponentRef} $size={size}>
-                    <Tab design={design} size={size} onClick={handleClickOnCombined}>
+                    <Tab design={design} size={size} onClick={handleClickOnCombined} active={activeState} isLastTab>
                         {`${l10n('ds.tabs.rest')} `}
-                        <Arrow>{open ? <SelectHide size='m' /> : <SelectOpenDown size='m' />}</Arrow>
+                        <Arrow>{open ? <SelectHideIcon size='m' /> : <SelectOpenDownIcon size='m' />}</Arrow>
                     </Tab>
-                    {open && dropList.length && (
-                        <DropList size={size} float='end'>
-                            {dropList.map((i, idx) => constructItems(i, idx, size))}
+                    {open && dropList.length > 0 && (
+                        <DropList size={size} float='end' align='vertical'>
+                            {dropList.map(({ props: { active, disabled, onClick, children } }, idx) => (
+                                <DropList.Item key={idx} selected={active} disabled={disabled} onClick={onClick}>
+                                    <Item $size={size}>{children}</Item>
+                                </DropList.Item>
+                            ))}
                         </DropList>
                     )}
                 </CombineTab>
             )}
         </Box>
     );
-};
-
-Tabs.Tab = Tab;
+}
 
 Tabs.displayName = 'Tabs';
+Tabs.Tab = Tab;

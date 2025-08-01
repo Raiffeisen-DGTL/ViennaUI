@@ -1,11 +1,11 @@
-import React, { useCallback, useRef, FC, ReactNode } from 'react';
+import React, { useCallback, useRef, ReactNode, PropsWithChildren } from 'react';
 import { useIsomorphicLayoutEffect } from 'vienna.react-use';
-import { Checkmark } from 'vienna.icons';
-import { StyledOption, PropsStyledOption, Value, Icon } from './Option.styles';
+import { StyledOption, PropsStyledOption, Value } from './Option.styles';
 import { ResponsiveProp, Breakpoints } from '../../Utils/responsiveness';
 import { BoxStyled } from '../../Utils/styled';
+import { DefaultValueToString, SelectValueType, SizeType, ValueToStringType } from '../../Utils';
 
-export interface OptionProps<B = Breakpoints>
+export interface OptionProps<T = SelectValueType, B = Breakpoints>
     extends Omit<BoxStyled<typeof StyledOption, PropsStyledOption>, 'onClick'> {
     /** ID компонента */
     id?: string;
@@ -26,24 +26,29 @@ export interface OptionProps<B = Breakpoints>
     icon?: ReactNode;
 
     /** Значение элемента (должно совпадать по интерфейсу с элементом переданым в value Multiselect) */
-    value?: any;
+    value?: T;
 
     /** Размеры (наследуются от родителя если не указано иначе) */
-    size?: ResponsiveProp<'s' | 'm' | 'l', B>;
+    size?: ResponsiveProp<SizeType<'s' | 'm' | 'l'>, B>;
 
     /** Переносить содержимое (по умолчанию троеточие) */
     wrapLine?: boolean;
 
     /** Наследуется от родителя если не указано иначе */
-    valueToString?: (item: any) => string;
+    valueToString?: ValueToStringType<T>;
 
     /** Транслируется в onSelect метод родителя может быть перехвачено */
-    onClick?: (e, value) => void;
+    onClick?: (value: T, e: React.MouseEvent) => void;
 
     children?: ReactNode;
+
+    /** Кастомизируется возможность выбора одной иконки */
+    selectedIcon?: ReactNode;
+
+    testId?: (val: string | React.ReactNode) => string;
 }
 
-export const Option: FC<OptionProps> = (props) => {
+export const Option = <T,>(props: PropsWithChildren<OptionProps<T>>): React.JSX.Element => {
     const {
         hover,
         selected,
@@ -54,7 +59,9 @@ export const Option: FC<OptionProps> = (props) => {
         wrapLine,
         disabled,
         size,
-        valueToString = (item) => (typeof item === 'string' ? item : item?.value),
+        valueToString = DefaultValueToString<T>,
+        selectedIcon,
+        testId,
         ...attrs
     } = props;
 
@@ -70,28 +77,45 @@ export const Option: FC<OptionProps> = (props) => {
     }, []);
 
     const handleMouseDown = useCallback(
-        (e) => {
+        (e: React.MouseEvent) => {
             e.preventDefault();
-            if (!disabled && typeof onClick === 'function') {
-                if (value === null) {
-                    onClick(e, value);
-                } else {
-                    onClick(e, value ?? children);
-                }
-            }
+
+            if (disabled || !onClick) return;
+
+            const newValue = value === null ? value : (value ?? (typeof children === 'string' ? children : ''));
+
+            onClick(newValue as T, e);
         },
         [onClick, value, children, disabled]
     );
 
     useIsomorphicLayoutEffect(() => {
-        if (ref.current && ref.current.parentNode && selected) {
-            (ref.current.parentNode as HTMLDivElement).scrollTop = ref.current.offsetTop;
+        if (ref.current?.parentNode && selected) {
+            const parent = ref.current.parentNode as HTMLDivElement;
+            const optionHeight = ref.current.clientHeight;
+            const optionBottom = ref.current.offsetTop + optionHeight;
+            const parentHeight = parent.clientHeight;
+
+            if (optionBottom > parent.scrollTop + parentHeight) {
+                parent.scrollTop = optionBottom - parentHeight;
+            } else {
+                parent.scrollTop = ref.current.offsetTop;
+            }
         }
     }, [selected]);
 
     useIsomorphicLayoutEffect(() => {
-        if (ref.current && ref.current.parentNode && hover && !localHover.current) {
-            (ref.current.parentNode as HTMLDivElement).scrollTop = ref.current.offsetTop;
+        if (ref.current?.parentNode && hover && !localHover.current) {
+            const parent = ref.current.parentNode as HTMLDivElement;
+            const optionHeight = ref.current.clientHeight;
+            const optionBottom = ref.current.offsetTop + optionHeight;
+            const parentHeight = parent.clientHeight;
+
+            if (optionBottom > parent.scrollTop + parentHeight) {
+                parent.scrollTop = optionBottom - parentHeight;
+            } else {
+                parent.scrollTop = ref.current.offsetTop;
+            }
         }
     }, [hover]);
 
@@ -100,24 +124,25 @@ export const Option: FC<OptionProps> = (props) => {
         return <></>;
     }
 
-    const iconSize = size === 's' ? 's' : 'm';
-
     return (
         <StyledOption
-            {...(attrs as {})}
+            data-testid={testId?.(children ?? (value !== undefined ? valueToString(value) : ''))}
+            {...attrs}
             ref={ref}
             hover={hover}
             selected={selected}
             disabled={disabled}
             wrapLine={wrapLine}
+            icon={selectedIcon ?? icon}
             size={size}
             $hover={hover}
             $selected={selected}
             onMouseEnter={handleMouseEnter}
             onMouseOut={handleMouseOut}
             onMouseDown={handleMouseDown}>
-            <Value $wrapLine={wrapLine}>{children ?? valueToString(value)}</Value>
-            {selected && <Icon>{icon ?? <Checkmark size={iconSize} />}</Icon>}
+            <Value $wrapLine={wrapLine}>{children ?? (value !== undefined ? valueToString(value) : '')}</Value>
         </StyledOption>
     );
 };
+
+Option.displayName = 'Option';

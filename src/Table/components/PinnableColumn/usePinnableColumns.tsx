@@ -1,11 +1,17 @@
 import { useRef } from 'react';
 import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 import { debounce } from '../../../Utils';
+import { getColumnsWidthQuery } from '../../utils';
+import { useTableService, useTableState } from '../Context';
 
-export const columnsOffsets = new Map();
-
-export function usePinnableColumns(isPinnable) {
-    const headerRef = useRef(null);
+export function usePinnableColumns(isPinnable?: boolean) {
+    const { columns, getData, columnsOffsets } = useTableService();
+    const pinnableColumnsCount = columns().filter((item) => item.pinned).length;
+    const headerRef = useRef<HTMLTableRowElement>(null);
+    const map = columnsOffsets();
+    const state = useTableState();
+    const data = getData();
+    const columnsWidthQuery = getColumnsWidthQuery(state.columns?.list);
 
     const calcOffset = debounce(() => {
         if (!isPinnable) {
@@ -15,15 +21,24 @@ export function usePinnableColumns(isPinnable) {
         if (headerRef?.current) {
             let currentOffset = 0;
 
-            // checked for null at line 13.
-            // @ts-ignore: Object is possibly 'null'.
-            const children = Array.from(headerRef.current.children);
-            children.forEach((child: any) => {
-                columnsOffsets.set(child.getAttribute('data-column'), currentOffset);
-                currentOffset += child.offsetWidth;
+            const children = Array.from(headerRef.current.children) as HTMLTableHeaderCellElement[];
+            children.forEach((child) => {
+                const attr = child.getAttribute('data-column');
+                if (attr) {
+                    map.set(attr, currentOffset);
+                    currentOffset += child.offsetWidth;
+                }
             });
         }
     });
+
+    useIsomorphicLayoutEffect(() => {
+        calcOffset();
+    }, [pinnableColumnsCount, data]);
+
+    useIsomorphicLayoutEffect(() => {
+        calcOffset();
+    }, [pinnableColumnsCount, data]);
 
     useIsomorphicLayoutEffect(() => {
         calcOffset();
@@ -31,7 +46,7 @@ export function usePinnableColumns(isPinnable) {
         return () => {
             window.removeEventListener('resize', calcOffset);
         };
-    }, [isPinnable]);
+    }, [isPinnable, columnsWidthQuery]);
 
     return headerRef;
 }

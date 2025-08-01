@@ -1,9 +1,5 @@
 import React, { ComponentProps, forwardRef } from 'react';
-import {
-    InputDateBetaLocalizationProps,
-    defaultInputDateBetaLocalization,
-    InputDateBetaLocalization,
-} from './localization';
+import { InputDateBetaLocalizationProps, defaultInputDateBetaLocalization } from './localization';
 import { InputFormatBeta } from '../InputFormatBeta';
 import { useLocalization } from '../Localization';
 
@@ -18,7 +14,7 @@ interface Props
     lazy?: boolean;
 }
 
-const format = (value: any) => (value.toString().length >= 2 ? value : `0${value}`);
+const format = (value: number) => (value.toString().length >= 2 ? value : `0${value}`);
 
 const formatValue = (value?: string | Date, type?: TypeProp) => {
     if (value instanceof Date) {
@@ -71,18 +67,18 @@ export const InputDateBeta = forwardRef<HTMLInputElement, Props>((props, ref) =>
     const mask = getMask(type);
 
     const formatted = (value && formatValue(value, type)) || '';
-    const placeholderMask = l10n(`ds.inputDate.placeholder.${type}` as keyof InputDateBetaLocalization);
+    const placeholderMask: string = l10n(`ds.inputDate.placeholder.${type}`);
     const placeholder = `${formatted}${placeholderMask.substring(formatted.length, placeholderMask.length + 1)}`;
 
     return (
         <InputFormatBeta
-            {...(attrs as {})}
+            {...attrs}
             smartPlaceholder={lazy ? placeholder : ''}
             getInputRef={ref}
             value={formatted}
             format={format}
             mask={mask}
-            onValueChange={onChange as any}
+            onChange={onChange}
         />
     );
 });

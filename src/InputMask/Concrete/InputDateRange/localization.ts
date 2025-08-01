@@ -8,7 +8,7 @@ export interface InputDateRangeLocalization {
 
 export type InputDateRangeLocalizationProps = DSLocalizationProps<InputDateRangeLocalization>;
 
-export const defaultInputDateRangeLocalization: InputDateRangeLocalization = {
+export const defaultInputDateRangeLocalization: Required<InputDateRangeLocalization> = {
     'ds.inputDateRange.placeholder.date': 'ДД.ММ.ГГГГ',
     'ds.inputDateRange.placeholder.date.separator': 'ДД.ММ.ГГГГ - ',
     'ds.inputDateRange.placeholder.date.range': 'ДД.ММ.ГГГГ - ДД.ММ.ГГГГ',

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { ManPerson } from 'vienna.icons';
+import { ManPersonIcon } from 'vienna.icons';
 import { DropListInner, DropListInnerProps } from './DropListInner';
-import { RoundIcon } from '../RoundIcon';
+import { IconContainer } from '../IconContainer';
 
 export default {
     title: 'Development/DropListInner',
@@ -12,8 +12,8 @@ export default {
 export const Overview: Story<DropListInnerProps> = (args) => {
     const [isOpen, setOpen] = React.useState(false);
     return (
-        <RoundIcon onClick={() => setOpen(!isOpen)}>
-            <ManPerson />
+        <IconContainer onClick={() => setOpen(!isOpen)}>
+            <ManPersonIcon />
             {isOpen && (
                 <DropListInner fixed {...args}>
                     <DropListInner.Item>Item 1</DropListInner.Item>
@@ -25,6 +25,6 @@ export const Overview: Story<DropListInnerProps> = (args) => {
                     <DropListInner.Item>Item 7</DropListInner.Item>
                 </DropListInner>
             )}
-        </RoundIcon>
+        </IconContainer>
     );
 };

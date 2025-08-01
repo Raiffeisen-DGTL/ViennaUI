@@ -1,26 +1,33 @@
 import React, { useCallback } from 'react';
-import { SelectOpenDown, SelectHide } from 'vienna.icons';
-import { useTableService, useTableConfig } from '../Context/TableContext';
+import { SelectOpenDownIcon, SelectHideIcon } from 'vienna.icons';
+import { useTableService, useTableConfig } from '../Context';
 import { ExpanderCell, ExpanderIcon } from './ExpandingRow.styles';
 import { Pinner } from '../PinnableColumn';
 
-export const Expander = (props) => {
-    const { toggleExpandingRow, isRowExpanded, getExpandingRowSettings } = useTableService();
-    const { id } = props;
+interface ExpanderProps {
+    id: string | number;
+    isActive?: boolean;
+    bg?: string;
+}
+
+export const Expander = (props: ExpanderProps) => {
+    const { toggleExpandingRow, isRowExpanded, getExpandingRowSettings } = useTableService<string>();
+    const { id, isActive, bg } = props;
     const { base } = useTableConfig();
     const { pinnableColumns, size, valign } = base.settings;
+    const strId = String(id);
 
     const clickHandler = useCallback(
-        (e) => {
-            e.stopPropagation();
-            toggleExpandingRow(id);
+        (event: React.MouseEvent<HTMLDivElement>) => {
+            event.stopPropagation();
+            toggleExpandingRow(strId);
 
-            const onExpand = getExpandingRowSettings().onExpand;
+            const onExpand = getExpandingRowSettings()?.onExpand;
             if (typeof onExpand === 'function') {
-                onExpand(e, id);
+                onExpand({ value: strId, event });
             }
         },
-        [toggleExpandingRow]
+        [getExpandingRowSettings, toggleExpandingRow, strId]
     );
 
     return (
@@ -29,8 +36,11 @@ export const Expander = (props) => {
             $size={size}
             $valign={valign}
             $pinned={pinnableColumns}
+            $bg={bg}
             onClick={clickHandler}>
-            <ExpanderIcon>{isRowExpanded(id) ? <SelectHide /> : <SelectOpenDown />}</ExpanderIcon>
+            {isActive && (
+                <ExpanderIcon>{isRowExpanded(strId) ? <SelectHideIcon /> : <SelectOpenDownIcon />}</ExpanderIcon>
+            )}
             {pinnableColumns && <Pinner />}
         </ExpanderCell>
     );

@@ -1,8 +1,12 @@
 import styled, { css } from 'styled-components';
+import { counter } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { CounterDesign } from './Counter';
 
-const presets = getPresets('counter', {
+const presets = getPresets(
+    counter,
+    'counter'
+)({
     base: null,
     design: '$design',
 });

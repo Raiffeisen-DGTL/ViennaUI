@@ -4,12 +4,15 @@ import React, {
     RefAttributes,
     ForwardRefExoticComponent,
     ReactNode,
-    cloneElement,
     forwardRef,
+    useEffect,
+    ReactElement,
+    isValidElement,
 } from 'react';
-import { Box, List, Content, SubContent, Wrapper, InputFile } from './FileLoader.styles';
-import { File, FCCFile } from './File';
-import { getFileExtension } from '../Utils';
+import { Box, List, Content, SubContent, Wrapper, InputFile, HelperTextBox } from './FileLoader.styles';
+import { File, FCCFile, FileProps } from '../File';
+import { getFileExtension, OnChangeHandler, Pretty } from '../Utils';
+import { Flex } from '../Flex';
 
 export interface FCCFileError {
     file: FCCFile;
@@ -32,44 +35,55 @@ export interface FileLoaderProps {
     maxSizeByte?: number;
     /** Состояние ошибки */
     invalid?: boolean;
-    onChange?: (event, files: FCCFile[], errorFiles: FCCFileError[]) => void;
+    onChange?: OnChangeHandler<
+        FCCFile[],
+        React.ChangeEvent | React.DragEvent | ClipboardEvent,
+        { errorFiles: FCCFileError[]; name?: string }
+    >;
     /** Ограничение на количество загружаемых файлов */
     maxFiles?: number;
     children?: ReactNode | undefined;
+    /** ref на HTMLElement, на который вешается слушатель событий для вставки файлов из буфера обмена */
+    pasteListenerRef?: React.MutableRefObject<HTMLElement>;
+    helperText?: ReactNode;
 }
 
-export const buildFileList = (files, accept, maxSizeByte, maxFiles, isMaxFilesExceeded, uploadedFiles) => {
+export const buildFileList = (
+    files: FileList | File[],
+    accept: string | undefined,
+    maxSizeByte: number,
+    maxFiles: number | undefined,
+    isMaxFilesExceeded: boolean,
+    uploadedFiles: number
+) => {
     // подготавливаем измененный интерфейс файлов
-    const fccFiles = Array.from<FCCFile>(files).map((file) => {
-        // @ts-ignore
-        file.url = URL.createObjectURL(file);
-        file.progress = 0;
+    const fccFiles = Array.from(files).map((file) => {
+        const fccFile: FCCFile = file;
+        fccFile.url = URL.createObjectURL(file);
+        fccFile.progress = 0;
         const tzoffset = new Date().getTimezoneOffset() * 60000;
         const localISOTime = new Date(Date.now() - tzoffset).toISOString();
-        file.date = localISOTime;
-        return file;
+        fccFile.date = localISOTime;
+        return fccFile;
     });
-
     // файлы с ошибками
     const errorFiles: FCCFileError[] = [];
 
-    const correctFiles = fccFiles.filter((file) => {
+    const correctFiles = fccFiles.filter((file: FCCFile) => {
         // фильтруем по расширению и MIME
-        const accepts = accept?.split(',') ?? [];
-        const correctAccept =
+        const accepts: string[] = accept?.split(',') ?? [];
+        const correctAccept: boolean =
             !accept ||
             accepts.some(
                 (ac: string) =>
                     ac.trim() === file.type ||
                     getFileExtension(file).toLowerCase() === ac.trim().replace('.', '').toLowerCase()
             );
-
         // фильтруем по размеру и по количеству загружаемых файлов
         const correctMaxSizeByte = (file.size ?? 0) <= maxSizeByte;
 
         const correctMaxFiles = maxFiles && !isMaxFilesExceeded && files.length + uploadedFiles <= maxFiles;
         const correct = correctAccept && correctMaxSizeByte && correctMaxFiles;
-
         if (!correct) {
             errorFiles.push({
                 file,
@@ -87,46 +101,71 @@ export const buildFileList = (files, accept, maxSizeByte, maxFiles, isMaxFilesEx
     return { correctFiles, errorFiles };
 };
 
-const buildChildren = (children) =>
-    React.Children.toArray(children).map((c: any) => cloneElement(c, { key: c.props.file.url }));
+const buildChildren = (children: ReactNode | ReactNode[]) =>
+    React.Children.map(children as ReactElement[], (child: ReactElement<FileProps>) =>
+        isValidElement(child) ? React.cloneElement(child, { key: child.props.file.url }) : null
+    ) as ReactNode[];
+
+export namespace FileLoader {
+    export type OnChange = Pretty.Func<
+        OnChangeHandler<
+            FCCFile[],
+            React.ChangeEvent | React.DragEvent | ClipboardEvent,
+            { errorFiles: FCCFileError[]; name?: string }
+        >,
+        FCCFile
+    >;
+}
 
 export const FileLoader = forwardRef<HTMLInputElement, FileLoaderProps>((props, ref) => {
     const {
         onChange,
         children,
         content,
+        name,
         subContent,
         disabled,
+        pasteListenerRef,
         maxSizeByte = Infinity,
         invalid,
         maxFiles = Infinity,
         accept = '',
         multiple = true,
+        helperText,
         ...attrs
     } = props;
-
     const [over, setOver] = useState(false);
     let isMaxFilesExceeded = false;
     const uploadedFiles = React.Children.count(children);
-    const changeHandler = useCallback(
-        (e) => {
-            e.preventDefault();
+
+    const handleAddFiles = useCallback(
+        (event: React.ChangeEvent<HTMLInputElement> | ClipboardEvent, files: FileList | null) => {
             if (typeof onChange === 'function') {
                 if (maxFiles && children && React.Children.count(children) > maxFiles - 1) {
                     isMaxFilesExceeded = true;
                 }
-                const { correctFiles, errorFiles } = buildFileList(
-                    e.target.files,
-                    accept,
-                    maxSizeByte,
-                    maxFiles,
-                    isMaxFilesExceeded,
-                    uploadedFiles
-                );
-                onChange(e, correctFiles, errorFiles);
+                if (files) {
+                    const { correctFiles, errorFiles } = buildFileList(
+                        files,
+                        accept,
+                        maxSizeByte,
+                        maxFiles,
+                        isMaxFilesExceeded,
+                        uploadedFiles
+                    );
+                    onChange({ value: correctFiles, event, options: { errorFiles, name } });
+                }
             }
         },
-        [onChange, accept, maxSizeByte, maxFiles]
+        [onChange, name, accept, maxSizeByte, maxFiles]
+    );
+
+    const changeHandler = useCallback(
+        (e: React.ChangeEvent<HTMLInputElement>) => {
+            e.preventDefault();
+            handleAddFiles(e, e.target.files);
+        },
+        [handleAddFiles]
     );
 
     const onDragEnterHandler = useCallback(() => {
@@ -134,29 +173,30 @@ export const FileLoader = forwardRef<HTMLInputElement, FileLoaderProps>((props, 
     }, []);
 
     const onDropHandler = useCallback(
-        (e) => {
-            e.preventDefault();
+        (event: React.DragEvent<HTMLDivElement>) => {
+            event.preventDefault();
             if (typeof onChange === 'function' && !disabled) {
                 if (maxFiles && children && React.Children.count(children) > maxFiles - 1) {
                     isMaxFilesExceeded = true;
                 }
+                const files = multiple ? event.dataTransfer.files : [event.dataTransfer.files[0]];
                 const { correctFiles, errorFiles } = buildFileList(
-                    e.dataTransfer.files,
+                    files,
                     accept,
                     maxSizeByte,
                     maxFiles,
                     isMaxFilesExceeded,
                     uploadedFiles
                 );
-                onChange(e, correctFiles, errorFiles);
+                onChange({ value: correctFiles, event, options: { errorFiles, name } });
             }
             setOver(false);
         },
-        [disabled, accept, maxSizeByte, maxFiles, onChange]
+        [disabled, name, accept, maxSizeByte, maxFiles, onChange]
     );
 
     const onDragOver = useCallback(
-        (e) => {
+        (e: React.DragEvent<HTMLDivElement>) => {
             e.preventDefault();
             if (!disabled) {
                 setOver(true);
@@ -171,6 +211,22 @@ export const FileLoader = forwardRef<HTMLInputElement, FileLoaderProps>((props, 
         }
     }, [disabled]);
 
+    useEffect(() => {
+        const fn = (event: ClipboardEvent) => {
+            const { clipboardData } = event;
+
+            if (clipboardData === null) return;
+
+            handleAddFiles(event, clipboardData.files);
+        };
+
+        pasteListenerRef?.current?.addEventListener('paste', fn);
+
+        return () => {
+            pasteListenerRef?.current?.removeEventListener('paste', fn);
+        };
+    }, [handleAddFiles, pasteListenerRef]);
+
     return (
         <Wrapper>
             <Box
@@ -181,19 +237,24 @@ export const FileLoader = forwardRef<HTMLInputElement, FileLoaderProps>((props, 
                 onDragEnter={onDragEnterHandler}
                 onDragOver={onDragOver}
                 onDragLeave={onDragLeaveHandler}>
-                {content && <Content>{content}</Content>}
-                {subContent && <SubContent>{subContent}</SubContent>}
+                {content && <Content $disabled={disabled}>{content}</Content>}
+                {subContent && <SubContent $disabled={disabled}>{subContent}</SubContent>}
                 <InputFile
-                    {...(attrs as {})}
+                    {...attrs}
                     ref={ref}
                     type='file'
                     accept={accept}
-                    value={'' as any}
+                    value={''}
                     disabled={disabled}
-                    onChange={changeHandler}
                     multiple={multiple}
+                    onChange={changeHandler}
                 />
             </Box>
+            {helperText && (
+                <Flex justifyContent='center' marginTop='s1'>
+                    <HelperTextBox $invalid={invalid}>{helperText}</HelperTextBox>
+                </Flex>
+            )}
             {children && Boolean(React.Children.count(children)) && <List>{buildChildren(children)}</List>}
         </Wrapper>
     );

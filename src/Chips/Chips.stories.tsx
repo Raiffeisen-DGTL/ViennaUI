@@ -202,3 +202,43 @@ export const DisabledChips: Story<ChipsProps> = (args) => {
         </>
     );
 };
+
+export const ChipsWithOnClickOnItems: Story<ChipsProps> = (args) => {
+    const [active, setActive] = React.useState('1');
+    return (
+        <>
+            <Chips active={active}>
+                <Chips.Item id='1' onClick={() => setActive('1')}>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='2' disabled onClick={() => setActive('2')}>
+                    Chip
+                </Chips.Item>
+                <Chips.Item id='3' onClick={() => setActive('3')}>
+                    Chip
+                </Chips.Item>
+            </Chips>
+        </>
+    );
+};
+
+export const ViewOnly: Story<ChipsProps> = (args) => {
+    const [active, setActive] = React.useState(['1', '2']);
+
+    return (
+        <Chips active={active} viewOnly>
+            <Chips.Item size='l' id='1'>
+                Chip 1
+            </Chips.Item>
+            <Chips.Item size='l' id='2'>
+                Chip 2
+            </Chips.Item>
+            <Chips.Item size='l' id='3'>
+                Chip 3
+            </Chips.Item>
+            <Chips.Item size='l' id='4'>
+                Chip 3
+            </Chips.Item>
+        </Chips>
+    );
+};

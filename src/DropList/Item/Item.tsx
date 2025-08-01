@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from 'react';
-import { Box, PropsBox } from './Item.styles';
+import React, { ReactNode, RefAttributes, useEffect, useRef } from 'react';
+import { CheckmarkIcon } from 'vienna.icons';
+import { Box, Icon, PropsBox, ItemWrapper, DescriptionWrapper } from './Item.styles';
 import { Breakpoints } from '../../Utils/responsiveness';
 import { BoxStyled } from '../../Utils/styled';
+import { SelectValueType } from '../../Utils';
 
-export interface ItemProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsBox> {
+export interface ItemProps<Value = SelectValueType, B = Breakpoints>
+    extends Omit<BoxStyled<typeof Box, PropsBox>, 'onClick'> {
     /** Размеры */
     size?: PropsBox<B>['$size'];
     /** Состояние hover строки */
@@ -16,12 +19,26 @@ export interface ItemProps<B = Breakpoints> extends BoxStyled<typeof Box, PropsB
     wrapLine?: PropsBox<B>['$wrapLine'];
     /** Следует ли проскролить к этому компоненту */
     scrollWhenHovered?: boolean;
-    value?: any;
-    custom?: any;
+    value?: Value;
+    icon?: ReactNode;
+    description?: string;
+    onClick?: React.MouseEventHandler<HTMLDivElement>;
 }
 
-export const Item = React.forwardRef<HTMLDivElement, ItemProps>((props, ref) => {
-    const { children, hover, size = 'm', scrollWhenHovered = false, disabled, selected, wrapLine, ...attrs } = props;
+const ItemInternal = <Value,>(props: ItemProps<Value>, ref: React.ForwardedRef<HTMLDivElement>) => {
+    const {
+        children,
+        hover,
+        size = 'm',
+        scrollWhenHovered = false,
+        disabled,
+        selected,
+        wrapLine,
+        icon,
+        description,
+        onClick,
+        ...attrs
+    } = props;
 
     const boxRef = useRef<HTMLDivElement>(null);
 
@@ -30,27 +47,28 @@ export const Item = React.forwardRef<HTMLDivElement, ItemProps>((props, ref) => 
         if (typeof ref === 'function') {
             ref(boxRef.current);
         } else if (ref && 'current' in ref) {
-            (ref as any).current = boxRef.current;
+            ref.current = boxRef.current;
         }
     });
 
     useEffect(() => {
         selected &&
-            boxRef?.current?.scrollIntoView({
+            boxRef?.current?.scrollIntoView?.({
                 behavior: 'smooth',
                 block: 'nearest',
             });
     }, [selected]);
-
     useEffect(() => {
         if (boxRef.current && boxRef.current.parentNode && hover && scrollWhenHovered) {
             (boxRef.current.parentNode as HTMLDivElement).scrollTop = boxRef.current.offsetTop;
         }
     }, [hover, scrollWhenHovered]);
 
+    const iconSize = size === 's' ? 's' : 'm';
+
     return (
         <Box
-            {...(attrs as {})}
+            {...attrs}
             ref={boxRef}
             $hover={hover}
             $size={size}
@@ -59,10 +77,21 @@ export const Item = React.forwardRef<HTMLDivElement, ItemProps>((props, ref) => 
             $wrapLine={wrapLine}
             role='option'
             aria-disabled={!!disabled}
-            aria-selected={!!selected}>
-            {children}
+            aria-selected={!!selected}
+            onClick={disabled ? undefined : onClick}>
+            <ItemWrapper>
+                {children}
+                {selected && <Icon>{icon ?? <CheckmarkIcon size={iconSize} />}</Icon>}
+            </ItemWrapper>
+            {description && <DescriptionWrapper $size={size}>{description}</DescriptionWrapper>}
         </Box>
     );
-});
+};
+
+export const Item = React.forwardRef(ItemInternal) as (<Value>(
+    props: ItemProps<Value> & RefAttributes<HTMLDivElement>
+) => ReturnType<typeof ItemInternal>) & {
+    displayName?: string;
+};
 
 Item.displayName = 'Item';

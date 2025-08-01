@@ -1,17 +1,21 @@
-import isValidDate from 'date-fns/isValid';
-import isAfter from 'date-fns/isAfter';
-import parse from 'date-fns/parse';
-import format from 'date-fns/format';
+import { isValid, parse, format } from 'date-fns';
 
-export function isValid(date) {
-    return isValidDate(date) && isAfter(date, new Date('1/1/1970'));
-}
+const DATE_FORMAT = 'dd.MM.yyyy';
 
-export function getDateFromString(dateString: string | Date): Date | undefined {
+export function getDateFromString(dateString?: string | Date): Date | undefined {
+    if (!dateString) {
+        return undefined;
+    }
+
     if (dateString instanceof Date) {
         return dateString;
     }
-    const date = parse(dateString, 'dd.MM.yyyy', new Date());
+
+    if (dateString.length !== DATE_FORMAT.length) {
+        return undefined;
+    }
+
+    const date = parse(dateString, DATE_FORMAT, new Date());
     if (isValid(date)) {
         return date;
     }
@@ -20,5 +24,5 @@ export function getDateFromString(dateString: string | Date): Date | undefined {
 }
 
 export function getStringFromDate(date: Date): string {
-    return date ? format(date, 'dd.MM.yyyy') : '';
+    return date ? format(date, DATE_FORMAT) : '';
 }

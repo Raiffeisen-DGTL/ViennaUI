@@ -1,77 +1,97 @@
 import React, { useCallback } from 'react';
+import { AttachIcon } from 'vienna.icons';
 import { Box, Label } from './SelectAll.styles';
 import { Link } from '../../../Link';
-import { useTableService, useTableConfig, useTableLocalization } from '../Context';
+import { useTableService, useTableLocalization, useTableConfig } from '../Context';
+import { TableState } from '../../types';
 
-export interface SelectAllProps {
-    fullData: any[];
+export interface SelectAllProps<T> {
+    fullData: T[];
 }
 
-export const SelectAll: React.FC<SelectAllProps> = (props) => {
+export const SelectAll = <T,>(props: SelectAllProps<T>) => {
     const { fullData } = props;
-    const [mode, toggleMode] = React.useState(false);
-    const { getData, selectAll } = useTableService();
+    const { getData, selectAll, getSelectedRows, isSelectedAll, deselectAll } = useTableService<T>();
     const { selectRow } = useTableConfig();
     const localize = useTableLocalization();
-
     const data = getData();
+    const selectedRows = getSelectedRows();
+    const isSelectedAllPage = isSelectedAll(data, selectedRows) && selectedRows?.length !== fullData?.length;
+    const isSelectedAllTable = isSelectedAll(fullData, selectedRows);
 
-    const onClick = useCallback(
-        (e) => {
-            const selected = mode ? data : fullData;
-            selectAll(selected);
-            toggleMode(!mode);
-
+    const onSelect = useCallback(
+        (event: React.MouseEvent, state: TableState<T>) => {
+            const updatedSelectedRows = state.selectRow?.selected ?? [];
             if (typeof selectRow?.onSelect === 'function') {
-                const data = {
-                    isSelectedAll: true,
-                    isSelectedFullData: !mode,
+                const dataSelected = {
+                    isSelectedAll: isSelectedAll(data, updatedSelectedRows),
+                    isSelectedFullData: isSelectedAll(fullData, updatedSelectedRows),
                 };
-
-                selectRow.onSelect(e, data);
+                selectRow.onSelect({ value: dataSelected, event });
             }
         },
-        [selectRow?.onSelect, data, fullData, selectAll, toggleMode]
+        [data, fullData, isSelectedAll, selectRow]
+    );
+
+    const onSelectAll = useCallback(
+        (e: React.MouseEvent) => {
+            selectAll(fullData, (state) => {
+                onSelect(e, state);
+            });
+        },
+        [selectAll, fullData, onSelect]
+    );
+
+    const onDeselectAll = useCallback(
+        (e: React.MouseEvent) => {
+            deselectAll((state) => {
+                onSelect(e, state);
+            });
+        },
+        [deselectAll, onSelect]
     );
 
     return (
-        <Box>
-            <span>
-                {!mode && (
-                    <>
+        <>
+            {isSelectedAllPage && (
+                <Box>
+                    <span>
                         <Label>
                             {`${localize('ds.table.settings.selectAll.fullData')[2]} (${data.length}) ${
                                 localize('ds.table.settings.selectAll.fullData')[3]
                             }`}
                         </Label>
                         <Label>
-                            <Link design='accent' onClick={onClick}>
+                            <Link design='accent' onClick={onSelectAll}>
+                                <AttachIcon />
                                 {`${localize('ds.table.settings.selectAll.fullData')[0]} (${fullData.length}) ${
                                     localize('ds.table.settings.selectAll.fullData')[1]
                                 }`}
                             </Link>
                         </Label>
-                    </>
-                )}
+                    </span>
+                </Box>
+            )}
 
-                {mode && (
-                    <>
-                        <Label>
-                            <Link design='accent' onClick={onClick}>
-                                {`${localize('ds.table.settings.selectAll.onPage')[0]} (${data.length}) ${
-                                    localize('ds.table.settings.selectAll.onPage')[1]
-                                }`}
-                            </Link>
-                        </Label>
+            {isSelectedAllTable && (
+                <Box>
+                    <span>
                         <Label>
                             {`${localize('ds.table.settings.selectAll.onPage')[2]} (${fullData.length}) ${
                                 localize('ds.table.settings.selectAll.onPage')[3]
                             }`}
                         </Label>
-                    </>
-                )}
-            </span>
-        </Box>
+                        <Label>
+                            <Link design='accent' onClick={onDeselectAll}>
+                                <AttachIcon />
+                                {`${localize('ds.table.settings.selectAll.cancel')}
+                            `}
+                            </Link>
+                        </Label>
+                    </span>
+                </Box>
+            )}
+        </>
     );
 };
 

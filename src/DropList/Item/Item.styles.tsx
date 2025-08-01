@@ -1,14 +1,34 @@
 import styled, { css } from 'styled-components';
+import { dropList } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
-import { responsivePreset, ResponsiveProp, Breakpoints } from '../../Utils/responsiveness';
+import { ResponsiveProp, Breakpoints } from '../../Utils/responsiveness';
 
-const item = getPresets('dropList.item', {
+const item = getPresets(
+    dropList.item,
+    'dropList.item'
+)({
     base: null,
-    size: responsivePreset('$size', 'm'),
+    size: ['$size', 'm'],
     hover: null,
     selected: null,
     disabled: null,
     custom: null,
+});
+
+const description = getPresets(
+    dropList.description,
+    'dropList.description'
+)({
+    base: null,
+    size: ['$size', 'm'],
+    custom: null,
+});
+
+const itemWrapper = getPresets(
+    dropList.itemWrapper,
+    'dropList.itemWrapper'
+)({
+    base: null,
 });
 
 export interface PropsBox<B = Breakpoints> {
@@ -20,7 +40,7 @@ export interface PropsBox<B = Breakpoints> {
 }
 export const Box = styled.div<PropsBox>`
     display: flex;
-    align-items: center;
+    flex-direction: column;
     white-space: nowrap;
     flex: 0 0 auto;
     box-sizing: border-box;
@@ -36,7 +56,6 @@ export const Box = styled.div<PropsBox>`
     ${({ $hover }) => $hover && item.hover}
     ${({ $selected }) => $selected && item.selected}
     ${({ $disabled }) => $disabled && item.disabled}
-
     ${({ $wrapLine }) =>
         $wrapLine &&
         css`
@@ -44,4 +63,22 @@ export const Box = styled.div<PropsBox>`
         `}
 
     ${item.custom}
+`;
+
+export const Icon = styled.div`
+    display: flex;
+`;
+
+export const ItemWrapper = styled.div`
+    ${itemWrapper.base}
+`;
+
+export interface PropsDescription<B = Breakpoints> {
+    $size?: ResponsiveProp<'s' | 'm' | 'l', B>;
+}
+
+export const DescriptionWrapper = styled.div<PropsDescription>`
+    ${description.base};
+    ${description.size};
+    ${description.custom};
 `;

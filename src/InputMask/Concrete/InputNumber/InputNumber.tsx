@@ -1,10 +1,9 @@
-import React, { useState, useCallback, useEffect, FC, forwardRef, FocusEvent, useMemo } from 'react';
+import React, { useState, useCallback, FC, forwardRef, FocusEvent } from 'react';
 import { FactoryOpts } from 'imask';
-import { InputMask, InputMaskProps } from '../../InputMask';
+import { InputMask, InputMaskOnChangeType, InputMaskProps } from '../../InputMask';
 import { getMaskOptionsFromProps } from '../../utils';
-import { converterStringToNumberOrNull, converterNumberOrNullToString } from '../../../Utils/converter';
 
-export type InputNumberProps = Omit<InputMaskProps, 'value' | 'maxLength' | 'maskOptions' | 'onChange'> &
+export type InputNumberProps = Omit<InputMaskProps, 'value' | 'maskOptions' | 'onChange'> &
     FactoryOpts & {
         /** Разделитель разряда */
         delimiter?: '.' | ',';
@@ -19,7 +18,8 @@ export type InputNumberProps = Omit<InputMaskProps, 'value' | 'maxLength' | 'mas
         max?: number;
         /** По умолчанию false: если true, то при вводе значения (при фокусе) сохраняется маска */
         isFocusAllowMask?: boolean;
-        onChange?: (value: number | null) => void;
+        onChange?: InputMaskOnChangeType<number | null>;
+        mapToRadix?: string[];
     };
 
 export const InputNumber: FC<InputNumberProps> = forwardRef<HTMLInputElement, InputNumberProps>((props, ref) => {
@@ -28,70 +28,43 @@ export const InputNumber: FC<InputNumberProps> = forwardRef<HTMLInputElement, In
         onBlur,
         onChange,
         name,
+        mapToRadix = [',', '.'],
         delimiter = ',',
         scale = 0,
-        thousandsSeparator = ' ',
-        padFractionalZeros,
+        thousandsSeparator: externalThousandsSeparator = ' ',
+        padFractionalZeros: externalPadFractionalZeros,
         value,
         isFocusAllowMask,
         ...attrs
     } = props;
 
-    const [dynamicThousandsSeparator, setDynamicThousandsSeparator] = useState(thousandsSeparator);
-    const [innerPadFractionalZeros, setPadFractionalZeros] = useState(scale !== 0);
-    const [normalizeZeros, setNormalizeZeros] = useState(true);
+    const [isFocused, setIsFocused] = useState(false);
 
-    useEffect(() => {
-        setPadFractionalZeros(scale !== 0);
-    }, [scale]);
+    const thousandsSeparator = isFocused ? '' : externalThousandsSeparator;
+    const internalPadFractionalZeros = isFocused ? false : scale !== 0;
+    const padFractionalZeros = externalPadFractionalZeros ?? internalPadFractionalZeros;
 
-    useEffect(() => {
-        setDynamicThousandsSeparator(thousandsSeparator);
-    }, [thousandsSeparator]);
+    const handleBlur = useCallback<NonNullable<InputMaskProps['onBlur']>>(
+        (event) => {
+            setIsFocused(false);
 
-    const handleBlur = useCallback(
-        (event: FocusEvent<HTMLInputElement>) => {
-            setDynamicThousandsSeparator(thousandsSeparator);
-            setPadFractionalZeros(scale !== 0);
-            setNormalizeZeros(true);
-            if (typeof onBlur === 'function') {
-                onBlur(event, { name, value: event.target.value });
-            }
+            onBlur?.(event, { name, value: (event.target as HTMLInputElement).value });
         },
-        [onBlur, name, scale, thousandsSeparator]
+        [onBlur, name]
     );
 
     const handleFocus = useCallback(
         (event: FocusEvent<HTMLInputElement>) => {
-            if (!isFocusAllowMask) {
-                setDynamicThousandsSeparator('');
-                setPadFractionalZeros(false);
-                setNormalizeZeros(false);
-            }
+            if (!isFocusAllowMask) setIsFocused(true);
 
-            if (typeof onFocus === 'function') {
-                onFocus(event, { name, value: event.target.value });
-            }
+            onFocus?.(event, { name, value: event.target.value });
         },
         [onFocus, name, isFocusAllowMask]
     );
 
-    const maskOptions = {
-        // @ts-ignore
-        ...getMaskOptionsFromProps(props),
-        radix: delimiter,
-        thousandsSeparator: dynamicThousandsSeparator,
-        padFractionalZeros: padFractionalZeros ?? innerPadFractionalZeros,
-    };
-
-    const computedValue: string = useMemo(() => {
-        return converterNumberOrNullToString(value);
-    }, [value]);
-
-    const changeHandler = (value: string) => {
-        if (onChange) {
-            onChange(converterStringToNumberOrNull(value));
-        }
+    const handleChange: InputMaskProps['onChange'] = ({ value, event, options }) => {
+        if (typeof value === 'string' || !onChange) return;
+        onChange({ value, event, options });
     };
 
     return (
@@ -99,24 +72,21 @@ export const InputNumber: FC<InputNumberProps> = forwardRef<HTMLInputElement, In
             {...attrs}
             ref={ref}
             name={name}
-            value={computedValue}
-            // @ts-ignore
+            value={value ?? ''}
             maskOptions={{
-                ...maskOptions,
-                mask: maskOptions.mask || Number,
+                mask: Number,
+                mapToRadix,
+                prepare: (value) => value.replace(/\.|,/gm, delimiter),
+                ...getMaskOptionsFromProps(props),
                 radix: delimiter,
-                mapToRadix: maskOptions.mapToRadix || [',', '.'],
-                prepare:
-                    maskOptions.prepare ||
-                    ((value: string): string => {
-                        return value.replace(/\.|,/gm, delimiter);
-                    }),
-                normalizeZeros,
+                thousandsSeparator,
+                padFractionalZeros,
+                normalizeZeros: !isFocused,
                 scale,
             }}
             onBlur={handleBlur}
             onFocus={handleFocus}
-            onChange={changeHandler as (value: unknown) => void}
+            onChange={handleChange}
         />
     );
 });

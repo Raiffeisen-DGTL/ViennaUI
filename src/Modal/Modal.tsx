@@ -10,18 +10,26 @@ import React, {
     ReactNode,
 } from 'react';
 import ReactDOM from 'react-dom';
-import ReactFocusLock from 'react-focus-lock';
+import ReactFocusLock, { FreeFocusInside } from 'react-focus-lock';
 import { useDebounce, usePortal } from 'vienna.react-use';
-import { CloseCancelX } from 'vienna.icons';
+import { CloseCancelXIcon } from 'vienna.icons';
 import { Screen } from 'vienna.ui-primitives';
-import { Fade, PropsFade, Box, CloseIcon } from './Modal.styles';
+import { Fade, PropsFade, Box, CloseIcon, PropsBox } from './Modal.styles';
 import { useLockBody } from '../Utils';
 import { BoxStyled } from '../Utils/styled';
+import { useModal } from '../Utils/useModal';
+import { Breakpoints } from '../Utils/responsiveness';
 
 const ANIMATION_DURATION = 400;
 
-export interface ModalProps extends BoxStyled<typeof Fade, PropsFade> {
+export const defaultModalTestId: ModalProps['testId'] = {
+    container: 'modal_container',
+    closeIcon: 'modal_close-icon',
+};
+
+export interface ModalProps<B = Breakpoints> extends Omit<BoxStyled<typeof Fade, PropsFade>, 'ref'> {
     id?: string;
+    containerId?: string;
     state?: {
         children?: ReactNode;
         onClose?: (data?: unknown) => void;
@@ -31,40 +39,59 @@ export interface ModalProps extends BoxStyled<typeof Fade, PropsFade> {
     isOpen?: boolean;
     closeIcon?: ReactNode;
     onClose?: (data?: unknown) => void | boolean | Promise<boolean>;
-    onPreDespose?: () => void;
+    /** Callback функция открытия окна с учётом времени выполнения анимации */
+    onAfterOpen?: () => void;
     onPreDispose?: () => void;
-    ref?: any;
     closeByFade?: boolean;
-    stopBubling?: boolean;
+    closeByEscape?: boolean;
+    hideCloseIcon?: boolean;
+    blurOverlay?: boolean;
+    stopBubbling?: boolean;
     autoFocus?: boolean;
     children: ReactNode;
+    size?: PropsBox<B>['$size'];
+    width?: number;
+    closeIconRef?: React.MutableRefObject<HTMLDivElement | null>;
+    testId?: {
+        container?: string;
+        closeIcon?: string;
+    };
 }
 
-interface RefFunc {
+export interface RefFunc {
     close: (data: unknown) => void;
 }
 
-export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
+export const Modal = forwardRef<RefFunc | HTMLDivElement, ModalProps>((props, ref) => {
     const {
         id,
+        containerId = 'modal',
         children,
         state,
+        onAfterOpen,
         onClose,
-        onPreDespose,
         onPreDispose,
         isOpen,
-        closeIcon = <CloseCancelX size='l' />,
+        closeIcon = <CloseCancelXIcon size='m' />,
         closeByFade = true,
-        stopBubling = true,
+        closeByEscape = false,
+        closeIconRef,
+        hideCloseIcon = false,
+        blurOverlay = false,
+        stopBubbling = false,
         autoFocus = false,
         tabIndex = 0,
+        size,
+        width,
+        testId = defaultModalTestId,
         ...attrs
     } = props;
 
+    const openTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const [init, setInit] = useState(false);
     const [show, setShow] = useState(false);
     const [toggle, setToggle] = useState(false);
-    const containerPortal = usePortal('modal');
+    const containerPortal = usePortal(containerId);
     if (state && isOpen) {
         // eslint-disable-next-line no-console
         console.warn('Нельзя одновременно использовать свойства state и isOpen');
@@ -79,17 +106,8 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
     const predisposeHandler = useCallback(() => {
         if (typeof onPreDispose === 'function') {
             onPreDispose();
-            return;
         }
-
-        if (typeof onPreDespose === 'function') {
-            // eslint-disable-next-line no-console
-            console.warn(
-                '"onPreDespose" property is deprecated and will be renamed to "onPreDispose" in the next major version.'
-            );
-            onPreDespose();
-        }
-    }, [onPreDespose, onPreDispose]);
+    }, [onPreDispose]);
 
     // close animation process
     const playCloseAnimation = useCallback(() => {
@@ -103,7 +121,7 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
     }, [toggleDebouncer, initDebouncer, predisposeHandler]);
 
     const close = useCallback(
-        (data, force = false) => {
+        (data: unknown, force = false) => {
             if (force || typeof onClose !== 'function') {
                 playCloseAnimation();
                 return;
@@ -117,7 +135,7 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
                         }
                     },
                     // eslint-disable-next-line no-console
-                    (error) => console.error(error)
+                    (error: Error) => console.error(error)
                 );
                 return;
             }
@@ -136,16 +154,16 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
         state.close = close;
     }
 
-    const prevTarget = useRef();
+    const prevTarget = useRef<HTMLSpanElement>();
     const fadeMouseDown = useCallback(
-        (e: any) => {
-            prevTarget.current = e.target;
+        (e: React.MouseEvent<HTMLDivElement>) => {
+            prevTarget.current = e.target as HTMLDivElement;
         },
         [prevTarget]
     );
 
     const handleClickFade = useCallback(
-        (e) => {
+        (e: React.MouseEvent<HTMLDivElement>) => {
             // Ignore the events not coming from the "fade"
             // We don't want to close the dialog when clicking the dialog content.
             if (e.target !== e.currentTarget) {
@@ -162,14 +180,15 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
     );
 
     const handleClose = useCallback(() => close(null), [close]);
+    const { useModalEscapeHandler } = useModal({ closeByEscape, handleClose });
 
     const boxMouseDown = useCallback(
-        (event) => {
-            if (stopBubling) {
+        (event: React.MouseEvent<HTMLDivElement>) => {
+            if (stopBubbling) {
                 event.stopPropagation();
             }
         },
-        [stopBubling]
+        [stopBubbling]
     );
 
     // ***** ANIMATION START
@@ -179,11 +198,21 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
         if (typeof isOpen === 'boolean') {
             if (isOpen) {
                 setInit(true);
+                openTimeoutRef.current = setTimeout(() => {
+                    onAfterOpen?.();
+                }, ANIMATION_DURATION);
             } else if (init) {
                 close(null, true);
             }
         }
     }, [isOpen, close]);
+
+    // reset timeout if init state was set to false
+    useEffect(() => {
+        if (!init && openTimeoutRef.current !== null) {
+            clearTimeout(openTimeoutRef.current);
+        }
+    }, [init]);
 
     // when portal created show fade
     useEffect(() => {
@@ -212,6 +241,8 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
         []
     );
 
+    useModalEscapeHandler();
+
     if (typeof window === 'undefined') {
         return null;
     }
@@ -220,35 +251,46 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
         document &&
         ReactDOM.createPortal(
             init && (
-                <ReactFocusLock returnFocus autoFocus={autoFocus}>
-                    <Fade
-                        {...(attrs as {})}
-                        id={id}
-                        $show={show}
-                        onClick={closeByFade ? handleClickFade : () => {}}
-                        onMouseDown={fadeMouseDown}>
-                        <Box tabIndex={tabIndex} $toggle={toggle} onMouseDown={boxMouseDown}>
-                            {children}
-                            {closeIcon && (
-                                <CloseIcon
-                                    role='button'
-                                    aria-label='Close'
-                                    tabIndex={0}
-                                    onClick={handleClose}
-                                    onKeyPress={(e: KeyboardEvent) => {
-                                        if (e.key === 'Enter') handleClose();
-                                    }}>
-                                    {closeIcon}
-                                </CloseIcon>
-                            )}
-                        </Box>
-                    </Fade>
+                <ReactFocusLock autoFocus={autoFocus}>
+                    <FreeFocusInside>
+                        <Fade
+                            {...attrs}
+                            id={id}
+                            $show={show}
+                            $blur={blurOverlay}
+                            onClick={closeByFade ? handleClickFade : () => {}}
+                            onMouseDown={fadeMouseDown}>
+                            <Box
+                                tabIndex={tabIndex}
+                                $toggle={toggle}
+                                $size={size}
+                                $width={width}
+                                onMouseDown={boxMouseDown}
+                                data-testid={testId?.container}>
+                                {children}
+                                {!hideCloseIcon && closeIcon && (
+                                    <CloseIcon
+                                        ref={closeIconRef}
+                                        role='button'
+                                        aria-label='Close'
+                                        tabIndex={0}
+                                        onClick={handleClose}
+                                        onKeyPress={(e: KeyboardEvent) => {
+                                            if (e.key === 'Enter') handleClose();
+                                        }}
+                                        data-testid={testId?.closeIcon}>
+                                        {closeIcon}
+                                    </CloseIcon>
+                                )}
+                            </Box>
+                        </Fade>
+                    </FreeFocusInside>
                 </ReactFocusLock>
             ),
             containerPortal ?? document.body
         )
     );
-}) as ForwardRefExoticComponent<ModalProps & RefAttributes<RefFunc>> & {
+}) as ForwardRefExoticComponent<ModalProps & RefAttributes<RefFunc | HTMLDivElement>> & {
     Layout: typeof Screen;
     Head: typeof Screen.Head;
     Title: typeof Screen.Title;
@@ -259,9 +301,16 @@ export const Modal = forwardRef<RefFunc, ModalProps>((props, ref) => {
 
 Modal.displayName = 'Modal';
 
+type TitleProps = Parameters<typeof Screen.Title>[0];
+
+// Добавить testId в компоненты ui-primitives при переносе в atlant
+const TitleWithTestId: React.FC<TitleProps> = (props) => {
+    return <Screen.Title data-testid='screen_title' {...props} />;
+};
+
 Modal.Layout = Screen;
 Modal.Head = Screen.Head;
-Modal.Title = Screen.Title;
+Modal.Title = TitleWithTestId;
 Modal.SubTitle = Screen.SubTitle;
 Modal.Body = Screen.Body;
 Modal.Footer = Screen.Footer;

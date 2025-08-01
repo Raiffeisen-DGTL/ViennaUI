@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import { Alarm, AlarmProps } from './Alarm';
+import { Groups } from '../Groups';
 
 export default {
     title: 'Development/Alarm',
@@ -25,3 +26,28 @@ export const Designs: Story<AlarmProps> = (args) => {
 };
 
 Designs.storyName = 'Дизайн';
+
+export const Sizes: Story<AlarmProps> = (args) => {
+    return (
+        <Groups>
+            <Groups design='vertical'>
+                <Alarm size='s' design='critical' />
+                <Alarm size='s' design='warning' />
+                <Alarm size='s' design='success' />
+                <Alarm size='s' design='accent' />
+                <Alarm size='s' design='neutral' />
+                <Alarm size='s' design='disabled' />
+            </Groups>
+            <Groups design='vertical'>
+                <Alarm size='m' design='critical' />
+                <Alarm size='m' design='warning' />
+                <Alarm size='m' design='success' />
+                <Alarm size='m' design='accent' />
+                <Alarm size='m' design='neutral' />
+                <Alarm size='m' design='disabled' />
+            </Groups>
+        </Groups>
+    );
+};
+
+Sizes.storyName = 'Размеры';

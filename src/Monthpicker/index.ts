@@ -1,2 +1,2 @@
 export { Monthpicker, type MonthpickerProps } from './Monthpicker';
-export type { MonthpickerLocalization } from './localization';
+export type { MonthpickerLocalization, MonthpickerLocalizationProps } from './localization';

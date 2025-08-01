@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Size, WithWhitespaceStyled, size, withWhitespace } from '../Whitespace/utils';
-import { ResponsiveProp, WithMediaStyled, responsiveProp } from '../Utils/responsiveness';
+import { ResponsiveProp, WithMediaStyled } from '../Utils/responsiveness';
+import { getPresetsCustom } from '../Utils/styling';
 
 export interface PropsBox extends WithWhitespaceStyled, WithMediaStyled {
     $inline?: ResponsiveProp<boolean>;
@@ -45,23 +46,44 @@ export interface PropsBox extends WithWhitespaceStyled, WithMediaStyled {
     $wrap?: ResponsiveProp<'nowrap' | 'wrap' | 'wrap-reverse'>;
     $flow?: ResponsiveProp<string>;
     $gap?: ResponsiveProp<Size>;
+    $rowGap?: ResponsiveProp<Size>;
+    $columnGap?: ResponsiveProp<Size>;
+    $flex?: ResponsiveProp<
+        'auto' | 'content' | 'fit-content' | 'max-content' | 'min-content' | 'none' | string | number
+    >;
+    $minHeight?: ResponsiveProp<'auto' | 'fit-content' | 'intrinsic' | 'max-content' | 'min-content' | string>;
+    $minWidth?: ResponsiveProp<
+        'auto' | 'fit-content' | 'intrinsic' | 'max-content' | 'min-content' | 'min-intrinsic' | string
+    >;
 }
 
+const flex = getPresetsCustom('flex')({
+    inline: ['$inline'],
+    direction: ['$direction'],
+    center: ['$center'],
+    justifyContent: ['$justifyContent'],
+    alignItems: ['$alignItems'],
+    alignContent: ['$alignContent'],
+    wrap: ['$wrap'],
+    flow: ['$flow'],
+    gap: ['$gap'],
+    rowGap: ['$rowGap'],
+    columnGap: ['$columnGap'],
+    flex: ['$flex'],
+    minHeight: ['$minHeight'],
+    minWidth: ['$minWidth'],
+});
+
 export const Box = styled.div<PropsBox>`
-    ${responsiveProp(
-        'flex',
-        '$inline',
-        (inline) =>
-            css`
-                display: ${inline ? 'inline-flex' : 'flex'};
-            `
+    ${flex.inline.responsive(
+        (inline) => css`
+            display: ${inline ? 'inline-flex' : 'flex'};
+        `
     )};
 
-    ${responsiveProp('flex', '$direction', 'flex-direction')};
+    ${flex.direction.responsive('flex-direction')};
 
-    ${responsiveProp(
-        'flex',
-        '$center',
+    ${flex.center.responsive(
         (center) =>
             center &&
             css`
@@ -70,11 +92,9 @@ export const Box = styled.div<PropsBox>`
             `
     )};
 
-    ${responsiveProp('flex', '$justifyContent', 'justify-content')};
+    ${flex.justifyContent.responsive('justify-content')};
 
-    ${responsiveProp(
-        'flex',
-        '$justifyContent',
+    ${flex.justifyContent.responsive(
         (justifyContent) =>
             justifyContent === 'stretch' &&
             css`
@@ -84,20 +104,33 @@ export const Box = styled.div<PropsBox>`
             `
     )};
 
-    ${responsiveProp('flex', '$alignItems', 'align-items')};
-    ${responsiveProp('flex', '$alignContent', 'align-content')};
-    ${responsiveProp('flex', '$wrap', 'flex-wrap')};
-    ${responsiveProp('flex', '$flow', 'flex-flow')};
-    ${responsiveProp(
-        'flex',
-        '$gap',
-        (gap) =>
-            css`
-                gap: ${size(gap)};
-            `
-    )};
+    ${flex.alignItems.responsive('align-items')};
+    ${flex.alignContent.responsive('align-content')};
+    ${flex.wrap.responsive('flex-wrap')};
+    ${flex.flow.responsive('flex-flow')};
 
-    ${withWhitespace('flex')}
+    ${flex.gap.responsive(
+        (gap) => css`
+            gap: ${size(gap)};
+        `
+    )}
+    ${flex.rowGap.responsive(
+        (rowGap) => css`
+            row-gap: ${size(rowGap)};
+        `
+    )}
+    ${flex.columnGap.responsive(
+        (columnGap) => css`
+            column-gap: ${size(columnGap)};
+        `
+    )}
+
+    
+    ${flex.flex.responsive('flex')};
+    ${flex.minHeight.responsive('minHeight')};
+    ${flex.minWidth.responsive('minWidth')};
+
+    ${withWhitespace({}, 'flex')}
 `;
 export const FlexDemo = styled.div`
     line-height: 2rem;

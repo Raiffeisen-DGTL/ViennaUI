@@ -52,7 +52,7 @@ import { Alert } from 'vienna-ui';
 
 ```jsx
 import { useHistory } from 'react-router-dom';
-import { Button } from '@fcc/ui';
+import { Button } from 'vienna.ui';
 
 export default () => {
     const history = useHistory();

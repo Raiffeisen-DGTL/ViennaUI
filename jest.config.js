@@ -1,3 +1,6 @@
+const { pathsToModuleNameMapper } = require('ts-jest');
+const { compilerOptions } = require('./tsconfig');
+
 module.exports = {
     roots: ['<rootDir>'],
     projects: ['<rootDir>/src/jest.config.js'],
@@ -8,9 +11,7 @@ module.exports = {
     setupFiles: ['./scripts/jest/setup.js'],
     setupFilesAfterEnv: ['./scripts/jest/setupTests.js'],
     testEnvironment: 'jsdom',
-    testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-    // testResultsProcessor: 'jest-bamboo-formatter',
-    snapshotSerializers: ['enzyme-to-json/serializer'],
+    testMatch: ['**/?(*.)+(test).[jt]s?(x)'],
     transform: {
         '^.+\\.(js|ts)x?$': 'babel-jest',
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': require.resolve(
@@ -18,6 +19,7 @@ module.exports = {
         ),
     },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
+    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
     modulePathIgnorePatterns: ['/esm', '/dist', '/node_modules'],
     globals: {
         snapshot: true,

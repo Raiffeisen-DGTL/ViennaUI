@@ -1,9 +1,13 @@
 import styled, { css, keyframes } from 'styled-components';
+import { spinner } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
-import { responsivePreset, ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
+import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
 
-const { size, color } = getPresets('spinner', {
-    size: responsivePreset('$size', 'm'),
+const presets = getPresets(
+    spinner,
+    'spinner'
+)({
+    size: ['$size', 'm'],
     color: '$color',
 });
 
@@ -77,7 +81,7 @@ export const Box = styled.div<PropsBox>`
     vertical-align: top;
     position: relative;
     display: inline-flex;
-    ${size};
+    ${presets.size};
 
     ${({ $position }) =>
         $position === 'absolute' &&
@@ -96,7 +100,7 @@ interface PropsSvg<B = Breakpoints> extends Size<B> {
     $isIE: boolean;
 }
 export const Svg = styled.svg<PropsSvg>`
-    ${size}
+    ${presets.size}
     ${({ $isIE }) =>
         $isIE &&
         css`
@@ -106,7 +110,7 @@ export const Svg = styled.svg<PropsSvg>`
 `;
 
 export interface CircleProps {
-    $color: 'primary' | 'accent' | 'london120' | 'white';
+    $color: 'primary' | 'accent' | 'london120' | 'white' | 'seattle60';
     $isIE: boolean;
 }
 export const Circle = styled.circle<CircleProps>`
@@ -123,5 +127,5 @@ export const Circle = styled.circle<CircleProps>`
             animation: ${rotate360} linear 2s infinite;
         `}
 
-    ${color}
+    ${presets.color}
 `;

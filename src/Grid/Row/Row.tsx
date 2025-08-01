@@ -1,9 +1,13 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { grid } from 'vienna.ui-theme';
 import { getPresets } from '../../Utils/styling';
 import { BoxStyled } from '../../Utils/styled';
 
-const presets = getPresets('grid.row', {
+const row = getPresets(
+    grid.row,
+    'grid.row'
+)({
     align: '$align',
     valign: '$valign',
     custom: null,
@@ -43,10 +47,10 @@ const RowStyled = styled.div<PropsRowStyled>`
             margin-bottom: ${$rowGap};
         `}
 
-    ${presets.align}
-    ${presets.valign}
+    ${row.align}
+    ${row.valign}
 
-    ${presets.custom}
+    ${row.custom}
 `;
 
 export interface RowProps extends BoxStyled<typeof RowStyled, PropsRowStyled> {
@@ -57,7 +61,7 @@ export interface RowProps extends BoxStyled<typeof RowStyled, PropsRowStyled> {
 }
 export const Row: React.FC<RowProps> = ({ children, align, valign, columnGap = '24px', rowGap = '0', ...attrs }) => {
     return (
-        <RowStyled {...(attrs as {})} $align={align} $valign={valign} $columnGap={columnGap} $rowGap={rowGap}>
+        <RowStyled {...attrs} $align={align} $valign={valign} $columnGap={columnGap} $rowGap={rowGap}>
             {children}
         </RowStyled>
     );

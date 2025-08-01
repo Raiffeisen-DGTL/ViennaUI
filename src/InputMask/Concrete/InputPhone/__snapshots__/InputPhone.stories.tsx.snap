@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Development/InputPhone DifferentMask smoke-test 1`] = `
+<style>
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Regular-Web.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Bold-Web.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+</style>
+<div class="sc-bcPKhP psOLg">
+  <div class="sc-jrkPcm juzgae">
+    <label class="sc-iBAaJG eDDvAp">
+      <div class="sc-gKHVLF hxumYj">
+        <div class="sc-dkjKgF dCerbJ">
+          <input mask="+{42} (000) {234}-00-00"
+                 placeholderchar="#"
+                 aria-invalid="false"
+                 placeholder="+42 (###) 234-##-##"
+                 class="sc-hLclGa hqQfvS"
+          >
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Development/InputPhone MaskWithSetTimeout smoke-test 1`] = `
+<style>
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Regular-Web.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Bold-Web.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+</style>
+<div class="sc-bcPKhP psOLg">
+  <div class="sc-jrkPcm juzgae">
+    <label class="sc-iBAaJG eDDvAp">
+      <div class="sc-gKHVLF hxumYj">
+        <div class="sc-dkjKgF dCerbJ">
+          <div class="sc-ftLKQv bIkLsL">
+            <div class="sc-grXZZQ hSkQrD">
+              <span class="sc-pqitP bCKaoL">
+                +7 213 213-12-31
+              </span>
+              <span>
+              </span>
+            </div>
+          </div>
+          <input aria-invalid="false"
+                 placeholder="+7 000 000-00-00"
+                 class="sc-hLclGa hqQfvS"
+          >
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Development/InputPhone Overview smoke-test 1`] = `
+<style>
+  @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'ALS Hauss';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.eot'); /* Fix IE11 */
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/ALS_Hauss-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Regular-Web.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Navigo';
+        font-display: swap;
+        src: url('https://www.raiffeisen.ru/common/new/images/fonts/Navigo-Bold-Web.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+</style>
+<div class="sc-bcPKhP psOLg">
+  <div class="sc-jrkPcm juzgae">
+    <label class="sc-iBAaJG eDDvAp">
+      <div class="sc-gKHVLF hxumYj">
+        <div class="sc-dkjKgF dCerbJ">
+          <input aria-invalid="false"
+                 placeholder="+7 000 000-00-00"
+                 class="sc-hLclGa hqQfvS"
+          >
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;

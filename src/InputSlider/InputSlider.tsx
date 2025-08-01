@@ -6,7 +6,6 @@ import React, {
     ForwardRefExoticComponent,
     RefAttributes,
     ReactNode,
-    ReactElement,
 } from 'react';
 import { useDebounce, useWindowResize } from 'vienna.react-use';
 import {
@@ -21,19 +20,33 @@ import {
     LineFront,
     LineBack,
 } from './InputSlider.styles';
-import { InputNumber } from '../InputMask';
-import { InputMaskProps } from '../InputMask/InputMask';
-import { omit } from '../Utils/omit';
+import { InputNumber, InputMaskProps } from '../InputMask';
+import { omit, reactNodeIsComponent } from '../Utils';
+import { InputNumberProps } from '../InputMask/Concrete/InputNumber/InputNumber';
+import { WithViewOnly } from '@/ViewOnly';
+import { parseNumberFromString } from '@/Utils/parseNumberFromString';
 
-const defaultOptions = (delimiter = '.', min, max) => ({
+const defaultOptions = (delimiter = '.', min?: number, max?: number) => ({
     scale: 2,
     radix: delimiter,
     min,
     max,
 });
 
-export type InputSliderProps = Omit<InputMaskProps, 'value' | 'min' | 'max' | 'maskOptions'> &
-    Pick<InputMaskProps, 'onChange'> & {
+export const defaultInputSliderTestId: InputSliderTestId = {
+    circle: 'input-slider_circle',
+    line: 'input-slider_line',
+};
+
+type ReturnInputMaskProps = ReturnType<() => InputMaskProps>;
+
+export interface InputSliderTestId {
+    circle?: string;
+    line?: string;
+}
+
+export type InputSliderProps = Omit<ReturnInputMaskProps, 'value' | 'min' | 'max' | 'maskOptions' | 'onChange'> &
+    WithViewOnly & {
         /** Разделитель разряда */
         delimiter?: '.' | ',';
         /** Максимальное значение default = 100 */
@@ -51,8 +64,10 @@ export type InputSliderProps = Omit<InputMaskProps, 'value' | 'min' | 'max' | 'm
         /** Засечки */
         children?: ReactNode;
         /** Событие onPointerUp для перехвата момента отпускания слайдера/полоски/тегов обрабатывает мышь и касания */
-        onPointerUp?: (event: any) => void;
+        onPointerUp?: (event: MouseEvent | TouchEvent) => void;
+        testId?: InputSliderTestId;
         maskOptions?: InputMaskProps['maskOptions'];
+        onChange?: (value: number | null) => void;
     };
 
 // параметры сдвига, которые нельзя передать через css или пресеты
@@ -90,17 +105,31 @@ const reconstructValue = (min: number, max: number, max2: number, val: number) =
 };
 
 // Расчет положения тегов (меток)
-const constructValueTag = (min, max, max2, val) => ((val - min) * (max2 - shift - shiftRight)) / (max - min);
+const constructValueTag = (min: number, max: number, max2: number, val: number) =>
+    ((val - min) * (max2 - shift - shiftRight)) / (max - min);
 
 // Фабрика тегов (меток)
-const constructTags = (tags, min, max, max2, design, onClick): any =>
-    React.Children.toArray(tags).map((tag: any) =>
-        React.cloneElement(tag, {
-            val: constructValueTag(min, max, max2, tag.props.val),
-            design,
-            onClick: (e) => onClick(e, tag.props.val),
-        })
-    );
+const constructTags = (
+    tags: React.ReactNode,
+    min: number,
+    max: number,
+    max2: number,
+    design: InputSliderProps['design'],
+    onClick: (event: React.MouseEvent, value: number | null) => void
+): ReactNode[] => {
+    return React.Children.toArray(tags).map((tag) => {
+        if (React.isValidElement(tag) && reactNodeIsComponent(tag, Tag)) {
+            return React.cloneElement(tag, {
+                val: constructValueTag(min, max, max2, tag.props.val || 0),
+                design,
+                onClick: (e: React.MouseEvent) => onClick(e, tag.props.val || null),
+            });
+        }
+        return tag;
+    });
+};
+
+const defaultOnChange = () => {};
 
 export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>((props, ref) => {
     const {
@@ -114,22 +143,25 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
         max = 100,
         step = 1,
         children,
-        onChange = () => {},
+        onChange = defaultOnChange,
         onPointerUp,
         prefix,
         postfix,
         size = 'l',
         noInput = false,
+        viewOnly,
+        viewOnlyText,
+        testId = defaultInputSliderTestId,
         ...attrs
     } = props;
 
     const [isDrag, setIsDrag] = useState<boolean>(false);
-    const [tags, setTags] = useState<ReactElement[]>([]);
+    const [tags, setTags] = useState<ReactNode[]>([]);
     const lineFrontRef = useRef<HTMLDivElement>(null);
-    const numberInput = useRef<HTMLDivElement>(null);
+    const numberInput = useRef<HTMLInputElement | null>(null);
     const container = useRef<HTMLDivElement>(null);
 
-    const updatePosition = useCallback((val?) => {
+    const updatePosition = useCallback((val: number) => {
         if (lineFrontRef.current) {
             lineFrontRef.current.style.width = `${val}px`;
         }
@@ -144,10 +176,13 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
     }, [value, min, max, updatePositionDebouncer]);
 
     const mouseMoveHandler = useCallback(
-        (event: any) => {
+        (event: MouseEvent | TouchEvent | React.MouseEvent) => {
             if (container.current) {
                 const rect = container.current.getBoundingClientRect();
-                const val = (event.type === 'touchmove' ? event.targetTouches[0].clientX : event.clientX) - rect.left;
+                const val =
+                    (event.type === 'touchmove'
+                        ? (event as TouchEvent).targetTouches[0].clientX
+                        : (event as MouseEvent).clientX) - rect.left;
                 updatePositionDebouncer(
                     val < shift ? shift : val > rect.width - shiftRight ? rect.width - shiftRight : val
                 );
@@ -155,7 +190,7 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
                 const inputValue = Math.ceil(reconstructValue(min, rect.width, max, val) / step) * step;
                 if (!disabled && inputValue <= max && inputValue >= min) {
                     if (typeof onChange === 'function') {
-                        changeDebouncer(inputValue);
+                        changeDebouncer(Number(inputValue.toFixed(scale)));
                     }
                 }
             }
@@ -164,7 +199,7 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
     );
 
     const mouseUpHandler = useCallback(
-        (event) => {
+        (event: MouseEvent | TouchEvent) => {
             document.body.removeEventListener('mousemove', mouseMoveHandler);
             document.body.removeEventListener('mouseup', mouseUpHandler);
             document.body.removeEventListener('mouseleave', mouseUpHandler);
@@ -194,12 +229,11 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
             document.body.removeEventListener('touchmove', mouseMoveHandler);
             document.body.removeEventListener('touchend', mouseUpHandler);
         },
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         []
     );
 
     const handleClickTag = useCallback(
-        (event, value) => {
+        (event: React.MouseEvent, value: number | null) => {
             if (!disabled && typeof onChange === 'function') {
                 onChange(value);
             }
@@ -216,24 +250,24 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
     useWindowResize(resizeHandler);
 
     const inputRef = useCallback(
-        (elem) => {
+        (elem: HTMLInputElement) => {
             if (elem) {
-                (numberInput.current as any) = elem;
+                numberInput.current = elem;
                 if (typeof ref === 'function') {
                     (ref as (instance: HTMLInputElement | null) => void)(elem);
                 }
                 if (ref && typeof ref === 'object') {
-                    (ref as any).current = elem;
+                    ref.current = elem;
                 }
             }
         },
         [ref]
     );
 
-    const handleLineClick = useCallback((event: any) => mouseMoveHandler(event), [mouseMoveHandler]);
+    const handleLineClick = useCallback((event: React.MouseEvent) => mouseMoveHandler(event), [mouseMoveHandler]);
 
     const handleKeyDown = useCallback(
-        (event: any) => {
+        (event: React.KeyboardEvent) => {
             if (typeof onChange === 'function' && !disabled && value) {
                 if (event.key === 'ArrowLeft' && value - step >= min) {
                     onChange(value - step);
@@ -250,11 +284,25 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
     const handleFocus = useCallback(() => setIsDrag(true), [setIsDrag]);
     const handleBlur = useCallback(() => setIsDrag(false), [setIsDrag]);
 
-    const handleInputBlur = useCallback((event, data) => {
-        onChange(Number(data.value));
+    const handleInputBlur = useCallback<NonNullable<InputNumberProps['onBlur']>>((event, data) => {
+        onChange(parseNumberFromString(data.value));
+        props?.onBlur && props.onBlur(event, data);
     }, []);
 
-    const attrsWithoutMaskOptions: any = omit(attrs, 'maskOptions');
+    const attrsWithoutMaskOptions = omit(attrs, 'maskOptions', 'ref', 'active', 'onBlur');
+
+    if (viewOnly) {
+        return (
+            <InputNumber
+                value={value}
+                size={size}
+                {...defaultOptions(delimiter, min, max)}
+                scale={scale}
+                viewOnly={viewOnly}
+                viewOnlyText={viewOnlyText}
+            />
+        );
+    }
 
     return (
         <Box $disabled={disabled}>
@@ -275,12 +323,12 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
                             active={isDrag}
                             prefix={prefix}
                             postfix={postfix}
-                            onChange={onChange}
+                            onChange={({ value }) => onChange(value)}
                             onBlur={handleInputBlur}
                             {...attrsWithoutMaskOptions}
                         />
                     )}
-                    <Line onClick={handleLineClick}>
+                    <Line data-testid={testId?.line} onClick={handleLineClick}>
                         <LineFront
                             ref={lineFrontRef}
                             $disabled={disabled}
@@ -294,6 +342,7 @@ export const InputSlider = React.forwardRef<HTMLInputElement, InputSliderProps>(
                             $disabled={disabled}
                             $drag={isDrag}
                             $size={size}
+                            data-testid={testId?.circle}
                             onKeyDown={handleKeyDown}
                             onFocus={handleFocus}
                             onBlur={handleBlur}

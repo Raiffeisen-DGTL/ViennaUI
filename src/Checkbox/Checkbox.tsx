@@ -7,14 +7,19 @@ import React, {
     MouseEvent,
     ChangeEventHandler,
     FocusEventHandler,
+    useRef,
+    useEffect,
 } from 'react';
 import { useControlState } from 'vienna.react-use';
 import { Box, PropsBox, Content, Icon, IconBox, Input } from './Checkbox.styles';
 import { ResponsiveProp, Breakpoints } from '../Utils/responsiveness';
 import { BoxStyled } from '../Utils/styled';
+import { composeRef } from '../Utils/composeRef';
+import { ViewOnly, WithViewOnlyAndDisabledIcon } from '@/ViewOnly';
 
 export interface CheckboxProps<B = Breakpoints>
-    extends Omit<BoxStyled<typeof Box, PropsBox>, 'onChange' | 'onFocus' | 'onBlur'> {
+    extends Omit<BoxStyled<typeof Box, PropsBox>, 'ref' | 'onChange' | 'onFocus' | 'onBlur'>,
+        WithViewOnlyAndDisabledIcon {
     size?: ResponsiveProp<'s' | 'm' | 'l', B>;
     indeterminate?: boolean;
     invalid?: boolean;
@@ -29,8 +34,9 @@ export interface CheckboxProps<B = Breakpoints>
 }
 
 const fragment = {
-    checked: 'M14.207 5.207l-7 7a1 1 0 01-1.414 0l-4-4 1.414-1.414L6.5 10.086l6.293-6.293 1.414 1.414z',
-    indeterminate: 'M4 7h8v2H4V7z',
+    checked:
+        'M4.53327 8.04834C4.14721 7.68275 3.53994 7.69209 3.1653 8.06938C2.77799 8.45944 2.78762 9.09184 3.18663 9.46993L5.65655 11.8103C6.06758 12.2116 6.6254 12.2214 7.03644 11.8103L12.8551 5.95497C13.2342 5.5735 13.2332 4.95725 12.853 4.57698C12.4711 4.19512 11.8517 4.19597 11.4709 4.57887L6.32906 9.74892L4.53327 8.04834Z',
+    indeterminate: 'M2 7H14V9H2z',
     empty: '',
 };
 
@@ -48,6 +54,9 @@ function CheckboxInternal<B = void>(
         defaultChecked,
         children,
         active: activeProps,
+        viewOnly,
+        viewOnlyText,
+        viewOnlyDisableIcon,
         onChange: onChangeProp,
         onBlur: onBlurProp,
         onFocus: onFocusProp,
@@ -60,8 +69,8 @@ function CheckboxInternal<B = void>(
         defaultValue: defaultChecked,
         defaultStateValue: false,
     });
-
     const [active, setActive] = useState(false);
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const onBlur = useCallback<FocusEventHandler<HTMLInputElement>>(
         (e) => {
@@ -93,13 +102,31 @@ function CheckboxInternal<B = void>(
         [setValue, onChangeProp, disabled]
     );
 
+    useEffect(() => {
+        const $input = inputRef.current;
+        if ($input) {
+            $input.indeterminate = indeterminate;
+        }
+    }, [inputRef, indeterminate]);
+
+    if (viewOnly) {
+        return (
+            <ViewOnly
+                size={size}
+                hasCancel={viewOnlyDisableIcon ? undefined : !checked}
+                hasCheck={viewOnlyDisableIcon ? undefined : checked}>
+                {viewOnlyText ?? children}
+            </ViewOnly>
+        );
+    }
+
     return (
-        <Box {...(attrs as {})} $disabled={disabled}>
+        <Box {...attrs} $disabled={disabled}>
             <IconBox>
                 <Input
-                    ref={ref}
+                    ref={composeRef(inputRef, ref)}
                     type='checkbox'
-                    checked={value || indeterminate}
+                    checked={value}
                     name={name}
                     tabIndex={tabIndex}
                     aria-invalid={!!invalid}

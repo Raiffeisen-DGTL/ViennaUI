@@ -1,0 +1,160 @@
+import { ForwardArrowRightIcon, BackIcon, ScrewIcon, LogoIcon } from 'vienna.icons';
+import { Button } from './Button';
+import { Groups, Body, Flex } from '..';
+import { DocsMeta, Playground } from '../showcase/';
+
+import * as ButtonStories from './Button.stories';
+
+import {
+    Title,
+    Subtitle,
+    Description,
+    Primary,
+    PureArgsTable,
+    Stories,
+    Controls,
+    Source,
+    Unstyled,
+} from '@storybook/addon-docs';
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+<DocsMeta
+    componentName="Button" 
+    themedStory={ButtonStories.WithTheme} 
+    controlsCanvas={<Canvas of={ButtonStories.Overview} />} 
+    figmaLink='https://www.figma.com/design/SBNBQInDC8Ms3GyiqtEzm3/%F0%9F%95%B9-Vienna-RDS-Components?node-id=3-52&p=f&m=dev'
+>
+
+Используйте кнопки для наиболее важных действий, которые пользователи видят в продукте. Например, "Зарегистрироваться" или "Создать документ".
+
+<Playground>{ButtonStories.Main}</Playground>
+
+## Использование с React Router (5.x)
+
+Вы можете использовать компонент совместно с React Router (5.x).
+
+<Source code={`
+import { useHistory } from 'react-router-dom';
+import { Button } from 'vienna.ui';
+
+export default () => {
+    const history = useHistory();
+    const handleClickButton = () => {
+        history.push('/path-to-page');
+    };
+
+    return (
+        <Button design='accent' onClick={handleClickButton}>
+            Button
+        </Button>
+    );
+
+}; `} language='typescript' />
+
+## Внешний вид и размеры
+
+#### Accent
+
+Используйте кнопку `Accent` для действий, требующих максимальное внимание. Допускается использовать одну акцентную кнопку на экране.
+
+<Playground>{ButtonStories.Accent}</Playground>
+
+#### Primary
+
+Используйте кнопку `Primary` для действий, требующих среднее внимание.
+
+<Playground>{ButtonStories.Primary}</Playground>
+
+#### Outline
+
+Используйте кнопку `Outline` для действий, требующих наименьшее внимание.
+
+<Playground>{ButtonStories.Outline}</Playground>
+
+#### Critical
+
+Используйте кнопку `Critical` для действий, требующих максимальное внимание в негативных кейсах.
+
+<Playground>{ButtonStories.Critical}</Playground>
+
+#### Outline-critical
+
+Используйте кнопку `Outline Critical` для действий, требующих наименьшее внимание в негативных кейсах.
+
+<Playground>{ButtonStories.OutlineCritical}</Playground>
+
+#### Ghost
+
+Используйте кнопку `Ghost` для действий, требующих наименьшее внимание.
+
+<Playground>{ButtonStories.Ghost}</Playground>
+
+#### Ghost accent
+
+Используйте кнопку `Ghost accent` для действий, требующих наименьшее внимание.
+
+<Playground>{ButtonStories.GhostAccent}</Playground>
+
+#### White
+
+Используйте кнопку `White` для фонов, отличных от белого (светлых цветов).
+
+<Playground style={{ backgroundColor: '#55575C' }}>{ButtonStories.White}</Playground>
+
+#### Ghost-white
+
+Используйте кнопку для действий, требующих наименьшее внимание, для размещения на фонах, отличных от белого.
+
+<Playground style={{ backgroundColor: '#2B2D33' }}>{ButtonStories.GhostWhite}</Playground>
+
+#### Pressed
+
+Свойство `pressed` делает изначальный вид кнопки как при hover
+
+<Playground>{ButtonStories.Pressed}</Playground>
+
+## Ссылка как кнопка
+
+Есть передасть кнопке свойство `href`, вместо тэга `<button>` будет отображаться стилизованный под кнопоку тэг `<a>`
+
+<Playground>{ButtonStories.AsAnchor}</Playground>
+
+## Кнопки с иконками
+
+<Playground>{ButtonStories.WithIcons}</Playground>
+
+#### Опциональные иконки
+
+<Playground>{ButtonStories.WithOptionalIcons}</Playground>
+
+#### Гайдлайны
+
+Для всех размеров кнопок используются иконки дефолтного размера `m` (20px). Исключение составляют кнопки размера `xs`, для которых используются иконки размера `s` (16px).
+
+<Playground>{ButtonStories.Guidelines}</Playground>
+
+#### Квадратные кнопки
+
+Передав кнопке параметр `square` можно установить ширину равную ее высоте. Это может быть полезно, если кнопка содержит в себе одну только иконку. Обратите внимание, что гайдлайны по соотношению размера кнопки и иконки из параграфа выше распрастроняются и на этот вид кнопок.
+
+<Playground>{ButtonStories.SquareButtons}</Playground>
+
+## Ограничение по сетке
+
+Свойство `grid` позволяет растянуть кнопку по сетке
+
+<Playground>{ButtonStories.Grid}</Playground>
+
+## Ограничение по длине
+
+Если компоненту необходимо задать определенную ширину в колонке/блоке, текст может зарезаться.
+
+<Playground>{ButtonStories.Vertical}</Playground>
+
+## Neutral
+
+Кнопка с нейтральным стилем оформления, подходящая для второстепенных действий. Используется для ненавязчивых взаимодействий, например быстрой фильтрации
+
+<Playground>{ButtonStories.Neutral}</Playground>
+
+</DocsMeta>

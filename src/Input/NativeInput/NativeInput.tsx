@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useMemo, useCallback, useRef, InputHTMLAttributes } from 'react';
 import { StyledInput, Box, Placeholder, PlaceholderWrapper, Invisible, PropsStyledInput } from '../Input.styles';
 import { Breakpoints } from '../../Utils/responsiveness';
 import { BoxStyled } from '../../Utils/styled';
@@ -12,7 +12,7 @@ export interface NativeInputProps<B = Breakpoints>
     disabled?: PropsStyledInput<B>['$disabled'];
     invalid?: boolean;
     smartPlaceholder?: React.ReactNode | string;
-    onDespose?: () => void;
+    onDispose?: () => void;
     /** Ссылка на нативный компонент */
     ref?: React.Ref<HTMLInputElement>;
     /** ID компонента */
@@ -52,121 +52,142 @@ export interface NativeInputProps<B = Breakpoints>
     /** для передачи дополнительных нативных атрибутов,
      *  которые своим названием могут конфликтовать с имеющимися в компоненте пропсами,
      * например size */
-    extraNativeProps?: {
-        [key: string]: any;
-    };
+    extraNativeProps?: InputHTMLAttributes<HTMLInputElement>;
 }
 
-export const NativeInput = React.forwardRef<HTMLInputElement, NativeInputProps>(
-    (
-        {
-            onDespose,
-            smartPlaceholder,
-            design = 'outline',
-            size = 'l',
-            align = 'left',
-            placeholderValueAutoDiff = true,
-            onUpdated,
-            value,
-            disabled,
-            extraNativeProps,
-            ...attrs
-        },
-        ref
-    ) => {
-        const placeholderRef = useRef<any>(null);
-        const inputRef = useRef<any>(null);
-        const inputRefValue = inputRef.current?.value || '';
+const NativeInputInternal = <B,>(
+    {
+        onDispose,
+        placeholder,
+        smartPlaceholder,
+        design = 'outline',
+        size = 'l',
+        align = 'left',
+        placeholderValueAutoDiff = true,
+        onUpdated,
+        value,
+        disabled,
+        extraNativeProps,
+        onInput,
+        onFocus,
+        onBlur,
+        ...attrs
+    }: NativeInputProps<B>,
+    ref: React.ForwardedRef<HTMLInputElement>
+) => {
+    const placeholderRef = useRef<HTMLDivElement>(null);
+    const inputRef = useRef<HTMLInputElement>(null);
+    const isFocused = useRef<boolean>(false);
+    const [inputValue, setInputValue] = useState(value || inputRef.current?.value || '');
+    const calculateSmartPlaceholder = useMemo(() => {
+        if (placeholderValueAutoDiff) {
+            if (typeof smartPlaceholder === 'string' && inputValue) {
+                const visiblePart = smartPlaceholder.substring(inputValue.length);
+                return (
+                    <>
+                        <Invisible>{inputValue || ''}</Invisible>
+                        <span>{visiblePart}</span>
+                    </>
+                );
+            }
+        }
+        return smartPlaceholder;
+    }, [smartPlaceholder, placeholderValueAutoDiff, inputValue]);
 
-        const [calculateSmartPlaceholder, setCalculateSmartPlaceholder] = useState(smartPlaceholder);
+    // Так как инпут часто является составной частью других компонентов, требуется удобная обработка ситуаций, когда он удаляется из DOM
+    useEffect(
+        () => {
+            if (typeof ref === 'function') {
+                ref(inputRef.current);
+            } else if (ref && 'current' in ref) {
+                ref.current = inputRef.current;
+            }
 
-        // Так как инпут часто является составной частью других компонентов, требуется удобная обработка ситуаций, когда он удаляется из DOM
-        useEffect(
-            () => {
+            return () => {
                 if (typeof ref === 'function') {
-                    ref(inputRef.current);
+                    ref(null);
                 } else if (ref && 'current' in ref) {
-                    (ref as any).current = inputRef.current;
+                    ref.current = null;
                 }
-
-                return () => {
-                    if (typeof ref === 'function') {
-                        ref(null);
-                    } else if (ref && 'current' in ref) {
-                        (ref as any).current = null;
-                    }
-                    if (typeof onDespose === 'function') {
-                        onDespose();
-                    }
-                };
-            },
-            [ref, inputRef] // Тут не должно быть зависимости onDespose, так как этот useEffect создается и живет один раз на все время существования компонента
-        );
-
-        useEffect(() => {
-            if (inputRef.current) {
-                if (!placeholderValueAutoDiff) {
-                    setCalculateSmartPlaceholder(smartPlaceholder);
-                    return;
+                if (typeof onDispose === 'function') {
+                    onDispose();
                 }
-                if (typeof smartPlaceholder === 'string' && inputRefValue) {
-                    const visiblePart = smartPlaceholder.substring(inputRefValue.length);
-                    setCalculateSmartPlaceholder(
-                        <>
-                            <Invisible>{inputRefValue || ''}</Invisible>
-                            <span>{visiblePart}</span>
-                        </>
-                    );
-                    return;
-                }
-            }
-            setCalculateSmartPlaceholder(smartPlaceholder);
-        }, [smartPlaceholder, placeholderValueAutoDiff, inputRefValue]);
+            };
+        },
+        [ref, inputRef] // Тут не должно быть зависимости onDespose, так как этот useEffect создается и живет один раз на все время существования компонента
+    );
 
-        // scroll placeholder's content with input content
-        const handleScroll = useCallback((e) => {
-            if (placeholderRef?.current) {
-                placeholderRef.current.scrollLeft = e.target.scrollLeft;
-            }
-        }, []);
+    useEffect(() => {
+        setInputValue(value || inputRef.current?.value || '');
+    }, [value, inputRef.current?.value]);
 
-        useEffect(() => {
-            if (typeof onUpdated === 'function') {
-                onUpdated();
-            }
-        });
+    // scroll placeholder's content with input content
+    const handleScroll = useCallback((e: React.FormEvent<HTMLDivElement>) => {
+        if (placeholderRef?.current) {
+            placeholderRef.current.scrollLeft = e.currentTarget.scrollLeft;
+        }
+    }, []);
 
-        useEffect(() => {
-            if (smartPlaceholder && align !== 'left') {
-                // eslint-disable-next-line no-console
-                console.warn('Input: нельзя использовать smartPlaceholder при выравнивании, отличном от left');
-            }
-        }, [smartPlaceholder, align]);
+    const handleInput: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+        setInputValue(event.target.value);
+        onInput && onInput(event);
+    };
 
-        return (
-            <Box>
-                {smartPlaceholder && align === 'left' && (
-                    <PlaceholderWrapper>
-                        <Placeholder ref={placeholderRef} $design={design} $size={size} $disabled={disabled}>
-                            {calculateSmartPlaceholder}
-                        </Placeholder>
-                    </PlaceholderWrapper>
-                )}
-                <StyledInput
-                    {...(attrs as {})}
-                    {...extraNativeProps}
-                    ref={inputRef}
-                    value={value}
-                    disabled={disabled}
-                    $size={size}
-                    $design={design}
-                    $align={align}
-                    $disabled={disabled}
-                    onScroll={handleScroll}
-                />
-            </Box>
-        );
-    }
-);
+    const handleFocus: React.FocusEventHandler<HTMLInputElement> = (event) => {
+        isFocused.current = true;
+        onFocus && onFocus(event);
+    };
+
+    const handleBlur: React.FocusEventHandler<HTMLInputElement> = (event) => {
+        isFocused.current = false;
+        onBlur && onBlur(event);
+    };
+
+    useEffect(() => {
+        if (typeof onUpdated === 'function') {
+            onUpdated();
+        }
+    });
+
+    useEffect(() => {
+        if (smartPlaceholder && align !== 'left') {
+            // eslint-disable-next-line no-console
+            console.warn('Input: нельзя использовать smartPlaceholder при выравнивании, отличном от left');
+        }
+    }, [smartPlaceholder, align]);
+
+    return (
+        <Box>
+            {(isFocused.current || inputValue || !placeholder) && smartPlaceholder && align === 'left' && (
+                <PlaceholderWrapper>
+                    <Placeholder ref={placeholderRef} $design={design} $size={size} $disabled={disabled}>
+                        {calculateSmartPlaceholder}
+                    </Placeholder>
+                </PlaceholderWrapper>
+            )}
+            <StyledInput
+                {...attrs}
+                {...extraNativeProps}
+                ref={inputRef}
+                placeholder={isFocused.current && smartPlaceholder ? undefined : placeholder}
+                value={value}
+                disabled={disabled}
+                $size={size}
+                $design={design}
+                $align={align}
+                $disabled={disabled}
+                onScroll={handleScroll}
+                onInput={handleInput}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+            />
+        </Box>
+    );
+};
+export const NativeInput = React.forwardRef(NativeInputInternal) as (<B>(
+    props: NativeInputProps<B> & React.RefAttributes<HTMLInputElement>
+) => ReturnType<typeof NativeInputInternal>) & {
+    displayName?: string;
+};
 
 NativeInput.displayName = 'NativeInput';

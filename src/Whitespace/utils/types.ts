@@ -18,7 +18,7 @@ export type Size =
     | 's15'
     | 's16';
 
-export type Whitespace = ResponsiveProp<Size | String>;
+export type Whitespace = ResponsiveProp<Size | string>;
 
 type WhitespaceObject<Keys extends string> = Partial<Record<Keys, Whitespace>>;
 

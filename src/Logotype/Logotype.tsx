@@ -1,25 +1,8 @@
 import React from 'react';
 import { Box, PropsBox } from './Logotype.styles';
-import {
-    CollapsedLogo,
-    HorizontalOneLineEn,
-    HorizontalOneLineRu,
-    HorizontalTwoLinesEn,
-    HorizontalTwoLinesRu,
-    MonochromeHorizontalOneLineEn,
-    MonochromeHorizontalOneLineRu,
-    MonochromeHorizontalTwoLinesEn,
-    MonochromeHorizontalTwoLinesRu,
-    MonochromeVerticalOneLineEn,
-    MonochromeVerticalOneLineRu,
-    MonochromeVerticalTwoLinesEn,
-    MonochromeVerticalTwoLinesRu,
-    VerticalOneLineEn,
-    VerticalOneLineRu,
-    VerticalTwoLinesEn,
-    VerticalTwoLinesRu,
-} from './Logos';
+import { Logo as LogoImg, Logotype as LogotypeImg } from './Logotype.styles';
 import { BoxStyled } from '../Utils/styled';
+import { LogoTypes } from './LogoPath';
 
 export interface LogotypeBaseProps {
     size?: PropsBox['$size'];
@@ -34,7 +17,7 @@ export type LogotypeProps = BoxStyled<typeof Box, PropsBox> & LogotypeBaseProps;
 
 export const logotypesMapper = ({ size, design, locale, type, collapsed, orientation }: LogotypeBaseProps) => {
     if (collapsed) {
-        return <CollapsedLogo size={size} design={design} />;
+        return <LogoImg src={LogoTypes.logoWithBg} $size={size} $design={design} />;
     }
     if (design === 'monochrome-dark')
         // eslint-disable-next-line no-console
@@ -42,85 +25,29 @@ export const logotypesMapper = ({ size, design, locale, type, collapsed, orienta
             'Данный дизайн monochrome-dark не утверждён официально и его использование не рекомендуется. В последующих версиях vienna.ui свойство monochrome-dark может быть удалено. Рекомендуется использование дизайна dark для логотипа в тёмной теме.'
         );
 
-    if (locale === 'ru') {
-        if (orientation === 'horizontal') {
-            if (design === 'light' || design === 'dark') {
-                if (type === 'one-line') {
-                    return <HorizontalOneLineRu size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <HorizontalTwoLinesRu size={size} design={design} type={type} />;
-                }
-            }
-            if (design === 'monochrome' || design === 'monochrome-dark') {
-                if (type === 'one-line') {
-                    return <MonochromeHorizontalOneLineRu size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <MonochromeHorizontalTwoLinesRu size={size} design={design} type={type} />;
-                }
-            }
-        }
-        if (orientation === 'vertical') {
-            if (design === 'light' || design === 'dark') {
-                if (type === 'one-line') {
-                    return <VerticalOneLineRu size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <VerticalTwoLinesRu size={size} design={design} type={type} />;
-                }
-            }
-            if (design === 'monochrome' || design === 'monochrome-dark') {
-                if (type === 'one-line') {
-                    return <MonochromeVerticalOneLineRu size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <MonochromeVerticalTwoLinesRu size={size} design={design} type={type} />;
-                }
-            }
-        }
-    }
+    const colorName =
+        design === 'light'
+            ? 'original'
+            : design === 'dark'
+              ? 'white'
+              : design === 'monochrome'
+                ? 'black'
+                : 'digitalWhite';
+    const orientationName = orientation === 'horizontal' ? 'Horizontal' : 'Vertical';
+    const typeName = type === 'one-line' ? 'OneLine' : 'TwoLines';
+    const localeName = locale === 'en' ? 'En' : 'Ru';
+    const logotypeKey = (colorName + orientationName + typeName + localeName) as keyof typeof LogoTypes;
 
-    if (locale === 'en') {
-        if (orientation === 'horizontal') {
-            if (design === 'light' || design === 'dark') {
-                if (type === 'one-line') {
-                    return <HorizontalOneLineEn size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <HorizontalTwoLinesEn size={size} design={design} type={type} />;
-                }
-            }
-            if (design === 'monochrome' || design === 'monochrome-dark') {
-                if (type === 'one-line') {
-                    return <MonochromeHorizontalOneLineEn size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <MonochromeHorizontalTwoLinesEn size={size} design={design} type={type} />;
-                }
-            }
-        }
-        if (orientation === 'vertical') {
-            if (design === 'light' || design === 'dark') {
-                if (type === 'one-line') {
-                    return <VerticalOneLineEn size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <VerticalTwoLinesEn size={size} design={design} type={type} />;
-                }
-            }
-            if (design === 'monochrome' || design === 'monochrome-dark') {
-                if (type === 'one-line') {
-                    return <MonochromeVerticalOneLineEn size={size} design={design} type={type} />;
-                }
-                if (type === 'default') {
-                    return <MonochromeVerticalTwoLinesEn size={size} design={design} type={type} />;
-                }
-            }
-        }
-    }
-
-    return <HorizontalOneLineRu size={size} design={design} type={type} />;
+    return (
+        <LogotypeImg
+            src={LogoTypes[logotypeKey]}
+            $size={size}
+            $type={type}
+            $design={design}
+            $locale={locale}
+            $orientation={orientation}
+        />
+    );
 };
 
 export const Logotype: React.FC<LogotypeProps> = ({
@@ -133,7 +60,7 @@ export const Logotype: React.FC<LogotypeProps> = ({
     ...attrs
 }) => {
     return (
-        <Box {...(attrs as {})} $design={design} $locale={locale} $orientation={orientation} $size={size} $type={type}>
+        <Box {...attrs} $design={design} $locale={locale} $orientation={orientation} $size={size} $type={type}>
             {logotypesMapper({ collapsed, design, locale, orientation, size, type })}
         </Box>
     );

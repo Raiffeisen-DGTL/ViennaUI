@@ -1,18 +1,28 @@
 import styled from 'styled-components';
+import { hint } from 'vienna.ui-theme';
 import { HintProps } from './Hint';
 import { getPresets } from '../Utils/styling';
 
-const definition = getPresets('hint.definition', {
+const definition = getPresets(
+    hint.definition,
+    'hint.definition'
+)({
     base: null,
     custom: null,
 });
 
-const wrapper = getPresets('hint.wrapper', {
+const wrapper = getPresets(
+    hint.wrapper,
+    'hint.wrapper'
+)({
     base: null,
     custom: null,
 });
 
-const icon = getPresets('hint.icon', {
+const icon = getPresets(
+    hint.icon,
+    'hint.icon'
+)({
     base: null,
     hover: null,
     custom: null,
@@ -29,7 +39,7 @@ export const Wrapper = styled.span`
     ${wrapper.custom}
 `;
 
-interface PropsIcon {
+export interface PropsIcon {
     $size?: HintProps['size'];
 }
 export const Icon = styled.svg<PropsIcon>`

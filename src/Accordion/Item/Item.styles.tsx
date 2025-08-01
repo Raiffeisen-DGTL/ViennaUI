@@ -1,26 +1,34 @@
 import styled, { css } from 'styled-components';
-import { getPresets } from '../../Utils/styling';
+import { accordion } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../../Utils/styling';
 
-const presets = getPresets('accordion.item', {
+const item = getPresets(
+    accordion.item,
+    'accordion.item'
+)({
     icon: null,
 });
 
-const custom = getPresets('accordion.item.custom', {
+const custom = getPresetsCustom('accordion.item.custom')({
     header: null,
     content: null,
 });
 
-const header = getPresets('accordion.item.header', {
+const header = getPresets(
+    accordion.item.header,
+    'accordion.item.header'
+)({
     base: null,
-    active: null,
     hover: null,
     size: '$size',
 });
 
-const content = getPresets('accordion.item.content', {
+const content = getPresets(
+    accordion.item.content,
+    'accordion.item.content'
+)({
     base: null,
 });
-
 export interface PropsHeader {
     open?: boolean;
     $open?: boolean;
@@ -32,36 +40,45 @@ export const Header = styled.div<PropsHeader>`
     align-items: center;
     flex-direction: row;
     ${header.base}
-    ${({ $open }) =>
-        $open &&
-        css`
-            ${header.hover}
-        `};
+
+    &:hover {
+        ${header.hover}
+    }
+
     ${({ $width }) =>
         $width &&
         css`
             max-width: ${$width};
             min-width: ${$width};
         `};
-    ${({ $open }) =>
-        $open &&
-        css`
-            ${header.active};
-        `}
+
     ${({ $disabled }) =>
         $disabled &&
         css`
             ${header.hover};
         `}
+    height: fit-content;
+
     ${custom.header}
 `;
 
 export interface PropsContent {
     $width?: number;
+    $hide?: boolean;
+    $flexDirection?: 'row' | 'column';
 }
 export const Content = styled.div<PropsContent>`
     display: flex;
-    flex-direction: row;
+
+    ${({ $flexDirection }) =>
+        $flexDirection === 'column'
+            ? css`
+                  flex-direction: column;
+              `
+            : css`
+                  flex-direction: row;
+              `}
+
     ${content.base}
     ${({ $width }) =>
         $width &&
@@ -69,12 +86,19 @@ export const Content = styled.div<PropsContent>`
             max-width: ${$width};
             min-width: ${$width};
         `}
+    ${({ $hide }) =>
+        $hide &&
+        css`
+            display: none;
+        `}
     ${custom.content}
 `;
 
 export const IconBox = styled.div`
-    ${presets.icon}
     display: flex;
+    align-self: flex-start;
+    margin-top: 2px;
+    ${item.icon}
 `;
 
 export const TextBox = styled.div`
@@ -84,3 +108,5 @@ export const TextBox = styled.div`
     align-items: center;
     overflow: auto;
 `;
+
+export const ContentTextWrapper = styled.div``;

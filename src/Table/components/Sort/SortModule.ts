@@ -1,13 +1,13 @@
-import { Module, SortDirection } from '../../types';
+import { Module, SortDirection, TableData } from '../../types';
 
 export interface SortState {
     field: string;
     direction: SortDirection;
 }
 
-export const SortModule: Module = {
+export const SortModule: Module<undefined, SortState | undefined, TableData> = {
     name: 'sort',
-    initState: ({ settings }): SortState => {
+    initState: ({ settings }): SortState | undefined => {
         return settings.sort;
     },
 };

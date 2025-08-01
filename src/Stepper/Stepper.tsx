@@ -7,7 +7,7 @@ import React, {
     ReactElement,
     FC,
     PropsWithChildren,
-    RefObject,
+    isValidElement,
 } from 'react';
 import { useIsomorphicLayoutEffect } from 'vienna.react-use';
 import { StepProps, Step } from './Step';
@@ -48,18 +48,15 @@ export const Stepper: FC<PropsWithChildren<StepperProps>> & { Step: typeof Step 
         : React.Children.toArray(children);
     const childrenSize = childrenArray.length;
     const [stepsTooltips, setStepsTooltips] = useState(new Set());
-
     const stepperRef = useRef<HTMLDivElement>(null);
-    const stepsRefs: RefObject<HTMLDivElement>[] =
-        React.Children.map<RefObject<HTMLDivElement>, ReactNode>(childrenArray, useRef) ?? [];
-
+    const stepperContainerRef = useRef<HTMLDivElement>(null);
     const currentStepIndex = useMemo(
-        () => childrenArray.findIndex((item) => item && (item as ReactElement).props.value === value),
+        () => childrenArray.findIndex((item) => item && (item as ReactElement<StepProps>).props.value === value),
         [childrenArray, value]
     );
 
     const defineDesign = useCallback(
-        (child: ReactElement, index: number) => {
+        (child: ReactElement<StepProps>, index: number) => {
             if (error?.find((item) => item === child.props.value)) {
                 return 'error';
             }
@@ -84,20 +81,14 @@ export const Stepper: FC<PropsWithChildren<StepperProps>> & { Step: typeof Step 
     useIsomorphicLayoutEffect(() => {
         const tooltips = new Set();
 
-        for (const [index, value] of Object.entries(stepsRefs)) {
-            const ref: RefObject<HTMLDivElement> = value;
-
-            if (!ref.current) {
-                continue;
+        stepperContainerRef.current?.querySelectorAll(':scope > * > *:nth-child(2)').forEach(($box, index) => {
+            if ($box && $box.clientHeight < $box.scrollHeight) {
+                tooltips.add(Number(index));
             }
-
-            if (ref.current.scrollHeight > ref.current.clientHeight) {
-                tooltips.add(index);
-            }
-        }
+        });
 
         setStepsTooltips(tooltips);
-    }, []);
+    }, [children]);
 
     const progressWidth = useMemo(() => {
         if (currentStepIndex === -1) {
@@ -112,16 +103,15 @@ export const Stepper: FC<PropsWithChildren<StepperProps>> & { Step: typeof Step 
     const steps = useMemo(() => {
         const displayedChildren = childrenArray.filter(Boolean) as ReactElement[];
         const count = React.Children.count(displayedChildren);
-
-        return React.Children.map(displayedChildren, (child: ReactElement, index) => {
+        return React.Children.map(displayedChildren, (child: ReactElement<StepProps & { children: string }>, index) => {
             const childProps: StepProps = {
                 design: defineDesign(child, index),
                 title: child.props.children,
                 size: size ?? 's',
                 orientation: orientation ?? 'horizontal',
                 value: child.props.value,
-                hasTooltip: stepsTooltips.has(index),
-                el: stepsRefs[index],
+                hasTooltip: (stepsTooltips.has(index) && orientation !== 'vertical') || child.props.hasTooltip,
+                tooltipText: child.props.tooltipText,
                 count,
                 valign,
                 inverted,
@@ -129,10 +119,10 @@ export const Stepper: FC<PropsWithChildren<StepperProps>> & { Step: typeof Step 
 
             return <child.type {...childProps} />;
         });
-    }, [childrenArray, stepsRefs, defineDesign, orientation, size, stepsTooltips, valign, inverted]);
+    }, [childrenArray, defineDesign, orientation, size, stepsTooltips, valign, inverted]);
 
     const hasIncorrectChildren = useMemo(
-        () => childrenArray.some((child: any) => child && String(child.type) !== String(Step)),
+        () => childrenArray.some((child) => isValidElement(child) && String(child.type) !== String(Step)),
         [childrenArray]
     );
     if (hasIncorrectChildren) {
@@ -142,6 +132,7 @@ export const Stepper: FC<PropsWithChildren<StepperProps>> & { Step: typeof Step 
 
     return (
         <Box
+            ref={stepperContainerRef}
             $orientation={orientation}
             $childrenCount={childrenArray?.length}
             $responsive={responsive}

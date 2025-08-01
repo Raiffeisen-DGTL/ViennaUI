@@ -2,6 +2,7 @@
  * imports of components
  */
 import React, { useMemo } from 'react';
+import { useGridFocus, useFooterFocus } from '../hooks';
 import { Dates, EventDateFunction, RangeDate, StartingWeekDay, ViewMode } from '../types';
 import { MonthRangeDays } from '../MonthRangeDays';
 import { MonthSingleDays } from '../MonthSingleDays';
@@ -28,6 +29,11 @@ const MONTHS = [
     'december',
 ] as const;
 
+export interface BodyTestId {
+    btnToday?: string;
+    btnCalendarCell?: (date: Date) => string;
+}
+
 interface Props {
     viewMode: ViewMode;
     displayedDate: Date;
@@ -48,6 +54,7 @@ interface Props {
     hasNavigation: boolean;
     startingWeekDay: StartingWeekDay;
     allowMultiple: boolean;
+    testId?: BodyTestId;
 }
 
 export const Body: React.FC<Props> = (props) => {
@@ -71,25 +78,41 @@ export const Body: React.FC<Props> = (props) => {
         hasNavigation,
         startingWeekDay,
         allowMultiple,
+        testId,
     } = props;
 
     const localize = useCalendarLocalization();
 
+    const { setUpFocusProps, resetSavedNodes } = useGridFocus(viewMode);
+    const { setUpFocusProps: setUpFocusPropsFooter } = useFooterFocus(viewMode);
+
     const content = useMemo(() => {
+        resetSavedNodes();
+
         const displayedYear = displayedDate?.getFullYear();
         const displayedMonth = displayedDate?.getMonth();
+        const testIdDate = new Date(displayedDate);
 
         switch (viewMode) {
             case 'year_list': {
-                const startYear = Math.floor(displayedYear / 12) * 12;
-                const start = startYear <= 0 ? 0 : startYear;
-                const end = startYear + 12 >= 3000 ? 3001 : startYear + 12;
+                const startYear = displayedYear - (displayedYear % 12);
+                const start = Math.max(startYear, 1900);
+                const end = Math.min(start + 11, 3000);
                 const yearList: JSX.Element[] = [];
-                for (let year = start; year < end; year++) {
+                for (let year = start; year <= end; year++) {
                     const isActive = date && !allowMultiple && (date as Date).getFullYear() === year;
-
+                    const index = yearList.length;
+                    const { forwardedRef, onKeyDown } = setUpFocusProps(index);
+                    testIdDate.setFullYear(year);
                     yearList.push(
-                        <CalendarCell key={year} $isActive={isActive} onClick={onGoToMonth(year, displayedMonth)}>
+                        <CalendarCell
+                            key={year}
+                            type='button'
+                            $isActive={isActive}
+                            ref={forwardedRef}
+                            onKeyDown={onKeyDown}
+                            data-testid={testId?.btnCalendarCell?.(testIdDate)}
+                            onClick={onGoToMonth(year, displayedMonth)}>
                             {year}
                         </CalendarCell>
                     );
@@ -105,10 +128,18 @@ export const Body: React.FC<Props> = (props) => {
                 const months = MONTHS.map((month, index: number) => {
                     const isActive = date && !allowMultiple && index === (date as Date).getMonth();
                     const localizedMonth = localize(`ds.calendar.month.${month}` as keyof CalendarLocalization);
+                    testIdDate.setMonth(index);
+
+                    const { forwardedRef, onKeyDown } = setUpFocusProps(index);
+
                     return (
                         <CalendarCell
                             key={localizedMonth}
+                            type='button'
                             $isActive={isActive}
+                            ref={forwardedRef}
+                            data-testid={testId?.btnCalendarCell?.(testIdDate)}
+                            onKeyDown={onKeyDown}
                             onClick={
                                 hasNavigation ? onGoToMonth(displayedYear, index) : onChangeMonth(displayedYear, index)
                             }>
@@ -135,6 +166,9 @@ export const Body: React.FC<Props> = (props) => {
                         maxDate={maxDate}
                         minDate={minDate}
                         startingWeekDay={startingWeekDay}
+                        setUpFocusProps={setUpFocusProps}
+                        resetSavedNodes={resetSavedNodes}
+                        testId={testId}
                         onChangeDate={onChangeDate}
                     />
                 ) : (
@@ -148,6 +182,9 @@ export const Body: React.FC<Props> = (props) => {
                         minDate={minDate}
                         startingWeekDay={startingWeekDay}
                         allowMultiple={allowMultiple}
+                        setUpFocusProps={setUpFocusProps}
+                        resetSavedNodes={resetSavedNodes}
+                        testId={testId}
                         onChangeDate={onChangeDate}
                     />
                 );
@@ -157,7 +194,12 @@ export const Body: React.FC<Props> = (props) => {
                         <Box>{month}</Box>
                         {todayButton && (
                             <Footer>
-                                <Button type='button' design='ghost' onClick={onGoToToday}>
+                                <Button
+                                    type='button'
+                                    design='ghost'
+                                    data-testid={testId?.btnToday}
+                                    onClick={onGoToToday}
+                                    {...setUpFocusPropsFooter('todayButton')}>
                                     <b>{localize('ds.calendar.body.today')}</b>
                                 </Button>
                             </Footer>

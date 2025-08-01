@@ -1,6 +1,6 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
-import { ManPerson } from 'vienna.icons';
+import { ManPersonIcon } from 'vienna.icons';
 import { RoundIcon, RoundIconProps } from './RoundIcon';
 
 export default {
@@ -15,7 +15,7 @@ export const Overview: Story<RoundIconProps> = (args) => {
 export const WithIcon: Story<RoundIconProps> = (args) => {
     return (
         <RoundIcon {...args}>
-            <ManPerson />
+            <ManPersonIcon />
         </RoundIcon>
     );
 };

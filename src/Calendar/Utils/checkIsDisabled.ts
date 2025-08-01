@@ -1,6 +1,7 @@
-import { isAfter, isBefore, isEqual } from 'date-fns';
+import { isAfter, isBefore, startOfDay } from 'date-fns';
 import { Dates, StartingWeekDay } from '../types';
 import { isSaturdayOrSunday } from './isSaturdayOrSunday';
+import { isEqualDatesWithoutTime } from './isEqualDatesWithoutTime';
 
 interface CheckIsDisabled {
     dates?: Dates;
@@ -14,11 +15,15 @@ export const checkIsDisabled = ({ dates, date, minDate, maxDate, startingWeekDay
     const isWeekend = isSaturdayOrSunday(date, startingWeekDay);
     let isDisabled =
         (dates === 'weekends' && isWeekend) ||
-        (!!minDate && isBefore(date.setHours(0, 0, 0, 0), minDate.setHours(0, 0, 0, 0))) ||
-        (!!maxDate && isAfter(date.setHours(0, 0, 0, 0), maxDate.setHours(0, 0, 0, 0)));
+        (!!minDate && isBefore(startOfDay(date), startOfDay(minDate))) ||
+        (!!maxDate && isAfter(startOfDay(date), startOfDay(maxDate)));
 
     if (Array.isArray(dates)) {
-        isDisabled = isDisabled || !!dates.find((value) => isEqual(value, date));
+        isDisabled =
+            isDisabled ||
+            !!dates.find((value) => {
+                return isEqualDatesWithoutTime(value, date);
+            });
     }
 
     if (typeof dates === 'function') {

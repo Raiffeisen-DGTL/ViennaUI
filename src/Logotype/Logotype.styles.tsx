@@ -1,18 +1,26 @@
 import styled from 'styled-components';
-import { getPresets } from '../Utils/styling';
+import { logotype } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
+import { AnyObject } from '../Utils';
 
-const presets = getPresets('logotype', {
+const presets = getPresets(
+    logotype,
+    'logotype'
+)({
     design: '$design',
     width: '$size',
     height: '$size',
 });
 
-const logotype = getPresets('logotype.logotype', {
+const logotypePresets = getPresets(
+    logotype.logotype,
+    'logotype.logotype'
+)({
     design: '$design',
     size: null,
 });
 
-const custom = getPresets('logotype.custom', {
+const custom = getPresetsCustom('logotype.custom')({
     root: null,
     logo: null,
     title: null,
@@ -34,18 +42,18 @@ export const Box = styled.div<PropsBox>`
     ${custom.root}
 `;
 
-export const Logo = styled.svg<PropsBox>`
+export const Logo = styled.img<PropsBox>`
     ${presets.design}
     ${presets.width}
     ${presets.height}
     ${custom.logo}
 `;
 
-export const Logotype = styled.svg<PropsBox>`
-    ${logotype.design}
+export const Logotype = styled.img<PropsBox>`
+    ${logotypePresets.design}
     ${({ $locale = 'ru', $type = 'default', $size = 'l', $orientation = 'horizontal', $design }) => {
         const style = $design === 'light' || $design === 'dark' ? 'color' : 'monochrome';
-        const preset = logotype.size({});
+        const preset = logotypePresets.size({}) as AnyObject;
         return preset[$orientation][style][$locale][$type][$size];
     }}
 `;

@@ -1,17 +1,24 @@
 import React, { FC } from 'react';
 import styled, { css } from 'styled-components';
-import { getPresets } from '../Utils/styling';
+import { inputSlider } from 'vienna.ui-theme';
+import { getPresets, getPresetsCustom } from '../Utils/styling';
 import { Breakpoints, ResponsiveProp } from '../Utils/responsiveness';
 import { BoxStyled } from '../Utils/styled';
 
 type Design = 'outline' | 'material';
 type Size<B = Breakpoints> = ResponsiveProp<'xxl' | 'xl' | 'l' | 'm' | 's' | 'xs' | B>;
 
-const tags = getPresets('inputSlider.tags', {
+const tags = getPresets(
+    inputSlider.tags,
+    'inputSlider.tags'
+)({
     base: null,
 });
 
-const line = getPresets('inputSlider.line', {
+const line = getPresets(
+    inputSlider.line,
+    'inputSlider.line'
+)({
     base: null,
     size: '$size',
     front: null,
@@ -22,18 +29,24 @@ const line = getPresets('inputSlider.line', {
     animation: null,
 });
 
-const container = getPresets('inputSlider.container', {
+const container = getPresets(
+    inputSlider.container,
+    'inputSlider.container'
+)({
     base: null,
     noInput: null,
 });
 
-const tag = getPresets('inputSlider.tag', {
+const tag = getPresets(
+    inputSlider.tag,
+    'inputSlider.tag'
+)({
     base: null,
     firstChild: '$design',
     lastChild: '$design',
 });
 
-const custom = getPresets('inputSlider.custom', {
+const custom = getPresetsCustom('inputSlider.custom')({
     container: null,
     tags: null,
     tag: null,
@@ -46,18 +59,27 @@ const custom = getPresets('inputSlider.custom', {
     partRight: null,
 });
 
-const circle = getPresets('inputSlider.circle', {
+const circle = getPresets(
+    inputSlider.circle,
+    'inputSlider.circle'
+)({
     base: null,
     disabled: null,
     hover: null,
 });
 
-const box = getPresets('inputSlider.box', {
+const box = getPresets(
+    inputSlider.box,
+    'inputSlider.box'
+)({
     base: null,
     disabled: null,
 });
 
-const part = getPresets('inputSlider.part', {
+const part = getPresets(
+    inputSlider.part,
+    'inputSlider.part'
+)({
     base: null,
 });
 
@@ -125,10 +147,9 @@ const TagStyled = styled.div<PropsTagStyled>`
     position: absolute;
     user-select: none;
     ${tag.base}
-    ${({ $val }) =>
-        css`
-            left: ${$val}px;
-        `}
+    ${({ $val }) => css`
+        left: ${$val}px;
+    `}
 
     &:last-child {
         ${tag.lastChild}
@@ -146,7 +167,7 @@ interface PropsTag extends BoxStyled<typeof TagStyled, PropsTagStyled> {
     design?: PropsTagStyled['$design'];
 }
 export const Tag: FC<PropsTag> = ({ children, design, val, ...attrs }) => (
-    <TagStyled {...(attrs as {})} $design={design} $val={val}>
+    <TagStyled {...attrs} $design={design} $val={val}>
         {children}
     </TagStyled>
 );

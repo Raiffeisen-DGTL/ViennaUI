@@ -12,7 +12,7 @@ const triangleBase = 7; // высота треугольника (стрелки
  * @param {*} curWidth ширина тултипа
  * @returns {Object}
  */
-const getAdditionalHorizontalPosition = (pos: DOMRect, curWidth): PropsBox => {
+const getAdditionalHorizontalPosition = (pos: DOMRect, curWidth: number): PropsBox => {
     let res: PropsBox = {}; // заготовка результата
     const halfCurWidth = curWidth / 2; // половина ширины тултипа
     const calibrate = (pos.width - curWidth) / 2; // тултип сдвинутый на половину величины целевого объекта
@@ -39,7 +39,7 @@ const getAdditionalHorizontalPosition = (pos: DOMRect, curWidth): PropsBox => {
 };
 
 /* Аналогично getAdditionalHorizontalPosition но для вертикальной позиции */
-const getAdditionalVerticalPosition = (pos: DOMRect, curHeight): PropsBox => {
+const getAdditionalVerticalPosition = (pos: DOMRect, curHeight: number): PropsBox => {
     let res: PropsBox = {};
     const halfCurHeight = curHeight / 2;
     const calibrate = (pos.height - curHeight) / 2;
@@ -68,8 +68,12 @@ const getAdditionalVerticalPosition = (pos: DOMRect, curHeight): PropsBox => {
  * @param {('left' | 'right' | 'top' | 'bottom' | 'auto')} [anchor]
  * @returns {Object}
  */
-export const getPosition = (target, current, anchor?: 'left' | 'right' | 'top' | 'bottom' | 'auto'): PropsBox => {
-    const pos = target.getBoundingClientRect() as DOMRect;
+export const getPosition = (
+    target: HTMLElement,
+    current: HTMLElement,
+    anchor?: 'left' | 'right' | 'top' | 'bottom' | 'auto'
+): PropsBox => {
+    const pos = target.getBoundingClientRect();
     const curHeight: number = current.offsetHeight;
     const curWidth: number = current.offsetWidth;
     if (anchor === 'bottom' || (anchor === 'auto' && window.innerHeight > pos.top + pos.height + curHeight + shift)) {

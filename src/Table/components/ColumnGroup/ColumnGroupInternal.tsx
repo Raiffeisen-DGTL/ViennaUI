@@ -1,7 +1,7 @@
 import React from 'react';
-import { Pinner, usePinnableColumns } from '..';
+import { ColumnGroupProps, ColumnGroupService, Pinner, usePinnableColumns } from '..';
 import { TableFeatures } from '../../types';
-import { useTableContext } from '../Context/TableContext';
+import { useTableContext } from '../Context';
 import { Row, Th } from '../TableHeader/TableHeader.styles';
 
 // Depending on enabled features we want to span first or/and last group cells to extra columns
@@ -17,6 +17,9 @@ function getExtraSpans(features: TableFeatures) {
     if (features.has('ExpandingRow')) {
         extras.first += 1;
     }
+    if (features.has('ExpandingGroup')) {
+        extras.first += 1;
+    }
     if (features.has('ActionsColumn')) {
         extras.last += 1;
     }
@@ -25,9 +28,13 @@ function getExtraSpans(features: TableFeatures) {
 }
 
 // Gets map of columngroups colspans
-function getColSpans(columnGroups, columnGroupSpan, features) {
-    let firstVisible = null;
-    let lastVisible = null;
+function getColSpans(
+    columnGroups: ColumnGroupProps[],
+    columnGroupSpan: ColumnGroupService['columnGroupSpan'],
+    features: TableFeatures
+) {
+    let firstVisible: string | null = null;
+    let lastVisible: string | null = null;
     const spanMap = new Map<string, number>();
 
     const { first, last } = getExtraSpans(features);
@@ -93,7 +100,6 @@ export const ColumnGroupInternal: React.FC = () => {
         return (
             <Th
                 key={id}
-                ref={headerRef}
                 $group
                 $size={size}
                 $color={color}
@@ -107,5 +113,5 @@ export const ColumnGroupInternal: React.FC = () => {
         );
     });
 
-    return <Row>{colGroups}</Row>;
+    return <Row ref={headerRef}>{colGroups}</Row>;
 };

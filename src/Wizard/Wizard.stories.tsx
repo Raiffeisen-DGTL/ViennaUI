@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Story, Meta } from 'storybook';
-import { GoRight, GoLeft } from 'vienna.icons';
+import { GoRightIcon, GoLeftIcon } from 'vienna.icons';
 import { Wizard, WizardProps } from './Wizard';
 import { Button, Flex, Whitespace } from '../index';
 
@@ -31,13 +31,13 @@ export const Overview: Story<WizardProps> = (args) => {
                 <Flex gap='s2'>
                     {step !== 0 && (
                         <Button design='ghost' onClick={handleClickButton('prev')}>
-                            <GoLeft /> Назад
+                            <GoLeftIcon /> Назад
                         </Button>
                     )}
                     {step !== 2 && (
                         <Whitespace ml='auto'>
                             <Button design='accent' onClick={handleClickButton('next')}>
-                                Далее <GoRight />
+                                Далее <GoRightIcon />
                             </Button>
                         </Whitespace>
                     )}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from 'storybook';
 import * as Icons from 'vienna.icons';
-import { Groups } from "../Groups";
+import { Groups } from '../Groups';
 
 export default {
     title: 'Development/Icons',
@@ -12,12 +12,12 @@ export const PlaywrightTest: Story = () => {
     const iconNames = Object.keys(Icons).sort();
 
     return (
-        <Groups id='icons' design="vertical">
-            {iconNames.map(iconName => {
+        <Groups id='icons' design='vertical'>
+            {iconNames.map((iconName) => {
                 const Current = Icons[iconName];
 
                 return (
-                    <Groups id={iconName} key={iconName} design="horizontal">
+                    <Groups id={iconName} key={iconName} design='horizontal'>
                         <Current size='xs' />
                         <Current size='s' />
                         <Current size='m' />
@@ -29,7 +29,7 @@ export const PlaywrightTest: Story = () => {
                         <Current color='red' size='l' />
                         <Current color='red' size='xl' />
                     </Groups>
-                )
+                );
             })}
         </Groups>
     );
@@ -39,11 +39,11 @@ export const PlaywrightTest: Story = () => {
 PlaywrightTest.parameters = {
     docs: {
         source: {
-            code: "Disabled for this story, see https://github.com/storybookjs/storybook/issues/11554"
-        }
+            code: 'Disabled for this story, see https://github.com/storybookjs/storybook/issues/11554',
+        },
     },
     centered: true,
-    fullscreen: true
-}
+    fullscreen: true,
+};
 
-PlaywrightTest.storyName = 'Для тестирования'
+PlaywrightTest.storyName = 'Для тестирования';

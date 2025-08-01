@@ -1,10 +1,14 @@
 import styled, { css } from 'styled-components';
+import { alarm } from 'vienna.ui-theme';
 import { getPresets } from '../Utils/styling';
 import { AlarmDesign } from './Alarm';
 
-const { base, design } = getPresets('alarm', {
-    base: null,
+const presets = getPresets(
+    alarm,
+    'alarm'
+)({
     design: '$design',
+    size: '$size',
 });
 
 export interface PropsBox {
@@ -14,6 +18,7 @@ export interface PropsBox {
     $bottom?: string;
     $left?: string;
     $right?: string;
+    $size?: 's' | 'm';
 }
 export const Box = styled.div<PropsBox>`
     position: ${({ $position }) => $position};
@@ -23,8 +28,8 @@ export const Box = styled.div<PropsBox>`
     align-items: center;
     box-sizing: border-box;
 
-    ${base}
-    ${design}
+    ${presets.design}
+    ${presets.size}
 
     ${({ $position, $top, $bottom, $left, $right }) =>
         $position === 'absolute' &&

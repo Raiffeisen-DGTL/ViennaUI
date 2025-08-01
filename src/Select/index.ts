@@ -1,2 +1,2 @@
-export { Select, type SelectProps, type SelectChangeEvent, type SelectEvent, type SelectScrollEvent } from './Select';
-export type { SelectLocalization } from './localization';
+export { Select, type SelectProps, type SelectChangeEvent, type SelectScrollEvent } from './Select';
+export type { SelectLocalization, SelectLocalizationProps } from './localization';
