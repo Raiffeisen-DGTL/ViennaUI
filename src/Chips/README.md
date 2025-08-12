@@ -10,14 +10,15 @@ import { Chips } from 'vienna-ui';
 
 ## Свойства / Props
 
-| Prop    | Type                                          | Default   | Description       |
-| ------- | --------------------------------------------- | --------- | ----------------- |
-| active  | string \| string[] \| undefined               |     | Активные элементы |
-| design  | 'accent' \| 'primary' \| 'ghost' \| undefined | |
-| align   | string \| undefined                           |   |
-| onPressEnter | KeyboardEventHandler<HTMLDivElement> \| undefined |
-| size  | 'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl' \| undefined | |
-
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | `PropsBox['$size']` | — |  |
+| design | `PropsBox['$design']` | — |  |
+| align | `PropsBox['$align']` | — |  |
+| active | `null \| string \| string[]` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onPressEnter | `KeyboardEventHandler<HTMLDivElement>` | — |  |
 
 
 # Chips

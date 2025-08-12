@@ -5,6 +5,34 @@
 import { Steps } from 'vienna-ui';
 ``` 
 
+## Steps Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | `'s' \| 'm'` | — |   |
+| orientation | `StepProps['orientation']` | — |   |
+| noDivider | `boolean` | — |   |
+| enableAnimation | `boolean` | — |   |
+| mode | `'blue' \| 'black'` | — |   |
+
+## Step Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | `'s' \| 'm'` | — |   |
+| status | `StepStatus` | — |   |
+| index | `number` | — |   |
+| noDivider | `boolean` | — |   |
+| mode | `'blue' \| 'black'` | — |   |
+| orientation | `'horizontal' \| 'vertical'` | — |   |
+| header | `string` | — |   |
+| text | `string` | — |   |
+| isLast | `boolean` | — |   |
+| enableAnimation | `boolean` | — |   |
+| truncateHeader | `boolean` | — |   |
+| disabled | `boolean` | — |   |
+| showTooltip | `boolean` | — | Блокировка перехода по шагам |
+| tooltipText | `string` | — | Текст тултипа при статусе 'waiting' |
 
 
 # Steps

@@ -5,6 +5,15 @@
 import { Result } from 'vienna-ui';
 ``` 
 
+## ResultProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| errorText | `string` | — |  |
+| title | `string` | — |  |
+| description | `string` | — |  |
+| imageSrc | `string` | — |  |
+| actions | `ReactNode` | — |  |
 
 # Result
 

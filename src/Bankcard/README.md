@@ -4,6 +4,16 @@
 ```
 import { Bankcard } from 'vienna-ui';
 ```
+## BankcardProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| disabled | `boolean` | — |  |
+| type | `CardType` | — |  |
+| icon | `ReactElement` | — |  |
+| alt | `string` | — |  |
+| src | `string` | — |  |
+| width | `number` | — |  |
 
 # Bankcard
 

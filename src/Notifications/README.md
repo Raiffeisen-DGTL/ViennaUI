@@ -17,7 +17,6 @@ import { Notifications, Notifier } from 'vienna-ui';
 | align | "left" \| "right" \| "center" \| undefined |  | Выравнивание по горизонтали |
 | valign | "top" \| "bottom" \| undefined |  | Выравнивание по вертикали |
 | onClose | ((e: any, data: any) => void) \| undefined |  |
-| compactBelow | number \| undefined |  | Компактный режим |
 | limit | number \| undefined |  | Верхняя граница количества отображаемых нотификаций |
 | pinWithMouse | boolean \| undefined |  | Возможность взаимодействия пользователя с нотификацией |
 | compact | ResponsiveProp<boolean, Breakpoints> \| undefined |

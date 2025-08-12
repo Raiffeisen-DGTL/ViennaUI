@@ -15,15 +15,22 @@ import { Drawer, useDrawer } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| isOpen | boolean \| undefined |  |
-| closeIcon | ReactNode | | Иконка для закрытия |
-| noScroll | boolean \| undefined |  | Управление возможностью прокрутки всего контента или только содержимого `Drawer.Body` |
-| orientation | "top" \| "bottom" \| "left" \| "right" \| undefined |  | Позиционирование |
-| onClose | ((data?: any) => boolean \| void \| Promise) \| undefined |  |
-| onPreDispose | (() => void) \| undefined |  | Обработчик события исчезновения drawer-a |
-| state | any |  | Управление состоянием черех хук `useDrawer` |
-| ref | boolean \| undefined  |
-| closeByFade | boolean \| undefined  |
+| state | `{ children?: ReactNode; onClose?: (data?: unknown) => void; open?: (() => void) \| null; close?: (data?: unknown, force?: boolean) => void; }` | — |  |
+| isOpen | `boolean` | — |  |
+| closeIcon | `ReactNode` | — |  |
+| width | `string \| 'auto'` | — |  |
+| noScroll | `boolean` | — |  |
+| orientation | `'left' \| 'right' \| 'top' \| 'bottom'` | — |  |
+| onClose | `(data?: unknown) => void \| boolean \| Promise<boolean>` | — |  |
+| onAfterOpen | `() => void` | — | Callback функция открытия окна с учётом времени выполнения анимации |
+| onPreDispose | `() => void` | — |  |
+| closeByFade | `boolean` | — |  |
+| closeByEscape | `boolean` | — |  |
+| lockBodyScroll | `boolean` | — |  |
+| wrapperPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |  |
+| testId | `{ btnClose?: string; overlay?: string; }` | — |  |
+| iconOrientation | `'left' \| 'right'` | — |  |
+
 
 ## HTMLAttributes 👇
 

@@ -6,6 +6,14 @@
 import { Divider } from 'vienna-ui';
 ``` 
 
+## DividerProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | `'s' \| 'm'` | — |  |
+| color | `string` | — |  |
+| orientation | `'horizontal' \| 'vertical'` | — |  |
+
 
 # Divider
 

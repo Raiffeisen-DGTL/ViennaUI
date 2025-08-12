@@ -12,53 +12,25 @@ import { Input } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-|ref | Ref<HTMLInputElement> \| undefined | | |
-| size | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl', Breakpoints> \| undefined | | |
-|design | 'outline' \| 'material' \| undefined | | |
-|prefix| ReactNode | | |
-|postfix |ReactNode | | |
-|active | boolean \| undefined | | |
-|onChange | InputEvent<FormEvent<HTMLInputElement>> \| undefined | | |
-|onBlur| InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined| | |
-|onFocus |InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined| | |
-|onKeyDown |KeyboardEventHandler<HTMLInputElement> \| undefined| | |
-|onKeyUp |KeyboardEventHandler<HTMLInputElement> \| undefined| | |
-|onKeyPress |KeyboardEventHandler<HTMLInputElement> \| undefined| | |
-|onPaste| ClipboardEventHandler<HTMLInputElement> \| undefined| | |
-|onCopy| ClipboardEventHandler<HTMLInputElement> \| undefined| | |
-|onCut |ClipboardEventHandler<HTMLInputElement> \| undefined| | |
-|invalid| boolean \| undefined| | |
-|smartPlaceholder| ReactNode| | |
-|onDespose| (() => void) \| undefined| | |
-|value| string \| undefined| | |
-|defaultValue| string \| undefined| | |
-|autoCapitalize| string \| undefined| | |
-|onMouseDown| Function \| undefined| | |
-|onPointerDown| Function \| undefined| | |
-|placeholderValueAutoDiff| boolean \| undefined| | |
-|onUpdated| (() => void) \| undefined | | |
+| ref | `React.Ref<HTMLInputElement>` | — | Ссылка на нативный элемент input, доступна после отрисовки |
+| size | `ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl', B>` | — | Размеры |
+| design | `'outline' \| 'material'` | — | Дизайн |
+| prefix | `React.ReactNode` | — | Значение отображаемое перед компонентом |
+| postfix | `React.ReactNode` | — | Значение отображаемое после компонента |
+| active | `boolean` | — | Принудительный ховер |
+| additionalPostfix | `React.ReactNode` | — | Режим для включения Close icon в компоненте Search |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onChange | `(data: { value: string; event: React.ChangeEvent<HTMLInputElement>; options: { name?: string; } }) => void` | — | Обработчик события при вводе символов |
+| onBlur | `InputEventReact.FocusEvent<HTMLInputElement>>` | — | Обработчик события при потере фокуса |
+| onFocus | `InputEventReact.FocusEvent<HTMLInputElement>>` | — | Обработчик события при получении фокуса |
+| onKeyDown | `React.KeyboardEventHandler<HTMLInputElement>` | — | Обработчик события при нажатии кнопки клавиатуры |
+| onKeyUp | `React.KeyboardEventHandler<HTMLInputElement>` | — | Обработчик события при отпускании кнопки клавиатуры |
+| onKeyPress | `React.KeyboardEventHandler<HTMLInputElement>` | — | Обработчик события при нажатии и удержании кнопки клавиатуры |
+| onPaste | `React.ClipboardEventHandler<HTMLInputElement>` | — | Обработчик вставки |
+| onCopy | `React.ClipboardEventHandler<HTMLInputElement>` | — | Обработчик копирования |
+| onCut | `React.ClipboardEventHandler<HTMLInputElement>` | — | Обработчик вырезки |
 
-## HTMLAttributes
-
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| id | string \| undefined | |
-| title | string \| undefined | |
-| className | string \| undefined | |
-| spellCheck | boolean \| undefined | |
-| tabIndex | number \| undefined | |
-| height | string \| undefined | |
-| width | string \| undefined | |
-| style | CSSProperties \| undefined | |
-| name | string \| undefined | |
-| type | string \| undefined | |
-| maxLength | number \| undefined | |
-| autoComplete | string \| undefined | |
-| autoCorrect | string \| undefined | |
-| autoFocus | boolean \| undefined | |
-| readOnly | boolean \| undefined | |
-| placeholder | string \| undefined | |
-| disabled | boolean \| undefined | |
 
 
 # Input

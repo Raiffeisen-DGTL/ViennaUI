@@ -15,10 +15,9 @@ import { Badge } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | color | BadgeColor \| undefined  |
-| size | ResponsiveProp<'xs' \|'s' \| 'm' \| 'l', B> \| undefined | | Доступные размеры |
+| size | ResponsiveProp<'s' \| 'm' \| 'l', B> \| undefined | | Доступные размеры |
 | grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \| undefined |  |
 | children | ReactNode \| undefined  | | Ссылка на DOM элемент |
-| clickable | boolean \| undefined  | | Возможность нажатия на компонент |
 
 ## Использование
 

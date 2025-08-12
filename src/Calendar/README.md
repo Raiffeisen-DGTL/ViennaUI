@@ -12,27 +12,31 @@ import { Calendar } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| date | DateValue \| Date \| \| Date[] \| undefined | | Selected/active date |
-| format | Format \| undefined |  |
-| onChange | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: DateResponse<DateValue> \| DateResponse<Date>) => void) \| undefined |  |
-| defaultViewMode | ViewMode \| undefined |  | Начальный экран для отображения |
-| disabledDates | Date[] \| DisabledDates \| dateFunction  \| undefined |  | Неактивные дни |
-| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Выходные дни |
-| eventDates | Date[] \| eventDateFunction \| undefined |  | Даты событий |
-| ranged | boolean \| undefined |  | Возможность выбора периода дат |
-| dateStart | DateValue \| Date \| undefined |  | Начальная дата для периода дат |
-| dateEnd | DateValue \| Date \| undefined |  | Конечная дата для периода дат |
-| todayButton | boolean \| undefined |  | Возможность убрать или отобразить кнопку "Сегодня" |
-| minDate | DateValue \| Date \| undefined |  | Нижняя граница доступных для выбора дат |
-| maxDate | DateValue \| Date \| undefined |  | Верхняя граница доступных для выбора дат |
-| mode | "day" \| "month" \| undefined |  | Тип календаря - выбор дня или месяца |
-| onChangeMonth | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: { date: Date \| Date[]; value: string; }) => void) \| undefined |  | Обработчик для mode = ‘month’ |
-| startingWeekDay | StartingWeekDay \| undefined |
-| allowMultiple | boolean \| undefined |
-| localization | Localization<CalendarLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
-| onChangeDisplayedDate | ((date: Date) => void) \| undefined |
-| defaultDisplayedDate | Date \| undefined |
+| date | `DateValue \| Date \| Date[]` | — |  |
+| format | `Format` | — |  |
+| onChange | `(event: React.FormEvent<HTMLInputElement> \| Event \| null, options: DateResponse<DateValue> \| DateResponse<Date>) => void` | — |  |
+| onBlur | `(event: React.FocusEvent<HTMLDivElement>) => void` | — |  |
+| defaultViewMode | `ViewMode` | — | Тип экрана календаря, отображаемого по умолчанию |
+| disabledDates | `Dates` | — | Неактивные для выбора даты |
+| weekendDates | `Dates` | — | Выходные даты |
+| eventDates | `Date[] \| EventDateFunction` | — | Даты-событие |
+| ranged | `boolean` | — | Возможность выбрать период дат |
+| dateStart | `DateValue \| Date` | — | Дата начала периода |
+| dateEnd | `DateValue \| Date` | — | Дата окончания периода |
+| todayButton | `boolean` | — | Отображение кнопки "Сегодня" |
+| minDate | `DateValue \| Date` | — | Нижняя граница выбора даты |
+| maxDate | `DateValue \| Date` | — | Верхняя граница выбора даты |
+| mode | `'day' \| 'month'` | — | Тип календаря - выбор дня или месяца |
+| onChangeMonth | `(options: { date: Date \| Date[]; value: string }) => void` | — | Метод вызывается при mode = 'month' |
+| startingWeekDay | `StartingWeekDay` | — | Дни недели отображаются с понедельника (1) или с воскресенья (0) |
+| allowMultiple | `boolean` | — | Возможность выбрать несколько дат |
+| locale | `Locale` | — | Локаль календаря |
+| onChangeDisplayedDate | `(date: Date) => void` | — | Изменение отображаемого месяца/года |
+| defaultDisplayedDate | `Date` | — | Дефолтное значение отображаемой даты |
+| visible | `boolean` | — |  |
+| actionsRef | `React.MutableRefObjectFocusActions>` | — | Рефка содержащая методы для установки фокуса |
+| testId | `{ btnYearPrev?: string; btnYearNext?: string; btnMonthPrev?: string; btnMonthNext?: string; btnViewMode?: string; btnToday?: string; btnCalendarCell?: (date: Date) => string; }` | — |  |
+
 
 
 

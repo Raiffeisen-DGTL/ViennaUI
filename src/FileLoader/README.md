@@ -10,35 +10,21 @@ import { FileLoader } from 'vienna-ui';
 
 ## Свойства / Props
 
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| id | string \| undefined |  |
-| name | string \| undefined |  |
-| ref | Ref<HTMLInputElement> \| undefined |  | Указывает на нативный компонент `input[type=file]` |
-| content | ReactNode |  | Первая строка поля или любой контент |
-| subContent | ReactNode |  | Вторая строка поля |
-| multiple | boolean \| undefined |  | Поддержка множественного выбора файлов |
-| maxSizeByte | number \| undefined |  | Максимальный размер каждого файла в байтах |
-| invalid | boolean \| undefined |  | Состояние ошибки |
-| disabled | boolean \| undefined |  | Неактивное состояние |
-| onChange | ((event: any, files: FCCFile[], errorFiles: FCCFileError[]) => void) \| undefined |  | Событие onChange |
-| localization | Localization<CalendarLocalization, undefined> \| undefined |
-
-## Свойства Файла / File Props
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| file | FCCFile | | Файл |
-| altText | string \| undefined | |
-| invalid | boolean \| undefined |  | Состояние ошибки |
-| disabled | boolean \| undefined |  | Неактивное состояние |
-| closable | boolean \| undefined |  | Возможность закрытия |
-| progress | number \| undefined |  | Процент загрузки |
-| loading | number \| undefined |  | Состояние загрузки |
-| extension | string \| undefined |  | Расширение |
-| accept | string \| undefined |  | Перечесление через запятую поддерживаемых форматов и/или MIME типов \*/ |
-| onClick | ((file: FCCFile) => void) \| undefined |
-| onDelete | ((file: FCCFile) => void) \| undefined |
+| id | `string` | — |  |
+| name | `string` | — |  |
+| content | `ReactNode` | — | Первая строка поля или любой контент |
+| subContent | `ReactNode` | — | Вторая строка поля |
+| multiple | `boolean` | — | Поддержка множественного выбора файлов |
+| accept | `string` | — | Перечисление через запятую поддерживаемых форматов и/или MIME типов |
+| disabled | `boolean` | — |  |
+| maxSizeByte | `number` | — | Максимальный размер каждого файла в байтах |
+| invalid | `boolean` | — | Состояние ошибки |
+| onChange | `OnChangeHandler<FCCFile[], React.ChangeEvent \| React.DragEvent \| ClipboardEvent, { errorFiles: FCCFileError[]; name?: string; }>` | — |  |
+| maxFiles | `number` | — | Ограничение на количество загружаемых файлов |
+| pasteListenerRef | `React.MutableRefObjectHTMLElement \| null>` | — |  |
 
 
 # FileLoader

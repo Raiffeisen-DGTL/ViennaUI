@@ -12,17 +12,14 @@ import { FileLoaderButton } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| loading | boolean \| undefined |  | Состояние загрузки |
-| maxSizeByte | number \| undefined |  | Максимальный размер каждого файла в байтах |
-| onChange | ((event: any, files: FCCFile[], errorFiles: FCCFileError[]) => void) \| undefined |  |
-| design | "critical" \| "accent" \| "primary" \| "outline" \| "outline-critical" \| "ghost" \| undefined |  | Дизайн |
-| size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
-| grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \|  |  | Размещение в сетке (аналогично `Button`) |
-| square | boolean \| undefined |  | Ширина равна высоте, если это возможно (аналогично `Button`) |
-| accept | string \| undefined |
-| multiple | boolean \| undefined |  | Поддержка множественного выбора файлов |
-| maxFiles | number \| undefined |  |
-
+| loading | `boolean` | — |  |
+| multiple | `boolean` | — | Поддержка множественного выбора файлов |
+| accept | `string` | — | Перечисление через запятую поддерживаемых форматов и/или MIME типов |
+| maxSizeByte | `number` | — | Максимальный размер каждого файла в байтах |
+| maxFiles | `number` | — | Ограничение на количество загружаемых файлов |
+| disabled | `boolean` | — |  |
+| files | `File[]` | — |  |
+| onChange | `OnChangeHandler<FCCFile[], React.ChangeEvent \| React.DragEvent \| ClipboardEvent, { errorFiles: FCCFileError[]; name?: string; }>` | — |  |
 
 # FileLoaderButton
 

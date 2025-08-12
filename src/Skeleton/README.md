@@ -5,6 +5,16 @@
 ```
 import { Skeleton } from 'vienna-ui';
 ``` 
+## SkeletonProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| design | `'line' \| 'block' \| 'square' \| 'circle'` | — |  |
+| size | `SkeletonSize` | — |  |
+| height | `string` | — |  |
+| width | `string` | — |  |
+| disableAnimation | `boolean` | — |  |
+| mode | `SkeletonMode` | — |  |
 
 
 # Skeleton

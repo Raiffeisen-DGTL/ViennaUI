@@ -10,17 +10,16 @@ import { Tabs } from 'vienna-ui';
 
 ## Свойства / Props
 
-
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "accent" \| "primary" \| undefined |  | Дизайн |
-| size | "l" \| "m" \| "s" \| undefined | | Размеры |
-| value | unknown |  | Выбранный таб (совпадает с value `Tabs.Tab`) |
-| resizeble | boolean \| undefined |  | Включает или отключает изменение размера по умолчанию включено |
-| comparator | ((value: any, tabValue: any) => boolean) \| undefined |  | Функция сравнения, которая определяет активный элемент |
-| onChange | ((event: FormEvent<HTMLDivElement>, value: unknown) => void) \| undefined |  | Обработчик события при переключении таба |
-| localization | Localization<TabsLocalization, undefined> \| undefined
-| Локализация |
+| design | `PropsBox['$design']` | — | Дизайн |
+| size | `PropsBox['$size']` | — | Размеры |
+| resizable | `boolean` | — | Включает или отключает изменение размера по умолчанию выключено (добавление опций в "Еще...") |
+| value | `T` | — | Выбранный таб (совпадает с value Tabs.Tab) |
+| comparator | `(value?: T, tabValue?: T) => boolean` | — | Функция сравнения, которая определяет активный элемент |
+| onChange | `OnChangeHandler<T, React.MouseEvent, null>` | — | Обработчик события при переключении таба |
+| alignMiddle | `PropsBox['$alignMiddle']` | — | Свойство отвечает за растягивание по высоте (по умолчанию выключено) |
+
 
 
 # Tabs

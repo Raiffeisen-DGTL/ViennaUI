@@ -5,6 +5,24 @@
 ```
 import { CardVersatile } from 'vienna-ui';
 ``` 
+## CardVersatileProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| title | `ReactNode` | — |  |
+| subtitle | `ReactNode` | — |  |
+| design | `BoxProps['$design']` | — |  |
+| icon | `IconContainerProps` | — |  |
+| iconSlot | `ReactNode` | — |  |
+| hint | `HintProps` | — |  |
+| counter | `CounterProps` | — |  |
+| badge | `OmitBadgeProps, 'ref'>` | — |  |
+| extraText | `ReactNode` | — |  |
+| topRightSlot | `ReactNode` | — |  |
+| disableDivider | `boolean` | — |  |
+| hasInteractive | `boolean` | — |  |
+| selected | `boolean` | — |  |
+| children | `ReactNode` | — |  |
 
 # CardVersatile
 

@@ -20,7 +20,7 @@ import { Alarm } from 'vienna-ui';
 | bottom | string \| undefined  |  |
 | left | string \| undefined  |  |
 | right | string \| undefined  |  |
-
+| size |"s" \| "m"  |  |
 
 # Alarm
 

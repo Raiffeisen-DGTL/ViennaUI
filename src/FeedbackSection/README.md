@@ -7,6 +7,17 @@ import { FeedbackSection } from 'vienna-ui';
 ``` 
 
 
+## FeedbackSectionProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| state | `FeedbackSectionState` | — |  |
+| lang | `FeedbackSectionLang` | — |  |
+| onSubmit | `(data: FeedbackSectionState, resolve: <T>(value: T) => void, reject: (reason?: string \| AnyObject \| Error) => void) => Promise<void> \| void` | — |  |
+| onYesClick | `() => void` | — |  |
+| onNoClick | `() => void` | — |  |
+| textareaProps | `TextareaPropsWithRef` | — |  |
+| testId | `{ btnYes?: string; btnNo?: string; btnSubmit?: string; }` | — |  |
 
 # FeedbackSection
 

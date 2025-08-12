@@ -12,24 +12,24 @@ import { DropList } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | ResponsiveProp<"s" \| "m" \| "l", Breakpoints> \| undefined |
-| maxHeight | number \| undefined |  | Максимальная высота |
-| fitItems | boolean \| undefined |  | Компонент подстраивается под ширину ближайшего родителя |
-| align | "horizontal" \| "vertical" \| undefined |  | Выравнивание |
-| float | "start" \| "end" \| undefined | | Место появление списка относитетельно его ширины |
-| scrollable | boolean \| undefined |  | Возможность прокручивать список |
-| margins | { x: number; y: number; } \| undefined |  |
-| fixed | boolean \| undefined |  | Фиксируется по центру |
-| container | HTMLElement \| undefined |  |  |
-| followParentWhenScroll | boolean \| undefined |  |
-| onHide | (() => void) \| undefined |  |  |
+| maxHeight | `PropsBox['$maxHeight']` | — |  |
+| width | `PropsBox['$width']` | — |  |
+| fitItems | `PropsBox['$fitItems']` | — |  |
+| scrollable | `PropsBox['$scrollable']` | — |  |
+| size | `ResponsiveProp<'s' \| 'm' \| 'l', B>` | — |  |
+| align | `UseDropConfig['align']` | — |  |
+| float | `'start' \| 'end'` | — |  |
+| margins | `{ x: number; y: number; }` | — |  |
+| fixed | `boolean` | — |  |
+| coords | `{ x: number; y: number; }` | — |  |
+| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |  |
+| containerRef | `React.MutableRefObjectHTMLElement \| null>` | — |  |
+| container | `HTMLElement` | — | Опционально: элемент от которого вести расчет пересечений |
+| followParentWhenScroll | `boolean` | — |  |
+| onHide | `() => void` | — |  |
+| onOutsideClick | `(e: TouchEvent \| MouseEvent) => void` | — | Опционально: функция, которая вызывается при клике вне DropList |
+| additionalOutsideClickRefs | `React.MutableRefObjectHTMLElement \| null>[]` | — | Опционально: дополнительные элементы, над которыми вешается onOutsideClick |
 
-
-## HTMLAttributes 👇
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| width | number \| undefined |
-| coords | { x: number; y: number; } \| undefined |
 
 # DropList
 

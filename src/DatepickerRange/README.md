@@ -12,17 +12,23 @@ import { DatepickerRange } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | string \| \| undefined  |
-| isCalendarOpen | boolean \| undefined |  | Флаг управляет отображением календаря из вне |
-| eventDates | Date[] \| dateFunction \| undefined |  | Даты-события |
-| minDate | Date \| undefined |  | Нижняя граница выбора даты |
-| maxDate | Date \| undefined |  | Верхняя граница выбора даты |
-| onChange | ((event: InputEvent<FormEvent<HTMLInputElement>> \| Event \| null, data: { value?: string \| undefined; valueAsDate: DateType; name?: string \| undefined; isDisabled?: boolean \| undefined; }) => void) \| undefined  |
-| disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Неактивные для выбора даты |
-| startingWeekDay | 0 \| 1 \| undefined |
-| onChangeDisplayedDate | ((date: Date) => void) \| undefined|
-| view | ViewMode  \| undefined  |
-| localization | Localization<DatePickerLocalization, undefined> \| undefined |
+| value | `string` | — | дата передается строкой вида 01.01.2021-12.01.2021 |
+| isCalendarOpen | `boolean` | — | Отображение календаря |
+| isCalendarAlwaysOpen | `boolean` | — | Календарь всегда открыт |
+| eventDates | `Date[] \| dateFunction` | — | Даты-событие |
+| minDate | `Date` | — | Нижняя граница выбора даты |
+| maxDate | `Date` | — | Верхняя граница выбора даты |
+| onChange | `OnChangeHandler<string, React.FormEvent<HTMLInputElement> \| Event \| null, { name?: string; isDisabled?: boolean; }>` | — |  |
+| onBlur | `(event: React.FocusEvent, data: { value: string; name?: string; }) => void` | — |  |
+| disabledDates | `CalendarDates` | — | Неактивные для выбора даты |
+| startingWeekDay | `StartingWeekDay` | — | Дни недели отображаются с понедельника (1) или с воскресенья (0) |
+| locale | `Locale` | — | Локаль календаря |
+| onChangeDisplayedDate | `(date: Date) => void` | — | Изменение отображаемого месяца/года |
+| defaultDisplayedDate | `Date` | — | Дефолтное значение отображаемой даты |
+| view | `ViewMode` | — | Выбор режима отображения "месяцы" и "года" |
+| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — | Портал для dropdown |
+| testId | `{ container?: string; calendarBox?: string; calendar?: PropsCalendar['testId']; }` | — |  |
+| placement | `Placement` | — | Позиционирование календаря |
 
 
 # DatepickerRange

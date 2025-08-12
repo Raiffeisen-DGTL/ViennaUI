@@ -14,7 +14,12 @@ import { Accordion } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | size | 's' \| 'm' \| 'l' \| undefined |  |  |
-| iconPosition | 'left' \| 'right' \| 'none' \| undefined |  | |;
+| iconPosition | 'left' \| 'right' \| 'none' \| undefined |  | |
+| hideByStyles | boolean \| undefined |  | |
+| as | KnownTarget \| undefined |  | |
+| forwardedAs | KnownTarget \| undefined |  | |
+| theme | DefaultTheme \| undefined |  | |
+
 
 ## HTMLAttributes
 

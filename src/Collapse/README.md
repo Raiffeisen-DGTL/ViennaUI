@@ -6,6 +6,15 @@
 import { Collapse } from 'vienna-ui';
 ``` 
 
+## CollapseProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| open | `WrapperProps['open']` | — |  |
+| initiallyOpen | `boolean` | — |  |
+| size | `PropsCollapseWrapper['$size']` | — |  |
+| onOpenChange | `WrapperProps['onOpenChange']` | — |  |
+
 # Collapse
 
 Компонент `Collapse` используется для отображения и скрытия контента. Он полезен для скрытия дополнительного контента или необязательных полей в формах.

@@ -12,29 +12,23 @@ import { Datepicker } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | string \| Date \| undefined |  | Выбранная дата передается строкой вида 01.01.2021 |
-| isCalendarOpen | boolean \| undefined |  | Флаг управляет отображением календаря из вне |
-| eventDates | Date[] \| eventDateFunction \| undefined |  | Даты-события |
-| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Выходные даты |
-| todayButton | boolean \| undefined |  | Отображение кнопки “Сегодня” |
-| minDate | Date \| undefined |  | Нижняя граница выбора даты |
-| maxDate | Date \| undefined |  | Верхняя граница выбора даты |
-| onChange | ((event: Event \| InputEvent> \| null, data: { value?: string \| undefined; name?: string \| undefined; isDisabled?: boolean \| undefined; }) => void) \| undefined |  |
-| disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Неактивные для выбора даты |
-| design | "outline" \| "material" \| undefined | | Дизайн |
-| startingWeekDay | 0 \| 1 \| undefined |
-| onChangeDisplayedDate | ((date: Date) => void) \| undefined|
-| defaultDisplayedDate | Date  \| undefined |  
-| invalid | boolean \| undefined |  |
-| disabled | boolean \| undefined |  |
-| dropdownPortal | HTMLElement \| MutableRefObject<HTMLElement \| null> \| null  \| undefined |  
-| view | ViewMode  \| undefined  |
-| postfix | ReactNode |  | Значение отображаемое в конце поля ввода |
-| smartPlaceholder | ReactNode |  |
-| onDispose | (() => void) \| undefined |  |
-| localization | Localization<DatePickerLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
-
+| value | `string \| Date` | — | дата передается строкой вида 01.01.2021 |
+| isCalendarOpen | `boolean` | — | Отображение календаря |
+| eventDates | `Date[] \| eventDateFunction` | — | Даты-событие |
+| weekendDates | `CalendarDates` | — | Выходные даты |
+| todayButton | `boolean` | — | Отображение кнопки "Сегодня" |
+| minDate | `Date` | — | Нижняя граница выбора даты |
+| maxDate | `Date` | — | Верхняя граница выбора даты |
+| onChange | `OnChangeHandler<string, React.FormEvent<HTMLInputElement> \| Event \| null, { name?: string; isDisabled?: boolean; date?: Date; }>` | — |  |
+| onBlur | `InputEventReact.FocusEvent<HTMLInputElement \| HTMLDivElement>>` | — |  |
+| disabledDates | `CalendarDates` | — | Неактивные для выбора даты |
+| startingWeekDay | `StartingWeekDay` | — | Дни недели отображаются с понедельника (1) или с воскресенья (0) |
+| locale | `Locale` | — | Локаль календаря |
+| onChangeDisplayedDate | `(date: Date) => void` | — | Изменение отображаемого месяца/года |
+| defaultDisplayedDate | `Date` | — | Дефолтное значение отображаемой даты |
+| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — | Портал для dropdown |
+| testId | `{ container?: string; calendarBox?: string; calendar?: PropsCalendar['testId']; }` | — |  |
+| placement | `Placement` | — | Позиционирование календаря |
 
 # Datepicker
 

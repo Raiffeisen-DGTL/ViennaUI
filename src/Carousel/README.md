@@ -6,6 +6,21 @@
 import { Carousel } from 'vienna-ui';
 ``` 
 
+## CarouselProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| header | `React.ReactNode` | — |  |
+| carouselMode | `CarouselMode` | — |  |
+| buttonDesign | `Extract<ButtonDesign, 'outline' \| 'white'>` | — |  |
+| postfix | `React.ReactNode` | — |  |
+| flipByOne | `boolean` | — |  |
+| dragToFlip | `boolean` | — |  |
+| items | `RenderProps[]` | — |  |
+| controlsRef | `React.MutableRefObject<{ next: () => void; prev: () => void; goTo: (index: number) => void; } \| null>` | — |  |
+| testId | `{ leftBtn?: string; rightBtn?: string; track?: string; item?: (item: RenderProps) => string; }` | — |  |
+| onClickPrev | `() => void` | — |  |
+| onClickNext | `() => void` | — |  |
 
 # Carousel
 

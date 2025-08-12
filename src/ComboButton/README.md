@@ -12,16 +12,19 @@ import { ComboButton } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| icons | Icons \| undefined | | Иконки открытого и закрытого состояния |
-| Option | Props<Breakpoints> \| undefined  |
-| fitOptions | boolean \| undefined |  | Растягивание опций по ширине родителя |
-| options | ReactNode[] \| undefined |  | Опции |
-| maxListHeight | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
-|  maxListWidth | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
-| design | ButtonDesign \| undefined | | Дизайн |
-| fixed | boolean \| undefined  |
-| float | 'start' \| 'end' \| undefined |
-| size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
+| icons | `Icons` | — | Иконки открытого и закрытого состояния |
+| fitOptions | `boolean` | — | Растягивание опций по ширине родителя |
+| options | `ReactNode[]` | — | Опции |
+| droplistContent | `ReactNode` | — | Кастомный контент дроплиста |
+| maxListHeight | `number` | — | Максимальная высота выпадающего списка в пикселях |
+| maxListWidth | `number` | — | Максимальная ширина выпадающего списка в пикселях |
+| fixed | `boolean` | — |  |
+| float | `'start' \| 'end'` | — |  |
+| align | `UseDropConfig['align']` | — |  |
+| children | `React.ReactNode` | — |  |
+| disabled | `boolean \| [boolean, boolean]` | — | При прокидывании массива из двух boolean можно по отдельности контролировать дизейбл |
+| onClick | `(e: React.MouseEvent) => void` | — |  |
+| onBlur | `(e: React.FocusEvent) => void` | — |  |
 
 
 # ComboButton

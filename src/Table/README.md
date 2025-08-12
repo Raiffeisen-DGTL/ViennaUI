@@ -12,6 +12,55 @@ import { Table } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
+| data | `T[]` | — |  |
+| size | `TableSize` | — |  |
+| valign | `TableValign` | — |  |
+| noHeader | `boolean \| undefined` | — |  |
+| noRowDivider | `boolean \| undefined` | — |  |
+| maxHeight | `string \| undefined` | — |  |
+| minHeight | `string \| undefined` | — |  |
+| noOverflow | `boolean \| undefined` | — |  |
+| disableSelectAll | `boolean \| undefined` | — |  |
+| disableCheckboxSelectAll | `boolean \| undefined` | — |  |
+| disableCheckboxes | `boolean \| undefined` | — |  |
+| maxContent | `boolean \| undefined` | — |  |
+| pinnableColumns | `boolean \| undefined` | — |  |
+| selected | `T[]` | — |  |
+| sort | `{ field: string; direction: SortDirection; } \| undefined` | — |  |
+| filter | `FilterState<T> \| undefined` | — |  |
+| dataKey | `((item: T, index: number) => string) \| undefined` | — |  |
+| onRowClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
+| onRowItemClick | `OnChangeHandler<T, React.MouseEventHTMLElement>, null>` | — |  |
+| onRowGroupClick | `OnChangeHandler<GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
+| onRowDoubleClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
+| onRowRightClick | `OnChangeHandler<T, React.MouseEventHTMLElement>, null>` | — |  |
+| onSort | `OnChangeHandler<{ field: string; direction: SortDirection; }, React.FormEvent \| undefined, null>` | — |  |
+| onFilter | `((data?: T) => void) \| undefined` | — |  |
+| onSelect | `OnChangeHandlerTableOnSelectData<T>, React.FormEvent, null>` | — |  |
+| onScroll | `((event: React.UIEventHTMLElement>) => void) \| undefined` | — |  |
+| initState | `TableState<T> \| ((state: TableState<T>) => TableState<T>)` | — |  |
+| state | `TableState<T>` | — |  |
+| service | `TableServiceFactory<T>` | — |  |
+| onUpdate | `(newState: TableState<T>, id: ModuleName \| string) => void` | — |  |
+| onInit | `({ service: TableService<T>, state: TableState<T> }) => void` | — |  |
+| expandedRow | `boolean \| undefined` | — |  |
+| filterExpandingRow | `(item: T) => boolean` | — |  |
+| onExpand | `() => void \| undefined` | — |  |
+| onClickShowAllColumns | `() => void \| undefined` | — |  |
+| enableCancelSort | `boolean \| undefined` | — |  |
+| noBorderBottom | `boolean \| undefined` | — |  |
+| noBorderBottomForLastRow | `boolean \| undefined` | — |  |
+| isError | `boolean \| undefined` | — |  |
+| isLoading | `boolean \| undefined` | — |  |
+| isEmpty | `boolean \| undefined` | — |  |
+| indeterminate | `boolean \| undefined` | — |  |
+| indeterminated | `T[]` | — |  |
+| disableCheckboxRow | `T[]` | — |  |
+| noWrap | `boolean` | — |  |
+| columns | `ColumnProps<T>[]` | — |  |
+| showSettingsAlarm | `boolean` | — |  |
+| testId | `{ row?: (val: string) => string; cell?: (row: string, col: string) => string; }` | — |  |
+| --- | --- | --- | --- |
 | service | TableServiceFactory \| undefined | | Функция-конструктор табличного сервиса |
 | size | 's' \| 'm' \| 'l' | | Размер таблицы |
 | noHeader | boolean \| undefined |  | Флаг отключающий отображение заголовка таблицы |
@@ -84,22 +133,34 @@ import { Table } from 'vienna-ui';
 
 ## Column Props
 
-| Prop      | Type                                       | Default   | Description                               |
-| --------- | ------------------------------------------ | --------- | ----------------------------------------- |
-| id        | string                                     |       | Идентификатор колонки                     |
-| title     | ReactNode \| undefined                     |  | Заголовок колонки                         |
-| align     | "left" \| "right" \| "center" \| undefined |  | Выравнивание содержимого колонки          |
-| width     | string \| undefined                        |  | Ширина колонки                            |
-| truncate  | boolean \| undefined                       |  | Флаг обрезания содержимого колонки        |
-| noWrap    | boolean \| undefined                       |  | Флаг запрещающий перенос строки в колонке |
-| hidden    | boolean \| undefined                       |  | Флаг невидимости колонки                  |
-| resizable | boolean \| undefined                       |  | Флаг доступности изменения ширины колонки |
-| sortable  | boolean \| undefined                       |  | Флаг доступности сортировки колонки       |
-| draggable | boolean \| undefined                       |  | Флаг доступности переноса колонки         |
-| pinned    | boolean \| undefined                       |  | Флаг закрепленности колонки               |
-| groupId    | string  \| undefined                       |  | Флаг закрепленности колонки  
-| filter    | ReactNode  \| undefined                      |  | Флаг закрепленности колонки  
-| forceIconVisibility    | boolean  \| undefined                       |  
+## ColumnProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| id | `string` | — |  |
+| children | `ReactNode \| ((data: T, index: number) => ReactNode)` | — |  |
+| title | `ReactNode` | — |  |
+| titleHint | `string` | — |  |
+| titleSettings | `ReactNode` | — |  |
+| align | `'left' \| 'center' \| 'right'` | — |  |
+| width | `string \| undefined` | — |  |
+| minWidth | `string \| undefined` | — |  |
+| truncate | `boolean \| undefined` | — |  |
+| noWrap | `boolean \| undefined` | — |  |
+| hidden | `boolean \| undefined` | — |  |
+| resizable | `boolean \| undefined` | — |  |
+| sortable | `boolean \| undefined` | — |  |
+| draggable | `boolean \| undefined` | — |  |
+| pinned | `boolean \| undefined` | — |  |
+| groupId | `string \| undefined` | — |  |
+| filter | `ReactNode \| ((setFilter: (value?: unknown) => void) => ReactNode) \| undefined` | — |  |
+| forceIconVisibility | `boolean \| undefined` | — |  |
+| monospaceFont | `boolean \| undefined` | — |  |
+| onClick | `(event: React.MouseEvent) => void \| undefined` | — |  |
+| disableHide | `boolean` | — |  |
+| leftBorder | `boolean` | — |  |
+| cropText | `boolean` | — |  |
+| wordBreak | `React.CSSProperties['wordBreak']` | — |  |
 
 
 ## HTMLAttributes

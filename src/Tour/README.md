@@ -5,6 +5,19 @@
 import { Tour } from 'vienna-ui';
 ``` 
 
+## TourProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| isOpen | `boolean` | — |  |
+| currentStep | `number` | — |  |
+| steps | `StepType[]` | — |  |
+| onChangeIsOpen | `(value: boolean) => void` | — |  |
+| onChangeCurrentStep | `(value: number) => void` | — |  |
+| onTransition | `(positionsProps: PositionProps, prev: RectResult) => 'top' \| 'right' \| 'bottom' \| 'left' \| 'center' \| [number, number]` | — |  |
+| padding | `NonNullablePopoverProps['padding']>` | — |  |
+| testId | `{ overlay?: string; popoverBackStepBtn?: string; popoverNextStepBtn?: string; }` | — |  |
+| onClosePopover | `() => void` | — |  |
 
 
 # Tour

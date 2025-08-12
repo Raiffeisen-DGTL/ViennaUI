@@ -5,6 +5,17 @@
 import { Tag } from 'vienna-ui';
 ``` 
 
+## Tag Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| design | `BoxStyledProps['$design']` | — |  |
+| size | `BoxStyledProps<B>['$size']` | — |  |
+| disabled | `BoxStyledProps['$disabled']` | — |  |
+| maxWidth | `BoxStyledProps['$maxWidth']` | — |  |
+| disabledTabIndex | `boolean` | — |  |
+| onClick | `() => void` | — |  |
+| onDelete | `(event: MouseEvent<HTMLButtonElement>) => void` | — |  |
 
 
 # Tag

@@ -12,16 +12,19 @@ import { Popover } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | "dark" \| "light" \| undefined | |
-| header | ReactNode |  |
-| noScroll | boolean \| undefined |  | Блокировать прокрутку экрана если элемент активен |
-| allowKeyboardEvents | boolean \| undefined |  | Включить поддержку событий клавиатуры (для Popover = false, для Hint = true) |
-| noClose | boolean \| undefined |  | Отключает иконку закрытия |
-| placement | 'left' \| 'right' \| 'top' \| 'bottom' \| 'center' \| 'auto' \| undefined|
-| fontSize | number \| undefined|
-| fontWeight | number \| undefined |
-| onOpen | (() => void) \| undefined|
-| fontWeight |(() => void) \| undefined |
+| content | `ReactNode \| string` | — |  |
+| placement | `FloatingProps['placement']` | — |  |
+| width | `number` | — |  |
+| height | `number` | — |  |
+| size | `RequiredPopoverPopupProps>['size']` | — |  |
+| onOpen | `() => void` | — |  |
+| onClose | `() => void` | — |  |
+| children | `ReactNode \| ((ref: RefPop>) => ReactNode)` | — |  |
+| className | `string` | — |  |
+| style | `CSSProperties` | — |  |
+| disableFlip | `boolean` | — | Отключает автоматическое позиционирование Popover при нехватке места |
+
+
 
 ## HTMLAttributes 👇
 

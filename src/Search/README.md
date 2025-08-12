@@ -5,32 +5,42 @@
 Является оберткой над компонентом `Input` и наследует все его свойства, такие как: дизайн, размер, состояния и т.д.
 
 ## Props
-
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| ref | Ref<HTMLInputElement> \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
-| size | "xs" \| "s" \| "l" \| "xl" \| undefined |  | Размеры |
-| design | "outline" \| "material" \| undefined |  | Дизайн |
-| prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
-| postfix | ReactNode |  | Значение отображаемое после компонента |
-| suggests | any[] \| undefined |  | Список элементов в выпадающем списке: массив |
-| value | string \| undefined |  | Выбранный элемент (должен совпадать по интерфейсу с объектами массива) |
-| maxListHeight | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
-| maxListWidth | number \| undefined |
-| invalid | boolean \| undefined |  | Компонент отображается как ошибочный если true |
-| onSelect | SearchSelectEvent \| undefined |  | Обработчик события при выборе элемента списка |
-| onChange | SearchEvent<FormEvent<HTMLInputElement>> \| undefined | | Обработчик события при наборе текста в поле ввода |
-| onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined | | Обработчик события при потере фокуса компонентом |
-| onKeyDown | SearchEvent<KeyboardEvent<HTMLInputElement>>  \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
-| onKeyUp | KeyboardEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
-| onKeyPress | KeyboardEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
-| onScroll | UIEventHandler<HTMLDivElement> \| undefined |  | Обработчик события при прокрутке списка |
-| showInlineSuggest | boolean \| undefined |  | Показывать строчное дополнение (по умолчанию true) |
-| wrapSuggestions | boolean \| undefined |  | Разрешить перенос подсказки на следующую строку |
-| valueToString | ((item?: any) => string) \| undefined |  | Определяем значение которое надо вывести в компонент как текст выбранного значения |
-| fitOptions | boolean \| undefined |
-| fixed | boolean \| undefined |
+| ref | `Ref<HTMLInputElement>` | — |  |
+| size | `'xs' \| 's' \| 'm' \| 'l' \| 'xl'` | — |  |
+| design | `'outline' \| 'material'` | — |  |
+| prefix | `ReactNode` | — |  |
+| postfix | `ReactNode` | — |  |
+| id | `string` | — |  |
+| name | `string` | — |  |
+| suggests | `string[]` | — |  |
+| value | `string` | — |  |
+| maxListHeight | `number` | — |  |
+| maxListWidth | `number` | — |  |
+| disabled | `boolean` | — |  |
+| enableInnerSearch | `boolean` | — |  |
+| invalid | `boolean` | — |  |
+| search | `(item: string, value: string) => boolean` | — |  |
+| children | `ChildrenFunc` | — |  |
+| onSelect | `SearchSelectEvent` | — |  |
+| onChange | `SearchEvent` | — |  |
+| onFocus | `InputEventReact.FocusEvent<HTMLInputElement>>` | — |  |
+| onBlur | `InputEventReact.FocusEvent<HTMLInputElement>>` | — |  |
+| onKeyDown | `SearchEventReact.KeyboardEvent<HTMLInputElement>>` | — |  |
+| onKeyUp | `React.KeyboardEventHandler<HTMLInputElement>` | — |  |
+| onKeyPress | `React.KeyboardEventHandler<HTMLInputElement>` | — |  |
+| onScroll | `React.UIEventHandler<HTMLDivElement>` | — |  |
+| showInlineSuggest | `boolean` | — |  |
+| placeholder | `string` | — |  |
+| fitOptions | `boolean` | — |  |
+| valueToString | `(item?: any) => string` | — |  |
+| fixed | `boolean` | — |  |
+| align | `'start' \| 'end'` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| closeAfterSelection | `boolean` | — |  |
+
 
 
 # Search & Suggest

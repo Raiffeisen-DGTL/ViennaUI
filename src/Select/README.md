@@ -12,126 +12,36 @@ import { Select } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-|ref | Ref<HTMLInputElement> \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
-| size | "xs" \| "s" \| "l" \| "xl" \| undefined |  | Размеры |
-| design | "outline" \| "material" \| undefined |  | Дизайн |
-| prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
-| postfix | ReactNode |  | Значение отображаемое после компонента |
-| suggests | any[] \| undefined |  | Список элементов в выпадающем списке: массив |
-| value | string \| undefined |  | Выбранный элемент (должен совпадать по интерфейсу с объектами массива) |
-| maxListHeight | number \| undefined |  | Максимальная высота выпадающего списка в пикселях |
-| maxListWidth | number \| undefined |
-| invalid | boolean \| undefined |  | Компонент отображается как ошибочный если true |
-| onSelect | SearchSelectEvent \| undefined |  | Обработчик события при выборе элемента списка |
-| onChange | SearchEvent<FormEvent<HTMLInputElement>> \| undefined | | Обработчик события при наборе текста в поле ввода |
-| onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined | | Обработчик события при потере фокуса компонентом |
-| onKeyDown | SearchEvent<KeyboardEvent<HTMLInputElement>>  \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
-| onKeyUp | KeyboardEventHandler<HTMLInputElement> \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
-| onKeyPress | KeyboardEventHandler<HTMLInputElement>  \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
-| onScroll | UIEventHandler<HTMLDivElement> \| undefined |  | Обработчик события при прокрутке списка |
-| showInlineSuggest | boolean \| undefined |  | Показывать строчное дополнение (по умолчанию true) |
-| wrapSuggestions | boolean \| undefined |  | Разрешить перенос подсказки на следующую строку |
-| valueToString | ((item?: any) => string) \| undefined |  | Определяем значение которое надо вывести в компонент как текст выбранного значения |
-| fitOptions | boolean \| undefined |
-| fixed | boolean \| undefined |
-| ref | Ref<HTMLDivElement> \| undefined |
-| align | 'top' \| 'bottom' \| 'auto'  \| undefined |
-| number | number \| undefined |
-| remove | (((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => ChangeDetails)) \| undefined |
-| append | ((str: string, flags?: AppendFlags<MaskedState> \| undefined, tail?: string \| String \| TailDetails \| undefined) => ChangeDetails) \| undefined |
-| pad | (((flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) & ((flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) & ((flags?: AppendFlags<...> \| undefined) => ChangeDetails)) \| undefined |
-| mask | (NumberConstructor & string) \| undefined |
-| parent | Masked<any>  \| undefined |
-| prepare | ((chars: string, masked: Masked<any>, flags: AppendFlags<MaskedState>) => string \| [string, ChangeDetails]) \| undefined |
-| prepareChar | ((chars: string, masked: Masked<any>, flags: AppendFlags<MaskedState>) => string \| [string, ChangeDetails]) \| undefined |
-| validate | ((value: string, masked: Masked<any>, flags: AppendFlags<MaskedState>) => boolean) \| undefined |
-| commit | ((value: string, masked: Masked<any>) => void) \| undefined |
-| format | (((value: number, masked: Masked<any>) => string) & ((value: string, masked: Masked<any>) => string) & ((value: any, masked: Masked<any>) => string) & ((value: DateValue, masked: Masked<...>) => string)) \| undefined |
-| parse | (((str: string, masked: Masked<any>) => number) & ((str: string, masked: Masked<any>) => string) & ((str: string, masked: Masked<any>) => any) & ((str: string, masked: Masked<...>) => DateValue)) \| undefined |
-| overwrite | boolean \| 'shift' \| undefined |
-| eager | 'remove' \| 'append' \| undefined |
-| skipInvalid | boolean \| undefined |
-| autofix | boolean \| 'pad' \| undefined |
-| radix | string \| undefined |
-| thousandsSeparator | string \| undefined |
-| mapToRadix | string[] \| undefined |
-| scale | string[] \| undefined |
-| normalizeZeros | boolean \| undefined |
-| padFractionalZeros | boolean \| undefined |
-| _numberRegExp | RegExp \| undefined |
-| _thousandsSeparatorRegExp | RegExp \| undefined |
-| _mapToRadixRegExp | RegExp \| undefined |
-| _separatorsProcessed | string[] \| undefined |
-| updateOptions | boolean \| undefined |
-| mapToRadix | (((opts: Partial<Partial<Pick<MaskedNumber, 'mask' \| 'parent' \| 'prepare' \| 'prepareChar' \| 'validate' \| 'commit' \| 'format' \| 'parse' \| 'overwrite' \| 'eager' \| 'skipInvalid' \| ... 8 more ... \| 'padFractionalZeros'>>>) => void) & ((opts: Partial<...>) => void) & ((opts: Partial<...>) => void) & ((opts: Partial<...>)... \| undefined |
-| _update | (((opts: Partial<Partial<Pick<MaskedNumber, 'mask' \| 'parent' \| 'prepare' \| 'prepareChar' \| 'validate' \| 'commit' \| 'format' \| 'parse' \| 'overwrite' \| 'eager' \| 'skipInvalid' \| ... 8 more ... \| 'padFractionalZeros'>>>) => void) & ((opts: Partial<...>) => void) & ((opts: Partial<...>) => void) & ((opts: Partial<...>)... \| undefined |
-| _updateRegExps | (() => void) \| undefined |
-| _removeThousandsSeparators | ((value: string) => string) \| undefined |
-| _insertThousandsSeparators | ((value: string) => string) \| undefined |
-| doPrepareChar | (((ch: string, flags?: AppendFlags<MaskedState> \| undefined) => [string, ChangeDetails]) & ((str: string, flags?: AppendFlags<MaskedState> \| undefined) => [...]) & ((ch: string, flags?: AppendFlags<...> \| undefined) => [...]))  \| undefined |
-| _separatorsCount | ((to: number, extendOnSeparators?: boolean \| undefined) => number) \| undefined |
-| _separatorsCountFromSlice | ((slice?: string \| undefined) => number)  \| undefined |
-| extractInput | (((fromPos?: number \| undefined, toPos?: number \| undefined, flags?: ExtractFlags \| undefined) => string) & ((fromPos?: number \| undefined, toPos?: number \| undefined, flags?: ExtractFlags \| undefined) => string) & ((fromPos?: number \| undefined, toPos?: number \| undefined, flags?: ExtractFlags \| undefined) => strin...
- \| undefined |
-| _appendCharRaw | (((ch: string, flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) & ((ch: string, flags?: AppendFlags<MaskedPatternState> \| undefined) => ChangeDetails) & ((ch: string, flags?: AppendFlags<...> \| undefined) => ChangeDetails) & ((ch: string, flags?: AppendFlags<...> \| undefined) => ChangeDetails)) \| unde... \| undefined |
-| _findSeparatorAround | ((pos: number) => number)\| undefined |
-| _adjustRangeWithSeparators | ((from: number, to: number) => [number, number]) \| undefined|
-| nearestInputPos | (((cursorPos: number, direction?: Direction \| undefined) => number) & ((cursorPos: number, direction?: Direction \| undefined) => number) & ((cursorPos: number, direction?: Direction \| undefined) => number))
- \| undefined |
-| doCommit | ((() => void) & (() => void) & (() => void)) \| undefined |
-| _normalizeZeros | ((value: string) => string)\| undefined |
-| _padFractionalZeros | ((value: string) => string) \| undefined |
-| doSkipInvalid | (((ch: string, flags?: AppendFlags<MaskedState> \| undefined, checkTail?: TailDetails \| undefined) => boolean) & ((ch: string, flags?: AppendFlags<...> \| undefined, checkTail?: TailDetails \| undefined) => boolean)) \| undefined |
-| unmaskedValue | string \| undefined |
-| typedValue | undefined |
-| allowNegative | boolean \| undefined |
-| allowPositive | boolean \| undefined |
-| typedValueEquals | (((value: any) => boolean) & ((value: any) => boolean)) \| undefined |
-| _initialized | boolean \| undefined |
-| _value | string \| undefined |
-| _refreshing | boolean \| undefined |
-| _isolated | boolean \| undefined |
-| state | (MaskedState & { _blocks: MaskedState[]; }) \| undefined |
-| reset | ((() => void) & (() => void)) \| undefined |
-| resolve | ((value: string, flags?: AppendFlags<MaskedState> \| undefined) => void) \| undefined |
-| rawInputValue | string \| undefined |
-| displayValue | string \| undefined |
-| isComplete | string \| undefined |
-| isFilled | boolean \| undefined |
-| totalInputPositions | (((fromPos?: number \| undefined, toPos?: number \| undefined) => number) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => number)) \| undefined |
-| extractTail | (((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails) & ((fromPos?: number \| undefined, toPos?: number \| undefined) => TailDetails)) \| undefined |
-| appendTail | (((tail: string \| String \| TailDetails) => ChangeDetails) & ((tail: string \| String \| TailDetails) => ChangeDetails))  \| undefined |
-| _appendChar | ((ch: string, flags?: AppendFlags<MaskedState> \| undefined, checkTail?: TailDetails \| undefined) => ChangeDetails) \| undefined |
-| _appendPlaceholder | ((() => ChangeDetails) & ((toBlockIndex?: number \| undefined) => ChangeDetails))  \| undefined |
-| _appendEager | ((() => ChangeDetails) & (() => ChangeDetails))
- \| undefined |
-| withValueRefresh | (<T>(fn: () => T) => T) \| undefined |
-| runIsolated | (<T>(fn: (masked: MaskedNumber & MaskedPattern<string> & Masked<any> & MaskedRange & MaskedDate) => T) => T) \| undefined |
-| doPrepare | ((str: string, flags?: AppendFlags<MaskedState> \| undefined) => [string, ChangeDetails])  \| undefined |
-| doValidate | (((flags: AppendFlags<MaskedState>) => boolean) & ((flags: AppendFlags<MaskedState>) => boolean) & ((flags: AppendFlags<MaskedState>) => boolean)) \| undefined |
-| splice | ((start: number, deleteCount: number, inserted?: string \| undefined, removeDirection?: Direction \| undefined, flags?: AppendFlags<MaskedState> \| undefined) => ChangeDetails) \| undefined |
-| maskEquals | (((mask: any) => boolean) & ((mask: any) => boolean)) \| undefined |
-| optionsIsChanged | boolean \| undefined |
-| isFilled | (((opts: Partial<Partial<Pick<Masked<any>, 'mask' \| 'parent' \| 'prepare' \| 'prepareChar' \| 'validate' \| 'commit' \| 'format' \| 'parse' \| 'overwrite' \| 'eager' \| 'skipInvalid' \| 'autofix'>>>) => boolean) & ((opts: Partial<...>) => boolean))  \| undefined |
-| blocks | { [key: string]: ExtendFactoryArgOptions<BlockExtraOptions>} \| undefined |
-| definitions | Definitions \| undefined |
-| placeholderChar | string \| undefined |
-| displayChar | string \| undefined |
-| lazy | boolean \| undefined |
-| _blocks | PatternBlock<MaskedState>[] \| undefined |
-| _maskedBlocks | { [key: string]: number[] }  \| undefined |
-| _stops  | number[] \| undefined |
-| exposeBlock | Masked<any> \| undefined |
-| _rebuildMask | (() => void) \| undefined |
-| isFixed | boolean \| undefined |
-| from | number \| undefined |
-| to | number \| undefined |
-| _matchFrom | number \| undefined |
-| boundaries | ((str: string) => [string, string]) \| undefined |
-| isDateExist | ((str: string) => boolean) \| undefined |
-| date | DateValue \| undefined |
-| localization | Localization<SelectLocalization, undefined> \| undefined |
+| id | `string` | — | ID компонента |
+| prefix | `ReactNode` | — | Значение отображаемое перед компонентом |
+| postfix | `Postfix` | — | Значение отображаемое после компонента |
+| placeholder | `string` | — | Значение, отображаемое, если ничего не выбрано |
+| className | `string` | — | Название стиля для компонента |
+| tabIndex | `number` | — | Порядок получения фокуса |
+| invalid | `boolean` | — | Компонент отображается как ошибочный |
+| value | `T` | — | Выбранный элемент |
+| inputValue | `string` | — |  |
+| templateValue | `ReactNode` | — | Шаблон отображения выбранного элемента |
+| smartPlaceholder | `ReactNode` | — |  |
+| size | `ResponsivePropSizeType, B>` | — | Размеры |
+| design | `DesignType` | — | Дизайн |
+| maxListHeight | `number` | — | Максимальная высота выпадающего списка |
+| maxListWidth | `number` | — | Максимальная ширина выпадающего списка |
+| onSelect | `OnChangeHandler<T \| undefined, React.MouseEvent \| React.KeyboardEvent>` | — | Обработчик события при выборе элемента списка |
+| editable | `ReactNode \| ChildrenFunc` | — | Отображает input при фокусе |
+| fitOptions | `boolean` | — | Выравнивает содержимое списка по ширине |
+| valueToString | `ValueToStringType<T>` | — | Определяет, какое значение выводить в селекте |
+| compare | `CompareType<T>` | — | Определяет, как сравнивать объекты для подсветки |
+| fixed | `boolean` | — |  |
+| ref | `React.Ref<HTMLDivElement>` | — |  |
+| inputRef | `React.RefObject<HTMLInputElement>` | — |  |
+| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |  |
+| clearButton | `boolean` | — | Показывает кнопку очистки |
+| selectFirstOnEnter | `boolean` | — | onSelect будет вызываться с первым элементом по Enter |
+| controlsRef | `React.MutableRefObjectSelectServiceType \| null>` | — | Ref для программного focus/blur |
+| onClear | `() => void` | — | Обработчик кнопки очистки |
+| showAddButton | `boolean` | — | Показать кнопку "Добавить" |
+| addButtonOnClick | `() => void` | — | Обработчик клика по кнопке "Добавить" |
 
 ## HTMLAttributes
 

@@ -6,6 +6,27 @@
 import { File } from 'vienna-ui';
 ``` 
 
+## FileProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| file | `FCCFile` | — | Файл |
+| altText | `string` | — |  |
+| description | `string` | — |  |
+| invalid | `boolean` | — |  |
+| disabled | `boolean` | — |  |
+| closable | `boolean` | — | Наличие крестика |
+| progress | `number` | — | Процент загрузки |
+| loading | `boolean` | — | Отображение загрузки |
+| extension | `string` | — | Отображение произвольного расширения |
+| hasNameLink | `boolean` | — | Наличие ссылки в названии |
+| hideAltTextOnError | `boolean` | — | Показ/скрытие инфо о файле в случае ошибки |
+| onClick | `(file: FCCFile) => void` | — |  |
+| onDelete | `(file: FCCFile) => void` | — |  |
+| confirmDelete | `(file: FCCFile) => boolean \| Promise<boolean>` | — |  |
+| animation | `boolean` | — | Включить анимацию. По умолчанию, true |
+| download | `string` | — | Включает возможность скачать файл при клике на него с названием, указанным в download |
+| testId | `{ icon?: string; name?: string; cross?: string; }` | — |  |
 
 
 # File

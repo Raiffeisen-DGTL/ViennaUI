@@ -14,6 +14,9 @@ import { EmptyState } from 'vienna-ui';
 | ------- | -------------------- | ------- | -------------------------------------------------- |
 | loading | boolean \| undefined |    | Состояние загрузки. true, чтобы отобразить spinner |
 | spinnerProps | SpinnerProps<Breakpoints>  \| undefined |
+| direction | EmptyStateDirection \| undefined |    |  |
+| alignment | EmptyStateAlignment \| undefined |    |  |
+| children | ReactNode \| undefined |
 
 
 

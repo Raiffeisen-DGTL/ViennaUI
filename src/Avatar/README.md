@@ -10,21 +10,14 @@ import { Avatar } from 'vienna-ui';
 
 ## Свойства / Props
 
-Свойства наследуются от [HTMLAttributes<HTMLDivElement>](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1746)
-
-| Prop     | Type                                           | Default | Description                 |
-| -------- | ---------------------------------------------- | ------- | --------------------------- |
-| children | ReactNode                                      |         |
-| size     | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl', B> \| undefined |         | Доступные размеры           |
-| align    | "left" \| "center" \| "right" \| undefined     |         | Выравнивание по горизонтали |
-| valign   | "center" \| "top" \| "bottom" \| undefined     |         | Выравнивание по вертикали   |
-| ref      | Ref<HTMLDivElement> \| undefined               |
-
-## HTMLAttributes
-
-| Prop     | Type                                           | Default | Description                 |
-| -------- | ---------------------------------------------- | ------- | --------------------------- |
-| src      | string \| undefined                                      |         
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| src | `string` | — |  |
+| alt | `string` | — |  |
+| hideImageOnError | `boolean` | — |  |
+| size | `PropsBox<B>['$size']` | — |  |
+| align | `PropsImageLayer['$align']` | — |  |
+| valign | `PropsImageLayer['$valign']` | — |  |
 
 ## Использование
 

@@ -14,23 +14,28 @@ import { Textarea } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | string \| undefined |  |
-| size | ResponsiveProp<Size, Breakpoints> \| undefined |  |
-| design | Design  \| undefined |  |
-| maxRows | number \| undefined |  | Максимальное число видимых строк |
-| resize | boolean \| undefined |  | Возможность изменять вытосу компонента |
-| invalid | boolean \| undefined |  |
-| showCounter | boolean \| undefined |  |
-| onChange | TextareaEvent<FormEvent<HTMLTextAreaElement>> \| undefined |  |
-| onClick | TextareaEvent<MouseEvent<HTMLTextAreaElement, MouseEvent>> \| undefined |  |
-| onFocus | TextareaEvent<FocusEvent<HTMLTextAreaElement, Element>> \| undefined |  |
-| onBlur | TextareaEvent<FocusEvent<HTMLTextAreaElement, Element>> \| undefined |  |
-| onKeyDown | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| onKeyPress | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| onKeyUp | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| ref | Ref<HTMLTextAreaElement> \| RefObject \| null \| undefined |  |
-| autoCapitalize | string \| undefined |  | Автоматическая установка заглавной буквы |
-| spellcheck | string \| undefined |  | Проверка орфографии |
+| value | `string` | — |  |
+| size | `ResponsivePropSize, B>` | — |  |
+| design | `Design` | — |  |
+| rows | `number` | — |  |
+| maxRows | `number` | — |  |
+| resize | `boolean` | — |  |
+| disabled | `boolean` | — |  |
+| invalid | `boolean` | — |  |
+| showCounter | `boolean` | — |  |
+| testId | `{ counter?: string; maxCounter?: string; }` | — |  |
+| maxLengthNative | `boolean` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onChange | `(data: { value: string; event: React.ChangeEvent<HTMLTextAreaElement>; options: { name?: string; } }) => void` | — |  |
+| onClick | `TextareaEventReact.MouseEvent<HTMLTextAreaElement>>` | — |  |
+| onFocus | `TextareaEventReact.FocusEvent<HTMLTextAreaElement>>` | — |  |
+| onBlur | `TextareaEventReact.FocusEvent<HTMLTextAreaElement>>` | — |  |
+| onKeyDown | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| onKeyPress | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| onKeyUp | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| ref | `React.Ref<HTMLTextAreaElement>` | — |  |
+
 
 ## HTMLAttributes
 | Prop | Type | Default | Description |

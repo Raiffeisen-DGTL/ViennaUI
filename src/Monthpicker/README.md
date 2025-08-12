@@ -8,11 +8,14 @@ import { Monthpicker } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | Date \| undefined |  | Выбранная дата |
-| isCalendarOpen | boolean \| undefined |  | Отображение календаря |
-| onChange | ((event: InputEvent<FormEvent<HTMLInputElement>> \| Event \| null, data: { value?: string \| undefined; date?: Date \| undefined; name?: string \| undefined; }) => void)  \| undefined |  |
-| localization | Localization<CalendarLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
+| value | `Date` | — |  |
+| isCalendarOpen | `boolean` | — | Отображение календаря |
+| isCalendarAlwaysOpen | `boolean` | — | Календарь всегда открыт |
+| onChange | `(event: FormEvent<HTMLInputElement> \| Event \| null, data: { value?: string; date?: Date; name?: string; }) => void` | — |  |
+| locale | `Locale` | — | Локаль календаря |
+| testId | `{ postfixIcon?: string; calendarBox?: string; calendar?: CalendarTestId; }` | — |  |
+| placement | `Placement` | — | Позиционирование календаря |
+
 
 # Monthpicker
 

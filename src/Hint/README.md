@@ -10,16 +10,16 @@ import { Hint } from 'vienna-ui';
 
 ## Свойства / Props
 
-| Prop    | Type                                                          | Default | Description             |
-| ------- | ------------------------------------------------------------- | ------- | ----------------------- |
-| design  | "dark" \| "light" \| undefined                                | |
-| size    | "s" \| "m" \| "l" \| undefined                                |    |
-| anchor  | "top" \| "bottom" \| "left" \| "right" \| "auto" \| undefined |   | Направление отображения |
-| header  | ReactNode                                                     |    |
-| content | ReactNode                                                     |    |
-| id  | string \| undefined                                                   |    |
-| anchorIcon  | HintAnchorIcon \| undefined |
-| width   | number \| undefined                                                        |     | Ширина компонента в px  |
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| id | `string` | — |  |
+| size | `'s' \| 'm' \| 'l'` | — |  |
+| action | `'hover' \| 'click'` | — |  |
+| anchorIcon | `'info' \| 'question'` | — |  |
+| children | `ReactNode` | — |  |
+| closeOnTargetClick | `boolean` | — |  |
+| showPopoverWithArrow | `boolean \| undefined` | — |  |
+| testId | `{ popover?: string; targetIcon?: string; closeIcon?: string; }` | — |  |
 
 # Hint
 

@@ -15,7 +15,6 @@ import { PaymentLogo } from 'vienna-ui';
 | logo         | "mastercard" \| "mir" \| "visa" \| undefined     | |
 | design       | "wildsand" \| "whitebox" \| "ghost" \| undefined |   |
 | size         | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined   |         |
-| clickable    | boolean \| undefined                             |         |
 
 
 # PaymentLogo

@@ -12,15 +12,17 @@ import { Pagination } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | 'm' \| 'l' \| 's' \| undefined |  | Размер компонента |
-| align | 'flex-start' \| 'center' \| 'flex-end' \| 'space-between' \| 'space-around' \| undefined |  | Выравнивание по горизонтали |
-| pageSize\* | number |  | Количество элементов на одной странице |
-| initialPageIndex | number \| undefined |  | Индекс текущей страницы (начинается с 0) |
-| totalItemsCount\* | number |  | Общее количество элементов |
-| currentPageNeighboursCount | number \| undefined |  | Количество кнопок-пэйджеров, которые нужно рендерить по соседству от текущего пэйджера, когда показываются кнопки с эллипсисами (jumpers) |
-| onChange\* | (event: FormEvent<Element> \| null, data: { pageIndex: number; pageSize: number}) => void | | Коллбэк. Вызывается при изменении страницы В этом методе нужно описывать логику показа элементов в зависимости от страницы и размера страницы @param pageIndex - индекс новой страницы @param pageSize - количество элементов на странице |
-| currentPage | number \| undefined|
-| hasNextPage | boolean \| undefined|
+| size | `PropsBox['$size']` | — | Размер компонента |
+| align | `PropsBox['$align']` | — | Выравнивание по горизонтали |
+| pageSize | `number` | — | Количество элементов на одной странице |
+| initialPageIndex | `number` | — | Индекс текущей страницы (начинается с 0) |
+| totalItemsCount | `number` | — | Общее количество элементов |
+| currentPageNeighboursCount | `number` | — | Количество кнопок-пэйджеров, которые нужно рендерить по соседству от текущего пэйджера |
+| currentPage | `number` | — | Текущий номер страницы |
+| hasNextPage | `boolean` | — | Показывает, будут ли еще страницы. Если true, стрелка вправо активна |
+| testId | `{ arrowPrev?: string; arrowNext?: string; separator?: string; page?: (page: number) => string; }` | — |  |
+| onChange | `(data: { pageIndex: number; pageSize: number }, event: React.FormEvent \| null) => void` | — | Коллбэк. Вызывается при изменении страницы |
+
 
 # Pagination
 

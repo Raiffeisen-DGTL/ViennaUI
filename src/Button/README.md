@@ -11,18 +11,15 @@ import { Alert } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | ButtonDesign \| undefined  |
-| size | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl' |  | Размеры |
-| grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \| undefined  |
-| square | boolean \| undefined |
-| pressed | boolean \| undefined |
-| loading | boolean \| undefined |
-| ref | Ref<HTMLButtonElement> \| undefined |
+| design | `PropsBox<B>['$design']` | — |  |
+| size | `PropsBox<B>['$size']` | — |  |
+| grid | `PropsBox<B>['$grid']` | — |  |
+| square | `PropsBox<B>['$square']` | — |  |
+| pressed | `PropsBox<B>['$pressed']` | — |  |
+| loading | `PropsBox<B>['$loading']` | — |  |
+| disabled | `PropsBox<B>['$disabled']` | — |  |
+| forwardedRef | `React.Ref<HTMLButtonElement>` | — |  |
 
-## HTMLAttributes
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| disabled | boolean \| undefined  |
 
 # Button
 

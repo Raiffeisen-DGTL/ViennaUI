@@ -5,6 +5,16 @@
 import { IconContainer } from 'vienna-ui';
 ``` 
 
+## IconContainerProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| type | `'circle' \| 'square' \| 'squircle'` | — |  |
+| size | `'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl'` | — |  |
+| color | `'white' \| 'seattle10' \| 'seattle60' \| 'oslo10' \| 'oslo60' \| 'miami10' \| 'miami100' \| 'nice10' \| 'nice100' \| 'dubai10' \| 'dubai100' \| 'paris10' \| 'paris100' \| 'sochi10' \| 'sochi100' \| 'tokyo10' \| 'tokyo100' \| 'dublin10' \| 'dublin100' \| 'bern10' \| 'bern100' \| 'manila10' \| 'manila100' \| 'tallin10' \| 'tallin100' \| 'seoul10' \| 'seoul100' \| 'havana10' \| 'havana100' \| 'madrid10' \| 'madrid100' \| 'porto10' \| 'porto100'` | — |  |
+| disabled | `boolean` | — |  |
+| loading | `boolean` | — |  |
+| clickable | `boolean` | — |  |
 
 
 # IconContainer

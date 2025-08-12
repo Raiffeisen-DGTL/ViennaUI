@@ -6,6 +6,14 @@
 import { Highlight } from 'vienna-ui';
 ``` 
 
+## HighlightProps
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| query | `string` | — |  |
+| compare | `(text: string, search: string) => GenerateCompare` | — |  |
+| style | `'accentColor' \| 'boldText'` | — |  |
+
 
 # Highlight
 

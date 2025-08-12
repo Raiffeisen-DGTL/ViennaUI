@@ -10,18 +10,22 @@ import { DateTimePicker } from 'vienna-ui';
 
 ## Свойства / Props
 
-| Prop     | Type                                           | Default   | Description                        |
-| -------- | ---------------------------------------------- | --------- | ---------------------------------- |
-| design   | "outline" \| "material" \| undefined           |  |
-| size     | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined |        |
-| value    | Date \| DateObj \| undefined                   |      | Выбранное значение даты и времени  |
-| timeFrom | string \| undefined                            |   | Нижняя граница выбора времени      |
-| timeTo   | string \| undefined                            |    | Верхняя граница выбора времени     |
-| step     | number \| undefined                            |         | Шаг для доступных значений времени |
-| onChange | ChangeFunc \| undefined                        |      |
-| localization | Localization<DatePickerLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
-| ref | Ref<HTMLDivElement> \| undefined |
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| design | `'outline' \| 'material'` | — |  |
+| size | `'xs' \| 's' \| 'm' \| 'l' \| 'xl'` | — |  |
+| value | `Date \| DateObj` | — |  |
+| name | `string` | — |  |
+| disabled | `boolean` | — |  |
+| invalid | `boolean` | — |  |
+| timeFrom | `string` | — |  |
+| timeTo | `string` | — |  |
+| step | `number` | — |  |
+| onChange | `OnChangeType<DateObj, React.FormEvent<HTMLInputElement> \| React.ChangeEvent \| React.MouseEvent \| React.KeyboardEvent \| Event \| null>` | — |  |
+| locale | `Locale` | — | Локаль календаря |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
 
 
 # DateTimePicker
