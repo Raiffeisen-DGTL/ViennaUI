@@ -8,7 +8,7 @@
 ## Импорт
 
 ```
-import { Sidebar } from '@fcc/ui';
+import { Sidebar } from 'vienna-ui/v13';
 ```
 
 ## React Props
