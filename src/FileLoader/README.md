@@ -40,13 +40,25 @@ import { FileLoader } from 'vienna-ui';
 | onClick | ((file: FCCFile) => void) \| undefined |
 | onDelete | ((file: FCCFile) => void) \| undefined |
 
-## Использование
+
+# FileLoader
+
+Компонент для загрузки файлов
+
+<ComponentHelpers.Select.Warn>
+    <WarningRingIcon size='xl' />
+    <div>
+        Начиная с версии 11.60.0 мы прекращаем поддержку компонента FileLoader.File. Используйте компонент File.
+    </div>
+</ComponentHelpers.Select.Warn>
+
+
 
 ```
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -60,12 +72,14 @@ import { FileLoader } from 'vienna-ui';
         return (
             <FileLoader onChange={changeHandler} content={'Перетащите файлы'}>
                 {files.map((f, i) => (
-                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    <File key={i} file={f} onDelete={deleteHandler} />
                 ))}
             </FileLoader>
         );
     }}
 ```
+
+## Использование
 
 Компонент является полностью `управляемым`.
 
@@ -75,16 +89,18 @@ import { FileLoader } from 'vienna-ui';
 
 Свойства `multiple`, `disabled`, `accept` - аналогичны нативному `input`, `maxSizeByte` - устанавливает допустимый размер файла в байтах
 
-`FileLoader.File` - генерирует два события `onClose` и `onClick`, а принимает `file` описываемый интерфейсом `FCCFile` расширяющим обычный `File`
+`File` - генерирует два события `onDelete` и `onClick`, а принимает `file` описываемый интерфейсом `FCCFile` расширяющим обычный `File`
 
--   `onClose` - генерируется по щелчку на иконку крестика или по нажатию `Enter`, когда она в фокусе, или по нажатию `Backspace/Delete` когда в фокусе имя файл
+-   `onDelete` - генерируется по щелчку на иконку крестика или по нажатию `Enter`, когда она в фокусе, или по нажатию `Backspace/Delete` когда в фокусе имя файл
 -   `onClick` - генерируется по щелчку на имя файла или по нажатию на `Enter`, когда оно в фокусе
 
 -   Свойства `progress` и `loading` служат для передачи процента загрузки и отображения полосы загрузки соответственно
--   Свойство `disabled` - блокирует события `onClose` и `onClick`;
--   Свойство `closable` - блокирует отображение иконки крестика и событие `onClose`;
+-   Свойство `disabled` - блокирует события `onDelete` и `onClick`;
+-   Свойство `closable` - блокирует отображение иконки крестика и событие `onDelete`;
 -   Свойство `children` или дочерние элементы - замещают вывод даты и размера файла, используются для информирования о состоянии;
+-   Свойство `description` - описание файла;
 -   Свойство `invalid` - окрашивает текст переданый в `children` в красный цвет;
+-   Свойство `hasNameLink` - добавляет ссылку, которая указана в свойстве `file.url`;
 
 Так как компонент является управляемым стоит самостоятельно следить за списком файлов на наличие дублей или иных проблем, компонент лишь отфильтрует передаваемые данные по размеру и типу.
 
@@ -97,8 +113,8 @@ import { FileLoader } from 'vienna-ui';
 ```
     {() => {
         const [files, setFiles] = React.useState([]);
-        const changeHandler = React.useCallback(
-            (e, newFiles) => {
+         const changeHandler = React.useCallback(
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -112,7 +128,7 @@ import { FileLoader } from 'vienna-ui';
         return (
             <FileLoader onChange={changeHandler} content={'Перетащите файлы'}>
                 {files.map((f, i) => (
-                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    <File key={i} file={f} onDelete={deleteHandler} />
                 ))}
             </FileLoader>
         );
@@ -125,7 +141,7 @@ import { FileLoader } from 'vienna-ui';
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -140,7 +156,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader invalid onChange={changeHandler} content={'Перетащите файлы'}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
                 <FormField.Message color='critical' align='center'>
@@ -157,7 +173,7 @@ import { FileLoader } from 'vienna-ui';
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -168,13 +184,15 @@ import { FileLoader } from 'vienna-ui';
             },
             [files]
         );
+        const subContent = 'JPG, GIF, PNG, PDF или ZIP, до 150kb';
         return (
             <FormField>
-                <FileLoader disabled onChange={changeHandler} content={'Перетащите файлы'}>
+                <FileLoader disabled onChange={changeHandler} content={'Перетащите файлы'} subContent={subContent}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
+                <FormField.Message color="disabled" align='center'>Загрузка файлов недоступна</FormField.Message>
             </FormField>
         );
     }}
@@ -186,7 +204,7 @@ import { FileLoader } from 'vienna-ui';
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -201,7 +219,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader multiple={false} onChange={changeHandler} content={'Перетащите файлы'}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -231,7 +249,7 @@ import { FileLoader } from 'vienna-ui';
         };
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -246,7 +264,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader accept='.png, .jpg, .jpeg' onChange={changeHandler} content={'Перетащите файлы'}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onClick={() => imageModal(f.url)} onDelete={deleteHandler} />
+                        <File key={i} file={f} onClick={() => imageModal(f.url)} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -260,7 +278,7 @@ import { FileLoader } from 'vienna-ui';
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -279,7 +297,7 @@ import { FileLoader } from 'vienna-ui';
                     content={'Перетащите файлы'}
                     subContent={'< 2Мб'}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -296,7 +314,7 @@ import { FileLoader } from 'vienna-ui';
         const [files, setFiles] = React.useState([]);
         const ref = React.useRef(null);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -320,7 +338,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader ref={ref} onChange={changeHandler} content={content} subContent={subContent}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -335,7 +353,7 @@ import { FileLoader } from 'vienna-ui';
         const [files, setFiles] = React.useState([]);
         const ref = React.useRef(null);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -359,7 +377,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader ref={ref} onChange={changeHandler} content={content} subContent={subContent}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                        <File key={i} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -374,7 +392,7 @@ import { FileLoader } from 'vienna-ui';
         const [files, setFiles] = React.useState([]);
         const ref = React.useRef(null);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -398,9 +416,9 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader ref={ref} onChange={changeHandler} content={content} subContent={subContent}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} invalid>
+                        <File key={i} file={f} onDelete={deleteHandler} invalid>
                             При загрузке возникла ошибка. Удалите файл и попробуйте снова
-                        </FileLoader.File>
+                        </File>
                     ))}
                 </FileLoader>
             </FormField>
@@ -413,7 +431,7 @@ import { FileLoader } from 'vienna-ui';
 ```
     {() => {
         const [files, setFiles] = React.useState([]);
-        const changeHandler = React.useCallback((e, newFiles, newErrorFiles) => {
+        const changeHandler = React.useCallback(({ value: newFiles, options: { errorFiles: newErrorFiles } }) => {
             setFiles((state) => [...state, ...newFiles]);
             newErrorFiles.forEach(({ file, errors }) => {
                 const textErrors = [
@@ -442,7 +460,7 @@ import { FileLoader } from 'vienna-ui';
                         maxSizeByte={1024}
                         subContent='PNG, JPG или JPEG, до 1kb'>
                         {files.map((f, i) => (
-                            <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                            <File key={i} file={f} onDelete={deleteHandler} />
                         ))}
                     </FileLoader>
                 </FormField>
@@ -459,7 +477,7 @@ import { FileLoader } from 'vienna-ui';
         const ref = React.useRef(null);
         const interval = React.useRef(null);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -506,7 +524,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader ref={ref} onChange={changeHandler} content={content} subContent={subContent}>
                     {files.map((f, i) => (
-                        <FileLoader.File
+                        <File
                             key={i}
                             file={f}
                             onDelete={deleteHandler}
@@ -540,7 +558,7 @@ import { FileLoader } from 'vienna-ui';
             'iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABHNCSVQICAgIfAhkiAAADV5JREFUeJzt3W1S4zoThuFn3jr7st+VybMym5VxfoAPIWCwvrul+6pyURNCLEvdLcnJgAQAAAAAAABgaH96NwBFLJLWp8fWbx5Ldbwfz4+9FHp9dEIB8OMxyVeVS+5SDn0UiUMUBxcoADadyX4enh0PB0XBGAqADeH969azEQ1t71//9mwEKAC9jDTD5zrECqEbCkA7s83yqbb3r6wO4N6it8R/5Ug6wnsfAm6Q9BQDTIikb1sMgO4WSbv6J8Ssxy5WBVm4CZhm0dvNqrVvM6Ic+vppviur/F3bJt5FiEYBiBNk7y7+9vTv2nfPn5ffz+fvbRPvIKCwIBvL3SDb+9+zfbv695flfoITPRPferLfdV4HhQBu9AjYoDluaC3q17/Ajxa1W77uIiiltluGXXMUWURqlfgk/c9aFQMKAf4TRNJb1KIYMC4TW1Q/uJhl8i2qX6QZp8nUmlmY7euquSrYG14HOqk16+9iFmlpUb1CwDgOqkbAkPh91SoErAYGUmPWJ/FtqVUIGGPnSgcFiW9bjULAasCh0oFA4vvC+E9sEctAvCEWJhNUbrBD47ajHuJiAqWWfCz3xlRyW7A3bjt+UHJgSfzxldoWMFEYUHIwMRcmDedKJT8DOC9iyKkglnAoY1GZ1UBo3fBZMVioodSkgopKJD+zPq6U2BJQBCrJTX4GBncRa8YwIGiNmDMidyBY8iNV7paAIpCJ5EdvFIFOSH5YQRFoLCf56WzUQlw2EEQnw66cIhA6tNeVnKUWyY9WcooAW9MLJD88oQgURPLDI4pAIakdSfKjN2I3Ex0I74jhREF0HMaQWgRCj8ZakLrvJ/lhVWoRmO5+QGryv/ZoLBAhNa6nKgJUSoyKle0vSH6MjiJwIbVjSH54Q6x/g6qImaSudoeU0hkkP7wj7pW+HAJGMP1WYPoOwNSmngBTlkChS0uBeoIm3AqkVD73Fw1cSJkMXa+EWfoDH6baCqQseUh+jC6lCLjbErP0B64NvxVIuUBgJsNOkCmzv6vqBhQwbJ7Ezv5uKhtQ2HC5EjRoVQMqSFkFhC4tvWmoiwEaSJk0TRrmQoDGhpg4WfoDaVK2AqbEzv7mb2YAje1yvApg9gfyuF0FMPsDZbhcBTD7A2W4WwXENpjZH/hZ7Cqg64TqqrGAA24mVTcNBZxxMbG6aCTgkIvJ1XwDAcdiJ9imQmTjmP2BOLGrgNCyccz+QH3VVwH/S/iZ2Nn8SDgHgPjcabLSjl3+A0hnbhtgrkHAwKpOuLFbAJb/QFtH5POjcjS2AKwRzz0kvUS+PoDPXhRXBNY6zXjD8h9oz8R9NxONACZVZfJNeRvwjqPS6wKzOno3gOU/0E/XFfjS8+QAJMXl4K13A+5uAdaIRh4RzwVw3xHx3PXOkygAgB9HxHPXO0/6c/PFYpb1d18TQLyiufjPjRfhht49iz6q7vb0vePh4MNRPzv78Twebe9fD9GPdwRJf0u8CHf/r8XenZ21n35DP97TPB+L33kcRErAEsBf0Y9xFjV+R67pyZzYlR+057E3brsl9GOaZjnZvNo4UDJoH4+l5UV0FhtXFIHPmsVViDhRyDmRE7WSf6bglejHXMXy8rfPAayZDR3Jrrr9sWqO4KUf21pzfjim8o6s1pK1+JLNOPqxnCa5SQF4s6td4I7cly37cG90Tb1Uj6eYaj1yZ8f0Q6kjNLmytoLa9+PS5Mr62FWgH366B7BGNOaIeK43W4dzrh3OWdva4Zxbh3O2ckQ8d736Rq1fCDKSdZJz1rZOcs5hxCwxRtVj+T/iNqDH8n+GbcDdPtivXqDUFmBUa+8GINvauwEGrFffYAsATKxEAdgKvAaAeFvuC1wVgJH3TcCMvs3pqwKw1msHgA7W7x7kHgCAL2Lethldr7evRkM/1pH1tjIrgN8dvRuAZEfvBljHPYDfHR3OuXU4Z21bh3MeHc5p1frdg1e/Njhm6TTDrwFvvZQctU/px/KycpUtwD3boOdqbRv0XMPhJstXu7hpVUKLPtybXU1/VWKLjv5qUf3AXZpdTT/0Y1kxE9Ntd18wlLgCR2oG70xBSz+WE5RRALgHEOdFdd4hWTXXn7qiH42gAMR70dvd1KPAax2aN2jPInAUeK1Db2MyYz9WwRbgnkXpNwdnW6r+JHVLsIt+zNoCXKEAxFl0byCCCNif0I/xKADAxLgJCCANBQCYGAUAmBgFAJhYbgFYSzQCQLI154f578CAb1m5yhYAmBgFAJjYVQE4WjYCQHXHdw9SAIA5HN89yBYAmFiJAsD/BwD6yM49VgDAxLgHAMzh+O7BqwLAb1YBxvJtTv/0KT4+DQjYlp2j3AMAJvZTAThaNQJAVcfVN0oVAN4KBNqKybnj6htsAYCJlVoBrHnNABBpjXjucfWN3+7e804AYFOR3GQLAEzstwJwRLwWNwKBNorcAJSkf2788BpxMusWfb6eQ3zqcXajx8SR88Oxf7PNsl3Xf18Oc7r6qzrWYyImJ7P/hNoIBeAq+b0MOMrzHBNNc7Jptang7t9OszzgKOu35D8Pi/e1iq7K77wLsEU0bo14rjWrbBYwlPW85/dmjXjuVuKEd2dQq9uAmLZbXcWgjNjZ03s8F1vBzNJhFIFxpSS/93gu5u6eyeK+KXYFY3XgkSclBjzH8j7EiQtJGXyL14E0MROY5Umg20S8RJzYYselrgIoAv6lJr+12V+Ka//S8+QWOy81ECgCfo005rGTWNcGWOxAaayAwM9GG+uY66kyAXevQAUsSgsKy4GBr1KT/1V23wGKuYYqBcBMIzJRBMY2YvKbmXxjGmI5WXKLgNVAmdmiMZNfMrD8P8UmjuVOzSkC1q9tNiOPpbmci2lM1WpUwMiBM4vRxzAo7nrma1Cm0QNoZDOMnbkJN7bTra8CpPQPCp3H3r7J09uVN2YjxmWzgjZicuQGlJfrHMEsYxV7nc2YrUyZcgPL07V6tCh/fLwkf+y1htYNHLHTpfztgLfr9aJEcW6eJBnMzv6pDfQ0M5aaaTxds1WL5luZxcZflwnHRSMzlCgC3mYda4LKjIGn5JccTa5uGpqoVBHY5e/ae1pUZtafIea6TqyuGpuoZDB6vP7WSva1t+SXHE6qo1fkU6nAfBXbgu8Eletfr4U2dkJ97dPMz2IHzuvgSGWD1HMxLCkl6EctrrGTjJlrnSnwSwfsLt/9kWpR2VXVjHFlRuzMuPdpZlGlg3eXoYpeUVCdvvMutk/MxcpM1foUW/jcDm4B9NW1RY5n/1PKAI9gUfkZ7TG4PRfKRfUSf5fvvnk0TNEb5kIS1Ap0b8WgZtITN8YnzpSL8RDUdy2qtxp4TgBLSXC2p/Z17xovXoYrfrEJsPdpZlUtkuGx/4LaJsaiOjfzXAd+giFzJaWqjVTVH7VMkO+KQm5hOBO9dbK7C/oEQ+dJSrCMalG/5PF87HIU8AmGLoQp1c3VBSagEJD4p5Q4cNcnQRNcZAIKwbyJLw164+9KSiDMEAQShWC2xJfSP0buVsoF711a2s+itu8aWDmC5kn80674fnLfRykXHbq0tL+gsVcFu+Ye25T+GkJKsLivfJlSAsbqMWvSnxal9dswpu+ADIv8rQx2zbnEv5LSh8P1XUoA711aaluQzdXB2S58Zjru/7Q60bvXhJ85JP2/cDtG8ph0W6NzPp7nb6NzerRLWhN+rlleti4Ai94SOtYq6aVoS8Z3NRuvug7KQ9fjQ6LHIdYvpCyJhtwTYViL0u+dTIEigFGR/DekdlLKPQSgpdS4nm5yo1JiNKxsIwVRBDCG1OQPPRprSWrHUQRgBTGciQ6EV8RuAan3A+hI9JSa/FPv+69QBOAJyV8BRQAekPwVBVEEYFdO8ocO7XUpp5MpAqiFuGwop7NZaqGknK0pyZ+BIoDeSP7OKALoheQ3IrcIMBCIRcwZw4CgFWLNqNyBYUuAn+Qu+Un+BkoUgdC81bAuiOR3o9RgsRrAIiYVl0os19gSzI0Ycq7UALJ0m0+JWZ/kN6DUEo7BnEPJSYN4MaRUEWBgx1RyomDFaFRQmQF+FTd1RkJcTKTUEo9tgX/EwqRKLvfYFvjD+ENS+T+pTSDYVjrxzzGHY6WXgRQCe2ok/qsY46HUCBAKQV+1Ep9Zf1A1VgMUgvZqJT6z/iRqBc8u3iaqKaju2GEitVYD5xHEbFLCorLv4zPr45PawcWqIE3N2f6xSANV95QUg/taJP05Dsz6+KJVIaAYfGiV9CQ+bgtqE5CPR9AcwbmoX/8CUXoE6mPAjhC053X07EcgS88APo9d9ovC2b5d/fvLcj+Z8ad3A5wJkrbejXiyPf37b+XzPSfW8/l721S/D4ZBAUiz6C3Q1r7NiHK8H3es8ndtm6SXvs3AbBbZWO7Oeuya48YpHAjqnxCzHOHmmADNLaIY1Er6JWIcgO4oBiS9adwEbCe8f916NsKB7f0rd/IboAD0sejjTvvasyEGHA8Hd/EbowDYMNvqYHv/yizfGQXAppFWCIeY4c2iAPhxFgXJZmE49PFBo0MkuwsUgDE8FofT+s1jqQ59/RThIZIcAAAAAAAAAGz7F80Q5B8oXnwDAAAAAElFTkSuQmCC'
         );
         const array = new Uint8Array(buffer);
-        const file = new File([array], 'file 3.png', { type: 'image/png' });
+        const file = ComponentHelpers.FileLoader.generateFile([array], 'file 3.png', { type: 'image/png' });
         const [files, setFiles] = React.useState([
             { url: '1', date: new Date().toISOString(), size: 2048, name: 'file 1.doc' },
             { url: '2', date: new Date().toISOString(), size: 500, name: 'file 2.zip' },
@@ -553,7 +571,7 @@ import { FileLoader } from 'vienna-ui';
             },
         ]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -568,7 +586,7 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader onChange={changeHandler} content={'Перетащите файлы'}>
                     {files.map((f, i) => (
-                        <FileLoader.File key={f.url} file={f} onDelete={deleteHandler} />
+                        <File key={f.url} file={f} onDelete={deleteHandler} />
                     ))}
                 </FileLoader>
             </FormField>
@@ -596,7 +614,7 @@ import { FileLoader } from 'vienna-ui';
             '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'
         );
         const array = new Uint8Array(buffer);
-        const file = new File([array], 'file 3.png', { type: 'image/png' });
+        const file = ComponentHelpers.FileLoader.generateFile([array], 'file 3.png', { type: 'image/png' });
         const [files, setFiles] = React.useState([
             { url: '1', date: new Date().toISOString(), size: 2048, name: 'file 1.doc' },
             {
@@ -614,7 +632,7 @@ import { FileLoader } from 'vienna-ui';
             },
         ]);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -629,13 +647,13 @@ import { FileLoader } from 'vienna-ui';
             <FormField>
                 <FileLoader onChange={changeHandler} content={'Перетащите файлы'}>
                     {files.map((f, i) => (
-                        <FileLoader.File
+                        <File
                             key={f.url}
                             file={f}
                             onDelete={deleteHandler}
                             altText='описание для файлов не имеющих date или size'>
                             {f.description}
-                        </FileLoader.File>
+                        </File>
                     ))}
                 </FileLoader>
             </FormField>
@@ -661,7 +679,7 @@ const buffer = base64ToArrayBuffer(
     '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'
 );
 const array = new Uint8Array(buffer);
-const file = new File([array], 'file 3.png', { type: 'image/png' });
+const file = ComponentHelpers.FileLoader.generateFile([array], 'file 3.png', { type: 'image/png' });
 ```
 
 ## Плашка File
@@ -670,20 +688,20 @@ const file = new File([array], 'file 3.png', { type: 'image/png' });
     {() => {
         return (
             <Groups design='vertical'>
-                <FileLoader.File
+                <File
                     file={{ url: '1', date: new Date().toISOString(), size: 2048, name: 'file 1.doc' }}
                     closable={false}
                 />
-                <FileLoader.File
+                <File
                     file={{ url: '1', date: new Date(), size: 2048, name: 'file 1.doc' }}
                     closable={false}
                 />
-                <FileLoader.File
+                <File
                     file={{ url: '1', size: 2048, name: 'file 1.doc' }}
                     altText={'Файл загружен'}
                     closable={false}
                 />
-                <FileLoader.File
+                <File
                     file={{ url: '1', size: 2048, name: 'file 1' }}
                     altText={'Файл загружен'}
                     closable={false}
@@ -702,7 +720,7 @@ const file = new File([array], 'file 3.png', { type: 'image/png' });
         const [show, setShow] = React.useState(false);
         const ref = React.useRef(null);
         const changeHandler = React.useCallback(
-            (e, newFiles) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -725,7 +743,7 @@ const file = new File([array], 'file 3.png', { type: 'image/png' });
         return (
             <Groups design='vertical'>
                 <Button onClick={() => setShow(true)}>Open</Button>
-                <Modal isOpen={show} onClose={() => setShow(false)}>
+                <Modal isOpen={show} onDelete={() => setShow(false)}>
                     <Modal.Layout>
                         <Modal.Head>
                             <Modal.Title>Загрузите файлы</Modal.Title>
@@ -738,7 +756,7 @@ const file = new File([array], 'file 3.png', { type: 'image/png' });
                                     content={content}
                                     subContent={subContent}>
                                     {files.map((f, i) => (
-                                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                                        <File key={i} file={f} onDelete={deleteHandler} />
                                     ))}
                                 </FileLoader>
                             </FormField>
@@ -746,6 +764,106 @@ const file = new File([array], 'file 3.png', { type: 'image/png' });
                     </Modal.Layout>
                 </Modal>
             </Groups>
+        );
+    }}
+```
+
+## Ограничение на количество загружаемых файлов
+
+Свойство `maxfiles` - ограничивает максимальное количество файлов.
+
+```
+    {() => {
+        const [files, setFiles] = React.useState([]);
+        const ref = React.useRef(null);
+        const changeHandler = React.useCallback(
+            ({value: newFiles}) => {
+                setFiles([...files, ...newFiles]);
+            },
+            [files]
+        );
+        const deleteHandler = React.useCallback(
+            (file) => {
+                setFiles(files.filter((f) => f !== file));
+            },
+            [files]
+        );
+        return (
+            <FormField>
+                <FileLoader
+                    maxFiles={2}
+                    ref={ref}
+                    content={'Перетащите файлы'}
+                    onChange={changeHandler}>
+                    {files.map((f, i) => (
+                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    ))}
+                </FileLoader>
+            </FormField>
+        );
+    }}
+```
+
+## Возможность вставки файлов из буфера обмена
+
+Есть возможность вставить файлы из буфера обмена. Для этого можно повесить ref на HTMLElement, на который вешается слушатель событий для вставки файлов из буфера обмена.
+
+```
+    {() => {
+        const [files, setFiles] = React.useState([]);
+        const changeHandler = React.useCallback(
+            ({value: newFiles}) => {
+                setFiles([...files, ...newFiles]);
+            },
+            [files]
+        );
+        const deleteHandler = React.useCallback(
+            (file) => {
+                setFiles(files.filter((f) => f !== file));
+            },
+            [files]
+        );
+        const pasteListenerRef = React.useRef(null);
+        return (
+            <div ref={pasteListenerRef}>
+                <FileLoader
+                    content={'Перетащите или вставьте файлы из буфера'}
+                    onChange={changeHandler}
+                    pasteListenerRef={pasteListenerRef}>
+                    {files.map((f, i) => (
+                        <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                    ))}
+                </FileLoader>
+            </div>
+        );
+    }}
+```
+
+## Дополнительный комментарий к полю
+
+С помощью свойства `helperText` можно добавить дополнительный комментарий к полю.
+
+```
+    {() => {
+        const [files, setFiles] = React.useState([]);
+        const changeHandler = React.useCallback(
+            ({value: newFiles}) => {
+                setFiles([...files, ...newFiles]);
+            },
+            [files]
+        );
+        const deleteHandler = React.useCallback(
+            (file) => {
+                setFiles(files.filter((f) => f !== file));
+            },
+            [files]
+        );
+        return (
+            <FileLoader onChange={changeHandler} content={'Перетащите файлы'} helperText="Можно не заполнять">
+                {files.map((f, i) => (
+                    <FileLoader.File key={i} file={f} onDelete={deleteHandler} />
+                ))}
+            </FileLoader>
         );
     }}
 ```

@@ -24,47 +24,55 @@ import { Groups } from 'vienna-ui';
 | --- | --- | --- | --- |
 | height | 'full' \| 'auto' \| undefined | | Высота контейнера |
 
-## Использование
+
+# Groups
 
 Контейнер для объеденения элементов в группы с отступами между элементами.
 
-```jsx
-<Groups>
-    <Button design='accent'>Make payment</Button>
-    <Button design='outline'>Download statement</Button>
-    <Button design='ghost'>
-        <Trash /> Delete statement
-    </Button>
-</Groups>
+
+
+```
+    <Groups>
+        <Button design='accent'>Make payment</Button>
+        <Button design='outline'>Download statement</Button>
+        <Button design='ghost'>
+            <TrashDeleteIcon /> Delete statement
+        </Button>
+    </Groups>
 ```
 
-## Дизайн
+## Использование
 
-##### Свойство `design`
-
-Компонент имееет дизайн `vertical` для вертикального выравнивания элементов.
-
-```jsx
-<Groups design='vertical'>
-    <Button design='accent'>Make payment</Button>
-    <Button design='outline'>Download statement</Button>
-    <Button design='outline'>
-        <Trash /> Delete statement
-    </Button>
-</Groups>
+```
+    <Groups>
+        <Button design='accent'>Make payment</Button>
+        <Button design='outline'>Download statement</Button>
+        <Button design='ghost'>
+            <TrashDeleteIcon /> Delete statement
+        </Button>
+    </Groups>
 ```
 
-## Дизайн
+## Расположение элементов
 
-Компонент имееет дизайн `vertical` для вертикального выравнивания элементов.
+Компонент имееет свойство `design` (тип `'horizontal' | 'vertical'`), отвечает за расположение элементов по горизонтали или вертикали
 
 ```
     <Groups design='vertical'>
-        <Button design='accent'>Make payment</Button>
-        <Button design='outline'>Download statement</Button>
-        <Button design='outline'>
-            <TrashDelete /> Delete statement
-        </Button>
+        <Groups design='horizontal'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDeleteIcon /> Delete statement
+            </Button>
+        </Groups>
+        <Groups design='horizontal'>
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='outline'>
+                <TrashDeleteIcon /> Delete statement
+            </Button>
+        </Groups>
     </Groups>
 ```
 
@@ -78,37 +86,53 @@ import { Groups } from 'vienna-ui';
             <Button design='accent'>Make payment</Button>
             <Button design='outline'>Download statement</Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </Groups>
         <Groups size='s'>
             <Button design='accent'>Make payment</Button>
             <Button design='outline'>Download statement</Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </Groups>
         <Groups size='m'>
             <Button design='accent'>Make payment</Button>
             <Button design='outline'>Download statement</Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </Groups>
         <Groups size='l'>
             <Button design='accent'>Make payment</Button>
             <Button design='outline'>Download statement</Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </Groups>
         <Groups size='xl'>
             <Button design='accent'>Make payment</Button>
             <Button design='outline'>Download statement</Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </Groups>
+    </Groups>
+```
+
+## Выравнивание элементов
+
+За выравнивание элементов отвечают свойства `alignItems` и `justifyContent` добавляют аналогичные по названию css свойства контейнеру
+
+```
+    <Groups clean={true} alignItems="flex-start" justifyContent="flex-end">
+        <Button design='accent'>Make payment</Button>
+        <Button design='outline'>Download statement</Button>
+        <React.Fragment>
+            <Button size="xl">
+                <TrashDeleteIcon /> Delete statement
+            </Button>
+        </React.Fragment>
     </Groups>
 ```
 
@@ -122,11 +146,75 @@ import { Groups } from 'vienna-ui';
         <Button design='outline'>Download statement</Button>
         <React.Fragment>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
             <Button design='outline'>
-                <TrashDelete /> Delete statement
+                <TrashDeleteIcon /> Delete statement
             </Button>
         </React.Fragment>
     </Groups>
+```
+
+## Добавление отступа снизу
+
+Свойство `bottomGap` добавляет группе отступ снизу пропорционально размеру.
+
+```
+    <Groups design='vertical'>
+            <Groups size='xs' bottomGap>
+                <Button design='accent'>Make payment</Button>
+                <Button design='outline'>Download statement</Button>
+                <Button design='outline'>
+                    <TrashDeleteIcon /> Delete statement
+                </Button>
+            </Groups>
+            <Groups size='s' bottomGap>
+                <Button design='accent'>Make payment</Button>
+                <Button design='outline'>Download statement</Button>
+                <Button design='outline'>
+                    <TrashDeleteIcon /> Delete statement
+                </Button>
+            </Groups>
+            <Groups size='m' bottomGap>
+                <Button design='accent'>Make payment</Button>
+                <Button design='outline'>Download statement</Button>
+                <Button design='outline'>
+                    <TrashDeleteIcon /> Delete statement
+                </Button>
+            </Groups>
+            <Groups size='l' bottomGap>
+                <Button design='accent'>Make payment</Button>
+                <Button design='outline'>Download statement</Button>
+                <Button design='outline'>
+                    <TrashDeleteIcon /> Delete statement
+                </Button>
+            </Groups>
+            <Groups size='xl' bottomGap>
+                <Button design='accent'>Make payment</Button>
+                <Button design='outline'>Download statement</Button>
+                <Button design='outline'>
+                    <TrashDeleteIcon /> Delete statement
+                </Button>
+            </Groups>
+    </Groups>
+```
+
+## Высота контейнера
+
+За высоту контейнера отвечает свойство `height` (тип `'full' | 'auto'`), по умолчанию значение `auto`. Значение `full` добавляет css свойства контейнеру:
+```
+align-items: flex-start;
+height: 100%;
+```
+
+```
+    <div style={{height: '100px'}}>
+        <Groups height="full">
+            <Button design='accent'>Make payment</Button>
+            <Button design='outline'>Download statement</Button>
+            <Button design='ghost'>
+                <TrashDeleteIcon /> Delete statement
+            </Button>
+        </Groups>
+    </div>
 ```

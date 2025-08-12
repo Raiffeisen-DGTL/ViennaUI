@@ -155,15 +155,22 @@ import { Select } from 'vienna-ui';
 | disabled |boolean \| undefined |
 
 
-## Использование
+# Select
 
-Компонент состоит из родительского контейнера `Select` и дочерних элементов `Select.Option`. При использовании допускается указывать либо `options`, либо передавать `дочерние элементы`. Предусмотрено автомотическое позиционирование выпадающего списка.
+Компонент предназначен для выбора одного элемента из выпадающего списка.
 
-> Компонент является контролируемым, то есть чтобы отобразить выбранное значение, необходимо получить его значение через обработчик `onChange` и прокинуть в `value`. По умолчанию работает с массивом строк или объектами у которых есть поле `value`
+Используется:
+- Формы: Хорошо подходит для форм, где требуется выбрать один вариант из небольшого списка (5-15 пунктов)
+- Фильтрация: Может использоваться для выбора критериев фильтрации или сортировки данных.
+- Настройки: Позволяет выбрать предустановленные настройки или параметры, например, валюту.
+- Переключение состояния: Может использоваться для изменения состояния или отображения контента в зависимости от выбранного варианта.
+
+
+
 ```
- {() => {
+    {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -191,7 +198,7 @@ import { Select } from 'vienna-ui';
 Открытие и закрытие списка происходит по клавишам `Enter` и `Esacape` соответственно.
 
 <ComponentHelpers.Select.Warn>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         При использовании допускается единовремнно указывать либо <span>options</span>, либо передавать{' '}
         <span>дочерние элементы</span>
@@ -203,7 +210,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -215,12 +222,13 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 Дизайн `material`
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 design='material'
@@ -228,7 +236,7 @@ import { Select } from 'vienna-ui';
                 value={value}
                 maxListHeight={300}
                 fitOptions={false}
-                onChange={(e, d) => console.log(d)}
+                onChange={(d) => console.log(d)}
                 onSelect={handleSelect}>
                 <Select.Option>Значение Значение Значение Значение Значение 1</Select.Option>
                 <Select.Option>Значение Значение Значение Значение 2</Select.Option>
@@ -247,7 +255,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Groups design='vertical'>
                 <Select size='xs' placeholder='Выберите значение' value={value} onSelect={handleSelect}>
@@ -296,12 +304,13 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 Доступные размеры `xs`, `s`, `m`, `l`, `xl` и `xxl` в дизайне `material`.
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Groups design='vertical'>
                 <Select
@@ -380,12 +389,13 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 #### Состояние ошибки
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select invalid placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -403,7 +413,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select design='material' invalid placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -415,12 +425,13 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 #### Состояние disabled
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select disabled placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -432,12 +443,13 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 Дизайн `material`
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select design='material' disabled placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -455,7 +467,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
@@ -471,7 +483,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option value='Значение 1' />
@@ -487,7 +499,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option value={{ value: 'Значение 1' }} />
@@ -501,7 +513,7 @@ import { Select } from 'vienna-ui';
 ```
 
 <ComponentHelpers.Select.Info>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         По умолчанию компонент работает со строками или объектами в которых есть поле <span>value</span>, если
         стандартная ситуация невозможна то можно воспользоваться свойством <span>valueToString</span>, которое указывает
@@ -512,7 +524,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 placeholder='Выберите значение'
@@ -533,7 +545,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 placeholder='Выберите значение'
@@ -556,10 +568,12 @@ import { Select } from 'vienna-ui';
     {() => {
         const [value, setValue] = React.useState();
         const [options, setOptions] = React.useState([]);
-        const handleSelect = (e, data) => setValue(data.value);
-        setTimeout(() => {
-            setOptions(['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5']);
-        }, 15000);
+        const handleSelect = ({ value }) => setValue(value);
+        React.useEffect(() => {
+            setTimeout(() => {
+                setOptions(['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5']);
+            }, 15000);
+        }, []);
         return <Select placeholder='Выберите значение' options={options} value={value} onSelect={handleSelect} />;
     }}
 ```
@@ -568,10 +582,12 @@ import { Select } from 'vienna-ui';
     {() => {
         const [value, setValue] = React.useState();
         const [options, setOptions] = React.useState(['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5']);
-        const handleSelect = (e, data) => setValue(data.value);
-        setTimeout(() => {
-            setOptions( ['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5'] );
-        }, 15000);
+        const handleSelect = ({ value }) => setValue(value);
+        React.useEffect(() => {
+            setTimeout(() => {
+                setOptions( ['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5'] );
+            }, 15000);
+        }, []);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 {options.map((item, index) => (
@@ -582,6 +598,7 @@ import { Select } from 'vienna-ui';
     }}
 
 ```
+
 ## Бесконечные списки
 
 Свойства `options` как `callback`
@@ -589,7 +606,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         const getOptions = React.useCallback((options) => {
             if (options.length) {
                 return options.concat([`Значение ${options.length + 1}`]);
@@ -614,7 +631,7 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         const getOptions = (options) => {
             if (options.length) {
                 return Promise.resolve(options.concat([`Значение ${options.length + 1}`]));
@@ -640,10 +657,11 @@ import { Select } from 'vienna-ui';
         );
     }}
 ```
+
 Если элементы переданы, как дочерние
 
 <ComponentHelpers.Select.Info>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         Также тут продемонстрирован вариант предачи в качестве дочернего элемента <span>функции</span>, которая
         принимает следующие праметры : <span>props, currentIndex, Option</span>
@@ -652,7 +670,7 @@ import { Select } from 'vienna-ui';
 
 ```
     {() => {
-        const [value, setValue] = React.useState({ name: '' });
+        const [value, setValue] = React.useState();
         const [options, setOptions] = React.useState([
             { name: 'Значение 1' },
             { name: 'Значение 2' },
@@ -661,14 +679,14 @@ import { Select } from 'vienna-ui';
             { name: 'Значение 5' },
             { name: 'Значение 6' },
         ]);
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         const handleScroll = (e, data) => {
-            const { height, scrollTop, scrollHeight } = data;
+            const { height, scrollTop, scrollHeight } = data
             if (height + scrollTop > scrollHeight - 10) {
-                options.push({ name: `Элемент ${options.length}` });
-                setOptions(options);
+                options.push({ name: `Элемент ${options.length}` })
+                setOptions(options)
             }
-        };
+        }
         return (
             <Groups design='vertical'>
                 <Select
@@ -694,7 +712,7 @@ import { Select } from 'vienna-ui';
 ## Кастомизация
 
 <ComponentHelpers.Select.Warn>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         Далее представлены некоторые способы изменения внешнего вида компонента, перед использованием рекомендуется
         проконсультироваться с дизайнером, возможно стоит пересмотреть дизайн
@@ -702,7 +720,7 @@ import { Select } from 'vienna-ui';
 </ComponentHelpers.Select.Warn>
 
 <ComponentHelpers.Select.Warn>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         Далее и везде при использовании иконок нужно придерживаться правила:
         <div>
@@ -721,9 +739,11 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
-            <Select postfix={{ up: <Violin /> }} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+            <Select
+            postfix={{ up: <ViolinIcon /> }}
+            placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
                 <Select.Option>Значение 2</Select.Option>
                 <Select.Option>Значение 3</Select.Option>
@@ -739,10 +759,10 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
-                postfix={{ up: <FaceNeutral />, down: <FaceSmile /> }}
+                postfix={{ up: <FaceNeutralIcon />, down: <FaceSmileIcon /> }}
                 placeholder='Выберите значение'
                 value={value}
                 onSelect={handleSelect}>
@@ -761,9 +781,9 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
-            <Select prefix={<TaskDone />} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+            <Select prefix={<TaskDoneIcon />} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
                 <Select.Option>Значение 2</Select.Option>
                 <Select.Option>Значение 3</Select.Option>
@@ -779,13 +799,13 @@ import { Select } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
-                <Select.Option icon={<TheaterOut />}>Значение 1</Select.Option>
-                <Select.Option icon={<Violin />}>Значение 2</Select.Option>
-                <Select.Option icon={<Bust />}>Значение 3</Select.Option>
-                <Select.Option icon={<ToPay />}>Значение 4</Select.Option>
+                <Select.Option icon={<TheaterOutIcon />}>Значение 1</Select.Option>
+                <Select.Option icon={<ViolinIcon />}>Значение 2</Select.Option>
+                <Select.Option icon={<BustIcon />}>Значение 3</Select.Option>
+                <Select.Option icon={<ToPayIcon />}>Значение 4</Select.Option>
                 <Select.Option>Значение 5</Select.Option>
             </Select>
         );
@@ -804,7 +824,7 @@ import { Select } from 'vienna-ui';
             { value: 'Значение 4', sub: 'Дополнение 4' },
             { value: 'Значение 5', sub: 'Дополнение 5' },
         ]);
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 valueToString={(item) => item && item.value}
@@ -824,7 +844,7 @@ import { Select } from 'vienna-ui';
 #### Использование неоднородных элементов и блокировка
 
 <ComponentHelpers.Select.Info>
-    <WarningRing size='xl' />
+    <WarningRingIcon size='xl' />
     <div>
         Обратите внимание на свойство <span>disabled</span> у элемента списка, оно делает его недоступным к выбору
     </div>
@@ -837,12 +857,12 @@ import { Select } from 'vienna-ui';
             { value: 'Значение 1', sub: 'Дополнение 1', type: 'custom' },
             { value: 'Значение 2', sub: 'Дополнение 2', type: 'default' },
             { value: 'Значение 3', sub: 'Дополнение 3', type: 'default' },
-            { value: 'Значение 4', sub: 'Дополнение 4', type: 'icon', icon: <Violin /> },
-            { value: 'Значение 5', sub: 'Дополнение 5', type: 'icon', icon: <Bust /> },
+            { value: 'Значение 4', sub: 'Дополнение 4', type: 'icon', icon: <ViolinIcon /> },
+            { value: 'Значение 5', sub: 'Дополнение 5', type: 'icon', icon: <BustIcon /> },
             { value: 'Значение 6', sub: 'Дополнение 6', type: 'custom', disabled: true },
             { value: 'Значение 7', sub: 'Дополнение 7', type: 'default' },
         ]);
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 valueToString={(item) => item && item.value}
@@ -883,12 +903,12 @@ export const Template = styled.div`
             { value: 'Значение 1', sub: 'Дополнение 1', type: 'custom' },
             { value: 'Значение 2', sub: 'Дополнение 2', type: 'default' },
             { value: 'Значение 3', sub: 'Дополнение 3', type: 'default' },
-            { value: 'Значение 4', sub: 'Дополнение 4', type: 'icon', icon: <Violin /> },
-            { value: 'Значение 5', sub: 'Дополнение 5', type: 'icon', icon: <Bust /> },
+            { value: 'Значение 4', sub: 'Дополнение 4', type: 'icon', icon: <ViolinIcon /> },
+            { value: 'Значение 5', sub: 'Дополнение 5', type: 'icon', icon: <BustIcon /> },
             { value: 'Значение 6', sub: 'Дополнение 6', type: 'custom', disabled: true },
             { value: 'Значение 7', sub: 'Дополнение 7', type: 'default' },
         ]);
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 valueToString={(item) => item && item.value}
@@ -916,22 +936,28 @@ export const Template = styled.div`
         );
     }}
 ```
+
 ## Программная установка и снятие фокуса
+
+Начиная с 12 версии сделали программное управление фокусом через свойство `controlsRef`, которое имеет тип:
+```
+React.MutableRefObject<{
+   focus: () => void;
+   blur: () => void;
+} | null>
+```
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const [options, setOptions] = React.useState([
-            'Значение 1',
-            'Значение 2',
-            'Значение 3',
-            'Значение 4',
-            'Значение 5',
-        ]);
-        let select = React.useRef(null);
-        const handleSelect = React.useCallback((e, data) => setValue(data.value));
-        const focus = React.useCallback(() => select.current && select.current.focus(), [select]);
-        const blur = React.useCallback(() => select.current && select.current.blur(), [select]);
+        const controlsRef = React.useRef(null);
+        const [options] = React.useState(['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5']);
+        const handleSelect = ({ value }) => setValue(value);
+        const focus = () => controlsRef.current && controlsRef.current.focus();
+        const blur = () => {
+            focus();
+            controlsRef.current && setTimeout(controlsRef.current.blur, 1000);
+        };
         return (
             <>
                 <Groups>
@@ -939,13 +965,15 @@ export const Template = styled.div`
                         Focus
                     </Button>
                     <Button design='primary' onClick={blur}>
-                        Blur
+                        Focus and Blur after sec
                     </Button>
                 </Groups>
                 <hr />
                 <Groups design='vertical'>
                     <Select
-                        ref={select}
+                        fixed
+                        maxListHeight={150}
+                        controlsRef={controlsRef}
                         placeholder='Выберите значение'
                         options={options}
                         value={value}
@@ -953,6 +981,32 @@ export const Template = styled.div`
                     />
                 </Groups>
             </>
+        );
+    }}
+```
+
+## Событие открытия/закрытия выпадающего списка
+
+При открытиии/закрытии выпадающего списка коллбек, переданный в onToggle, вызывается с аргументом isShown,
+соответсвующим новому состоянию компонента DropDown
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleSelect = ({ value }) => setValue(value);
+        return (
+            <Select
+                placeholder='Выберите значение'
+                value={value}
+                onSelect={handleSelect}
+                onToggle={console.log}
+            >
+                <Select.Option>Значение 1</Select.Option>
+                <Select.Option>Значение 2</Select.Option>
+                <Select.Option>Значение 3</Select.Option>
+                <Select.Option>Значение 4</Select.Option>
+                <Select.Option>Значение 5</Select.Option>
+            </Select>
         );
     }}
 ```
@@ -978,11 +1032,18 @@ export const Template = styled.div`
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const [options, setOptions] = React.useState([]);
-        const handleSelect = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
-        const changeHandler = React.useCallback((e, data) => {
+        const [options, setOptions] = React.useState(['Значение 1',
+      'Значение 2',
+      'Значение 3',
+      'Значение 4',
+      'Значение 5',
+      'Данные 1',
+      'Данные 2',
+      'Данные 3',
+      'Данные 4',
+      'Данные 5']);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = React.useCallback(({ value }) => {
             const mock = [
                 'Значение 1',
                 'Значение 2',
@@ -995,7 +1056,7 @@ export const Template = styled.div`
                 'Данные 4',
                 'Данные 5',
             ];
-            setOptions([...mock.filter((i) => i.startsWith(data.value))]);
+            setOptions([...mock.filter((i) => i.startsWith(value))]);
         }, []);
         return (
             <Select
@@ -1015,7 +1076,16 @@ export const Template = styled.div`
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const [options, setOptions] = React.useState([]);
+        const [options, setOptions] = React.useState(['Значение 1',
+      'Значение 2',
+      'Значение 3',
+      'Значение 4',
+      'Значение 5',
+      'Данные 1',
+      'Данные 2',
+      'Данные 3',
+      'Данные 4',
+      'Данные 5']);
         const mock = [
             'Значение 1',
             'Значение 2',
@@ -1026,13 +1096,11 @@ export const Template = styled.div`
             'Данные 2',
             'Данные 3',
             'Данные 4',
-            'Данные 5',
+            'Данные 5'
         ];
-        const handleSelect = (e, data) => {
-            setValue(data.value);
-        };
-        const changeHandler = (e, data) => {
-            setOptions([...mock.filter((i) => i.startsWith(data.value))]);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = ({ value }) => {
+            setOptions([...mock.filter((i) => i.startsWith(value))]);
         };
         return (
             <Groups design='vertical'>
@@ -1068,7 +1136,7 @@ export const Template = styled.div`
 
 Бывает что требуется предоставить пользователю возможность сохранить то значение что сейчас введено, даже если отсутствует сопоставление в списке
 
--   Обратите внимание что такое использование компонента является контекстно-некорректным, попробуйте решить проблему по другому или воспользоваться компонентом `Search`
+- Обратите внимание что такое использование компонента является контекстно-некорректным, попробуйте решить проблему по другому или воспользоваться компонентом `Search`
 
 ```
     {() => {
@@ -1086,12 +1154,10 @@ export const Template = styled.div`
         ];
         const [options, setOptions] = React.useState(mock);
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => {
-            setValue(data.value);
-        };
-        const changeHandler = (e, data) => {
-            setValue(data.value);
-            setOptions([...mock.filter((i) => i.startsWith(data.value))]);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = ({ value }) => {
+            setValue(value);
+            setOptions([...mock.filter((i) => i.startsWith(value))]);
         };
         return (
             <Select
@@ -1118,12 +1184,10 @@ export const Template = styled.div`
         const mock = ['1234-1234', '1234-5678', '1234-0000', '1234-9876', '1234-4321'];
         const [options, setOptions] = React.useState(mock);
         const [value, setValue] = React.useState('1234-0000');
-        const handleSelect = (e, data) => {
-            setValue(data.value);
-        };
-        const changeHandler = (e, data) => {
-            setValue(data.value);
-            setOptions([...mock.filter((i) => i.startsWith(data.value))]);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = ({ value }) => {
+            setValue(value);
+            setOptions([...mock.filter((i) => i.startsWith(value))]);
         };
         return (
             <Select
@@ -1141,6 +1205,7 @@ export const Template = styled.div`
     }}
 
 ```
+
 ## Спиннер
 
 ```
@@ -1148,8 +1213,8 @@ export const Template = styled.div`
         const [value, setValue] = React.useState();
         const [loading, setLoading] = React.useState(false);
         const timerRef = React.useRef(null);
-        const handleSelect = React.useCallback((e, data) => {
-            setValue(data.value);
+        const handleSelect = React.useCallback(({ value }) => {
+            setValue(value);
             setLoading(true);
             if (timerRef.current) {
                 clearTimeout(timerRef.current);
@@ -1161,7 +1226,8 @@ export const Template = styled.div`
                 placeholder='Выберите значение'
                 value={value}
                 onSelect={handleSelect}
-                postfix={loading && { up: <Spinner /> }}>
+                postfix={loading ? { up: <Spinner/ > }: undefined}
+                >
                 <Select.Option>Значение 1</Select.Option>
                 <Select.Option>Значение 2</Select.Option>
                 <Select.Option>Значение 3</Select.Option>
@@ -1174,10 +1240,12 @@ export const Template = styled.div`
 
 ## Свойство fixed
 
+Для отображения выпадающего списка поверх контейнера с `overflow: hidden`, можно добавить фиксированное позиционирование с помощью свойства `fixed`. Обратите внимание, что это приведет к фиксации выпадающего списка в определенном месте вне зависимости от скролла страницы.
+
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <div
                 style={{
@@ -1202,22 +1270,37 @@ export const Template = styled.div`
         );
     }}
 ```
-## Свойство fitOptions
+
+## Изменение размеров выпадающего списка
+
+За управление размерами отвечают следующие свойства:
+- fitOptions (тип boolean) растягивает выпадающий список по ширине родителя, по умолчанию `true`;
+- maxListHeight (тип number) ограничивает высоту выпадающего списка в пикселях;
+- maxListWidth (тип number) ограничивает ширину выпадающего списка в пикселях;
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
-            <div style={{ width: '100px' }}>
-                <Select fitOptions={false} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+            <Groups design='vertical'>
+                <div style={{ width: '100px' }}>
+                    <Select fitOptions={false} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+                        <Select.Option>Значение 1</Select.Option>
+                        <Select.Option>Значение очень длииное 2</Select.Option>
+                        <Select.Option>Значение 3</Select.Option>
+                        <Select.Option>Значение 4</Select.Option>
+                        <Select.Option>Значение 5</Select.Option>
+                    </Select>
+                </div>
+                <Select maxListWidth={250} maxListHeight={100} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                     <Select.Option>Значение 1</Select.Option>
                     <Select.Option>Значение очень длииное 2</Select.Option>
                     <Select.Option>Значение 3</Select.Option>
                     <Select.Option>Значение 4</Select.Option>
                     <Select.Option>Значение 5</Select.Option>
                 </Select>
-            </div>
+            </Groups>
         );
     }}
 ```
@@ -1227,7 +1310,7 @@ export const Template = styled.div`
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <div
                 style={{
@@ -1259,12 +1342,32 @@ export const Template = styled.div`
     }}
 ```
 
+## Кнопка очистки заполненного поля
+
+Свойство `clearButton` добавляет кнопку очистки заполненного поля (кнопка очистки отображается в состояниях с выбранным вариантом)
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleSelect = ({ value }) => setValue(value);
+        return (
+            <Select placeholder='Выберите значение' value={value} clearButton onSelect={handleSelect}>
+                <Select.Option>Значение 1</Select.Option>
+                <Select.Option>Значение 2</Select.Option>
+                <Select.Option>Значение 3</Select.Option>
+                <Select.Option>Значение 4</Select.Option>
+                <Select.Option>Значение 5</Select.Option>
+            </Select>
+        );
+    }}
+```
+
 ## Интерактивный элемент списка
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select placeholder='Выберите значение' value={value} onSelect={handleSelect}>
                 <Groups __nowrap__ alignItems='center' height='full' justifyContent='center'>
@@ -1282,6 +1385,42 @@ export const Template = styled.div`
                         Кнопка
                     </Button>
                 </Groups>
+            </Select>
+        );
+    }}
+```
+
+#### Элементы списка с кнопками
+
+```
+    {() => {
+    const [value, setValue] = React.useState(undefined);
+        const [options, setOptions] = React.useState(['Значение 1', 'Значение 2', 'Значение 3', 'Значение 4', 'Значение 5', 'Значение 6']);
+        const handleSelect = ({ value: selectedValue }) => {
+            if (selectedValue && options.includes(selectedValue)) {
+                setValue(selectedValue);
+            }
+        };
+        const handleOptionClick = (e, value) => {
+            e.stopPropagation();
+            setOptions(options.filter(option => option !== value));
+        };
+        React.useEffect(() => {
+            if (value !== undefined && !options.includes(value)) {
+                setValue(undefined);
+            }
+        }, [options, value]);
+        const renderOption = (value) => (
+            <Select.Option key={value} value={value}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '500px' }}>
+                    {value}
+                    <CloseCancelXIcon onMouseDown={(e) => handleOptionClick(e, value)} />
+                </div>
+            </Select.Option>
+        );
+        return (
+            <Select maxListWidth={550} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+                {options.map((option) => renderOption(option))}
             </Select>
         );
     }}
@@ -1325,7 +1464,7 @@ systemBreakpoints: Breakpoints = {
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleSelect = (e, data) => setValue(data.value);
+        const handleSelect = ({ value }) => setValue(value);
         return (
             <Select
                 size={{ base: 's', s: 'xs', m: 'xl' }}
@@ -1333,6 +1472,326 @@ systemBreakpoints: Breakpoints = {
                 value={value}
                 onSelect={handleSelect}>
                 <Select.Option>Значение 1</Select.Option>
+                <Select.Option>Значение 2</Select.Option>
+                <Select.Option>Значение 3</Select.Option>
+                <Select.Option>Значение 4</Select.Option>
+                <Select.Option>Значение 5</Select.Option>
+            </Select>
+        );
+    }}
+```
+
+## Содержимое опции в несколько строк
+
+По умолчанию значения опций отображаются в одну строку, и если текст слишком длинный, он будет обрезан троеточием. Чтобы изменить это поведение есть свойство `wrapLine`, которое позволяет вывести текст целиком в несколько строк.
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleSelect = ({ value }) => setValue(value);
+        return (
+            <Select
+                placeholder='Выберите значение'
+                value={value}
+                onSelect={handleSelect}>
+                <Select.Option wrapLine>
+                    Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1
+                    Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1
+                    Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1
+                    Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1 Значение 1
+                </Select.Option>
+                <Select.Option>Значение 2</Select.Option>
+                <Select.Option>Значение 3</Select.Option>
+                <Select.Option>Значение 4</Select.Option>
+                <Select.Option>Значение 5</Select.Option>
+            </Select>
+        );
+    }}
+```
+
+## Реф на input при editable
+
+Есть свойство `inputRef`, которое отвечает за реф на input в Select при указанном `editable`.
+
+```
+    {() => {
+        const inputRef = React.useRef(null);
+        const [value, setValue] = React.useState();
+        const [options, setOptions] = React.useState([
+            'Значение 1',
+            'Значение 2',
+            'Значение 3',
+            'Значение 4',
+            'Значение 5',
+            'Данные 1',
+            'Данные 2',
+            'Данные 3',
+            'Данные 4',
+            'Данные 5'
+        ]);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = React.useCallback((data) => {
+            const mock = [
+                'Значение 1',
+                'Значение 2',
+                'Значение 3',
+                'Значение 4',
+                'Значение 5',
+                'Данные 1',
+                'Данные 2',
+                'Данные 3',
+                'Данные 4',
+                'Данные 5',
+            ];
+            setOptions([...mock.filter((i) => i.startsWith(data.value))]);
+        }, []);
+        return (
+            <Select
+                placeholder='Выберите значение'
+                value={value}
+                editable
+                inputRef={inputRef}
+                onFocus={() => console.log('inputref', inputRef)}
+                onChange={changeHandler}
+                options={options}
+                onSelect={handleSelect}
+            />
+        );
+    }}
+```
+
+## Локализация
+
+Для того чтобы локализовать селект, необходимо передать в localization объект локализации
+
+```
+{
+    'ds.select.empty': 'Нет элементов для отображения',
+}
+```
+
+```
+    {() => {
+        return (
+            <Select
+                placeholder='Choose option'
+                localization={{'ds.select.empty': 'List is empty'}}
+            />
+        );
+    }}
+```
+
+## Возможность триггерить вызов onSelect с выбранным значением
+
+За возможность триггерить вызов onSelect с выбранным значением отвечает свойство `selectFirstOnEnter`. Если данное свойство установлено, то onSelect будет вызываться с первым элементом из списка по нажатию на Enter. Если выбран другой элемент из списка - с ним будет вызываться onSelect. По умолчанию значение false.
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [options, setOptions] = React.useState([
+            'Значение 1',
+            'Значение 2',
+            'Значение 3',
+            'Значение 4',
+            'Значение 5',
+            'Данные 1',
+            'Данные 2',
+            'Данные 3',
+            'Данные 4',
+            'Данные 5'
+        ]);
+        const handleSelect = ({ value }) => setValue(value);
+        const changeHandler = React.useCallback(({ value }) => {
+            const mock = [
+                'Значение 1',
+                'Значение 2',
+                'Значение 3',
+                'Значение 4',
+                'Значение 5',
+                'Данные 1',
+                'Данные 2',
+                'Данные 3',
+                'Данные 4',
+                'Данные 5',
+            ];
+            setOptions([...mock.filter((i) => i.startsWith(value))]);
+        }, []);
+        return (
+            <Select
+                placeholder='Выберите значение'
+                value={value}
+                selectFirstOnEnter
+                onChange={changeHandler}
+                options={options}
+                onSelect={handleSelect}
+            />
+        );
+    }}
+```
+
+## Использование коллбэка для кнопки очистки значения
+
+Когда необходимо добавить дополнительную логику при очистке значения - передайте коллбэк с помощью свойства `onClear`.
+
+```
+    {() => {
+    const [value, setValue] = React.useState('');
+    const handleSelect = ({ value }) => setValue(value);
+    const addLogic = () => {
+        console.log('do some logic here');
+    };
+    return (
+        <Select
+            placeholder='Выберите значение'
+            value={value}
+            onSelect={handleSelect}
+            clearButton
+            onClear={addLogic}>
+            <Select.Option>Значение 1</Select.Option>
+            <Select.Option>Значение 2</Select.Option>
+            <Select.Option>Значение 3</Select.Option>
+            <Select.Option>Значение 4</Select.Option>
+            <Select.Option>Значение 5</Select.Option>
+        </Select>
+    );
+    }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <Select
+        viewOnly
+        placeholder='Выберите значение'
+        value={'Значение 1'}
+        options={[]}
+    />
+```
+
+## Кнопка «Добавить»
+
+Если пользователь сам заполняет справочник, а каждая запись имеет дополнительные поля, добавьте внизу выпадающего списка пункт «Добавить», чтобы пользователь мог быстро перейти к созданию новой записи.
+При клике на этот пункт можно открывать модальное окно, drawer или отдельную страницу.
+
+Список свойств для работы с кнопкой:
+
+- showAddButton - показать кнопку (тип `boolean`)
+- addButtonOnClick - обработчик события клика по кнопке «Добавить» (тип `() => void`)
+
+```
+    {() => {
+        const [options, setOptions] = React.useState([
+            {
+                id: 1,
+                label: 'Значение 1',
+            },
+            {
+                id: 2,
+                label: 'Значение 2',
+            },
+            {
+                id: 3,
+                label: 'Значение 3',
+            },
+            {
+                id: 4,
+                label: 'Значение 4',
+            },
+        ]);
+        const [value, setValue] = React.useState();
+        const [isOpen, setIsOpen] = React.useState(false);
+        const [inputValue, setInputValue] = React.useState('');
+        const inputRef = React.useRef(null);
+        const handleSelect = ({ value }) => setValue(value);
+        const handleAddButtonClick = () => {
+            setIsOpen(true);
+        };
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            const newOption = { id: Date.now(), label: inputValue };
+            setOptions((prev) => [...prev, newOption]);
+            setIsOpen(false);
+            setInputValue('');
+            setValue(newOption);
+        };
+        return (
+            <div>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} onAfterOpen={() => inputRef.current && inputRef.current.focus()}>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Добавить опцию</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <form onSubmit={handleSubmit}>
+                                <Groups design={'vertical'}>
+                                    <Input
+                                        ref={inputRef}
+                                        placeholder={'Новое значение'}
+                                        value={inputValue}
+                                        required
+                                        onChange={({ value }) => setInputValue(value)}
+                                    />
+                                    <Button type={'submit'} size='l' design='outline'>
+                                        Сохранить
+                                    </Button>
+                                </Groups>
+                            </form>
+                        </Modal.Body>
+                    </Modal.Layout>
+                </Modal>
+                <Select
+                    options={options}
+                    value={value}
+                    name={'add-button'}
+                    placeholder={'Выберите значение'}
+                    showAddButton
+                    valueToString={(opt) => opt.label}
+                    compare={(opt) => String(opt.id)}
+                    onSelect={handleSelect}
+                    addButtonOnClick={handleAddButtonClick}
+                />
+            </div>
+        );
+    }}
+```
+
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать значения опции, контейнера, инпута, дроплиста, текущей опции, плейсхолдера, префикса, постфикса, опции. 
+
+Пропс `testId?: {container, input, droplist, current, placeholder, prefix, postfix, option}`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultSelectTestId: SelectTestId = {
+    container: 'select_container',
+    input: 'select_input',
+    droplist: 'select_droplist',
+    current: 'select_current',
+    placeholder: 'select_placeholder',
+    prefix: 'select_prefix',
+    postfix: 'select_postfix', // 'part'
+    option: (val: string | React.ReactNode) => `select_option-${val?.toString() ?? ''}`,
+};
+```
+
+```
+{() => {
+        const [value, setValue] = React.useState();
+        const handleSelect = ({ value }) => setValue(value);
+        return (
+            <Select testId={{container: 'test-id-container', input: 'test-id-input', droplist: 'test-id-droplist', current: 'test-id-current', placeholder: 'test-id-placeholder', prefix: 'test-id-prefix', postfix: 'test-id-postfix'}} placeholder='Выберите значение' value={value} onSelect={handleSelect}>
+                <Select.Option testId={(val) => `test-id-${val}`}>Значение 1</Select.Option>
                 <Select.Option>Значение 2</Select.Option>
                 <Select.Option>Значение 3</Select.Option>
                 <Select.Option>Значение 4</Select.Option>

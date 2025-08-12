@@ -77,7 +77,11 @@ import { CssGrid } from 'vienna-ui';
 | width | string \| undefined | |
 
 
-## Иcпользование 
+# CSS Grid
+
+Компонент для создания CSS Grid, поддерживает все css-свойства css гридов.
+
+
 
 ```
     <CssGrid height='100%' templateColumns='100px auto 100px' templateRows='100px auto 50px'>
@@ -139,13 +143,11 @@ import { CssGrid } from 'vienna-ui';
 
 Данные свойства задают внутренние отступы элементов грида и поддерживают только фиксированные значения, соотвествующие размерной сетке Дизайн-Системы в 4px. Для значений используются имена размерных токенов: s1..s16, где s1 = 4px (1 \* 4px), s2 = 8px (2 \* 4px) итд.
 
-```
 <p>
     <Alert design='error'>
         Ни одно из этих свойств на текущий момент (начало 2021) не поддерживаются (и видимо уже не будут) IE.
     </Alert>
 </p>
-```
 
 ```
     <CssGrid height='100%' templateColumns='100px auto 100px' templateRows='100px auto 50px' rowGap='s1' columnGap='s2'>
@@ -277,4 +279,58 @@ systemBreakpoints: Breakpoints = {
             <ComponentHelpers.CssGrid.Demo color='lightgreen'>footer 3</ComponentHelpers.CssGrid.Demo>
         </CssGrid.Item>
     </CssGrid>
+```
+
+## Прокидывание ref
+
+С помощью прокидывания свойства `ref` можно получить доступ к компоненту и избавиться от оборачивания компонента в div.
+
+```
+    {() => {
+        const cssGridRef = React.useRef(null);
+        React.useEffect(() => {
+            setTimeout(() => {
+                cssGridRef.current.style.opacity = '0';
+            }, 5000);
+            return () => {
+                cssGridRef.current.style.opacity = '1';
+            }
+        }, [cssGridRef])
+        return (
+            <CssGrid
+                ref={cssGridRef}
+                height="100%"
+                templateColumns="100px auto 100px"
+                templateRows="100px auto 50px"
+                >
+                <ComponentHelpers.CssGrid.Demo color="lightblue">
+                    1
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="peachpuff">
+                    2
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="orchid">
+                    3
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="darkorange">
+                    4
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="darkseagreen">
+                    5
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="gold">
+                    6
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="deepskyblue">
+                    7
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="lightgreen">
+                    8
+                </ComponentHelpers.CssGrid.Demo>
+                <ComponentHelpers.CssGrid.Demo color="lightsalmon">
+                    9
+                </ComponentHelpers.CssGrid.Demo>
+                </CssGrid>
+                        );
+                    }}
 ```

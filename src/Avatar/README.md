@@ -29,14 +29,14 @@ import { Avatar } from 'vienna-ui';
 ## Использование
 
 ```
-<Avatar src={ComponentHelpers.Avatar.ImageURL} />
+    <Avatar src={ComponentHelpers.Avatar.ImageURL} />
 ```
+
+
 
 ## Размеры
 
-##### Свойство `size`
-
-Доступные размеры: `xs`, `s`, `l`, `m` (по умолчанию) и `xl`
+Компонент имеет стандартные размеры `xs`, `s`, `l`, `m` и `xl` (по-умолчанию размер `m`)
 
 ```
     <Avatar src={ComponentHelpers.Avatar.ImageURL} size='xl' />
@@ -46,39 +46,36 @@ import { Avatar } from 'vienna-ui';
     <Avatar src={ComponentHelpers.Avatar.ImageURL} size='xs' />
 ```
 
-## Использование с `RoundIcon`
+## Использование с IconContainer
 
-Если изображение, переданное в `src` недоступно - отобразиться содержиммое `children`
+Если не передан `src` будет отображено то, что передано в `children`.
 
-```jsx
-import { Avatar } from 'vienna-ui';
-import { RoundIcon } from 'vienna-ui';
-
-<Avatar src='https://bad.url.to.avatar/avatar.png' size='xl'>
-    <RoundIcon size='xl' color='nice10'>
-        B
-    </RoundIcon>
-</Avatar>;
-<Avatar src='https://bad.url.to.avatar/avatar.png' size='l'>
-        <RoundIcon size='l' color='paris10'>
+```
+    <Avatar src='https://bad.url.to.avatar/avatar.png' size='xl'>
+        <IconContainer size='xl' color='nice10'>
+            B
+        </IconContainer>
+    </Avatar>
+    <Avatar src='https://bad.url.to.avatar/avatar.png' size='l'>
+        <IconContainer size='l' color='paris10'>
             U
-        </RoundIcon>
-</Avatar>
-<Avatar src='https://bad.url.to.avatar/avatar.png' size='m'>
-        <RoundIcon size='m' color='dubai10'>
+        </IconContainer>
+    </Avatar>
+    <Avatar src='https://bad.url.to.avatar/avatar.png' size='m'>
+        <IconContainer size='m' color='dubai10'>
             M
-        </RoundIcon>
-</Avatar>
-<Avatar src='https://bad.url.to.avatar/avatar.png' size='s'>
-        <RoundIcon size='s' color='sochi10'>
-            <ManPerson />
-        </RoundIcon>
-</Avatar>
-<Avatar src='https://bad.url.to.avatar/avatar.png' size='xs'>
-        <RoundIcon size='xs' color='seattle10'>
+        </IconContainer>
+    </Avatar>
+    <Avatar src='https://bad.url.to.avatar/avatar.png' size='s'>
+        <IconContainer size='s' color='sochi10'>
+            <ManPersonIcon />
+        </IconContainer>
+    </Avatar>
+    <Avatar src='https://bad.url.to.avatar/avatar.png' size='xs'>
+        <IconContainer size='xs' color='seattle10'>
             R
-        </RoundIcon>
-</Avatar>
+        </IconContainer>
+    </Avatar>
 ```
 
 #### Адаптив
@@ -116,10 +113,26 @@ systemBreakpoints: Breakpoints = {
 };
 ```
 
+## Замещающий текст и ошибка загрузки
+
+Используйте атрибут `alt` для вывода замещающего текста изображения через стандартный механизм браузера.
+
+Также с помощью свойства `hideImageOnError` есть возможность скрыть битое изображение и замещающий текст в случае ошибки. В этом случае в качестве фолбека будет отображён `children`.
+
 ```
-    <Avatar src='https://bad.url.to.avatar/avatar.png' size={{ base: 's', s: 'l', m: 'xl' }}>
-        <RoundIcon size='xl' color='nice10'>
+    <Avatar size='xl' src='https://bad.url.to.avatar/avatar.png' alt='Wrong image example'>
+        <IconContainer size='xl' color='nice10'>
             A
-        </RoundIcon>
+        </IconContainer>
+    </Avatar>
+    <Avatar size='xl' src='https://bad.url.to.avatar/avatar.png' alt=''>
+        <IconContainer size='xl' color='nice10'>
+            A
+        </IconContainer>
+    </Avatar>
+    <Avatar size='xl' src='https://bad.url.to.avatar/avatar.png' alt='Wrong image example' hideImageOnError>
+        <IconContainer size='xl' color='nice10'>
+            A
+        </IconContainer>
     </Avatar>
 ```

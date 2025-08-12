@@ -1,5 +1,3 @@
-
-
 ## Props
 
 | Prop | Type | Default | Description |
@@ -23,21 +21,22 @@
 Компонент, который пригодится для выбора значения из диапозона, но с возможностью ввести конкретное значение как в стандартное поле ввода. Используется для выбора значений в калькуляторе, когда пользователю важнее попробовать разные значения, чем получить конкретный разультат Компонент являеется оберткой над `InputNumber` и, как следствие `Input`. Подробнее о наследованных свойствах смотрите у компонента `Input`;
 
 
+
 ```
     {() => {
         const [value, setValue] = React.useState(50);
-        const changeHandler = (e, data) => {
-            setValue(parseInt(data.value));
+        const changeHandler = (e) => {
+            setValue(parseInt(e));
         };
         return (
             <InputSlider
-                mask='V $'
+                min={20}
+                max={100}
                 lazy={false}
-                blocks={{ V: { mask: Number } }}
                 onChange={changeHandler}
                 value={value}
                 postfix='15%'>
-                <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                <InputSlider.Tag val={20}>20 $</InputSlider.Tag>
                 <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
                 <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
             </InputSlider>
@@ -63,16 +62,13 @@
 ```
     {() => {
         const [value, setValue] = React.useState(50);
-        const changeHandler = (e, data) => {
-            setValue(parseInt(data.value));
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
         };
         return (
-            <Groups design={'vertical'}>
                 <InputSlider
                     size='xs'
-                    mask='V $'
                     lazy={false}
-                    blocks={{ V: { mask: Number } }}
                     onChange={changeHandler}
                     value={value}
                     postfix='15%'>
@@ -80,42 +76,6 @@
                     <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
                     <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
                 </InputSlider>
-                <InputSlider
-                    size='s'
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-                <InputSlider
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-                <InputSlider
-                    size='xl'
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-            </Groups>
         );
     }}
 ```
@@ -123,30 +83,13 @@
 ```
     {() => {
         const [value, setValue] = React.useState(50);
-        const changeHandler = (e, data) => {
-            setValue(parseInt(data.value));
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
         };
         return (
-            <Groups design='vertical'>
                 <InputSlider
-                    design='material'
-                    size='xs'
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-                <InputSlider
-                    design='material'
                     size='s'
-                    mask='V $'
                     lazy={false}
-                    blocks={{ V: { mask: Number } }}
                     onChange={changeHandler}
                     value={value}
                     postfix='15%'>
@@ -154,77 +97,136 @@
                     <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
                     <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
                 </InputSlider>
-                <InputSlider
-                    design='material'
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-                <InputSlider
-                    design='material'
-                    size='xl'
-                    mask='V $'
-                    lazy={false}
-                    blocks={{ V: { mask: Number } }}
-                    onChange={changeHandler}
-                    value={value}
-                    postfix='15%'>
-                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
-                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
-                </InputSlider>
-            </Groups>
         );
     }}
 ```
 
-#### Динамическая маска
-
 ```
     {() => {
-        const [value, setValue] = React.useState(1);
-        const [mask, setMask] = React.useState('V год');
-        const changeHandler = (e, data) => {
-            setValue(parseInt(data.value));
-            const str = String(parseInt(data.value));
-            switch(str[str.length - 1 ]){
-                case 'N':
-                    setMask('V');
-                    return;
-                case '1':
-                    setMask('V год');
-                    return;
-                case '2':
-                case '3':
-                case '4':
-                    setMask('V года');
-                    return
-                default:
-                    setMask('V лет');
-                    return;
-            }
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
         };
         return (
-            <Groups>
                 <InputSlider
-                    mask={mask}
+                    size='m'
                     lazy={false}
-                    min={1}
-                    max={100}
-                    blocks={{ V: { mask: Number } }}
                     onChange={changeHandler}
                     value={value}
                     postfix='15%'>
-                    <InputSlider.Tag val={1}>1 год</InputSlider.Tag>
-                    <InputSlider.Tag val={100}>100 лет</InputSlider.Tag>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
                 </InputSlider>
-            </Groups>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
+                <InputSlider
+                    size='xl'
+                    lazy={false}
+                    onChange={changeHandler}
+                    value={value}
+                    postfix='15%'>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+                </InputSlider>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
+                <InputSlider
+                    design='material'
+                    size='xs'
+                    lazy={false}
+                    onChange={changeHandler}
+                    value={value}
+                    postfix='15%'>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+                </InputSlider>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
+                <InputSlider
+                    design='material'
+                    size='s'
+                    lazy={false}
+                    onChange={changeHandler}
+                    value={value}
+                    postfix='15%'>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+                </InputSlider>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
+                <InputSlider
+                    design='material'
+                    size="m"
+                    lazy={false}
+                    onChange={changeHandler}
+                    value={value}
+                    postfix='15%'>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+                </InputSlider>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
+                <InputSlider
+                    design='material'
+                    size="xl"
+                    lazy={false}
+                    onChange={changeHandler}
+                    value={value}
+                    postfix='15%'>
+                    <InputSlider.Tag val={0}>0 $</InputSlider.Tag>
+                    <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                    <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+                </InputSlider>
         );
     }}
 ```
@@ -234,16 +236,13 @@
 ```
     {() => {
         const [value, setValue] = React.useState(50);
-        const changeHandler = (e, data) => {
-            setValue(parseInt(data.value));
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
         };
         return (
-            <Groups>
                 <InputSlider
                     disabled
-                    mask='V $'
                     lazy={false}
-                    blocks={{ V: { mask: Number } }}
                     onChange={changeHandler}
                     value={value}
                     postfix='15%'>
@@ -251,11 +250,20 @@
                     <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
                     <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
                 </InputSlider>
+        );
+    }}
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e) || 0);
+        };
+        return (
                 <InputSlider
                     invalid
-                    mask='V $'
                     lazy={false}
-                    blocks={{ V: { mask: Number } }}
                     onChange={changeHandler}
                     value={value}
                     postfix='15%'>
@@ -263,7 +271,6 @@
                     <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
                     <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
                 </InputSlider>
-            </Groups>
         );
     }}
 ```
@@ -275,7 +282,7 @@
         const [value, setValue] = React.useState(25);
         return (
             <Groups>
-                <InputSlider onChange={(e, d) => setValue(d.value)} value={value}>
+                <InputSlider onChange={(e) => setValue(e || 0)} value={value}>
                     <InputSlider.Tag val={0}>0</InputSlider.Tag>
                     <InputSlider.Tag val={10}>10</InputSlider.Tag>
                     <InputSlider.Tag val={25}>25</InputSlider.Tag>
@@ -294,7 +301,7 @@
         const [value, setValue] = React.useState(1);
         return (
             <Groups>
-                <InputSlider onChange={(e, d) => setValue(d.value)} min={1} max={5} value={value} />
+                <InputSlider onChange={(e) => setValue(e)} min={1} max={5} value={value} />
             </Groups>
         );
     }}
@@ -307,7 +314,7 @@
         const [value, setValue] = React.useState(800);
         return (
             <Groups>
-                <InputSlider onChange={(e, d) => setValue(d.value)} min={800} max={800000} value={value} />
+                <InputSlider onChange={(e) => setValue(e)} min={800} max={800000} value={value} />
             </Groups>
         );
     }}
@@ -320,7 +327,7 @@
         const [value, setValue] = React.useState(0);
         return (
             <Groups>
-                <InputSlider onChange={(e, d) => setValue(d.value)} step={100} max={10000} value={value} />
+                <InputSlider onChange={(e) => setValue(e)} step={100} max={10000} value={value} />
             </Groups>
         );
     }}
@@ -333,17 +340,16 @@
         const [value, setValue] = React.useState(1);
         const [step, setStep] = React.useState(1);
         const [invalid, setInvalid] = React.useState(false);
-        const changeHanlder = React.useCallback((e, d) => {
-            setValue(d.value);
-            setStep(parseInt(d.value / 10) || 1);
-            if (d.value > 500) {
+        const changeHanlder = React.useCallback((e) => {
+            setValue(e);
+            setStep(parseInt(e / 10) || 1);
+            if (e > 500) {
                 setInvalid(true);
             } else {
                 setInvalid(false);
             }
         }, []);
         return (
-            <Groups>
                 <InputSlider
                     onChange={changeHanlder}
                     invalid={invalid}
@@ -360,7 +366,6 @@
                     <InputSlider.Tag val={500}>500</InputSlider.Tag>
                     <InputSlider.Tag val={1000}>1000</InputSlider.Tag>
                 </InputSlider>
-            </Groups>
         );
     }}
 ```
@@ -370,7 +375,7 @@
 ```
     {() => {
         const [value, setValue] = React.useState(0);
-        const changeHanlder = React.useCallback((e, d) => {
+        const changeHanlder = React.useCallback((d) => {
             setValue(d.value);
         }, []);
         return (
@@ -436,8 +441,8 @@
     {() => {
         const [value, setValue] = React.useState(4);
         const str = 'RAIFFEISEN';
-        const changeHanlder = React.useCallback((e, d) => {
-            setValue(d.value);
+        const changeHanlder = React.useCallback((e) => {
+            setValue(e);
         }, []);
         return (
             <Groups design='vertical'>
@@ -468,7 +473,7 @@
 ```
     {() => {
         const [value, setValue] = React.useState(1);
-        const changeHanlder = React.useCallback((e, d) => {
+        const changeHanlder = React.useCallback((d) => {
             setValue(d.value);
         }, []);
         return (
@@ -481,8 +486,8 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}
                 />
                 <InputSlider
                     noInput
@@ -492,8 +497,8 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}
                 />
                 <InputSlider
                     noInput
@@ -503,8 +508,8 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}>
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}>
                     <InputSlider.Tag val={1}>
                         <Tooltip design='dark' content='sad'>
                             sad
@@ -516,8 +521,8 @@
                         </Tooltip>
                     </InputSlider.Tag>
                     <InputSlider.Tag val={3}>
-                        <Tooltip design='dark' content='FaceSmile'>
-                            FaceSmile
+                        <Tooltip design='dark' content='FaceSmileIcon'>
+                            FaceSmileIcon
                         </Tooltip>
                     </InputSlider.Tag>
                 </InputSlider>
@@ -529,8 +534,8 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}>
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}>
                     <InputSlider.Tag val={1}>
                         <Tooltip design='dark' content='sad'>
                             sad
@@ -542,8 +547,8 @@
                         </Tooltip>
                     </InputSlider.Tag>
                     <InputSlider.Tag val={3}>
-                        <Tooltip design='dark' content='FaceSmile'>
-                            FaceSmile
+                        <Tooltip design='dark' content='FaceSmileIcon'>
+                            FaceSmileIcon
                         </Tooltip>
                     </InputSlider.Tag>
                 </InputSlider>
@@ -556,8 +561,8 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}
                 />
                 <InputSlider
                     noInput
@@ -568,12 +573,35 @@
                     min={1}
                     max={3}
                     value={value}
-                    prefix={<FaceSad />}
-                    postfix={<FaceSmile />}
+                    prefix={<FaceSadIcon />}
+                    postfix={<FaceSmileIcon />}
                 />
             </Groups>
         );
     }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <InputSlider
+        min={20}
+        max={100}
+        value={50}
+        viewOnly
+        postfix='15%'>
+        <InputSlider.Tag val={20}>20 $</InputSlider.Tag>
+        <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+        <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+    </InputSlider>
 ```
 
 ## Кастомизация
@@ -616,15 +644,52 @@
                 },
             },
         };
-        const changeHanlder = React.useCallback((e, d) => {
-            setValue(d.value);
+        const changeHandler = React.useCallback((value) => {
+            setValue(value);
         }, []);
         return (
             <Groups design='vertical' style={{ height: '50px' }}>
                 <ThemeProvider theme={theme}>
-                    <InputSlider noInput size='l' design='material' onChange={changeHanlder} value={value} />
+                    <InputSlider noInput size='l' design='material' onChange={changeHandler} value={value} />
                 </ThemeProvider>
             </Groups>
+        );
+    }}
+```
+
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для линии и для круга. Передается с помощью пропса `testId?: { circle?: string; line?: string; }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultInputSliderTestId: InputSliderTestId = {
+    circle: 'input-slider_circle',
+    line: 'input-slider_line',
+};
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState(50);
+        const changeHandler = (e) => {
+            setValue(parseInt(e));
+        };
+        return (
+            <InputSlider
+                min={20}
+                max={100}
+                lazy={false}
+                onChange={changeHandler}
+                value={value}
+                postfix='15%'
+                testId={{circle: 'circle', line: 'line'}}>
+                <InputSlider.Tag val={20}>20 $</InputSlider.Tag>
+                <InputSlider.Tag val={50}>50 $</InputSlider.Tag>
+                <InputSlider.Tag val={100}>100 $</InputSlider.Tag>
+            </InputSlider>
         );
     }}
 ```

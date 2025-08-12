@@ -9,10 +9,15 @@
 import { CustomTable } from 'vienna-ui';
 ```
 
-## Использование
+# CustomTable
+
+Компоненты кастомной таблицы можно использовать не прибегая к помощи сторонних библиотек.
+Достаточно собрать компоненты вместе.
+
+
 
 ```
- {() => {
+    {() => {
         // Здесь и далее в примерах используются данные приведенного ниже формата:
         const data = [
             {
@@ -89,17 +94,6 @@ import { CustomTable } from 'vienna-ui';
 
 ```jsx
     // BasicReactTable.jsx
-
-    import React from 'react';
-
-    import {
-        createColumnHelper,
-        flexRender,
-        getCoreRowModel,
-        useReactTable,
-    } from '@tanstack/react-table';
-
-   import { CustomTable } from 'vienna.ui';
 
     const defaultData = [
         {
@@ -221,17 +215,6 @@ import { CustomTable } from 'vienna-ui';
 
 ```tsx
 // TableWithSelector.tsx
-import React from 'react';
-
-import {
-    ColumnDef,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-
-import { Checkbox, CustomTable } from 'vienna.ui';
-
 const TableWithSelector = (args) => {
     const [rowSelection, setRowSelection] = React.useState({});
 
@@ -373,30 +356,19 @@ const TableWithSelector = (args) => {
         </Container>
     );
 };
+
 ```
 
 
 #### Row Expanding
 
-Подробнее о API Row Expanding на странице [официальной документации](https://tanstack.com/table/v8/docs/api/features/expanding)
+Подробнее об API Row Expanding на странице [официальной документации](https://tanstack.com/table/v8/docs/api/features/expanding)
 
 ```
     {() => (<TableWithExpand />)}
 ```
 
 ```tsx
-import React from 'react';
-
-import {
-    ColumnDef,
-    flexRender,
-    getCoreRowModel,
-    getExpandedRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-
-import { CustomTable, SelectHide, SelectOpenDown} from 'vienna.ui';
-
 const TableWithExpand = (args) => {
     const [expanded, setExpanded] = React.useState({});
 
@@ -446,7 +418,7 @@ const TableWithExpand = (args) => {
                         <td
                             onClick={row.getToggleExpandedHandler()}
                         >
-                            {row.getIsExpanded() ? <SelectHide /> : <SelectOpenDown />}
+                            {row.getIsExpanded() ? <SelectHideIcon /> : <SelectOpenDownIcon />}
                         </td>
                     ) : ('');
                 },
@@ -542,7 +514,7 @@ const TableWithExpand = (args) => {
 };
 ```
 
-#### Header - иконка с тултипом.
+#### Header - иконка с тултипом
 
 Вы можете передавать любой JSX для кастомизации компонентов
 
@@ -551,17 +523,6 @@ const TableWithExpand = (args) => {
 ```
 
 ```tsx
-
-import React from 'react';
-
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-
-import { CustomTable, HintRing } from 'vienna.ui';
 
 () => {
     const defaultData = [
@@ -685,24 +646,13 @@ import { CustomTable, HintRing } from 'vienna.ui';
 ```
 #### Сохранение настроек таблицы
 
-Сохраненить настройки таблицы можно, если прокинуть в неё начальное состояние и реагироваь на его изменения.
-
+Сохранить настройки таблицы можно, если прокинуть в неё начальное состояние и реагироваь на его изменения.
 
 ```
     {() => <TableWithSettings />}
 ```
 
 ```tsx
-import React from 'react';
-import { CustomTable } from 'vienna.ui';
-
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-
     const defaultData = [
         {
             id: '1',
@@ -831,16 +781,6 @@ import {
 ```
 
 ```tsx
-import React from 'react';
-import { CustomTable } from 'vienna.ui';
-
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-
  const defaultData = [
         {
             id: '1',
@@ -993,21 +933,11 @@ import {
 
 
 #### Группировка колонок
-
 ```
     {() => <TableWithColumnGroup />}
 ```
 
-
 ```tsx
-
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-} from '@tanstack/react-table';
-import { CustomTable } from 'vienna.ui';
 
  type Person = {
         firstName: string
@@ -1141,23 +1071,12 @@ import { CustomTable } from 'vienna.ui';
 
 
 #### Пагинация
+
 ```
     {() => <TableWithPagination />}
 ```
 
-
 ```tsx
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-    getPaginationRowModel,
-    PaginationState,
-} from '@tanstack/react-table';
-
-import { CustomTable } from 'vienna.ui';
-
     const defaultData = [
         {
             id: '1',
@@ -1372,100 +1291,12 @@ import { CustomTable } from 'vienna.ui';
 
 
 #### Сортировка значений в колонке
+
 ```
     {() => <TableWithColumnsSorting />}
 ```
 
-
 ```tsx
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-    getSortedRowModel,
-} from '@tanstack/react-table';
-
-
-import {CustomTable } from 'vienna.ui';
-import { SelectHide, SelectOpenDown } from 'vienna.icons';
- const defaultData = [
-        {
-            id: '1',
-            level: '2',
-            firstName: 'Jane',
-            lastName: 'Doe',
-            position: 'PM',
-            phone: '9163456780',
-        },
-        {
-            id: '2',
-            level: '3',
-            firstName: 'Johnnie',
-            lastName: 'Walker',
-            position: 'Software Engineer',
-            phone: 'none',
-        },
-        {
-            id: '3',
-            level: '3',
-            firstName: 'James',
-            lastName: 'Jameson',
-            position: 'PM',
-            phone: '916456789',
-        },
-        {
-            id: '4',
-            level: '1',
-            firstName: 'John',
-            lastName: 'Doe',
-            position: 'PM',
-            phone: '9163456789',
-        },
-    ];
-    const columnHelper = createColumnHelper<Person>();
-    const columns = [
-        columnHelper.accessor('firstName', {
-            id: 'firstName',
-            cell: (info) => info.getValue(),
-            header: () => <span>First Name</span>,
-            footer: (info) => info.column.id,
-        }),
-        columnHelper.accessor((row) => row.lastName, {
-            id: 'lastName',
-            cell: (info) => <i>{info.getValue()}</i>,
-            header: () => (
-                <div>
-                    <span>Last Name</span>
-                </div>
-            ),
-            footer: (info) => info.column.id,
-        }),
-        columnHelper.accessor('position', {
-            header: () => (
-                <div>
-                    <span>Position</span>
-                </div>
-            ),
-            cell: (info) => info.renderValue(),
-            footer: (info) => info.column.id,
-        }),
-        columnHelper.accessor('phone', {
-            header: () => (
-                <div>
-                    <span>Phone</span>
-                </div>
-            ),
-            footer: (info) => info.column.id,
-        }),
-    ];
-    const [data] = React.useState(() => [...defaultData]);
-    const table = useReactTable({
-        data,
-        columns,
-        getCoreRowModel: getCoreRowModel(),
-        getSortedRowModel: getSortedRowModel(),
-    });
 
     return (
         <div className="p-2">
@@ -1490,8 +1321,8 @@ import { SelectHide, SelectOpenDown } from 'vienna.icons';
                                             header.getContext()
                                         )}
                                         {{
-                                            asc: <SelectOpenDown/>,
-                                            desc: <SelectHide/>,
+                                            asc: <SelectOpenDownIcon/>,
+                                            desc: <SelectHideIcon/>,
                                         }[header.column.getIsSorted() as string] ?? null}
                                     </div>
                                 </CustomTable.Header>
@@ -1530,20 +1361,7 @@ import { SelectHide, SelectOpenDown } from 'vienna.icons';
     {() => <TableWithColumnsFilter />}
 ```
 
-
 ```tsx
-import {
-    createColumnHelper,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-    getFilteredRowModel,
-    Column,
-    Table as ReactTable,
-} from '@tanstack/react-table';
-
-
-import {  CustomTable } from 'vienna.ui';
 
  type Person = {
         firstName: string
@@ -1725,4 +1543,3 @@ import {  CustomTable } from 'vienna.ui';
         </div>
     );
 ```
-

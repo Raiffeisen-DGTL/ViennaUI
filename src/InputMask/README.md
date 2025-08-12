@@ -64,23 +64,22 @@ import { InputMask } from 'vienna-ui';
 | placeholder | string \| undefined | |
 | disabled | boolean \| undefined | |
 
+
 # InputMask
 
 Компонент ввода данных по маске
 
 
+
 ```
     {() => {
-        const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const [value, setValue] = React.useState();
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
             <InputMask
                 value={value}
                 onChange={changeHandler}
-                maskOptions={{mask: Date}}
-                placeholder='Введите дату в формате ДД.ММ.ГГГГ'
+                maskOptions={{mask: Number}}
             />
         );
     }}
@@ -92,16 +91,14 @@ import { InputMask } from 'vienna-ui';
 
 ```
     {() => {
-        const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
+        const [value, setValue] = React.useState();
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
-            <Groups design='vertical'>
-                <InputMask
-                    value={value}
-                    onChange={changeHandler}
-                    maskOptions={{mask: Date}}
-                    placeholder='Введите дату в формате ДД.ММ.ГГГГ'
-                />
+            <Groups>
+                <InputMask value={value} onChange={changeHandler} size='xs' />
+                <InputMask value={value} onChange={changeHandler} size='s' />
+                <InputMask value={value} onChange={changeHandler} size='l' />
+                <InputMask value={value} onChange={changeHandler} size='xl' />
             </Groups>
         );
     }}
@@ -144,7 +141,7 @@ import { InputMask } from 'vienna-ui';
 ##### Число
 
 ```
-    <InputNumber value='123123123.123' />
+    <InputNumber value='123123123.123' scale={3} />
 ```
 
 ##### Телефон
@@ -164,7 +161,7 @@ a - для любой буквы, * для любого символа
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((data) => setValue(data), []);
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <InputMask
@@ -175,4 +172,18 @@ a - для любой буквы, * для любого символа
             </Groups>
         );
     }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <InputMask viewOnly maskOptions={{ mask: '0000' }} value={'7812'} />
 ```

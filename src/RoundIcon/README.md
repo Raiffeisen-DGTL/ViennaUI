@@ -18,13 +18,22 @@ import { RoundIcon } from 'vienna-ui';
 | color | "seattle10" \| "seattle60" \| "oslo10" \| "oslo60" \| "miami10" \| "miami100" \| "nice10" \| "nice100" \| "dubai10" \| "dubai100" \| "paris10" \| "paris100" \| "sochi10" \| "sochi100" \| "tokyo10" \| ... 17 more ... \| undefined | | Цвет фона |
 | clickable | boolean \| undefined |  | Возможность нажатия на компонент |
 
-## Использование
 
-Компонент `RoundIcon` отображает текст или `<Icon />`, переданный в `children`. По умолчанию цвет `lightgrey` и размер `m`.
+# RoundIcon (deprecated)
+
+Нефункциональный компонент `RoundIcon` используется для акцентирования внмания на блоках контента, а так же в аватаре как альтернативное представление
+
+<ComponentHelpers.Select.Warn>
+    <WarningRing size='xl' />
+     <div>
+        Начиная с версии 12.0.0 мы прекращаем поддержку этого компонента. Используйте компонент IconContainer.<br/>
+    </div>
+</ComponentHelpers.Select.Warn>
+
+
 
 ```
-<RoundIcon>M</RoundIcon>
-<RoundIcon><Icon /></RoundIcon>
+    <RoundIcon>M</RoundIcon>
 ```
 
 ## Внешний вид
@@ -95,52 +104,52 @@ import { RoundIcon } from 'vienna-ui';
 
 ```
     <RoundIcon color='seattle10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='seattle60'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='oslo10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='oslo60'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='miami10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='miami100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='nice10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='nice100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='dubai10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='dubai100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='paris10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='paris100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='sochi10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='sochi100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='tokyo10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='tokyo100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
 ```
 
@@ -148,52 +157,52 @@ import { RoundIcon } from 'vienna-ui';
 
 ```
     <RoundIcon color='dublin10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='dublin100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='bern10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='bern100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='manila10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='manila100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='tallin10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='tallin100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='seoul10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='seoul100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='havana10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='havana100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='madrid10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='madrid100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='porto10'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
     <RoundIcon color='porto100'>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
 ```
 
@@ -234,6 +243,6 @@ systemBreakpoints: Breakpoints = {
 
 ```
     <RoundIcon size={{ base: 's', s: 'l', m: 'xl' }}>
-        <ManPerson />
+        <ManPersonIcon />
     </RoundIcon>
 ```

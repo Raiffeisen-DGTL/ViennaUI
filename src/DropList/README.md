@@ -31,17 +31,18 @@ import { DropList } from 'vienna-ui';
 | width | number \| undefined |
 | coords | { x: number; y: number; } \| undefined |
 
+# DropList
 
-## Использование
+Компонент выпадающих списков. Компонент, который используется в составе других компонентов `Select`, `MultiselectWithSearch`, `Combobutton`, а также его можно использовать самостоятельно.
 
-Компонент состоит из родительского контейнера `DropList` и элементов выпадающего списка `DropList.Item`. Для управления отображением компонента необходимо использовать state, который контролирует нажатие на активирующий элемент.
+
 
 ```
     {() => {
         const [isOpen, setOpen] = React.useState(false);
         return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
                 {isOpen && (
                     <DropList>
                         <DropList.Item>Item 1</DropList.Item>
@@ -53,7 +54,36 @@ import { DropList } from 'vienna-ui';
                         <DropList.Item>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </RoundIcon>
+            </IconContainer>
+        );
+    }}
+```
+
+## Использование
+
+- Для выбора одного значения из пяти и более вариантов;
+- При заполнении форм, выбора месяца;
+- Для переключения состояний, выбора фильтра;
+- Для выбора предустановленных настроек, для выбора уведомлений или часового пояса;
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList>
+                        <DropList.Item>Item 1</DropList.Item>
+                        <DropList.Item>Very very long Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                        <DropList.Item>Item 4</DropList.Item>
+                        <DropList.Item selected>Item 5</DropList.Item>
+                        <DropList.Item>Item 6</DropList.Item>
+                        <DropList.Item>Item 7</DropList.Item>
+                    </DropList>
+                )}
+            </IconContainer>
         );
     }}
 ```
@@ -66,8 +96,8 @@ import { DropList } from 'vienna-ui';
     {() => {
         const [isOpen, setOpen] = React.useState(false);
         return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
                 {isOpen && (
                     <DropList fixed coords={{ x: 100, y: 100 }}>
                         <DropList.Item>Item 1</DropList.Item>
@@ -79,18 +109,19 @@ import { DropList } from 'vienna-ui';
                         <DropList.Item>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </RoundIcon>
+            </IconContainer>
         );
     }}
 ```
+
 #### Без передачи координат
 
 ```
     {() => {
         const [isOpen, setOpen] = React.useState(false);
         return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
                 {isOpen && (
                     <DropList fixed>
                         <DropList.Item>Item 1</DropList.Item>
@@ -102,7 +133,7 @@ import { DropList } from 'vienna-ui';
                         <DropList.Item>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </RoundIcon>
+            </IconContainer>
         );
     }}
 ```
@@ -113,8 +144,8 @@ import { DropList } from 'vienna-ui';
     {() => {
         const [isOpen, setOpen] = React.useState(false);
         return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
                 {isOpen && (
                     <DropList fixed followParentWhenScroll onHide={() => setOpen(false)}>
                         <DropList.Item>Item 1</DropList.Item>
@@ -126,7 +157,7 @@ import { DropList } from 'vienna-ui';
                         <DropList.Item>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </RoundIcon>
+            </IconContainer>
         );
     }}
 ```
@@ -149,8 +180,8 @@ import { DropList } from 'vienna-ui';
                 }}>
                 <div style={{ width: '500px', height: '300px' }}>
                     <div style={{ position: 'absolute', left: 'calc(50% - 20px)', top: 'calc(50% - 20px)' }}>
-                        <RoundIcon onClick={() => setOpen(!isOpen)}>
-                            <ManPerson />
+                        <IconContainer onClick={() => setOpen(!isOpen)}>
+                            <ManPersonIcon />
                             {isOpen && (
                                 <DropList fixed followParentWhenScroll onHide={() => setOpen(false)}>
                                     <DropList.Item>Item 1</DropList.Item>
@@ -162,9 +193,34 @@ import { DropList } from 'vienna-ui';
                                     <DropList.Item>Item 7</DropList.Item>
                                 </DropList>
                             )}
-                        </RoundIcon>
+                        </IconContainer>
                     </div>
                 </div>
+            </div>
+        );
+    }}
+```
+
+## Закрытие при клике вне компонента
+
+С помощью `onOutsideClick` и `additionalOutsideClickRefs` можно контроллировать поведение компонента при клике снаружи компонента. Функция `onOutsideClick` вызовется при клике вне самого DropList и элементов из `additionalOutsideClickRefs`.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        const ref = React.useRef(null);
+        return (
+            <div style={{width: '100px'}} ref={ref}>
+            <IconContainer ref={ref} onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList onOutsideClick={() => setOpen(false)} additionalOutsideClickRefs={[ref]}>
+                        <DropList.Item>Item 1</DropList.Item>
+                        <DropList.Item>Very very long Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                    </DropList>
+                )}
+            </IconContainer>
             </div>
         );
     }}
@@ -179,8 +235,8 @@ import { DropList } from 'vienna-ui';
         const [isOpen, setOpen] = React.useState({ s: false, m: false, l: false });
         return (
             <Groups>
-                <RoundIcon size='s' onClick={() => setOpen({ ...isOpen, s: !isOpen.s })}>
-                    <ManPerson size='s' />
+                <IconContainer size='s' onClick={() => setOpen({ ...isOpen, s: !isOpen.s })}>
+                    <ManPersonIcon size='s' />
                     {isOpen.s && (
                         <DropList size='s'>
                             <DropList.Item>Item 1</DropList.Item>
@@ -192,9 +248,9 @@ import { DropList } from 'vienna-ui';
                             <DropList.Item>Item 7</DropList.Item>
                         </DropList>
                     )}
-                </RoundIcon>
-                <RoundIcon onClick={() => setOpen({ ...isOpen, m: !isOpen.m })}>
-                    <ManPerson />
+                </IconContainer>
+                <IconContainer onClick={() => setOpen({ ...isOpen, m: !isOpen.m })}>
+                    <ManPersonIcon />
                     {isOpen.m && (
                         <DropList>
                             <DropList.Item>Item 1</DropList.Item>
@@ -206,9 +262,9 @@ import { DropList } from 'vienna-ui';
                             <DropList.Item>Item 7</DropList.Item>
                         </DropList>
                     )}
-                </RoundIcon>
-                <RoundIcon size='l' onClick={() => setOpen({ ...isOpen, l: !isOpen.l })}>
-                    <ManPerson size='l' />
+                </IconContainer>
+                <IconContainer size='l' onClick={() => setOpen({ ...isOpen, l: !isOpen.l })}>
+                    <ManPersonIcon size='l' />
                     {isOpen.l && (
                         <DropList size='l'>
                             <DropList.Item>Item 1</DropList.Item>
@@ -220,7 +276,7 @@ import { DropList } from 'vienna-ui';
                             <DropList.Item>Item 7</DropList.Item>
                         </DropList>
                     )}
-                </RoundIcon>
+                </IconContainer>
             </Groups>
         );
     }}
@@ -228,80 +284,59 @@ import { DropList } from 'vienna-ui';
 
 ## Многоуровневое меню
 
-#### margins
-
-Задает дополнительные отступы от родителя
-
--   по умолчанию `4px` полезно использовать для многоуровневых меню
+С помощью компонента `DropList.MenuItem` можно создать многоуровневое меню
 
 ```
-    {() => {
-        const [isOpenFirstLevelDropdown, setOpenFirstLevelDropdown] = React.useState(false);
-        const [isOpenSecondLevelDropdown, setOpenSecondLevelDropdown] = React.useState(false);
-        const [isOpenThirdLevelDropdown, setOpenThirdLevelDropdown] = React.useState(false);
-        const showFirstLevelDropdown = () => {
-            if (!isOpenFirstLevelDropdown) {
-                setOpenFirstLevelDropdown(true);
-            }
-        };
-        const hideFirstLevelDropdown = () => {
-            if (isOpenFirstLevelDropdown) {
-                setOpenFirstLevelDropdown(false);
-                hideSecondLevelDropdown();
-            }
-        };
-        const showSecondLevelDropdown = () => {
-            if (isOpenFirstLevelDropdown && !isOpenSecondLevelDropdown) {
-                setOpenSecondLevelDropdown(true);
-            }
-        };
-        const hideSecondLevelDropdown = () => {
-            if (isOpenSecondLevelDropdown) {
-                setOpenSecondLevelDropdown(false);
-                hideThirdLevelDropdown();
-            }
-        };
-        const showThirdLevelDropdown = () => {
-            if (!isOpenThirdLevelDropdown) {
-                setOpenThirdLevelDropdown(true);
-            }
-        };
-        const hideThirdLevelDropdown = () => {
-            if (isOpenThirdLevelDropdown) {
-                setOpenThirdLevelDropdown(false);
-            }
-        };
+{() => {
+        const [isOpen, setOpen] = React.useState(false);
         return (
-            <div>
-                <div onClick={showFirstLevelDropdown}>Кликни</div>
-                {isOpenFirstLevelDropdown && (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
                     <DropList fixed scrollable={false}>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 1</DropList.Item>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 2</DropList.Item>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 3</DropList.Item>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 4</DropList.Item>
-                        <DropList.Item onMouseOver={showSecondLevelDropdown} onMouseLeave={hideSecondLevelDropdown}>
-                            Item 5 with nested
-                            {isOpenSecondLevelDropdown && (
-                                <DropList align='horizontal' float='end' margins={{ x: 0, y: -8 }} scrollable={false}>
-                                    <DropList.Item onClick={hideFirstLevelDropdown}>Item 1</DropList.Item>
-                                    <DropList.Item onMouseOver={showThirdLevelDropdown} onMouseLeave={hideThirdLevelDropdown}>
-                                        Item 2 with nested
-                                        {isOpenThirdLevelDropdown && (
-                                            <DropList align='horizontal' float='end' margins={{ x: 0, y: -8 }}>
-                                                <DropList.Item onClick={hideFirstLevelDropdown}>Item 1</DropList.Item>
-                                                <DropList.Item onClick={hideFirstLevelDropdown}>Item 2</DropList.Item>
-                                            </DropList>
-                                        )}
+                        <DropList.Item>Item 1</DropList.Item>
+                        <DropList.Item>Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                        <DropList.MenuItem
+                            text='Submenu 1 (by click)'
+                            action='click'
+                        >
+                            <DropList
+                                align="horizontal"
+                                float="end"
+                                margins={{ x: 0, y: -8 }}
+                                scrollable={false}
+                                onClick={() => setOpen(false)}
+                            >
+                                <DropList.Item>
+                                    Item 1
+                                </DropList.Item>
+                                <DropList.MenuItem
+                                    text='Submenu 2 (by hover)'
+                                >
+                                    <DropList
+                                    align="horizontal"
+                                    float="end"
+                                    margins={{ x: 0, y: -8 }}
+                                    scrollable={false}
+                                    onClick={() => setOpen(false)}
+                                    >
+                                    <DropList.Item>
+                                        Item 1
                                     </DropList.Item>
-                                </DropList>
-                            )}
+                                    <DropList.Item>
+                                        Item 2
+                                    </DropList.Item>
+                                    </DropList>
+                                </DropList.MenuItem>
+                            </DropList>
+                        </DropList.MenuItem>
+                        <DropList.Item>
+                            Item 5
                         </DropList.Item>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 6</DropList.Item>
-                        <DropList.Item onClick={hideFirstLevelDropdown}>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </div>
+            </IconContainer>
         );
     }}
 ```
@@ -311,7 +346,7 @@ import { DropList } from 'vienna-ui';
 Возможны два значения свойства align `vertical` (по умолчанию) и `horisontal`
 
 -   vertical - список выпадает вверх или вниз относительно родителя
--   horisontal - список выпадает вправо или влево относительно родителя
+-   horizontal - список выпадает вправо или влево относительно родителя
 
 Возможны два значения свойства float `start` (по умолчанию) и `end`
 
@@ -334,8 +369,8 @@ import { DropList } from 'vienna-ui';
                         justifyContent: 'space-between',
                         alignItems: 'center',
                     }}>
-                    <RoundIcon>
-                        <ManPerson />
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList>
                                 {items.map((i) => (
@@ -343,9 +378,9 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
-                    <RoundIcon>
-                        <ManPerson />
+                    </IconContainer>
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList align='horizontal'>
                                 {items.map((i) => (
@@ -353,9 +388,9 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
-                    <RoundIcon>
-                        <ManPerson />
+                    </IconContainer>
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList align='horizontal' float='end'>
                                 {items.map((i) => (
@@ -363,7 +398,7 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
+                    </IconContainer>
                 </div>
             </Groups>
         );
@@ -386,8 +421,8 @@ import { DropList } from 'vienna-ui';
                         justifyContent: 'space-between',
                         alignItems: 'center',
                     }}>
-                    <RoundIcon>
-                        <ManPerson />
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList fixed followParentWhenScroll onHide={() => setOpen(false)}>
                                 {items.map((i) => (
@@ -395,9 +430,9 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
-                    <RoundIcon>
-                        <ManPerson />
+                    </IconContainer>
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList align='horizontal' fixed followParentWhenScroll onHide={() => setOpen(false)}>
                                 {items.map((i) => (
@@ -405,9 +440,9 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
-                    <RoundIcon>
-                        <ManPerson />
+                    </IconContainer>
+                    <IconContainer>
+                        <ManPersonIcon />
                         {isOpen && (
                             <DropList
                                 align='horizontal'
@@ -420,7 +455,7 @@ import { DropList } from 'vienna-ui';
                                 ))}
                             </DropList>
                         )}
-                    </RoundIcon>
+                    </IconContainer>
                 </div>
             </Groups>
         );
@@ -476,8 +511,8 @@ import { DropList } from 'vienna-ui';
                                 justifyContent: 'space-between',
                                 alignItems: 'center',
                             }}>
-                            <RoundIcon>
-                                <ManPerson />
+                            <IconContainer>
+                                <ManPersonIcon />
                                 {isOpen1 && (
                                     <DropList fixed followParentWhenScroll onHide={() => setOpen1(false)}>
                                         {items.map((i) => (
@@ -485,9 +520,9 @@ import { DropList } from 'vienna-ui';
                                         ))}
                                     </DropList>
                                 )}
-                            </RoundIcon>
-                            <RoundIcon>
-                                <ManPerson />
+                            </IconContainer>
+                            <IconContainer>
+                                <ManPersonIcon />
                                 {isOpen3 && (
                                     <DropList
                                         align='horizontal'
@@ -499,9 +534,9 @@ import { DropList } from 'vienna-ui';
                                         ))}
                                     </DropList>
                                 )}
-                            </RoundIcon>
-                            <RoundIcon>
-                                <ManPerson />
+                            </IconContainer>
+                            <IconContainer>
+                                <ManPersonIcon />
                                 {isOpen4 && (
                                     <DropList
                                         align='horizontal'
@@ -514,7 +549,7 @@ import { DropList } from 'vienna-ui';
                                         ))}
                                     </DropList>
                                 )}
-                            </RoundIcon>
+                            </IconContainer>
                         </div>
                     </div>
                 </div>
@@ -562,8 +597,8 @@ systemBreakpoints: Breakpoints = {
     {() => {
         const [isOpen, setOpen] = React.useState(false);
         return (
-            <RoundIcon onClick={() => setOpen(!isOpen)}>
-                <ManPerson />
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
                 {isOpen && (
                     <DropList size={{ base: 's', s: 'm', m: 'l' }}>
                         <DropList.Item>Item 1</DropList.Item>
@@ -575,7 +610,154 @@ systemBreakpoints: Breakpoints = {
                         <DropList.Item>Item 7</DropList.Item>
                     </DropList>
                 )}
-            </RoundIcon>
+            </IconContainer>
+        );
+    }}
+```
+
+## Разбиение списка на группы
+
+Используя компонент `Group`, элементы списка можно объединять в группы; с помощью атрибута `label` можно задать заголовок группы
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList>
+                        <DropList.Group label='Subheader 1'>
+                            <DropList.Item>Item 1</DropList.Item>
+                            <DropList.Item>Very very long Item 2</DropList.Item>
+                        </DropList.Group>
+                        <DropList.Group label='Subheader 2'>
+                            <DropList.Item>Item 3</DropList.Item>
+                            <DropList.Item>Item 4</DropList.Item>
+                            <DropList.Item>Item 5</DropList.Item>
+                        </DropList.Group>
+                    </DropList>
+                )}
+            </IconContainer>
+        );
+    }}
+```
+
+## Описание элемента списка
+
+Используя атрибут `description` компонета `DropList.Item`, можно задать описание элементу списка
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList>
+                        <DropList.Item description='description'>Item 1</DropList.Item>
+                        <DropList.Item>Very very long Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                        <DropList.Item>Item 4</DropList.Item>
+                        <DropList.Item selected description='very very long description'>Item 5</DropList.Item>
+                        <DropList.Item>Item 6</DropList.Item>
+                        <DropList.Item>Item 7</DropList.Item>
+                    </DropList>
+                )}
+            </IconContainer>
+        );
+    }}
+```
+
+## Растягивание выпадающего списка
+
+Свойство `fitItems` позволяет растягивать выпадающий список по размеру родителя.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList fitItems>
+                        <DropList.Item>Item 1</DropList.Item>
+                        <DropList.Item>Very very long Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                        <DropList.Item>Item 4</DropList.Item>
+                        <DropList.Item selected>Item 5</DropList.Item>
+                        <DropList.Item>Item 6</DropList.Item>
+                        <DropList.Item>Item 7</DropList.Item>
+                    </DropList>
+                )}
+            </IconContainer>
+        );
+    }}
+```
+
+## Скролл содержимого
+Свойство `scrollable` позволяет скроллить выпадающий список. По умолчанию свойство `scrollable` имеет значение true, если указать false - скролла не будет.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                    <DropList>
+                        <DropList.Item>Item 1</DropList.Item>
+                        <DropList.Item>Very very long Item 2</DropList.Item>
+                        <DropList.Item disabled>Item 3</DropList.Item>
+                        <DropList.Item>Item 4</DropList.Item>
+                        <DropList.Item selected>Item 5</DropList.Item>
+                        <DropList.Item>Item 6</DropList.Item>
+                        <DropList.Item>Item 7</DropList.Item>
+                        <DropList
+                            align="horizontal"
+                            float="end"
+                            margins={{ x: 0, y: -8 }}
+                            scrollable={false}
+                            onClick={() => setOpen(false)}
+                        >
+                        <DropList.Item>
+                            Item Dop
+                        </DropList.Item>
+                        </DropList>
+                    </DropList>
+                )}
+            </IconContainer>
+        );
+    }}
+```
+
+## Смещение выпадающего списка по оси x и y
+Свойство `margins?: { x: number; y: number }` позволяет смещать выпадающий список по оси x и y.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <IconContainer onClick={() => setOpen(!isOpen)}>
+                <ManPersonIcon />
+                {isOpen && (
+                <DropList
+                    align="horizontal"
+                    float="end"
+                    margins={{ x: 0, y: -8 }}
+                    scrollable={false}
+                    onClick={() => setOpen(false)}
+                >
+                    <DropList.Item>Item 1</DropList.Item>
+                    <DropList.Item>Very very long Item 2</DropList.Item>
+                    <DropList.Item disabled>Item 3</DropList.Item>
+                    <DropList.Item>Item 4</DropList.Item>
+                    <DropList.Item selected>Item 5</DropList.Item>
+                    <DropList.Item>Item 6</DropList.Item>
+                    <DropList.Item>Item 7</DropList.Item>
+                </DropList>
+            )}
+            </IconContainer>
         );
     }}
 ```

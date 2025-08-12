@@ -23,9 +23,16 @@ import { Hint } from 'vienna-ui';
 | name | string \| undefined |  |
 | disabled | boolean \| undefined |  |
 
-## Использование
+# Radio
 
-> Компонент является контролируемым, то есть чтобы отобразить выбранные элементы, необходимо получить их значение через обработчик `onChange` и прокинуть проверку в `checked`.
+Компонент выбора одного из множества значений. Позволяет пользователю выбрать один вариант из списка.
+Если можно выбрать несколько вариантов или вы меняете состояние (вкл / выкл), то используйте `Checkbox` или `Switcher`.
+
+Радио-кнопки используются когда:
+- есть список вариантов, из которых можно выбрать только один;
+- заранее выбран один из вариантов в списке;
+
+
 
 ```
     {() => {
@@ -36,28 +43,28 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '1'}
                     name='group0'
                     value='1'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #1
                 </Radio>
                 <Radio
                     checked={state.value === '2'}
                     name='group0'
                     value='2'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #2
                 </Radio>
                 <Radio
                     checked={state.value === '3'}
                     name='group0'
                     value='3'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #3
                 </Radio>
                 <Radio
                     checked={state.value === '4'}
                     name='group0'
                     value='4'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #4
                 </Radio>
             </Groups>
@@ -76,28 +83,28 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '1'}
                     name='group1'
                     value='1'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #1
                 </Radio>
                 <Radio
                     checked={state.value === '2'}
                     name='group1'
                     value='2'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #2
                 </Radio>
                 <Radio
                     checked={state.value === '3'}
                     name='group1'
                     value='3'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #3
                 </Radio>
                 <Radio
                     checked={state.value === '4'}
                     name='group1'
                     value='4'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #4
                 </Radio>
             </Groups>
@@ -116,25 +123,25 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '1'}
                     name='group2'
                     value='1'
-                    onChange={(e, { value }) => setState({ value })}
+                    onChange={({ value }) => setState({ value })}
                 />
                 <Radio
                     checked={state.value === '2'}
                     name='group2'
                     value='2'
-                    onChange={(e, { value }) => setState({ value })}
+                    onChange={({ value }) => setState({ value })}
                 />
                 <Radio
                     checked={state.value === '3'}
                     name='group2'
                     value='3'
-                    onChange={(e, { value }) => setState({ value })}
+                    onChange={({ value }) => setState({ value })}
                 />
                 <Radio
                     checked={state.value === '4'}
                     name='group2'
                     value='4'
-                    onChange={(e, { value }) => setState({ value })}
+                    onChange={({ value }) => setState({ value })}
                 />
             </Groups>
         );
@@ -155,7 +162,7 @@ import { Hint } from 'vienna-ui';
                     name='group3'
                     value='1'
                     size='s'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size S
                 </Radio>
                 <Radio
@@ -164,7 +171,7 @@ import { Hint } from 'vienna-ui';
                     value='2'
                     size='s'
                     disabled
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size S
                 </Radio>
                 <Radio
@@ -172,7 +179,7 @@ import { Hint } from 'vienna-ui';
                     name='group3'
                     value='3'
                     size='m'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size M
                 </Radio>
                 <Radio
@@ -181,7 +188,7 @@ import { Hint } from 'vienna-ui';
                     value='4'
                     size='m'
                     disabled
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size M
                 </Radio>
                 <Radio
@@ -189,7 +196,7 @@ import { Hint } from 'vienna-ui';
                     name='group3'
                     value='5'
                     size='l'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size L
                 </Radio>
                 <Radio
@@ -198,7 +205,7 @@ import { Hint } from 'vienna-ui';
                     value='6'
                     size='l'
                     disabled
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Size L
                 </Radio>
             </Groups>
@@ -220,14 +227,14 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '1'}
                     name='group4'
                     value='1'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #1
                 </Radio>
                 <Radio
                     checked={state.value === '2'}
                     name='group4'
                     value='2'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #2
                 </Radio>
                 <Radio
@@ -235,14 +242,14 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '3'}
                     name='group4'
                     value='3'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #3
                 </Radio>
                 <Radio
                     checked={state.value === '4'}
                     name='group4'
                     value='4'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #4
                 </Radio>
                 <Radio
@@ -250,7 +257,7 @@ import { Hint } from 'vienna-ui';
                     checked={state.value === '5'}
                     name='group4'
                     value='5'
-                    onChange={(e, { value }) => setState({ value })}>
+                    onChange={({ value }) => setState({ value })}>
                     Radio #5
                 </Radio>
             </Groups>
@@ -258,7 +265,56 @@ import { Hint } from 'vienna-ui';
     }}
 ```
 
-#### Адаптив
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать выбранный вариант радио группы без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+- viewOnlyDisableIcon - отключение иконки (тип boolean);
+
+```
+    {() => {
+        const radioButtons = [
+            {
+                text: 'Radio #1',
+                checked: false,
+            },
+            {
+                text: 'Radio #2',
+                checked: true,
+            },
+            {
+                text: 'Radio #3',
+                checked: false,
+            },
+        ];
+        return (
+            <>
+                <Groups>
+                    {radioButtons.map((radio) => (
+                        <Radio viewOnly name='group5' checked={radio.checked}>{radio.text}</Radio>
+                    ))}
+                </Groups>
+                <Groups>
+                    {radioButtons.filter((radio) => radio.checked).map((radio) => (
+                        <Radio viewOnly name='group5' checked={radio.checked}>{radio.text}</Radio>
+                    ))}
+                </Groups>
+                <Groups>
+                    {radioButtons.filter((radio) => radio.checked).map((radio) => (
+                        <Radio viewOnly viewOnlyDisableIcon name='group5' checked={radio.checked}>{radio.text}</Radio>
+                    ))}
+                </Groups>
+            </>
+        );
+    }}
+```
+
+## Адаптив
 
 Для компонента Radio, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
 
@@ -294,7 +350,7 @@ systemBreakpoints: Breakpoints = {
 ```
 
 ```
-    <Radio checked size={{ base: 's', s: 'm', m: 'l' }}>
+    <Radio name="group5" checked size={{ base: 's', s: 'm', m: 'l' }}>
         Radio
     </Radio>
 ```

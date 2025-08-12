@@ -24,16 +24,60 @@ import { DateTimePicker } from 'vienna-ui';
 | ref | Ref<HTMLDivElement> \| undefined |
 
 
+# DateTimePicker
+
+Компонент для выбора даты и времени.
+Выбирайте этот компонент, если пользователю нужно указать конкретное время до минуты.
+
+
+
+```
+    {() => {
+        const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
+        return <DateTimePicker onChange={changeHandler} value={value} />;
+    }}
+```
+
 ## Внешний вид
 
 По умолчанию дизайн `outline` и размер `l`. Интервал по умолчанию 30 минут время начала 00:00 время окончания 23:30
+
+#### Размеры
+
+Компонент имеет размеры `xs`, `s`, `m`, `l`, `xl` и `xxl`
+
+```
+    {() => {
+        const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
+        return (
+            <Groups design='vertical'>
+                <DateTimePicker size={'xs'} onChange={changeHandler} value={value} />
+                <DateTimePicker size={'s'} onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker size={'m'} onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <Select />
+                </DateTimePicker>
+                <DateTimePicker size={'l'} onChange={changeHandler} value={value}>
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker size={'xl'} onChange={changeHandler} value={value}/>
+                <DateTimePicker size={'xxl'} onChange={changeHandler} value={value}/>
+            </Groups>
+        );
+    }}
+```
 
 #### Outline
 
 ```
     {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <DateTimePicker onChange={changeHandler} value={value} />
@@ -51,6 +95,9 @@ import { DateTimePicker } from 'vienna-ui';
                 <DateTimePicker onChange={changeHandler} value={value}>
                     <Select />
                 </DateTimePicker>
+                <DateTimePicker onChange={changeHandler} value={value}>
+                    <Select />
+                </DateTimePicker>
             </Groups>
         );
     }}
@@ -61,7 +108,7 @@ import { DateTimePicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState(new Date());
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <DateTimePicker design='material' onChange={changeHandler} value={value} />
@@ -84,12 +131,27 @@ import { DateTimePicker } from 'vienna-ui';
     }}
 ```
 
+## Тип value
+
+Компонент может работать с одним из следующих типов - `Date` и `DateObj`, обеспечивая совпадение типов `value` в одноименном пропсе и в значении, передаваемом в `onChange`.
+
+`DateObj` используется как тип по умолчанию для возможности частичного заполнения полей компонента.
+
+Для получения `Date` в коллбэке `onChange` необходимо передать `Date` в пропс `value`. При использовании `Date` частичное заполнение полей недоступно.
+
+```typescript
+interface DateObj {
+    time?: string;
+    date?: string;
+}
+```
+
 ## Произвольные интервалы времени
 
 ```
     {() => {
         const [value, setValue] = React.useState(new Date());
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <DateTimePicker onChange={changeHandler} value={value}>
@@ -116,11 +178,15 @@ import { DateTimePicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <DateTimePicker onChange={changeHandler} value={value}>
                     <Datepicker disabled />
+                    <InputDate />
+                </DateTimePicker>
+                <DateTimePicker onChange={changeHandler} value={value} disabled>
+                    <Datepicker />
                     <InputDate />
                 </DateTimePicker>
                 <DateTimePicker onChange={changeHandler} value={value}>
@@ -135,16 +201,19 @@ import { DateTimePicker } from 'vienna-ui';
         );
     }}
 ```
-
 
 ## Состояния ошибки
 
 ```
     {() => {
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         return (
             <Groups design='vertical'>
+                <DateTimePicker invalid onChange={changeHandler} value={value}>
+                    <Datepicker />
+                    <InputDate />
+                </DateTimePicker>
                 <DateTimePicker onChange={changeHandler} value={value}>
                     <Datepicker invalid />
                     <InputDate />
@@ -162,6 +231,19 @@ import { DateTimePicker } from 'vienna-ui';
     }}
 ```
 
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <DateTimePicker viewOnly value={new Date('2024-01-01T12:00')}/>
+```
 
 ## Локализация
 
@@ -171,7 +253,7 @@ import { DateTimePicker } from 'vienna-ui';
     {() => {
         /* import { enGB } from 'date-fns/locale'; */
         const [value, setValue] = React.useState({ date: '22.02.1988', time: '09:00' });
-        const changeHandler = React.useCallback((e, data) => setValue(data), []);
+        const changeHandler = React.useCallback(({value}) => setValue(value), []);
         const inputDateLocalization = {
             'ds.inputDate.placeholder.date': 'DD.MM.YYYY',
             'ds.inputDate.placeholder.time': 'HH:MM',

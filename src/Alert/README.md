@@ -31,11 +31,11 @@ import { Alert } from 'vienna-ui';
 <Alert title='Важно!'>Информация о некритичных подробностях</Alert>
 ```
 
-## Дизайн
 
-##### Свойство `design`
 
-Внешний вид контролируется параметром `design`. Доступно 4 варианта дизайна - `plain`, `success`, `warning`, `error`.
+## Внешний вид
+
+Внешний вид контролируется параметром `design`. Доступно 5 вариантов дизайна - `plain`, `success`, `warning`, `error` и `accent`
 
 #### Дизайн Plain
 
@@ -75,7 +75,6 @@ import { Alert } from 'vienna-ui';
     </Alert>
 ```
 
-
 #### Дизайн Accent
 
 Дизайн `accent` используется для нейтральных уведомлений.
@@ -96,27 +95,23 @@ import { Alert } from 'vienna-ui';
 
 ## Без иконки
 
-##### Свойство `noIcon`
-
 Передав параметр `noIcon` можно убрать иконку из уведомления.
 
-```jsx
-<Alert design='success' noIcon>
-    Информация об успешном результате действия
-</Alert>
-<Alert title='Ошибка!' design='error' noIcon>
-    Информация об ошибке в результате действия
-</Alert>
+```
+    <Alert design='success' noIcon>
+        Информация об успешном результате действия
+    </Alert>
+    <Alert title='Ошибка!' design='error' noIcon>
+        Информация об ошибке в результате действия
+    </Alert>
 ```
 
 ## Динамический контент
 
-##### Свойство `dynamic`
-
 По умолчанию компонент занимает 100% ширины родителя. Если передан параметр `dynamic`, то ширина компонента равна ширине контента.
 
-```jsx
-<Alert title='Успешно!' design='success'>
+```
+    <Alert title='Успешно!' design='success'>
         Обычный Alert
     </Alert>
     <Alert title='Успешно!' design='success' dynamic={true}>
@@ -126,44 +121,36 @@ import { Alert } from 'vienna-ui';
 
 ## Компактный режим
 
-##### Свойство `compactBelow`
-
 Комопнент поддерживает компактный режим отображения. Параметр `compact` включает отображение в компактном виде.
 
-
-```jsx
-<Alert compactBelow={1024} title='Успешно!' design='success'>
-    Информация об успешном результате действия
-</Alert>
-<Alert title='Успешно!' design='success' compact>
+```
+    <Alert title='Успешно!' design='success' compact>
         Информация об успешном результате действия
-</Alert>
-<Alert title='Успешно!' design='success' noIcon compact>
+    </Alert>
+    <Alert title='Успешно!' design='success' noIcon compact>
         Информация об успешном результате действия
-</Alert>
-<Alert title='Успешно!' design='success' noIcon dynamic compact>
+    </Alert>
+    <Alert title='Успешно!' design='success' noIcon dynamic compact>
         Информация об успешном результате действия
-</Alert>
+    </Alert>
 ```
 
 ## С кнопками
 
-##### Свойство `actions`
-
 Компонент поддерживает свойство `actions`, куда можно передать JSX объект с кнопками. Поддерживается 2 вида дизайнов кнопок 'primary' - вариант по умолчанию, не требующий явно указывать свойство `design`, и `ghost`. При этом при начличии `actions` нотификация всегда отображается в компактном режиме.
 
-```jsx
-<Alert
-    title='Важно!'
-    actions={
-        <Groups>
-            <Button>Complete</Button>
-            <Button design='ghost'>Cancel</Button>
-        </Groups>
-    }>
-    Информация о некритичных подробностях
-</Alert>
-<Alert
+```
+    <Alert
+        title='Важно!'
+        actions={
+            <Groups>
+                <Button>Complete</Button>
+                <Button design='ghost'>Cancel</Button>
+            </Groups>
+        }>
+        Информация о некритичных подробностях
+    </Alert>
+    <Alert
         title='Успешно!'
         design='success'
         actions={
@@ -209,7 +196,37 @@ import { Alert } from 'vienna-ui';
     </Alert>
 ```
 
-#### Адаптив
+## Слот в правом верхнем углу
+
+У компонента есть свойство `rightContainer` (имеет тип `ReactNode`) - слот в правом верхнем углу. Так же есть свойство `onClose`, которое выводит иконку крестика в правый верхний угол и вызывает функцию переданную в свойство, при клике на крестик.
+
+```
+    <Alert
+        title={'Успех!'}
+        design={'success'}
+        actions={
+            <Groups>
+                <Button>Ок</Button>
+            </Groups>
+        }
+        noIcon
+        rightContainer={<CheckmarkIcon/>}>
+        Здесь написано что-то хорошее
+    </Alert>
+    <Alert
+        title={'Успех!'}
+        design={'success'}
+        actions={
+            <Groups>
+                <Button>Ок</Button>
+            </Groups>
+        }
+        onClose={() => console.log('клик по крестику')}>
+        Здесь написано что-то хорошее
+    </Alert>
+```
+
+## Адаптив
 
 Для компонента Alert, адаптив применяется к свойству `compact`, что позволяет перевести в компактный режим при достижении соответствующего размера ширины экрана. Для этого свойству нужно задать объект вида `{ <breakpoint name>: <boolean value> }`
 
@@ -252,3 +269,25 @@ systemBreakpoints: Breakpoints = {
     </Alert>
 ```
 
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для иконки закрытия, контейнера, названия, контента, первой иконки. Передается пропс `testId?: { closeIcon, container, title, content, icon, iconContainer }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultAlertTestId: AlertProps['testId'] = {
+    container: 'alert_container',
+    title: 'alert_title',
+    content: 'alert_content',
+    icon: 'alert_icon',
+    iconContainer: 'alert_icon-container',
+    closeIcon: 'alert_close-icon',
+};
+```
+
+```
+    <Alert title='Успешно!' design='success' onClose={() => console.log('клик по крестику')} testId={{ closeIcon: 'close-icon', container: 'alert_container', title: 'alert_title', content: 'alert_content', icon: 'alert_icon', iconContainer: 'alert_icon-container'}}>
+        Информация об успешном результате действия
+    </Alert>
+```

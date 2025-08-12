@@ -27,9 +27,13 @@ import { Sidebar } from 'vienna-ui';
 | ---- | ---------------------- | ------- | ----------- |
 | icon | ReactNode \| undefined | false   |
 
-## Использование
 
-Компонент состоит из родительского контейнера `Sidebar` и дочерних элементов `Sidebar.Item`.
+# Sidebar
+
+Боковое меню навигации. Боковое меню используется для навигации и отображает всю многоуровневую структуру продукта. Располагается в левой части страницы, фиксируется и заполняет всю высоту экрана. Позволяет пользователям быстро перемещаться по сервисам.
+
+
+
 
 ```
     <Sidebar>
@@ -49,6 +53,28 @@ import { Sidebar } from 'vienna-ui';
     </Sidebar>
 ```
 
+#### Размеры
+
+У компонента есть 3 варианта размеров `s`, `m`, `l`
+
+```
+    <Sidebar size="s">
+        <Sidebar.Item>Home</Sidebar.Item>
+        <Sidebar.Item>Mail</Sidebar.Item>
+        <Sidebar.Item>Documents</Sidebar.Item>
+    </Sidebar>
+    <Sidebar size="m">
+        <Sidebar.Item>Home</Sidebar.Item>
+        <Sidebar.Item>Mail</Sidebar.Item>
+        <Sidebar.Item>Documents</Sidebar.Item>
+    </Sidebar>
+    <Sidebar size="l">
+        <Sidebar.Item>Home</Sidebar.Item>
+        <Sidebar.Item>Mail</Sidebar.Item>
+        <Sidebar.Item>Documents</Sidebar.Item>
+    </Sidebar>
+```
+
 #### Темная тема
 
 Внешний вид контролируется параметром `design`. Доступно 2 варианта дизайна: `light` и `dark`. По умолчанию используется `light`.
@@ -61,58 +87,82 @@ import { Sidebar } from 'vienna-ui';
     </Sidebar>
 ```
 
-#### With icons
+#### Ширина
+
+За ширину компонента отвечает свойство `width` (тип string), по умолчанию значение 252px
+
+```
+    <Sidebar width="200px">
+        <Sidebar.Item>Home</Sidebar.Item>
+        <Sidebar.Item>Mail</Sidebar.Item>
+        <Sidebar.Item>Documents</Sidebar.Item>
+    </Sidebar>
+```
+
+### С иконками
 
 `Sidebar.Item` поддерживает свойство `icon`, куда можно передать иконку элемента меню.
 
 ```
     <Sidebar>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
     </Sidebar>
 ```
 
-#### With footer
+### Анимация при клике
+
+`Sidebar.Item` поддерживает свойство `ripple`, которое отвечает за анимацию при клике на него
+
+```
+    <Sidebar>
+        <Sidebar.Item icon={<HomeIcon />} ripple>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />} ripple>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />} ripple>Documents</Sidebar.Item>
+    </Sidebar>
+```
+
+#### Свойство footer
 
 ```
     <Sidebar
         footer={
             <React.Fragment>
-                <Sidebar.Item icon={<Chat2 />}>Chat</Sidebar.Item>
-                <Sidebar.Item icon={<Chat2 />}>Help</Sidebar.Item>
-                <Sidebar.Item icon={<Settings />}>Settings</Sidebar.Item>
+                <Sidebar.Item icon={<Chat2Icon />}>Chat</Sidebar.Item>
+                <Sidebar.Item icon={<Chat2Icon />}>Help</Sidebar.Item>
+                <Sidebar.Item icon={<SettingsIcon />}>Settings</Sidebar.Item>
             </React.Fragment>
         }>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
     </Sidebar>
 ```
 
-#### With notification
+#### С уведомлением
 
 В дополнение к `icon` `Sidebar.Item` также поддерживает свойство `notification`, куда можно передать индикатор уведомления.
 
 ```
     <Sidebar>
-        <Sidebar.Item icon={<Home />} notification={<Alarm design='accent' />}>
+        <Sidebar.Item icon={<HomeIcon />} notification={<Alarm design='accent' />}>
             Home
         </Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />} notification={<Counter design="accent">2</Counter>}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
     </Sidebar>
 ```
 
-## Active state
+## Свойство active
 
 `Sidebar.Item` так же поддерживает свойство `active`, для отображения выбранного состояния элемента меню.
 
 ```
     <Sidebar>
-        <Sidebar.Item icon={<Home />} active>
+        <Sidebar.Item icon={<HomeIcon />} active>
             Home
         </Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
     </Sidebar>
 ```
 
@@ -121,20 +171,32 @@ import { Sidebar } from 'vienna-ui';
 ```
     <Sidebar active='home'>
         <div id='home'>
-            <Sidebar.Item icon={<Home />}>
+            <Sidebar.Item icon={<HomeIcon />}>
                 Home
             </Sidebar.Item>
         </div>
-        <Sidebar.Item id='Mail' icon={<MailOut />}>
+        <Sidebar.Item id='Mail' icon={<MailOutIcon />}>
             Mail
         </Sidebar.Item>
-        <Sidebar.Item id='docs' icon={<Document />}>
+        <Sidebar.Item id='docs' icon={<DocumentIcon />}>
             Documents
         </Sidebar.Item>
     </Sidebar>
 ```
 
-## Collapsable
+## Свойство disabled
+
+`Sidebar.Item` так же поддерживает свойство `disabled`, для отображения заблокированного элемента меню.
+
+```
+    <Sidebar>
+        <Sidebar.Item icon={<HomeIcon />} disabled>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
+    </Sidebar>
+```
+
+## Флаг `collapsed`
 
 Компонент также поддерживает свернутое состояние. Оно контролируется флагом `collapsed`.
 
@@ -142,14 +204,14 @@ import { Sidebar } from 'vienna-ui';
     <Sidebar
         footer={
             <React.Fragment>
-                <Sidebar.Item icon={<Chat2 />}>Chat</Sidebar.Item>
-                <Sidebar.Item icon={<Chat2 />}>Help</Sidebar.Item>
-                <Sidebar.Item icon={<Settings />}>Settings</Sidebar.Item>
+                <Sidebar.Item icon={<Chat2Icon />}>Chat</Sidebar.Item>
+                <Sidebar.Item icon={<Chat2Icon />}>Help</Sidebar.Item>
+                <Sidebar.Item icon={<SettingsIcon />}>Settings</Sidebar.Item>
             </React.Fragment>
         }
         collapsed>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
         <Sidebar.Item>Documents</Sidebar.Item>
     </Sidebar>
 ```
@@ -170,9 +232,9 @@ import { Sidebar } from 'vienna-ui';
                 active='home'
                 footer={
                     <React.Fragment>
-                        <Sidebar.Item icon={<Chat2 />}>Chat</Sidebar.Item>
-                        <Sidebar.Item icon={<Chat2 />}>Help</Sidebar.Item>
-                        <Sidebar.Item icon={<Settings />}>Settings</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Chat</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Help</Sidebar.Item>
+                        <Sidebar.Item icon={<SettingsIcon />}>Settings</Sidebar.Item>
                     </React.Fragment>
                 }
                 collapsed={collapsed}
@@ -185,31 +247,31 @@ import { Sidebar } from 'vienna-ui';
     }}
 ```
 
-## Custom header
+## Cвойство `header`
 
-В дополнение к `footer`, компонент поддерживает свойство `header`, который позволяет управлять регином заголовка меню. Это может полезно, например, в случае необходимости использования нестандартного логотипа.
+В дополнение к `footer`, компонент поддерживает свойство `header`, которое позволяет управлять регином заголовка меню. Это может быть полезно, например, в случае необходимости использования нестандартного логотипа.
 
 ```
-    <Sidebar header={<Logo size='xl' />}>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+    <Sidebar active='home' header={<Logotype size='xl' />}>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
     </Sidebar>
 ```
 
-## Without header
+## Без свойства header
 
 Передав в `header` null можно убрать контейнер заголовка в сайдбаре.
 
 ```
     <Sidebar header={null}>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
     </Sidebar>
 ```
 
-## With links
+## Компонент-ссылка
 
 Компонент позволяет оборачивать компонент `Sidebar.Item` в компоненты-ссылки, например для использования react-router.
 
@@ -221,9 +283,9 @@ import { Sidebar } from 'vienna-ui';
                 active='home'
                 footer={
                     <React.Fragment>
-                        <Sidebar.Item icon={<Chat2 />}>Chat</Sidebar.Item>
-                        <Sidebar.Item icon={<Chat2 />}>Help</Sidebar.Item>
-                        <Sidebar.Item icon={<Settings />}>Settings</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Chat</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Help</Sidebar.Item>
+                        <Sidebar.Item icon={<SettingsIcon />}>Settings</Sidebar.Item>
                     </React.Fragment>
                 }
                 collapsed={collapsed}
@@ -248,15 +310,15 @@ import { Sidebar } from 'vienna-ui';
 
 ```
     <Sidebar active='submenu'>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
-        <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1 />}>
-            <Sidebar.Item icon={<Home />} active>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
+        <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1Icon />}>
+            <Sidebar.Item icon={<HomeIcon />} active>
                 Home
             </Sidebar.Item>
-            <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-            <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+            <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
         </Sidebar.Submenu>
     </Sidebar>
 ```
@@ -265,20 +327,55 @@ import { Sidebar } from 'vienna-ui';
 
 ```
     <Sidebar active='submenu'>
-        <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-        <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-        <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
-        <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1 />} defaultExpanded>
-            <Sidebar.Item icon={<Home />} active>
+        <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+        <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+        <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
+        <Sidebar.Submenu id='submenu' title='Submenu' icon={<ChartBar1Icon />} defaultExpanded>
+            <Sidebar.Item icon={<HomeIcon />} active>
                 Home
             </Sidebar.Item>
-            <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-            <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+            <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+            <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
         </Sidebar.Submenu>
     </Sidebar>
 ```
 
-## Controllable mode
+ При необходимости вынести Sidebar.Submenu в отдельный компонент - состоянием активности необходимо управлять внутри этого компонента.
+
+```
+{() => {
+    const Submenu = (props) => {
+        const { active } = props;
+        const [expanded, toggleExpanded] = React.useState(true);
+        const onClick = () => toggleExpanded((prev) => !prev);
+        const title = 'Submenu 2';
+        return (
+            <Sidebar.Submenu title={title} expanded={expanded} active={active === title} onClick={onClick}>
+                <Sidebar.Item>Home 2</Sidebar.Item>
+                <Sidebar.Item>Mail 2</Sidebar.Item>
+            </Sidebar.Submenu>
+        );
+    };
+    const [expanded, toggleExpanded] = React.useState(true);
+    const onClick = () => toggleExpanded((prev) => !prev);
+    return (
+        <Sidebar>
+            <Sidebar.Submenu
+                title='Submenu'
+                icon={<ChartBar1Icon />}
+                expanded={expanded}
+                onClick={onClick}>
+                <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+                <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+                <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
+            </Sidebar.Submenu>
+            <Submenu active='Submenu 2' />
+        </Sidebar>
+    );
+}}
+```
+
+## Управление состоянием
 
 С помощью аттрибутов `expanded` и `onClick` можно управлять состоянием раскрытия вручную. В этом случае внутренний стейт компонента будет игнорироваться и компонент будет работать в контролируемом режиме.
 
@@ -293,25 +390,27 @@ import { Sidebar } from 'vienna-ui';
         );
         return (
             <Sidebar>
-                <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-                <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-                <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+                <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+                <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+                <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
                 <Sidebar.Submenu
                     title='Submenu'
-                    icon={<ChartBar1 />}
+                    icon={<ChartBar1Icon />}
                     expanded={expanded}
                     active={expanded}
                     onClick={onClick}>
-                    <Sidebar.Item icon={<Home />}>Home</Sidebar.Item>
-                    <Sidebar.Item icon={<MailOut />}>Mail</Sidebar.Item>
-                    <Sidebar.Item icon={<Document />}>Documents</Sidebar.Item>
+                    <Sidebar.Item icon={<HomeIcon />}>Home</Sidebar.Item>
+                    <Sidebar.Item icon={<MailOutIcon />}>Mail</Sidebar.Item>
+                    <Sidebar.Item icon={<DocumentIcon />}>Documents</Sidebar.Item>
                 </Sidebar.Submenu>
             </Sidebar>
         );
     }}
 ```
 
-## Interactive
+## Интерактивный режим
+
+Интерактивный режим позволяет программно управлять кнопками и менять дизайн.
 
 ```
     {() => {
@@ -325,12 +424,12 @@ import { Sidebar } from 'vienna-ui';
                 active='home'
                 footer={
                     <React.Fragment>
-                        <Sidebar.Item icon={<Lamp />} onClick={toggleDesign}>
+                        <Sidebar.Item icon={<LampIcon />} onClick={toggleDesign}>
                             Design
                         </Sidebar.Item>
-                        <Sidebar.Item icon={<Chat2 />}>Chat</Sidebar.Item>
-                        <Sidebar.Item icon={<Chat2 />}>Help</Sidebar.Item>
-                        <Sidebar.Item icon={<Settings />}>Settings</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Chat</Sidebar.Item>
+                        <Sidebar.Item icon={<Chat2Icon />}>Help</Sidebar.Item>
+                        <Sidebar.Item icon={<SettingsIcon />}>Settings</Sidebar.Item>
                     </React.Fragment>
                 }
                 design={design}
@@ -361,4 +460,24 @@ import { Sidebar } from 'vienna-ui';
             </Sidebar>
         );
     }}
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для `menu`. Передается пропс `testId?: { menu, container }`.
+
+Также добавлены дефолтные значения для `testId`:
+```
+export const deprecated_defaultSidebarTestId: SidebarProps['testId'] = {
+    menu: 'sidebar_menu',
+    conteiner: 'sidebar-item_container',
+};
+```
+
+```
+    <Sidebar testId={{menu: 'menu'}}>
+        <Sidebar.Item testId={{container: 'container'}}>Home</Sidebar.Item>
+        <Sidebar.Item>Mail</Sidebar.Item>
+        <Sidebar.Item>Documents</Sidebar.Item>
+    </Sidebar>
 ```

@@ -25,9 +25,13 @@ import { Grid } from 'vienna-ui';
 | offset | ColumnOffset \| undefined |
 | order | ColumnOrder \| undefined |
 
-## Использование
 
-12 колоночная сетка для компоновки элементов на странице.
+
+# Grid
+
+Компонент `Grid` предоставляет инструменты для создания гибких и адаптивных макетов, используя систему сеток на основе 12 колонок. Это позволяет легко управлять расположением и размерами элементов на различных устройствах и экранах.
+
+
 
 ```
     <Grid.Row>
@@ -120,7 +124,7 @@ import { Grid } from 'vienna-ui';
 
 #### Расстояние между колонками
 
-Парметр `columnGap` контролирует расстояние между колонками внутри строки. Значение по умолчанию: `24px`
+Параметр `columnGap` контролирует расстояние между колонками внутри строки. Значение по умолчанию: `24px`
 
 ```
     <React.Fragment>
@@ -672,6 +676,53 @@ export const sizes = [
             </Grid.Col>
             <Grid.Col order={{ xs: 2, l: 1 }} size={6}>
                 <ComponentHelpers.Grid.Demo>2</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+        </Grid.Row>
+    </React.Fragment>
+```
+
+#### Размеры
+
+Свойство `size` отвечает за размер колонки. Может принимать одно из значений: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 'auto'.
+
+```
+    <React.Fragment>
+        <Grid.Row>
+            <Grid.Col size={1}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={2}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={3}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={4}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={5}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={6}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={7}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={8}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={9}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={10}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={11}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
+            </Grid.Col>
+            <Grid.Col size={12}>
+                <ComponentHelpers.Grid.Demo>24</ComponentHelpers.Grid.Demo>
             </Grid.Col>
         </Grid.Row>
     </React.Fragment>

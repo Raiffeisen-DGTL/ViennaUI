@@ -17,7 +17,11 @@ import { PaymentLogo } from 'vienna-ui';
 | size         | "xs" \| "s" \| "m" \| "l" \| "xl" \| undefined   |         |
 | clickable    | boolean \| undefined                             |         |
 
-## Использование
+
+# PaymentLogo
+
+Компонент для отображения логотипов платежных систем.
+
 
 
 ```
@@ -28,30 +32,15 @@ import { PaymentLogo } from 'vienna-ui';
     </Groups>
 ```
 
+#### Фон
 
-## Внешний вид
-
-```
-    <PaymentLogo logo='mastercard' />
-    <PaymentLogo logo='mir' />
-    <PaymentLogo logo='visa' />
-```
-
-## Внешний вид
-
-#### Прозрачный фон
-
-Компонент важен для использования в случаях, когда использование компонента с фоном не применимо, для размещения на примерах карт и использования в графике.
+Компонент предлагает три варианта фона: `ghost` (прозрачный), `wildsand` (серый) и `whitebox` (белый).
 
 ```
     <PaymentLogo logo='mastercard' design='ghost' />
     <PaymentLogo logo='mir' design='ghost' />
     <PaymentLogo logo='visa' design='ghost' />
 ```
-
-#### Серый и белый фоном
-
-Для размещения компонента в таблцах или рядом с другими логотипами плтаежных систем используй логотип с фоном. Ширина и высота для таких компонентов одинакова в массве данных они не будут выделяться.
 
 ```
     <PaymentLogo logo='mastercard' design='wildsand' />
@@ -65,7 +54,7 @@ import { PaymentLogo } from 'vienna-ui';
     <PaymentLogo logo='visa' design='whitebox' />
 ```
 
-## Размеры
+#### Размеры
 
 Компонент имеет стандартные размеры `xs`, `s`, `m`, `l` и `xl`.
 

@@ -39,16 +39,17 @@ import { Card } from 'vienna-ui';
 | ------- | --------------- | ------- | ----------------------------------------------------------- |
 | title  | string \| undefined|     
 
+# Card
+
+Компонент `Card` используется, как базовый стиль фона карточек.
+В него можно добавить свой собственный контент и вывести некоторые заложенные элементы.
 
 
-## Использование
 
-Компонент принимает в качестве дочерних компонентов любой контент. Компонент также экспортирует вспомогательные подкомпоненты `Card.Title`, `Card.Subtitle` для создания загловка и подзаголовка карточки. Для создания заголовком внутри тела карточки экпортируется `Card.ContentTitle`.
-
-```jsx
-<Card title='Simple card'>
+```
+    <Card title='Simple card'>
         <ComponentHelpers.Card.Demo style={{ width: '600px' }} />
-</Card>
+    </Card>
 ```
 
 ## Размер
@@ -75,7 +76,7 @@ import { Card } from 'vienna-ui';
     </Grid.Row>
 ```
 
-## Just content
+## Содержимое карточки
 
 ```
     <Card>
@@ -83,33 +84,32 @@ import { Card } from 'vienna-ui';
     </Card>
 ```
 
-## With actions
+## Иконка действия
 
 В `actions` можно передать объект с иконкой, который будет отображён в правом верхнем углу карточки.
 
 ```
-    <Card title='Card with actions' actions={<Settings />}>
+    <Card title='Card with actions' actions={<SettingsIcon />}>
         <ComponentHelpers.Card.Demo />
     </Card>
 ```
 
-## Multiple actions
+## Карточка с несколькими действиями
 
 ```
     <Card
         title='Card with actions'
         actions={
             <Groups size='xs'>
-                <Settings />
-                <CloseCancelX />
+                <SettingsIcon />
+                <CloseCancelXIcon />
             </Groups>
         }>
         <ComponentHelpers.Card.Demo />
     </Card>
 ```
 
-
-## With header
+## Карточка с заголовком
 
 Для простых заголовков кароточки достаточно передать строку в `title`. Для более сложных используется `header`, который приниает JSX-объект. Компонент также экспортирует вспомогательные подкомпоненты `Card.Title` и `Card.Subtitle` для создания загловка и подзаголовка карточки.
 
@@ -125,7 +125,7 @@ import { Card } from 'vienna-ui';
     </Card>
 ```
 
-## Vertical header
+## Вертикальное расположение заголовков
 
 ```
     <Card
@@ -140,11 +140,12 @@ import { Card } from 'vienna-ui';
     </Card>
 ```
 
-## With footer
+## Карточка с footer
+
 ```
     <Card
         title='Card with footer'
-        actions={<Settings />}
+        actions={<SettingsIcon />}
         footer={
             <Groups justifyContent='flex-end'>
                 <Button design='outline'>Button example</Button>
@@ -155,12 +156,12 @@ import { Card } from 'vienna-ui';
     </Card>
 ```
 
-## ContentTitle
+## Подзаголовки внутри контента
 
 Компонент также экспортирует подкомпонент `Card.ContentTitle` для заголовков внутри контента.
 
 ```
-    <Card title='Content title' actions={<Settings />}>
+    <Card title='Content title' actions={<SettingsIcon />}>
         <Card.ContentTitle>Section header</Card.ContentTitle>
         <ComponentHelpers.Card.Demo />
         <Card.ContentTitle>Section header</Card.ContentTitle>
@@ -168,7 +169,7 @@ import { Card } from 'vienna-ui';
     </Card>
 ```
 
-## With tabs
+## Карточка с tabs
 
 ```
     <Card
@@ -182,12 +183,12 @@ import { Card } from 'vienna-ui';
                 </Tabs>
             </Groups>
         }
-        actions={<Settings />}>
+        actions={<SettingsIcon />}>
         <ComponentHelpers.Card.Demo />
     </Card>
 ```
 
-## Tabs with subtitle
+## Карточка с Tabs и с subtitle
 
 ```
     <Card
@@ -204,12 +205,12 @@ import { Card } from 'vienna-ui';
                 </Tabs>
             </Groups>
         }
-        actions={<Settings />}>
+        actions={<SettingsIcon />}>
         <ComponentHelpers.Card.Demo />
     </Card>
 ```
 
-## Stretch
+## Растягивание по высоте родителя
 
 Свойство `stretch` позволяет растянуть карточку по высоте до 100% высоты родителя.
 
@@ -245,7 +246,7 @@ import { Card } from 'vienna-ui';
     </Grid.Row>
 ```
 
-## Whitespace
+## Внешние отступы
 
 Так же компонент наследует margin-аттрибуты компонента `Whitespace` для управления внешними отступами карточки. Подробнее про эти атрибуты можно почитать на странице компонента [Whitespace](/components/whitespace)
 

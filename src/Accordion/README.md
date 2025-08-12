@@ -83,8 +83,10 @@ import { Accordion } from 'vienna-ui';
 | width | string \| undefined | |
 
 
+# Accordion
 
-## Использование
+Aккордеон - это компонент для отображения и скрытия списка элементов. Каждый элемент можно раскрыть, нажав на заголовок.
+С помощью компонента Aккордеон можно компактно размещать и группировать большое количество информации, а также с помощью заголовка информировать пользователя о содержимом.
 
 ```
     <Accordion iconPosition='left'>
@@ -100,12 +102,13 @@ import { Accordion } from 'vienna-ui';
     </Accordion>
 ```
 
+
+
 ```
-<Accordion iconPosition='left'>
+    <Accordion iconPosition='left'>
         <Accordion.Item header='Accordion header'>Put your content here</Accordion.Item>
     </Accordion>
 ```
-
 
 ## Различные компоненты в заголовке
 
@@ -114,7 +117,7 @@ import { Accordion } from 'vienna-ui';
         <Accordion.Item
             header={
                 <>
-                    <Violin />
+                    <ViolinIcon />
                     Accordion header
                 </>
             }>
@@ -123,13 +126,12 @@ import { Accordion } from 'vienna-ui';
     </Accordion>
 ```
 
-
 ## Различный контент
 
 ```
     <Accordion>
         <Accordion.Item header={'Accordion header'}>
-            <Violin />
+            <ViolinIcon />
             Put your content here
             <Button>Click</Button>
         </Accordion.Item>
@@ -202,13 +204,88 @@ import { Accordion } from 'vienna-ui';
 
 # Режим, когда аккордеон изначально открыт
 
+Настраивается свойством Accordion.Item `initiallyOpen`, также состоянием можно управлять с помощью пропа `open`
+
+
 ```
-    <Accordion iconPosition='left'>
+    {()=>{
+        const [isOpen, setIsOpen] = React.useState(false);
+   return( <Groups  design='vertical' >
+       <Button onClick={()=>setIsOpen(!isOpen)}>{isOpen? 'Close' : 'Open'}</Button>
+       <Accordion iconPosition='left' style={{ width: '100%' }}>
         <Accordion.Item initiallyOpen header='Accordion header'>
+            <ComponentHelpers.Card.Demo style={{ width: '100%' }} />
+        </Accordion.Item>
+        <Accordion.Item open={isOpen}  header='Accordion header'>
+            <ComponentHelpers.Card.Demo style={{ width: '100%' }} />
+        </Accordion.Item>
+    </Accordion>
+   </Groups>);
+    }}
+```
+
+
+# Accordion.Item
+
+## Disabled состояние
+
+```
+    <Accordion>
+        <Accordion.Item disabled header='Accordion header'>
             <ComponentHelpers.Card.Demo style={{ width: '100%' }} />
         </Accordion.Item>
     </Accordion>
 ```
 
+## Ширина Accordion.Item
 
+```
+    <Accordion>
+        <Accordion.Item width='150px' header='Accordion header'>
+            <ComponentHelpers.Card.Demo style={{ width: '100%' }} />
+        </Accordion.Item>
+    </Accordion>
+```
 
+## Стилизация контента внутри Accordion.Item
+
+За стилизацию контента внутри `Accordion.Item` отвечает свойство `flexDirection` со значениями 'row' | 'column'. Значение по умолчанию - 'row', это значит, что контент будет располагаться в строку, а иначе в колонку.
+
+```
+    <Accordion>
+        <Accordion.Item header={'the header'} flexDirection="column">
+            <div>first</div>
+            <div>second</div>
+            <div>third</div>
+            <div>forth</div>
+            <div>fifth</div>
+            <div>sixth</div>
+        </Accordion.Item>
+        <Accordion.Item header={'the header'}>lalala</Accordion.Item>
+        <Accordion.Item header={'the header'}>lalala</Accordion.Item>
+    </Accordion>
+```
+
+## Установка data-testid
+
+Атрибут data-testid можно передать для `header` и `content` компонента `Accordion.Item`.
+Для установки атрибута data-testid  можно передать пропс `testId?: { header, content };`.
+
+Также добавлены дефолтные значения для testId:
+
+```
+export const defaultAccordionItemTestId: ItemProps['testId'] = {
+    header: 'accordion-item_header',
+    content: 'accordion-item_content',
+};
+```
+
+```
+    <Accordion>
+        <Accordion.Item header={'the header'} flexDirection="column" testId={{ header: 'Item.Header', content: 'Item.Content' }}>
+            <div>first</div>
+        </Accordion.Item>
+        <Accordion.Item header={'the header'}>lalala</Accordion.Item>
+        <Accordion.Item header={'the header'}>lalala</Accordion.Item>
+    </Accordion>
+```

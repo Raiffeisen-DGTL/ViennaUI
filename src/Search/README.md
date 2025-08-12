@@ -32,43 +32,56 @@
 | fitOptions | boolean \| undefined |
 | fixed | boolean \| undefined |
 
-```jsx
-const [state, setValue] = React.useState({ value: '', suggests: [] });
-const handleSelect = (e, data) => setValue({ ...state, value: data.value });
-const handleChange = (e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(escape(m.toUpperCase())))) || [];
-    setValue({ value: data.value, suggests: temp });
-};
-return (
-    <Search
-        suggests={state.suggests}
-        value={state.value}
-        placeholder='Начните ввод'
-        onChange={handleChange}
-        onSelect={handleSelect}
-    />
-);
+
+# Search & Suggest
+
+Компонент поиска данных с отображением подставляемого значения.
+
+Является оберткой над компонентом `Input` и наследует все его свойства, такие как дизайн, размер, состояния и т.д.
+
+
+
+```
+    {() => {
+        const [state, setValue] = React.useState({ value: '', suggests: [] });
+        const handleSelect = (data) => setValue({ ...state, value: data.value });
+        const handleChange = (data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(escape(m.toUpperCase())))) || [];
+            setValue({ value: data.value, suggests: temp });
+        };
+        return (
+            <Groups design='vertical'>
+                <Search
+                    suggests={state.suggests}
+                    value={state.value}
+                    fitOptions={false}
+                    placeholder='Начните ввод'
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
 ```
 
 ## Использование
 
 Начните набирать: `Райффайзен` или `Иванов`. Выбор по `Enter` или щелчком по элементу списка.
 
-```jsx
-{
-    () => {
+```
+    {() => {
         const [value, setValue] = React.useState();
         const [suggests, setSuggests] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
+        const handleChange = React.useCallback((data) => {
             const mock = [
                 'Райффайзен банк',
                 'Райффайзен IT',
@@ -82,8 +95,8 @@ return (
             setSuggests(temp);
             setValue(data.value);
         }, []);
-        const handleSelect = React.useCallback((e, data) => {
-            setValue(data.value);
+        const handleSelect = React.useCallback(({ value }) => {
+            setValue(value);
         }, []);
         return (
             <Groups design='vertical'>
@@ -96,245 +109,828 @@ return (
                 />
             </Groups>
         );
-    };
-}
+    }}
 ```
 
 ## Кастомизация
 
 #### Префиксная иконка
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${data.value.toUpperCase()}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
-    <Search
-        prefix={<Violin />}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        onChange={handleChange}
-        onSelect={handleSelect}
-    />
-);
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback(({ value }) => {
+            setValue(value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<ViolinIcon />}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
 ```
 
 #### Постфиксная иконка
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${data.value.toUpperCase()}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
-    <Search
-        postfix={<Theater2 />}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        onChange={handleChange}
-        onSelect={handleSelect}
-    />
-);
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback(({ value }) => {
+            setValue(value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    postfix={<TheaterOutIcon />}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
 ```
 
 #### Две иконки
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${data.value.toUpperCase()}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
-    <Search
-        prefix={<Task />}
-        postfix={<Spinner />}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        onChange={handleChange}
-        onSelect={handleSelect}
-    />
-);
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<TaskDoneIcon />}
+                    postfix={<Spinner />}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
 ```
 
 ## Кастомизация элементов списка
 
-В качестве `дочернего элемента` можно передать только `функцию`. Функция принемает аргумент объект c полями: `props, suggest, value` где:
-
--   props - прокинутые насквозь свойства Search
--   suggest - текст текущего элеменнта
--   value - значение ввода
-
-Возвращать следует валидный `JSX.Element`, который станет шаблоном для всех элементов
+<ComponentHelpers.Search.Warn>
+    <WarningRingIcon size='xl' />
+    <div>
+        В качестве <span>дочернего элемента</span> можно передать только <span>функцию</span>. Функция принимает в качестве
+        аргумента - объект c полями: <span>props, suggest, value</span> где:
+        <ul>
+            <li>props - прокинутые насквозь свойства Search</li>
+            <li>suggest - текст текущего элеменнта</li>
+            <li>value - значение ввода</li>
+        </ul>
+        Возвращать следует валидный <span>JSX.Element</span>, который станет шаблоном для всех элементов.
+    </div>
+</ComponentHelpers.Search.Warn>
 
 #### Изменение иконки
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${data.value.toUpperCase()}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
-    <Search
-        prefix={<Task />}
-        postfix={<Spinner />}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        onChange={handleChange}
-        onSelect={handleSelect}>
-        {({ props, suggest, value }) => <CustomItemWithIcon icon={<OperationsHistory />} value={suggest} />}
-    </Search>
-);
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<TaskDoneIcon />}
+                    postfix={<Spinner />}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    onSelect={handleSelect}>
+                    {({ props, suggest, value }) => (
+                        <ComponentHelpers.Search.CustomItemWithIcon icon={<Retry2Icon />} value={suggest} />
+                    )}
+                </Search>
+            </Groups>
+        );
+    }}
 ```
 
 #### Пример подсветки совпадений
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        'Райффайзен банк',
-        'Райффайзен IT',
-        'Иванов Иван Иванович',
-        'Иванов Иван Петрович',
-        'Ивановская область',
-        'Рамблер',
-    ];
-    const regexp = new RegExp(`^${data.value.toUpperCase()}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
-    <Search
-        prefix={<Task />}
-        postfix={<Spinner />}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        onChange={handleChange}
-        onSelect={handleSelect}>
-        {({ props, suggest, value }) => <CustomItem value={suggest} match={value} />}
-    </Search>
-);
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<TaskDoneIcon />}
+                    postfix={<Spinner />}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    onSelect={handleSelect}>
+                    {({ props, suggest, value }) => (
+                        <ComponentHelpers.Search.CustomItem value={suggest} match={value} />
+                    )}
+                </Search>
+            </Groups>
+        );
+    }}
 ```
 
 #### Работа с объектами
 
-Если вы передаете в качестве `value` произвольный объект то `должны` определить функцию `valueToString` обязательно возвращающую строку.
+<ComponentHelpers.Search.Warn>
+    <WarningRingIcon size='xl' />
+    <div>
+        Если вы передаете в качестве <span>value</span> произвольный объект то <span>должны</span> определить функцию
+        <span>valueToString</span> обязательно возвращающую строку.
+        <div>
+            Объекты <span>suggests</span> должны быть одной структуры с <span>value</span>.
+        </div>
+        <div>
+            Возвращаемое значение в <span>onChange</span> - строка в инпуте
+        </div>
+        <div>
+            Возвращаемое значение в <span>onSelect</span> - объект
+        </div>
+    </div>
+</ComponentHelpers.Search.Warn>
 
--   Объекты `suggests` должны быть одной структуры с `value`.
--   Возвращаемое значение в `onChange` - строка в инпуте
--   Возвращаемое значение в `onSelect` - объек
+<ComponentHelpers.Search.Info>
+    <WarningRingIcon size='xl' />
+    <div>
+        Возможно вам захочется отключить строковую подсказку, для этого установите свойство{' '}
+        <span>showInlineSuggest</span> в значение <span>false</span>.
+    </div>
+</ComponentHelpers.Search.Info>
 
-Возможно вам захочется отключить строковую подсказку, для этого установите свойство `showInlineSuggest` в значение `false`.
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const valueToString = React.useCallback((val) => {
+            if (val) {
+                if (typeof val === 'string') {
+                    return val;
+                }
+                return `${val.family} ${val.name} ${val.middle}`;
+            }
+            return '';
+        }, []);
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                { family: 'Иванов', name: 'Иван', middle: 'Иванович' },
+                { family: 'Иванов', name: 'Иван', middle: 'Петрович' },
+                { family: 'Иванов', name: 'Константин', middle: 'Петрович' },
+            ];
+            const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(escape(valueToString(m).toUpperCase())))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<TaskDoneIcon />}
+                    postfix={<Spinner />}
+                    showInlineSuggest={false}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    valueToString={valueToString}
+                    onChange={handleChange}
+                    onSelect={handleSelect}>
+                    {({ props, suggest, value }) => (
+                        <ComponentHelpers.Search.CustomItem
+                            value={valueToString(suggest)}
+                            match={valueToString(value)}
+                        />
+                    )}
+                </Search>
+            </Groups>
+        );
+    }}
+```
 
-```jsx
-const [value, setValue] = React.useState();
-const [suggests, setSuggests] = React.useState();
-const valueToString = React.useCallback((val) => {
-    if (val) {
-        if (typeof val === 'string') {
-            return val;
-        }
-        return `${val.family} ${val.name} ${val.middle}`;
-    }
-    return '';
-}, []);
-const handleChange = React.useCallback((e, data) => {
-    const mock = [
-        { family: 'Иванов', name: 'Иван', middle: 'Иванович' },
-        { family: 'Иванов', name: 'Иван', middle: 'Петрович' },
-        { family: 'Иванов', name: 'Константин', middle: 'Петрович' },
-    ];
-    const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
-    const temp = (data.value && mock.filter((m) => regexp.test(escape(valueToString(m).toUpperCase())))) || [];
-    setSuggests(temp);
-    setValue(data.value);
-}, []);
-const handleSelect = React.useCallback((e, data) => {
-    setValue(data.value);
-}, []);
-return (
+#### Дополнительная информация в подсказках из объекта
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const [suggests, setSuggests] = React.useState();
+        const valueToString = React.useCallback((val) => {
+            if (val) {
+                if (typeof val === 'string') {
+                    return val;
+                }
+                return `${val.family} ${val.name} ${val.middle}`;
+            }
+            return '';
+        }, []);
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                { family: 'Иванов', name: 'Иван', middle: 'Иванович', city: 'Омск', occupation: 'программист' },
+                { family: 'Иванов', name: 'Иван', middle: 'Петрович', city: 'Москва', occupation: 'программист' },
+                { family: 'Иванов', name: 'Константин', middle: 'Петрович', city: 'Нью-Йорк', occupation: 'аналитик' },
+                { family: 'Иванов', name: 'Константин', middle: 'Петрович', city: 'Нью-Йорк', occupation: 'менеджер' },
+            ];
+            const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(escape(valueToString(m).toUpperCase())))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    prefix={<TaskDoneIcon />}
+                    postfix={<Spinner />}
+                    showInlineSuggest={false}
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    valueToString={valueToString}
+                    onChange={handleChange}
+                    onSelect={handleSelect}>
+                    {(data) => (
+                        <Flex direction='column'>
+                            <P>{`${data.suggest['family']} ${data.suggest['name']} ${data.suggest['middle']}`}</P>
+                            <P color='seattle100'>Город: {data.suggest['city']}</P>
+                            <P color='seattle100'>Профессия: {data.suggest['occupation']}</P>
+                        </Flex>
+                    )}
+                </Search>
+            </Groups>
+        );
+    }}
+```
+
+## Свойство fixed
+
+```
+    {() => {
+        const [state, setValue] = React.useState({ value: '', suggests: [] });
+        const handleSelect = (data) => setValue({ ...state, value: data.value });
+        const handleChange = (data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(escape(m.toUpperCase())))) || [];
+            setValue({ value: data.value, suggests: temp });
+        };
+        return (
+            <Groups design='vertical'>
+                <div
+                    style={{
+                        position: 'relative',
+                        overflow: 'auto',
+                        width: '300px',
+                        height: '100px',
+                        border: '1px solid',
+                    }}>
+                    <div style={{ width: '500px', height: '300px' }}>
+                        <div style={{ position: 'absolute', left: 'calc(50% - 20px)', top: 'calc(50% - 20px)' }}>
+                            <Search
+                                suggests={state.suggests}
+                                value={state.value}
+                                placeholder='Начните ввод'
+                                onChange={handleChange}
+                                onSelect={handleSelect}
+                                fixed
+                            />
+                        </div>
+                    </div>
+                </div>
+            </Groups>
+        );
+    }}
+```
+
+## Boilerplate с поиском
+
+Начиная с версии 11.67.1 реализация фильтра спрятана внутрь компонента.
+Чтобы включить внутренний фильтр укажите `enableInnerSearch={true}`
+Для кастомизации добавлено свойство `search`, которое отвечает за фильтрацию опций.
+
+Значение по умолчанию:
+
+```
+(item, value) => item.toLowerCase().startsWith(value.toLowerCase())
+```
+
+```
+    {() => {
+        const [state, setValue] = React.useState({
+            value: '',
+            suggests: [
+                'Райффайзен банк 1',
+                'Райффайзен банк 2',
+                'Райффайзен банк 3',
+                'Райффайзен банк 4',
+                'Райффайзен банк 5',
+                'Райффайзен банк 6',
+                'Райффайзен банк 7',
+                'Райффайзен банк 8',
+                'Райффайзен банк 9',
+                'Райффайзен банк 10',
+                'Райффайзен банк 11',
+                'Райффайзен банк 12',
+                'Райффайзен банк 13',
+                'Райффайзен банк 14',
+                'Райффайзен банк 15',
+                'Райффайзен банк 16',
+                'Райффайзен банк 17',
+                'Райффайзен банк 18',
+            ],
+        });
+        const handleSelect = (data) => setValue({ ...state, value: data.value });
+        const handleChange = (data) => {
+            setValue({ ...state, value: data.value });
+        };
+        return (
+            <Search
+                suggests={state.suggests}
+                value={state.value}
+                enableInnerSearch
+                fixed
+                placeholder='Начните ввод'
+                onChange={handleChange}
+                onSelect={handleSelect}
+            />
+        );
+    }}
+```
+
+Кастомизированный поиск
+
+```
+    {() => {
+        const [state, setValue] = React.useState({
+            value: '',
+            suggests: [
+                'Райффайзен банк 1',
+                'Райффайзен банк 2',
+                'Райффайзен банк 3',
+                'Райффайзен банк 4',
+                'Райффайзен банк 5',
+                'Райффайзен банк 6',
+                'Райффайзен банк 7',
+                'Райффайзен банк 8',
+                'Райффайзен банк 9',
+                'Райффайзен банк 10',
+                'Райффайзен банк 11',
+                'Райффайзен банк 12',
+                'Райффайзен банк 13',
+                'Райффайзен банк 14',
+                'Райффайзен банк 15',
+                'Райффайзен банк 16',
+                'Райффайзен банк 17',
+                'Райффайзен банк 18',
+            ],
+        });
+        const handleSelect = (data) => setValue({ ...state, value: data.value });
+        const handleChange = (data) => {
+            setValue({ ...state, value: data.value });
+        };
+        return (
+            <Search
+                suggests={state.suggests}
+                value={state.value}
+                enableInnerSearch
+                search={(item, value) => item.toUpperCase().startsWith(value.toUpperCase())}
+                fixed
+                placeholder='Начните ввод'
+                onChange={handleChange}
+                onSelect={handleSelect}
+            />
+        );
+    }}
+```
+
+## Очистка поля
+
+Передав параметр `allowClear`, можно очистить введенный текст по клику на иконку крестика.
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    allowClear
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+        );
+    }}
+```
+
+## Выравнивание Suggests
+
+Передав параметр `align` со значениями - `start` или `end`, можно выравнить Suggests по правой или левой стороне инпута.
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    allowClear
+                    onChange={handleChange}
+                    fitOptions={false}
+                    align={'end'}
+                    onSelect={handleSelect}
+                />
+        );
+    }}
+```
+
+## Изменение дизайна и размера
+
+Для изменения дизайна отвечает свойство `design` (тип 'material' | 'outline') по умолчанию значение 'outline'.
+Для изменения размера отвечает свойство `size` (тип 'xs' | 's' | 'm' | 'l' | 'xl') по умолчанию значение 'l'.
+
+```
+    {() => {
+        const [state, setValue] = React.useState({ value: '', suggests: [] });
+        const handleSelect = (data) => setValue({ ...state, value: data.value });
+        const handleChange = (data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${escape(data.value.toUpperCase())}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(escape(m.toUpperCase())))) || [];
+            setValue({ value: data.value, suggests: temp });
+        };
+        const sizes = ['xs', 's', 'm', 'l', 'xl'];
+        return (
+            <Groups design='vertical'>
+                {sizes.map((size) => (
+                    <Search
+                        suggests={state.suggests}
+                        value={state.value}
+                        fitOptions={false}
+                        placeholder='Начните ввод'
+                        onChange={handleChange}
+                        onSelect={handleSelect}
+                        size={size}
+                        design="material"
+                    />
+                ))}
+            </Groups>
+        );
+    }}
+```
+
+## Изменение размеров выпадающего списка
+
+За управление размерами отвечают следующие свойства:
+- fitOptions (тип boolean) растягивает выпадающий список по ширине родителя, по умолчанию `true`;
+- maxListHeight (тип number) ограничивает высоту выпадающего списка в пикселях;
+- maxListWidth (тип number) ограничивает ширину выпадающего списка в пикселях;
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    fitOptions={false}
+                    onSelect={handleSelect}
+                />
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    onChange={handleChange}
+                    maxListWidth={250}
+                    maxListHeight={100}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
+```
+
+## Управление состоянием поля
+
+Компонент имеет два состояния `disabled` (тип boolean) и `invalid` (тип boolean)
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Groups design='vertical'>
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    disabled
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+                <Search
+                    suggests={suggests}
+                    value={value}
+                    placeholder={'Начните ввод'}
+                    invalid
+                    onChange={handleChange}
+                    onSelect={handleSelect}
+                />
+            </Groups>
+        );
+    }}
+```
+
+## Перенос строки в подсказках
+
+По умолчанию при длинных подсказках добавляется горизонтальный скролл в контейнер, чтобы избавиться от этого поведение и переносить на вторую строку необходимо указать свойство `wrapSuggestions` (тип boolean).
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const [suggests, setSuggests] = React.useState();
+        const handleChange = React.useCallback((data) => {
+            const mock = [
+                'Райффайзен банк',
+                'Райффайзен IT',
+                'Иванов Иван Иванович',
+                'Иванов Иван Петрович',
+                'Ивановская область',
+                'Рамблер',
+            ];
+            const regexp = new RegExp(`^${data.value.toUpperCase()}`);
+            const temp = (data.value && mock.filter((m) => regexp.test(m.toUpperCase()))) || [];
+            setSuggests(temp);
+            setValue(data.value);
+        }, []);
+        const handleSelect = React.useCallback((data) => {
+            setValue(data.value);
+        }, []);
+        return (
+            <Search
+                suggests={suggests}
+                value={value}
+                placeholder={'Начните ввод'}
+                maxListWidth={120}
+                wrapSuggestions
+                onChange={handleChange}
+                onSelect={handleSelect}
+            />
+        );
+    }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
     <Search
-        prefix={<Task />}
-        postfix={<Spinner />}
-        showInlineSuggest={false}
-        suggests={suggests}
-        value={value}
-        placeholder={'Начните ввод'}
-        valueToString={valueToString}
-        onChange={handleChange}
-        onSelect={handleSelect}>
-        {({ props, suggest, value }) => <CustomItem value={valueToString(suggest)} match={valueToString(value)} />}
-    </Search>
-);
+        viewOnly
+        suggests={[]}
+        value={'Какой-то текст'}
+        placeholder='Начните ввод'
+    />
+```
+
+
+## Закрытие выпадающего списка после выбора опции
+
+По умолчанию при выборе опции дропдаун закрывается. Чтобы отключить это поведение необходимо указать свойство `closeAfterSelection` со значением false.
+
+```
+    {() => {
+        const [state, setValue] = React.useState({
+        value: '',
+        suggests: [
+            'Райффайзен банк 1',
+            'Райффайзен банк 2',
+            'Райффайзен банк 3',
+            'Райффайзен банк 4',
+            'Райффайзен банк 5',
+            'Райффайзен банк 6',
+            'Райффайзен банк 7',
+            'Райффайзен банк 8',
+            'Райффайзен банк 9',
+            'Райффайзен банк 10',
+            'Райффайзен банк 11',
+            'Райффайзен банк 12',
+            'Райффайзен банк 13',
+            'Райффайзен банк 14',
+            'Райффайзен банк 15',
+            'Райффайзен банк 16',
+            'Райффайзен банк 17',
+            'Райффайзен банк 18',
+        ],
+    });
+    const handleSelect = ({ value }) => setValue((prev) => ({ ...prev, value }));
+    const handleChange = ({ value }) => setValue((prev) => ({ ...prev, value }));
+    return (
+        <Groups design='vertical'>
+            <Search
+                suggests={state.suggests}
+                value={state.value}
+                closeAfterSelection={false}
+                placeholder='Начните ввод'
+                onChange={handleChange}
+                onSelect={handleSelect}
+            />
+        </Groups>
+    );
+    }}
 ```

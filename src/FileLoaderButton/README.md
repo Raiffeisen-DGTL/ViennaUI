@@ -24,19 +24,21 @@ import { FileLoaderButton } from 'vienna-ui';
 | maxFiles | number \| undefined |  |
 
 
+# FileLoaderButton
+
+Компонент для загрузки файлов.
+По умолчанию можно выбрать только один файл.
+
+
+
 ## Использование
 
-Компонент в качестве дочернего элемента принимает контент для кнопки, по которой будет вызвано диалоговое окно для загрузки файлов.
-
-> Компонент является контролируемым. Событие `onChange` - возвращает новые полученные компонентом после взаимодействия с пользователем файлы. Так как компонент является управляемым стоит самостоятельно следить за списком файлов на наличие дублей или иных проблем, компонент лишь отфельтрует передаваемые данные по размеру и типу.
-
-#### Вариант по умолчанию - множественный выбор, любые типы файлов
 ```
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles, f) => {
-                setFiles(newFiles);
+            ({ value: newFiles }) => {
+                setFiles([...files, ...newFiles]);
             },
             [files]
         );
@@ -49,7 +51,7 @@ import { FileLoaderButton } from 'vienna-ui';
         return (
             <Groups>
                 <FileLoaderButton accept='xls,xlsx' onChange={changeHandler}>
-                    <Download /> Загрузить файл
+                    <DownloadIcon /> Загрузить файл
                 </FileLoaderButton>
                 {files[0] && (
                     <Groups>
@@ -64,15 +66,16 @@ import { FileLoaderButton } from 'vienna-ui';
     }}
 ```
 
-## Использование
 
 #### Множественный выбор файлов
+
+С помощью свойства `multiple` можно задать множественный выбор файлов.
 
 ```
     {() => {
         const [files, setFiles] = React.useState([]);
         const changeHandler = React.useCallback(
-            (e, newFiles, f) => {
+            ({ value: newFiles }) => {
                 setFiles([...files, ...newFiles]);
             },
             [files]
@@ -86,11 +89,11 @@ import { FileLoaderButton } from 'vienna-ui';
         return (
             <Groups>
                 <FileLoaderButton multiple onChange={changeHandler}>
-                    <Download /> Загрузить файл
+                    <DownloadIcon /> Загрузить файл
                 </FileLoaderButton>
                 {!!files.length && (
                     <Groups>
-                        Загружено файлов: {files.length}
+                        <div>Загружено файлов: {files.length}</div>
                         <Link design='accent' onClick={() => setFiles([])}>
                             Отменить
                         </Link>
@@ -104,20 +107,122 @@ import { FileLoaderButton } from 'vienna-ui';
 #### Варианты вида
 
 ```
+    <FileLoaderButton>
+        <DownloadIcon /> Прикрепите документ
+    </FileLoaderButton>
+```
+
+###### Состояние disabled
+
+```
+    <FileLoaderButton disabled>
+        <DownloadIcon /> Прикрепите документ
+    </FileLoaderButton>
+```
+
+###### Состояние загрузки
+
+```
+    <FileLoaderButton loading>
+        <DownloadIcon /> Прикрепите документ
+    </FileLoaderButton>
+```
+
+###### Поддерживаемые форматы файла
+
+Свойство `accept` позволяет указать, файлы какого типа необходимо прикрепить.
+
+```
     {() => {
         return (
             <Groups>
-                <FileLoaderButton>
-                    <Download /> Прекрепите документ
+                <FileLoaderButton accept='xls,xlsx'>
+                    <DownloadIcon /> Прикрепите документ
                 </FileLoaderButton>
-                <FileLoaderButton disabled>
-                    <Download /> Прекрепите документ
+                <FileLoaderButton accept=".jpg, .jpeg, .png">
+                    <DownloadIcon /> Прикрепите документ
                 </FileLoaderButton>
-                <FileLoaderButton loading>
-                    <Download /> Прекрепите документ
+                <FileLoaderButton accept='doc,.docx'>
+                    <DownloadIcon /> Прикрепите документ
                 </FileLoaderButton>
-                <FileLoaderButton accept='xls,xlsx' design='accent'>
-                    Загрузить таблицу .xls
+            </Groups>
+        );
+    }}
+```
+
+#### Вариант с обработкой ошибок в файлах
+
+```
+    {() => {
+        const [files, setFiles] = React.useState([]);
+        const changeHandler = React.useCallback(({ value: newFiles, options: { errorFiles: newErrorFiles } }) => {
+            setFiles((state) => [...state, ...newFiles]);
+            newErrorFiles.forEach(({ file, errors }) => {
+                const textErrors = [
+                    errors.accept && 'Некорректный формат.',
+                    errors.maxSizeByte && 'Некорректный размер.',
+                ]
+                    .filter(Boolean)
+                    .join(' ');
+                Notifier.error({
+                    title: `Ошибка при загрузке файла`,
+                    message: `Файл ${file.name}. ${textErrors}`,
+                });
+            });
+        }, []);
+        const deleteHandler = React.useCallback(
+            (file) => {
+                setFiles(files.filter((f) => f !== file));
+            },
+            [files]
+        );
+        return (
+            <>
+                <Notifications service={Notifier} />
+                <Groups>
+                <FileLoaderButton maxFiles={2} onChange={changeHandler} maxSizeByte={1024}>
+                    <DownloadIcon /> Перетащите файлы
+                </FileLoaderButton>
+            </Groups>
+            </>
+        );
+    }}
+```
+
+#### Использование свойств maxFiles и maxSizeByte
+
+Свойство `maxFiles` ограничивает количество загружаемых файлов, а свойство `maxSizeByte` - ограничивает максимальный размер каждого файла в байтах.
+
+```
+    {() => {
+        const [files, setFiles] = React.useState([]);
+        const changeHandler = React.useCallback(
+            ({ value: newFiles }) => {
+                setFiles([...files, ...newFiles]);
+            },
+            [files]
+        );
+        const deleteHandler = React.useCallback(
+            (file) => {
+                setFiles(files.filter((f) => f !== file));
+            },
+            [files]
+        );
+        return (
+            <Groups>
+                <FileLoaderButton multiple onChange={changeHandler} maxFiles={2}>
+                    <DownloadIcon /> Загрузить не больше 2 файлов
+                </FileLoaderButton>
+                {!!files.length && (
+                    <Groups>
+                        <div>Загружено файлов: {files.length}</div>
+                        <Link design='accent' onClick={() => setFiles([])}>
+                            Отменить
+                        </Link>
+                    </Groups>
+                )}
+                 <FileLoaderButton maxSizeByte={1024}>
+                    <DownloadIcon /> Загрузите документ
                 </FileLoaderButton>
             </Groups>
         );

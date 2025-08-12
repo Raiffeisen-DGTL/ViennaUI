@@ -29,21 +29,23 @@ import { UserProfile } from 'vienna-ui';
 | name        | string \| undefined |
 
 
-## Использование
+# UserProfile
 
-Используется в разных компонентах от шапки до карточек. Компонент состоит из родительского компонента `UserProfile` и дочернего `UserProfile.Item`. `UserProfile.Item` необходим в тех случаях, если при клике на родительский компонент нужно отобразить меню.
+Компонент для визуальной идентификации пользователя и компаний. Может использоваться в связке с любыми компонентами.
+
 
 
 ```
-    <UserProfile
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        description='Some Description'>
-        <UserProfile.Item>Профиль</UserProfile.Item>
-        <UserProfile.Item>Товары</UserProfile.Item>
-        <UserProfile.Item>Предложения</UserProfile.Item>
-        <UserProfile.Item>Выход</UserProfile.Item>
-    </UserProfile>
+        <UserProfile
+            photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+            name="Super User Name"
+            description="Some Description"
+        >
+            <UserProfile.Item>Профиль</UserProfile.Item>
+            <UserProfile.Item>Товары</UserProfile.Item>
+            <UserProfile.Item>Предложения</UserProfile.Item>
+            <UserProfile.Item>Выход</UserProfile.Item>
+        </UserProfile>
 ```
 
 ## Внешний вид
@@ -52,23 +54,25 @@ import { UserProfile } from 'vienna-ui';
 
 ```
     <UserProfile
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        description='Some Description'>
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+        description="Some Description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
     <UserProfile
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'>
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
-    <UserProfile photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'>
+    <UserProfile photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light">
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
@@ -78,16 +82,16 @@ import { UserProfile } from 'vienna-ui';
 
 #### Без фотографии
 
-Если у аватара нет или не загрузилась фотография, то вместо нее используется компонент `RoundIcon`. В таком случае символ берется с первой буквы имени пользователя или используется иконка.
+Если у аватара нет или не загрузилась фотография, то вместо нее используется компонент `IconContainer`. В таком случае символ берется с первой буквы имени пользователя или используется иконка.
 
 ```
-    <UserProfile name='Super User Name' description='Some Description'>
+    <UserProfile name="Super User Name" description="Some Description">
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
-    <UserProfile name='Super User Name'>
+    <UserProfile name="Super User Name">
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
@@ -103,22 +107,26 @@ import { UserProfile } from 'vienna-ui';
 
 #### Выравнивание справа
 
-В некоторых случаях, может пригодится выравнивание справа через свойство `align`.
+В некоторых случаях, может пригодиться выравнивание справа через свойство `align`. По умолчанию данное свойство имеет значение `left`.
 
 ```
-    <UserProfile align='right' name='Super User Name' description='Some Description'>
+    <UserProfile
+        align="right"
+        name="Super User Name"
+        description="Some Description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
-    <UserProfile align='right' name='Super User Name'>
+    <UserProfile align="right" name="Super User Name">
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
-    <UserProfile align='right'>
+    <UserProfile align="right">
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
@@ -129,41 +137,48 @@ import { UserProfile } from 'vienna-ui';
 #### Профиль как ссылка
 
 ```
-    <UserProfile to='https://home.raiffeisen.ru' name='Super User Name' description='Some Description' />
-    <UserProfile to='https://home.raiffeisen.ru' name='Super User Name' />
-    <UserProfile to='https://home.raiffeisen.ru' />
+    <UserProfile
+        to="https://home.raiffeisen.ru"
+        name="Super User Name"
+        description="Some Description"
+    />
+    <UserProfile to="https://home.raiffeisen.ru" name="Super User Name" />
+    <UserProfile to="https://home.raiffeisen.ru" />
 ```
 
 #### Размеры
 
-Компонент поддерживает размеры `xs`, `s` и `m` (по-умолчанию).
+Компонент поддерживает размеры `xs`, `s` и `m` (по умолчанию).
 
 ```
     <UserProfile
-        size='m'
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        description='Some Description'>
+        size="m"
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+        description="Some Description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
     <UserProfile
-        size='s'
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        description='Some Description'>
+        size="s"
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+        description="Some Description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
         <UserProfile.Item>Выход</UserProfile.Item>
     </UserProfile>
     <UserProfile
-        size='xs'
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        description='Some Description'>
+        size="xs"
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+        description="Some Description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
@@ -206,12 +221,17 @@ systemBreakpoints: Breakpoints = {
 };
 ```
 
+#### Добавление описания
+
+Есть возможность добавить описаниие к аватару с помощью свойства `description`.
+
 ```
     <UserProfile
-        photo='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'
-        name='Super User Name'
-        size={{ belowS: 'xs', s: 's', m: 'm' }}
-        description='Some Description'>
+        photo="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Prescription01&hairColor=BlondeGolden&facialHairType=MoustacheFancy&facialHairColor=BrownDark&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+        name="Super User Name"
+        size="m"
+        description="This is long long long description"
+    >
         <UserProfile.Item>Профиль</UserProfile.Item>
         <UserProfile.Item>Товары</UserProfile.Item>
         <UserProfile.Item>Предложения</UserProfile.Item>
