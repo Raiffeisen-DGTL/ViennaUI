@@ -52,17 +52,6 @@ import { Sidebar } from 'vienna-ui/v13';
 | render | `(props: React.PropsWithChildren) => ReactNode` | — | Позволяет рендерить кастомный элемент |
 | testId | `SidebarItemTestId` | — | `data-testid` для элемента |
 
-
- ``` preview style={playgroundStyle} of={Sidebar} library='@fcc/ui/v13' componentName="v13sidebar">
-    <Sidebar items={[
-        { id: '0', title: 'Выписки' },
-        { id: '1', title: 'Справки' },
-        { id: '2', title: 'Контрагенты' },
-        { id: '3', title: 'Письма' },
-        { id: '4', title: 'Документы в работе' },
-    ]} />
- ```
-
 ## Типизация
 
 Типы компонента могут быть импортированы по отдельности напрямую из пакета. В качестве альтернативы можно использовать типы из одноименного пространства имен `Sidebar`. 
