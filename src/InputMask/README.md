@@ -8,41 +8,65 @@
 import { InputMask } from 'vienna-ui';
 ```
 
-## Свойства / Props
+
+### Props
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| maskOptions | `Opts` | — |  |
-| value | `unknown` | — |  |
-| readOnly | `boolean` | — |  |
-| viewOnly | `boolean` | — |  |
-| viewOnlyText | `React.ReactNode` | — |  |
-| onChange | `(data: { value: unknown, isComplete: boolean, unmaskedValue?: unknown }) => void` | — |  |
+| `prefix` | `ReactNode` | — | Значение, отображаемое перед компонентом |
+| `onFocus` | `InputEventFocusEvent<HTMLInputElement, Element>> \| undefined` | — | Обработчик события при получении фокуса |
+| `onBlur` | `InputEventFocusEvent<HTMLInputElement, Element>> \| undefined` | — | Обработчик события при потере фокуса |
+| `ref` | `Ref<HTMLInputElement> \| undefined` | — | Ссылка на нативный элемент `<input>`, доступна после отрисовки |
+| `size` | `ResponsiveProp<'s' \| 'xs' \| 'm' \| 'l' \| 'xl' \| 'xxl', Breakpoints> \| undefined` | — | Размеры компонента |
+| `defaultValue` | `string \| undefined` | — | Значение в поле ввода по умолчанию (для первого рендера) |
+| `autoCapitalize` | `string \| undefined` | — | Автоматическая установка заглавной буквы |
+| `onCopy` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события копирования |
+| `onCut` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события вырезки |
+| `onPaste` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события вставки |
+| `onKeyDown` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
+| `onKeyPress` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при нажатии и удержании кнопки с печатаемым символом |
+| `onKeyUp` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при отпускании кнопки клавиатуры |
+| `as` | `KnownTarget \| undefined` | — | Динамически изменяет отображаемый компонент или HTML-тег |
+| `forwardedAs` | `KnownTarget \| undefined` | — | Используется для передачи другого тега/компонента |
+| `theme` | `DefaultTheme \| undefined` | — | Тема компонента |
+| `design` | `'outline' \| 'material' \| undefined` | — | Дизайн компонента |
+| `align` | `'left' \| 'center' \| 'right' \| undefined` | — | Выравнивание текста внутри поля ввода |
+| `invalid` | `boolean \| undefined` | — | Устанавливает индикацию ошибки |
+| `smartPlaceholder` | `ReactNode` | — | Умное значение placeholder |
+| `onDispose` | `() => void \| undefined` | — | Вызывается при удалении компонента |
+| `placeholderValueAutoDiff` | `boolean \| undefined` | `true` | Автоматическое сравнение и вычитание введённого значения из `smartPlaceholder` |
+| `onUpdated` | `() => void \| undefined` | — | Вызывается, когда значение обновлено |
+| `private props` | — | — | — |
+| `extraNativeProps` | `{ [key: string]: any; } \| undefined` | — | Для передачи дополнительных нативных атрибутов, которые могут конфликтовать с имеющимися пропсами, например `size` |
+| `postfix` | `ReactNode` | — | Значение, отображаемое после компонента |
+| `active` | `boolean \| undefined` | — | Принудительный ховер |
+| `additionalPostfix` | `ReactNode` | — | Режим для включения иконки "Close" в компоненте `Search` |
+| `viewOnly` | `boolean \| undefined` | — | Компонент отображается как текст, без поля ввода |
+| `viewOnlyText` | `ReactNode` | — | Значение, отображаемое в режиме `viewOnly` |
+| `onComplete` | `((value: string, maskRef: InputMaskFactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined` | — | Вызывается, когда ввод завершён |
+| `maskOptions` | `*` | `FactoryOpts` | Дополнительные параметры для маски |
+| `value` | `unknown` | — | Контролируемое значение поля ввода |
+| `onChange` | `(data: { value: unknown; isComplete: boolean; unmaskedValue?: unknown; }) => void \| undefined` | — | Обработчик изменения значения |
 
+---
 
-
-
-## HTMLAttributes
+### HTMLAttributes
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| id | string \| undefined | |
-| title | string \| undefined | |
-| className | string \| undefined | |
-| spellCheck | boolean \| undefined | |
-| tabIndex | number \| undefined | |
-| height | string \| undefined | |
-| width | string \| undefined | |
-| style | CSSProperties \| undefined | |
-| name | string \| undefined | |
-| type | string \| undefined | |
-| maxLength | number \| undefined | |
-| autoComplete | string \| undefined | |
-| autoCorrect | string \| undefined | |
-| autoFocus | boolean \| undefined | |
-| readOnly | boolean \| undefined | |
-| placeholder | string \| undefined | |
-| disabled | boolean \| undefined | |
+| `autoComplete` | `string \| undefined` | — | Включение встроенного в браузер автокомплита |
+| `disabled` | `boolean \| undefined` | — | Компонент неактивен, если `true` |
+| `maxLength` | `number \| undefined` | — | Максимальная длина вводимого значения в символах |
+| `name` | `string \| undefined` | — | Имя компонента |
+| `placeholder` | `string \| undefined` | — | Значение, отображаемое, если ничего не введено |
+| `readOnly` | `boolean \| undefined` | — | Компонент активен, но не доступен для редактирования |
+| `type` | `string \| undefined` | — | Типы поля ввода |
+| `autoFocus` | `boolean \| undefined` | — | Автофокус при монтировании |
+| `className` | `string \| undefined` | — | Название стиля для компонента (опционально) |
+| `id` | `string \| undefined` | — | Уникальный идентификатор компонента |
+| `spellCheck` | `boolean \| undefined` | — | Если `true`, работает системная проверка правописания |
+| `tabIndex` | `number \| undefined` | `-1` | Порядок получения фокуса при нажатии `Tab` |
+| `autoCorrect` | `string \| undefined` | — | Включение встроенного в браузер корректирования ввода |
 
 
 # InputMask

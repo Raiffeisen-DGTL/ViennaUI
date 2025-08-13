@@ -2,19 +2,26 @@
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| delimiter | "." \| "," \| undefined |  | Разделитель разряда |
+| delimiter | "." \| "," |  | Разделитель разряда |
 | value | number \| undefined |  | Текущее значение |
 | noInput | boolean \| undefined |  | Скрывает поле ввода |
-| onPointerUp | ((event: any) => void) \| undefined |
-| onChange | (InputEvent<FormEvent<HTMLInputElement>> & ((value: unknown) => void)) \| undefined |
+| onPointerUp | ((event: MouseEvent \| TouchEvent) => void) \| undefined |  | Событие onPointerUp для перехвата момента отпускания слайдера/полоски/тегов обрабатывает мышь и касания |
+| onChange | (value: number \| null) => void |  | Обработчик изменения значения |
+| max | number \| undefined |  | Максимальное значение default = 100 |
+| min | number \| undefined |  | Минимальное значение default = 0 |
+| step | number \| undefined |  | Шаг инкремента default = 1 |
+| scale | number \| undefined |  | Количество знаков после запятой default = 0 |
+| children | ReactNode \| undefined |  | Засечки |
+| testId | InputSliderTestId \| undefined |  | Идентификатор для тестирования |
+| maskOptions | InputMaskProps['maskOptions'] \| undefined |  | Опции маски |
 
 ## HTMLAttributes 👇
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| max |number \| undefined |
-| min |number \| undefined |
-| step |number \| undefined |
+| max | number \| undefined |
+| min | number \| undefined |
+| step | number \| undefined |
 
 # InputSlider
 

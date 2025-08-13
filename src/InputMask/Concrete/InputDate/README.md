@@ -6,6 +6,68 @@ import { InputDate } from 'vienna-ui';
 ``` 
 
 
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `value` | `string \| Date \| undefined` | — | Контролируемое значение поля ввода |
+| `onChange` | `(data: { value: string \| null; event: ChangeEvent<HTMLInputElement>; options: { name?: string; isComplete: boolean; unmaskedValue?: unknown; }) => void \| undefined` | — | Обработчик изменения значения |
+| `prefix` | `ReactNode` | — | Значение, отображаемое перед компонентом |
+| `onFocus` | `InputEventFocusEvent<HTMLInputElement, Element>> \| undefined` | — | Обработчик события при получении фокуса |
+| `onBlur` | `InputEventFocusEvent<HTMLInputElement, Element>> \| undefined` | — | Обработчик события при потере фокуса |
+| `size` | `ResponsiveProp<'s' \| 'xs' \| 'm' \| 'l' \| 'xl' \| 'xxl', Breakpoints>` | — | Размеры компонента (адаптивные) |
+| `defaultValue` | `string \| undefined` | — | Неконтролируемое значение по умолчанию |
+| `autoCapitalize` | `string \| undefined` | — | Автоматическая установка заглавной буквы |
+| `onCopy` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события копирования |
+| `onCut` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события вырезания |
+| `onPaste` | `ClipboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события вставки |
+| `onKeyDown` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при нажатии кнопки клавиатуры |
+| `onKeyPress` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при печати символа |
+| `onKeyUp` | `KeyboardEventHandler<HTMLInputElement> \| undefined` | — | Обработчик события при отпускании кнопки |
+| `as` | `KnownTarget \| undefined` | — | Динамически изменяет отображаемый компонент или HTML-тег |
+| `forwardedAs` | `KnownTarget \| undefined` | — | Используется для передачи другого тега/компонента |
+| `theme` | `DefaultTheme \| undefined` | — | Тема компонента |
+| `design` | `'outline' \| 'material' \| undefined` | — | Дизайн компонента |
+| `align` | `'left' \| 'center' \| 'right' \| undefined` | — | Выравнивание текста внутри поля ввода |
+| `invalid` | `boolean \| undefined` | — | Устанавливает индикацию ошибки |
+| `smartPlaceholder` | `ReactNode` | — | Умное значение placeholder |
+| `onDispose` | `() => void \| undefined` | — | Вызывается при удалении компонента |
+| `placeholderValueAutoDiff` | `boolean \| undefined` | `true` | Автоматическое сравнение и вычитание введённого значения из `smartPlaceholder` |
+| `onUpdated` | `() => void \| undefined` | — | Вызывается, когда значение обновлено |
+| `private props` | — | — | — |
+| `extraNativeProps` | `{ [key: string]: any; } \| undefined` | — | Для передачи дополнительных нативных атрибутов, которые могут конфликтовать с существующими пропсами (например, `size`) |
+| `postfix` | `ReactNode` | — | Значение, отображаемое после компонента |
+| `active` | `boolean \| undefined` | — | Принудительный ховер (активное состояние) |
+| `additionalPostfix` | `ReactNode` | — | Режим для включения иконки "Close" в компоненте `Search` |
+| `viewOnly` | `boolean \| undefined` | — | Компонент отображается как текст, без поля ввода |
+| `viewOnlyText` | `ReactNode` | — | Значение, отображаемое в режиме `viewOnly` |
+| `onComplete` | `((value: string, maskRef: InputMaskFactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined` | — | Вызывается, когда ввод завершён |
+| `lazy` | `boolean \| undefined` | — | Отложенное обновление значения |
+| `localization` | `Localization<InputDateLocalization, undefined> \| undefined` | — | Настройки локализации |
+| `private props` | — | — | — |
+
+---
+
+###  HTML Attributes
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `autoComplete` | `string \| undefined` | — | Включение встроенного в браузер автокомплита |
+| `disabled` | `boolean \| undefined` | — | Компонент неактивен, если `true` |
+| `max` | `Date \| undefined` | — | Максимально допустимая дата |
+| `maxLength` | `number \| undefined` | — | Максимальная длина вводимого значения в символах |
+| `min` | `Date \| undefined` | — | Минимально допустимая дата |
+| `name` | `string \| undefined` | — | Имя компонента |
+| `placeholder` | `string \| undefined` | — | Значение, отображаемое, если ничего не введено |
+| `readOnly` | `boolean \| undefined` | — | Компонент активен, но не доступен для редактирования |
+| `type` | `'time' \| 'date' \| 'datetime' \| undefined` | `'date'` | Вариант маски (по умолчанию `date`) |
+| `autoFocus` | `boolean \| undefined` | — | Автофокус при монтировании |
+| `className` | `string \| undefined` | — | Название стиля для компонента (опционально) |
+| `id` | `string \| undefined` | — | Уникальный идентификатор компонента |
+| `spellCheck` | `boolean \| undefined` | — | Если `true`, включает системную проверку орфографии |
+| `tabIndex` | `number \| undefined` | — | Порядок получения фокуса при нажатии `Tab` (`-1` — исключает из фокусировки) |
+| `autoCorrect` | `string \| undefined` | — | Включение встроенной коррекции ввода браузером |
+
 # InputDate
 
 Компонент ввода даты

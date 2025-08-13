@@ -2,65 +2,88 @@
 
 Компонент предназначен для выбора нескольких элементов из выпадающего списка.
 
-## Props
-
-
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| id | `string` | — |  |
-| prefix | `React.ReactNode` | — |  |
-| postfix | `Postfix` | — |  |
-| placeholder | `string` | — |  |
-| className | `string` | — |  |
-| tabIndex | `number` | — |  |
-| invalid | `boolean` | — |  |
-| values | `T[]` | — |  |
-| size | `ResponsivePropSizeType, B>` | — |  |
-| hideEmptyStateIcon | `boolean` | — |  |
-| randomEmptyStateIcon | `boolean` | — |  |
-| design | `DesignType` | — |  |
-| maxListHeight | `number` | — |  |
-| maxListWidth | `number` | — |  |
-| onSelect | `OnChangeHandler<T[], React.MouseEvent \| React.KeyboardEvent>` | — |  |
-| onSearch | `(value: string, name?: string) => void` | — |  |
-| children | `React.ReactNode` | — |  |
-| fitOptions | `boolean` | — |  |
-| valueToString | `ValueToStringType<T>` | — |  |
-| compare | `CompareType<T>` | — |  |
-| highlightCompare | `NonNullableHighlightProps['compare']>` | — |  |
-| highlightStyle | `NonNullableHighlightProps['style']>` | — |  |
-| search | `SearchType` | — |  |
-| disableSearch | `boolean` | — |  |
-| disableSelectAll | `boolean` | — |  |
-| disableReset | `boolean` | — |  |
-| disableClearSearch | `boolean` | — |  |
-| tagsWrap | `boolean` | — |  |
-| hideCheckboxes | `NonNullable<OptionProps['hideCheckbox']>` | — |  |
-| minViewItems | `number` | — |  |
-| fixed | `boolean` | — |  |
-| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |  |
-| ref | `React.Ref<HTMLDivElement>` | — |  |
-| testId | `{ tag?: (val: string) => string; option?: (val: string \| React.ReactNode) => string; search?: string; arrow?: string; }` | — |  |
-| hideOptionsList | `boolean` | — |  |
-| inputRef | `React.RefObject<HTMLInputElement>` | — |  |
-| onAddValue | `(newValue: T) => void` | — |  |
-| showCheckboxOnRight | `boolean` | — |  |
-| showAddButton | `boolean` | — |  |
-| addButtonDuplication | `boolean` | — |  |
-| addButtonOnClick | `(searchString: string) => void` | — |  |
-
-
-## HTMLAttributes
+#### Props
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| id | string \| undefined | |
-| className | string \| undefined | |
-| tabIndex | number \| undefined | |
-| name | string \| undefined | |
-| placeholder | string \| undefined | |
-| disabled | boolean \| undefined | |
+| `prefix` | `ReactNode` | — | Значение, отображаемое перед компонентом |
+| `postfix` | `Postfix \| undefined` | — | Значение, отображаемое после компонента (объект) |
+| `invalid` | `boolean \| undefined` | — | Компонент отображается как ошибочный, если `true` |
+| `values` | `T[] \| undefined` | — | Массив выбранных элементов (интерфейсы `options` и `values` должны совпадать) |
+| `size` | `ResponsivePropAllSizeType, B> \| undefined` | — | Размеры компонента |
+| `hideEmptyStateIcon` | `boolean \| undefined` | — | Скрывает иконку в состоянии "ничего не выбрано" |
+| `randomEmptyStateIcon` | `boolean \| undefined` | — | — |
+| `design` | `DesignType \| undefined` | — | Дизайн компонента |
+| `maxListHeight` | `number \| undefined` | — | Максимальная высота выпадающего списка в пикселях |
+| `maxListWidth` | `number \| undefined` | — | Максимальная ширина выпадающего списка в пикселях |
+| `onSelect` | `OnChangeHandler<T[], MouseEvent<Element, MouseEvent> \| KeyboardEvent<Element>, { name?: string; }> \| undefined` | — | Обработчик события при выборе элемента списка |
+| `onSearch` | `(value: string, name?: string \| undefined) => void \| undefined` | — | Обработчик события при вводе в поле поиска |
+| `children` | `ReactNode` | — | Элементы выпадающего списка, если не используется `options` |
+| `fitOptions` | `boolean \| undefined` | `true` | Если `true`, выравнивает список по ширине компонента |
+| `valueToString` | `ValueToStringType<T> \| undefined` | — | Определяет, какое значение из объекта выводить в селекте |
+| `compare` | `CompareType<T> \| undefined` | — | Определяет, как сравнивать объекты из `value` и `options` |
+| `highlightCompare` | `(text: string, search: string) => GenerateCompare \| undefined` | — | Позволяет кастомизировать логику подсветки |
+| `highlightStyle` | `'accentColor' \| 'boldText' \| undefined` | — | Стиль подсветки |
+| `search` | `SearchType \| undefined` | — | Позволяет включить/настроить поиск |
+| `disableSearch` | `boolean \| undefined` | — | Отключает поле поиска |
+| `disableSelectAll` | `boolean \| undefined` | — | Отключает опцию "Выбрать всё" |
+| `disableReset` | `boolean \| undefined` | — | Отключает сброс |
+| `disableClearSearch` | `boolean \| undefined` | — | Отключает кнопку очистки поиска |
+| `tagsWrap` | `boolean \| undefined` | — | Разрешает перенос тегов на новую строку |
+| `hideCheckboxes` | `boolean \| undefined` | — | Скрывает чекбоксы |
+| `minViewItems` | `number \| undefined` | — | Число элементов, которые не прячутся |
+| `fixed` | `boolean \| undefined` | — | — |
+| `dropdownPortal` | `HTMLElement \| MutableRefObjectHTMLElement \| null> \| null \| undefined` | — | Позволяет указать контейнер для портала выпадающего списка |
+| `ref` | `Ref<HTMLDivElement> \| undefined` | — | Ссылка на корневой элемент компонента |
+| `testId` | `{ tag?: (val: string) => string \| undefined; option?: (val: ReactNode) => string \| undefined; search?: string \| undefined; arrow?: string \| undefined; } \| undefined` | — | Объект для указания `data-test-id` у элементов |
+| `hideOptionsList` | `boolean \| undefined` | — | Скрывает выпадающий список |
+| `inputRef` | `RefObject<HTMLInputElement> \| undefined` | — | Ссылка на `input` |
+| `onAddValue` | `(newValue: T) => void \| undefined` | — | Обработчик добавления нового значения в список |
+| `showCheckboxOnRight` | `boolean \| undefined` | — | Показывает чекбоксы справа |
+| `showAddButton` | `boolean \| undefined` | — | Показывает кнопку «Добавить» |
+| `addButtonDuplication` | `boolean \| undefined` | — | Включает дублирование поисковой строки в кнопку «Добавить» |
+| `addButtonOnClick` | `(searchString: string) => void \| undefined` | — | Обработчик клика по кнопке «Добавить» |
+| `localization` | `LocalizationMultiselectWithSearchLocalizationMap, MultiselectWithSearchLocalizationContext> \| undefined` | — | Локализация компонента |
 
+---
+
+### HTMLAttributes 
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `id` | `string \| undefined` | — | ID компонента |
+| `placeholder` | `string \| undefined` | — | Значение, отображаемое, если ничего не выбрано |
+| `className` | `string \| undefined` | — | Название стиля для компонента (опционально) |
+| `tabIndex` | `number \| undefined` | `-1` | Порядок получения фокуса при нажатии `Tab` |
+
+---
+
+### Option Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `size` | `'s' \| 'm' \| 'l' \| undefined` | — | Размер элемента |
+| `first` | `boolean \| undefined` | — | Указывает, что это первый элемент в списке |
+| `preLast` | `boolean \| undefined` | — | Предпоследний элемент |
+| `altText` | `string \| undefined` | — | Альтернативный текст для отображения |
+| `last` | `boolean \| undefined` | — | Последний элемент в списке |
+| `withoutTooltip` | `boolean \| undefined` | — | Отключает тултип |
+| `value` | `ReactNode` | — | Значение элемента |
+| `onClick` | `(e: MouseEvent<HTMLDivElement, MouseEvent>, data: { value: ReactNode; }) => void \| undefined` | — | Обработчик клика по элементу |
+| `as` | `KnownTarget \| undefined` | — | Динамически изменяет отображаемый компонент или HTML-тег |
+| `forwardedAs` | `KnownTarget \| undefined` | — | Используется для передачи другого тега/компонента |
+| `theme` | `DefaultTheme \| undefined` | — | Тема компонента |
+
+---
+
+### HTMLAttributes (для `Option`)
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| `href` | `string \| undefined` | — | Ссылка, если элемент должен быть `a` |
+| `hrefLang` | `string \| undefined` | — | Язык для `href` |
+| `target` | `HTMLAttributeAnchorTarget \| undefined` | — | Цель для открытия ссылки |
+| `type` | `string \| undefined` | — | Тип элемента (например, `button`) |
 
 # MultiselectWithSearch
 

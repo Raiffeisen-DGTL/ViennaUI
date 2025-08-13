@@ -6,6 +6,15 @@
 import { InputAccount } from 'vienna-ui';
 ``` 
 
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| maskOptions | `Opts` | — |  |
+| value | `unknown` | — |  |
+| readOnly | `boolean` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onChange | `(data: { value: unknown, isComplete: boolean, unmaskedValue?: unknown }) => void` | — |  |
+
 
 # InputAccount
 
