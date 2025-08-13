@@ -13,6 +13,20 @@
 | size | "s" \| "m" \| undefined |
 | allowInteraction | boolean \| undefined |  | Включает взаимодействие с элементами внутри тултипа |
 | truncate | boolean \| undefined |  | Управляет отображением всей строки или обрезает ее |
+| action | `TriggerActionType` | — |   |
+| visible | `boolean` | — |   |
+| defaultVisible | `boolean` | — |   |
+| disabled | `boolean` | — |   |
+| disableOutsideClick | `boolean` | — |   |
+| mouseEnterDelay | `number` | — |   |
+| mouseLeaveDelay | `number` | — |   |
+| closeOnTargetClick | `NonNullable<BaseActionStrategyOptions['closeOnTargetClick']>` | — |   |
+| renderTarget | `ITriggerRendererTarget<Target>` | — |   |
+| renderPopup | `IFloatingRendererPopupPopup, TriggerRendererPopupProps>` | — |   |
+| popupPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |   |
+| onVisibleChange | `(visible: boolean) => void` | — |   |
+| onOpen | `() => void` | — |   |
+| onClose | `() => void` | — |   |
 
 ## HTMLAttributes 👇
 | Prop | Type | Default | Description |
