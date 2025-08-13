@@ -19,9 +19,12 @@ import { Link } from 'vienna-ui';
 | disabled | boolean \| undefined                                       |     |
 | color   | 'brand-accent' \| 'brand-on-accent' \| 'brand-white' \| 'brand-primary' \| 'brand-on-primary' \| 'brand-wildsand' \| 'seattle01' \| 'seattle05' \| 'seattle10' \| 'seattle30' \| 'seattle60' \| ... 168 more ... \| undefined                                        |     |
 
-## Link
 
-Компонент ссылка.
+# Link
+
+Компонент ссылка. Ссылка связывает веб-страницы или выступает как более легкий аналог кнопки. Используйте ссылку, если необходима навигация между страницами или её разделами. Открывайте ссылку в новом окне, если она относится к побочному сценарию: страница справки, документ или любой другой сайт.
+Ссылка может быть размещена внутри текстового блока или как самостоятельный элемент.
+
 
 
 ```
@@ -47,18 +50,6 @@ import { Link } from 'vienna-ui';
 для установки цвета ссылки
 
 ```
-    <Link design='accent' href='https://google.com'>
-        Accent link
-    </Link>
-    <Link design='accent-underline' href='https://google.com'>
-        Accent underline link
-    </Link>
-    <Link design='primary' href='https://google.com' target='_blank'>
-        Primary link
-    </Link>
-    <Link design='secondary' target='_blank' href='https://google.com'>
-        Secondary link
-    </Link>
     <Link design='accent' color='geneva120' href='https://google.com'>
         Accent geneva link
     </Link>
@@ -75,9 +66,6 @@ import { Link } from 'vienna-ui';
 Вы можете использовать компонент совместно с React Router.
 
 ```jsx
-import { Link as RouterLink } from 'react-router-dom';
-import { Link } from 'vienna.ui';
-
 export default (props) => (
     <Link {...props} as={RouterLink} to='/episodes'>
         Link
@@ -105,15 +93,15 @@ export default (props) => (
 
 ```
     <Link design='accent'>
-        <Back /> Назад
+        <BackIcon /> Назад
     </Link>
     <Link design='primary'>
-        Вперед <ForwardArrowRight />
+        Вперед <ForwardArrowRightIcon />
     </Link>
     <Link design='secondary'>
-        <Screw />
+        <ScrewIcon />
         <span>Вперед</span>
-        <ForwardArrowRight />
+        <ForwardArrowRightIcon />
     </Link>
 ```
 
@@ -123,13 +111,13 @@ export default (props) => (
 
 ```
     <Link size='s'>
-        <Logo size='s' /> Small
+        <LogoIcon size='s' /> Small
     </Link>
     <Link size='m'>
-        <Logo /> Medium
+        <LogoIcon /> Medium
     </Link>
     <Link size='l'>
-        <Logo size='l' /> Large
+        <LogoIcon size='l' /> Large
     </Link>
 ```
 
@@ -137,16 +125,16 @@ export default (props) => (
 
 ```
     <Link design='accent'>
-        <Back />
+        <BackIcon />
     </Link>
     <Link design='primary'>
-        <Logo />
+        <LogoIcon />
     </Link>
     <Link design='secondary'>
-        <Screw />
+        <ScrewIcon />
     </Link>
     <Link design='accent'>
-        <ForwardArrowRight />
+        <ForwardArrowRightIcon />
     </Link>
 ```
 
@@ -168,11 +156,11 @@ export default (props) => (
         Secondary link
     </Link>
     <Link design='secondary' href='#' disabled>
-        <Screw />
-        Screw
+        <ScrewIcon />
+        ScrewIcon
     </Link>
     <Link design='primary' href='#' disabled>
-        <ForwardArrowRight />
+        <ForwardArrowRightIcon />
     </Link>
 ```
 
@@ -192,15 +180,15 @@ export default (props) => (
         Secondary link
     </Link>
     <Link design='secondary' loading>
-        <Screw />
+        <ScrewIcon />
         Screw
     </Link>
     <Link design='primary' href='#' loading>
-        <ForwardArrowRight />
+        <ForwardArrowRightIcon />
     </Link>
 ```
 
-#### Адаптив
+## Адаптив
 
 Для компонента Link, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
 
@@ -237,4 +225,51 @@ systemBreakpoints: Breakpoints = {
 
 ```
     <Link size={{ base: 's', s: 'm', m: 'l' }}>Link</Link>
+```
+
+
+## Дизайн ссылок
+
+Свойство `design` может принимать одно из значений:  'accent' | 'accent-underline' | 'primary' | 'secondary'.
+
+```
+    <Link design='accent' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Accent Link
+    </Link>
+    <Link design='accent-underline' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Accent-underline Link
+    </Link>
+    <Link design='primary' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Primary Link
+    </Link>
+    <Link design='secondary' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Secondary Link
+    </Link>
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для контейнера ссылки. Передается с помощью пропса `testId?: { container }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultLinkTestId: LinkProps['testId'] = {
+    container: 'link_container',
+};
+```
+
+```
+    <Link testId={{ container: 'link_container' }} design='primary' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Primary Link
+    </Link>
+    <Link design='secondary' href='#' size='l'>
+        <ScrewIcon size='s' />
+        Secondary Link
+    </Link>
 ```

@@ -7,31 +7,27 @@
 ```
 import { Alert } from 'vienna-ui';
 ```
-
 ## Свойства / Props
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| design | ButtonDesign \| undefined  |
-| size | ResponsiveProp<'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl' |  | Размеры |
-| grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \| undefined  |
-| square | boolean \| undefined |
-| pressed | boolean \| undefined |
-| loading | boolean \| undefined |
-| ref | Ref<HTMLButtonElement> \| undefined |
+| design | `PropsBox<B>['$design']` | — |  |
+| size | `PropsBox<B>['$size']` | — |  |
+| grid | `PropsBox<B>['$grid']` | — |  |
+| square | `PropsBox<B>['$square']` | — |  |
+| pressed | `PropsBox<B>['$pressed']` | — |  |
+| loading | `PropsBox<B>['$loading']` | — |  |
+| disabled | `PropsBox<B>['$disabled']` | — |  |
+| forwardedRef | `React.Ref<HTMLButtonElement>` | — |  |
 
-## HTMLAttributes
-| Prop | Type | Default | Description |
-| --- | --- | --- | --- |
-| disabled | boolean \| undefined  |
 
-## Использование
+# Button
 
-```jsx
-<Button design='accent'>Accent</Button>
-```
+Кнопки используются в интерфейсах для основных действий на странице. Хорошо работают для переходов по внутренним страницам сайта с пояснением действия, которое произойдет с пользователем.
+Не используйте кнопки для перехода на другой сайт / приложение / отдельную вкладку, для этого лучше подойдут ссылки.
+Используйте кнопки для наиболее важных действий, которые пользователи видят в продукте. Например, "Зарегистрироваться" или "Создать документ".
 
-## Использование <Playground preview of={Button}>
+
 
 ```
     <Groups>
@@ -43,6 +39,8 @@ import { Alert } from 'vienna-ui';
         <Button design='ghost'>Ghost</Button>
         <Button design='ghost-accent'>Ghost accent</Button>
         <Button design='white'>White</Button>
+        <Button design='ghost-white'>Ghost-White</Button>
+        <Button design='neutral'>Neutral</Button>
     </Groups>
 ```
 
@@ -101,7 +99,6 @@ export default () => {
     </Button>
 ```
 
-
 #### Primary
 
 Используйте кнопку `Primary` для действий, требующих среднее внимание.
@@ -133,7 +130,6 @@ export default () => {
     </Button>
 ```
 
-
 #### Outline
 
 Используйте кнопку `Outline` для действий, требующих наименьшее внимание.
@@ -164,7 +160,6 @@ export default () => {
         Disabled
     </Button>
 ```
-
 
 #### Critical
 
@@ -228,7 +223,6 @@ export default () => {
     </Button>
 ```
 
-
 #### Ghost
 
 Используйте кнопку `Ghost` для действий, требующих наименьшее внимание.
@@ -259,7 +253,6 @@ export default () => {
         Disabled
     </Button>
 ```
-
 
 #### Ghost accent
 
@@ -292,7 +285,6 @@ export default () => {
     </Button>
 ```
 
-
 #### White
 
 Используйте кнопку `White` для фонов, отличных от белого (светлых цветов).
@@ -322,13 +314,94 @@ export default () => {
     <Button design='white' disabled>
         Disabled
     </Button>
-</Playground>
+```
+
+#### Ghost-white
+
+Используйте кнопку для действий, требующих наименьшее внимание, для размещения на фонах, отличных от белого.
+
+```
+    <Button size='xs' design='ghost-white'>
+        Default
+    </Button>
+    <Button size='s' design='ghost-white'>
+        Default
+    </Button>
+    <Button size='m' design='ghost-white'>
+        Default
+    </Button>
+    <Button size='l' design='ghost-white'>
+        Default
+    </Button>
+    <Button size='xl' design='ghost-white'>
+        Default
+    </Button>
+    <Button size='xxl' design='ghost-white'>
+        Default
+    </Button>
+    <Button design='ghost-white' loading>
+        Loading
+    </Button>
+    <Button design='ghost-white' disabled>
+        Disabled
+    </Button>
+```
+
+#### Neutral
+
+Кнопка с нейтральным стилем оформления, подходящая для второстепенных действий. Используется для ненавязчивых взаимодействий, например быстрой фильтрации.
+
+```
+    <Button size='xs' design='neutral'>
+        Default
+    </Button>
+    <Button size='s' design='neutral'>
+        Default
+    </Button>
+    <Button size='m' design='neutral'>
+        Default
+    </Button>
+    <Button size='l' design='neutral'>
+        Default
+    </Button>
+    <Button size='xl' design='neutral'>
+        Default
+    </Button>
+    <Button size='xxl' design='neutral'>
+        Default
+    </Button>
+    <Button design='neutral' loading>
+        Loading
+    </Button>
+    <Button design='neutral' disabled>
+        Disabled
+    </Button>
+```
+
+#### Pressed
+
+Свойство `pressed` указывает, что элемент был выбран пользователем и сейчас находится в активном или выделенном статусе среди других аналогичных элементов. Это результат выбора, который может сохраняться долгое время.
+
+```
+    <Groups>
+        <Button design='accent' pressed>Accent</Button>
+        <Button design='primary' pressed>Primary</Button>
+        <Button design='outline' pressed>Outline</Button>
+        <Button design='critical' pressed>Critical</Button>
+        <Button design='outline-critical' pressed>Outline critical</Button>
+        <Button design='ghost' pressed>Ghost</Button>
+        <Button design='ghost-accent' pressed>Ghost accent</Button>
+        <Button design='white' pressed>White</Button>
+        <Button design='ghost-white' pressed>Ghost-White</Button>
+        <Button design='neutral' pressed>Neutral</Button>
+    </Groups>
+```
 
 ## Ссылка как кнопка
 
 Есть передасть кнопке свойство `href`, вместо тэга `<button>` будет отображаться стилизованный под кнопоку тэг `<a>`
 
-<Playground>
+```
     <Button href='/' design='accent'>
         Home
     </Button>
@@ -337,18 +410,17 @@ export default () => {
     </Button>
 ```
 
-
 ## Кнопки с иконками
 
 ```
     <Button>
-        <Back /> Назад
+        <BackIcon /> Назад
     </Button>
     <Button>
-        Вперед <ForwardArrowRight />
+        Вперед <ForwardArrowRightIcon />
     </Button>
     <Button>
-        <Screw /> Вперед <ForwardArrowRight />
+        <ScrewIcon /> Вперед <ForwardArrowRightIcon />
     </Button>
 ```
 
@@ -359,7 +431,7 @@ export default () => {
         let showIcon = false;
         return(
             <Button grid={2}>
-               {showIcon ? <Back/> : null}
+               {showIcon ? <BackIcon/> : null}
                Назад
             </Button>);}
     }
@@ -371,22 +443,22 @@ export default () => {
 
 ```
     <Button size='xs'>
-        <Logo size='s' /> XS
+        <LogoIcon size='s' /> XS
     </Button>
     <Button size='s'>
-        <Logo /> S
+        <LogoIcon /> S
     </Button>
     <Button size='m'>
-        <Logo /> M
+        <LogoIcon /> M
     </Button>
     <Button size='l'>
-        <Logo /> L
+        <LogoIcon /> L
     </Button>
     <Button size='xl'>
-        <Logo /> XL
+        <LogoIcon /> XL
     </Button>
     <Button size='xxl'>
-        <Logo /> XXL
+        <LogoIcon /> XXL
     </Button>
 ```
 
@@ -396,25 +468,24 @@ export default () => {
 
 ```
     <Button size='xs' square>
-        <Logo size='s' />
+        <LogoIcon size='s' />
     </Button>
     <Button size='s' square>
-        <Logo />
+        <LogoIcon />
     </Button>
     <Button size='m' square>
-        <Logo />
+        <LogoIcon />
     </Button>
     <Button size='l' square>
-        <Logo />
+        <LogoIcon />
     </Button>
     <Button size='xl' square>
-        <Logo />
+        <LogoIcon />
     </Button>
     <Button size='xxl' square>
-        <Logo />
+        <LogoIcon />
     </Button>
 ```
-
 
 ## Ограничение по сетке
 
@@ -462,7 +533,6 @@ export default () => {
     </Button>
 ```
 
-
 ## Ограничение по длине
 
 Если компоненту необходимо задать определенную ширину в колонке/блоке, текст может зарезаться.
@@ -476,5 +546,31 @@ export default () => {
     </Button>
     <Button size='l' grid={3}>
         Super Button Text Awesome Amazing
+    </Button>
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для кнопки и для спиннера.
+ Передается с помощью  пропса `testId: { button, spinner}`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultButtonTestId: ButtonTestId = {
+    button: 'button_button',
+    spinner: 'button_spinner',
+};
+```
+
+```
+  <Button size='s' testId={{spinner: 'button_spinner'}} loading>
+        Button Text
+    </Button>
+    <Button size='m' testId={{button: 'button_button'}}>
+         Button Text
+    </Button>
+    <Button size='l'>
+        Button Text
     </Button>
 ```

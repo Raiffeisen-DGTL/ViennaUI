@@ -12,33 +12,13 @@ import { InputMask } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| onChange | (InputEvent<FormEvent<HTMLInputElement>> & ((value: unknown) => void)) \| undefined |  |
-| design | "outline" \| "material" \| undefined |  | Дизайн |
-| prefix | ReactNode |  | Значанеие отображаемое перед компонентом |
-| autoCapitalize | string \| undefined |  | Автоматическая установка заглавной буквы |
-| onCopy | ClipboardEventHandler  \| undefined |  | Обработчик копирования |
-| onCut | ClipboardEventHandler  \| undefined |  | Обработчик вырезки |
-| onPaste | ClipboardEventHandler \| undefined |  | Обработчик вставки |
-| onFocus | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при получении фокуса компонентом |
-| onBlur | InputEvent<FocusEvent<HTMLInputElement, Element>> \| undefined |  | Обработчик события при потере фокуса компонентом |
-| onKeyDown | KeyboardEventHandler \| undefined |  | Обработчик события при нажатии кнопки клавиатуры, когда компонент в фокусе |
-| onKeyPress | KeyboardEventHandler \| undefined |  | Обработчик события при нажатии и удержании кнопки клавиатуры с печатемым символом, когда компонент в фокусе |
-| onKeyUp | KeyboardEventHandler \| undefined |  | Обработчик события при отпускании кнопки клавиатуры, когда компонент в фокусе |
-| onMouseDown | Function \| undefined |  | Обработчик события первого полупериода клика |
-| onPointerDown | Function \| undefined |  | Обработчик события первого полупериода клика |
-| size | ResponsiveProp<"xs" \| "s" \| "m" \| "l" \| "xl" \| "xxl", Breakpoints> \| undefined |  | Размеры |
-| value | string \| undefined |  | Значение в поле ввода |
-| defaultValue | string \| undefined |  |
-| ref | Ref<HTMLInputElement>  \| undefined |  | Сcылка на нативный элемент input, доступна после отрисовки |
-| invalid | boolean \| undefined |  |
-| placeholderValueAutoDiff | boolean \| undefined |  |
-| active | boolean \| undefined |  | Принудительный ховер |
-| postfix | ReactNode |  | Значение отображаемое после компонента |
-| smartPlaceholder | ReactNode |  |
-| onDespose | (() => void) \| undefined |  |
-| onUpdated | (() => void) \| undefined |  |
-| onComplete | ((value: string, maskRef: InputMask<FactoryOpts>, e?: InputEvent \| undefined) => void) \| undefined |  |
-| maskOptions | FactoryOpts |
+| maskOptions | `Opts` | — |  |
+| value | `unknown` | — |  |
+| readOnly | `boolean` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onChange | `(data: { value: unknown, isComplete: boolean, unmaskedValue?: unknown }) => void` | — |  |
+
 
 
 
@@ -64,23 +44,22 @@ import { InputMask } from 'vienna-ui';
 | placeholder | string \| undefined | |
 | disabled | boolean \| undefined | |
 
+
 # InputMask
 
 Компонент ввода данных по маске
 
 
+
 ```
     {() => {
-        const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const [value, setValue] = React.useState();
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
             <InputMask
                 value={value}
                 onChange={changeHandler}
-                maskOptions={{mask: Date}}
-                placeholder='Введите дату в формате ДД.ММ.ГГГГ'
+                maskOptions={{mask: Number}}
             />
         );
     }}
@@ -92,16 +71,14 @@ import { InputMask } from 'vienna-ui';
 
 ```
     {() => {
-        const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((e, data) => setValue(data.value), []);
+        const [value, setValue] = React.useState();
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
-            <Groups design='vertical'>
-                <InputMask
-                    value={value}
-                    onChange={changeHandler}
-                    maskOptions={{mask: Date}}
-                    placeholder='Введите дату в формате ДД.ММ.ГГГГ'
-                />
+            <Groups>
+                <InputMask value={value} onChange={changeHandler} size='xs' />
+                <InputMask value={value} onChange={changeHandler} size='s' />
+                <InputMask value={value} onChange={changeHandler} size='l' />
+                <InputMask value={value} onChange={changeHandler} size='xl' />
             </Groups>
         );
     }}
@@ -144,7 +121,7 @@ import { InputMask } from 'vienna-ui';
 ##### Число
 
 ```
-    <InputNumber value='123123123.123' />
+    <InputNumber value='123123123.123' scale={3} />
 ```
 
 ##### Телефон
@@ -164,7 +141,7 @@ a - для любой буквы, * для любого символа
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const changeHandler = React.useCallback((data) => setValue(data), []);
+        const changeHandler = React.useCallback(({ value }) => setValue(value), []);
         return (
             <Groups design='vertical'>
                 <InputMask
@@ -175,4 +152,18 @@ a - для любой буквы, * для любого символа
             </Groups>
         );
     }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <InputMask viewOnly maskOptions={{ mask: '0000' }} value={'7812'} />
 ```

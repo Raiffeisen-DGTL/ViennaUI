@@ -21,23 +21,44 @@
 import { DatePickerBeta } from 'vienna-ui';
 ```
 
-## Использование
-```
- {() => {
-        const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
-        return <DatePickerBeta value={value} onChange={handleChange} />;
-    }}
-```
-По умолчанию дизайн `outline` и размер `l`.
+# DatePickerBeta
 
-<Playground>
+В пилотном режиме данный компонент использует библиотеку `react-number-format`.
+Подробнее с библиотекой можно ознакомиться на странице [документации](https://s-yadav.github.io/react-number-format/docs/intro/)
+
+Данный компонент находится в стадии бета-тестирования, а это значит что:
+- Мы не гарантируем консистентность API компонента в рамках текущего мажорного релиза
+- Мы не гарантируем что компонент попадёт в следующий мажорный релиз
+- Компонент может работать нестабильно и поведение может отличаться от существующего Datepicker
+- Предложения и замечания по работе компонента можно присылать нам в [Gitlab](https://gitlabci.raiffeisen.ru/fcc-atlant/atlant/-/issues/new) или в [#design-system-web](https://mattermost.raiffeisen.ru/raiffeisenbank/channels/design-system-web)
+
+Поле ввода помогает пользователю выбрать дату с помощью клавиатуры или с помощью мыши через окно календаря.
+
+Отличается от стандартного поля ввода выделенной маской по формату даты и иконкой, при нажатии на которую открывается окно с выбором даты или периода. В нижней части календаря кнопка "Сегодня", которая поможет выбрать текущий день.
+
+Виды даты в календаре: сегодняшняя, выбранная, заблокированная, дата при наведении.
+
+
+
+```
     {() => {
         const [value, setValue] = React.useState();
         const handleChange = React.useCallback((e, data) => setValue(data.value), []);
         return <DatePickerBeta value={value} onChange={handleChange} />;
     }}
-</Playground>
+```
+
+## Использование
+
+По умолчанию дизайн `outline` и размер `l`.
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
+        return <DatePickerBeta value={value} onChange={handleChange} />;
+    }}
+```
 
 ## Размеры
 
@@ -80,7 +101,6 @@ import { DatePickerBeta } from 'vienna-ui';
         );
     }}
 ```
-
 
 ## Состояния
 
@@ -126,7 +146,6 @@ import { DatePickerBeta } from 'vienna-ui';
     }}
 ```
 
-
 ## Неактивные даты
 
 Даты, которые нельзя выбирать можно задать через параметр **disabledDates**.
@@ -151,7 +170,6 @@ import { DatePickerBeta } from 'vienna-ui';
         );
     }}
 ```
-
 
 #### Выходные дни (суббота и воскресенье) - значение **'weekends'**
 
@@ -184,7 +202,6 @@ import { DatePickerBeta } from 'vienna-ui';
         );
     }}
 ```
-
 
 ## Специальные даты (даты событий)
 
@@ -239,7 +256,6 @@ import { DatePickerBeta } from 'vienna-ui';
     }}
 ```
 
-
 ## Совмещение с FormField
 
 ```
@@ -274,17 +290,14 @@ import { DatePickerBeta } from 'vienna-ui';
 
 ## Начало недели с воскресенья
 
-Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение `StartingWeekDay.Sunday`
+Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение `sunday`.
 
 ```
-enum StartingWeekDay {
-    Sunday = 0,
-    Monday = 1,
-}
+type StartingWeekDay = 'sunday' | 'monday';
 ```
 
 ```
-    <DatePickerBeta startingWeekDay={StartingWeekDay.Sunday} />
+    <DatePickerBeta startingWeekDay='sunday' />
 ```
 
 ## Локализация

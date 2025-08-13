@@ -15,16 +15,17 @@ import { Badge } from 'vienna-ui';
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | color | BadgeColor \| undefined  |
-| size | ResponsiveProp<'xs' \|'s' \| 'm' \| 'l', B> \| undefined | | Доступные размеры |
+| size | ResponsiveProp<'s' \| 'm' \| 'l', B> \| undefined | | Доступные размеры |
 | grid | 0 \| 1 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9 \| 10 \| 11 \| 12 \| undefined |  |
 | children | ReactNode \| undefined  | | Ссылка на DOM элемент |
-| clickable | boolean \| undefined  | | Возможность нажатия на компонент |
 
 ## Использование
 
 ```
-<Badge>Badge text</Badge>
+    <Badge>Badge text</Badge>
 ```
+
+
 
 ## Внешний вид
 
@@ -40,75 +41,77 @@ import { Badge } from 'vienna-ui';
     <Badge color='nice10'>Badge text</Badge>
     <Badge color='nice30'>Badge text</Badge>
     <Badge color='seattle05'>Badge text</Badge>
-    <Badge color='seattle10'>Badge text</Badge>
+    <Badge color='oslo10'>Badge text</Badge>
+    <Badge color='oslo30'>Badge text</Badge>
+    <Badge color='oslo100'>Badge text</Badge>
+    <Badge color='osaka10'>Badge text</Badge>
+    <Badge color='osaka30'>Badge text</Badge>
+    <Badge color='osaka100'>Badge text</Badge>
 ```
 
-## Использование с иконкой
+##### Внешний вид с иконкой
 
-Badge может быть использован с различным контентом, например, с иконкой.
-
-```jsx
-<Badge color='paris10'>
-    <Clip size='s' /> Badge text
-</Badge>
-<Badge color='paris30'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='miami10'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='miami30'>
-     <Attach size='s' /> Badge text
-</Badge>
-<Badge color='dubai10'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='dubai30'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='nice10'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='nice30'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='seattle05'>
-    <Attach size='s' /> Badge text
-</Badge>
-<Badge color='seattle10'>
-    <Attach size='s' /> Badge text
-</Badge>
+```
+    <Badge color='paris10'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='paris30'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='miami10'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='miami30'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='dubai10'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='dubai30'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='nice10'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='nice30'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='seattle05'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
+    <Badge color='seattle10'>
+        <AttachIcon size='s' /> Badge text
+    </Badge>
 ```
 
 ## Размеры
 
-##### Свойство `size`
-
-Компонент имеет стандартные размеры `xs`, `s`, `m` и `l`
+Компонент имеет стандартные размеры `xs`, `s`, `m`, `l` и `xl`
 
 ```
     <Badge size='xs'>Badge text</Badge>
     <Badge size='s'>Badge text</Badge>
     <Badge size='m'>Badge text</Badge>
     <Badge size='l'>Badge text</Badge>
+    <Badge size='xl'>Badge text</Badge>
+
 ```
 
 ## Ограничение по длине
 
 Если компоненту необходимо задать определенную ширину в колонке/блоке, текст может зарезаться.
 
-```jsx
-<Badge size='s' grid={1}>
-    Badge text
-</Badge>
-<Badge size='m' grid={1}>
-    Badge text
-</Badge>
-<Badge size='l' grid={1}>
-    Badge text
-</Badge>
 ```
-
+    <Badge size='s' grid={1}>
+        Badge text
+    </Badge>
+    <Badge size='m' grid={1}>
+        Badge text
+    </Badge>
+    <Badge size='l' grid={1}>
+        Badge text
+    </Badge>
+```
 
 #### Адаптив
 
@@ -147,10 +150,7 @@ systemBreakpoints: Breakpoints = {
 
 ```
     <Badge grid={1} size={{ base: 's', s: 'm', m: 'l' }}>
-        <Attach size='s' />
+        <AttachIcon size='s' />
         Пример адаптива
     </Badge>
 ```
-
-
-

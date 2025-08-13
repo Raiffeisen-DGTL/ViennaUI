@@ -121,10 +121,15 @@ import { Flex } from 'vienna-ui';
 | height | string \| undefined | |
 | width | string \| undefined | |
 
-## Использование
+
+# Flex
+
+Компонент `Flex` — это один из основных инструментов, который используется для создания флекс-боксов, поддерживает все css-свойства флекс-контейнера.
+
+
 
 ```
-<Flex justifyContent='stretch'>
+    <Flex justifyContent='stretch'>
         <ComponentHelpers.Flex.Demo>1</ComponentHelpers.Flex.Demo>
         <ComponentHelpers.Flex.Demo>2</ComponentHelpers.Flex.Demo>
         <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
@@ -157,16 +162,40 @@ import { Flex } from 'vienna-ui';
 
 Это свойство задаёт внутренние отступы элементов внутри флекс-контейнера и поддерживает только фиксированные значения, соотвествующие размерной сетке Дизайн-Системы в 4px. Для значений используются имена размерных токенов: s1..s16, где s1 = 4px (1 \* 4px), s2 = 8px (2 \* 4px) итд.
 
-```
 <p>
     <Alert design='error'>
         На текущий момент (начало 2021) это свойство не поддерживается IE и находится только в preview в Safari.
     </Alert>
 </p>
-```
 
 ```
     <Flex justifyContent='stretch' gap='s2'>
+        <ComponentHelpers.Flex.Demo>1</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>2</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>4</ComponentHelpers.Flex.Demo>
+    </Flex>
+```
+
+## rowGap
+
+С помощью свойства `rowGap` можно задать внутренние оствупы элементов по вертикали внутри флекс-контейнера
+
+```
+    <Flex direction='column' justifyContent='stretch' rowGap='s2'>
+        <ComponentHelpers.Flex.Demo>1</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>2</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
+        <ComponentHelpers.Flex.Demo>4</ComponentHelpers.Flex.Demo>
+    </Flex>
+```
+
+## columnGap
+
+С помощью свойства `columnGap` можно задать внутренние оствупы элементов по горизонтали внутри флекс-контейнера
+
+```
+    <Flex justifyContent='stretch' columnGap='s2'>
         <ComponentHelpers.Flex.Demo>1</ComponentHelpers.Flex.Demo>
         <ComponentHelpers.Flex.Demo>2</ComponentHelpers.Flex.Demo>
         <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
@@ -242,6 +271,30 @@ systemBreakpoints: Breakpoints = {
             <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
         </Flex.Item>
         <Flex.Item basis={{ base: '300px', s: '50px', m: '100px' }} padding='s3'>
+            <ComponentHelpers.Flex.Demo>4</ComponentHelpers.Flex.Demo>
+        </Flex.Item>
+    </Flex>
+```
+
+## Дополнительные свойства для стилей
+
+Добавление следующих свойств позволит избежать объявления пропса style.
+- `flex`
+- `minHeight`
+- `minWidth`
+
+```
+    <Flex flex='1' minHeight={"100px"} minWidth={"300px"}>
+        <Flex.Item grow='2'>
+            <ComponentHelpers.Flex.Demo>1</ComponentHelpers.Flex.Demo>
+        </Flex.Item>
+        <Flex.Item grow='1'>
+            <ComponentHelpers.Flex.Demo>2</ComponentHelpers.Flex.Demo>
+        </Flex.Item>
+        <Flex.Item basis='100px'>
+            <ComponentHelpers.Flex.Demo>3</ComponentHelpers.Flex.Demo>
+        </Flex.Item>
+        <Flex.Item basis='200px'>
             <ComponentHelpers.Flex.Demo>4</ComponentHelpers.Flex.Demo>
         </Flex.Item>
     </Flex>

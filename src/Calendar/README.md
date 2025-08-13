@@ -12,32 +12,41 @@ import { Calendar } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| date | DateValue \| Date \| \| Date[] \| undefined | | Selected/active date |
-| format | Format \| undefined |  |
-| onChange | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: DateResponse<DateValue> \| DateResponse<Date>) => void) \| undefined |  |
-| defaultViewMode | ViewMode \| undefined |  | Начальный экран для отображения |
-| disabledDates | Date[] \| DisabledDates \| dateFunction  \| undefined |  | Неактивные дни |
-| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Выходные дни |
-| eventDates | Date[] \| eventDateFunction \| undefined |  | Даты событий |
-| ranged | boolean \| undefined |  | Возможность выбора периода дат |
-| dateStart | DateValue \| Date \| undefined |  | Начальная дата для периода дат |
-| dateEnd | DateValue \| Date \| undefined |  | Конечная дата для периода дат |
-| todayButton | boolean \| undefined |  | Возможность убрать или отобразить кнопку "Сегодня" |
-| minDate | DateValue \| Date \| undefined |  | Нижняя граница доступных для выбора дат |
-| maxDate | DateValue \| Date \| undefined |  | Верхняя граница доступных для выбора дат |
-| mode | "day" \| "month" \| undefined |  | Тип календаря - выбор дня или месяца |
-| onChangeMonth | ((event: FormEvent<HTMLInputElement> \| Event \| null, options: { date: Date \| Date[]; value: string; }) => void) \| undefined |  | Обработчик для mode = ‘month’ |
-| startingWeekDay | StartingWeekDay \| undefined |
-| allowMultiple | boolean \| undefined |
-| localization | Localization<CalendarLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
-| onChangeDisplayedDate | ((date: Date) => void) \| undefined |
-| defaultDisplayedDate | Date \| undefined |
+| date | `DateValue \| Date \| Date[]` | — |  |
+| format | `Format` | — |  |
+| onChange | `(event: React.FormEvent<HTMLInputElement> \| Event \| null, options: DateResponse<DateValue> \| DateResponse<Date>) => void` | — |  |
+| onBlur | `(event: React.FocusEvent<HTMLDivElement>) => void` | — |  |
+| defaultViewMode | `ViewMode` | — | Тип экрана календаря, отображаемого по умолчанию |
+| disabledDates | `Dates` | — | Неактивные для выбора даты |
+| weekendDates | `Dates` | — | Выходные даты |
+| eventDates | `Date[] \| EventDateFunction` | — | Даты-событие |
+| ranged | `boolean` | — | Возможность выбрать период дат |
+| dateStart | `DateValue \| Date` | — | Дата начала периода |
+| dateEnd | `DateValue \| Date` | — | Дата окончания периода |
+| todayButton | `boolean` | — | Отображение кнопки "Сегодня" |
+| minDate | `DateValue \| Date` | — | Нижняя граница выбора даты |
+| maxDate | `DateValue \| Date` | — | Верхняя граница выбора даты |
+| mode | `'day' \| 'month'` | — | Тип календаря - выбор дня или месяца |
+| onChangeMonth | `(options: { date: Date \| Date[]; value: string }) => void` | — | Метод вызывается при mode = 'month' |
+| startingWeekDay | `StartingWeekDay` | — | Дни недели отображаются с понедельника (1) или с воскресенья (0) |
+| allowMultiple | `boolean` | — | Возможность выбрать несколько дат |
+| locale | `Locale` | — | Локаль календаря |
+| onChangeDisplayedDate | `(date: Date) => void` | — | Изменение отображаемого месяца/года |
+| defaultDisplayedDate | `Date` | — | Дефолтное значение отображаемой даты |
+| visible | `boolean` | — |  |
+| actionsRef | `React.MutableRefObjectFocusActions>` | — | Рефка содержащая методы для установки фокуса |
+| testId | `{ btnYearPrev?: string; btnYearNext?: string; btnMonthPrev?: string; btnMonthNext?: string; btnViewMode?: string; btnToday?: string; btnCalendarCell?: (date: Date) => string; }` | — |  |
 
 
-## Использование
 
-```jsx
+
+# Calendar
+
+Данный компонент предназначен для наглядного представления данных типа `Date`. Используется в компоненте `DatePicker`.
+
+
+
+```
     <Calendar date={new Date(2020, 1, 5)} format='date' />
 ```
 
@@ -60,13 +69,11 @@ import { Calendar } from 'vienna-ui';
     <Calendar defaultViewMode='month' />
 ```
 
-
 #### Месяцы
 
 ```
     <Calendar defaultViewMode='month_list' />
 ```
-
 
 #### Годы
 
@@ -109,7 +116,6 @@ import { Calendar } from 'vienna-ui';
         }}
     />
 ```
-
 
 ## Специальные даты (даты событий)
 
@@ -190,9 +196,26 @@ import { Calendar } from 'vienna-ui';
     <Calendar todayButton={false} />
 ```
 
+## Дефолтное отображение даты
+
+Задать отображаемую дату можно свойством `defaultDisplayedDate`. Также есть колбэк функция изменения отображаемой даты `onChangeDisplayedDate`
+
+```
+    {()=> {
+        const [displayedDate, setDisplayedDate] = React.useState(new Date('2024-01-01'));
+        const handleChangeDisplayedDate = React.useCallback((date) => setDisplayedDate(date), []);
+        return (
+            <>
+                <p>{ displayedDate.toString() }</p>
+                <Calendar defaultDisplayedDate={displayedDate} onChangeDisplayedDate={handleChangeDisplayedDate}/>
+            </>
+        );
+    }}
+```
+
 ## Границы выбора дат
 
-Для задания границ выбора дат отвечают параметры **minDate** и **maxDate**. Выбор даты вне этих границ бцдет недоступен.
+Для задания границ выбора дат отвечают параметры **minDate** и **maxDate**. Выбор даты вне этих границ будет недоступен.
 
 ```
     <Calendar
@@ -215,10 +238,11 @@ import { Calendar } from 'vienna-ui';
 ```
 
 ## Выбор только месяца и года
+
 ```
     {() => {
         const [date, setDate] = React.useState();
-        const handleChangeMonth = React.useCallback((e, { date, value }) => {
+        const handleChangeMonth = React.useCallback(({ date }) => {
             setDate(date);
         }, []);
         return <Calendar date={date} mode='month' onChangeMonth={handleChangeMonth} />;
@@ -227,24 +251,17 @@ import { Calendar } from 'vienna-ui';
 
 ## Начало недели с воскресенья
 
-Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение `StartingWeekDay.Sunday`
-
-```
-    enum StartingWeekDay {
-        Sunday = 0,
-        Monday = 1,
-    }
-```
+Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение 'sunday'.
 
 ```
     <Calendar
-        startingWeekDay={StartingWeekDay.Sunday}
+        startingWeekDay='sunday'
         ranged={true}
         dateStart={new Date(new Date().getFullYear(), new Date().getMonth(), 2)}
         dateEnd={new Date(new Date().getFullYear(), new Date().getMonth(), 15)}
     />
     <Calendar
-        startingWeekDay={StartingWeekDay.Sunday}
+        startingWeekDay='sunday'
         date={new Date(new Date().getFullYear(), new Date().getMonth(), 2)}
     />
 ```
@@ -286,6 +303,42 @@ import { Calendar } from 'vienna-ui';
             'ds.calendar.month.november': 'Nov.',
             'ds.calendar.month.december': 'Dec.',
         };
-        return <Calendar date={new Date(2020, 1, 1)} format='date' locale={enGB} localization={calendarLocalization} />;
+        const testIdDate = new Date();
+        return <Calendar date={new Date(2020, 1, 1)} format='date' locale={enGB} localization={calendarLocalization} testId={{ btnCalendarCell: (testIdDate) => `${testIdDate}` }} />;
     }}
+```
+
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для кнопок: "Предыдущий год", "Следующий год", "Предыдущий месяц", ""Следующий месяц", "Сегодня", и для ячейки календаря. Передается с помощью  пропса `testId: CalendarTestId`.
+Интерфейс `CalendarTestId` имеет вид:
+
+```
+export interface CalendarTestId {
+    btnYearPrev?: string;
+    btnYearNext?: string;
+    btnMonthPrev?: string;
+    btnMonthNext?: string;
+    btnViewMode?: string;
+    btnToday?: string;
+    btnCalendarCell?: (date: Date) => string;
+}
+
+```
+Также добавлены дефолтные значения для `testId`:
+```
+export const defaultCalendarTestId: CalendarTestId = {
+    btnYearPrev: 'calendar_btn-year-prev',
+    btnYearNext: 'calendar_btn-year-next',
+    btnMonthPrev: 'calendar_btn-month-prev',
+    btnMonthNext: 'calendar_btn-month-next',
+    btnViewMode: 'calendar_btn-view-mode',
+    btnToday: 'calendar_btn-today',
+    btnCalendarCell: (date: Date) => `calendar_${date.toISOString()}`,
+};
+```
+
+```
+    <Calendar date={new Date(2020, 1, 1)} testId={{ btnYearPrev: 'calendar.header.yearPrev', btnYearNext: 'calendar.header.yearNext', btnMonthPrev: 'calendar.header.monthPrev', btnMonthNext: 'calendar.header.monthNext', btnToday: 'calendar.body.today', btnViewMode: 'calendar.header.viewModa', btnCalendarCell: (date) => `${date}`}} />;
 ```

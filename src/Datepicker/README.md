@@ -12,76 +12,165 @@ import { Datepicker } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | string \| Date \| undefined |  | Выбранная дата передается строкой вида 01.01.2021 |
-| isCalendarOpen | boolean \| undefined |  | Флаг управляет отображением календаря из вне |
-| eventDates | Date[] \| eventDateFunction \| undefined |  | Даты-события |
-| weekendDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Выходные даты |
-| todayButton | boolean \| undefined |  | Отображение кнопки “Сегодня” |
-| minDate | Date \| undefined |  | Нижняя граница выбора даты |
-| maxDate | Date \| undefined |  | Верхняя граница выбора даты |
-| onChange | ((event: Event \| InputEvent> \| null, data: { value?: string \| undefined; name?: string \| undefined; isDisabled?: boolean \| undefined; }) => void) \| undefined |  |
-| disabledDates | DisabledDates \| Date[] \| dateFunction \| undefined |  | Неактивные для выбора даты |
-| design | "outline" \| "material" \| undefined | | Дизайн |
-| startingWeekDay | 0 \| 1 \| undefined |
-| onChangeDisplayedDate | ((date: Date) => void) \| undefined|
-| defaultDisplayedDate | Date  \| undefined |  
-| invalid | boolean \| undefined |  |
-| disabled | boolean \| undefined |  |
-| dropdownPortal | HTMLElement \| MutableRefObject<HTMLElement \| null> \| null  \| undefined |  
-| view | ViewMode  \| undefined  |
-| postfix | ReactNode |  | Значение отображаемое в конце поля ввода |
-| smartPlaceholder | ReactNode |  |
-| onDispose | (() => void) \| undefined |  |
-| localization | Localization<DatePickerLocalization, undefined> \| undefined |
-| locale | Locale \| undefined |
+| value | `string \| Date` | — | дата передается строкой вида 01.01.2021 |
+| isCalendarOpen | `boolean` | — | Отображение календаря |
+| eventDates | `Date[] \| eventDateFunction` | — | Даты-событие |
+| weekendDates | `CalendarDates` | — | Выходные даты |
+| todayButton | `boolean` | — | Отображение кнопки "Сегодня" |
+| minDate | `Date` | — | Нижняя граница выбора даты |
+| maxDate | `Date` | — | Верхняя граница выбора даты |
+| onChange | `OnChangeHandler<string, React.FormEvent<HTMLInputElement> \| Event \| null, { name?: string; isDisabled?: boolean; date?: Date; }>` | — |  |
+| onBlur | `InputEventReact.FocusEvent<HTMLInputElement \| HTMLDivElement>>` | — |  |
+| disabledDates | `CalendarDates` | — | Неактивные для выбора даты |
+| startingWeekDay | `StartingWeekDay` | — | Дни недели отображаются с понедельника (1) или с воскресенья (0) |
+| locale | `Locale` | — | Локаль календаря |
+| onChangeDisplayedDate | `(date: Date) => void` | — | Изменение отображаемого месяца/года |
+| defaultDisplayedDate | `Date` | — | Дефолтное значение отображаемой даты |
+| dropdownPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — | Портал для dropdown |
+| testId | `{ container?: string; calendarBox?: string; calendar?: PropsCalendar['testId']; }` | — |  |
+| placement | `Placement` | — | Позиционирование календаря |
 
+# Datepicker
+
+Поле ввода помогает пользователю выбрать дату с помощью клавиатуры или с помощью мыши через окно календаря.
+
+Отличается от стандартного поля ввода выделенной маской по формату даты и иконкой, при нажатии на которую открывается окно с выбором даты или периода. В нижней части календаря кнопка "Сегодня", которая поможет выбрать текущий день.
+
+Виды даты в календаре: сегодняшняя, выбранная, заблокированная, дата при наведении.
+
+
+
+```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return <Datepicker value={value} onChange={handleChange} />;
+    }}
+```
 
 ## Использование
 
-> Компонент является контролируемым, то есть чтобы отобразить выбранную дату, необходимо получить ее значение через обработчик `onChange` и прокинуть в `value`.
+По умолчанию дизайн `outline` и размер `l`.
 
-```jsx
-{
-    () => {
-        const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
-        return <Datepicker value={value} onChange={handleChange} />;
-    };
-}
 ```
+    {() => {
+        const [value, setValue] = React.useState();
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return <Datepicker value={value} onChange={handleChange} />;
+    }}
+```
+
+## Размеры
+
+Компонент имеет стандартные размеры `xs`, `s`, `m`, `l`, `xl` и `xxl` и два дизайна `material` и `outline`.
+
+## Внешний вид
 
 #### Outline
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Groups>
-                <Datepicker value={value} onChange={handleChange} design='outline' size='xs' />
-                <Datepicker value={value} onChange={handleChange} design='outline' size='s' />
-                <Datepicker value={value} onChange={handleChange} design='outline' size='l' />
-                <Datepicker value={value} onChange={handleChange} design='outline' size='xl' />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="xs"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="s"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="m"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="l"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="xl"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="outline"
+                    size="xxl"
+                />
             </Groups>
         );
     }}
 ```
-
 
 #### Material
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Groups>
-                <Datepicker value={value} onChange={handleChange} design='material' size='xs' />
-                <Datepicker value={value} onChange={handleChange} design='material' size='s' />
-                <Datepicker value={value} onChange={handleChange} design='material' size='l' />
-                <Datepicker value={value} onChange={handleChange} design='material' size='xl' />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="xs"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="s"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="m"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="l"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="xl"
+                />
+                <Datepicker
+                    value={value}
+                    onChange={handleChange}
+                    design="material"
+                    size="xxl"
+                />
             </Groups>
         );
     }}
@@ -94,22 +183,38 @@ import { Datepicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Groups>
                 <Groups>
                     <Datepicker value={value} onChange={handleChange} invalid />
-                    <Datepicker value={value} onChange={handleChange} disabled />
+                    <Datepicker
+                        value={value}
+                        onChange={handleChange}
+                        disabled
+                    />
                 </Groups>
                 <Groups>
-                    <Datepicker value={value} onChange={handleChange} design='material' invalid />
-                    <Datepicker value={value} onChange={handleChange} design='material' disabled />
+                    <Datepicker
+                        value={value}
+                        onChange={handleChange}
+                        design="material"
+                        invalid
+                    />
+                    <Datepicker
+                        value={value}
+                        onChange={handleChange}
+                        design="material"
+                        disabled
+                    />
                 </Groups>
             </Groups>
         );
     }}
 ```
-
 
 ## Границы выбора дат
 
@@ -118,20 +223,28 @@ import { Datepicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Datepicker
                 value={value}
                 onChange={handleChange}
-                minDate={new Date(new Date().getFullYear(), new Date().getMonth(), 2)}
-                maxDate={new Date(new Date().getFullYear(), new Date().getMonth(), 15)}
+                minDate={
+                    new Date(new Date().getFullYear(), new Date().getMonth(), 2)
+                }
+                maxDate={
+                    new Date(
+                        new Date().getFullYear(),
+                        new Date().getMonth(),
+                        15
+                    )
+                }
             />
         );
     }}
 ```
-
 
 ## Неактивные даты
 
@@ -139,20 +252,24 @@ import { Datepicker } from 'vienna-ui';
 
 #### Массив дат
 
-
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Datepicker
                 value={value}
                 onChange={handleChange}
                 disabledDates={[
-                    new Date(new Date().getFullYear(), new Date().getMonth(), 6),
-                    new Date(new Date().getFullYear(), new Date().getMonth(), 4),
+                    new Date(
+                        new Date().getFullYear(),
+                        new Date().getMonth(),
+                        6
+                    ),
+                    new Date(new Date().getFullYear(), new Date().getMonth(), 4)
                 ]}
             />
         );
@@ -164,34 +281,40 @@ import { Datepicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
-        return <Datepicker value={value} onChange={handleChange} disabledDates={DisabledDates.WEEKENDS} />;
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return (
+            <Datepicker
+                value={value}
+                onChange={handleChange}
+                disabledDates={'weekends'}
+            />
+        );
     }}
 ```
-
 
 #### Определение дней через функцию
 
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Datepicker
                 value={value}
                 onChange={handleChange}
-                disabledDates={(date) => {
+                disabledDates={date => {
                     return date.getDay() === 5;
                 }}
             />
         );
     }}
 ```
-
 
 ## Специальные даты (даты событий)
 
@@ -202,16 +325,21 @@ import { Datepicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Datepicker
                 value={value}
                 onChange={handleChange}
                 eventDates={[
-                    new Date(new Date().getFullYear(), new Date().getMonth(), 6),
-                    new Date(new Date().getFullYear(), new Date().getMonth(), 4),
+                    new Date(
+                        new Date().getFullYear(),
+                        new Date().getMonth(),
+                        6
+                    ),
+                    new Date(new Date().getFullYear(), new Date().getMonth(), 4)
                 ]}
             />
         );
@@ -225,17 +353,22 @@ import { Datepicker } from 'vienna-ui';
 ```
     {() => {
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        }, []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
             <Datepicker
                 value={value}
                 onChange={handleChange}
-                eventDates={(date) => {
+                eventDates={date => {
                     return (
                         date.getDay() === 5 && (
-                            <Tooltip content="Thank God it's Friday" design='dark'>
+                            <Tooltip
+                                content="Thank God it's Friday"
+                                action={'hover'}
+                                design="dark"
+                            >
                                 <Calendar.Day>{date.getDate()}</Calendar.Day>
                             </Tooltip>
                         )
@@ -246,16 +379,15 @@ import { Datepicker } from 'vienna-ui';
     }}
 ```
 
-
 ## Совмещение с FormField
 
 ```
     {() => {
         const [value, setValue] = React.useState();
         const [isValid, setIsValid] = React.useState(true);
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-            setIsValid(!data.isDisabled);
+        const handleChange = React.useCallback(({ value, event, options }) => {
+            setValue(value);
+            setIsValid(!options.isDisabled);
         }, []);
         return (
             <FormField>
@@ -265,13 +397,23 @@ import { Datepicker } from 'vienna-ui';
                         value={value}
                         onChange={handleChange}
                         disabledDates={[
-                            new Date(new Date().getFullYear(), new Date().getMonth(), 6),
-                            new Date(new Date().getFullYear(), new Date().getMonth(), 4),
+                            new Date(
+                                new Date().getFullYear(),
+                                new Date().getMonth(),
+                                6
+                            ),
+                            new Date(
+                                new Date().getFullYear(),
+                                new Date().getMonth(),
+                                4
+                            )
                         ]}
                         invalid={!isValid}
                     />
                     {!isValid && (
-                        <FormField.Message color='critical'>Данная дата недоступна для выбора</FormField.Message>
+                        <FormField.Message color="critical">
+                            Данная дата недоступна для выбора
+                        </FormField.Message>
                     )}
                 </FormField.Content>
             </FormField>
@@ -279,20 +421,80 @@ import { Datepicker } from 'vienna-ui';
     }}
 ```
 
-
 ## Начало недели с воскресенья
 
-Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение `StartingWeekDay.Sunday`
+Для того чтобы установить первым днем недели воскресенье, необходимо передать в `startingWeekDay` значение `sunday`.
 
 ```
-enum StartingWeekDay {
-    Sunday = 0,
-    Monday = 1,
-}
+type StartingWeekDay = 'sunday' | 'monday';
 ```
 
 ```
-    <Datepicker startingWeekDay={StartingWeekDay.Sunday} />
+    <Datepicker startingWeekDay='sunday' />
+```
+
+## Вспомогательные свойства
+
+#### isCalendarOpen
+
+Свойство `isCalendarOpen` отвечает за изначальное отображение календаря (тип boolean)
+
+```
+    <Datepicker isCalendarOpen />
+```
+
+#### weekendDates
+
+Свойство `weekendDates` отвечает за определение выходных дней (тип `weekends` | `Date[]` | `(date: Date) => boolean`)
+
+```
+    <Datepicker weekendDates={(date) => [0, 6].includes(date.getDay())} />
+```
+
+#### todayButton
+
+Свойство `todayButton` отвечает за отображение кнопки "Сегодня" (тип boolean)
+
+```
+    <Datepicker todayButton={false} />
+```
+
+#### defaultDisplayedDate
+
+Свойство `defaultDisplayedDate` отвечает за отображение указанной даты по умолчанию (тип Date)
+
+```
+    <Datepicker defaultDisplayedDate={new Date('2024-01-01')} />
+```
+
+#### view
+
+Свойство `view` отвечает за режим отображения "дни", "месяцы" и "года" (тип `month` | `year_list` | `month_list`)
+
+```
+    <Datepicker view="year_list" />
+```
+
+#### onChangeDisplayedDate
+
+Свойство `onChangeDisplayedDate` - коллбэк при изменении отображаемого месяца/года (тип `(date: Date) => void`)
+
+```
+    <Datepicker onChangeDisplayedDate={(date) => console.log('onChangeDisplayedDate', date)} />
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <Datepicker viewOnly value={new Date('2020-10-10')} />
 ```
 
 ## Локализация
@@ -303,11 +505,14 @@ enum StartingWeekDay {
     {() => {
         /* import { enGB } from 'date-fns/locale'; */
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         const inputDateLocalization = {
             'ds.inputDate.placeholder.date': 'DD.MM.YYYY',
             'ds.inputDate.placeholder.time': 'HH:MM',
-            'ds.inputDate.placeholder.datetime': 'DD.MM.YYYY HH:MM',
+            'ds.inputDate.placeholder.datetime': 'DD.MM.YYYY HH:MM'
         };
         const calendarLocalization = {
             'ds.calendar.body.today': 'Today',
@@ -329,13 +534,22 @@ enum StartingWeekDay {
             'ds.calendar.month.september': 'Sep.',
             'ds.calendar.month.october': 'Oct.',
             'ds.calendar.month.november': 'Nov.',
-            'ds.calendar.month.december': 'Dec.',
+            'ds.calendar.month.december': 'Dec.'
         };
-        const datePickerLocalization = { ...inputDateLocalization, ...calendarLocalization };
-        return <Datepicker value={value} onChange={handleChange} localization={datePickerLocalization} locale={enGB} />;
+        const datePickerLocalization = {
+            ...inputDateLocalization,
+            ...calendarLocalization
+        };
+        return (
+            <Datepicker
+                value={value}
+                onChange={handleChange}
+                localization={datePickerLocalization}
+                locale={enGB}
+            />
+        );
     }}
 ```
-
 
 ## Решения часто возникающих проблем
 
@@ -361,7 +575,83 @@ enum StartingWeekDay {
             }
         }, []);
         const [value, setValue] = React.useState();
-        const handleChange = React.useCallback((e, data) => setValue(data.value), []);
-        return <Datepicker value={value} dropdownPortal={layout} onChange={handleChange} />;
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return (
+            <Datepicker
+                value={value}
+                dropdownPortal={layout}
+                onChange={handleChange}
+            />
+        );
     }}
+```
+
+## Возможность передачи ref в calendarBoxRef
+
+Свойство `calendarBoxRef` в качестве значения принимает 'ref', который ссылается на контейнер календаря.
+
+```
+{() => {
+    const ref = React.useRef();
+    const [value, setValue] = React.useState();
+    const handleChange = React.useCallback(({ value }) => setValue(value), []);
+    return (
+        <Datepicker calendarBoxRef={ref} value={value} onChange={handleChange} />
+    )
+}}
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для контейнера, бокса и календаря. Передается с помощью пропса `testId: CalendarTestId`.
+Интерфейс `CalendarTestId` имеет вид:
+
+```
+export interface CalendarTestId {
+    btnYearPrev?: string;
+    btnYearNext?: string;
+    btnMonthPrev?: string;
+    btnMonthNext?: string;
+    btnViewMode?: string;
+    btnToday?: string;
+    btnCalendarCell?: (date: Date) => string;
+}
+```
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultDatepickerTestId: DatepickerProps['testId'] = {
+    container: 'datepicker_container',
+    calendarBox: 'datepicker_calendar-box',
+    calendar: defaultCalendarTestId,
+};
+```
+
+```
+{() => {
+    const [value, setValue] = React.useState();
+    const handleChange = React.useCallback(
+        ({ value }) => setValue(value),
+        []
+    );
+    return <Datepicker value={value} onChange={handleChange} testId={{ container: 'datepicker-container', calendarBox: 'datepicker-calendar-box', calendar: { container: 'datepicker-calendar-container' }}} />
+}}
+```
+
+## Позиционирование календаря
+
+Календарь можно позиционировать с помощью свойства `placement` (значения могут быть: 'left', 'right', 'bottom', 'top', 'left-end', 'left-start', 'right-end', 'right-start', 'bottom-end', 'bottom-start', 'top-end', 'top-start'). По умолчанию календарь позиционируется внизу поля ввода. Если календарь не помещается на экране, то он будет позиционироваться там, где достаточно места.
+
+```
+{() => {
+    const [value, setValue] = React.useState();
+    const handleChange = React.useCallback(
+        ({ value }) => setValue(value),
+        []
+    );
+    return <Datepicker value={value} onChange={handleChange} placement={'left-end'} />
+}}
 ```

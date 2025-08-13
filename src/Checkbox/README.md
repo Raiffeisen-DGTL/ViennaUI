@@ -37,7 +37,17 @@ import { Checkbox } from 'vienna-ui';
 | checked | boolean \| undefined |
 | name |  name \| undefined |
 
-## Использование
+
+# Checkbox
+
+Компонент позволяет пользователю выбрать один или несколько вариантов из списка.
+Если можно выбрать только один вариант или вы меняете состояние (вкл / выкл), то используйте Radio или Switcher.
+
+Чекбоксы используются когда:
+- есть группа пунктов, из которых можно выбрать несколько или оставить группу без выбора;
+- можно изменить настройки в интерфейсе с помощью одного чекбокса;
+
+
 
 ```
     <Checkbox checked onChange={(e) => console.log(e)}>
@@ -46,6 +56,7 @@ import { Checkbox } from 'vienna-ui';
 ```
 
 ## Внешний вид
+
 ```
     {() => {
         const [state, setState] = React.useState({ checked: false, checked2: true, indeterminate: true });
@@ -129,11 +140,11 @@ import { Checkbox } from 'vienna-ui';
 
 ## Состояния
 
-Компонент имеет состояние `disabled` и `invalid`
+Компонент имеет состояния `disabled`, `invalid` и `active`
 
 ```
     {() => {
-        const [state, setState] = React.useState({ checked: false, checked2: true });
+        const [state, setState] = React.useState({ checked: false, checked2: true, checked3: false });
         return (
             <Groups>
                 <Checkbox
@@ -148,12 +159,67 @@ import { Checkbox } from 'vienna-ui';
                     onChange={(e) => setState({ ...state, checked2: e.target.checked })}>
                     Checkbox
                 </Checkbox>
+                <Checkbox
+                    active
+                    checked={state.checked3}
+                    onChange={(e) => setState({ ...state, checked3: e.target.checked })}>
+                    Checkbox
+                </Checkbox>
             </Groups>
         );
     }}
 ```
 
-#### Адаптив
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать выбранный вариант чекбокса без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+- viewOnlyDisableIcon - отключение иконки (тип boolean);
+
+```
+    {() => {
+        const checkboxes = [
+            {
+                text: 'Checkbox',
+                checked: false,
+            },
+            {
+                text: 'Checkbox',
+                checked: true,
+            },
+            {
+                text: 'Checkbox',
+                checked: false,
+            },
+        ];
+        return (
+            <>
+                <Groups>
+                    {checkboxes.map((checkbox) => (
+                        <Checkbox viewOnly checked={checkbox.checked}>{checkbox.text}</Checkbox>
+                    ))}
+                </Groups>
+                <Groups>
+                    {checkboxes.filter((checkbox) => checkbox.checked).map((checkbox) => (
+                        <Checkbox viewOnly checked={checkbox.checked}>{checkbox.text}</Checkbox>
+                    ))}
+                </Groups>
+                <Groups>
+                    {checkboxes.filter((checkbox) => checkbox.checked).map((checkbox) => (
+                        <Checkbox viewOnly viewOnlyDisableIcon checked={checkbox.checked}>{checkbox.text}</Checkbox>
+                    ))}
+                </Groups>
+            </>
+        );
+    }}
+```
+
+## Адаптив
 
 Для компонента Checkbox, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
 

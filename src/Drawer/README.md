@@ -15,15 +15,22 @@ import { Drawer, useDrawer } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| isOpen | boolean \| undefined |  |
-| closeIcon | ReactNode | | Иконка для закрытия |
-| noScroll | boolean \| undefined |  | Управление возможностью прокрутки всего контента или только содержимого `Drawer.Body` |
-| orientation | "top" \| "bottom" \| "left" \| "right" \| undefined |  | Позиционирование |
-| onClose | ((data?: any) => boolean \| void \| Promise) \| undefined |  |
-| onPreDispose | (() => void) \| undefined |  | Обработчик события исчезновения drawer-a |
-| state | any |  | Управление состоянием черех хук `useDrawer` |
-| ref | boolean \| undefined  |
-| closeByFade | boolean \| undefined  |
+| state | `{ children?: ReactNode; onClose?: (data?: unknown) => void; open?: (() => void) \| null; close?: (data?: unknown, force?: boolean) => void; }` | — |  |
+| isOpen | `boolean` | — |  |
+| closeIcon | `ReactNode` | — |  |
+| width | `string \| 'auto'` | — |  |
+| noScroll | `boolean` | — |  |
+| orientation | `'left' \| 'right' \| 'top' \| 'bottom'` | — |  |
+| onClose | `(data?: unknown) => void \| boolean \| Promise<boolean>` | — |  |
+| onAfterOpen | `() => void` | — | Callback функция открытия окна с учётом времени выполнения анимации |
+| onPreDispose | `() => void` | — |  |
+| closeByFade | `boolean` | — |  |
+| closeByEscape | `boolean` | — |  |
+| lockBodyScroll | `boolean` | — |  |
+| wrapperPortal | `HTMLElement \| React.MutableRefObjectHTMLElement \| null> \| null` | — |  |
+| testId | `{ btnClose?: string; overlay?: string; }` | — |  |
+| iconOrientation | `'left' \| 'right'` | — |  |
+
 
 ## HTMLAttributes 👇
 
@@ -33,7 +40,15 @@ import { Drawer, useDrawer } from 'vienna-ui';
 | width | string \| undefined |  |
 
 
-## Использование
+# Drawer
+
+`Drawer` служит для отображения дополнительной информации или выполнения действий, не нарушая текущий контекст пользователя. Он появляется поверх страницы сбоку, сверху или снизу, затемняя ее.
+Используется для:
+
+-   Подписи заявлений и подтверждения действий по SMS
+-   Предоставления объемной информации в контексте - тексты и дополнительные настройки
+-   Дополнительные действия с контентом страницы
+
 
 
 ```
@@ -139,7 +154,7 @@ import { Drawer, useDrawer } from 'vienna-ui';
     {() => {
         const [orientation, setOrientation] = React.useState('right');
         const [isOpen, setOpen] = React.useState(false);
-        const handleOrientation = React.useCallback((e, data)=>{
+        const handleOrientation = React.useCallback((data)=>{
             setOrientation(data.value);
         },[])
         return (
@@ -197,6 +212,7 @@ import { Drawer, useDrawer } from 'vienna-ui';
             </>
         );
     }}
+
 ```
 
 ## Прокрутка длинного контента
@@ -209,7 +225,7 @@ import { Drawer, useDrawer } from 'vienna-ui';
         const [isOpen, setOpen] = React.useState(false);
         const [scroll, setScroll] = React.useState(false);
         const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-        const handleOrientation = React.useCallback((e, data) => {
+        const handleOrientation = React.useCallback((data) => {
             setOrientation(data.value);
         }, []);
         const open = React.useCallback((scroll) => {
@@ -291,7 +307,7 @@ import { Drawer, useDrawer } from 'vienna-ui';
         const [orientation, setOrientation] = React.useState('bottom');
         const [isOpen, setOpen] = React.useState(false);
         const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
-        const handleOrientation = React.useCallback((e, data) => {
+        const handleOrientation = React.useCallback((data) => {
             setOrientation(data.value);
         }, []);
         const open = React.useCallback((scroll) => {
@@ -361,10 +377,10 @@ import { Drawer, useDrawer } from 'vienna-ui';
         const [orientationNext, setOrientationNext] = React.useState('left');
         const [isOpen, setOpen] = React.useState(false);
         const [isOpenNext, setOpenNext] = React.useState(false);
-        const handleOrientation = React.useCallback((e, data)=>{
+        const handleOrientation = React.useCallback((data)=>{
             setOrientation(data.value);
         },[])
-         const handleOrientationNext = React.useCallback((e, data)=>{
+         const handleOrientationNext = React.useCallback((data)=>{
             setOrientationNext(data.value);
         },[])
         return (
@@ -421,6 +437,82 @@ import { Drawer, useDrawer } from 'vienna-ui';
                                                     accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
                                                     consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
                                                     lacus viverra.`}
+                                        </Drawer.Body>
+                                        <Drawer.Footer>
+                                            <Groups>
+                                                <Button size='l' design='outline'>
+                                                    Button example
+                                                </Button>
+                                                <Button size='l' design='accent' onClick={() => setOpenNext(false)}>
+                                                    Close
+                                                </Button>
+                                            </Groups>
+                                        </Drawer.Footer>
+                                    </Drawer.Layout>
+                                </Drawer>
+                            </>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+
+```
+
+## Иконка закрытия у вложенного Drawer
+
+По дизайну у вложенного Drawer в качестве иконки закрытия должна быть стрелка назад. Нужную иконку можно передать с помощью пропа closeIcon.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        const [isOpenNext, setOpenNext] = React.useState(false);
+        return (
+            <>
+                <Groups>
+                    <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                </Groups>
+                <Drawer orientation='right' isOpen={isOpen} onClose={() => setOpen(false)}>
+                     <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <>
+                                <Groups>
+                                    <Button onClick={() => setOpenNext(true)}>Show Drawer</Button>
+                                </Groups>
+                                <Drawer closeIcon={<BackIcon size='l' />} orientation='right' isOpen={isOpenNext} onClose={() => setOpenNext(false)}>
+                                     <Drawer.Layout>
+                                        <Drawer.Head>
+                                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                                        </Drawer.Head>
+                                        <Drawer.Body>
+                                            <ComponentHelpers.Drawer.Demo>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                                    donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                                    lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                                    laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                                    a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                                    at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                                    accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                                    consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                                    lacus viverra.
+                                            </ComponentHelpers.Drawer.Demo>
                                         </Drawer.Body>
                                         <Drawer.Footer>
                                             <Groups>
@@ -594,6 +686,432 @@ import { Drawer, useDrawer } from 'vienna-ui';
                                     Button example
                                 </Button>
                                 <Button size='l' design='accent' onClick={handleCustomClose}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+## Доступность с клавиатуры
+
+Обработчик onClose срабатывает по нажатию клавиши Escape при передаче пропа closeByEscape
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} onClose={() => setOpen(false)} closeByEscape>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+### Управление закрытием по нажатию на ESC, когда Drawer внутри Drawer
+
+Пример реализации:
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        const [isInnerOpen, setInnerOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} onClose={() => setOpen(false)} closeByEscape={!isInnerOpen}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <Button onClick={() => setInnerOpen(true)}>Show inner Drawer</Button>
+                        </Drawer.Body>
+                    </Drawer.Layout>
+                </Drawer>
+                <Drawer isOpen={isInnerOpen} orientation={'left'} onClose={() => setInnerOpen(false)} closeByEscape>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Inner Drawer</Drawer.Title>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                        </Drawer.Body>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+## Отключение закрытия дровера по клику вне его
+
+C помощью свойства `closeByFade={false}` есть возможность отключить закрытие дровера по клику вне его.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} closeByFade={false} onClose={() => setOpen(false)}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+
+## Открытие окна с учётом времени выполнения анимации
+
+Свойство `onAfterOpen` является сallback функцией открытия окна с учётом времени выполнения анимации.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} onAfterOpen={() => console.log('animation')} onClose={() => setOpen(false)}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+
+## Свойство onPreDespose
+
+Свойство `onPreDespose` является сallback функцией.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} onPreDespose={() => console.log('onPreDespose')} onClose={() => setOpen(false)}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+## Иконка закрытия справа
+
+Менять положение иконки закрытия можно с помощью пропа `iconPosition?: 'right'|'left'`. 
+При правом положении иконка закрытия располагается на одном уровне с заголовком справа от него.
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer iconOrientation='right' isOpen={isOpen} onClose={() => setOpen(false)}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
+                                    Close
+                                </Button>
+                            </Groups>
+                        </Drawer.Footer>
+                    </Drawer.Layout>
+                </Drawer>
+            </>
+        );
+    }}
+```
+
+## Использование хука useDrawer (deprecated)
+
+При передаче в `useDrawer` в качестве параметров `ReactNode` контента окна и `callback` функции срабатывающей на `onClose`, возвращаются методы открытия и закрытия Drawer'а.
+
+```
+    {() => {
+        const [open, close] = useDrawer(
+            <Drawer.Layout>
+                <Drawer.Head>
+                    <Drawer.Title>Enter SMS-code</Drawer.Title>
+                    <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                </Drawer.Head>
+                    <Drawer.Body>
+                        <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                        </ComponentHelpers.Drawer.Demo>
+                        <Select placeholder='Выберите значение'>
+                            <Select.Option>Значение 1</Select.Option>
+                            <Select.Option>Значение 2</Select.Option>
+                            <Select.Option>Значение 3</Select.Option>
+                            <Select.Option>Значение 4</Select.Option>
+                            <Select.Option>Значение 5</Select.Option>
+                        </Select>
+                    </Drawer.Body>
+            </Drawer.Layout>
+        );
+        return  <Button onClick={open}>Show Drawer</Button>;
+    }}
+```
+
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для кнопки закрытия и для overlay. Передается с помощью пропса `testId?: {
+    btnClose?: string;
+    overlay?: string;
+    }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+ ```
+ export const defaultDrawerTestId: DrawerProps['testId'] = {
+    btnClose: 'drawer_btn-close',
+    overlay: 'drawer_overlay',
+};
+ ```
+
+```
+    {() => {
+        const [isOpen, setOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setOpen(true)}>Show Drawer</Button>
+                <Drawer isOpen={isOpen} onClose={() => setOpen(false)} testId={{ btnClose: 'btnClose', overlay: 'overlay' }}>
+                    <Drawer.Layout>
+                        <Drawer.Head>
+                            <Drawer.Title>Enter SMS-code</Drawer.Title>
+                            <Drawer.SubTitle>Drawer SubHeader</Drawer.SubTitle>
+                        </Drawer.Head>
+                        <Drawer.Body>
+                            <ComponentHelpers.Drawer.Demo>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo
+                                donec enim. Sit amet porttitor eget dolor morbi non. Ipsum consequat nisl vel pretium
+                                lectus quam id leo in. Duis ut diam quam nulla porttitor massa. Id volutpat lacus
+                                laoreet non. Etiam non quam lacus suspendisse faucibus. Mollis aliquam ut porttitor leo
+                                a diam. Auctor urna nunc id cursus metus aliquam. In dictum non consectetur a erat nam
+                                at lectus. Facilisi cras fermentum odio eu feugiat. Risus commodo viverra maecenas
+                                accumsan. Interdum velit euismod in pellentesque massa placerat duis ultricies. Ac ut
+                                consequat semper viverra nam libero justo. Dapibus ultrices in iaculis nunc sed augue
+                                lacus viverra.
+                            </ComponentHelpers.Drawer.Demo>
+                            <Select placeholder='Выберите значение'>
+                                <Select.Option>Значение 1</Select.Option>
+                                <Select.Option>Значение 2</Select.Option>
+                                <Select.Option>Значение 3</Select.Option>
+                                <Select.Option>Значение 4</Select.Option>
+                                <Select.Option>Значение 5</Select.Option>
+                            </Select>
+                        </Drawer.Body>
+                        <Drawer.Footer>
+                            <Groups>
+                                <Button size='l' design='outline'>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setOpen(false)}>
                                     Close
                                 </Button>
                             </Groups>

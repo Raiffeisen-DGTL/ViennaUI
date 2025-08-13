@@ -18,12 +18,23 @@ import { Spinner } from 'vienna-ui';
 | position | "relative" \| "absolute" \| undefined                   |    |
 | color | 'primary' \| 'accent' \| 'london120' \| 'white' \| undefined                 |    |
 
-## Использование
+
+# Spinner
+
+Визуализация состояния загрузки данных.
+
+Используется на страницах или в компонентах (например в компонентах `<Input />` или `<Select />`), когда нужно визуализировать загрузку данных данных с сервера.
+
+
+
+```
+    <Spinner />
+```
 
 ## Внешний вид
 
-```    
-<Spinner />
+```
+    <Spinner />
 ```
 
 ## Размеры
@@ -37,6 +48,7 @@ import { Spinner } from 'vienna-ui';
     <Spinner size='l' />
     <Spinner size='xl' />
 ```
+
 ## Color
 
 #### Primary
@@ -60,6 +72,7 @@ import { Spinner } from 'vienna-ui';
     <Spinner size='l' color='accent' />
     <Spinner size='xl' color='accent' />
 ```
+
 #### London120
 
 ```
@@ -69,6 +82,7 @@ import { Spinner } from 'vienna-ui';
     <Spinner size='l' color='london120' />
     <Spinner size='xl' color='london120' />
 ```
+
 #### White
 
 ```
@@ -78,6 +92,7 @@ import { Spinner } from 'vienna-ui';
     <Spinner size='l' color='white' />
     <Spinner size='xl' color='white' />
 ```
+
 ## Расположение
 
 Можно добавить свойство `position` в состояние `absolute` для растягивания на всю ширину или высоту родительского элемента.
@@ -85,6 +100,7 @@ import { Spinner } from 'vienna-ui';
 ```
     <Spinner position='absolute' />
 ```
+
 #### Адаптив
 
 Для компонента Spinner, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
@@ -122,4 +138,12 @@ systemBreakpoints: Breakpoints = {
 
 ```
     <Spinner size={{ base: 's', s: 'l', m: 'xl' }} />
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для `menu`. Передается пропс ` testId?: {container};`.
+
+```
+    <Spinner testId={{container: 'test'}} size={{ base: 's', s: 'l', m: 'xl' }} />
 ```

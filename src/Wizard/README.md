@@ -19,9 +19,28 @@ import { Wizard } from 'vienna-ui';
 | localization | Localization<WizardLocalizationMap, WizardLocalizationContext> \| undefined |   | |
 
 
+# Wizard
+
+Компонент с позаголовковым управлением формы. Компонент `Wizard` используется для построения пошагового интерфейса. Включает в себя шаги и управление навигацией между шагами.
+
+
+
+```
+    <Wizard value={0}>
+        <Wizard.Body>
+            <Wizard.Step title='Шаг 1'>1</Wizard.Step>
+            <Wizard.Step title='Шаг 2'>2</Wizard.Step>
+            <Wizard.Step title='Шаг 3'>3</Wizard.Step>
+            <Wizard.Step title='Шаг 4'>4</Wizard.Step>
+            <Wizard.Step title='Шаг 5'>5</Wizard.Step>
+        </Wizard.Body>
+        <Wizard.Footer>Footer</Wizard.Footer>
+    </Wizard>
+```
+
 ## Внешний вид
 
-Компонент состоит из родительского контейнера `Wizard` и дочерних компонентов `Wizard.Body` (контейнер для Заголовоков компонента), `Wizard.Step` (контейнер Заголовока компонента для контента Заголовока) и `Wizard.Footer` (контейнер футера, где располагаются элементы навигации - кнопки).
+Компонент состоит из родительского контейнера `Wizard` и дочерних компонентов `Wizard.Body` (контейнер для заголовков компонента), `Wizard.Step` (контейнер Заголовка компонента для контента Заголовка) и `Wizard.Footer` (контейнер футера, где располагаются элементы навигации - кнопки).
 
 ```
     {() => {
@@ -43,13 +62,13 @@ import { Wizard } from 'vienna-ui';
                     <Flex gap='s2'>
                         {step !== 0 && (
                             <Button design='ghost' onClick={handleClickButton('prev')}>
-                                <GoLeft /> Назад
+                                <GoLeftIcon /> Назад
                             </Button>
                         )}
                         {step !== 2 && (
                             <Whitespace ml='auto'>
                                 <Button design='accent' onClick={handleClickButton('next')}>
-                                    Далее <GoRight />
+                                    Далее <GoRightIcon />
                                 </Button>
                             </Whitespace>
                         )}
@@ -59,9 +78,10 @@ import { Wizard } from 'vienna-ui';
         );
     }}
 ```
-## Навигация по Заголовокам
 
-Навигацию по Заголовокам можно осуществлять как по клику на кнопках, которые можно расположить в футере `Wizard.Footer`, так и по клику по Заголовокам, которые расположены в шапке. Для осуществления последнего необходимо задать функцию обработки клика по навигации Заголовоков через свойство `onChange`.
+## Навигация по заголовкам
+
+Навигацию по заголовкам можно осуществлять как по клику на кнопках, которые можно расположить в футере `Wizard.Footer`, так и по клику по заголовкам, которые расположены в шапке. Для осуществления последнего необходимо задать функцию обработки клика по навигации заголовков через свойство `onChange`.
 
 ## Размеры
 
@@ -90,6 +110,7 @@ import { Wizard } from 'vienna-ui';
         <Wizard.Footer>Footer</Wizard.Footer>
     </Wizard>
 ```
+
 ### l
 
 ```
@@ -102,9 +123,10 @@ import { Wizard } from 'vienna-ui';
         <Wizard.Footer>Footer</Wizard.Footer>
     </Wizard>
 ```
+
 ## Гибкая шапка
 
-Если Заголовоки компонента занимают больше 20% шапки, то они перестраиваются под заголовок Заголовока
+Если заголовки компонента занимают больше 20% шапки, то они перестраиваются под заголовок
 
 ```
     <Wizard value={5}>
@@ -122,6 +144,7 @@ import { Wizard } from 'vienna-ui';
         <Wizard.Footer>Footer</Wizard.Footer>
     </Wizard>
 ```
+
 ## Локализация
 
 Локализация компонента осуществляется с помощью функции кастомизации
@@ -130,7 +153,7 @@ import { Wizard } from 'vienna-ui';
     {() => {
         const customLocalization = (key, context) => {
             if (key === 'ds.wizard.steps') {
-                return `step ${context?.value} of ${context?.count}`;
+                return `step ${context.value} of ${context.count}`;
             }
             return '';
         };

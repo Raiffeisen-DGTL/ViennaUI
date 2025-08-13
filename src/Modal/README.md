@@ -32,6 +32,21 @@
 import { Modal, useModal } from 'vienna-ui';
 ```
 
+
+
+# Modal
+
+Модальное окно («диалоговое окно») — окно, появляющееся поверх страницы в ответ на действия пользователя и блокирующее доступ к основному содержимому страницы.
+Используется, когда нам нужно выполнить какое‑то прямое единичное действие (подтвердить, удалить, etc.). Модальное окно появляется поверх страницы, затемняя ее. Это помогает сфокусировать внимание пользователя на конкретных действиях, не теряя при этом общий контекст.
+
+Используется в случаях:
+
+-   когда необходимо перевести внимание пользователя от текущей задачи к чему-то более важному;
+-   сообщить об ошибках, положительном завершении работы над задачей, уточнить намерения пользователя;
+-   показать дополнительную информацию/действие внутри контекста;
+
+
+
 ```
     {() => {
         const [isOpen, setIsOpen] = React.useState(false);
@@ -65,40 +80,9 @@ import { Modal, useModal } from 'vienna-ui';
     }}
 ```
 
-## Внешний вид
-
-```javascript
-const state = useModal(); //при использовании в декларативном стиле
-
-// state.open() - открыть окно
-// state.close(data) - закрыть окно с передачей в onClose - data
-
-closeHandler = (data) => {
-    /**/
-};
-
-// ...
-
-<Modal state={state} onClose={closeHandler}>
-    content
-</Modal>;
-
-// ...
-```
-
-или
-
-```javascript
-const isOpen = useState(false);
-
-<Modal isOpen={isOpen} onClose={closeHandler}>
-    content
-</Modal>;
-```
-
 #### Варианты наполнения
 
-###### Модальное окно с отступами: заголовок, контент, подвал. (пример без хуков)
+###### Модальное окно с отступами: заголовок, контент, подвал (пример без хуков)
 
 Является самым предпочтительным вариантом для большинства случаев. Особенно если требуется обновлять состояние содержимого модального окна из родителя.
 
@@ -155,7 +139,7 @@ const isOpen = useState(false);
                         <Modal.Head>
                             <Modal.Title>Modal header</Modal.Title>
                         </Modal.Head>
-                        <Modal.Body scroll={scroll} maxHeight={300}>
+                        <Modal.Body scroll={scroll} maxHeight={scroll ? 300 : undefined}>
                             {arr.map((v, i) => (
                                 <React.Fragment key={i}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -182,15 +166,15 @@ const isOpen = useState(false);
 
 ```
 
-###### Модальное окно с отступами: заголовок, контент, подвал.
+###### Модальное окно с отступами: заголовок, контент, подвал
 
 ```
     {() => {
-        const modalState = useModal();
+        const [isOpen, setIsOpen] = React.useState(false);
         return (
             <>
-                <Button onClick={modalState.open}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <Modal.Layout>
                         <Modal.Head>
                             <Modal.Title>Modal header</Modal.Title>
@@ -202,10 +186,10 @@ const isOpen = useState(false);
                         </Modal.Body>
                         <Modal.Footer>
                             <Groups>
-                                <Button size='l' design='outline' onClick={() => modalState.close('test')}>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
-                                <Button size='l' design='accent' onClick={modalState.close}>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
                             </Groups>
@@ -217,15 +201,15 @@ const isOpen = useState(false);
     }}
 ```
 
-###### Модальное окно с отступами: заголовок, подзаголовок, контент, подвал.
+###### Модальное окно с отступами: заголовок, подзаголовок, контент, подвал
 
 ```
     {() => {
-        const modalState = useModal();
+        const [isOpen, setIsOpen] = React.useState(false);
         return (
             <>
-                <Button onClick={() => modalState.open()}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <Modal.Layout>
                         <Modal.Head>
                             <Modal.Title>Modal header</Modal.Title>
@@ -238,10 +222,10 @@ const isOpen = useState(false);
                         </Modal.Body>
                         <Modal.Footer>
                             <Groups>
-                                <Button size='l' design='outline'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
-                                <Button size='l' design='accent'>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
                             </Groups>
@@ -253,15 +237,15 @@ const isOpen = useState(false);
     }}
 ```
 
-###### Модальное окно с отступами: заголовок, подзаголовок, произвольный контент, подвал.
+###### Модальное окно с отступами: заголовок, подзаголовок, произвольный контент, подвал
 
 ```
     {() => {
-        const modalState = useModal();
-        return (
+         const [isOpen, setIsOpen] = React.useState(false);
+            return (
             <>
-                <Button onClick={() => modalState.open()}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <Modal.Layout>
                         <Modal.Head>
                             <Modal.Title>Modal header</Modal.Title>
@@ -272,10 +256,10 @@ const isOpen = useState(false);
                         </Modal.Body>
                         <Modal.Footer>
                             <Groups>
-                                <Button size='l' design='outline'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
-                                <Button size='l' design='accent'>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
                             </Groups>
@@ -287,21 +271,21 @@ const isOpen = useState(false);
     }}
 ```
 
-###### Модальное окно с отступами: иконка, заголовок, подзаголовок, произвольный контент, подвал.
+###### Модальное окно с отступами: иконка, заголовок, подзаголовок, произвольный контент, подвал
 
 ```
     {() => {
-        const modalState = useModal();
-        return (
+         const [isOpen, setIsOpen] = React.useState(false);
+         return (
             <>
-                <Button onClick={() => modalState.open()}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <Modal.Layout>
                         <Modal.Head>
                             <ComponentHelpers.Modal.DemoIcon>
-                                <RoundIcon size='l'>
-                                    <Attach size='m' />
-                                </RoundIcon>
+                                <IconContainer size='l'>
+                                    <AttachIcon size='m' />
+                                </IconContainer>
                             </ComponentHelpers.Modal.DemoIcon>
                             <Modal.Title>Modal header</Modal.Title>
                             <Modal.SubTitle>Subheading text</Modal.SubTitle>
@@ -313,10 +297,10 @@ const isOpen = useState(false);
                         </Modal.Body>
                         <Modal.Footer>
                             <Groups>
-                                <Button size='l' design='outline'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
-                                <Button size='l' design='accent'>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
                             </Groups>
@@ -328,11 +312,11 @@ const isOpen = useState(false);
     }}
 ```
 
-###### Модальное окно с отступами: иконка (по центру), заголовок (по центру), контент (по центру), подвал (по центру).
+###### Модальное окно с отступами: иконка (по центру), заголовок (по центру), контент (по центру), подвал (по центру)
 
 ```
     {() => {
-        const modalState = useModal();
+        const [isOpen, setIsOpen] = React.useState(false);
         const theme = {
             screen: {
                 custom: {
@@ -344,15 +328,15 @@ const isOpen = useState(false);
         };
         return (
             <>
-                <Button onClick={() => modalState.open()}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <ThemeProvider theme={theme}>
                         <Modal.Layout>
                             <Modal.Head align={'center'}>
                                 <ComponentHelpers.Modal.DemoIcon>
-                                    <RoundIcon size='l'>
-                                        <CloseCancelX size='m' />
-                                    </RoundIcon>
+                                    <IconContainer size='l'>
+                                        <CloseCancelXIcon size='m' />
+                                    </IconContainer>
                                 </ComponentHelpers.Modal.DemoIcon>
                                 <Modal.Title>Modal header</Modal.Title>
                                 <Modal.SubTitle>Subheading text</Modal.SubTitle>
@@ -364,7 +348,7 @@ const isOpen = useState(false);
                                 </div>
                             </Modal.Body>
                             <Modal.Footer align={'center'}>
-                                <Button size='l' design='outline'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
                                     Button example
                                 </Button>
                             </Modal.Footer>
@@ -376,15 +360,15 @@ const isOpen = useState(false);
     }}
 ```
 
-###### Модальное окно с отступами: картинка, заголовок (по центру), контент (по центру), подвал (по центру).
+###### Модальное окно с отступами: картинка, заголовок (по центру), контент (по центру), подвал (по центру)
 
 ```
     {() => {
-        const modalState = useModal();
-        return (
+        const [isOpen, setIsOpen] = React.useState(false);
+         return (
             <>
-                <Button onClick={() => modalState.open()}>Show modal</Button>
-                <Modal state={modalState} onClose={console.log}>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <Modal.Layout>
                         <ComponentHelpers.Modal.Image />
                         <Modal.Head align={'center'}>
@@ -397,7 +381,7 @@ const isOpen = useState(false);
                             </div>
                         </Modal.Body>
                         <Modal.Footer align={'center'}>
-                            <Button size='l' design='accent'>
+                            <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
                                 Button example
                             </Button>
                         </Modal.Footer>
@@ -425,7 +409,7 @@ open();
 ```
 
 -   Данный способ дает возможность создавать переиспользуемые модальные окна, которые можно открывать из любой части приложения не привязываясь к контенту или компонентам.
--   При передаче в `useModal` в качестве параметров `JSX.Elemen`'а контента окна и `callback` функции срабатывающей на `onClose`, возвращаются методы открытия и закрытия окна в режиме менеджера.
+-   При передаче в `useModal` в качестве параметров `JSX.Element`'а контента окна и `callback` функции срабатывающей на `onClose`, возвращаются методы открытия и закрытия окна в режиме менеджера.
 
 ```
     {() => {
@@ -477,8 +461,6 @@ open();
 -   Создаем файл `ConfirmModal.tsx`
 
 ```javascript
-import { useModal } from 'vienna.ui';
-
 export const ComponentHelpers.Modal.confirmModal = async (message) => {
     return new Promise((resolve) => {
         const [open, close] = useModal(
@@ -510,13 +492,10 @@ export const ComponentHelpers.Modal.confirmModal = async (message) => {
 -   Использование
 
 ```javascript
-import { ComponentHelpers.Modal.confirmModal } from 'СonfirmModal';
-
 // ... async
 const status = await ComponentHelpers.Modal.confirmModal('Продолжить выполнение операции?');
 // ...
 ```
-
 ## Модальное окно, как сложный компонент
 
 Файл с компонентом модального окна
@@ -617,7 +596,7 @@ export const MyModal = (props, callback) => {
         return (
             <Groups design='vertical'>
                 <Button onClick={() => setIsOpen(true)}>Show modal</Button>
-                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} closeIcon={<FaceSmile size='l' />}>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} closeIcon={<FaceSmileIcon size='l' />}>
                     <Modal.Layout>
                         <Modal.Head>
                             <Modal.Title>Modal header</Modal.Title>
@@ -646,15 +625,16 @@ export const MyModal = (props, callback) => {
 
 #### Комплексный пример
 
-Для более точной работы с модальными окнами предусмотрено следующие
+Для более точной работы с модальными окнами предусмотрено следующее:
 
--   метод `onClose` может возвращать занчение `true/false` или аналогичный `promise`, в случае возвращения `false` - окно не будет закрыьто по сути onClose вызывается непосредственно до старта анимации и процедуры закрытия и может быть предотвращен
+-   метод `onClose` может возвращать значение `true/false` или аналогичный `promise`, в случае возвращения `false` - окно не будет закрыто по сути onClose вызывается непосредственно до старта анимации и процедуры закрытия и может быть предотвращен.
 
-Если в качестве управления состоянием окна применятся `isOpen` - следует установить его в false самостоятельно, так как анимация закрытие и исчезновение окна будут произведены, но родительское состояние не изменится.
+Если в качестве управления состоянием окна применятся `isOpen` - следует установить его в false самостоятельно, так как анимация закрытия и исчезновения окна будут произведены, но родительское состояние не изменится.
 
--   метод `onPreDespose` - вызывается после завершения анимации закрытия, непосредственно перед удалением модального окна из `DOM`
+-   метод `onPreDespose` - вызывается после завершения анимации закрытия, непосредственно перед удалением модального окна из `DOM`.
 
--   если проп `isOpen` `undefined`, виидмостью Modal нужно управлять через ref.
+-   если проп `isOpen` принимает значение `undefined`- видимостью Modal нужно управлять через ref.
+-   `onAfterOpen` - callback функция открытия окна с учётом времени выполнения анимации;
 
 ```
     {() => {
@@ -672,6 +652,7 @@ export const MyModal = (props, callback) => {
             []
         );
         const handleDespose = React.useCallback(() => console.log('end despose'), []);
+        const handleOpen = React.useCallback(() => console.log('modal open'), []);
         const theme = {
             modal: {
                 fade: {
@@ -689,7 +670,8 @@ export const MyModal = (props, callback) => {
                         isOpen={isOpen}
                         onClose={handleCustomClose}
                         onPreDespose={handleDespose}
-                        closeIcon={<FaceSmile size='l' />}>
+                        onAfterOpen={handleOpen}
+                        closeIcon={<FaceSmileIcon size='l' />}>
                         <Modal.Layout>
                             <Modal.Head>
                                 <Modal.Title>Modal header</Modal.Title>
@@ -713,6 +695,329 @@ export const MyModal = (props, callback) => {
                     </Modal>
                 </ThemeProvider>
             </Groups>
+        );
+    }}
+```
+
+## Расположение двух кнопок в футере слева
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(true)}>
+                    <Modal.Layout>
+                        <Modal.Head align={'center'}>
+                            <Modal.Title>Modal header</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div style={{ textAlign: 'center' }}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer align={'left'}>
+                            <Groups>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                            </Groups>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+## Расположение двух кнопок в футере по центру
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(true)}>
+                    <Modal.Layout>
+                        <Modal.Head align={'center'}>
+                            <Modal.Title>Modal header</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div style={{ textAlign: 'center' }}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer align={'center'}>
+                            <Groups justifyContent='center'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                            </Groups>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+## Расположение двух кнопок в футере справа
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(true)}>
+                    <Modal.Layout>
+                        <Modal.Head align={'center'}>
+                            <Modal.Title>Modal header</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div style={{ textAlign: 'center' }}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer align={'right'}>
+                            <Groups justifyContent='flex-end'>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                            </Groups>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+## Доступность с клавиатуры
+
+Обработчик `onClose` срабатывает по нажатию клавиши Escape при передаче пропа `closeByEscape`.
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} closeByFade={false} onClose={() => setIsOpen(false)} closeByEscape>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Title</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris.
+                            </div>
+                        </Modal.Body>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+## Агрессивное модальное окно c размытым фоном, которое нельзя закрыть кликом вне области или по нажатию клавиши Esc
+
+Для данных модальных окон необходимо использовать свойства:
+- `blurOverlay` (тип boolean, по умолчанию `false`) - отвечает за размытие фона у overlay;
+- `hideCloseIcon` (тип boolean, по умолчанию `false`) - отвечает за скрытие иконки крестика;
+- `closeByFade` (тип boolean, по умолчанию `true`) - отвечает за закрытие модального окна по клику на overlay;
+- `closeByEscape` (тип boolean, по умолчанию `false`) - отвечает за закрытие модального окна по нажатию на клавишу Esc;
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} blurOverlay hideCloseIcon closeByFade={false} closeByEscape={false} onClose={() => setIsOpen(false)}>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Title</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris.
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Button onClick={() => setIsOpen(false)}>Hide modal</Button>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+## Размер модального окна
+
+С помощью свойства `size` можно указать размер модального окна. Доступные значения: `s`, `m`, `l`. Размеры отличаются шириной модального окна:
+- `s` - `420px`
+- `m` - `600px`
+- `l` - `1024px`
+
+```
+    {() => {
+        const [openedModal, setOpenedModal] = React.useState(undefined);
+        return (
+            <>
+                <Groups>
+                    <Button onClick={() => setOpenedModal('s')}>Show modal "s" size</Button>
+                    <Button onClick={() => setOpenedModal('m')}>Show modal "m" size</Button>
+                    <Button onClick={() => setOpenedModal('l')}>Show modal "l" size</Button>
+                </Groups>
+                <Modal size='s' isOpen={openedModal === 's'} onClose={() => setOpenedModal(undefined)} closeByEscape>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Modal size S</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris.
+                            </div>
+                        </Modal.Body>
+                    </Modal.Layout>
+                </Modal>
+                <Modal isOpen={openedModal === 'm'} onClose={() => setOpenedModal(undefined)} closeByEscape>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Modal size M</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris.
+                            </div>
+                        </Modal.Body>
+                    </Modal.Layout>
+                </Modal>
+                <Modal size='l' isOpen={openedModal === 'l'} onClose={() => setOpenedModal(undefined)} closeByEscape>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Modal size L</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris.
+                            </div>
+                        </Modal.Body>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+
+```
+
+## Использование в декларативном стиле (deprecated)
+
+```
+    {() => {
+        const state = useModal();
+        const closeModal = (data) => {
+            state.close(data)
+        }
+        return (
+            <>
+                <Button onClick={state.open}>Show modal</Button>
+                <Modal state={state} onClose={closeModal}>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Modal header</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris.
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Groups>
+                                <Button size='l' design='outline' onClick={() => state.close('test')}>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={state.close}>
+                                    Button example
+                                </Button>
+                            </Groups>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
+        );
+    }}
+```
+
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для контейнера и иконки закрытия. Передается с помощью пропса `testId?: { container, closeIcon }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultModalTestId: ModalProps['testId'] = {
+    container: 'modal_container',
+    closeIcon: 'modal_close-icon',
+};
+```
+
+```
+    {() => {
+        const [isOpen, setIsOpen] = React.useState(false);
+        return (
+            <>
+                <Button onClick={() => setIsOpen(true)}>Show modal</Button>
+                <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} testId={{container: 'modal_container', closeIcon: 'modal_close-icon'}}>
+                    <Modal.Layout>
+                        <Modal.Head>
+                            <Modal.Title>Modal header</Modal.Title>
+                        </Modal.Head>
+                        <Modal.Body>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris.
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <Groups>
+                                <Button size='l' design='outline' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                                <Button size='l' design='accent' onClick={() => setIsOpen(false)}>
+                                    Button example
+                                </Button>
+                            </Groups>
+                        </Modal.Footer>
+                    </Modal.Layout>
+                </Modal>
+            </>
         );
     }}
 ```

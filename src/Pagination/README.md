@@ -12,15 +12,21 @@ import { Pagination } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| size | 'm' \| 'l' \| 's' \| undefined |  | Размер компонента |
-| align | 'flex-start' \| 'center' \| 'flex-end' \| 'space-between' \| 'space-around' \| undefined |  | Выравнивание по горизонтали |
-| pageSize\* | number |  | Количество элементов на одной странице |
-| initialPageIndex | number \| undefined |  | Индекс текущей страницы (начинается с 0) |
-| totalItemsCount\* | number |  | Общее количество элементов |
-| currentPageNeighboursCount | number \| undefined |  | Количество кнопок-пэйджеров, которые нужно рендерить по соседству от текущего пэйджера, когда показываются кнопки с эллипсисами (jumpers) |
-| onChange\* | (event: FormEvent<Element> \| null, data: { pageIndex: number; pageSize: number}) => void | | Коллбэк. Вызывается при изменении страницы В этом методе нужно описывать логику показа элементов в зависимости от страницы и размера страницы @param pageIndex - индекс новой страницы @param pageSize - количество элементов на странице |
-| currentPage | number \| undefined|
-| hasNextPage | boolean \| undefined|
+| size | `PropsBox['$size']` | — | Размер компонента |
+| align | `PropsBox['$align']` | — | Выравнивание по горизонтали |
+| pageSize | `number` | — | Количество элементов на одной странице |
+| initialPageIndex | `number` | — | Индекс текущей страницы (начинается с 0) |
+| totalItemsCount | `number` | — | Общее количество элементов |
+| currentPageNeighboursCount | `number` | — | Количество кнопок-пэйджеров, которые нужно рендерить по соседству от текущего пэйджера |
+| currentPage | `number` | — | Текущий номер страницы |
+| hasNextPage | `boolean` | — | Показывает, будут ли еще страницы. Если true, стрелка вправо активна |
+| testId | `{ arrowPrev?: string; arrowNext?: string; separator?: string; page?: (page: number) => string; }` | — |  |
+| onChange | `(data: { pageIndex: number; pageSize: number }, event: React.FormEvent \| null) => void` | — | Коллбэк. Вызывается при изменении страницы |
+
+
+# Pagination
+
+Компонент пагинации. Используется для создания многостраничных списков, таблиц, слайдеров, и т.д. Он позволяет пользователям перемещаться по страницам в таблицах, списках, по компонентам карточек и слайдам.
 
 
 
@@ -30,7 +36,13 @@ import { Pagination } from 'vienna-ui';
 
 ## Использование
 
+Основные свойства для использования компонента:
+- pageSize - количество элементов на одной странице (тип number)
+- totalItemsCount - общее количество элементов (тип number)
+
 ## Используйте свойство `hasNextPage: boolean` для управления стрелкой вперёд.
+
+Атрибут `hasNextPage` позволяет заблокировать стрелку вперед.
 
 ```
     {() => {
@@ -43,7 +55,7 @@ import { Pagination } from 'vienna-ui';
             return items.slice(current * pageSize, (current + 1) * pageSize);
         };
         const [state, setState] = React.useState({ page: 0, items: getPagedItems(0, pageSize) });
-        const handlePageChange = (event, { pageIndex, pageSize }) => {
+        const handlePageChange = ({ pageIndex, pageSize }) => {
             setState({ page: pageIndex, items: getPagedItems(pageIndex, pageSize) });
         };
         return (
@@ -53,7 +65,7 @@ import { Pagination } from 'vienna-ui';
                         return <li key={item.id}>{item.id}</li>;
                     })}
                 </ul>
-                <Pagination pageSize={pageSize} totalItemsCount={totalItemsCount} onChange={handlePageChange} />
+                <Pagination pageSize={pageSize} totalItemsCount={totalItemsCount} onChange={handlePageChange} hasNextPage={false} />
             </>
         );
     }}
@@ -71,10 +83,10 @@ import { Pagination } from 'vienna-ui';
             return items.slice(current * pageSize, (current + 1) * pageSize);
         };
         const [state, setState] = React.useState({ pageSize: 10, page: 0, items: getPagedItems(0, 10) });
-        const handlePageChange = (event, { pageIndex, pageSize }) => {
+        const handlePageChange = ({ pageIndex, pageSize }) => {
             setState({ page: pageIndex, items: getPagedItems(pageIndex, pageSize), pageSize });
         };
-        const handleSelect = (event, data) => {
+        const handleSelect = (data) => {
             const pageSize = +data.value;
             setState({ page: state.page, items: getPagedItems(state.page, pageSize), pageSize });
         };
@@ -85,7 +97,7 @@ import { Pagination } from 'vienna-ui';
                         return <li key={item.id}>{item.id}</li>;
                     })}
                 </ul>
-                <Groups justifyContent={'space-between'} alignItems={'stretch'}>
+                <Groups justifyContent={'space-between'}>
                     <div>
                         <Pagination
                             initialPageIndex={0}
@@ -111,13 +123,15 @@ import { Pagination } from 'vienna-ui';
     }}
 ```
 
-## Размеры
+## Размеры (свойство size)
+
+В компоненте представлены следующие размеры - 's' | 'm' | 'l'. По умолчанию используется размер 'm'.
 
 ```
     <Pagination
         pageSize={10}
         totalItemsCount={100}
-        onChange={(event, data) => {
+        onChange={(data) => {
             console.log(data.pageIndex, data.pageSize);
         }}
         size={'s'}
@@ -125,7 +139,7 @@ import { Pagination } from 'vienna-ui';
     <Pagination
         pageSize={10}
         totalItemsCount={100}
-        onChange={(event, data) => {
+        onChange={(data) => {
             console.log(data.pageIndex, data.pageSize);
         }}
         size={'m'}
@@ -133,9 +147,45 @@ import { Pagination } from 'vienna-ui';
     <Pagination
         pageSize={10}
         totalItemsCount={100}
-        onChange={(event, data) => {
+        onChange={(data) => {
             console.log(data.pageIndex, data.pageSize);
         }}
         size={'l'}
     />
+```
+
+## Выравнивание по горизонтали (свойство align)
+
+Пагинацию есть возможность выравнивать по горизонтали, за это отвечает свойство `align` (тип `'flex-start' | 'center' | 'flex-end' | 'space-between' | 'space-around'`).
+
+```
+    <Pagination pageSize={25} totalItemsCount={500} align={'center'} />
+```
+
+## Управление количеством кнопок выбора страниц
+
+Свойство `currentPageNeighboursCount` (тип number) определяет, сколько кнопок выбора страниц будет отображаться рядом с текущим номером страницы, когда используются кнопки с эллипсисами.
+
+```
+    <Pagination currentPage={5} pageSize={25} totalItemsCount={500} currentPageNeighboursCount={1} />
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для стрелочки вперед-назад, разделителя  и номера страницы. Передается пропс `testId?: { arrowPrev?: string; arrowNext?: string; separator?: string; page?: (page: number) => string; }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultPaginationTestId: PaginationProps['testId'] = {
+    container: 'pagination_container',
+    arrowPrev: 'pagination_arrow-prev',
+    arrowNext: 'pagination_arrow-next',
+    separator: 'pagination_separator',
+    page: (page: number) => `pagination_page-${page}`,
+};
+```
+
+```
+    <Pagination pageSize={25} totalItemsCount={500} onChange={() => ''} testId={{ arrowPrev: 'Pagination.Prev', arrowNext: 'Pagination.Next', separator: 'Pagination.Separator', page: (page) => `Pagination.Page.${page}`}} />
 ```

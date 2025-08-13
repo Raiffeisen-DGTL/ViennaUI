@@ -1,6 +1,7 @@
 # Breadcrumbs
 
-Элемент навигации по приложению, сайту.
+Элемент навигации по приложению, сайту. Не должен перетягивать на себя внимание, максимально нейтральный, должен быть в одну строку.
+Используйте компонент Breadcrumbs, если вложенность элементов составляет более 2 уровней. В противном случае можно использовать кнопку «Назад», которая должна вести на страницу, с которой пришел пользователь.
 
 ## Импорт
 
@@ -15,6 +16,7 @@ import { Breadcrumbs } from 'vienna-ui';
 | size | "s" \| "m" \| "l" \| undefined |
 | noHomeButton | boolean \| undefined |
 | noBackButton | boolean \| undefined |
+| withoutTooltip | boolean \| undefined |
 | onClickHome | ((e: any, data: { value: React.ReactNode; }) => void) \| undefined  | | Обработчик нажатия на кнопку "Домой" |
 | localization | Localization<BreadcrumbsLocalization, undefined> \| undefined  | | Локализация |
 
@@ -32,6 +34,8 @@ import { Breadcrumbs } from 'vienna-ui';
 | last | boolean \| undefined |
 | value | any |
 | onClick | ((e: any, data: { value: any; }) => void) \| undefined |
+
+
 
 
 
@@ -54,7 +58,6 @@ import { Breadcrumbs } from 'vienna-ui';
         <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
     </Breadcrumbs>
 ```
-
 
 ## Размеры
 
@@ -95,7 +98,6 @@ import { Breadcrumbs } from 'vienna-ui';
         </Breadcrumbs>
     </Groups>
 ```
-
 
 ## Поведение
 
@@ -181,6 +183,62 @@ import { Breadcrumbs } from 'vienna-ui';
             <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
         </Breadcrumbs>
         <Breadcrumbs noBackButton>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </Groups>
+```
+
+## Свойство withoutTooltip
+
+При заданом свойстве `altText` и указаном `children` или при сжатии текста в опции будет появляться тултип.
+За скрытие тултипа отвечает свойство `withoutTooltip` (тип boolean)
+
+```
+    <div style={{ width: '300px' }}>
+        <Breadcrumbs>
+            <Breadcrumbs.Option withoutTooltip>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option withoutTooltip>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option withoutTooltip>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+    </div>
+```
+
+## Локализация
+
+Есть возможность задавать текст через свойство localization
+
+```
+        <Breadcrumbs size='m' localization={{ 'ds.breadcrumbs.backTo': 'Вернуться к' }}>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+        </Breadcrumbs>
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать иконке "Домой", иконке "Назад", контейнеру и каждому элементу списка.
+ Передается с помощью  пропса `testId: { home, homeIcon, back, backIconContainer, backIcon, page: (val: string) => `breadcrumbs_page-${val}`}`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultBreadcrumbsTestId: BreadcrumbsProps['testId'] = {
+    home: 'breadcrumbs_home',
+    homeIcon: 'breadcrumbs_home-icon',
+    back: 'breadcrumbs_back',
+    backIconContainer: 'breadcrumbs_back-icon-container',
+    backIcon: 'breadcrumbs_back-icon',
+    page: (val: string) => `breadcrumbs_page-${val}`,
+};
+```
+
+```
+   <Groups design='vertical'>
+        <Breadcrumbs testId={{home: 'home-button', homeIcon: 'breadcrumbs_home-icon', back: 'breadcrumbs_back', backIconContainer: 'breadcrumbs_back-icon-container', backIcon: 'breadcrumbs_back-icon', page: (val) => `breadcrumbs_page-${val}`}}>
+            <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 2'>Long Name Page 2</Breadcrumbs.Option>
+            <Breadcrumbs.Option altText='Page 3'>Long Name Page 3</Breadcrumbs.Option>
+        </Breadcrumbs>
+        <Breadcrumbs>
             <Breadcrumbs.Option altText='Page 1'>Long Name Page 1</Breadcrumbs.Option>
         </Breadcrumbs>
     </Groups>

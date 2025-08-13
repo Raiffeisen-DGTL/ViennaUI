@@ -58,15 +58,24 @@
 | placeholder | string \| undefined | |
 | disabled | boolean \| undefined | |
 
+
+# InputPassword
+
+Компонент ввода пароля.
+
+
+
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return <InputPassword value={value} onChange={handleChange} />;
     }}
 ```
+
 ## Внешний вид
 
 Полностью наследует все поведение и свойства от компонента `Input` Пароль не хранится в разметке, но компонент полностью кастомизируется.
@@ -74,11 +83,12 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
+            <Groups design="vertical">
                 <FormField>
                     <FormField.Label>Пароль</FormField.Label>
                     <FormField.Content>
@@ -86,7 +96,9 @@
                     </FormField.Content>
                 </FormField>
                 <FormField>
-                    <FormField.Label>Проверочное поле (двойного направления)</FormField.Label>
+                    <FormField.Label>
+                        Проверочное поле (двойного направления)
+                    </FormField.Label>
                     <FormField.Content>
                         <Input value={value} onChange={handleChange} />
                     </FormField.Content>
@@ -103,15 +115,24 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
-                <InputPassword size='xs' value={value} onChange={handleChange} />
-                <InputPassword size='s' value={value} onChange={handleChange} />
-                <InputPassword size='l' value={value} onChange={handleChange} />
-                <InputPassword size='xl' value={value} onChange={handleChange} />
+            <Groups design="vertical">
+                <InputPassword
+                    size="xs"
+                    value={value}
+                    onChange={handleChange}
+                />
+                <InputPassword size="s" value={value} onChange={handleChange} />
+                <InputPassword size="l" value={value} onChange={handleChange} />
+                <InputPassword
+                    size="xl"
+                    value={value}
+                    onChange={handleChange}
+                />
             </Groups>
         );
     }}
@@ -122,15 +143,36 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
-                <InputPassword design='material' size='xs' value={value} onChange={handleChange} />
-                <InputPassword design='material' size='s' value={value} onChange={handleChange} />
-                <InputPassword design='material' size='l' value={value} onChange={handleChange} />
-                <InputPassword design='material' size='xl' value={value} onChange={handleChange} />
+            <Groups design="vertical">
+                <InputPassword
+                    design="material"
+                    size="xs"
+                    value={value}
+                    onChange={handleChange}
+                />
+                <InputPassword
+                    design="material"
+                    size="s"
+                    value={value}
+                    onChange={handleChange}
+                />
+                <InputPassword
+                    design="material"
+                    size="l"
+                    value={value}
+                    onChange={handleChange}
+                />
+                <InputPassword
+                    design="material"
+                    size="xl"
+                    value={value}
+                    onChange={handleChange}
+                />
             </Groups>
         );
     }}
@@ -141,11 +183,12 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
+            <Groups design="vertical">
                 <InputPassword invalid value={value} onChange={handleChange} />
                 <InputPassword disabled value={value} onChange={handleChange} />
             </Groups>
@@ -158,12 +201,17 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
-                <InputPassword prefix={<Locked />} value={value} onChange={handleChange} />
+            <Groups design="vertical">
+                <InputPassword
+                    prefix={<LockedIcon />}
+                    value={value}
+                    onChange={handleChange}
+                />
             </Groups>
         );
     }}
@@ -174,12 +222,52 @@
 ```
     {() => {
         const [value, setValue] = React.useState('');
-        const handleChange = React.useCallback((e, data) => {
-            setValue(data.value);
-        });
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
         return (
-            <Groups design='vertical'>
-                <InputPassword placeholder='Введите пароль' value={value} onChange={handleChange} />
+            <Groups design="vertical">
+                <InputPassword
+                    placeholder="Введите пароль"
+                    value={value}
+                    onChange={handleChange}
+                />
+            </Groups>
+        );
+    }}
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для иконки в postfix . Передается пропс `testId?: { postfixIcon }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultInputPasswordTestId: InputPasswordProps['testId'] = {
+    postfixIcon: 'input-password_postfix-icon',
+};
+
+```
+
+```
+    {() => {
+        const [value, setValue] = React.useState('');
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return (
+            <Groups design="vertical">
+                <InputPassword
+                    value={value}
+                    onChange={handleChange}
+                    testId={{ postfixIcon: 'postfix-icon'}}
+                    postfix={
+                        <LockedIcon />
+                    }
+                />
             </Groups>
         );
     }}

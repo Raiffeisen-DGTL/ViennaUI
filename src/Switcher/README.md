@@ -22,19 +22,25 @@ import { Switcher } from 'vienna-ui';
 | name | string \| undefined |  |
 | disabled | boolean \| undefined |  |
 
-## Использование
 
-В качестве дочернего элемента передается label.
+# Switch
+
+Компонент выбора одного из множества или нескольких значений, в зависимости от целей.
+`Switch` - компонент для переключения состояний. Он позволяет пользователю выбрать один из двух взамоисключающих вариантов, при этом один из них предустановлен.
+
+
+
 ```
- {() => {
+    {() => {
         const [state, setState] = React.useState(false);
         return (
-            <Switcher checked={state} onChange={(e, data) => setState(data.value)}>
+            <Switcher checked={state} onChange={({ value }) => setState(value)}>
                 Switcher #1
             </Switcher>
         );
     }}
 ```
+
 ## Внешний вид
 
 ```
@@ -44,12 +50,36 @@ import { Switcher } from 'vienna-ui';
             <Groups>
                 <Switcher
                     checked={state.first}
-                    onChange={(e, data) => setState({ ...state, ...{ first: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ first: value } })}>
                     Switcher #1
                 </Switcher>
                 <Switcher
                     checked={state.second}
-                    onChange={(e, data) => setState({ ...state, ...{ second: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ second: value } })}>
+                    Switcher #2
+                </Switcher>
+            </Groups>
+        );
+    }}
+```
+
+#### Свойство checked
+
+Свойство `checked` служит, чтобы контролировать состояние компонента.
+
+```
+    {() => {
+        const [state, setState] = React.useState({ first: false, second: true });
+        return (
+            <Groups>
+                <Switcher
+                    checked={state.first}
+                    onChange={({ value }) => setState({ ...state, ...{ first: value } })}>
+                    Switcher #1
+                </Switcher>
+                <Switcher
+                    checked={state.second}
+                    onChange={({ value }) => setState({ ...state, ...{ second: value } })}>
                     Switcher #2
                 </Switcher>
             </Groups>
@@ -66,11 +96,11 @@ import { Switcher } from 'vienna-ui';
             <Groups>
                 <Switcher
                     checked={state.first}
-                    onChange={(e, data) => setState({ ...state, ...{ first: data.value } })}
+                    onChange={({ value }) => setState({ ...state, ...{ first: value } })}
                 />
                 <Switcher
                     checked={state.second}
-                    onChange={(e, data) => setState({ ...state, ...{ second: data.value } })}
+                    onChange={({ value }) => setState({ ...state, ...{ second: value } })}
                 />
             </Groups>
         );
@@ -88,22 +118,23 @@ import { Switcher } from 'vienna-ui';
             <Groups>
                 <Switcher
                     checked={state.first}
-                    onChange={(e, data) => setState({ ...state, ...{ first: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ first: value } })}>
                     Switcher Size M
                 </Switcher>
                 <Switcher
                     size='l'
                     checked={state.second}
-                    onChange={(e, data) => setState({ ...state, ...{ second: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ second: value } })}>
                     Switcher Size L
                 </Switcher>
             </Groups>
         );
     }}
 ```
-## Состояния
 
-Компонент имеет состояние 'disabled'
+## Состояние disabled
+
+Компонент имеет состояние 'disabled'.
 
 ```
     {() => {
@@ -113,19 +144,20 @@ import { Switcher } from 'vienna-ui';
                 <Switcher
                     disabled
                     checked={state.first}
-                    onChange={(e, data) => setState({ ...state, ...{ first: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ first: value } })}>
                     Switcher #1
                 </Switcher>
                 <Switcher
                     disabled
                     checked={state.second}
-                    onChange={(e, data) => setState({ ...state, ...{ second: data.value } })}>
+                    onChange={({ value }) => setState({ ...state, ...{ second: value } })}>
                     Switcher #2
                 </Switcher>
             </Groups>
         );
     }}
 ```
+
 #### Адаптив
 
 Для компонента Switcher, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
@@ -165,9 +197,43 @@ systemBreakpoints: Breakpoints = {
     {() => {
         const [state, setState] = React.useState(false);
         return (
-            <Switcher size={{ base: 'm', m: 'l' }} checked={state} onChange={(e, data) => setState(data.value)}>
+            <Switcher size={{ base: 'm', m: 'l' }} checked={state} onChange={({ value }) => setState(value)}>
                 Adaptive switcher
             </Switcher>
         );
     }}
+```
+
+## Обработчики событий
+
+Компонент поддерживает несколько обработчиков событий:
+
+- `onBlur` - обработчик события при потере фокуса компонентом;
+- `onFocus` - обработчик события при получении фокуса компонентом;
+- `onChange` - обработчик события при клике на компонент;
+
+```
+    {() => {
+        const [value, setValue] = React.useState(false);
+        const handleChange = ({ value }) => setValue(value);
+        return (
+            <Switcher checked={value} onChange={handleChange}>
+                Switcher
+            </Switcher>
+        );
+    }}
+```
+
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение свитча без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <Switcher viewOnly checked={false}>Switcher</Switcher>
 ```

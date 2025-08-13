@@ -14,23 +14,28 @@ import { Textarea } from 'vienna-ui';
 
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
-| value | string \| undefined |  |
-| size | ResponsiveProp<Size, Breakpoints> \| undefined |  |
-| design | Design  \| undefined |  |
-| maxRows | number \| undefined |  | Максимальное число видимых строк |
-| resize | boolean \| undefined |  | Возможность изменять вытосу компонента |
-| invalid | boolean \| undefined |  |
-| showCounter | boolean \| undefined |  |
-| onChange | TextareaEvent<FormEvent<HTMLTextAreaElement>> \| undefined |  |
-| onClick | TextareaEvent<MouseEvent<HTMLTextAreaElement, MouseEvent>> \| undefined |  |
-| onFocus | TextareaEvent<FocusEvent<HTMLTextAreaElement, Element>> \| undefined |  |
-| onBlur | TextareaEvent<FocusEvent<HTMLTextAreaElement, Element>> \| undefined |  |
-| onKeyDown | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| onKeyPress | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| onKeyUp | KeyboardEventHandler<HTMLTextAreaElement> \| undefined |  |
-| ref | Ref<HTMLTextAreaElement> \| RefObject \| null \| undefined |  |
-| autoCapitalize | string \| undefined |  | Автоматическая установка заглавной буквы |
-| spellcheck | string \| undefined |  | Проверка орфографии |
+| value | `string` | — |  |
+| size | `ResponsivePropSize, B>` | — |  |
+| design | `Design` | — |  |
+| rows | `number` | — |  |
+| maxRows | `number` | — |  |
+| resize | `boolean` | — |  |
+| disabled | `boolean` | — |  |
+| invalid | `boolean` | — |  |
+| showCounter | `boolean` | — |  |
+| testId | `{ counter?: string; maxCounter?: string; }` | — |  |
+| maxLengthNative | `boolean` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onChange | `(data: { value: string; event: React.ChangeEvent<HTMLTextAreaElement>; options: { name?: string; } }) => void` | — |  |
+| onClick | `TextareaEventReact.MouseEvent<HTMLTextAreaElement>>` | — |  |
+| onFocus | `TextareaEventReact.FocusEvent<HTMLTextAreaElement>>` | — |  |
+| onBlur | `TextareaEventReact.FocusEvent<HTMLTextAreaElement>>` | — |  |
+| onKeyDown | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| onKeyPress | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| onKeyUp | `React.KeyboardEventHandler<HTMLTextAreaElement>` | — |  |
+| ref | `React.Ref<HTMLTextAreaElement>` | — |  |
+
 
 ## HTMLAttributes
 | Prop | Type | Default | Description |
@@ -52,41 +57,42 @@ import { Textarea } from 'vienna-ui';
 | tabIndex | number \| undefined |  |
 
 
-## Использование
-
-По умолчанию дизайн `outline` и размер `m`
-
-```
-<Textarea placeholder='Текстовое поле' />
-```
-
 # Textarea
 
 Компонент "Многострочное поле для ввода текста".
 
-Используйте данный компонент в формах, когда пользователю необходимо ввести длинный (многострочный) текст.
+Использование:
+- Используйте данный компонент в формах, когда пользователю необходимо ввести длинный (многострочный) текст.
+- Текстовая область имеет те же возможности, что и обычный Input, но с дополнительной функцией счётчика, а также, в отличии от Input, ей можно задать высоту.
+
+<ComponentHelpers.Select.Warn>
+    <WarningRing size="xl" />
+    <div>
+        В 12 версии ДС свойство `maxLengthNative` удалено за ненадобностью.
+        <br />
+    </div>
+</ComponentHelpers.Select.Warn>
+
+
 
 ```
-    <Textarea placeholder='Многострочное поле для ввода текста' />
+    <Textarea placeholder="Многострочное поле для ввода текста" />
 ```
 
 ## Внешний вид и размеры
 
-По умолчанию дизайн `outline` и размер `m`
+Размеры компонента - `s`, `m`, `l`. По умолчанию размер `m` и дизайн `outline`.
 
 #### Outline
 
 Дизайн outline
 
 ```
-    <Textarea size='xs' placeholder='xs - Текстовое поле' />
-    <Textarea size='s' placeholder='s - Текстовое поле' />
-    <Textarea size='m' placeholder='m - Текстовое поле' />
-    <Textarea size='l' placeholder='l - Текстовое поле' />
-    <Textarea size='xl' placeholder='xl - Текстовое поле' />
-    <Textarea />
-    <Textarea placeholder='Текстовое поле' disabled />
-    <Textarea placeholder='Текстовое поле' invalid />
+    <Textarea size="s" placeholder="s - Текстовое поле" />
+    <Textarea size="m" placeholder="m - Текстовое поле" />
+    <Textarea size="l" placeholder="l - Текстовое поле" />
+    <Textarea placeholder="Текстовое поле" disabled />
+    <Textarea placeholder="Текстовое поле" invalid />
 ```
 
 #### Material
@@ -94,14 +100,11 @@ import { Textarea } from 'vienna-ui';
 Дизайн material
 
 ```
-    <Textarea size='xs' placeholder='xs - Текстовое поле' design='material' />
-    <Textarea size='s' placeholder='s - Текстовое поле' design='material' />
-    <Textarea size='m' placeholder='m - Текстовое поле' design='material' />
-    <Textarea size='l' placeholder='l - Текстовое поле' design='material' />
-    <Textarea size='xl' placeholder='xl - Текстовое поле' design='material' />
-    <Textarea design='material' />
-    <Textarea placeholder='Текстовое поле' design='material' disabled />
-    <Textarea placeholder='Текстовое поле' design='material' invalid />
+    <Textarea size="s" placeholder="s - Текстовое поле" design="material" />
+    <Textarea size="m" placeholder="m - Текстовое поле" design="material" />
+    <Textarea size="l" placeholder="l - Текстовое поле" design="material" />
+    <Textarea placeholder="Текстовое поле" design="material" disabled />
+    <Textarea placeholder="Текстовое поле" design="material" invalid />
 ```
 
 ## Состояния
@@ -111,8 +114,8 @@ import { Textarea } from 'vienna-ui';
 Невалидное поле
 
 ```
-    <Textarea placeholder='Текстовое поле' invalid />
-    <Textarea placeholder='Текстовое поле' invalid design='material' />
+    <Textarea placeholder="Текстовое поле" invalid />
+    <Textarea placeholder="Текстовое поле" invalid design="material" />
 ```
 
 #### disabled
@@ -120,8 +123,8 @@ import { Textarea } from 'vienna-ui';
 Заблокированное поле
 
 ```
-    <Textarea value='Текстовое поле' disabled />
-    <Textarea value='Текстовое поле' disabled design='material' />
+    <Textarea value="Текстовое поле" disabled />
+    <Textarea value="Текстовое поле" disabled design="material" />
 ```
 
 #### resize
@@ -129,7 +132,7 @@ import { Textarea } from 'vienna-ui';
 Определяет возможность изменения высоты поля
 
 ```
-    <Textarea placeholder='Текстовое поле' resize={false} />
+    <Textarea placeholder="Текстовое поле" resize={false} />
 ```
 
 #### maxRows
@@ -137,18 +140,42 @@ import { Textarea } from 'vienna-ui';
 Максимальное значение количества видимых строк. По умолчанию равно **3**
 
 ```
-    <Textarea placeholder='Текстовое поле' maxRows={1} />
+    <Textarea placeholder="Текстовое поле" maxRows={1} />
 ```
 
-#### showCounter
 
-Показывает счетчик символов внутри поля. По умолчанию равно **false**. Если указан maxLength, в счетчике отображаются оба значения. При достижении максимального значения символов, поле принимает состояние invalid
+## Счетчик
+
+За управление счетчиком есть вспомогательные свойства:
+
+- `showCounter` - показ счетчика;
+- `maxCounter` - выводит счетчик в формате 0/10, где второе значение является `maxCounter`. При строке длиннее чем `maxCounter`, у поля проставляется состояние invalid;
+- `maxLength` - работает как аналогичное нативное свойство у textarea и отвечает за ограничение ввода;
 
 ```
-    <Textarea placeholder='Текстовое поле' value={'test'} maxLength={10} showCounter />
+    <Textarea
+        placeholder="Текстовое поле"
+        maxCounter={10}
+        maxLength={20}
+        showCounter
+    />
 ```
 
-#### Адаптив
+## Состояние ViewOnly
+
+Это состояние используется, когда нужно показать значение поля без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+-   viewOnly - состояние `ViewOnly` (тип boolean);
+-   viewOnlyText - текст значения (тип ReactNode);
+
+```
+    <Textarea viewOnly placeholder="Текстовое поле" value={'Какой-то текст'} />
+```
+
+## Адаптив
 
 Для компонента Textarea, адаптив применяется к свойству `size`, что позволяет адаптивно менять размер компонента в зависимости от текущей ширины экрана. Для этого задайте свойству `size` объект вида `{ <breakpoint name>: <string value> }`
 
@@ -165,7 +192,6 @@ defaultBreakpoints = {
 systemBreakpoints: Breakpoints = {
     /* xs */
     xs: `(max-width: ${defaultBreakpoints.s - 1}px)`,
-
     /* s */
     s: `(min-width: ${defaultBreakpoints.s}px)`,
     belowS: `(max-width: ${defaultBreakpoints.s - 1}px)`,
@@ -177,7 +203,6 @@ systemBreakpoints: Breakpoints = {
     /* l */
     l: `(min-width: ${defaultBreakpoints.l}px)`,
     belowL: `(max-width: ${defaultBreakpoints.l - 1}px)`,
-
     /* xl */
     xl: `(min-width: ${defaultBreakpoints.xl}px)`,
 };
@@ -186,7 +211,48 @@ systemBreakpoints: Breakpoints = {
 ```
     {() => {
         const [value, setValue] = React.useState('text');
-        const handleChange = (e, data) => setValue(data.value);
-        return <Textarea size={{ base: 'xs', s: 's', m: 'xl' }} value={value} onChange={handleChange} />;
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return (
+            <Textarea
+                size={{ base: 's', s: 's', m: 'l' }}
+                value={value}
+                onChange={handleChange}
+            />
+        );
     }}
+```
+
+## Rows
+
+Свойство 'rows' задаёт высоту поля ввода в строках. По умолчанию высота задаётся равной двум строкам.
+
+```
+    {() => {
+        const [value, setValue] = React.useState('text');
+        const handleChange = React.useCallback(
+            ({ value }) => setValue(value),
+            []
+        );
+        return <Textarea rows={4} value={value} onChange={handleChange} />;
+    }}
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для счетчика и maxCounter. Передается пропс `testId?: { counter?: string; maxCounter?: string }`.
+
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultTextareaTestId: TextareaProps['testId'] = {
+    counter: 'textarea_counter',
+    maxCounter: 'textarea_max-counter',
+};
+```
+
+```
+    <Textarea showCounter maxCounter={20} maxLength={20}  placeholder="Многострочное поле для ввода текста" testId={{counter: 'Textarea.Counter', maxCounter: 'Textarea.Maxcounter' }} />
 ```

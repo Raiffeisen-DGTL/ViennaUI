@@ -10,28 +10,32 @@ import { Chips } from 'vienna-ui';
 
 ## Свойства / Props
 
-| Prop    | Type                                          | Default   | Description       |
-| ------- | --------------------------------------------- | --------- | ----------------- |
-| active  | string \| string[] \| undefined               |     | Активные элементы |
-| design  | 'accent' \| 'primary' \| 'ghost' \| undefined | |
-| align   | string \| undefined                           |   |
-| onPressEnter | KeyboardEventHandler<HTMLDivElement> \| undefined |
-| size  | 'xs' \| 's' \| 'm' \| 'l' \| 'xl' \| 'xxl' \| undefined | |
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| size | `PropsBox['$size']` | — |  |
+| design | `PropsBox['$design']` | — |  |
+| align | `PropsBox['$align']` | — |  |
+| active | `null \| string \| string[]` | — |  |
+| viewOnly | `boolean` | — |  |
+| viewOnlyText | `React.ReactNode` | — |  |
+| onPressEnter | `KeyboardEventHandler<HTMLDivElement>` | — |  |
 
-## Использование
 
-Компонент состоит из родительского контейнера `Chips` и дочерних элементов `Chips.Item`.
+# Chips
 
-> Компонент является контролируемым, то есть чтобы отобразить элементы как активные, необходимо получить их значение через обработчик `onChange` и прокинуть в `active`.
+Компонент `Chips` предназначен для отображения нескольких опций, доступных для выбора или взаимодействия.
+Он поддерживает как единичный, так и множественный выбор, а также используется для сегментации и фильтрации контента.
 
-```jsx
-<Chips>
-    <Chips.Item id='1' active>
-        Chip
-    </Chips.Item>
-    <Chips.Item id='2'>Chip</Chips.Item>
-    <Chips.Item id='3'>Chip</Chips.Item>
-</Chips>
+
+
+```
+    <Chips>
+        <Chips.Item id='1' active>
+            Chip
+        </Chips.Item>
+        <Chips.Item id='2'>Chip</Chips.Item>
+        <Chips.Item id='3'>Chip</Chips.Item>
+    </Chips>
 ```
 
 ## Внешний вид
@@ -74,7 +78,6 @@ import { Chips } from 'vienna-ui';
     </Chips>
 ```
 
-
 ## Размеры
 
 С помощью параметра `size` можно установить размеры чипсов. Поддерживается 6 размеров `xs`, `s`, `m`, `l`, `xl`, `xxl`.
@@ -108,8 +111,7 @@ import { Chips } from 'vienna-ui';
     }}
 ```
 
-
-## Right aligned
+## Выравнивание по правому краю
 
 ```
     <Chips align='right'>
@@ -121,23 +123,25 @@ import { Chips } from 'vienna-ui';
     </Chips>
 ```
 
-## Interactive
+## Интерактив
 
-#### Single selection
+#### Одиночный выбор
 
 ```
     {() => {
         const [active, setActive] = React.useState(null);
-        const onClick = (event) => setActive(event.target.id);
+        const changeState = (id) => setActive(id);
+        const onClick = (event) => changeState(event.target.id);
+        const onPressEnter = (event) => changeState(event.target.id);
         return (
-            <Chips design='primary' onClick={onClick} active={active}>
-                <Chips.Item id='1' tabIndex='1'>
+            <Chips design='primary' onClick={onClick} onPressEnter={onPressEnter} active={active}>
+                <Chips.Item id='1' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
-                <Chips.Item id='2' tabIndex='1'>
+                <Chips.Item id='2' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
-                <Chips.Item id='3' tabIndex='1'>
+                <Chips.Item id='3' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
                 <Chips.Item id='4' tabIndex='1' disabled>
@@ -148,24 +152,23 @@ import { Chips } from 'vienna-ui';
     }}
 ```
 
-#### Single selection with toggle
+#### Одиночный выбор с возможностью убрать выбранный элемент
 
 ```
     {() => {
         const [active, setActive] = React.useState(null);
-        const onClick = (event) => {
-            const id = event.target.id;
-            setActive(active !== id ? id : null);
-        };
+        const changeState = (id) => setActive(active !== id ? id : null);
+        const onClick = (event) => changeState(event.target.id);
+        const onPressEnter = (event) => changeState(event.target.id);
         return (
-            <Chips design='accent' onClick={onClick} active={active}>
-                <Chips.Item id='1' tabIndex='1'>
+            <Chips design='accent' onClick={onClick} onPressEnter={onPressEnter} active={active}>
+                <Chips.Item id='1' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
-                <Chips.Item id='2' tabIndex='1'>
+                <Chips.Item id='2' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
-                <Chips.Item id='3' tabIndex='1'>
+                <Chips.Item id='3' tabIndex='1' isFocusStateVisible>
                     Chip
                 </Chips.Item>
                 <Chips.Item id='4' tabIndex='1' disabled>
@@ -176,18 +179,14 @@ import { Chips } from 'vienna-ui';
     }}
 ```
 
-## Multiple selection with toggle
+#### Множественный выбор
 
-```
 <p>
     <Alert>
         Обратите внимание, что для мульти выбора следует указать role='checkbox'. По умолчанию Chips.Item имеет
         role='option'
     </Alert>
 </p>
-```
-
-
 
 ```
     {() => (<ChipsMultiple />)}
@@ -195,13 +194,12 @@ import { Chips } from 'vienna-ui';
 
 ```tsx
     const [active, setActive] = React.useState<string[]>([]);
-    const onClick = (event) => {
-        const id = event.currentTarget.id;
-        setActive(state => state.includes(id) ? state.filter(i => i !== id) : [ ...state, id])
-    };
+    const changeState = (id) => setActive(state => state.includes(id) ? state.filter(i => i !== id) : [ ...state, id]);
+    const onClick = (event) => changeState(event.currentTarget.id);
+    const onPressEnter = (event) => changeState(event.currentTarget.id);
 
     return (
-        <Chips active={active} onClick={onClick}>
+        <Chips active={active} onClick={onClick} onPressEnter={onPressEnter}>
             <Chips.Item id='1' tabIndex={1} role='checkbox'>
                 Chip 1
             </Chips.Item>
@@ -256,4 +254,28 @@ import { Chips } from 'vienna-ui';
             Chip
         </Chips.Item>
     </Chips>
+```
+
+#### ViewOnly
+
+Это состояние используется, когда нужно показать выбранные варианты без возможности изменения.
+Может использоваться для построения форм, которые находятся в режиме просмотра, где все поля заполнены, но не доступны для редактирования.
+
+Свойства:
+
+- viewOnly - состояние `ViewOnly` (тип boolean);
+- viewOnlyText - текст значения (тип ReactNode);
+
+```
+    {() => {
+        const [active, setActive] = React.useState(['1', '2']);
+        return (
+            <Chips active={active} viewOnly>
+                <Chips.Item id='1'>Chip 1</Chips.Item>
+                <Chips.Item id='2'>Chip 2</Chips.Item>
+                <Chips.Item id='3'>Chip 3</Chips.Item>
+                <Chips.Item id='4'>Chip 3</Chips.Item>
+            </Chips>
+        );
+    }}
 ```

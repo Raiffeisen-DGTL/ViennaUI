@@ -32,15 +32,17 @@ import { Header } from 'vienna-ui';
 | -------------- | --------------------------------- | -------- | --------------------------- |
 | action          | ReactNode \| (({ isMobile: boolean }: { isMobile: any; }) => ReactNode)  |
 
-## Использование
 
-Компонент состоит из родительского компонента `Header` и дочерних компонентов `Header.Items`, `Header.Item`.
+# Header
 
-> Дочерние компоненты `Header.Items`, `Header.Item` необходимо прередать через свойство `items`.
+Компонент шапки приложения. Компонент состоит из родительского компонента `Header` и дочерних компонентов `Header.Items`, `Header.Item`.
+Дочерние компоненты `Header.Items`, `Header.Item` необходимо прередать через свойство `items`.
 
-```jsx
-{
-    () => {
+
+
+
+```
+    {() => {
         const items = [
             { value: 'score', label: 'Счета' },
             { value: 'operations', label: 'Операции' },
@@ -65,139 +67,20 @@ import { Header } from 'vienna-ui';
                 }
             />
         );
-    };
-}
-```
-
-## Элементы
-
-##### Коммпонент `Header.Items`
-
-##### Коммпонент `Header.Item`
-
-Используйте свойство `items` для передачи компонентов `Header.Items` и `Header.Item` для отображения табов или листа.
-
-```jsx
-{
-    () => {
-        const items = [
-            { value: 'score', label: 'Счета' },
-            { value: 'operations', label: 'Операции' },
-            { value: 'requisites', label: 'Реквизиты' },
-        ];
-        const [state, setState] = React.useState({ value: 'score' });
-        const handleChange = (e, value) => setState({ value });
-        const handleSearch = () => {};
-        return (
-            <Header
-                items={
-                    <Header.Items design='primary' onChange={handleChange} value={state.value}>
-                        {items.map(({ value, label }) => (
-                            <Header.Item key={value} value={value} label={label} />
-                        ))}
-                    </Header.Items>
-                }
-            />
-        );
-    };
-}
+    }}
 ```
 
 ## Внешний вид
 
 #### Shadow
 
-У компоненты Header есть свойство shadow, которое управляет тенью компоненты.
+У компонента Header есть свойство shadow, которое управляет тенью компонента.
 
 ```
     <Groups size='xl' design='vertical'>
         <Header size='l' />
         <Header shadow={false} size='l' />
     </Groups>
-```
-#### Align
-
-У компоненты Header есть свойство pressCenter, которое прижимает табы к центру компоненты Header.
-
-```
-    {() => {
-        const items = [
-            { value: 'score', label: 'Счета' },
-            { value: 'operations', label: 'Операции' },
-            { value: 'requisites', label: 'Реквизиты' },
-        ];
-        const [state, setState] = React.useState({ value: 'score' });
-        const handleChange = (e, value) => setState({ value });
-        return (
-            <Groups size='xl' design='vertical'>
-                <Header
-                    size='l'
-                    items={
-                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
-                            {items.map(({ value, label }) => (
-                                <Header.Item key={value} value={value} label={label} />
-                            ))}
-                        </Header.Items>
-                    }
-                />
-                <Header
-                    size='m'
-                    items={
-                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
-                            {items.map(({ value, label }) => (
-                                <Header.Item key={value} value={value} label={label} />
-                            ))}
-                        </Header.Items>
-                    }
-                />
-                <Header
-                    size='s'
-                    items={
-                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
-                            {items.map(({ value, label }) => (
-                                <Header.Item key={value} value={value} label={label} />
-                            ))}
-                        </Header.Items>
-                    }
-                />
-            </Groups>
-        );
-    }}
-```
-
-#### Justify Content
-
-```
-    {() => {
-        const items = [
-            { value: 'score', label: 'Счета' },
-            { value: 'operations', label: 'Операции' },
-            { value: 'requisites', label: 'Реквизиты' },
-        ];
-        const [state, setState] = React.useState({ value: 'score' });
-        const handleChange = (e, value) => setState({ value });
-        return (
-            <Header
-                items={
-                    <Header.Items
-                        design='primary'
-                        align='center'
-                        justifyContent='flex-start'
-                        onChange={handleChange}
-                        value={state.value}>
-                        {items.map(({ value, label }) => (
-                            <Header.Item key={value} value={value} label={label} />
-                        ))}
-                    </Header.Items>
-                }
-                action={
-                    <Button size='s' design='accent'>
-                        Открыть
-                    </Button>
-                }
-            />
-        );
-    }}
 ```
 
 ## Размеры
@@ -232,7 +115,6 @@ import { Header } from 'vienna-ui';
         );
     }}
 ```
-
 
 #### Размер M
 
@@ -296,11 +178,26 @@ import { Header } from 'vienna-ui';
     }}
 ```
 
+## Фиксация заголовка
+
+```
+    {() => {
+        const [fixed, setFixed] = React.useState(false);
+        return (
+            <React.Fragment>
+                <Header fixed={fixed} size='l' />
+                <Button style={{marginTop: '20px'}} onClick={() => setFixed(prev => !prev)}>{fixed ? 'Убрать фиксацию шапки' : 'Зафиксировать шапку'}</Button>
+            </React.Fragment>
+        )
+    }}
+```
+
 ## Внутренние компоненты
 
 #### Items
 
 Используйте свойство `items` для передачи компонентов Items и Item для отображения табов или списка.
+Компонент Items наследует свойства от Tabs, а Item от Tabs.Item.
 
 ```
     {() => {
@@ -326,9 +223,98 @@ import { Header } from 'vienna-ui';
     }}
 ```
 
+##### Позиционирование навигации
+
+###### По вертикали
+
+Свойство `align` (тип `'bottom' | 'center'`) выравнивает табы внутри контейнера по вертикали.
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Groups size='xl' design='vertical'>
+                <Header
+                    size='l'
+                    items={
+                        <Header.Items align='bottom' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+                <Header
+                    size='m'
+                    items={
+                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+                <Header
+                    size='s'
+                    items={
+                        <Header.Items align='center' design='primary' onChange={handleChange} value={state.value}>
+                            {items.map(({ value, label }) => (
+                                <Header.Item key={value} value={value} label={label} />
+                            ))}
+                        </Header.Items>
+                    }
+                />
+            </Groups>
+        );
+    }}
+```
+
+###### По горизонтали
+
+Свойство `justifyContent` (тип `string`) выравнивает табы внутри контейнера по горизонтали (значения аналогичны css свойству justify-content).
+
+```
+    {() => {
+        const items = [
+            { value: 'score', label: 'Счета' },
+            { value: 'operations', label: 'Операции' },
+            { value: 'requisites', label: 'Реквизиты' },
+        ];
+        const [state, setState] = React.useState({ value: 'score' });
+        const handleChange = (e, value) => setState({ value });
+        return (
+            <Header
+                items={
+                    <Header.Items
+                        design='primary'
+                        align='center'
+                        justifyContent='flex-start'
+                        onChange={handleChange}
+                        value={state.value}>
+                        {items.map(({ value, label }) => (
+                            <Header.Item key={value} value={value} label={label} />
+                        ))}
+                    </Header.Items>
+                }
+                action={
+                    <Button size='s' design='accent'>
+                        Открыть
+                    </Button>
+                }
+            />
+        );
+    }}
+```
+
 #### Search
 
-Используйте свойство `search` для передачи компоненты поиска в Header.
+Используйте свойство `search` для передачи компонента поиска в Header.
 
 ```
     {() => {
@@ -370,7 +356,6 @@ import { Header } from 'vienna-ui';
     }}
 ```
 
-
 #### Logo
 
 Используйте `logoHref` для передачи адреса на главную страницу.
@@ -394,6 +379,11 @@ import { Header } from 'vienna-ui';
 #### Content
 
 К каждому `Header.Item` можно добавить дочерние элементы, которые будут отображатся при раскрытии пунктов меню.
+
+В компоненте `Header` есть свойства, которые позволяют управлять состоянием расскрытия меню:
+- `isOpen` (тип `boolean`) - управляет состоянием расскрытия меню. Если isOpen равно true, меню открыто; если false, меню закрыто.
+- `onOpen` (тип `() => void`) - вызывается при открытии меню.
+- `onClose` (тип `() => void`) - вызывается при закрытии меню.
 
 ```
     {() => {
@@ -463,7 +453,7 @@ import { Header } from 'vienna-ui';
 
 #### Свойство disabledContent
 
-С помощью этого проперти можно заблокировать раскрытие подменю, даже если оно задано явно в дочерних элементах.
+С помощью этого свойства можно заблокировать раскрытие подменю, даже если оно задано явно в дочерних элементах.
 
 ```
     {() => {
@@ -512,20 +502,20 @@ import { Header } from 'vienna-ui';
 
 #### Action
 
-Используйте свойство `action` для дополнительных конпок.
+Используйте свойство `action` для дополнительных кнопок.
 
 `action` может принимать функцию, в которую приходит свойство `isMobile`.
 
-`isMobile` указывает на адаптивность компоненты Header. Относительно `isMobile` можно менять компоненты в action.
+`isMobile` указывает на адаптивность компонента Header. Относительно `isMobile` можно менять компоненты в action.
 
 ```
     {() => {
         const actionContent = ({ isMobile }) =>
             isMobile ? (
-                <Passport size='m' />
+                <PassportIcon size='m' />
             ) : (
                 <Groups design='horizontal'>
-                    <Passport size='m' />
+                    <PassportIcon size='m' />
                     <Button size='s' design='accent'>
                         {' '}
                         Открыть{' '}
@@ -541,9 +531,10 @@ import { Header } from 'vienna-ui';
 
 C помощью `mobileBelow` можно задать порог перехода в мобильное представление.
 
-Компонента Header адаптируется к разрешению экрана.
+Компонент Header адаптируется к разрешению экрана. `items` будут открываться на весь экран листом, а `search` будет заменять весь Header.
 
-`items` будут открываться на весь экран листом, а `search` будет заменять весь Header.
+Свойство `mobileMenu` отвечает за отображение мобильного меню. Оно принимает функцию, которая получает объект с двумя параметрами: `items` (элементы меню) и `onClose` (функция для закрытия меню).
+Эта функция может возвращать произвольный React-элемент, который будет отображаться в мобильной версии, когда меню открыто. Если `mobileMenu` не передан, используется стандартный рендеринг элементов меню для мобильной версии.
 
 ```
     {() => {
@@ -576,7 +567,7 @@ C помощью `mobileBelow` можно задать порог переход
                             </Header.Item>
                         </Header.Items>
                     }
-                    action={<Passport size='m' />}
+                    action={<PassportIcon size='m' />}
                 />
                 <div style={{ backgroundColor: 'white', padding: 16, marginTop: 16 }}>
                     Райффайзенбанк — российский коммерческий банк, дочерний банк австрийской банковской группы
@@ -594,9 +585,10 @@ C помощью `mobileBelow` можно задать порог переход
             </>
         );
     }}
+
 ```
 
-#### Кастомизация
+## Кастомизация
 
 ```
     {() => {

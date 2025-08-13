@@ -17,10 +17,15 @@ import { Notifications, Notifier } from 'vienna-ui';
 | align | "left" \| "right" \| "center" \| undefined |  | Выравнивание по горизонтали |
 | valign | "top" \| "bottom" \| undefined |  | Выравнивание по вертикали |
 | onClose | ((e: any, data: any) => void) \| undefined |  |
-| compactBelow | number \| undefined |  | Компактный режим |
 | limit | number \| undefined |  | Верхняя граница количества отображаемых нотификаций |
 | pinWithMouse | boolean \| undefined |  | Возможность взаимодействия пользователя с нотификацией |
 | compact | ResponsiveProp<boolean, Breakpoints> \| undefined |
+
+
+
+# Notifications
+
+Компонент всплывающих нотификаций. Компонент `Notifications` предназначен для отображения всплывающих уведомлений, требующих максимального внимания пользователей. Он позволяет легко интегрировать различные типы нотификаций в приложение, обеспечивая гибкость в настройке их внешнего вида, поведения и расположения.
 
 
 
@@ -46,19 +51,22 @@ import { Notifications, Notifier } from 'vienna-ui';
 
 ## Notification service & Notifier
 
-Компонент `Notifications` является stateless, контролируемым компонентом, ему необходим дополнительный сервис нотификаций, который будет хранит список нотификаций и реализует методы работы с этим списком. Данный сервис передается компоненту `Notifications` через аттрибут `service`.
+Компонент `Notifications` является stateless, контролируемым компонентом, ему необходим дополнительный сервис нотификаций, который будет хранить список нотификаций и реализует методы работы с этим списком. Данный сервис передается компоненту `Notifications` через атрибут `service`.
 
 Чтобы упростить работу с компонентом, Дизайн-система экспортирует класс `NotificationService` и синглтон-инстанс этого класса - Notifier. Notifier позволяет объявить компонент `Notifications` один раз, как глобальный контейнер и добавлять в него нотификации из разных компонентов ниже по дереву, импортируя и вызывая методы Notifier-а.
 
 Если этого недостаточно, то можно создать локальный инстанс, импортируя и инстанциируя класс `NotificationService`.
 
-В примерах ниже, мы используем оба этих подходы. Мы создали глобальный контейнер нотификаций, который расположен вверху по центру и для большинства примеров используем сервис `Notifier` для отображения нотификаций в нем. Но для демонстрации вариантов расположения и custom-нотификаций, мы создаем дополнительные инстансы сервиса нотификаций и передаем в комопненты `Notifications` их.
+В примерах ниже, мы используем оба этих подхода. Мы создали глобальный контейнер нотификаций, который расположен сверху по центру и для большинства примеров используем сервис `Notifier` для отображения нотификаций в нем. Но для демонстрации вариантов расположения и custom-нотификаций, мы создаем дополнительные инстансы сервиса нотификаций и передаем в комопненты `Notifications` их.
 
 ## Использование
 
 ```
+{() => {
+    const service = new NotificationService();
+    return (
     <Groups>
-        <Notifications service={Notifier} />
+        <Notifications service={service} />
         <Button
             onClick={() =>
                 Notifier.plain({
@@ -108,6 +116,8 @@ import { Notifications, Notifier } from 'vienna-ui';
             Error
         </Button>
     </Groups>
+    )
+}}
 ```
 
 #### Расположение
@@ -117,17 +127,18 @@ import { Notifications, Notifier } from 'vienna-ui';
 ```
     {() => {
         const topLeft = new NotificationService();
-        const topCenter = Notifier;
+        const topCenter = new NotificationService();
         const topRight = new NotificationService();
-        const bottompLeft = new NotificationService();
+        const bottomLeft = new NotificationService();
         const bottomCenter = new NotificationService();
         const bottomRight = new NotificationService();
         return (
             <Groups design='vertical'>
                 <div>
                     <Notifications valign='top' align='left' service={topLeft} />
+                    <Notifications valign='top' align='center' service={topCenter} />
                     <Notifications valign='top' align='right' service={topRight} />
-                    <Notifications valign='bottom' align='left' service={bottompLeft} />
+                    <Notifications valign='bottom' align='left' service={bottomLeft} />
                     <Notifications valign='bottom' align='center' service={bottomCenter} />
                     <Notifications valign='bottom' align='right' service={bottomRight} />
                 </div>
@@ -135,13 +146,13 @@ import { Notifications, Notifier } from 'vienna-ui';
                     <Button onClick={() => topLeft.plain({ message: 'Top left', compactBelow: 10000 })}>
                         Top left
                     </Button>
-                    <Button onClick={() => Notifier.plain({ message: 'Top center', compactBelow: 10000 })}>
+                     <Button onClick={() => topCenter.plain({ message: 'Top center', compactBelow: 10000 })}>
                         Top center
                     </Button>
                     <Button onClick={() => topRight.plain({ message: 'Top right', compactBelow: 10000 })}>
                         Top right
                     </Button>
-                    <Button onClick={() => bottompLeft.plain({ message: 'Bottom left', compactBelow: 10000 })}>
+                    <Button onClick={() => bottomLeft.plain({ message: 'Bottom left', compactBelow: 10000 })}>
                         Bottom left
                     </Button>
                     <Button onClick={() => bottomCenter.plain({ message: 'Bottom center', compactBelow: 10000 })}>
@@ -286,9 +297,9 @@ import { Notifications, Notifier } from 'vienna-ui';
     }}
 ```
 
-#### Custom Notifications
+#### Продвинутое использование
 
-В children комопнента также можно передать функцию, которая вызовется для каждой нотификации из списка, и в качестве единственного параметра получит объект нотификации, который был передан в сервис. В дополнение к этому, компонент `Notifications` имеет статическое поле `Notification`, который можно использовать для отрисвки стандартного бокса нотификации. Все это дает возможность гибко настраивать вид и поведение нотификации в ситуациях, когда стандартного поведения недостаточно.
+В children комопнента также можно передать функцию, которая вызовется для каждой нотификации из списка, и в качестве единственного параметра получит объект нотификации, который был передан в сервис. В дополнение к этому, компонент `Notifications` имеет статическое поле `Notification`, который можно использовать для отрисовки стандартного бокса нотификации. Все это дает возможность гибко настраивать вид и поведение нотификации в ситуациях, когда стандартного поведения недостаточно.
 
 ```
     {() => {
@@ -377,7 +388,7 @@ systemBreakpoints: Breakpoints = {
         const service = new NotificationService();
         return (
             <>
-                <Notifications service={Notifier} compact={{ base: false, s: true, m: false }} />
+                <Notifications service={service} compact={{ base: false, s: true, m: false }} />
                 <Button
                     design='accent'
                     onClick={() =>
@@ -390,6 +401,76 @@ systemBreakpoints: Breakpoints = {
                     Success
                 </Button>
             </>
+        );
+    }}
+```
+
+## Возможность закрыть Notification с помощью Notifier.remove(id)
+
+```
+    {() => {
+        const [id, setId] = React.useState(null);
+        const handleClick = () => {
+            if (id) {
+                Notifier.remove(id)
+            }
+            const newId = id ? id + 1 : 1;
+            Notifier.plain({
+                id: newId,
+                title: 'Plain notification.',
+                message: 'Для нейтральных уведомлений',
+            });
+            setId(newId);
+        };
+        return (
+            <Groups>
+                <Notifications service={Notifier} />
+                <Groups>
+                    <Button design='accent' onClick={handleClick}>
+                        Show
+                    </Button>
+                    <Button design='primary' onClick={() => Notifier.remove(id)}>Close</Button>
+                </Groups>
+            </Groups>
+        );
+    }}
+```
+
+## Установка data-testid
+
+Атрибут `data-testid` можно передать для контейнера и иконки закрытия. Передается пропс `testId?: { container?: string; alert?: AlertProps['testId'] }`.
+`AlertProps['testId']` имеет вид:
+
+```
+testId?: {
+        closeIcon?: string;
+    };
+```
+Также добавлены дефолтные значения для `testId`:
+
+```
+export const defaultNotificationsTestId: NotificationsProps['testId'] = {
+    container: 'notifications_container',
+    alert: defaultAlertTestId,
+};
+```
+
+```
+    {() => {
+        const service = new NotificationService();
+        return (
+            <React.Fragment>
+                <Notifications service={service} testId={{ container: 'Notification.Box', alert: { closeIcon: 'Notification.Close' }}} />
+                <Button
+                    onClick={() =>
+                        service.plain({
+                            title: 'Plain notification.',
+                            message: 'Для нейтральных уведомлений',
+                        })
+                    }>
+                    Notify Me
+                </Button>
+            </React.Fragment>
         );
     }}
 ```
