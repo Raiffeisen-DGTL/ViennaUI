@@ -29,14 +29,14 @@ import { Table } from 'vienna-ui';
 | sort | `{ field: string; direction: SortDirection; } \| undefined` | — |  |
 | filter | `FilterState<T> \| undefined` | — |  |
 | dataKey | `((item: T, index: number) => string) \| undefined` | — |  |
-| onRowClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
-| onRowItemClick | `OnChangeHandler<T, React.MouseEventHTMLElement>, null>` | — |  |
-| onRowGroupClick | `OnChangeHandler<GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
-| onRowDoubleClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEventHTMLElement>, null>` | — |  |
-| onRowRightClick | `OnChangeHandler<T, React.MouseEventHTMLElement>, null>` | — |  |
+| onRowClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEvent<HTMLElement>, null>` | — |  |
+| onRowItemClick | `OnChangeHandler<T, React.MouseEvent<HTMLElement>, null>` | — |  |
+| onRowGroupClick | `OnChangeHandler<GroupTitleInterface<T>, React.MouseEvent<HTMLElement>, null>` | — |  |
+| onRowDoubleClick | `OnChangeHandler<T \| GroupTitleInterface<T>, React.MouseEvent<HTMLElement>, null>` | — |  |
+| onRowRightClick | `OnChangeHandler<T, React.MouseEvent<HTMLElement>, null>` | — |  |
 | onSort | `OnChangeHandler<{ field: string; direction: SortDirection; }, React.FormEvent \| undefined, null>` | — |  |
-| onFilter | `((data?: T) => void) \| undefined` | — |  |
-| onSelect | `OnChangeHandlerTableOnSelectData<T>, React.FormEvent, null>` | — |  |
+| onFilter | `((data?: AnyObject) => void) \| undefined` | — |  |
+| onSelect | `OnChangeHandler<TableOnSelectData<T>, React.FormEvent, null>` | — |  |
 | onScroll | `((event: React.UIEventHTMLElement>) => void) \| undefined` | — |  |
 | initState | `TableState<T> \| ((state: TableState<T>) => TableState<T>)` | — |  |
 | state | `TableState<T>` | — |  |
